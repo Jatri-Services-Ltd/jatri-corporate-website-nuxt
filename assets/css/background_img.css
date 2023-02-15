@@ -1,0 +1,67 @@
+.counter_bg {
+  background-image: url("../images/background/counter_bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  background-blend-mode: overlay;
+}
+
+.card_bg {
+  background-image: url("../images/background/particle_bg.jpg"), linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84));
+  background-blend-mode: overlay;
+  /* background-size: cover; */
+}
+
+.app_bg {
+  background-image: url("../images/background/app_bg.png"), linear-gradient(rgb(240 73 53), rgb(240 73 53));
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+.about_bg {
+  background-image: url("../images/background/about_bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+.news_bg {
+  background-image: url("../images/background/news_bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+.why_us_bg {
+  background-image: url("../images/background/why_us_bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+.about_us_bg {
+  background-image: url("../images/background/about_us_bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.about_page_main_section_bg {
+  background-image: url("../images/background/particle_bg.jpg"), linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84));
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.career_page_bg{
+  background-image: url("../images/background/particle_bg.jpg"), linear-gradient(rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.84));
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
+.blog_bg {
+  background-image: url("../images/background/blog_bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
+}
+
+.blog_description_bg {
+  background-image: url("../images/background/blog_description_bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
+}
+
+.contact_us_bg{
+  background-image: url("../images/background/contact_us_bg.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: 100% 100%;
+}

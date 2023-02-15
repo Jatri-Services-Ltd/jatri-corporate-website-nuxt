@@ -1,0 +1,462 @@
+/* Custom CSS Code Will be here */
+/* font */
+/* open sans font-family: 'Open Sans', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* open sans font-family: 'Montserrat', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,700&display=swap");
+
+@import url("background_img.css");
+@import url("responsive.css");
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+.career_card {
+  backdrop-filter: blur(2px);
+  background: rgba(255 255 255 / 20%);
+  box-shadow: 0 0 10px -5px #f04935;
+  border-bottom: 6px solid #f04935;
+  border-radius: 1rem;
+}
+.career_img_wrapper {
+  overflow: hidden;
+  height: 174px;
+  width: 224px;
+  border-radius: 10px;
+}
+.career_img {
+  width: 744px;
+  max-width: 900px;
+  display: block;
+  margin-left: -62px;
+  margin-top: -22px;
+}
+
+img {
+  pointer-events: none;
+}
+
+.body_text {
+  font-family: "Open Sans", sans-serif;
+}
+
+.subheading_text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.heading_text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+}
+
+.corporate_bg_color {
+  background-color: #f04935;
+}
+
+.corporate_bg_dark {
+  background-color: #4d4d4f;
+}
+
+.corporate_color {
+  color: #f04935;
+}
+
+.corporate_color_dark {
+  color: #4d4d4f;
+}
+
+.single_counter {
+  border-right: 5px solid #f04935;
+}
+
+.white_filter {
+  -webkit-filter: brightness(0) invert(1);
+  filter: brightness(0) invert(1);
+}
+
+/* about_us_page */
+.about_us_banner {
+  line-height: 0px;
+}
+
+.bottom_quotation {
+  display: inline-block;
+  transform: translateY(10px);
+}
+
+/* Slider design Start */
+.jk_slider {
+  position: relative;
+  height: 100%;
+}
+
+.jk_slider {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #000;
+  padding: 10%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+.testimonial_body {
+  height: 100% !important;
+}
+
+.swiper-container .swiper-slide {
+  height: 100% !important;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+}
+
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  background: #cacaca !important;
+  opacity: 0.8 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #828080 !important;
+}
+/* Slider design End */
+
+/* career page upload btn */
+.upload-btn-wrapper:hover {
+  cursor: pointer;
+}
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+::selection {
+  background-color: #fff;
+  color: #f04935;
+}
+
+/* Scroll bar */
+body {
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px white;
+  -webkit-box-shadow: inset 0 0 5px white;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f79e93 !important;
+  -webkit-background: #f79e93 !important;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4d4d4f !important;
+  -webkit-background: #4d4d4f !important;
+}
+
+.why_us_card:hover .whyus_card_description {
+  color: #f04935;
+  background: #fff;
+  transition: 0.7s;
+  cursor: default;
+}
+
+/* contact us page */
+.google_map {
+  height: 500px;
+}
+
+.footer_app_link {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* ================ terms and conditions and privacy policy =================*/
+.contact_us_head {
+  height: 200px;
+}
+
+@media (max-width: 767px) {
+  .contact_us_head {
+    height: 150px;
+  }
+}
+
+.contact_us_head h2 {
+  color: #fff;
+  font-weight: bold;
+}
+
+.corporate_color {
+  color: #f04935 !important;
+}
+
+.conditions ul li.corporate_color {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.nested_ul li {
+  list-style-type: square;
+}
+
+.conditions ul li {
+  line-height: 30px;
+  color: #000;
+  text-align: justify;
+}
+
+@media (max-width: 767px) {
+  .conditions ul li {
+    line-height: 20px;
+  }
+}
+
+.bold_list {
+  font-weight: 600;
+}
+
+/* Ride sharing page design */
+.common_head {
+  font-weight: bold;
+  margin: 20px 0;
+  text-align: center;
+  text-decoration: underline;
+}
+.common_text_color {
+  color: #444;
+}
+.common_sub_head {
+  color: #666;
+}
+
+.common_ride_paragraph {
+  color: #999;
+  line-height: 18px;
+}
+.ride_rules_btn {
+  border: 0px;
+  padding: 12px 20px;
+  -webkit-box-shadow: inset 0 -2px 0 rgb(0 0 0 / 25%);
+  box-shadow: inset 0 -2px 0 rgb(0 0 0 / 25%);
+  background-color: #f04935;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.ride_rules_btn:hover {
+  transition: 0.4s;
+  color: #fff;
+  background-color: #666666;
+  border-color: #666666;
+}
+
+.ride_share_tble_head thead tr th,
+.ride_share_tbl tr:hover td {
+  background-color: #f04935;
+  color: #ffffff;
+}
+.ride_share_tbl tr {
+  border: 1px solid #000;
+}
+.video_container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+
+.responsive_iframe {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Select Menu ========> Dropdown css */
+.dropdown-container {
+  position: relative;
+  /* min-width: 150px; */
+}
+.dropdown-container .dropdown-toggle {
+  padding: 1px 20px;
+  margin: 5px 10px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  font-size: 14px;
+  /* color: #fff; */
+}
+.dropdown-container .dropdown-toggle label {
+  cursor: pointer;
+  width: auto;
+  /* color: #fff; */
+}
+.dropdown-container .dropdown-menu {
+  min-width: 150px;
+  box-shadow: 0px 0px 4px -2px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: none;
+  background-color: #f04935;
+  z-index: 10;
+}
+.dropdown-container .dropdown-menu ul {
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  overflow: hidden;
+  z-index: 10;
+}
+.dropdown-container .dropdown-menu ul li:hover {
+  background-color: #ffffff;
+}
+
+.dropdown-container .dropdown-menu a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  padding: 16px 10px;
+  box-shadow: 0px 0px 4px -2px rgba(0, 0, 0, 0.5);
+  transition: all ease-in-out 0.3s;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+.dropdown-container .dropdown-menu ul li:hover a {
+  color: #f04935;
+}
+
+.dropdown-menu,
+.dropdown-toggle {
+  position: relative;
+}
+.dropdown-menu::before,
+.dropdown-toggle::before {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  font-size: 14px;
+  transform: translateY(-50%) rotate(45deg);
+  border: 5px solid;
+  border-top-color: rgba(0, 0, 0, 0);
+  border-left-color: rgba(0, 0, 0, 0);
+  margin-top: -2.5px;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all ease-in-out 0.2s;
+}
+
+.dropdown-menu {
+  z-index: 10;
+  position: relative;
+}
+.dropdown-menu::before {
+  z-index: -1;
+  transform: rotate(-135deg);
+  top: -3px;
+  right: 56px;
+  border-color: #f04935;
+  box-shadow: 1px 1px 4px -2px rgba(0, 0, 0, 0.4);
+}
+
+.dropdown-open .dropdown-menu.dropdown-active {
+  display: block;
+}
+
+.dropdown-container.dropdown-open .dropdown-toggle:before {
+  transform: rotate(-135deg);
+}
+
+.dropdown-bordered .dropdown-toggle {
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+.dropdown-bordered .dropdown-menu {
+  border: 2px solid #000000;
+  border-radius: 10px;
+}
+.dropdown-bordered .dropdown-menu::before {
+  border-color: #000000;
+}
+.dropdown-bordered .dropdown-menu a {
+  box-shadow: none;
+  border-bottom: 2px solid #000000;
+}
+.dropdown-bordered .dropdown-menu li:last-child a {
+  border-bottom: 0;
+}
+
+@media (max-width: 480px) {
+  .home_banner_img {
+    max-width: 100% !important;
+    margin-top: 105px;
+  }
+}
+
+@media (max-width: 639px) {
+  .single_counter {
+    border-right: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .home_banner_img {
+    max-width: 80%;
+    float: right;
+  }
+
+  .career_img_wrapper {
+    width: 280px;
+  }
+
+  .career_img {
+    width: 744px;
+    margin-left: -30px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .dropdown-container .dropdown-toggle {
+    margin: 7px 0px;
+    padding: 1px 0px 1px 0px;
+  }
+  .dropdown-menu::before,
+  .dropdown-toggle::before {
+    right: 15px;
+  }
+}
