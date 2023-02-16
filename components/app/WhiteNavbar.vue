@@ -19,8 +19,8 @@
       <div class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="menu">
         <div class="text-sm lg:flex-grow">
 
-          <a href="./why-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Why Us</a>
-          <a href="./about-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">About Us</a>
+          <NuxtLink to="/why-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Why Us</NuxtLink>
+          <NuxtLink to="/about-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">About Us</NuxtLink>
           <a href="./career" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Career</a>
           <a href="./blog" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Blog</a>
           <a href="./contact-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Contact Us</a>

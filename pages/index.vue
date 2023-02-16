@@ -17,7 +17,7 @@ const modules = [Pagination]
           class="w-full px-5 mt-10 md:mt-0 sm:px-10 2xl:container 2xl:mx-auto flex justify-between items-center align-middle">
 
         <div class="w-1/2 sm:w-1/2 lg:flex-grow">
-          <div data-aos="fade-up">
+          <div data-aos="fade-down-right">
             <div class="banner_text uppercase text-white font-extrabold">
               <h1 class="text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-light subheading_text tracking-wide">
                 Empowering</h1>
@@ -31,7 +31,7 @@ const modules = [Pagination]
         </div>
 
         <div class="w-1/2 sm:w-1/2 lg:max-w-lg lg:w-full">
-          <div data-aos="fade-up">
+          <div data-aos="fade-down-left">
             <img class="home_banner_img" alt="hero" src="~/assets/images/banner/banner-2.png" draggable="false">
           </div>
         </div>

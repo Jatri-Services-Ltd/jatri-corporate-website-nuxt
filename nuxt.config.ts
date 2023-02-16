@@ -16,7 +16,7 @@ export default defineNuxtConfig({
     app: {
         head: {
             link: [{ rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.4.1/css/all.css' }]
-        }
+        },
     },
     modules: [
         '@nuxtjs/i18n',
