@@ -31,6 +31,201 @@
         h-full
         rounded-lg
       ">
+            <img class="rounded-t-lg" src="~/assets/images/blog/London-Express-Blog-Featured.jpg" alt="" />
+            <div class="pt-2 px-2 md:px-0">
+              <h1 class="
+            corporate_color
+            mt-2
+            font-bold
+            text-2xl
+            tracking-tight
+            subheading_text
+          ">
+                Jatri Ticket Website and London Express are Together Now!
+              </h1>
+              <p class="
+            py-3
+            text-gray-700 text-justify text-sm
+            leading-6
+            body_text
+          ">
+                Do you need a vacation from your daily routine life cycle? Do you want to go for a domestic tour or want to go to Kolkata from Dhaka city?
+                Jatri is giving you the best bus operator, London Express, with comfortable bus seats and a luxurious environment.
+              </p>
+            </div>
+            <div class="flex justify-between items-center mt-3 px-2 md:px-0 py-3">
+              <div class="flex justify-between gap-1">
+                <div class="
+              text-white
+              corporate_bg_color
+              flex
+              justify-center
+              items-center
+              h-8
+              w-8
+              rounded-full
+            ">
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="flex flex-col justify-between">
+                  <p class="text-sm">Afroza Akter Nitu</p>
+                  <p class="text-xs text-gray-400">12th February, 2023</p>
+                </div>
+              </div>
+              <a href="./details/london-express.html" class="
+            text-white
+            corporate_bg_color
+            rounded-md
+            px-5
+            py-3
+            text-sm
+          ">Read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up">
+          <div class="
+        bg-white
+        md:bg-transparent
+        shadow
+        md:shadow-none
+        mx-auto
+        mb-5
+        h-full
+        rounded-lg
+      ">
+            <img class="rounded-t-lg" src="~/assets/images/blog/jeddah-express-blog-featured.jpg" alt="" />
+            <div class="pt-2 px-2 md:px-0">
+              <h1 class="
+            corporate_color
+            mt-2
+            font-bold
+            text-2xl
+            tracking-tight
+            subheading_text
+          ">
+                Jatri Ticket Website and Jeddah Express are Together Now!
+              </h1>
+              <p class="
+            py-3
+            text-gray-700 text-justify text-sm
+            leading-6
+            body_text
+          ">
+                Hey! Are you finding the best sleeper couch in Dhaka? You are indeed in the right place.
+                We are thrilled to announce a new partnership between Jeddah Express and Jatri. On the routes that are being served by Jatri & Jeddah Express jointly, your travel...
+              </p>
+            </div>
+            <div class="flex justify-between items-center mt-3 px-2 md:px-0 py-3">
+              <div class="flex justify-between gap-1">
+                <div class="
+              text-white
+              corporate_bg_color
+              flex
+              justify-center
+              items-center
+              h-8
+              w-8
+              rounded-full
+            ">
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="flex flex-col justify-between">
+                  <p class="text-sm">Abdul Nakib</p>
+                  <p class="text-xs text-gray-400">12th February, 2023</p>
+                </div>
+              </div>
+              <a href="./details/jeddah-express.html" class="
+            text-white
+            corporate_bg_color
+            rounded-md
+            px-5
+            py-3
+            text-sm
+          ">Read more</a>
+            </div>
+          </div>
+        </div>
+
+        <div data-aos="fade-up">
+          <div class="
+        bg-white
+        md:bg-transparent
+        shadow
+        md:shadow-none
+        mx-auto
+        mb-5
+        h-full
+        rounded-lg
+      ">
+            <img class="rounded-t-lg" src="~/assets/images/blog/greenline-blog-featured.jpg" alt="" />
+            <div class="pt-2 px-2 md:px-0">
+              <h1 class="
+            corporate_color
+            mt-2
+            font-bold
+            text-2xl
+            tracking-tight
+            subheading_text
+          ">
+                Jatri Ticket Website and Green Line are Together Now!
+              </h1>
+              <p class="
+            py-3
+            text-gray-700 text-justify text-sm
+            leading-6
+            body_text
+          ">
+                Are you finding the best bus service? <br>
+                We are glad to announce that Green Line Paribahan is on the Jatri website. Your travel will be hassle-free now!<br>
+
+                The well-known bus operator Green Line Paribahan...
+              </p>
+            </div>
+            <div class="flex justify-between items-center mt-3 px-2 md:px-0 py-3">
+              <div class="flex justify-between gap-1">
+                <div class="
+              text-white
+              corporate_bg_color
+              flex
+              justify-center
+              items-center
+              h-8
+              w-8
+              rounded-full
+            ">
+                  <i class="fa fa-user"></i>
+                </div>
+                <div class="flex flex-col justify-between">
+                  <p class="text-sm">Afroza Akter Nitu</p>
+                  <p class="text-xs text-gray-400">12th February, 2023</p>
+                </div>
+              </div>
+              <a href="./details/green-line.html" class="
+            text-white
+            corporate_bg_color
+            rounded-md
+            px-5
+            py-3
+            text-sm
+          ">Read more</a>
+            </div>
+          </div>
+        </div>
+
+
+        <div data-aos="fade-up">
+          <div class="
+        bg-white
+        md:bg-transparent
+        shadow
+        md:shadow-none
+        mx-auto
+        mb-5
+        h-full
+        rounded-lg
+      ">
             <img class="rounded-t-lg" src="~/assets/images/blog/small_blog_08.jpg" alt="" />
             <div class="pt-2 px-2 md:px-0">
               <h1 class="
