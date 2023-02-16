@@ -1,4 +1,3 @@
-
 import WhiteNavbar from '~~/components/app/WhiteNavbar.vue';
 
 <template>
