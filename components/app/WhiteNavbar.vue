@@ -25,12 +25,13 @@
           <a href="./blog" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Blog</a>
           <a href="./contact-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Contact Us</a>
           <a href="https://rental.jatri.co/"
-             class="lg:block mt-4 lg:inline-block lg:mt-0 mr-4 bg-corporate py-1 px-2 rounded-md text-white flex justify-center items-center gap-x-4"><i
+             class="mt-4 lg:inline-block lg:mt-0 mr-4 bg-corporate py-1 px-2 rounded-md text-white flex justify-center items-center gap-x-4"><i
               class="fas fa-car"></i> Rental</a>
           <a href="https://ticket.jatri.co/"
-             class="lg:block mt-4 lg:inline-block lg:mt-0 mr-4 bg-corporate py-1 px-2 rounded-md text-white flex justify-center items-center gap-x-4"><i
+             class="lg:inline-block mt-4 lg:mt-0 mr-4 bg-corporate py-1 px-2 rounded-md text-white flex justify-center items-center gap-x-4"><i
               class="fas fa-bus"></i> Bus Ticket</a>
         </div>
+
         <div class="block">
           <div class="flex-grow lg:flex justify-between">
             <div class="dropdown-container">
