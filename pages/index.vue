@@ -260,8 +260,8 @@ const modules = [Pagination]
     <div data-aos="fade-up">
       <div class="my-7 flex-grow lg:flex lg:justify-between text-white w-full">
 
-        <div class="corporate_bg_color w-full lg:w-1/3 py-9 lg:pl-10 2xl:pl-40 pr-5 order-last lg:order-first">
-          <div class="flex justify-center items-center">
+        <div class="corporate_bg_color w-full lg:w-1/3 py-20 pl-10 lg:pl-16 2xl:pl-52 pr-14 xl:pr-16 order-last lg:order-first">
+          <div class="flex justify-center items-center mb-3">
             <img class="w-2/4 sm:w-1/4" src="~/assets/images/logo/logo-white.png" alt="">
           </div>
           <swiper
@@ -637,7 +637,3 @@ const modules = [Pagination]
   <!-- Testimonial Section End -->
 
 </template>
-
-<style>
-
-</style>

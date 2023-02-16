@@ -120,6 +120,12 @@ img {
   -webkit-box-align: center;
 }
 
+.swiper-pagination {
+  position: relative !important;
+  text-align: left !important;
+  margin-top: 15px;
+}
+
 .swiper-pagination-bullet {
   width: 15px !important;
   height: 15px !important;
@@ -447,6 +453,11 @@ body {
     width: 744px;
     margin-left: -30px;
   }
+
+  .swiper-pagination {
+    text-align: center !important;
+  }
+
 }
 
 @media (max-width: 1023px) {
