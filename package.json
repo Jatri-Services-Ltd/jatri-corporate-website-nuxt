@@ -15,6 +15,7 @@
     "tailwindcss": "^3.2.6"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "swiper": "^9.0.5"
   }
 }
