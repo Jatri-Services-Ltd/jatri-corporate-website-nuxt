@@ -1,8 +1,15 @@
-<script lang="ts" setup>
+<script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import { Pagination } from 'swiper';
 const { locale } = useI18n()
+const modules = [Pagination]
 </script>
 
 <template>
+
+
   <!-- Banner Section Start -->
   <section class="corporate_bg_color h-full md:bg-gray-200 mt-7 md:mt-0 relative">
     <div class="corporate_bg_color md:mt-40 h-80 sm:h-96 flex justify-between 2xl:justify-center items-center">
@@ -254,20 +261,24 @@ const { locale } = useI18n()
       <div class="my-7 flex-grow lg:flex lg:justify-between text-white w-full">
 
         <div class="corporate_bg_color w-full lg:w-1/3 py-9 lg:pl-10 2xl:pl-40 pr-5 order-last lg:order-first">
-          <div class="jk_slider flex flex-col justify-center items-center">
+          <div class="flex justify-center items-center">
             <img class="w-2/4 sm:w-1/4" src="~/assets/images/logo/logo-white.png" alt="">
-            <div class="swiper-container mySwiper mt-3">
-              <div class="swiper-wrapper mb-10 md:mb-8">
-                <div class="swiper-slide about_slider ">
-                  <p class="body_text text-sm lg:text-lg font-light text-white text-justify leading-6">Add a new dimension to your car or microbus rental business by digitizing every trip. With exciting trip deals, flexible bookings and competitive pricing, you'll never go back to the old manual rental system again!</p>
-                </div>
-                <div class="swiper-slide about_slider ">
-                  <p class="body_text text-sm lg:text-lg font-light text-white text-justify leading-6">Gear up to maximize your car and microbus rental business with Jatri's pioneering technology. Get access to our massive network of passengers on our app, book trips at fair prices throughout the country and boost your income by the end of the month!</p>
-                </div>
-              </div>
-              <div class="swiper-pagination sm:flex items-start"></div>
-            </div>
           </div>
+          <swiper
+              :spaceBetween="30"
+              :pagination="{
+              clickable: true,
+    }"
+              :modules="modules"
+              class="mySwiper"
+          >
+            <swiper-slide>
+              <p class="body_text text-sm lg:text-lg font-light text-white text-justify leading-6">Add a new dimension to your car or microbus rental business by digitizing every trip. With exciting trip deals, flexible bookings and competitive pricing, you'll never go back to the old manual rental system again!</p>
+            </swiper-slide>
+            <swiper-slide>
+              <p class="body_text text-sm lg:text-lg font-light text-white text-justify leading-6">Gear up to maximize your car and microbus rental business with Jatri's pioneering technology. Get access to our massive network of passengers on our app, book trips at fair prices throughout the country and boost your income by the end of the month!</p>
+            </swiper-slide>
+          </swiper>
         </div>
 
         <div class="about_bg h-72 lg:h-auto w-full lg:w-2/3 order-first lg:order-last"></div>
@@ -626,3 +637,7 @@ const { locale } = useI18n()
   <!-- Testimonial Section End -->
 
 </template>
+
+<style>
+
+</style>
