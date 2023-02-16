@@ -1,4 +1,5 @@
 <script setup>
+import CountUp from 'vue-countup-v3'
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -8,8 +9,6 @@ const modules = [Pagination]
 </script>
 
 <template>
-
-
   <!-- Banner Section Start -->
   <section class="corporate_bg_color h-full md:bg-gray-200 mt-7 md:mt-0 relative">
     <div class="corporate_bg_color md:mt-40 h-80 sm:h-96 flex justify-between 2xl:justify-center items-center">
@@ -17,7 +16,7 @@ const modules = [Pagination]
           class="w-full px-5 mt-10 md:mt-0 sm:px-10 2xl:container 2xl:mx-auto flex justify-between items-center align-middle">
 
         <div class="w-1/2 sm:w-1/2 lg:flex-grow">
-          <div data-aos="fade-down-right">
+          <div data-aos="zoom-out-up" data-aos-duration="1000">
             <div class="banner_text uppercase text-white font-extrabold">
               <h1 class="text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-light subheading_text tracking-wide">
                 Empowering</h1>
@@ -31,7 +30,7 @@ const modules = [Pagination]
         </div>
 
         <div class="w-1/2 sm:w-1/2 lg:max-w-lg lg:w-full">
-          <div data-aos="fade-down-left">
+          <div data-aos="zoom-out-down">
             <img class="home_banner_img" alt="hero" src="~/assets/images/banner/banner-2.png" draggable="false">
           </div>
         </div>
@@ -54,7 +53,9 @@ const modules = [Pagination]
 
             <div class="single_counter my-5 sm:my-0 w-full sm:w-1/3">
               <div class="flex justify-center items-center">
-                <p class="corporate_color counter_number purecounter subheading_text" data-purecounter-start="0" data-purecounter-end="35">0</p>
+                <p class="corporate_color counter_number purecounter subheading_text">
+                  <count-up :end-val="35"></count-up>
+                </p>
                 <p class="corporate_color counter_number_sub text-4xl">k</p>
                 <p class="corporate_color counter_number_sub">+</p>
               </div>
@@ -64,7 +65,9 @@ const modules = [Pagination]
             <div class="single_counter my-5 sm:my-0 w-full sm:w-1/3">
               <div class="flex justify-center items-center">
                 <!-- data-purecounter-decimals="1" -->
-                <p class="corporate_color counter_number purecounter"  data-purecounter-start="0" data-purecounter-end="11">0</p>
+                <p class="corporate_color counter_number purecounter">
+                  <count-up :end-val="11"></count-up>
+                </p>
                 <p class="corporate_color counter_number_sub">+ million</p>
               </div>
               <p class="counter_tag">Tickets Sold</p>
@@ -72,7 +75,9 @@ const modules = [Pagination]
 
             <div class="my-5 sm:my-0 w-full sm:w-1/3">
               <div class="flex justify-center items-center">
-                <p class="corporate_color counter_number purecounter" data-purecounter-start="0" data-purecounter-end="1000">0</p>
+                <p class="corporate_color counter_number purecounter">
+                  <count-up :end-val="1000"></count-up>
+                </p>
                 <p class="corporate_color counter_number_sub">+</p>
               </div>
               <p class="counter_tag">Buses</p>

@@ -1476,6 +1476,11 @@
   "resolved" "https://registry.npmjs.org/core-util-is/-/core-util-is-1.0.3.tgz"
   "version" "1.0.3"
 
+"countup.js@^2.1.0":
+  "integrity" "sha512-EExCcu5rd7ffBj65B3CVNuS1HddN1Y4WuTfJEuocJXwZlNnlXZQ4sD9M/Cq32ZS0zR38F9vGMCw/iFcVImrNbw=="
+  "resolved" "https://registry.npmjs.org/countup.js/-/countup.js-2.4.2.tgz"
+  "version" "2.4.2"
+
 "crc-32@^1.2.0":
   "integrity" "sha512-ROmzCKrTnOwybPcJApAA6WBWij23HVfGVNKqqrZpuyZOHqK2CwHSvpGuyt/UNNvaIjEd8X5IFGp4Mh+Ie1IHJQ=="
   "resolved" "https://registry.npmjs.org/crc-32/-/crc-32-1.2.2.tgz"
@@ -4390,6 +4395,13 @@
   "version" "1.0.1"
   dependencies:
     "ufo" "^1.0.1"
+
+"vue-countup-v3@^1.1.0":
+  "integrity" "sha512-yDKKlmOmGXlRTL+pHBhAakpqzBdrNpW4fuZzJPWtPkkZT+012rqZf9SDNoJ0fwRaumANKCBUTm5l8qBvrPBAWQ=="
+  "resolved" "https://registry.npmjs.org/vue-countup-v3/-/vue-countup-v3-1.1.0.tgz"
+  "version" "1.1.0"
+  dependencies:
+    "countup.js" "^2.1.0"
 
 "vue-demi@^0.13.11", "vue-demi@^0.13.5":
   "integrity" "sha512-IR8HoEEGM65YY3ZJYAjMlKygDQn25D5ajNFNoKh9RSDMQtlzCxtfQjdQgv9jjK+m3377SsJXY8ysq8kLCZL25A=="
