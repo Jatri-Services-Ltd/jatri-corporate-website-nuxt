@@ -10,7 +10,9 @@ const profileDropDown = ref(false)
     <nav class="py-2 md:py-4 px-5 sm:px-10 2xl:container 2xl:mx-auto flex items-center justify-between flex-wrap">
       <div class="flex items-center flex-shrink-0 mr-6">
         <a href="#" class="font-semibold text-xl tracking-tight">
+        <nuxt-link>
           <img src="~/assets/images/logo/logo.svg" alt="" class="w-28">
+        </nuxt-link>
         </a>
       </div>
 
