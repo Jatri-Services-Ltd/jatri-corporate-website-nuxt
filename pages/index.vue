@@ -3,9 +3,9 @@ import CountUp from 'vue-countup-v3'
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper';
-const { locale } = useI18n()
-const modules = [Pagination]
+import { Pagination, FreeMode } from 'swiper';
+const { locale } = useI18n();
+const modules = [FreeMode, Pagination];
 </script>
 
 <template>
@@ -265,8 +265,8 @@ const modules = [Pagination]
     <div data-aos="fade-up">
       <div class="my-7 flex-grow lg:flex lg:justify-between text-white w-full">
 
-        <div class="corporate_bg_color w-full lg:w-1/3 py-9 lg:pl-10 2xl:pl-40 pr-5 order-last lg:order-first">
-          <div class="flex justify-center items-center">
+        <div class="corporate_bg_color w-full lg:w-1/3 py-20 pl-10 lg:pl-16 2xl:pl-52 pr-14 xl:pr-16 order-last lg:order-first">
+          <div class="flex justify-center items-center mb-3">
             <img class="w-2/4 sm:w-1/4" src="~/assets/images/logo/logo-white.png" alt="">
           </div>
           <swiper
@@ -597,7 +597,70 @@ const modules = [Pagination]
         <div class="flex flex-col justify-center text-center corporate_color">
           <h1 class="text-2xl md:text-3xl uppercase text-gray-400 font-bold">Don't just Take Our Word For It</h1>
         </div>
-        <div class="swiper-container mySwiperTestimonial mt-5 md:mt-0">
+
+        <swiper
+          :breakpoints="{
+            320: {
+              slidesPerView: 1
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 30
+            }
+          }"
+          :spaceBetween="30"
+          :freeMode="true"
+          :pagination="{
+            clickable: true,
+          }"
+          :modules="modules"
+          class="mySwiper"
+        >
+          <swiper-slide>
+            <div class="lg:mb-0 mb-6 p-4 pt-12">
+              <div class="flex flex-col justify-center items-center text-center relative min-h-[335px] corporate_bg_color rounded-2xl testimonial_body md:py-10">
+                <img src="~/assets/images/testimonial/partnerImage.jpg"  alt="testimonial" class="absolute -top-10 w-24 h-24 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" >
+                <div class="pt-16 pb-5 px-8 font-thin text-white">
+                  <p class="leading-relaxed text-sm body_text">I really appreciate the expansion opportunity Jatri has provided for my rental car service. With inter-city rides coming in regularly, I’ve managed to organically boost my income and grow my rental business.</p>
+                  <span class="inline-block h-1 w-10 rounded bg-white mt-6 mb-4"></span>
+                  <h2 class="font-medium title-font tracking-wider text-lg body_text">Our partner</h2>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <div class="lg:mb-0 mb-6 p-4 pt-12 swiper-slide">
+              <div class="flex flex-col justify-center items-center text-center relative min-h-[335px] corporate_bg_color rounded-2xl testimonial_body md:py-10">
+                <img src="~/assets/images/testimonial/ownerImage.jpg"  alt="testimonial" class="absolute -top-10 w-24 h-24 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" >
+                <div class="pt-16 pb-5 px-8 font-thin text-white">
+                  <p class="leading-relaxed text-sm body_text">Jatri’s fleet management is a blessing to my business. It is incredibly convenient and time-saving, and helps run my bus service smoothly.</p>
+                  <span class="inline-block h-1 w-10 rounded bg-white mt-6 mb-4"></span>
+                  <h2 class="font-medium title-font tracking-wider text-lg body_text">Bus Owner</h2>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+
+          <swiper-slide>
+            <div class="lg:mb-0 mb-6 p-4 pt-12 swiper-slide">
+              <div class="flex flex-col justify-center items-center text-center relative min-h-[335px] corporate_bg_color rounded-2xl testimonial_body md:py-10">
+                <img src="~/assets/images/testimonial/user_01.jpg"  alt="testimonial" class="absolute -top-10 w-24 h-24 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100" >
+                <div class="pt-16 pb-5 px-8 font-thin text-white">
+                  <p class="leading-relaxed text-sm body_text">Jatri is the go-to rental solution for my family on vacations. Planning a trip takes a lot of effort and energy, so finding a trustworthy rental car within an hour definitely helps speed up our plans!</p>
+                  <span class="inline-block h-1 w-10 rounded bg-white mt-6 mb-4"></span>
+                  <h2 class="font-medium title-font tracking-wider text-lg body_text">User</h2>
+                </div>
+              </div>
+            </div>
+          </swiper-slide>
+        </swiper>
+
+        <!-- <div class="swiper-container mySwiperTestimonial mt-5 md:mt-0">
           <div class="py-9 swiper-wrapper">
 
             <div class="lg:mb-0 mb-6 p-4 swiper-slide">
@@ -635,14 +698,11 @@ const modules = [Pagination]
 
           </div>
           <div class="swiper-pagination mt-5"></div>
-        </div>
+        </div> -->
+
       </div>
     </div>
   </section>
   <!-- Testimonial Section End -->
 
 </template>
-
-<style>
-
-</style>
