@@ -13,20 +13,20 @@
             <div class="w-1/2">
               <ul class="list-none footer-links">
                 <li class="mb-2">
-                  <a href="./about-us" class="footer_bnt body_text">about us</a>
+                  <nuxt-link to="/about-us" class="footer_bnt body_text">about us</nuxt-link>
                 </li>
                 <li class="mb-2">
-                  <a href="#" class="footer_bnt body_text">newsletter</a>
+                  <nuxt-link to="#" class="footer_bnt body_text">newsletter</nuxt-link>
                 </li>
               </ul>
             </div>
             <div class="w-1/2">
               <ul class="list-none footer-links">
                 <li class="mb-2">
-                  <a href="./blog" class="footer_bnt body_text">blog</a>
+                  <nuxt-link to="/blog" class="footer_bnt body_text">blog</nuxt-link>
                 </li>
                 <li class="mb-2">
-                  <a href="./career" class="footer_bnt body_text">career</a>
+                  <nuxt-link to="/career" class="footer_bnt body_text">career</nuxt-link>
                 </li>
               </ul>
             </div>
@@ -91,8 +91,8 @@
       <div class="flex flex-wrap justify-center lg:justify-start -mx-4 mt-3 sm:mt-0 md:py-4 items-center body_text">
         <p class="footer_bottom_menu"> &copy; Copyright | <span class="uppercase">jatri <span id="year"></span> all right reserved</span>
         </p>
-        <p class="footer_bottom_menu"><a href="./user/term-and-condition">Terms & Conditions</a></p>
-        <p class="footer_bottom_menu"><a href="./user/privacy-policy">Privacy Policy</a></p>
+        <p class="footer_bottom_menu"><nuxt-link to="/user/term-and-condition">Terms & Conditions</nuxt-link></p>
+        <p class="footer_bottom_menu"><nuxt-link to="/user/privacy-policy">Privacy Policy</nuxt-link></p>
         <div class="flex mt-4 lg:mt-0">
           <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser"><img
               src="~/assets/images/logo/play-store.png" alt="" class="footer_app_link"></a>

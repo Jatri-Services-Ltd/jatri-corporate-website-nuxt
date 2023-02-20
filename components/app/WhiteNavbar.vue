@@ -9,11 +9,9 @@ const profileDropDown = ref(false)
   <div class="bg-gray-50 text-gray-900 z-10 shadow fixed top-0 left-0 right-0">
     <nav class="py-2 md:py-4 px-5 sm:px-10 2xl:container 2xl:mx-auto flex items-center justify-between flex-wrap">
       <div class="flex items-center flex-shrink-0 mr-6">
-        <a href="#" class="font-semibold text-xl tracking-tight">
-        <nuxt-link>
+        <nuxt-link to="/" class="font-semibold text-xl tracking-tight">
           <img src="~/assets/images/logo/logo.svg" alt="" class="w-28">
         </nuxt-link>
-        </a>
       </div>
 
       <label
@@ -32,7 +30,7 @@ const profileDropDown = ref(false)
           <nuxt-link to="/about-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">About Us</nuxt-link>
           <nuxt-link to="/career" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Career</nuxt-link>
           <nuxt-link to="/blog" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Blog</nuxt-link>
-          <nuxt-link href="/contact-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Contact Us</nuxt-link>
+          <nuxt-link to="/contact-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Contact Us</nuxt-link>
           <nuxt-link to="https://rental.jatri.co/"
              class="mt-4 lg:inline-block lg:mt-0 mr-4 bg-corporate py-1 px-2 rounded-md text-white flex justify-center items-center gap-x-4"><i
               class="fas fa-car"></i> Rental</nuxt-link>
@@ -53,10 +51,10 @@ const profileDropDown = ref(false)
 
               </div>
                 <div class="absolute top-8 right-20 lg:right-0 bg-corporate z-10 lg:w-[150px] p-2 border border-corporate">
-                  <nuxt-link to="" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium"> RIDE SHARING GUIDELINE</nuxt-link>
-                  <nuxt-link to=""  class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">  ENLISTMENT CERTIFICATE</nuxt-link>
-                  <nuxt-link to="" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium"> JATRI PARTNER APP</nuxt-link>
-                  <nuxt-link to="" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">COVID-19 INFO</nuxt-link>
+                  <nuxt-link to="/ride-sharing-guideline" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium"> RIDE SHARING GUIDELINE</nuxt-link>
+                  <nuxt-link to="/enlistment-certificate"  class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">  ENLISTMENT CERTIFICATE</nuxt-link>
+                  <nuxt-link to="/jatri-partner-app-manual" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium"> JATRI PARTNER APP</nuxt-link>
+                  <nuxt-link to="https://corona.gov.bd/" target="_blank" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">COVID-19 INFO</nuxt-link>
                 </div>
             </div>
           </div>

@@ -3,6 +3,12 @@ import careerData from "~/dataStore/career.js";
 const router = useRoute()
 //router.params.slug
 const career = careerData.find(b => b.slug === router.params.slug)
+
+useServerSeoMeta({
+  title: 'Jatri | Career',
+  description: 'Jatri office is full of fast-paced problem-solvers intent on driving change in transport. As a member of our organization, you will be a part of a wonderful environment of learning and creativity.',
+})
+
 </script>
 
   <template>
