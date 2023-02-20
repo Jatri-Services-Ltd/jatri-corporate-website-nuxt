@@ -2,7 +2,7 @@ const careerList = [
     {
         "title": "Software Engineer (Backend) ",
         "slug": "software-engineer-laravel",
-        "iconPath": "/assets/images/job_circular/team_lead.jpg",
+        "iconPath": "/_nuxt/assets/images/job_circular/team_lead.jpg",
         "deadline": "25<sup>th</sup> January, 2023",
         "description": "<ul class=\"list-disc ml-4\">\n" +
             "<li>\n" +
@@ -46,7 +46,7 @@ const careerList = [
     {
         "title": "Software Engineer (Android)",
         "slug": "software-engineer-android",
-        "iconPath": "/assets/images/job_circular/Software-Engineer(Android).jpg",
+        "iconPath": "/_nuxt/assets/images/job_circular/Software-Engineer(Android).jpg",
         "deadline": "25<sup>th</sup> January, 2023",
         "description": "<p class=\"font-thin body_text mt-4\"><u>Job Description:</u></p>\n" +
             "<ul class=\"list-disc ml-4\">\n" +
@@ -94,7 +94,7 @@ const careerList = [
     {
         "title": "Executive - Accounts & Finance",
         "slug": "executive-account&finance",
-        "iconPath": "/assets/images/job_circular/manager_accounts.jpg",
+        "iconPath": "/_nuxt/assets/images/job_circular/manager_accounts.jpg",
         "deadline": "15<sup>th</sup> January, 2023",
         "description": "<p class=\"font-thin body_text mt-4\"><u>Job Description:</u></p>\n" +
             "<ul class=\"list-disc ml-4\">\n" +
@@ -133,22 +133,16 @@ const careerList = [
     },
     {
         "title": "UX Designer",
-        "slug": "/ux-designer",
-        "iconPath": "/assets/images/job_circular/creative_head.jpg",
+        "slug": "ux-designer",
+        "iconPath": "/_nuxt/assets/images/job_circular/creative_head.jpg",
         "deadline": "22<sup>th</sup> January, 2023",
-        "description": "<ul class=\"list-disc ml-4\">\n" +
-            "<li>\n" +
-            "<p class=\"font-thin body_text mt-4\"><u>Job Description:</u></p>\n" +
+        "description": "<p class=\"font-thin body_text mt-4\"><u>Job Description:</u></p>\n" +
             "<ul class=\"list-disc ml-4\">\n" +
             "<li>Understand product specifications, and business needs and create the design to deliver a user-friendly interface</li>\n" +
             "<li>Translate concepts into user flows, wireframes, mockups, and prototypes that lead to intuitive user experiences.</li>\n" +
             "<li>Design according to the flows, detailed wireframes, high-fidelity mockups, to clickable prototypes to express the vision.</li>\n" +
             "<li>Research and conduct informal testing to validate design directions and try to generate key features.</li>\n" +
             "</ul>\n" +
-            "</li>\n" +
-            "</ul>",
-        "additional_requirements": "<ul class=\"list-disc ml-4\">\n" +
-            "<li>\n" +
             "<p class=\"font-thin body_text mt-4\"><u>Additional Requirements:</u></p>\n" +
             "<ul class=\"list-disc ml-4\">\n" +
             "<li>At least 2 years of experience and a strong portfolio of related design projects</li>\n" +
@@ -160,7 +154,25 @@ const careerList = [
             "<li>Collaborate with the product, engineering, and management teams to ensure the creation and delivery of tailored experiences for the digital user.</li>\n" +
             "<li>Incorporate customer feedback, usage metrics, and usability findings into the design to enhance user experience.</li>\n" +
             "</ul>\n" +
-            "</li>\n" +
+            "<p class=\"font-thin body_text mt-4\"><u>Education &amp; Experience:</u></p>\n" +
+            "<ul class=\"list-disc ml-4\">\n" +
+            "<li>Graduate or university students</li>\n" +
+            "</ul>\n" +
+            "<p class=\"font-thin body_text mt-4\"><u>Benefits:</u></p>\n" +
+            "<ul class=\"list-disc ml-4\">\n" +
+            "<li>Lunch</li>\n" +
+            "<li>Festival bonus</li>\n" +
+            "<li>Yearly salary review</li>\n" +
+            "</ul>\n" +
+            "<p class=\"font-thin body_text mt-4\"><u>Number of vacancy</u></p>\n" +
+            "<ul class=\"list-disc ml-4\">\n" +
+            "<li>01</li>\n" +
+            "</ul>",
+        "short_description": "<ul class=\"list-disc ml-4\">\n" +
+            "<li>Understand product specifications, and business needs and create the design to deliver a user-friendly interface</li>\n" +
+            "<li>Translate concepts into user flows, wireframes, mockups, and prototypes that lead to intuitive user experiences.</li>\n" +
+            "<li>Design according to the flows, detailed wireframes, high-fidelity mockups, to clickable prototypes to express the vision.</li>\n" +
+            "<li>Research and conduct informal testing to validate design directions and try to generate key features.</li>\n" +
             "</ul>",
         "employment_type": "Full Time",
         "salary": "Negotiable",
