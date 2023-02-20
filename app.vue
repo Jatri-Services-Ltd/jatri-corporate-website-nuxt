@@ -22,6 +22,10 @@ nuxtApp.hook("page:start", () => {
 nuxtApp.hook("page:finish", () => {
   loading.value = false;
 });
+
+useServerSeoMeta({
+  title: 'Jatri',
+})
 </script>
 
 <style scoped>
