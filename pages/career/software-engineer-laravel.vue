@@ -1,6 +1,12 @@
 
 import careerList from '~~/dataStore/career';
 
+
+import careerList from '~~/dataStore/career';
+
+
+import careerList from '~~/dataStore/career';
+
 import WhiteNavbar from '~~/components/app/WhiteNavbar.vue';
 
 <template>
@@ -66,7 +72,7 @@ import WhiteNavbar from '~~/components/app/WhiteNavbar.vue';
                         <input type="radio" id="2-star" name="crating" value="2">
                         <label for="2-star" title="Not Good">2 stars</label>
 
-                        <input type="radio" id="1-star" required="" name="crating" value="1" aria-required="true">
+                        <input type="radio" id="1-star" required name="crating" value="1" aria-required="true">
                         <label for="1-star" title="Bad">1 star</label>
                       </ul>
                     </div>

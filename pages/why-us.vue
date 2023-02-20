@@ -1,5 +1,12 @@
 
 import WhiteNavbar from '~~/components/app/WhiteNavbar.vue';
+<script setup>
+useServerSeoMeta({
+  title: 'Jatri | Why us | simple and convenient | safety and security',
+  description: 'Open up the app and find the service you need in minutes. Book a trip, board the vehicle and we’ll take you there safe and sound.',
+})
+</script>
+
 
 <template>
     <!-- Banner Start -->

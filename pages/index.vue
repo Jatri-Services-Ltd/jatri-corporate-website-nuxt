@@ -6,6 +6,14 @@ import 'swiper/css/pagination';
 import { Pagination, FreeMode } from 'swiper';
 const { locale } = useI18n();
 const modules = [FreeMode, Pagination];
+
+useServerSeoMeta({
+  title: 'Jatri | convenient travel experience in Bangladesh',
+  ogTitle: 'https://jatri.co/',
+  description: 'Jatri is a public transport journey planner, digital ticketing and mobility marketplace, driving productivity by helping drivers to offer reliable transport to the commuters through our state-of-the-art technology.',
+  ogDescription: 'Jatri is a public transport journey planner, digital ticketing and mobility marketplace, driving productivity by helping drivers to offer reliable transport to the commuters through our state-of-the-art technology.',
+  ogImage: 'src/images/logo/favicon.png',
+})
 </script>
 
 <template>

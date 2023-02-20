@@ -1,3 +1,10 @@
+<script setup>
+useServerSeoMeta({
+  title: 'Jatri | Contact us',
+  description: 'Got a question? For any kind of assistance in using our services, don’t hesitate to get in touch at support@jatri.co.',
+})
+</script>
+
 <template>
   <!-- Banner Start -->
   <section class="relative">
