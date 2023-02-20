@@ -4,7 +4,7 @@ const careerList = [
         "slug": "software-engineer-laravel",
         "iconPath": "/assets/images/job_circular/team_lead.jpg",
         "deadline": "25<sup>th</sup> January, 2023",
-        "description": `<ul class="list-disc ml-4">
+        "description": "<ul class="list-disc ml-4">
         <li>Understand product specifications, and business needs and create the design to deliver a user-friendly interface</li>
         <li>Translate concepts into user flows, wireframes, mockups, and prototypes that lead to intuitive user experiences.</li>
         <li>Design according to the flows, detailed wireframes, high-fidelity mockups, to clickable prototypes to express the vision.</li>
@@ -34,17 +34,17 @@ const careerList = [
         <p class="font-thin body_text mt-4"><u>Number of vacancy</u></p>
         <ul class="list-disc ml-4">
         <li>01</li>
+        </ul>",
+        "short_description": `<ul class="list-disc ml-4">
+        <li>Produce simple, maintainable code while always looking to improve on it.</li>
+        <li>Bring new ideas according to the requirements &amp; complete the code properly.</li>
+        <li>Deep understanding of RDBMS, NoSQL, and their usage.</li>
+        <li>Good understanding of OOP principles, SOLID principles, and their practical usage.</li>
         </ul>`,
-        "short_description": "<ul class=\"list-disc ml-4\">\n" +
-            "<li>Understand product specifications, and business needs and create the design to deliver a user-friendly interface</li>\n" +
-            "<li>Translate concepts into user flows, wireframes, mockups, and prototypes that lead to intuitive user experiences.</li>\n" +
-            "<li>Design according to the flows, detailed wireframes, high-fidelity mockups, to clickable prototypes to express the vision.</li>\n" +
-            "<li>Research and conduct informal testing to validate design directions and try to generate key features.</li>\n" +
-            "</ul>",
         "employment_type": "Full Time",
-        "salary": "20000-30000",
-        "location": "Dhaka",
-        "mail_to": "hr@jatri.co",
+        "salary": "35,000-55,000",
+        "location": "Gulshan - 2, Dhaka",
+        "mail_to": "career@jatri.co",
     },
 
     {
@@ -93,7 +93,7 @@ const careerList = [
         "employment_type": "Full Time",
         "salary": "20000-30000",
         "location": "Dhaka",
-        "mail_to": "hr@jatri.co",
+        "mail_to": "career@jatri.co",
     }
 ]
 
