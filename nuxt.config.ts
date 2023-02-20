@@ -15,7 +15,10 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
-            link: [{ rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.4.1/css/all.css' }],
+            link: [
+                { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.4.1/css/all.css' },
+                { rel: 'icon', type: 'image/x-icon', href: '/loader-icon.png' }
+            ],
         },
     },
     modules: [
@@ -39,5 +42,5 @@ export default defineNuxtConfig({
             // If fallback is needed, you need to define
             fallbackLocale: 'en',
         },
-    }
+    },
 })

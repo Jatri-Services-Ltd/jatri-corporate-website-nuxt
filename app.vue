@@ -2,7 +2,7 @@
   <div v-if="loading" class='fixed inset-0 bg-white z-50 overflow-hidden' style='background: #e4e4e4bd'>
     <div class='flex flex-col justify-center items-center h-screen'>
       <div class=loader-container>
-        <img src="~/assets/images/loader-icon.png" alt="loader" id="breathing-button"/>
+        <img src="~/public/loader-icon.png" alt="loader" id="breathing-button"/>
         <div class="loader"></div>
         <h5 class='loading-text'>Please wait...</h5>
       </div>
