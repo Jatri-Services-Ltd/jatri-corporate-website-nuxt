@@ -3,7 +3,6 @@ useServerSeoMeta({
   title: 'Jatri | About us',
   description: 'We work equally with bus operators, drivers and regulators of Bangladesh to solve transportation problems from the very core.',
 })
-const { locale } = useI18n();
 </script>
 
 

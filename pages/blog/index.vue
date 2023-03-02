@@ -24,10 +24,10 @@ useServerSeoMeta({
     <div data-aos="zoom-in">
       <div class="flex flex-col justify-center items-center gap-3 my-10">
         <h1 class="corporate_color text-3xl md:text-5xl uppercase heading_text">
-          Featured articles
+          {{ $t('blog-title') }}
         </h1>
         <p class="text-black body_text text-sm md:text-lg body_text">
-          Here’s a sneak peek at the latest happenings in Jatri
+          {{ $t('blog-des') }}
         </p>
       </div>
     </div>
