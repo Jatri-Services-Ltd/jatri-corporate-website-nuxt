@@ -27,12 +27,12 @@ useServerSeoMeta({
           <div data-aos="zoom-out-up" data-aos-duration="1000">
             <div class="banner_text uppercase text-white font-extrabold">
               <h1 class="text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-light subheading_text tracking-wide">
-                Empowering</h1>
+                {{ $t('empowering') }}</h1>
               <h1 class="text-xl sm:text-2xl md:text-5xl xl:text-6xl font-light subheading_text tracking-wide">
-                Bangladesh to</h1>
+                {{ $t('bangladesh_to') }}</h1>
               <!-- <h1 class="text-3xl md:text-4xl lg:text-5xl ">Travel</h1> -->
-              <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-8xl font-light heading_text tracking-wide">Travel
-                Better!</h1>
+              <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-8xl font-light heading_text tracking-wide">  {{ $t('travel_better') }}
+                </h1>
             </div>
           </div>
         </div>
@@ -56,7 +56,7 @@ useServerSeoMeta({
     <div class="counter_bg">
       <div data-aos="fade-up">
         <div class="container mx-auto py-16 md:py-20 lg:py-24">
-          <h5 class="uppercase text-2xl md:text-3xl lg:text-4xl text-center text-white font-bold tracking-widest">Serving millions across Bangladesh</h5>
+          <h5 class="uppercase text-2xl md:text-3xl lg:text-4xl text-center text-white font-bold tracking-widest"> {{ $t('counter_total') }}</h5>
           <div class="sm:flex mt-4 lg:mt-3">
 
             <div class="single_counter my-5 sm:my-0 w-full sm:w-1/3">
@@ -67,7 +67,7 @@ useServerSeoMeta({
                 <p class="corporate_color counter_number_sub text-4xl">k</p>
                 <p class="corporate_color counter_number_sub">+</p>
               </div>
-              <p class="counter_tag">Rental Partners</p>
+              <p class="counter_tag"> {{ $t('rental_partners') }}</p>
             </div>
 
             <div class="single_counter my-5 sm:my-0 w-full sm:w-1/3">
@@ -78,7 +78,7 @@ useServerSeoMeta({
                 </p>
                 <p class="corporate_color counter_number_sub">+ million</p>
               </div>
-              <p class="counter_tag">Tickets Sold</p>
+              <p class="counter_tag">{{ $t('rental_partners') }}</p>
             </div>
 
             <div class="my-5 sm:my-0 w-full sm:w-1/3">
@@ -88,7 +88,7 @@ useServerSeoMeta({
                 </p>
                 <p class="corporate_color counter_number_sub">+</p>
               </div>
-              <p class="counter_tag">Buses</p>
+              <p class="counter_tag">{{ $t('buses') }}</p>
             </div>
           </div>
         </div>
@@ -102,9 +102,9 @@ useServerSeoMeta({
     <div class="card_bg">
       <div class="px-5 sm:px-10 2xl:container 2xl:mx-auto py-10 lg:py-20 2xl:py-24">
         <h5 class="corporate_color">
-          <span class="text-2xl md:text-3xl xl:text-5xl font-bold">We will go the</span>
+          <span class="text-2xl md:text-3xl xl:text-5xl font-bold">{{ $t('card_header1') }}</span>
           <br>
-          <span class="text-4xl md:text-6xl xl:text-7xl font-extrabold heading_text">extra mile for you</span>
+          <span class="text-4xl md:text-6xl xl:text-7xl font-extrabold heading_text">{{ $t('card_header2') }}</span>
         </h5>
 
         <div class="container lg:px-5 py-10 lg:py-24 mx-auto">
@@ -114,11 +114,11 @@ useServerSeoMeta({
                 <div class="card corporate_bg_color">
                   <img class="card_img" src="~/assets/images/card/ticketing_card.jpg" alt="blog">
                   <div class="card_body">
-                    <h1 class="card_title font-bold subheading_text">Ticketing</h1>
-                    <p class="card_description body_text">Book your ticket with our over-the-counter ticketing system to get going in no time.</p>
+                    <h1 class="card_title font-bold subheading_text">{{ $t('ticketing') }}</h1>
+                    <p class="card_description body_text">{{ $t('ticketing_description') }}</p>
                   </div>
                   <div class="card_footer">
-                    <button class="card_btn corporate_color body_text " onclick="window.location.href = 'https://ticket.jatri.co/'">Book Ticket</button>
+                    <button class="card_btn corporate_color body_text " onclick="window.location.href = 'https://ticket.jatri.co/'">{{ $t('ticketing_booking') }}</button>
                   </div>
                 </div>
               </div>
@@ -127,11 +127,11 @@ useServerSeoMeta({
                 <div class="card corporate_bg_color">
                   <img class="card_img" src="~/assets/images/card/partner_card-2.jpg" alt="blog">
                   <div class="card_body">
-                    <h1 class="card_title font-bold subheading_text">Rentals</h1>
-                    <p class="card_description body_text">Enjoy unbeatable prices with our on-demand car rental service. Open the app, enter trip details and you’re all set to go.</p>
+                    <h1 class="card_title font-bold subheading_text">{{ $t('rentals') }}</h1>
+                    <p class="card_description body_text">{{ $t('rentals_description') }}</p>
                   </div>
                   <div class="card_footer">
-                    <button class="card_btn corporate_color body_text" onclick="window.location.href = 'https://rental.jatri.co/'">Rent Now</button>
+                    <button class="card_btn corporate_color body_text" onclick="window.location.href = 'https://rental.jatri.co/'">{{ $t('rentals_booking') }}</button>
                   </div>
                 </div>
               </div>
@@ -140,11 +140,11 @@ useServerSeoMeta({
                 <div class="card corporate_bg_color">
                   <img class="card_img" src="~/assets/images/card/career_card.jpg" alt="blog">
                   <div class="card_body">
-                    <h1 class="card_title font-bold subheading_text">Career</h1>
-                    <p class="card_description body_text">If you are a creative problem solver dedicated to driving change in Bangladesh, you’re in the right place. Check out our career options below!</p>
+                    <h1 class="card_title font-bold subheading_text">{{ $t('career') }}</h1>
+                    <p class="card_description body_text">{{ $t('career_description') }}</p>
                   </div>
                   <div class="card_footer">
-                    <button class="card_btn corporate_color body_text" onclick="window.location.href = './career'">join the team</button>
+                    <button class="card_btn corporate_color body_text" onclick="window.location.href = './career'">{{ $t('career_booking') }}</button>
                   </div>
                 </div>
               </div>
@@ -188,8 +188,8 @@ useServerSeoMeta({
       <div class="pr-5 lg:pr-0 w-full lg:w-1/3">
         <div data-aos="fade-up">
           <div class="corporate_bg_color rounded-r-2xl py-9 pl-5 sm:pl-10 2xl:pl-40 pr-5">
-            <h3 class="text-2xl lg:text-3xl uppercase subheading_text">How</h3>
-            <h1 class="text-4xl lg:text-5xl uppercase heading_text">IT Works</h1>
+<!--            <h3 class="text-2xl lg:text-3xl uppercase subheading_text">How</h3>-->
+            <h1 class="text-4xl lg:text-5xl uppercase heading_text">{{ $t('how_it_works') }}</h1>
             <div class="mt-5">
               <ul class="list-none">
                 <li class="flex justify-start align-top items-start gap-3 mt-2 mb-8">
@@ -197,7 +197,7 @@ useServerSeoMeta({
                     <i class="far fa-star"></i>
                   </div>
                   <span class="text-justify body_text text-sm lg:text-lg font-light">
-                      Our over-the-counter ticketing system is the go-to assistant of the bus personnel working in the public transportation.
+                       {{ $t('how_it_works_des1') }}
                     </span>
                 </li>
                 <li class="flex justify-start align-top items-start gap-3 mt-2 mb-8">
@@ -205,7 +205,8 @@ useServerSeoMeta({
                     <i class="far fa-star"></i>
                   </div>
                   <span class="text-justify body_text text-sm lg:text-lg font-light">
-                      With seamless ticketing options to get you from A to B, traveling has never been easier. Book, board and go!
+                    {{ $t('how_it_works_des2') }}
+
                     </span>
                 </li>
               </ul>
@@ -223,11 +224,11 @@ useServerSeoMeta({
                     <div class="corporate_bg_color text-white w-8 h-8 rounded-full flex justify-center align-middle items-center">
                       <i class="far fa-star"></i>
                     </div>
-                    <h5 class="text-white text-2xl subheading_text">Ticketing</h5>
+                    <h5 class="text-white text-2xl subheading_text">{{ $t('ticketing') }}</h5>
                   </div>
                   <span class="text-justify body_text text-sm lg:text-lg font-light">
-                      Whether you’re looking for intercity or intra-city tickets, Jatri Tickets is here to serve you all day long. <br>
-                      Enjoy all tickets from all tiers of buses on one platform. Book through the app or directly at the counter- we’re here to tag along with you all through the journey!
+                       {{ $t('how_it_works_tickting_des1_part1') }}<br>
+                       {{ $t('how_it_works_tickting_des1_part2') }}
 
                     </span>
                 </li>
@@ -241,10 +242,10 @@ useServerSeoMeta({
                     <div class="corporate_bg_color text-white w-8 h-8 rounded-full flex justify-center align-middle items-center">
                       <i class="far fa-star"></i>
                     </div>
-                    <h5 class="text-white text-2xl subheading_text">Rental</h5>
+                    <h5 class="text-white text-2xl subheading_text">{{ $t('rentals') }}</h5>
                   </div>
                   <span class="text-justify body_text text-sm lg:text-lg font-light">
-                      Travel in style with our dynamic fleet of car rentals. Book your car through the app, and get ready to hit the road!
+                     {{ $t('how_it_works_rentals_des') }}
                     </span>
                 </li>
                 <li class="gap-3 mt-2 mb-8">
@@ -252,10 +253,10 @@ useServerSeoMeta({
                     <div class="corporate_bg_color text-white w-8 h-8 rounded-full flex justify-center align-middle items-center">
                       <i class="far fa-star"></i>
                     </div>
-                    <h5 class="text-white text-2xl subheading_text">Coach</h5>
+                    <h5 class="text-white text-2xl subheading_text">{{ $t('how_it_works_coach') }}</h5>
                   </div>
                   <span class="text-justify body_text text-sm lg:text-lg font-light">
-                      A personalized & cost-effective transportation service for corporates and students, coaches are a timely and reliable solution for the everyday commute.
+                       {{ $t('how_it_works_coach_desc') }}
                     </span>
                 </li>
               </ul>

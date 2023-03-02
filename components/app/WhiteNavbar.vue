@@ -26,23 +26,23 @@ const profileDropDown = ref(false)
       <div class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="menu">
         <div class="text-sm lg:flex-grow">
 
-          <nuxt-link to="/why-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Why Us</nuxt-link>
-          <nuxt-link to="/about-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">About Us</nuxt-link>
-          <nuxt-link to="/career" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Career</nuxt-link>
-          <nuxt-link to="/blog" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Blog</nuxt-link>
-          <nuxt-link to="/contact-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">Contact Us</nuxt-link>
+          <nuxt-link to="/why-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('why_us') }}</nuxt-link>
+          <nuxt-link to="/about-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('about_us') }}</nuxt-link>
+          <nuxt-link to="/career" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('career') }}</nuxt-link>
+          <nuxt-link to="/blog" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('blog') }}</nuxt-link>
+          <nuxt-link to="/contact-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('contact_us') }}</nuxt-link>
           <nuxt-link to="https://rental.jatri.co/"
              class="mt-4 lg:inline-block lg:mt-0 mr-4 bg-corporate py-1 px-2 rounded-md text-white flex justify-center items-center gap-x-4"><i
-              class="fas fa-car"></i> Rental</nuxt-link>
+              class="fas fa-car"></i> {{ $t('rental') }}</nuxt-link>
           <nuxt-link to ="https://ticket.jatri.co/"
              class="lg:inline-block mt-4 lg:mt-0 mr-4 bg-corporate py-1 px-2 rounded-md text-white flex justify-center items-center gap-x-4"><i
-              class="fas fa-bus"></i> Bus Ticket</nuxt-link>
+              class="fas fa-bus"></i> {{ $t('bus_ticket') }}</nuxt-link>
         </div>
 
           <div class="relative mt-4 lg:mt-0">
             <div @click="profileDropDown = !profileDropDown" class="flex justify-between lg:justify-center items-center cursor-pointer">
 
-              <div class=" text-sm font-normal text-black">Others</div>
+              <div class=" text-sm font-normal text-black">{{ $t('others') }}</div>
               <img :class="profileDropDown ? 'rotate-180 ease-in-out duration-300' : ''" src="~/assets/images/logo/down.png" alt="">
             </div>
             <button v-if="profileDropDown" @click="profileDropDown = false" class="fixed inset-0 bg-transparent h-full w-full cursor-default"></button>
