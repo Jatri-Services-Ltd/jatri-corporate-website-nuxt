@@ -49,7 +49,7 @@ useServerSeoMeta({
             <div data-aos="fade-up">
               <div class="flex flex-col items-start gap-3">
                 <div class="flex flex-col gap-2 w-full">
-                  <label for="" class="corporate_color subheading_text">Name</label>
+                  <label for="" class="corporate_color subheading_text">{{ $t('name') }}</label>
                   <input
                       type="text"
                       placeholder="Your Name..."
@@ -58,7 +58,7 @@ useServerSeoMeta({
                 </div>
 
                 <div class="flex flex-col gap-2 w-full">
-                  <label for="" class="corporate_color subheading_text">Email</label>
+                  <label for="" class="corporate_color subheading_text">{{ $t('email') }}</label>
                   <input
                       type="email"
                       placeholder="Your Email..."
@@ -67,7 +67,7 @@ useServerSeoMeta({
                 </div>
 
                 <div class="flex flex-col gap-2 w-full">
-                  <label for="" class="corporate_color subheading_text">Subject</label>
+                  <label for="" class="corporate_color subheading_text">{{ $t('subject') }}</label>
                   <input
                       type="text"
                       placeholder="Subject..."
@@ -76,7 +76,7 @@ useServerSeoMeta({
                 </div>
 
                 <div class="flex flex-col gap-2 w-full">
-                  <label for="" class="corporate_color subheading_text">Message</label>
+                  <label for="" class="corporate_color subheading_text">{{ $t('message') }}</label>
                   <textarea
                       id=""
                       required
@@ -86,7 +86,7 @@ useServerSeoMeta({
                 </div>
 
                 <button type="submit" class="corporate_bg_color rounded-md text-white uppercase text-center p-4 w-full">
-                  Send
+                  {{ $t('send') }}
                 </button>
               </div>
             </div>
@@ -95,15 +95,11 @@ useServerSeoMeta({
           <div class="md:w-1/2 mt-10 md:mt-0">
             <div data-aos="fade-up">
               <h1 class="uppercase corporate_color text-2xl md:text-5xl subheading_text">
-                Contact Us
+                {{ $t('contact-us-title') }}
               </h1>
 
               <p class="text-justify leading-6 my-3">
-                Jatri is the fastest growing technology company in Bangladesh
-                with a mission to bring reliable transport to everyone,
-                everywhere at the touch of a button. We are offering a
-                mobility-as-a-service platform that enhances bus system
-                reliability and quality. Get in touch!
+                {{ $t('contact-us-des') }}
               </p>
 
               <div class="flex justify-start items-center gap-5 my-4">
@@ -111,8 +107,8 @@ useServerSeoMeta({
                   <i class="fa fa-user"></i>
                 </div>
                 <div class="leading-5 md:leading-10">
-                  <p class="corporate_color_dark text-md">Phone</p>
-                  <a href="tel:09642080808" class="corporate_color text-sm">09642080808</a>
+                  <p class="corporate_color_dark text-md">{{ $t('phone') }}</p>
+                  <a href="tel:09642080808" class="corporate_color text-sm">{{ $t('phone-number') }}</a>
                 </div>
               </div>
 
@@ -121,9 +117,9 @@ useServerSeoMeta({
                   <i class="fa fa-map-marker-alt"></i>
                 </div>
                 <div class="leading-5 md:leading-10">
-                  <p class="corporate_color_dark text-md">Address</p>
+                  <p class="corporate_color_dark text-md">{{ $t('address') }}</p>
                   <p class="corporate_color text-sm">
-                    Road 24, House 15(2nd floor), Gulshan-02, Dhaka
+                    {{ $t('address-des') }}
                   </p>
                 </div>
               </div>
@@ -133,7 +129,7 @@ useServerSeoMeta({
                   <i class="fa fa-envelope"></i>
                 </div>
                 <div class="leading-5 md:leading-10">
-                  <p class="corporate_color_dark text-md">Email</p>
+                  <p class="corporate_color_dark text-md">{{ $t('email') }}</p>
                   <a href="mailto:support@jatri.co" class="corporate_color text-sm">support@jatri.co</a>
                 </div>
               </div>

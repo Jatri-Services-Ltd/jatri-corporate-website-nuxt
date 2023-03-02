@@ -20,17 +20,17 @@ useServerSeoMeta({
               <h4
                   class="text-3xl sm:text-3xl md:text-5xl xl:text-6xl font-light subheading_text tracking-wide"
               >
-                Join
+              {{ $t('career-title1') }}
               </h4>
               <h5
                   class="text-xl sm:text-2xl xl:text-5xl font-light subheading_text tracking-wide"
               >
-                The Winning
+              {{ $t('career-title2') }}
               </h5>
               <h1
                   class="text-5xl sm:text-6xl xl:text-9xl font-light heading_text tracking-wide"
               >
-                Team
+              {{ $t('career-title3') }}
               </h1>
             </div>
           </div>
