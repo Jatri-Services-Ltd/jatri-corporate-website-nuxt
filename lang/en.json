@@ -1,3 +1,21 @@
 {
-  "title": "Vue 3 i18n"
+  "title": "Vue 3 i18n",
+  "about-us-bannerTitle1": "We are committed",
+  "our-derived": "OUR DERIVED",
+  "mission": "MISSION",
+  "about-us-mission-des1": "Jatri is a public transport journey planner, digital ticketing, fleet management and mobility marketplace, driving productivity by helping drivers to offer reliable transport to the commuters through our state-of-the-art technology.",
+  "about-us-mission-des2": "Transportation has been a major pain point for the people of Bangladesh for many years, and we aim to eradicate these issues with cutting-edge technology.",
+  "who-we": "WHO WE",
+  "serve": "SERVE",
+  "who-we-serve-content": "We work equally with bus operators, drivers and regulators of Bangladesh to solve transportation problems from the very core.",
+  "who-we-serve-partner-title": "Partner",
+  "who-we-serve-partner-des": "We empower drivers to earn money on the go. We ensure access to our millions of users, empowering drivers to digitally book trips and maximize their rental business revenue.",
+  "who-we-serve-operator-title": "Operator",
+  "who-we-serve-operator-des": "Our partner bus companies enable us to digitize transport for the better. We work with bus owners to ensure a seamless experience on every single trip.",
+  "who-we-serve-passenger-title": "Passenger",
+  "who-we-serve-passenger-des": "Passengers are the heart of our operations. Ensuring convenience, safety and quality transport to passengers is our core motto. They ask, and we listen.",
+  "our": "OUR",
+  "commitment": "COMMITMENT",
+  "our-commitment-des": "We are driven by creating a meaningful impact in the transportation sector. Through innovation, technology and action, we hope to sustainably redefine how people travel in Bangladesh. The bar to empower every passenger, operator and driver is set very high, we are determined to reach it and leave a meaningful imprint on society."
+
 }

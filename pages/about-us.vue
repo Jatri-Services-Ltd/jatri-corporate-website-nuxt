@@ -3,6 +3,7 @@ useServerSeoMeta({
   title: 'Jatri | About us',
   description: 'We work equally with bus operators, drivers and regulators of Bangladesh to solve transportation problems from the very core.',
 })
+const { locale } = useI18n();
 </script>
 
 
@@ -68,7 +69,7 @@ useServerSeoMeta({
       <div class="uppercase corporate_color py-6">
         <div data-aos="fade-up">
           <h3 class="text-xl xl:text-5xl font-light subheading_text">
-            Our derived
+            {{ $t('our-derived') }}
           </h3>
           <h1
               class="
@@ -79,7 +80,7 @@ useServerSeoMeta({
                 tracking-wide
               "
           >
-            Mission
+          {{ $t('mission') }}
           </h1>
         </div>
       </div>
@@ -93,16 +94,11 @@ useServerSeoMeta({
         <div class="md:w-1/2 h-full">
           <div data-aos="fade-up">
             <p class="text-justify body_text">
-              Jatri is a public transport journey planner, digital ticketing,
-              fleet management and mobility marketplace, driving productivity
-              by helping drivers to offer reliable transport to the commuters
-              through our state-of-the-art technology.
+              {{ $t('about-us-mission-des1') }}
             </p>
             <br />
             <p class="text-justify body_text">
-              Transportation has been a major pain point for the people of
-              Bangladesh for many years, and we aim to eradicate these issues
-              with cutting-edge technology.
+              {{ $t('about-us-mission-des2') }}
             </p>
           </div>
         </div>
@@ -121,7 +117,7 @@ useServerSeoMeta({
         <div class="about_heading uppercase corporate_color text-right py-6">
           <div data-aos="fade-up">
             <h3 class="text-xl xl:text-5xl font-light subheading_text">
-              Who We
+              {{ $t('who-we') }}
             </h3>
             <h1
                 class="
@@ -132,14 +128,13 @@ useServerSeoMeta({
                   tracking-wide
                 "
             >
-              Serve
+            {{ $t('serve') }}
             </h1>
           </div>
         </div>
         <div data-aos="fade-up">
           <p class="text-justify body_text">
-            We work equally with bus operators, drivers and regulators of
-            Bangladesh to solve transportation problems from the very core.
+            {{ $t('who-we-serve-content') }}
           </p>
         </div>
 
@@ -166,12 +161,10 @@ useServerSeoMeta({
               </div>
               <div>
                 <h2 class="text-center text-4xl font-semibold heading_text">
-                  Partner
+                  {{ $t('who-we-serve-partner-title') }}
                 </h2>
                 <p class="mt-2 leading-5 text-justify body_text">
-                  We empower drivers to earn money on the go. We ensure access
-                  to our millions of users, empowering drivers to digitally
-                  book trips and maximize their rental business revenue.
+                  {{ $t('who-we-serve-partner-des') }}
                 </p>
               </div>
             </div>
@@ -197,12 +190,10 @@ useServerSeoMeta({
               </div>
               <div>
                 <h2 class="text-center text-4xl font-semibold heading_text">
-                  Operator
+                  {{ $t('who-we-serve-operator-title') }}
                 </h2>
                 <p class="mt-2 leading-5 text-justify body_text">
-                  Our partner bus companies enable us to digitize transport
-                  for the better. We work with bus owners to ensure a seamless
-                  experience on every single trip.
+                  {{ $t('who-we-serve-operator-des') }}
                 </p>
               </div>
             </div>
@@ -228,12 +219,10 @@ useServerSeoMeta({
               </div>
               <div>
                 <h2 class="text-center text-4xl font-semibold heading_text">
-                  Passenger
+                  {{ $t('who-we-serve-passenger-title') }}
                 </h2>
                 <p class="mt-2 leading-5 text-justify body_text">
-                  Passengers are the heart of our operations. Ensuring
-                  convenience, safety and quality transport to passengers is
-                  our core motto. They ask, and we listen.
+                  {{ $t('who-we-serve-passenger-des') }}
                 </p>
               </div>
             </div>
@@ -254,7 +243,7 @@ useServerSeoMeta({
         <div class="about_heading uppercase corporate_color py-6">
           <div data-aos="fade-up">
             <h3 class="text-xl xl:text-5xl font-light subheading_text">
-              Our
+              {{ $t('our') }}
             </h3>
             <h1
                 class="
@@ -265,18 +254,13 @@ useServerSeoMeta({
                   tracking-wide
                 "
             >
-              Commitment
+            {{ $t('commitment') }}
             </h1>
           </div>
         </div>
         <div data-aos="fade-up">
           <p class="text-justify leading-5 body_text">
-            We are driven by creating a meaningful impact in the
-            transportation sector. Through innovation, technology and action,
-            we hope to sustainably redefine how people travel in Bangladesh.
-            The bar to empower every passenger, operator and driver is set
-            very high, we are determined to reach it and leave a meaningful
-            imprint on society.
+            {{ $t('our-commitment-des') }}
           </p>
         </div>
       </div>

@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 const profileDropDown = ref(false)
-
+const { locale } = useI18n();
 </script>
 
 
@@ -39,7 +39,13 @@ const profileDropDown = ref(false)
               class="fas fa-bus"></i> Bus Ticket</nuxt-link>
         </div>
 
-          <div class="relative mt-4 lg:mt-0">
+        <!-- Language -->
+        <select v-model="locale">
+          <option value="en">en</option>
+          <option value="bn">bn</option>
+        </select>
+
+          <div class="relative mt-4 lg:mt-0 ml-4">
             <div @click="profileDropDown = !profileDropDown" class="flex justify-between lg:justify-center items-center cursor-pointer">
 
               <div class=" text-sm font-normal text-black">Others</div>
