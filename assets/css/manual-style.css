@@ -207,6 +207,7 @@ body {
 /* ================ terms and conditions and privacy policy =================*/
 .contact_us_head {
   height: 200px;
+  padding: 16px;
 }
 
 @media (max-width: 767px) {
