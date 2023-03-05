@@ -48,7 +48,7 @@ const { locale } = useI18n();
           <div class="relative mt-4 lg:mt-0 ml-4">
             <div @click="profileDropDown = !profileDropDown" class="flex justify-between lg:justify-center items-center cursor-pointer">
 
-              <div class=" text-sm font-normal text-black">{{ $t('others') }}</div>
+              <div class="text-sm font-normal text-black">{{ $t('others') }}</div>
               <img :class="profileDropDown ? 'rotate-180 ease-in-out duration-300' : ''" src="~/assets/images/logo/down.png" alt="">
             </div>
             <button v-if="profileDropDown" @click="profileDropDown = false" class="fixed inset-0 bg-transparent h-full w-full cursor-default"></button>
