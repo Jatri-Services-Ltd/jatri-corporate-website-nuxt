@@ -48,7 +48,7 @@ const { locale } = useI18n();
         <div class="flex justify-center items-center mt-4 lg:mt-0">
           <div>
             <input value="bn" v-model="locale" id="a" type="radio" class="hidden">
-            <label for="a" :class="locale === 'bn' ? 'bg-[#f04935] text-white' : 'cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-r-[4px]'" class="cursor-pointer w-[60px] bg-white text-primaryText leading-[20px] text-[12px] flex justify-center items-center font-[600] h-[32px] rounded-l-[4px] border-l border-t border-b border-corporateBorder">বাংলা</label>
+            <label for="a" :class="locale === 'bn' ? 'bg-[#f04935] text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-l-[4px]">বাংলা</label>
           </div>
           <div>
             <input value="en" v-model="locale" id="b" type="radio" class="hidden">

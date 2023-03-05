@@ -1,6 +1,7 @@
 <script setup>
 import blogData from "~/dataStore/blog.js";
 const router = useRoute()
+console.log(router)
 //router.params.slug
 const blog = blogData.find(b => b.slug === router.params.slug)
 useServerSeoMeta({
