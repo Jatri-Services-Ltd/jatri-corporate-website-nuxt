@@ -1,5 +1,4 @@
 
-import WhiteNavbar from '~~/components/app/WhiteNavbar.vue';
 <script setup>
 useServerSeoMeta({
   title: 'Jatri | Why us | simple and convenient | safety and security',
@@ -7,11 +6,10 @@ useServerSeoMeta({
 })
 </script>
 
-
 <template>
     <!-- Banner Start -->
     <section class="relative">
-      <div class="why_us_bg h-36 md:h-80">
+      <div class="why_us_bg h-36 md:h-80 p-4">
         <div
           class="
             container
@@ -37,7 +35,7 @@ useServerSeoMeta({
                 heading_text
               "
             >
-              Why Us
+            {{ $t('why-us-title') }}
             </h5>
           </div>
         </div>
@@ -56,14 +54,12 @@ useServerSeoMeta({
                   <div class="why_us_card corporate_bg_color">
                     <div class="whyus_card_body">
                       <h1 class="whyus_card_title heading_text">
-                        Simple <br />
-                        And <br />
-                        Convenient
+                        {{ $t('simple') }} <br />
+                        {{ $t('and') }} <br />
+                        {{ $t('convenient') }}
                       </h1>
                       <p class="whyus_card_description body_text">
-                        Whether you’re managing your fleet or booking a trip,
-                        convenience is key. Just open up the app and find the
-                        service you need in mere minutes.
+                        {{ $t('simple-convenient-des') }}
                       </p>
                     </div>
                     <img
@@ -79,15 +75,12 @@ useServerSeoMeta({
                 <div data-aos="fade-up">
                   <div class="why_us_card corporate_bg_color">
                     <div class="whyus_card_body">
-                      <h1 class="whyus_card_title heading_text">
-                        <br />
-                        Comfortable <br />
-                        commute <br />
+                      <h1 class="whyus_card_title heading_text"><br />
+                        {{ $t('comfortable') }}<br />
+                        {{ $t('commute') }}
                       </h1>
                       <p class="whyus_card_description body_text">
-                        Our partners and merchants are your trustworthy
-                        companions on road trips. Book a trip, board the vehicle
-                        and we’ll take you there safe and sound.
+                        {{ $t('comfortable-commute-des') }}
                       </p>
                     </div>
                     <img
@@ -104,14 +97,12 @@ useServerSeoMeta({
                   <div class="why_us_card corporate_bg_color">
                     <div class="whyus_card_body">
                       <h1 class="whyus_card_title heading_text">
-                        Safety <br />
-                        and <br />
-                        Security
+                        {{ $t('safety') }} <br />
+                        {{ $t('and') }} <br />
+                        {{ $t('security') }}
                       </h1>
                       <p class="whyus_card_description body_text">
-                        Our prime focus is to serve quality, affordable and
-                        hassle-free service. Our support staff are at your beck
-                        and call, ready to help whenever you need it.
+                        {{ $t('safety-security-des') }}
                       </p>
                     </div>
                     <img

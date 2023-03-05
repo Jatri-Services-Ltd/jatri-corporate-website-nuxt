@@ -32,23 +32,23 @@ useServerSeoMeta({
               ><i class="fas fa-quote-left"></i
               ></span>
             <h3 class="my-1 text-md sm:text-sm xl:text-4xl subheading_text">
-              We are committed
+              {{ $t('about-us-banner-title1') }}
             </h3>
             <br />
             <h4 class="text-lg sm:text-lg xl:text-2xl subheading_text">
-              to revolutionize
+              {{ $t('about-us-banner-title2') }}
             </h4>
             <br />
             <h2 class="text-lg sm:text-2xl xl:text-5xl heading_text">
-              the transportation
+              {{ $t('about-us-banner-title3') }}
             </h2>
             <br />
             <h3 class="text-lg sm:text-xl xl:text-3xl subheading_text">
-              landscape in
+              {{ $t('about-us-banner-title4') }}
             </h3>
             <br />
             <h1 class="text-3xl sm:text-4xl xl:text-6xl heading_text">
-              Bangladesh<span
+              {{ $t('about-us-banner-title5') }}<span
                 class="bottom_quotation text-sm sm:text-md xl:text-4xl"
             ><i class="fas fa-quote-right"></i
             ></span>

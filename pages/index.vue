@@ -18,10 +18,10 @@ useServerSeoMeta({
 
 <template>
   <!-- Banner Section Start -->
-  <section class="corporate_bg_color h-full md:bg-gray-200 mt-7 md:mt-0 relative">
-    <div class="corporate_bg_color md:mt-40 h-80 sm:h-96 flex justify-between 2xl:justify-center items-center">
+  <section class="corporate_bg_color h-full md:bg-gray-200 relative">
+    <div class="corporate_bg_color md:mt-20 h-80 sm:h-96 flex justify-between 2xl:justify-center items-center">
       <div
-          class="w-full px-5 mt-10 md:mt-0 sm:px-10 2xl:container 2xl:mx-auto flex justify-between items-center align-middle">
+          class="w-full px-5 sm:px-10 2xl:container 2xl:mx-auto flex justify-between items-center align-middle">
 
         <div class="w-1/2 sm:w-1/2 lg:flex-grow">
           <div data-aos="zoom-out-up" data-aos-duration="1000">
@@ -45,12 +45,7 @@ useServerSeoMeta({
       </div>
     </div>
   </section>
-  <!-- Banner Section End -->
-  <select v-model="locale">
-    <option value="en">en</option>
-    <option value="bn">bn</option>
-  </select>
-  <p>{{ $t('title') }}</p>
+
   <!-- Counter Section Start -->
   <section class="md:mt-16">
     <div class="counter_bg">
@@ -715,3 +710,12 @@ useServerSeoMeta({
   <!-- Testimonial Section End -->
 
 </template>
+
+
+
+  <!-- Banner Section End -->
+  <!-- <select v-model="locale">
+    <option value="en">en</option>
+    <option value="bn">bn</option>
+  </select>
+  <p>{{ $t('title') }}</p> -->
