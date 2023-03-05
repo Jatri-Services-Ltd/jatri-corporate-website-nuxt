@@ -9,7 +9,7 @@ useServerSeoMeta({
 <template>
     <section class="relative">
         <div class="corporate_bg_color flex justify-center items-center contact_us_head">
-            <h2 class="text-xl md:text-5xl text-center">Terms and Conditions</h2>
+            <h2 class="text-xl md:text-5xl text-center">{{ $t('terms_condition') }}</h2>
         </div>
 
         <div class="contact_form py-10">
@@ -17,40 +17,39 @@ useServerSeoMeta({
                 <div class="grid grid-cols-6 gap-4">
                     <div class="col-start-2 col-span-4 conditions">
                         <ul class="body_text">
-                            <li class="corporate_color">Jatri’s responsibilities do not exceed to issues beyond:</li>
+                            <li class="corporate_color">{{ $t('terms_condition_header') }}</li>
                             <ul class="nested_ul">
-                                <li>Providing a valid ticket for its network of transportation operators (“operators”).</li>
-                                <li>Issuing  refund and support in case of cancellation for advance purchasing ticket</li>
+                                <li> {{ $t('terms_condition1') }}</li>
+                                <li> {{ $t('terms_condition2') }}</li>
                             </ul>
-                            <li class="corporate_color">Our responsibilities do not comprise of the following:</li>
+                            <li class="corporate_color">{{ $t('terms_condition_subheader') }}</li>
                             <ul class="nested_ul">
-                                <li>Whether or not the operator's vehicle reaches on time.</li>
-                                <li>The behavior of the bus operator's employees.</li>
-                                <li>The vehicle’s seats and conditions not being up to par compared to the customer's expectations.</li>
-                                <li>Whether the operator cancels the trip or changes vehicle and/or seat.</li>
-                                <li>Whether the baggage of the customer gets lost /stolen or damaged in any form.</li>
-                                <li>Whether the customer mistakenly waits at an incorrect boarding point</li>
+                                <li>{{ $t('terms_condition_sub1') }}</li>
+                                <li>{{ $t('terms_condition_sub2') }}</li>
+                                <li>{{ $t('terms_condition_sub3') }}</li>
+                                <li>{{ $t('terms_condition_sub4') }}</li>
+                                <li>{{ $t('terms_condition_sub5') }}</li>
+                                <li>{{ $t('terms_condition_sub6') }}</li>
                             </ul>
-                            <li class="bold_list">Whether or not the operator decides to select an alternate boarding point or use an alternate vehicle to help customers reach the departure point.</li>
-                            <li class="bold_list">Any fees charged by payment gateways, credit / debit cards, mobile payment gateways (e.g. bKash, cards) are non refundable due to the policies of the respective organizations, which is beyond Jatri's control.</li>
-                            <li class="bold_list">The bus operator reserves the right to cancel / delay trips, change buses and change seats due to unavoidable reasons.</li>
-                            <li class="bold_list">Neither the bus operator nor Jatri will bear any consequences for the passenger carrying illegal goods.</li>
-                            <li class="bold_list">Bus fare may vary due to demand.</li>
-                            <li class="corporate_color">Refund Policy:</li>
+                            <li class="bold_list">{{ $t('terms_condition_sublist1') }}</li>
+                            <li class="bold_list">{{ $t('terms_condition_sublist2') }}</li>
+                            <li class="bold_list">{{ $t('terms_condition_sublist3') }}</li>
+                            <li class="bold_list">{{ $t('terms_condition_sublist5') }}</li>
+                            <li class="corporate_color">{{ $t('refund_policy') }}</li>
                             <ul>
-                                <li class="bold_list">Subscription:</li>
+                                <li class="bold_list">{{ $t('subscription') }}</li>
                                 <ul>
-                                    <li>In case of one purchasing subscription package, no refunds will be provided.</li>
-                                    <li>No partial refund is applicable for subscription package</li>
+                                    <li>{{ $t('subscription_desc1') }}</li>
+                                    <li>{{ $t('subscription_desc2') }}</li>
                                 </ul>
-                                <li class="bold_list">Ticketing:</li>
+                                <li class="bold_list">{{ $t('ticketing') }}</li>
                                 <ul>
-                                    <li><b>For ticket cancellation, passenger must call or mail (support@jatri.co)</b> Jatri within 10 minutes after purchasing ticket.</li>
-                                    <li>Upon receiving refund requests in the format outlined below, Jatri will process refund within 5 business days (excluding holidays / weekends).</li>
-                                    <li>Refunds will be given only through bKash or Bank transfer. For refunds through mobile payment gateways (e.g. bKash), a fee is charged by the mobile payment company.</li>
-                                    <li>In case of any accident or technical error in the middle of the trip, Jatri may refund the money according to the stations.</li>
-                                    <li>In case of cancellation or reissue of any advance ticketing, Jatri may refund the money or reissue new tickets according to the number of unused tickets and cancellation period must be five days before expiry.</li>
-                                    <li>No refund will be provided if passengers have to pay any extra charges due to selecting the wrong destination point.</li>
+                                    <li>{{ $t('ticketing_desc1') }}</li>
+                                    <li>{{ $t('ticketing_desc2') }}</li>
+                                    <li>{{ $t('ticketing_desc3') }}</li>
+                                    <li>{{ $t('ticketing_desc4') }}</li>
+                                    <li>{{ $t('ticketing_desc5') }}</li>
+                                    <li>{{ $t('ticketing_desc6') }}</li>
                                 </ul>
                             </ul>
                         </ul>

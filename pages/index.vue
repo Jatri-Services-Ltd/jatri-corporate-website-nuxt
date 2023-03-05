@@ -168,9 +168,9 @@ useServerSeoMeta({
         <div data-aos="fade-up">
           <div class="lg:max-w-lg lg:w-full sm:w-1/2 text-right text-white 2xl:pr-20 flex flex-col md:mb-0 justify-end items-end">
             <div class="mt-5 sm:mt-0">
-              <h3 class="text-xl lg:text-3xl uppercase subheading_text">Download</h3>
-              <h1 class="text-4xl lg:text-7xl uppercase heading_text">The App</h1>
-              <p class="text-sm lg:text-lg font-light body_text">Whether you need just a sedan or an entire microbus, we are committed to ensuring a convenient travel experience.</p>
+              <h3 class="text-xl lg:text-3xl uppercase subheading_text">{{ $t('download') }} </h3>
+              <h1 class="text-4xl lg:text-7xl uppercase heading_text">{{ $t('the_app') }} </h1>
+              <p class="text-sm lg:text-lg font-light body_text">{{ $t('download_desc') }}</p>
             </div>
             <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser" class="">
               <img class="w-40 rounded-full" src="~/assets/images/logo/android_btn.png" alt="">
@@ -287,10 +287,10 @@ useServerSeoMeta({
               class="mySwiper"
           >
             <swiper-slide>
-              <p class="body_text text-sm lg:text-lg font-light text-white text-justify leading-6">Add a new dimension to your car or microbus rental business by digitizing every trip. With exciting trip deals, flexible bookings and competitive pricing, you'll never go back to the old manual rental system again!</p>
+              <p class="body_text text-sm lg:text-lg font-light text-white text-justify leading-6">{{ $t('carousel_desc1') }}</p>
             </swiper-slide>
             <swiper-slide>
-              <p class="body_text text-sm lg:text-lg font-light text-white text-justify leading-6">Gear up to maximize your car and microbus rental business with Jatri's pioneering technology. Get access to our massive network of passengers on our app, book trips at fair prices throughout the country and boost your income by the end of the month!</p>
+              <p class="body_text text-sm lg:text-lg font-light text-white text-justify leading-6">{{ $t('carousel_desc2') }}</p>
             </swiper-slide>
           </swiper>
         </div>
@@ -308,7 +308,7 @@ useServerSeoMeta({
       <div class="px-5 sm:px-10 2xl:container 2xl:mx-auto py-16 lg:py-28">
 
         <div class="text-center text-white md:mb-10">
-          <h1 class="text-4xl md:text-6xl heading_text">HIGHLIGHTS</h1>
+          <h1 class="text-4xl md:text-6xl heading_text">{{ $t('highlight') }}</h1>
         </div>
 
         <div class="flex-grow lg:flex lg:justify-between gap-5 mt-6 h-full">
@@ -559,7 +559,7 @@ useServerSeoMeta({
     <div class="corporate_bg_color">
       <div class="px-5 sm:px-10 2xl:container 2xl:mx-auto py-20">
         <div class="flex flex-col justify-center text-center text-white">
-          <h1 class="text-2xl md:text-3xl uppercase subheading_text">We Are currently Featured in</h1>
+          <h1 class="text-2xl md:text-3xl uppercase subheading_text">{{ $t('features') }}</h1>
           <!-- <p class="text-xs font-thin mt-3 md:mt-0">Lorem ipsum dolor sit amet.</p> -->
         </div>
         <div class="flex flex-col md:flex-row justify-around align-middle items-center mt-5">
