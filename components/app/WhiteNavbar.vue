@@ -57,10 +57,10 @@ const { locale } = useI18n();
 
               </div>
                 <div class="absolute top-8 right-20 lg:right-0 bg-corporate z-10 lg:w-[150px] p-2 border border-corporate">
-                  <nuxt-link to="/ride-sharing-guideline" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium"> RIDE SHARING GUIDELINE</nuxt-link>
-                  <nuxt-link to="/enlistment-certificate"  class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">  ENLISTMENT CERTIFICATE</nuxt-link>
-                  <nuxt-link to="/jatri-partner-app-manual" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium"> JATRI PARTNER APP</nuxt-link>
-                  <nuxt-link to="https://corona.gov.bd/" target="_blank" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">COVID-19 INFO</nuxt-link>
+                  <nuxt-link to="/ride-sharing-guideline" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">{{ $t('ride-sharing-guideline') }}</nuxt-link>
+                  <nuxt-link to="/enlistment-certificate"  class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">{{ $t('enlistment-certificate') }}</nuxt-link>
+                  <nuxt-link to="/jatri-partner-app-manual" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">{{ $t('jatri-partner-app') }}</nuxt-link>
+                  <nuxt-link to="https://corona.gov.bd/" target="_blank" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">{{ $t('covid-19-info') }}</nuxt-link>
                 </div>
             </div>
           </div>

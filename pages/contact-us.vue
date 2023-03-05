@@ -8,7 +8,7 @@ useServerSeoMeta({
 <template>
   <!-- Banner Start -->
   <section class="relative">
-    <div class="contact_us_bg h-28 sm:h-36 md:h-80"></div>
+    <div class="contact_us_bg h-28 sm:h-36 md:h-96"></div>
   </section>
   <!-- Banner End -->
 

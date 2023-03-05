@@ -45,12 +45,7 @@ useServerSeoMeta({
       </div>
     </div>
   </section>
-  <!-- Banner Section End -->
-  <select v-model="locale">
-    <option value="en">en</option>
-    <option value="bn">bn</option>
-  </select>
-  <p>{{ $t('title') }}</p>
+
   <!-- Counter Section Start -->
   <section class="md:mt-16">
     <div class="counter_bg">
@@ -715,3 +710,12 @@ useServerSeoMeta({
   <!-- Testimonial Section End -->
 
 </template>
+
+
+
+  <!-- Banner Section End -->
+  <!-- <select v-model="locale">
+    <option value="en">en</option>
+    <option value="bn">bn</option>
+  </select>
+  <p>{{ $t('title') }}</p> -->
