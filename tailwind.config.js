@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -15,6 +16,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Montserrat', 'Myriad Pro'],
+        trio: ['Tiro Bangla', 'serif'],
       },
     },
   },
