@@ -1,9 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* Common Css Code will be Write Here */
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+html[lang="bn"] {
+    font-family: 'Tiro Bangla', serif;
+}
 
 .counter_number{
     @apply text-center font-semibold text-3xl md:text-5xl lg:text-7xl;

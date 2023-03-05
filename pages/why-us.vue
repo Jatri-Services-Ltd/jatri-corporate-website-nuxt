@@ -28,7 +28,7 @@ useServerSeoMeta({
                 text-3xl
                 sm:text-5xl
                 md:text-7xl
-                lg:text-9xl
+                lg:text-8xl
                 text-center
                 corporate_color
                 font-black

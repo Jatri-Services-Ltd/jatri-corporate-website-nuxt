@@ -46,7 +46,7 @@
               <i class="fab fa-youtube"></i>
             </a>
             <a href="https://www.linkedin.com/company/jatri-app" target="_blank"
-               class="footer_social_btn hover:text-black hover:corporate_bg_color">
+               class="footer_social_btn hover:text-sky-600 hover:corporate_bg_color">
               <i class="fab fa-linkedin-in"></i>
             </a>
           </div>
