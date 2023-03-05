@@ -6,7 +6,7 @@ const { locale } = useI18n();
 
 
 <template>
-  <div class="bg-gray-50 text-gray-900 z-10 shadow fixed top-0 left-0 right-0">
+  <div class="bg-gray-50 text-gray-900 z-10 shadow sticky top-0 left-0 right-0">
     <nav class="py-2 md:py-4 px-5 sm:px-10 2xl:container 2xl:mx-auto flex items-center justify-between flex-wrap">
       <div class="flex items-center flex-shrink-0 mr-6">
         <nuxt-link to="/" class="font-semibold text-xl tracking-tight">

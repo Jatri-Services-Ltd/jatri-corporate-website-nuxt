@@ -15,7 +15,7 @@ useServerSeoMeta({
 <template>
   <!-- Banner Start -->
   <section class="relative">
-    <div class="blog_bg h-36 md:h-96"></div>
+    <div class="blog_bg h-36 md:h-80"></div>
   </section>
   <!-- Banner End -->
 

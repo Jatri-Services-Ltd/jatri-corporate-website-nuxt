@@ -9,7 +9,7 @@ useServerSeoMeta({
 <template>
   <!-- Banner Start -->
   <section class="relative">
-    <div class="about_us_bg h-full pb-24 pt-44">
+    <div class="about_us_bg h-full py-24">
       <div
           class="
             w-9/12

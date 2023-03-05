@@ -18,8 +18,8 @@ useServerSeoMeta({
 
 <template>
   <!-- Banner Section Start -->
-  <section class="corporate_bg_color h-full md:bg-gray-200 mt-7 md:mt-0 relative">
-    <div class="corporate_bg_color md:mt-40 h-80 sm:h-96 flex justify-between 2xl:justify-center items-center">
+  <section class="corporate_bg_color h-full md:bg-gray-200 relative">
+    <div class="corporate_bg_color md:mt-20 h-80 sm:h-96 flex justify-between 2xl:justify-center items-center">
       <div
           class="w-full px-5 mt-10 md:mt-0 sm:px-10 2xl:container 2xl:mx-auto flex justify-between items-center align-middle">
 
