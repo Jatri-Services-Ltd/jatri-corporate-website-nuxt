@@ -1,7 +1,16 @@
 <script setup>
-import { ref } from "vue";
+import {onMounted, ref, watch} from "vue";
 const profileDropDown = ref(false)
+import Cookies from 'js-cookie'
 const { locale } = useI18n();
+
+watch(() => locale.value, () => {
+  Cookies.set('j_lang', locale.value)
+})
+
+onMounted(() => {
+  locale.value = Cookies.get('j_lang') ?? 'en'
+})
 
 </script>
 
