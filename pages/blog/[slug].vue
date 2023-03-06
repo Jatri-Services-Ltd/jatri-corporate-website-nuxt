@@ -4,11 +4,16 @@ const router = useRoute()
 console.log(router)
 //router.params.slug
 const blog = blogData.find(b => b.slug === router.params.slug)
-useServerSeoMeta({
-  title: 'Jatri | Blog',
-  description: 'Get a sneak peek at the latest happenings in Jatri. Check out all the latest stories and insights on our pioneering technology revolutionizing Bangladeshi public transport.',
-})
 
+useHead({
+  title: 'Jatri | Blog',
+  meta: [
+    {
+      name: 'description', 
+      content: 'Get a sneak peek at the latest happenings in Jatri. Check out all the latest stories and insights on our pioneering technology revolutionizing Bangladeshi public transport.'
+    },
+  ]
+});
 </script>
 
 <template>

@@ -23,9 +23,9 @@ nuxtApp.hook("page:finish", () => {
   loading.value = false;
 });
 
-useServerSeoMeta({
-  title: 'Jatri',
-})
+// useServerSeoMeta({
+//   title: 'Jatri',
+// })
 </script>
 
 <style scoped>

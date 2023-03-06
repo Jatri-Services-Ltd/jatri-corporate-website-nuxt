@@ -1,8 +1,13 @@
 <script setup>
-useServerSeoMeta({
+useHead({
   title: 'Jatri | About us',
-  description: 'We work equally with bus operators, drivers and regulators of Bangladesh to solve transportation problems from the very core.',
-})
+  meta: [
+    {
+      name: 'description', 
+      content: 'We work equally with bus operators, drivers and regulators of Bangladesh to solve transportation problems from the very core.'
+    },
+  ]
+});
 </script>
 
 

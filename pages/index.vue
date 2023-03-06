@@ -4,16 +4,46 @@ import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination, FreeMode } from 'swiper';
-const { locale } = useI18n();
 const modules = [FreeMode, Pagination];
 
-useServerSeoMeta({
+useHead({
   title: 'Jatri | convenient travel experience in Bangladesh',
-  ogTitle: 'https://jatri.co/',
-  description: 'Jatri is a public transport journey planner, digital ticketing and mobility marketplace, driving productivity by helping drivers to offer reliable transport to the commuters through our state-of-the-art technology.',
-  ogDescription: 'Jatri is a public transport journey planner, digital ticketing and mobility marketplace, driving productivity by helping drivers to offer reliable transport to the commuters through our state-of-the-art technology.',
-  ogImage: 'src/images/logo/favicon.png',
-})
+  meta: [
+    {
+      name: "author",
+      content: "Jatri Services Limited"
+    },
+    {
+      name: 'keywords',
+      content: 'Ride-Sharing, Rental, Ticketing'
+    },
+    {
+      property: 'og:title',
+      content: 'https://jatri.co/'
+    },
+    {
+      property: 'og:image', 
+      name: "image", 
+      content: './assets/images/logo/favicon.png'
+    },
+    {
+      property: 'og:description', 
+      content: 'Jatri is a public transport journey planner, digital ticketing and mobility marketplace, driving productivity by helping drivers to offer reliable transport to the commuters through our state-of-the-art technology.'
+    },
+    {
+      name: 'description', 
+      content: 'Jatri is a public transport journey planner, digital ticketing and mobility marketplace, driving productivity by helping drivers to offer reliable transport to the commuters through our state-of-the-art technology.'
+    },
+  ]
+});
+
+// useServerSeoMeta({
+//   // title: 'Jatri | convenient travel experience in Bangladesh',
+//   ogTitle: 'https://jatri.co/',
+//   description: 'Jatri is a public transport journey planner, digital ticketing and mobility marketplace, driving productivity by helping drivers to offer reliable transport to the commuters through our state-of-the-art technology.',
+//   ogDescription: 'Jatri is a public transport journey planner, digital ticketing and mobility marketplace, driving productivity by helping drivers to offer reliable transport to the commuters through our state-of-the-art technology.',
+//   ogImage: 'src/images/logo/favicon.png',
+// })
 </script>
 
 <template>
