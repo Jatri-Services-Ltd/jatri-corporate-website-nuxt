@@ -31,10 +31,7 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/i18n',
     ],
-    plugins:[
-        "~/plugins/facebook-events.js",
-        "~/plugins/gtag.ts"
-    ],
+    plugins:[],
 
     i18n: {
         defaultLocale: 'en',
