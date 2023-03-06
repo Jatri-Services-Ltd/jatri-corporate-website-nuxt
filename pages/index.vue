@@ -49,11 +49,11 @@ useHead({
 <template>
   <!-- Banner Section Start -->
   <section class="corporate_bg_color h-full md:bg-gray-200 relative">
-    <div class="corporate_bg_color md:mt-20 h-80 sm:h-96 flex justify-between 2xl:justify-center items-center">
+    <div class="corporate_bg_color md:mt-20 h-80 sm:h-96 flex justify-between 2xl:justify-center 2xl:items-center">
       <div
-          class="w-full px-5 sm:px-10 2xl:container 2xl:mx-auto flex justify-between items-center align-middle">
+          class="w-full px-5 sm:px-10 2xl:container 2xl:mx-auto flex justify-between align-middle">
 
-        <div class="w-1/2 sm:w-1/2 lg:flex-grow">
+        <div class="w-1/2 sm:w-1/2 lg:flex-grow self-center">
           <div data-aos="zoom-out-up" data-aos-duration="1000">
             <div class="banner_text uppercase text-white font-extrabold">
               <h1 class="text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-light subheading_text tracking-wide">
@@ -67,7 +67,7 @@ useHead({
           </div>
         </div>
 
-        <div class="w-1/2 sm:w-1/2 lg:max-w-lg lg:w-full">
+        <div class="w-1/2 sm:w-1/2 lg:max-w-lg lg:w-full self-end">
           <div data-aos="zoom-out-down">
             <img class="home_banner_img" alt="hero" src="~/assets/images/banner/banner-2.png" draggable="false">
           </div>
