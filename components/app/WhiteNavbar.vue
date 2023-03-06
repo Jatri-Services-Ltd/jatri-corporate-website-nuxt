@@ -48,11 +48,11 @@ const { locale } = useI18n();
         <div class="flex justify-center items-center mt-4 lg:mt-0">
           <div>
             <input value="bn" v-model="locale" id="a" type="radio" class="hidden">
-            <label for="a" :class="locale === 'bn' ? 'bg-[#f04935] text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-l-[4px]">বাংলা</label>
+            <label for="a" :class="locale === 'bn' ? 'bg-corporate text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-l-[4px]">বাংলা</label>
           </div>
           <div>
             <input value="en" v-model="locale" id="b" type="radio" class="hidden">
-            <label for="b" :class="locale === 'en' ? 'bg-[#f04935] text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] flex justify-center items-center font-semibold text-black h-[32px] rounded-r-[4px]">English</label>
+            <label for="b" :class="locale === 'en' ? 'bg-corporate text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] flex justify-center items-center font-semibold text-black h-[32px] rounded-r-[4px]">English</label>
           </div>
         </div>
 
