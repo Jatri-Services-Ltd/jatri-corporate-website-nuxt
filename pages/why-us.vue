@@ -1,9 +1,13 @@
-
 <script setup>
-useServerSeoMeta({
+useHead({
   title: 'Jatri | Why us | simple and convenient | safety and security',
-  description: 'Open up the app and find the service you need in minutes. Book a trip, board the vehicle and we’ll take you there safe and sound.',
-})
+  meta: [
+    {
+      name: 'description', 
+      content: 'Open up the app and find the service you need in minutes. Book a trip, board the vehicle and we’ll take you there safe and sound.'
+    },
+  ]
+});
 </script>
 
 <template>

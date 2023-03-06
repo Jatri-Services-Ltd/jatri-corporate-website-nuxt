@@ -5,10 +5,15 @@ useAsyncData(() => {
   return blogData;
 })
 
-useServerSeoMeta({
+useHead({
   title: 'Jatri | Blog',
-  description: 'Get a sneak peek at the latest happenings in Jatri. Check out all the latest stories and insights on our pioneering technology revolutionizing Bangladeshi public transport.',
-})
+  meta: [
+    {
+      name: 'description', 
+      content: 'Get a sneak peek at the latest happenings in Jatri. Check out all the latest stories and insights on our pioneering technology revolutionizing Bangladeshi public transport.'
+    },
+  ]
+});
 </script>
 
 

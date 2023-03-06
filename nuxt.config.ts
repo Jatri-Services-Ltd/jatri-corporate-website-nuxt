@@ -19,6 +19,13 @@ export default defineNuxtConfig({
                 { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.4.1/css/all.css' },
                 { rel: 'icon', type: 'image/x-icon', href: '/loader-icon.png' }
             ],
+            title: 'Jatri',
+            meta: [
+                {
+                  'http-equiv': "X-UA-Compatible",
+                  content: "IE=edge"
+                }
+            ]
         },
     },
     modules: [

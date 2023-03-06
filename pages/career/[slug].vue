@@ -4,11 +4,15 @@ const router = useRoute()
 //router.params.slug
 const career = careerData.find(b => b.slug === router.params.slug)
 
-useServerSeoMeta({
+useHead({
   title: 'Jatri | Career',
-  description: 'Jatri office is full of fast-paced problem-solvers intent on driving change in transport. As a member of our organization, you will be a part of a wonderful environment of learning and creativity.',
-})
-
+  meta: [
+    {
+      name: 'description', 
+      content: 'Jatri office is full of fast-paced problem-solvers intent on driving change in transport. As a member of our organization, you will be a part of a wonderful environment of learning and creativity.'
+    },
+  ]
+});
 </script>
 
   <template>
