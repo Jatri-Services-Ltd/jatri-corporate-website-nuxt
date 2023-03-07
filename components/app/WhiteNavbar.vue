@@ -18,7 +18,7 @@ onMounted(() => {
   <div class="bg-gray-50 text-gray-900 z-10 shadow sticky top-0 left-0 right-0">
     <nav class="py-2 md:py-4 px-5 sm:px-10 2xl:container 2xl:mx-auto flex items-center justify-between flex-wrap">
       <div class="flex items-center flex-shrink-0 mr-6">
-        <nuxt-link to="/" class="font-semibold text-xl tracking-tight">
+        <nuxt-link :to="localePath('/')" class="font-semibold text-xl tracking-tight">
           <img src="~/assets/images/logo/logo.svg" alt="" class="w-28">
         </nuxt-link>
       </div>
@@ -46,17 +46,20 @@ onMounted(() => {
       <div class="hidden w-full block flex-grow lg:flex lg:items-center lg:w-auto" id="menu">
         <div class="text-sm lg:flex-grow">
 
-          <nuxt-link to="/why-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('why_us') }}</nuxt-link>
-          <nuxt-link to="/about-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('about_us') }}</nuxt-link>
-          <nuxt-link to="/career" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('career') }}</nuxt-link>
-          <nuxt-link to="/blog" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('blog') }}</nuxt-link>
-          <nuxt-link to="/contact-us" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('contact_us') }}</nuxt-link>
-          <nuxt-link to="https://rental.jatri.co/"
-             class="mt-4 lg:inline-block lg:mt-0 mr-4 bg-corporate py-1 px-2 rounded-md text-white flex justify-center items-center gap-x-4"><i
-              class="fas fa-car"></i> {{ $t('rental') }}</nuxt-link>
-          <nuxt-link to ="https://ticket.jatri.co/"
+          <nuxt-link :to="localePath('/why-us')" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('why_us') }}</nuxt-link>
+          <nuxt-link :to="localePath('/about-us')" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('about_us') }}</nuxt-link>
+          <nuxt-link :to="localePath('/career')" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('career') }}</nuxt-link>
+          <nuxt-link :to="localePath('/blog')" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('blog') }}</nuxt-link>
+          <nuxt-link :to="localePath('/contact-us')" class="block mt-4 lg:inline-block lg:mt-0 mr-4 body_text">{{ $t('contact_us') }}</nuxt-link>
+          <a href="https://rental.jatri.co/"
+             target="_blank"
+             class="mt-4 lg:inline-block lg:mt-0 mr-4 bg-corporate py-1 px-2 rounded-md text-white flex justify-center items-center gap-x-4">
+            <i class="fas fa-car"></i> {{ $t('rental') }}
+          </a>
+          <a href="https://ticket.jatri.co/"
+             target="_blank"
              class="lg:inline-block mt-4 lg:mt-0 mr-4 bg-corporate py-1 px-2 rounded-md text-white flex justify-center items-center gap-x-4"><i
-              class="fas fa-bus"></i> {{ $t('bus_ticket') }}</nuxt-link>
+              class="fas fa-bus"></i> {{ $t('bus_ticket') }}</a>
         </div>
 
         <div class="hidden  lg:flex justify-center items-center mt-4 lg:mt-0">
@@ -82,10 +85,10 @@ onMounted(() => {
 
               </div>
                 <div class="absolute top-8 right-20 lg:right-0 bg-corporate z-10 lg:w-[150px] p-2 border border-corporate">
-                  <nuxt-link to="/ride-sharing-guideline" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">{{ $t('ride-sharing-guideline') }}</nuxt-link>
-                  <nuxt-link to="/enlistment-certificate"  class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">{{ $t('enlistment-certificate') }}</nuxt-link>
-                  <nuxt-link to="/jatri-partner-app-manual" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">{{ $t('jatri-partner-app') }}</nuxt-link>
-                  <nuxt-link to="https://corona.gov.bd/" target="_blank" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">{{ $t('covid-19-info') }}</nuxt-link>
+                  <nuxt-link :to="localePath('/ride-sharing-guideline')" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">{{ $t('ride-sharing-guideline') }}</nuxt-link>
+                  <nuxt-link :to="localePath('/enlistment-certificate')"  class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">{{ $t('enlistment-certificate') }}</nuxt-link>
+                  <nuxt-link :to="localePath('/jatri-partner-app-manual')" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">{{ $t('jatri-partner-app') }}</nuxt-link>
+                  <a href="https://corona.gov.bd/" target="_blank" class="text-white py-4 px-2 shadow-md transition-all ease-in-out block text-sm cursor-pointer hover:bg-white hover:text-corporate text-sm font-medium">{{ $t('covid-19-info') }}</a>
                 </div>
             </div>
           </div>
