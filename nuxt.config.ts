@@ -39,11 +39,17 @@ export default defineNuxtConfig({
         locales: [
             {
                 code: 'en',
-                file: 'en.json'
+                file: 'en.json',
+                iso:'en-US',
+                dir: 'ltr'
+
+
             },
             {
                 code: 'bn',
-                file: 'bn.json'
+                file: 'bn.json',
+                iso:'bn-BD',
+                dir: 'rtl'
             }
         ],
         vueI18n: {

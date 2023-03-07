@@ -38,9 +38,9 @@ img {
   pointer-events: none;
 }
 
-.body_text {
-  font-family: "Open Sans", sans-serif;
-}
+/*.body_text {*/
+/*  font-family: "Open Sans", sans-serif;*/
+/*}*/
 
 .subheading_text {
   font-weight: 700;

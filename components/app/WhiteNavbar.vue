@@ -3,7 +3,6 @@ import {onMounted, ref, watch} from "vue";
 const profileDropDown = ref(false)
 import Cookies from 'js-cookie'
 const { locale } = useI18n();
-
 watch(() => locale.value, () => {
   Cookies.set('j_lang', locale.value)
 })
@@ -26,13 +25,14 @@ onMounted(() => {
       <div class="block lg:hidden flex justify-center items-center">
         <div>
           <input value="bn" v-model="locale" id="a" type="radio" class="hidden">
-          <label for="a" :class="locale === 'bn' ? 'bg-corporate text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-xs border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-l-[4px]">বাংলা</label>
+          <label for="a" :class="locale === 'bn' ?  'bg-corporate text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-xs border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-l-[4px]">বাংলা</label>
         </div>
         <div>
           <input value="en" v-model="locale" id="b" type="radio" class="hidden">
           <label for="b" :class="locale === 'en' ? 'bg-corporate text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-xs border border-[#DBDBDB] flex justify-center items-center font-semibold text-black h-[32px] rounded-r-[4px]">English</label>
         </div>
       </div>
+<!--      {{i18n.locales}}-->
 
       <label
           class="block lg:hidden cursor-pointer flex items-center px-3 py-2 border rounded border-teal-400 hover:corporate_color hover:border-gray-400"

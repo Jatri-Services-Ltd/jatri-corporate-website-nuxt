@@ -16,7 +16,7 @@ module.exports = {
       },
       fontFamily: {
         sans: ['Montserrat', 'Myriad Pro'],
-        trio: ['Tiro Bangla', 'serif'],
+        banglaFont: ['SolaimanLipi', 'serif']
       },
     },
   },
