@@ -6,6 +6,7 @@ export default defineNuxtConfig({
         "~/assets/css/manual-style.css",
         "~/assets/css/rating.css",
         "~/assets/css/responsive.css",
+        "~/assets/fonts/solaimanlipi.css",
     ],
     postcss: {
         plugins: {
