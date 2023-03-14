@@ -42,7 +42,7 @@ useServerSeoMeta({
                                     <li>{{ $t('subscription_desc1') }}</li>
                                     <li>{{ $t('subscription_desc2') }}</li>
                                 </ul>
-                                <li class="bold_list">{{ $t('ticketing') }}</li>
+                                <li class="bold_list">{{ $t('ticket-refund') }}</li>
                                 <ul>
                                     <li>{{ $t('ticketing_desc1') }}</li>
                                     <li>{{ $t('ticketing_desc2') }}</li>

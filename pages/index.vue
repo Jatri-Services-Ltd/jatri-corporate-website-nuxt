@@ -103,7 +103,7 @@ useHead({
                 </p>
                 <p class="corporate_color counter_number_sub">+ million</p>
               </div>
-              <p class="counter_tag">{{ $t('rental_partners') }}</p>
+              <p class="counter_tag">{{ $t('ticket_sold') }}</p>
             </div>
 
             <div class="my-5 sm:my-0 w-full sm:w-1/3">
