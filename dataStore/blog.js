@@ -1,7 +1,7 @@
 const blogList =[
     {
         "slug" : "london-express",
-        "titleImage" : "/_nuxt/assets/images/blog/London-Express-Blog-Featured.jpg",
+        "titleImage" : "blog/London-Express-Blog-Featured.jpg",
         "title" : "Jatri Ticket Website and London Express are Together Now!",
         "smallDescription": "<p>Do you need a vacation from your daily routine life cycle? Do you want to go for a domestic tour or want to go to Kolkata from Dhaka city? Jatri is giving you the best bus operator, London Express, with comfortable bus seats and a luxurious environment.</p>",
         "createdBy" : "Afroza Akter Nitu",

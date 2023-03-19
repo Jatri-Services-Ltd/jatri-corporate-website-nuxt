@@ -2,7 +2,7 @@ const careerList = [
     {
         "title": "Software Engineer (Backend) ",
         "slug": "software-engineer-laravel",
-        "iconPath": "/_nuxt/assets/images/job_circular/team_lead.jpg",
+        "iconPath": "job_circular/team_lead.jpg",
         "deadline": "25<sup>th</sup> January, 2023",
         "description": "<ul class=\"list-disc ml-4\">\n" +
             "<li>\n" +

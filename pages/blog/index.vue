@@ -1,9 +1,14 @@
 <script setup>
-import blogData from "~/dataStore/blog.js";
+import blogData1 from "~/dataStore/blog.js";
 
-useAsyncData(() => {
-  return blogData;
+const blogData = ref([])
+onMounted(() => {
+  blogData.value = blogData1
 })
+
+const generateImg = (titleImage) => {
+  return new URL(`../../assets/images/${titleImage}`, import.meta.url).href;
+}
 
 useHead({
   title: 'Jatri | Blog',
@@ -14,6 +19,7 @@ useHead({
     },
   ]
 });
+
 </script>
 
 
@@ -50,7 +56,7 @@ useHead({
         h-full
         rounded-lg
       ">
-            <img class="rounded-t-lg" :src="blog.titleImage" alt="" />
+            <img class="rounded-t-lg" :src="generateImg(blog.titleImage)" alt="" />
             <div class="pt-2 px-2 md:px-0">
               <h1 class="
             corporate_color

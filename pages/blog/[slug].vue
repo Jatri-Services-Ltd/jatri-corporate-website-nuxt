@@ -1,9 +1,17 @@
 <script setup>
-import blogData from "~/dataStore/blog.js";
+import blogData1 from "~/dataStore/blog.js";
 const router = useRoute()
-console.log(router)
 //router.params.slug
-const blog = blogData.find(b => b.slug === router.params.slug)
+
+
+const blog = ref({})
+onMounted(() => {
+  blog.value = blogData1.find(b => b.slug === router.params.slug)
+})
+
+const generateImg = (titleImage) => {
+  return new URL(`../../assets/images/${titleImage}`, import.meta.url).href;
+}
 
 useHead({
   title: 'Jatri | Blog',
@@ -33,7 +41,7 @@ useHead({
 
           <div class="">
             <div data-aos="zoom-in">
-              <img class="rounded-t-lg" :src="blog.bannerImage" alt="" />
+              <img class="rounded-t-lg" :src="generateImg(blog.titleImage)" alt="" />
             </div>
           </div>
 

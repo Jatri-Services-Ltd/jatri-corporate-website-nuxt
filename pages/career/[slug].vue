@@ -1,8 +1,17 @@
 <script setup>
-import careerData from "~/dataStore/career.js";
+import careerData1 from "~/dataStore/career.js";
 const router = useRoute()
 //router.params.slug
-const career = careerData.find(b => b.slug === router.params.slug)
+
+
+const career = ref({})
+onMounted(() => {
+  career.value = careerData1.find(b => b.slug === router.params.slug)
+})
+
+const generateImg = (iconPath) => {
+  return new URL(`../../assets/images/${iconPath}`, import.meta.url).href;
+}
 
 useHead({
   title: 'Jatri | Career',
@@ -53,7 +62,7 @@ useHead({
                 <!-- Banner -->
                 <div class="w-full md:w-1/4 p-1 md:p-4">
                   <div data-aos="zoom-in">
-                    <img class="w-full md:w-60 rounded-md" :src="career.iconPath" alt="">
+                    <img class="w-full md:w-60 rounded-md" :src="generateImg(career.iconPath)" alt="">
                   </div>
                 </div>
 

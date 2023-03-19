@@ -1,8 +1,5 @@
 <script setup>
-import careerData from "~/dataStore/career.js";
-useAsyncData(() => {
-  return careerData;
-})
+import careerData1 from "~/dataStore/career.js";
 
 useHead({
   title: 'Jatri | Career',
@@ -13,10 +10,19 @@ useHead({
     },
   ]
 });
+const careerData = ref([])
+onMounted(() => {
+  careerData.value = careerData1
+})
+
+const generateImg = (iconPath) => {
+ return new URL(`../../assets/images/${iconPath}`, import.meta.url).href;
+}
+
 </script>
 
 <template>
-  <section class="relative">
+  <section class="relative" v-if="careerData.length">
     <div class="career_page_bg h-full py-16 md:py-24">
       <div class="px-5 sm:px-10 2xl:container 2xl:mx-auto">
         <!-- Banner Section Start -->
@@ -97,7 +103,7 @@ useHead({
               <div class="w-1/2 md:w-1/6 p-4 career_img_wrapper">
                 <img
                     class="w-40 rounded-md"
-                    :src="careerList.iconPath"
+                    :src="generateImg(careerList.iconPath)"
                     alt=""
                 />
               </div>
