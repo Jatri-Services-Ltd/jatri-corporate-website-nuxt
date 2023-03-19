@@ -90,7 +90,7 @@ useHead({
                   <count-up :end-val="35"></count-up>
                 </p>
                 <p class="corporate_color counter_number_sub text-4xl">k</p>
-                <p class="corporate_color counter_number_sub">+</p>
+                <p class="corporate_color counter_number_sub text-corporate">+</p>
               </div>
               <p class="counter_tag"> {{ $t('rental_partners') }}</p>
             </div>
