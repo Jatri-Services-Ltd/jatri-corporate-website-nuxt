@@ -81,7 +81,7 @@ onMounted(() => {
             </div>
             <button v-if="profileDropDown" @click="profileDropDown = false" class="fixed inset-0 bg-transparent h-full w-full cursor-default"></button>
             <div v-if="profileDropDown" class="">
-              <div class="bg-corporate h-3 w-3 rotate-45 absolute left-10  lg:right-2 top-7">
+              <div class="bg-corporate h-3 w-3 rotate-45 absolute right-1/2  lg:right-2 top-7">
 
               </div>
                 <div class="absolute top-8 right-20 lg:right-0 bg-corporate z-10 lg:w-[150px] p-2 border border-corporate">

@@ -97,7 +97,7 @@ useHead({
                   <p class="text-xs text-gray-400">{{blog.createdDateTime}}</p>
                 </div>
               </div>
-              <nuxt-link :to="'blog/'+blog.slug" class="
+              <nuxt-link :to="'blog/details/'+blog.slug" class="
             text-white
             corporate_bg_color
             rounded-md
