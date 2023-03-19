@@ -6,7 +6,7 @@ const blogList =[
         "smallDescription": "<p>Do you need a vacation from your daily routine life cycle? Do you want to go for a domestic tour or want to go to Kolkata from Dhaka city? Jatri is giving you the best bus operator, London Express, with comfortable bus seats and a luxurious environment.</p>",
         "createdBy" : "Afroza Akter Nitu",
         "createdDateTime" : "12th February, 2023",
-        "bannerImage" : "/_nuxt/assets/images/blog/London-Express.jpg",
+        "bannerImage" : "blog/London-Express.jpg",
         "description" : "<div class=\"md:flex md:justify-between gap-5 my-3\"><div class=\"w-full md:w-1/2\">\n" +
             "<div class=\"aos-init aos-animate\" data-aos=\"fade-up\">\n" +
             "<h1 class=\"corporate_color mt-2 font-bold text-2xl tracking-tight\">Jatri Ticket Website and London Express are Together Now!</h1>\n" +
@@ -25,12 +25,12 @@ const blogList =[
     },
     {
         "slug" : "jeddah-express",
-        "titleImage" : "/_nuxt/assets/images/blog/jeddah-express-blog-featured.jpg",
+        "titleImage" : "blog/jeddah-express-blog-featured.jpg",
         "title" : "Jatri Ticket Website and Jeddah Express are Together Now!",
         "smallDescription": "<p>Hey! Are you finding the best sleeper couch in Dhaka? You are indeed in the right place. We are thrilled to announce a new partnership between Jeddah Express and Jatri. On the routes that are being served by Jatri &amp; Jeddah Express jointly, your travel...</p>",
         "createdBy" : "Abdul Nakib",
         "createdDateTime" : "12th February, 2023",
-        "bannerImage" : "/_nuxt/assets/images/blog/Jeddah-Express.jpg",
+        "bannerImage" : "blog/Jeddah-Express.jpg",
         "description" : "<div class=\"md:flex md:justify-between gap-5 my-3\">\n" +
             "<div class=\"w-full md:w-1/2\">\n" +
             "<div class=\"aos-init aos-animate\" data-aos=\"fade-up\">\n" +
@@ -49,12 +49,12 @@ const blogList =[
     },
     {
         "slug" : "green-line",
-        "titleImage" : "/_nuxt/assets/images/blog/greenline-blog-featured.jpg",
+        "titleImage" : "blog/greenline-blog-featured.jpg",
         "title" : "Jatri Ticket Website and Green Line are Together Now!",
         "smallDescription": "<p>Are you finding the best bus service?<br />We are glad to announce that Green Line Paribahan is on the Jatri website. Your travel will be hassle-free now!<br />The well-known bus operator Green Line Paribahan...</p>",
         "createdBy" : "Afroza Akter Nitu",
         "createdDateTime" : "12th February, 2023",
-        "bannerImage" : "/_nuxt/assets/images/blog/GreenLine.jpg",
+        "bannerImage" : "blog/GreenLine.jpg",
         "description" : "<div class=\"md:flex md:justify-between gap-5 my-3\"> <div class=\"w-full md:w-1/2\">\n" +
             "<div class=\"aos-init aos-animate\" data-aos=\"fade-up\">\n" +
             "<h1 class=\"corporate_color mt-2 font-bold text-2xl tracking-tight\">Jatri Ticket Website and Green Line are Together Now!</h1>\n" +
@@ -73,12 +73,12 @@ const blogList =[
     },
     {
         "slug" : "rent-a-car",
-        "titleImage" : "/_nuxt/assets/images/blog/small_blog_08.jpg",
+        "titleImage" : "blog/small_blog_08.jpg",
         "title" : "যাত্রী পার্টনার অ্যাপ: রেন্ট-এ-কার ব্যবসা খাতে নতুন সংযোজন !",
         "smallDescription": "<p>রেন্ট-এ-কার সার্ভিস বা ব্যবসা বাংলাদেশে বহুল প্রচলিত এবং পরিচিত একটি সেবা খাত। সাধারণত ব্যক্তিগত পর্যায়ে ও উদ্যোগে এই ব্যবসা পরিচালিত হয়। শহরের ব্যস্ত এবং বাণিজ্যিক এলাকাকে কেন্দ্র করে এধরণের সেবা দানকারী প্রতিষ্ঠান গড়ে উঠে, যেখান থেকে গ্রাহকরা সশরীরে উপস্থিত হয়ে দরদাম করে পছন্দ অনুযায়ী গাড়ি ভাড়া নিয়ে থাকে।</p>",
         "createdBy" : "Abdul Nakib",
         "createdDateTime" : "20th January, 2022",
-        "bannerImage" : "/_nuxt/assets/images/blog/blog_08.jpg",
+        "bannerImage" : "blog/blog_08.jpg",
         "description" : "<div class=\"md:flex md:justify-between gap-5 my-3\"> <div class=\"w-full md:w-1/2\">\n" +
             "<div class=\"aos-init aos-animate\" data-aos=\"fade-up\">\n" +
             "<h1 class=\"corporate_color mt-2 font-bold text-2xl tracking-tight\">যাত্রী পার্টনার অ্যাপ: রেন্ট-এ-কার ব্যবসা খাতে নতুন সংযোজন !</h1>\n" +
@@ -125,12 +125,12 @@ const blogList =[
 
     {
         "slug" : "independent_vacation",
-        "titleImage" : "/_nuxt/assets/images/blog/blog_06.jpg",
+        "titleImage" : "blog/blog_06.jpg",
         "title" : "Rediscovering the beauty of Bangladesh: A one day trip",
         "smallDescription": "<p>As Dhaka is the city of unending traffic jams and busy crowds, we all deserve a break sometimes. Taking time away from your hectic schedule is absolutely essential, so check out these exciting locations you can visit on a day tour for some much-needed recreation.</p>",
         "createdBy" : "Kazi Ayesha Rahman",
         "createdDateTime" : "13th December, 2021",
-        "bannerImage" : "/_nuxt/assets/images/blog/blog_06.jpg",
+        "bannerImage" : "blog/blog_06.jpg",
         "description" : "<div class=\"md:flex md:justify-between gap-5 my-3\"> <div class=\"w-full md:w-1/2\">\n" +
             "<div class=\"aos-init aos-animate\" data-aos=\"fade-up\">\n" +
             "<h1 class=\"corporate_color mt-2 font-bold text-2xl tracking-tight\">Rediscovering the beauty of Bangladesh: A one day trip</h1>\n" +
@@ -148,12 +148,12 @@ const blogList =[
     },
     {
         "slug" : "reopening-cities-in-the-aftermath-of-covid-19",
-        "titleImage" : "/_nuxt/assets/images/blog/blog_04.jpg",
+        "titleImage" : "blog/blog_04.jpg",
         "title" : "Reopening cities in the aftermath of COVID-19",
         "smallDescription": "<p>Transportation is the heart of an economy, playing an incontestable role in the betterment of the country. A sustainable, well-developed transportation system signifies an abundance of opportunities for people to gravitate towards better employment in the city,</p>",
         "createdBy" : "Kazi Ayesha Rahman",
         "createdDateTime" : "3rd September, 2021",
-        "bannerImage" : "/_nuxt/assets/images/blog/blog_06.jpg",
+        "bannerImage" : "blog/blog_04.jpg",
         "gridImage1" : "/_nuxt/assets/images/blog_details/app_lunch/Jatri-app-lunched_01.jpg",
         "gridImage2" : "/_nuxt/assets/images/blog_details/app_lunch/Jatri-app-lunched_02.jpg",
         "gridImage3" : "/_nuxt/assets/images/blog_details/app_lunch/Jatri-app-lunched_03.jpg",
@@ -175,12 +175,12 @@ const blogList =[
     },
     {
         "slug" : "a-new-way-to-travel",
-        "titleImage" : "/_nuxt/assets/images/blog/Jatri-app-lunched.jpg",
+        "titleImage" : "blog/Jatri-app-lunched.jpg",
         "title" : "Cashless, contactless commute: A new way to travel?",
         "smallDescription": "While various transport platforms are available throughout Dhaka city, 47% of all commutes are covered by public buses. Providing a cheaper and more accessible alternative...",
         "createdBy" : "Kazi Ayesha Rahman",
         "createdDateTime" : "3rd February, 2021",
-        "bannerImage" : "/assets/images/blog/blog_06.jpg",
+        "bannerImage" : "blog/Jatri-app-lunched.jpg",
         "gridImage1" : "/assets/images/blog_details/app_lunch/Jatri-app-lunched_01.jpg",
         "gridImage2" : "/assets/images/blog_details/app_lunch/Jatri-app-lunched_02.jpg",
         "gridImage3" : "/assets/images/blog_details/app_lunch/Jatri-app-lunched_03.jpg",
@@ -200,13 +200,13 @@ const blogList =[
     },
     {
         "slug" : "tech-based-solution",
-        "titleImage" : "/_nuxt/assets/images/blog/blog_02.jpg",
+        "titleImage" : "blog/blog_02.jpg",
         "title" : "Tackling Public Transportation in Bangladesh: A Tech-based\n" +
             "Solution",
         "smallDescription": "<p>When traveling in Bangladesh comes up in a conversation, hours of endless traffic and unbearable pollution seem to be the first two things that come to mind.</p>",
         "createdBy" : "Kazi Ayesha Rahman",
         "createdDateTime" : "January 2020",
-        "bannerImage" : "/assets/images/blog/blog_06.jpg",
+        "bannerImage" : "blog/blog_02.jpg",
         "gridImage1" : "/assets/images/blog_details/app_lunch/Jatri-app-lunched_01.jpg",
         "gridImage2" : "/assets/images/blog_details/app_lunch/Jatri-app-lunched_02.jpg",
         "gridImage3" : "/assets/images/blog_details/app_lunch/Jatri-app-lunched_03.jpg",
@@ -226,12 +226,12 @@ const blogList =[
     },
     {
         "slug" : "introducing-jatri",
-        "titleImage" : "/_nuxt/assets/images/blog/blog_03.jpg",
+        "titleImage" : "blog/blog_03.jpg",
         "title" : "Introducing Jatri: A Shift Away From Manual Bus Transportation",
         "smallDescription": "<p>Traffic in Dhaka city is a nightmare. According to the Accident Research Institute at BUET, Dhaka alone wastes about 5 billion work hours in traffic congestion.</p>",
         "createdBy" : "Kazi Ayesha Rahman",
         "createdDateTime" : "January 2020",
-        "bannerImage" : "/assets/images/blog/blog_06.jpg",
+        "bannerImage" : "blog/blog_03.jpg",
         "gridImage1" : "/assets/images/blog_details/app_lunch/Jatri-app-lunched_01.jpg",
         "gridImage2" : "/assets/images/blog_details/app_lunch/Jatri-app-lunched_02.jpg",
         "gridImage3" : "/assets/images/blog_details/app_lunch/Jatri-app-lunched_03.jpg",

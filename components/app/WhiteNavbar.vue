@@ -8,7 +8,7 @@ watch(() => locale.value, () => {
 })
 
 onMounted(() => {
-  locale.value = Cookies.get('j_lang') ?? 'en'
+  locale.value = Cookies.get('j_lang') ?? locale.value
 })
 
 </script>

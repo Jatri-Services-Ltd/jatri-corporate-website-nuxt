@@ -9,8 +9,8 @@ onMounted(() => {
   blog.value = blogData1.find(b => b.slug === router.params.slug)
 })
 
-const generateImg = (titleImage) => {
-  return new URL(`../../assets/images/${titleImage}`, import.meta.url).href;
+const generateImg = (bannerImage) => {
+  return new URL(`../../assets/images/${bannerImage}`, import.meta.url).href;
 }
 
 useHead({
@@ -41,7 +41,7 @@ useHead({
 
           <div class="">
             <div data-aos="zoom-in">
-              <img class="rounded-t-lg" :src="generateImg(blog.titleImage)" alt="" />
+              <img class="rounded-t-lg" :src="generateImg(blog.bannerImage)" alt="" />
             </div>
           </div>
 
