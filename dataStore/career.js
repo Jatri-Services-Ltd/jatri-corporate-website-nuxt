@@ -46,7 +46,7 @@ const careerList = [
     {
         "title": "Software Engineer (Android)",
         "slug": "software-engineer-android",
-        "iconPath": "/_nuxt/assets/images/job_circular/Software-Engineer(Android).jpg",
+        "iconPath": "job_circular/Software-Engineer(Android).jpg",
         "deadline": "25<sup>th</sup> January, 2023",
         "description": "<p class=\"font-thin body_text mt-4\"><u>Job Description:</u></p>\n" +
             "<ul class=\"list-disc ml-4\">\n" +
@@ -94,7 +94,7 @@ const careerList = [
     {
         "title": "Executive - Accounts & Finance",
         "slug": "executive-account&finance",
-        "iconPath": "/_nuxt/assets/images/job_circular/manager_accounts.jpg",
+        "iconPath": "job_circular/manager_accounts.jpg",
         "deadline": "15<sup>th</sup> January, 2023",
         "description": "<p class=\"font-thin body_text mt-4\"><u>Job Description:</u></p>\n" +
             "<ul class=\"list-disc ml-4\">\n" +
@@ -134,7 +134,7 @@ const careerList = [
     {
         "title": "UX Designer",
         "slug": "ux-designer",
-        "iconPath": "/_nuxt/assets/images/job_circular/creative_head.jpg",
+        "iconPath": "job_circular/creative_head.jpg",
         "deadline": "22<sup>th</sup> January, 2023",
         "description": "<p class=\"font-thin body_text mt-4\"><u>Job Description:</u></p>\n" +
             "<ul class=\"list-disc ml-4\">\n" +
