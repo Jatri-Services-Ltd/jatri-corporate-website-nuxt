@@ -143,8 +143,11 @@ useHead({
                     <p class="card_description body_text">{{ $t('ticketing_description') }}</p>
                   </div>
                   <div class="card_footer">
-                    <button class="card_btn corporate_color body_text " onclick="window.location.href = 'https://ticket.jatri.co/'">{{ $t('ticketing_booking') }}</button>
+                    <a class="card_btn corporate_color body_text" href="https://ticket.jatri.co/" target="_blank">{{ $t('ticketing_booking') }}</a>
                   </div>
+                  <!-- <div class="card_footer">
+                    <button class="card_btn corporate_color body_text " onclick="window.location.href = 'https://ticket.jatri.co/'">{{ $t('ticketing_booking') }}</button>
+                  </div> -->
                 </div>
               </div>
 
@@ -156,8 +159,11 @@ useHead({
                     <p class="card_description body_text">{{ $t('rentals_description') }}</p>
                   </div>
                   <div class="card_footer">
-                    <button class="card_btn corporate_color body_text" onclick="window.location.href = 'https://rental.jatri.co/'">{{ $t('rentals_booking') }}</button>
+                    <a class="card_btn corporate_color body_text" href="https://rental.jatri.co/" target="_blank">{{ $t('rentals_booking') }}</a>
                   </div>
+                  <!-- <div class="card_footer">
+                    <button class="card_btn corporate_color body_text" onclick="window.location.href = 'https://rental.jatri.co/'">{{ $t('rentals_booking') }}</button>
+                  </div> -->
                 </div>
               </div>
 
@@ -169,8 +175,12 @@ useHead({
                     <p class="card_description body_text">{{ $t('career_description') }}</p>
                   </div>
                   <div class="card_footer">
-                    <button class="card_btn corporate_color body_text" onclick="window.location.href = './career'">{{ $t('career_booking') }}</button>
+                    <!-- <a class="card_btn corporate_color body_text" href="/career">{{ $t('career_booking') }}</a> -->
+                    <nuxt-link to="/career" class="card_btn corporate_color body_text">{{ $t('career_booking') }}</nuxt-link>
                   </div>
+                  <!-- <div class="card_footer">
+                    <button class="card_btn corporate_color body_text" onclick="window.location.href = './career'">{{ $t('career_booking') }}</button>
+                  </div> -->
                 </div>
               </div>
             </div>
