@@ -24,8 +24,8 @@ const switchLocalePath = useSwitchLocalePath()
         </nuxt-link>
       </div>
       <div class="block lg:hidden flex justify-center items-center">
-        <nuxt-link :to="switchLocalePath('bn')" :class="locale === 'bn' ?  'bg-corporate text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-xs border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-l-[4px]">বাংলা</nuxt-link>
-        <nuxt-link :to="switchLocalePath('en')" :class="locale === 'en' ? 'bg-corporate text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-xs border border-[#DBDBDB] flex justify-center items-center font-semibold text-black h-[32px] rounded-r-[4px]">English</nuxt-link>
+        <nuxt-link :to="switchLocalePath('bn')" :class="locale === 'bn' ?  'bg-corporate text-white border border-corporate' : ''" class="cursor-pointer w-[60px] leading-[20px] text-xs border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-l-[4px]">বাংলা</nuxt-link>
+        <nuxt-link :to="switchLocalePath('en')" :class="locale === 'en' ? 'bg-corporate text-white border border-corporate' : ''" class="cursor-pointer w-[60px] leading-[20px] text-xs border border-[#DBDBDB] flex justify-center items-center font-semibold text-black h-[32px] rounded-r-[4px]">English</nuxt-link>
 
         <!-- <div>
           <input value="bn" v-model="locale" id="a" type="radio" class="hidden">
@@ -68,8 +68,8 @@ const switchLocalePath = useSwitchLocalePath()
           <!-- {{ locale }}
             <nuxt-link :to="switchLocalePath('bn')">bn</nuxt-link>
             <nuxt-link :to="switchLocalePath('en')">en</nuxt-link> -->
-            <nuxt-link :to="switchLocalePath('bn')" :class="locale === 'bn' ? 'bg-corporate text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-l-[4px]">বাংলা</nuxt-link>
-            <nuxt-link :to="switchLocalePath('en')" :class="locale === 'en' ? 'bg-corporate text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] flex justify-center items-center font-semibold text-black h-[32px] rounded-r-[4px]">English</nuxt-link>
+            <nuxt-link :to="switchLocalePath('bn')" :class="locale === 'bn' ? 'bg-corporate text-white border border-corporate' : ''" class="cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-l-[4px]">বাংলা</nuxt-link>
+            <nuxt-link :to="switchLocalePath('en')" :class="locale === 'en' ? 'bg-corporate text-white border border-corporate' : ''" class="cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] flex justify-center items-center font-semibold text-black h-[32px] rounded-r-[4px]">English</nuxt-link>
 
           <!-- <div>
             <input value="bn" id="a" type="radio" class="hidden">
