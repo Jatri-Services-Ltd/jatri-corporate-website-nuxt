@@ -35,6 +35,11 @@ export default defineNuxtConfig({
     plugins:[],
 
     i18n: {
+        detectBrowserLanguage: {
+            useCookie: true,
+            cookieKey: 'j_lang',
+            alwaysRedirect: false
+          },
         defaultLocale: 'bn',
         langDir: 'lang',
         locales: [

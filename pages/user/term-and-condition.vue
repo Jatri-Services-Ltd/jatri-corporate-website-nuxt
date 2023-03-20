@@ -34,10 +34,11 @@ useServerSeoMeta({
                             <li class="bold_list">{{ $t('terms_condition_sublist1') }}</li>
                             <li class="bold_list">{{ $t('terms_condition_sublist2') }}</li>
                             <li class="bold_list">{{ $t('terms_condition_sublist3') }}</li>
+                            <li class="bold_list">{{ $t('terms_condition_sublist4') }}</li>
                             <li class="bold_list">{{ $t('terms_condition_sublist5') }}</li>
-                            <li class="corporate_color">{{ $t('refund_policy') }}</li>
+                            <li class="corporate_color">{{ $t('refund_policy') }}:</li>
                             <ul>
-                                <li class="bold_list">{{ $t('subscription') }}</li>
+                                <li class="bold_list">{{ $t('subscription') }}:</li>
                                 <ul>
                                     <li>{{ $t('subscription_desc1') }}</li>
                                     <li>{{ $t('subscription_desc2') }}</li>

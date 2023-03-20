@@ -56,9 +56,9 @@ useHead({
         <div class="w-1/2 sm:w-1/2 lg:flex-grow self-center">
           <div data-aos="zoom-out-up" data-aos-duration="1000">
             <div class="banner_text uppercase text-white font-extrabold">
-              <h1 class="text-3xl sm:text-4xl md:text-4xl xl:text-5xl font-light subheading_text tracking-wide">
+              <h1 class="text-3xl sm:text-4xl md:text-4xl xl:text-5xl !font-extrabold subheading_text tracking-wide">
                 {{ $t('empowering') }}</h1>
-              <h1 class="text-xl sm:text-2xl md:text-5xl xl:text-6xl font-light subheading_text tracking-wide">
+              <h1 class="text-xl sm:text-2xl md:text-5xl xl:text-6xl !font-extrabold subheading_text tracking-wide">
                 {{ $t('bangladesh_to') }}</h1>
               <!-- <h1 class="text-3xl md:text-4xl lg:text-5xl ">Travel</h1> -->
               <h1 class="text-3xl sm:text-4xl md:text-5xl xl:text-8xl font-light heading_text tracking-wide">  {{ $t('travel_better') }}
@@ -90,7 +90,8 @@ useHead({
                   <count-up :end-val="35"></count-up>
                 </p>
                 <p class="corporate_color counter_number_sub text-4xl">k</p>
-                <p class="corporate_color counter_number_sub text-corporate">+</p>
+                <!-- <p class="corporate_color counter_number_sub !text-corporate">+</p> -->
+                <p class="corporate_color counter_number_sub">+</p>
               </div>
               <p class="counter_tag"> {{ $t('rental_partners') }}</p>
             </div>
@@ -176,7 +177,7 @@ useHead({
                   </div>
                   <div class="card_footer">
                     <!-- <a class="card_btn corporate_color body_text" href="/career">{{ $t('career_booking') }}</a> -->
-                    <nuxt-link to="/career" class="card_btn corporate_color body_text">{{ $t('career_booking') }}</nuxt-link>
+                    <nuxt-link :to="localePath('/career')" class="card_btn corporate_color body_text">{{ $t('career_booking') }}</nuxt-link>
                   </div>
                   <!-- <div class="card_footer">
                     <button class="card_btn corporate_color body_text" onclick="window.location.href = './career'">{{ $t('career_booking') }}</button>

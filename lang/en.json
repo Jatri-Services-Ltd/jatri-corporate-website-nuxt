@@ -58,7 +58,7 @@
   "terms_condition_sub6": "Whether the customer mistakenly waits at an incorrect boarding point",
   "terms_condition_sublist1": "Whether or not the operator decides to select an alternate boarding point or use an alternate vehicle to help customers reach the departure point.",
   "terms_condition_sublist2": "Any fees charged by payment gateways, credit / debit cards, mobile payment gateways (e.g. bKash, cards) are non refundable due to the policies of the respective organizations, which is beyond Jatri's control.",
-  "terms_condition_sublist3": "The bus operator reserves the right to cancel / delay trips, change buses and change seats due to unavoidable reasons.\nNeither the bus operator nor Jatri will bear any consequences for the passenger carrying illegal goods.\nBus fare may vary due to demand.",
+  "terms_condition_sublist3": "The bus operator reserves the right to cancel / delay trips, change buses and change seats due to unavoidable reasons.",
   "terms_condition_sublist4": "Neither the bus operator nor Jatri will bear any consequences for the passenger carrying illegal goods.",
   "terms_condition_sublist5": "Bus fare may vary due to demand.",
   "refund_policy": "Refund Policy",
