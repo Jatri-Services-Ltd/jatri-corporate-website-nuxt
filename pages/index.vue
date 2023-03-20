@@ -207,7 +207,7 @@ useHead({
               <h1 class="text-4xl lg:text-7xl uppercase heading_text">{{ $t('the_app') }} </h1>
               <p class="text-sm lg:text-lg font-light body_text">{{ $t('download_desc') }}</p>
             </div>
-            <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser" class="">
+            <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser" target="_blank" class="">
               <img class="w-40 rounded-full" src="~/assets/images/logo/android_btn.png" alt="">
             </a>
           </div>

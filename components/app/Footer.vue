@@ -12,7 +12,7 @@
             <div class="w-1/2">
               <ul class="list-none footer-links">
                 <li class="mb-2">
-                  <nuxt-link to="/about-us" class="footer_bnt body_text">{{ $t('about-us') }}</nuxt-link>
+                  <nuxt-link :to="localePath('/about-us')" class="footer_bnt body_text">{{ $t('about-us') }}</nuxt-link>
                 </li>
                 <li class="mb-2">
                   <nuxt-link to="#" class="footer_bnt body_text">{{ $t('newsletter') }}</nuxt-link>
@@ -22,10 +22,10 @@
             <div class="w-1/2">
               <ul class="list-none footer-links">
                 <li class="mb-2">
-                  <nuxt-link to="/blog" class="footer_bnt body_text">{{ $t('blog') }}</nuxt-link>
+                  <nuxt-link :to="localePath('/blog')" class="footer_bnt body_text">{{ $t('blog') }}</nuxt-link>
                 </li>
                 <li class="mb-2">
-                  <nuxt-link to="/career" class="footer_bnt body_text">{{ $t('career') }}</nuxt-link>
+                  <nuxt-link :to="localePath('/career')" class="footer_bnt body_text">{{ $t('career') }}</nuxt-link>
                 </li>
               </ul>
             </div>
