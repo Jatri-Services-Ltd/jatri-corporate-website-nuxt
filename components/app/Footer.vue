@@ -89,8 +89,8 @@
       <!-- Footer copyright section -->
       <div class="flex flex-wrap justify-center lg:justify-start -mx-4 mt-3 sm:mt-0 md:py-4 items-center body_text">
         <p class="footer_bottom_menu"> {{ $t('copyright-text') }} </p>
-        <p class="footer_bottom_menu"><nuxt-link to="/user/term-and-condition">{{ $t('terms-conditions') }}</nuxt-link></p>
-        <p class="footer_bottom_menu"><nuxt-link to="/user/privacy-policy">{{ $t('privacy-policy') }}</nuxt-link></p>
+        <p class="footer_bottom_menu"><nuxt-link :to="localePath('/user/term-and-condition')">{{ $t('terms-conditions') }}</nuxt-link></p>
+        <p class="footer_bottom_menu"><nuxt-link :to="localePath('/user/privacy-policy')">{{ $t('privacy-policy') }}</nuxt-link></p>
         <div class="flex mt-4 lg:mt-0">
           <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser"><img
               src="~/assets/images/logo/play-store.png" alt="" class="footer_app_link"></a>
