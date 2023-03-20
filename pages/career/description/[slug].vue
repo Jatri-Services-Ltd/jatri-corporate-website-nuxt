@@ -10,7 +10,7 @@ onMounted(() => {
 })
 
 const generateImg = (iconPath) => {
-  return new URL(`../../assets/images/${iconPath}`, import.meta.url).href;
+  return new URL(`../../../assets/images/${iconPath}`, import.meta.url).href;
 }
 
 useHead({

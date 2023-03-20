@@ -168,7 +168,7 @@ const generateImg = (iconPath) => {
 
                 <nuxt-link
                     class="bg-corporate text-white text-sm text-center p-1 rounded-md w-24"
-                    :to="'career/'+careerList.slug"
+                    :to="'career/description/'+careerList.slug"
                 >View More</nuxt-link
                 >
               </div>
