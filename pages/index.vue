@@ -67,7 +67,7 @@ useHead({
           </div>
         </div>
 
-        <div class="w-1/2 sm:w-1/2 lg:max-w-lg lg:w-full self-end">
+        <div class="w-1/2 sm:w-1/2 lg:max-w-lg lg:w-full self-end lg:self-center 2xl:self-end">
           <div data-aos="zoom-out-down">
             <img class="home_banner_img" alt="hero" src="~/assets/images/banner/banner-2.png" draggable="false">
           </div>
