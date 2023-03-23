@@ -87,9 +87,9 @@ useHead({
             <div class="single_counter my-5 sm:my-0 w-full sm:w-1/3">
               <div class="flex justify-center items-center">
                 <p class="corporate_color counter_number purecounter subheading_text">
-                  <count-up :end-val="35"></count-up>
+                  <count-up :end-val="35000"></count-up>
                 </p>
-                <p class="corporate_color counter_number_sub text-4xl">k</p>
+<!--                <p class="corporate_color counter_number_sub text-4xl">k</p>-->
                 <!-- <p class="corporate_color counter_number_sub !text-corporate">+</p> -->
                 <p class="corporate_color counter_number_sub">+</p>
               </div>
