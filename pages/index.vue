@@ -100,7 +100,7 @@ useHead({
               <div class="flex justify-center items-center">
                 <!-- data-purecounter-decimals="1" -->
                 <p class="corporate_color counter_number purecounter">
-                  <count-up :end-val="11"></count-up>
+                  <count-up :end-val="100"></count-up>
                 </p>
                 <p class="corporate_color counter_number_sub">+ million</p>
               </div>
@@ -110,7 +110,7 @@ useHead({
             <div class="my-5 sm:my-0 w-full sm:w-1/3">
               <div class="flex justify-center items-center">
                 <p class="corporate_color counter_number purecounter">
-                  <count-up :end-val="1000"></count-up>
+                  <count-up :end-val="3500"></count-up>
                 </p>
                 <p class="corporate_color counter_number_sub">+</p>
               </div>
