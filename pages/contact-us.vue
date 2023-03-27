@@ -82,12 +82,9 @@ useHead({
 
                 <div class="flex flex-col gap-2 w-full">
                   <label for="" class="corporate_color subheading_text">{{ $t('message') }}</label>
-                  <textarea
-                      id=""
-                      required
+                  <textarea id="" required
                       class="bg-blue-50 text-gray-800 w-full min-h-[100px] max-h-[300px] h-28 placeholder-gray-400 rounded-md p-2 focus:outline-none focus:ring-4 focus:ring-indigo-50 focus:border-indigo-300"
-                      placeholder="Message...">
-                    </textarea>
+                      placeholder="Message..."></textarea>
                 </div>
 
                 <button type="submit" class="corporate_bg_color rounded-md text-white uppercase text-center p-4 w-full">
