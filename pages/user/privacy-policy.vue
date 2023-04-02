@@ -1,5 +1,3 @@
-import WhiteNavbar from '~~/components/app/WhiteNavbar.vue';
-
 <template>
     <section class="relative">
         <div class="corporate_bg_color flex justify-center items-center contact_us_head">
