@@ -1,0 +1,3 @@
+<template>
+    Primary Footer
+</template>
