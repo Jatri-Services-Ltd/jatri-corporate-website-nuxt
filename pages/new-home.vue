@@ -1,3 +1,9 @@
+
+<script setup>
+import HeroSection from "~/components/home/HeroSection";
+</script>
+
 <template>
-    <h1>Content</h1>
+    <HeroSection />
 </template>
+
