@@ -4,6 +4,9 @@ import HeroSection from "~/components/home/HeroSection";
 </script>
 
 <template>
-    <HeroSection />
+    <div>
+        <HeroSection />
+        <homeCounterSection />
+    </div>
 </template>
 
