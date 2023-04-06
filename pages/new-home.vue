@@ -18,6 +18,7 @@ p {
     <div>
         <HeroSection />
         <homeCounterSection />
+        <homeWhatWeDo />
         <JatriRentalSection />
         <ScrollingScreenSection />
     </div>
