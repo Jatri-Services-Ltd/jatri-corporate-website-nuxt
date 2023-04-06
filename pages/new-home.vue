@@ -2,6 +2,7 @@
 <script setup>
 import HeroSection from "~/components/home/HeroSection";
 import JatriRentalSection from "~/components/home/JatriRentalSection";
+import ScrollingScreenSection from "~/components/home/ScrollingScreenSection";
 </script>
 
 <style scoped>
@@ -18,6 +19,7 @@ p {
         <HeroSection />
         <homeCounterSection />
         <JatriRentalSection />
+        <ScrollingScreenSection />
     </div>
 </template>
 
