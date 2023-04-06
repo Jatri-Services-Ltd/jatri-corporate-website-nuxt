@@ -34,7 +34,7 @@
 </style>
 
 <template>
-    <div class="custom-container">
+    <section class="custom-container">
         <div class="py-[120px]">
             <div class="bg-[#FDE5E2] relative rounded-3xl overflow-hidden">
                 <div class="pt-8 xl:pt-16 pb-40 px-6 text-center">
@@ -146,5 +146,5 @@
                 <img src="~/assets/images/svg/rental-sec-bg.svg" alt="rental bg img" class="w-full rounded-3xl">
             </div>
         </div>
-   </div>
+    </section>
 </template>

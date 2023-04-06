@@ -3,13 +3,14 @@
 import HeroSection from "~/components/home/HeroSection";
 import JatriRentalSection from "~/components/home/JatriRentalSection";
 import ScrollingScreenSection from "~/components/home/ScrollingScreenSection";
+import TestimonialSection from "~/components/home/TestimonialSection";
 </script>
 
 <style scoped>
 * {
     font-family: 'Inter', sans-serif;
 }
-p {
+body {
     @apply text-body
 }
 </style>
@@ -21,6 +22,7 @@ p {
         <homeWhatWeDo />
         <JatriRentalSection />
         <ScrollingScreenSection />
+        <TestimonialSection />
     </div>
 </template>
 

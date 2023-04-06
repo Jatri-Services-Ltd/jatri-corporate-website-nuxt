@@ -1,7 +1,7 @@
 
 <template>
     <!-- Hero Section -->
-    <div class="h-full xl:h-[800px] relative w-full bg-[url('~/assets/images/svg/hero-bg.svg')] bg-no-repeat bg-cover bg-bottom">
+    <section class="h-full xl:h-[800px] relative w-full bg-[url('~/assets/images/svg/hero-bg.svg')] bg-no-repeat bg-cover bg-bottom">
         <!-- <img src="~/assets/images/svg/hero-bg.svg" alt="Hero bg img" class="w-full absolute -z-10"> -->
 
         <div class="pt-12 xl:pt-[110px] px-4 text-center">
@@ -14,5 +14,5 @@
               </a>
             </div>
         </div>
-    </div>
+    </section>
 </template>

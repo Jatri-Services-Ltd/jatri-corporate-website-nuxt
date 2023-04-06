@@ -16,7 +16,7 @@
 </style>
 
 <template>
-  <div class="custom-container">
+  <section class="custom-container">
     <div class="pb-32">
       <div class="grid lg:grid-rows-2 lg:grid-cols-3 gap-4 lg:gap-8">
         <div class="w-full lg:row-span-2 bg-grey rounded-3xl pt-14 px-14 overflow-hidden h-[480px] lg:h-[816px]">
@@ -39,8 +39,8 @@
         </div>
 
         <div class="bg-cyan-500">03</div>
-        <div class="lg:col-span-2 bg-blue-700">04<br>01<br>01<br>01<br>01<br>01<br>01</div>
+        <div class="lg:col-span-2 bg-blue-700">04</div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
