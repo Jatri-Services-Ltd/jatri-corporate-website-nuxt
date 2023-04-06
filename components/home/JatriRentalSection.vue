@@ -35,10 +35,10 @@
 
 <template>
     <div class="custom-container">
-        <div class="py-10">
+        <div class="py-[120px]">
             <div class="bg-[#FDE5E2] relative rounded-3xl overflow-hidden">
                 <div class="pt-8 xl:pt-16 pb-40 px-6 text-center">
-                    <h3 class="text-[#151414] font-bold text-4xl">Jatri Rental</h3>
+                    <h3 class="text-[#151414] font-bold text-4xl">Jatri Ticket</h3>
                     <p class="text-[#151414] text-base mt-2 mb-6">Lorem ipsum dolor sit amet consectetur. Suspendisse cras arcu est et dignissim non lacus neque sit.</p>
                     <a href="#" class="bg-[#F04935] text-white text-center px-6 py-2.5 rounded-full text-sm">Learn More</a>
                 </div>
