@@ -10,6 +10,14 @@ module.exports = {
     "./app.vue",
   ],
   theme: {
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '4rem',
+        xl: '6.25',
+      },
+    },
     extend: {
       colors: {
         corporate: '#f04935',

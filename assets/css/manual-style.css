@@ -472,3 +472,9 @@ body {
     right: 15px;
   }
 }
+
+
+/*New Design*/
+.custom-container {
+  @apply w-full mx-auto px-4 md:px-20 lg:px-[100px]
+}
