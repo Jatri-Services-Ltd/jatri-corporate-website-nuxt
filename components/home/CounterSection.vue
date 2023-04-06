@@ -7,7 +7,7 @@ const modules = [FreeMode, Pagination];
 
 </script>
 <template>
-    <div class="px-[16px] lg:px-[100px] py-10 lg:py-28">
+    <div class="custom-container pt-10 lg:pt-28">
         <div class="mb-0 lg:mb-[48px] counter-section">
             <swiper
               :breakpoints="{
@@ -48,16 +48,34 @@ const modules = [FreeMode, Pagination];
                 </div>
               </swiper-slide>
               <swiper-slide>
-                <div class="swiper-slide">
-                  <div class="min-h-[120px] flex justify-center items-end">
-                    <img src="~/assets/images/svg/counter-2.svg"  alt="Counter" class="" >
+                <div class="flex justify-center">
+                  <div>
+                    <div class="min-h-[120px] flex justify-center items-end">
+                      <img src="~/assets/images/svg/counter-2.svg"  alt="Counter" class="" >
+                    </div>
+                    <div class="mt-4 block lg:hidden">
+                      <div class="text-center relative z-20">
+                        <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[36px] lg:leading-[52px]">100 millions+</p>
+                        <p class="text-body text-[16px] xl:text-[20px] font-medium leading-[24px] lg:leading-[28px]">Tickets served</p>
+                      </div>
+                      <img src="~/assets/images/svg/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="">
+                    </div>
                   </div>
                 </div>
               </swiper-slide>
               <swiper-slide>
-                <div class="swiper-slide">
-                  <div class="min-h-[120px] flex justify-center items-end">
-                    <img src="~/assets/images/svg/counter-3.svg"  alt="Counter" class="" >
+                <div class="flex justify-center">
+                  <div>
+                    <div class="min-h-[120px] flex justify-center items-end">
+                      <img src="~/assets/images/svg/counter-3.svg"  alt="Counter" class="" >
+                    </div>
+                    <div class="mt-4 block lg:hidden">
+                      <div class="text-center relative z-20">
+                        <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[36px] lg:leading-[52px]">100K+</p>
+                        <p class="text-body text-[16px] xl:text-[20px] font-medium leading-[24px] lg:leading-[28px]">Rental partners</p>
+                      </div>
+                      <img src="~/assets/images/svg/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="">
+                    </div>
                   </div>
                 </div>
               </swiper-slide>
@@ -101,6 +119,11 @@ const modules = [FreeMode, Pagination];
   margin-top: -40px;
 }
 
+@media(max-width:1280px){
+  .gray-shape-bg{
+    margin-top: -45px;
+  }
+}
 @media(max-width:1280px){
   .gray-shape-bg{
     margin-top: -45px;
