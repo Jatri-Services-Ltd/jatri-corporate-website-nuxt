@@ -14,7 +14,9 @@ p {
 </style>
 
 <template>
-    <HeroSection />
-    <JatriRentalSection />
+    <div>
+        <HeroSection />
+        <homeCounterSection />
+    </div>
 </template>
 
