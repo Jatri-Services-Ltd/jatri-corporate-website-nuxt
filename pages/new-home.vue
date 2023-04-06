@@ -3,6 +3,7 @@
 import HeroSection from "~/components/home/HeroSection";
 import JatriRentalSection from "~/components/home/JatriRentalSection";
 import ScrollingScreenSection from "~/components/home/ScrollingScreenSection";
+import OurProductsSection from "~/components/home/OurProductsSection";
 import TestimonialSection from "~/components/home/TestimonialSection";
 </script>
 
@@ -22,6 +23,7 @@ body {
         <homeWhatWeDo />
         <JatriRentalSection />
         <ScrollingScreenSection />
+        <OurProductsSection />
         <TestimonialSection />
     </div>
 </template>
