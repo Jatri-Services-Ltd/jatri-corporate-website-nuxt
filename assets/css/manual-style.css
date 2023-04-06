@@ -472,3 +472,24 @@ body {
     right: 15px;
   }
 }
+
+
+/*Customize swiper slider indicator*/
+.counter-section .swiper-pagination-bullet{
+  height: 8px !important;
+  width: 8px !important;
+  border-radius: 50% !important;
+  background-color: #DBDBDB !important;
+  opacity: 1 !important;
+}
+.counter-section .swiper-pagination-bullet-active{
+  height: 8px !important;
+  width: 32px !important;
+  border-radius: 5px !important;
+  background-color: #F04935 !important;
+  opacity: 1 !important;
+}
+
+.counter-section .swiper-pagination{
+  margin-top: 0 !important;
+}
