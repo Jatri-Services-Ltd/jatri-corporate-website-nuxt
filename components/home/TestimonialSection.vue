@@ -8,7 +8,7 @@
 <template>
     <section class="pl-4 md:pl-20 lg:pl-[100px] flex justify-between flex-wrap lg:flex-nowrap gap-8 xl:gap-16">
         <div class="w-full lg:w-2/5 pr-4 lg:pr-0 flex xl:flex-col gap-5 justify-between lg:justify-center">
-            <h4 class="text-dark text-[28px] leading-9 lg:text-[57px] lg:leading-[64px] font-medium lg:font-semibold">Don’t just believe our words</h4>
+            <h4 class="primary-heading">Don’t just believe our words</h4>
             <div class="flex items-center gap-4 xl:gap-6">
                 <button class="rounded-full border border-[#DBDBDB] w-[46px] lg:w-[60px] h-[46px] lg:h-[60px] flex justify-center items-center">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22" fill="none" class="w-4 lg:w-[22px] transform rotate-0">
