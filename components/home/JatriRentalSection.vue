@@ -75,31 +75,6 @@
   }
 }
 
-@keyframes sticky-slide-out {
-  from {
-    transform: scale(1);
-    opacity: 80%;
-
-  }
-  /*25%  {*/
-  /*  transform: scale(.95);*/
-  /*  opacity: 80%;*/
-  /*}*/
-  /*50%  {*/
-  /*  transform: scale(.8);*/
-  /*  opacity: 60%;*/
-  /*}*/
-  /*75%  {*/
-  /*  transform: scale(.7);*/
-  /*  opacity: 50%;*/
-  /*}*/
-  to {
-    opacity: 50%;
-    transform: scale(.8);
-  }
-}
-
-
 </style>
 
 <template>
