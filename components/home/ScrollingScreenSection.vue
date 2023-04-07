@@ -1,7 +1,7 @@
 
 <style scoped>
 .screen-move {
-  animation: screenMove 10s linear infinite 1s;
+  animation: screenMove 3s linear infinite 1s;
   will-change: transform;
 }
 

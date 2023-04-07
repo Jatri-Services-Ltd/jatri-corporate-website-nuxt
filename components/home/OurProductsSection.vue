@@ -6,34 +6,54 @@
 #one:checked ~ .tabs #tab-one,
 #two:checked ~ .tabs #tab-two,
 #three:checked ~ .tabs #tab-three {
-    @apply bg-primary text-white
+    @apply bg-primary text-white gap-6 xl:gap-10
 }
 
+.panels {
+    @apply mt-14 grid grid-cols-3
+}
 .panels .panel {
-  @apply rounded-3xl transform scale-100 duration-1000 w-[300px] transition-[transform,width]
+  @apply h-[460px] w-[340px] overflow-hidden rounded-3xl flex flex-col justify-center transform scale-100 duration-1000 transition-[transform,width]
 }
-.panel .panel-des {
-    display:none;
+.panel-content {
+    @apply px-5 py-6
 }
-.panel-title{
-  font-size:1.5em;
-  font-weight:bold
-}
-.radio{
-  display:none;
+.panel-content .title {
+    @apply text-white text-[45px] leading-[52px] font-semibold text-center transition-[text-align,font-size] duration-300
+ }
+.panel-content .description {
+    @apply text-white text-base mt-1 text-center transition-[text-align,font-size] duration-300
+ }
+
+.panel-hidden-content {
+    @apply shadow-[0_0_24px_rgba(116,19,9,0.3)] rounded-3xl px-5 py-6 space-y-6 transform translate-y-56 h-0 transition-[transform,height] duration-300
 }
 
-#one:checked ~ .panels #one-panel,
-#two:checked ~ .panels #two-panel,
-#three:checked ~ .panels #three-panel {
-    transform: scale(1.2);
-    width: 320px;
+.radio {
+  @apply hidden
 }
 
-#one:checked ~ .panels #one-panel .panel-des,
-#two:checked ~ .panels #two-panel .panel-des,
-#three:checked ~ .panels #three-panel .panel-des {
-  display:block
+#one:checked ~ .panels #panel-one,
+#two:checked ~ .panels #panel-two,
+#three:checked ~ .panels #panel-three {
+    @apply scale-110
+}
+
+#one:checked ~ .panels #panel-one .panel-content h5,
+#two:checked ~ .panels #panel-two .panel-content h5,
+#three:checked ~ .panels #panel-three .panel-content h5 {
+  @apply text-left text-xl
+}
+#one:checked ~ .panels #panel-one .panel-content p,
+#two:checked ~ .panels #panel-two .panel-content p,
+#three:checked ~ .panels #panel-three .panel-content p {
+    @apply text-left text-sm
+}
+
+#one:checked ~ .panels #panel-one .panel-hidden-content ,
+#two:checked ~ .panels #panel-two .panel-hidden-content ,
+#three:checked ~ .panels #panel-three .panel-hidden-content  {
+  @apply translate-y-0 h-full
 }
 </style>
 
@@ -53,21 +73,98 @@
                 </div>
             </div>
             
-            <div class="panels mt-10 grid grid-cols-3 gap-6 xl:gap-10">
-                <div class="panel bg-corporate" id="one-panel">
-                    <div class="panel-title">Why Learn CSS?</div>
-                    <p class="panel-des">Without CSS, every web page would be drab plain text and images that flowed straight down the page. With CSS, you can add color and background images and change the layout of your page — your web pages can feel like works of art!</p>
+            
+            <div class="panels">
+                <div class="panel bg-primary" id="panel-one">
+                    <div class="panel-content">
+                        <h5 class="title">Users</h5>
+                        <p class="description">Our plethora of services makes the users life convenien</p>
+                    </div>
+
+                    <div class="panel-hidden-content bg-primary">
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="panel bg-info" id="two-panel">
-                    <div class="panel-title">Take-Away Skills</div>
-                    <p class="panel-des">You will learn many aspects of styling web pages! You’ll be able to set up the correct file structure, edit text and colors, and create attractive layouts. With these skills, you’ll be able to customize the appearance of your web pages to suit your every need!</p>
+
+                <div class="panel bg-info" id="panel-two">
+                    <div class="panel-content">
+                        <h5 class="title">Users</h5>
+                        <p class="description">Our plethora of services makes the users life convenien</p>
+                    </div>
+
+                    <div class="panel-hidden-content">
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="panel bg-success" id="three-panel">
-                    <div class="panel-title">Note on Prerequisites</div>
-                    <p class="panel-des">We recommend that you complete Learn HTML before learning CSS.</p>
+
+                <div class="panel bg-success" id="panel-three">
+                    <div class="panel-content">
+                        <h5 class="title">Users</h5>
+                        <p class="description">Our plethora of services makes the users life convenien</p>
+                    </div>
+
+                    <div class="panel-hidden-content">
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
     </section>
 </template>
