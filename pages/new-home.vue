@@ -19,12 +19,12 @@ body {
 <template>
     <div>
         <HeroSection />
-        <homeCounterSection />
-        <homeWhatWeDo />
-        <JatriRentalSection />
-        <ScrollingScreenSection />
-        <OurProductsSection />
-        <TestimonialSection />
+<!--        <homeCounterSection />-->
+<!--        <homeWhatWeDo />-->
+<!--        <JatriRentalSection />-->
+<!--        <ScrollingScreenSection />-->
+<!--        <OurProductsSection />-->
+<!--        <TestimonialSection />-->
     </div>
 </template>
 

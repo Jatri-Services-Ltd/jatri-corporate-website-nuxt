@@ -36,11 +36,11 @@
 .sticky-wrapper .sticky-item {
   transform: translateZ(0);
   will-change: transform, opacity;
-  height: 1100px;
+  height: 1300px;
   position: sticky;
   top: calc(25vh + 52px - 215px - 40px);
   transition: all 0.3s;
-  animation: slideDown  0.35s ease-out;;
+  animation: slideDown  0.35s ease-out;
 }
 .sticky-wrapper .sticky-item .card-container {
   top: 50px;
