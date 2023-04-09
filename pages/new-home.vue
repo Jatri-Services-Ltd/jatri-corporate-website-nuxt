@@ -22,7 +22,7 @@ body {
 <!--        <homeCounterSection />-->
 <!--        <homeWhatWeDo />-->
 <!--        <JatriRentalSection />-->
-<!--        <ScrollingScreenSection />-->
+        <ScrollingScreenSection />
 <!--        <OurProductsSection />-->
 <!--        <TestimonialSection />-->
     </div>

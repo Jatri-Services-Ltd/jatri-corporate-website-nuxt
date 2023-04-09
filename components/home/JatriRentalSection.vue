@@ -1,87 +1,8 @@
-<style scoped>
-.rental-animation,
-.rental-animation2  {
-    display: flex;
-    gap: 6px;
-    padding: 0 30px;
-}
-.rental-animation {
-    animation: rentalMove 3s linear infinite;
-    will-change: transform;
-}
-.rental-animation2 {
-    animation: rentalMove2 3s linear infinite;
-    will-change: transform;
-}
-
-
-@keyframes rentalMove {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-
-@keyframes rentalMove2 {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
-
-.sticky-wrapper .sticky-item {
-  transform: translateZ(0);
-  will-change: transform, opacity;
-  height: 1300px;
-  position: sticky;
-  top: calc(25vh + 52px - 215px - 40px);
-  transition: all 0.3s;
-  animation: slideDown  0.35s ease-out;
-}
-.sticky-wrapper .sticky-item .card-container {
-  top: 50px;
-  position: absolute;
-  left: 0;
-  transform: translateZ(0);
-  width: 100%;
-  /*height: 570px;*/
-}
-
-@keyframes slideDown {
-  from {
-    transform: translateY(-100%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-
-@keyframes sticky-slide-in {
-  from {
-    opacity: 50%;
-    transform: translateX(100px) scale(0.5);
-  }
-  80%  {
-    opacity: 90%;
-  }
-  to {
-    opacity: 100%;
-    transform: scale(1);
-  }
-}
-
-</style>
-
 <template>
-  <div class="sticky-wrapper">
+  <section class="sticky-wrapper">
     <div class="sticky-item">
       <div class="card-container">
-        <section class="custom-container">
+        <div class="custom-container">
           <div>
             <div class="bg-[#FDE5E2] relative rounded-3xl overflow-hidden">
               <div class="pt-8 xl:pt-16 pb-40 px-6 text-center">
@@ -193,9 +114,10 @@
               <img src="~/assets/images/svg/rental-sec-bg.svg" alt="rental bg img" class="w-full rounded-3xl">
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
+
     <div class="sticky-item">
       <div class="card-container">
         <section class="custom-container">
@@ -311,5 +233,85 @@
         </section>
       </div>
     </div>
-  </div>
+  </section>
 </template>
+
+
+<style scoped>
+.rental-animation,
+.rental-animation2  {
+  display: flex;
+  gap: 6px;
+  padding: 0 30px;
+}
+.rental-animation {
+  animation: rentalMove 3s linear infinite;
+  will-change: transform;
+}
+.rental-animation2 {
+  animation: rentalMove2 3s linear infinite;
+  will-change: transform;
+}
+
+
+@keyframes rentalMove {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes rentalMove2 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.sticky-wrapper .sticky-item {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+  height: 1300px;
+  position: sticky;
+  top: calc(25vh + 52px - 215px - 40px);
+  transition: all 0.3s;
+  animation: slideDown  0.35s ease-out;
+}
+.sticky-wrapper .sticky-item .card-container {
+  top: 50px;
+  position: absolute;
+  left: 0;
+  transform: translateZ(0);
+  width: 100%;
+  /*height: 570px;*/
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes sticky-slide-in {
+  from {
+    opacity: 50%;
+    transform: translateX(100px) scale(0.5);
+  }
+  80%  {
+    opacity: 90%;
+  }
+  to {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+
+</style>
