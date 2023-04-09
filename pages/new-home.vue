@@ -25,6 +25,7 @@ body {
         <ScrollingScreenSection />
         <OurProductsSection />
         <TestimonialSection />
+        <homeDownloadAppSection />
     </div>
 </template>
 
