@@ -23,10 +23,11 @@ body {
 <!--        <homeWhatWeDo />-->
         <JatriRentalSection />
         <ScrollingScreenSection />
-<!--        <OurProductsSection />-->
-<!--        <TestimonialSection />-->
-<!--        <homeDownloadAppSection />-->
-<!--        <homeWeGotFeaturedSlider />-->
+        <OurProductsSection />
+        <TestimonialSection />
+        <homeDownloadAppSection />
+        <homeWeGotFeaturedSlider />
+        <homeReadMoreAboutUsSlider />
 
 <!--        <OurProductsSection />-->
 <!--        <TestimonialSection />-->
