@@ -13,42 +13,55 @@ const featureSlider = ref([
     img:'/images/slider-img-1.svg',
     title:'Bangladeshi transport app secures $1.2m to fuel national expansion',
     logoImg: '/images/tech-in-asia-logo.svg',
-    published: 'Published in Tech In Asia'
+    published: 'Published in Tech In Asia',
+    link: 'https://www.techinasia.com/jatri-pre-series-a-funding'
   },
   {
     id: 2,
     img:'/images/slider-img-2.svg',
     title:'Bus owners association announce Jatri as Dhaka’s e-ticketing partner',
     logoImg: '/images/daily-star-logo.svg',
-    published: 'Published in The Daily Star'
+    published: 'Published in The Daily Star',
+    link: 'https://www.thedailystar.net/business/news/bus-owners-announce-jatri-dhakas-e-ticketing-partner-3170171'
   },
   {
     id: 3,
     img:'/images/slider-img-3.svg',
     title:'E-ticketing for all Mirpur route buses from today',
     logoImg: '/images/financial-express-logo.svg',
-    published: 'Published in The Financial Express'
+    published: 'Published in The Financial Express',
+    link: 'https://today.thefinancialexpress.com.bd/metro-news/e-ticketing-for-all-mirpur-route-buses-from-today-1668268482?amp=true'
   },
   {
     id: 4,
     img:'/images/slider-img-4.svg',
     title:'Bus owners association and Jatri to bring more bus companies under the e-ticketing system.',
     logoImg: '/images/dhaka-tribune-logo.svg',
-    published: 'Published in Dhaka tribune'
+    published: 'Published in Dhaka tribune',
+    link: 'https://www.dhakatribune.com/business/2023/01/10/bus-owners-association-and-jatri-to-bring-more-bus-companies-under-e-ticketing-system'
   }
 ]);
 
-const swiperBtn = ref(true)
-
+const swiperCarousel = ref(true)
+const firstElement = ref(false);
+const lastElement = ref(false);
 const onSwiper = (swiper) => {
-  swiperBtn.value = swiper
+  swiperCarousel.value = swiper
 };
 
 const slideNext = () => {
-  swiperBtn.value.slideTo(swiperBtn.value.realIndex + 1)
+  swiperCarousel.value.slideTo(swiperCarousel.value.realIndex + 1)
+  if(swiperCarousel.value.isEnd === true){
+    lastElement.value = true
+    firstElement.value = false
+  }
 }
 const slidePrev = () => {
-  swiperBtn.value.slideTo(swiperBtn.value.realIndex - 1)
+  swiperCarousel.value.slideTo(swiperCarousel.value.realIndex - 1)
+  if(swiperCarousel.value.realIndex === 0){
+    firstElement.value = true
+    lastElement.value = false
+  }
 }
 </script>
 <template>
@@ -60,10 +73,10 @@ const slidePrev = () => {
       <div>
         <div class="flex gap-6 lg:gap-8 items-center">
           <button @click="slidePrev" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
-            <img class="h-[20px] w-[21px]" src="~/assets/images/svg/arrow-prev.svg" alt="Previous Arrow">
+            <img :class="firstElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/svg/arrow-prev.svg" alt="Previous Arrow">
           </button>
           <button @click="slideNext" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
-            <img class="h-[20px] w-[21px]" src="~/assets/images/svg/arrow-next.svg" alt="Previous Arrow">
+            <img :class="lastElement ? 'opacity-30' : 'opacity-100'"  class="h-[20px] w-[21px]" src="~/assets/images/svg/arrow-next.svg" alt="Previous Arrow">
           </button>
         </div>
       </div>
@@ -97,7 +110,7 @@ const slidePrev = () => {
             class="mySwiper"
         >
           <swiper-slide v-for="slider in featureSlider" :key="slider.id">
-            <div class="flex flex-col justify-between min-h-[500px] bg-[#FEF2F0] rounded-2xl py-6 px-6">
+            <nuxt-link :to="slider.link" target="_blank" class="flex flex-col justify-between min-h-[500px] bg-[#FEF2F0] rounded-2xl py-6 px-6">
               <div>
                 <div class="flex justify-center mb-4 slider-img">
                   <img class="rounded-2xl" :src="slider.img" alt="Feature Slider">
@@ -108,7 +121,7 @@ const slidePrev = () => {
                 <img class="mb-2 " :src="slider.logoImg" alt="Company Logo">
                 <p class="text-[16px] leading-[24px] text-[#4D4D4F]">{{ slider.published }}</p>
               </div>
-            </div>
+            </nuxt-link>
           </swiper-slide>
         </swiper>
       </div>

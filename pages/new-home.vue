@@ -27,6 +27,7 @@ body {
         <TestimonialSection />
         <homeDownloadAppSection />
         <homeWeGotFeaturedSlider />
+        <homeReadMoreAboutUsSlider />
 
 <!--        <OurProductsSection />-->
 <!--        <TestimonialSection />-->
