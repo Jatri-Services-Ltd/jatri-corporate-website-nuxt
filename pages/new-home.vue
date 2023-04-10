@@ -21,12 +21,12 @@ body {
         <HeroSection />
 <!--        <homeCounterSection />-->
 <!--        <homeWhatWeDo />-->
-<!--        <JatriRentalSection />-->
+        <JatriRentalSection />
         <ScrollingScreenSection />
-        <OurProductsSection />
-        <TestimonialSection />
-        <homeDownloadAppSection />
-        <homeWeGotFeaturedSlider />
+<!--        <OurProductsSection />-->
+<!--        <TestimonialSection />-->
+<!--        <homeDownloadAppSection />-->
+<!--        <homeWeGotFeaturedSlider />-->
 
 <!--        <OurProductsSection />-->
 <!--        <TestimonialSection />-->
