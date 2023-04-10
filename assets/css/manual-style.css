@@ -476,7 +476,7 @@ body {
 
 /*New Design*/
 .custom-container {
-  @apply w-full mx-auto px-4 md:px-20 lg:px-[100px]
+  @apply w-full mx-auto px-4 md:px-12 lg:px-[60px] xl:px-[100px]
 }
 .primary-heading {
   @apply text-dark text-[28px] leading-9 lg:text-[57px] lg:leading-[64px] font-medium lg:font-semibold
