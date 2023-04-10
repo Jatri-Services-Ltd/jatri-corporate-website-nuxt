@@ -23,8 +23,14 @@ body {
 <!--        <homeWhatWeDo />-->
 <!--        <JatriRentalSection />-->
         <ScrollingScreenSection />
+        <OurProductsSection />
+        <TestimonialSection />
+        <homeDownloadAppSection />
+        <homeWeGotFeaturedSlider />
+
 <!--        <OurProductsSection />-->
 <!--        <TestimonialSection />-->
+
     </div>
 </template>
 
