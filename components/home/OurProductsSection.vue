@@ -164,10 +164,10 @@ label {
 }
 
 .panels {
-    @apply pt-6 lg:pt-14 w-full flex flex-grow space-x-6 lg:space-x-10 overflow-hidden lg:overflow-visible
+    @apply pt-6 lg:pt-14 w-full flex justify-center space-x-6 lg:space-x-10 overflow-hidden lg:overflow-visible
 }
 .panels .panel {
-  @apply h-[460px] w-[340px] overflow-hidden flex-shrink-0 lg:shrink rounded-3xl flex flex-col justify-center transform scale-100 duration-1000 transition-transform
+  @apply h-[460px] w-[340px] overflow-hidden flex-shrink-0 rounded-3xl flex flex-col justify-center transform scale-100 duration-1000 transition-transform
 }
 .panel-content {
     @apply px-5 py-6
