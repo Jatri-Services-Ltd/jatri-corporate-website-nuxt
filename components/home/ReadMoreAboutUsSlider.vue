@@ -78,23 +78,25 @@ const slidePrev = () => {
 </script>
 <template>
   <div class="bg-[#F7F7F7]">
-    <div class="custom-container py-10">
-      <div class="flex justify-between items-center lg:items-end mb-[22px] md:mb-8">
-        <div>
-          <h2 class="text-[28px] lg:text-[57px] text-dark font-semibold leading-9 lg:leading-[64px]">Read more about us</h2>
-        </div>
-        <div>
-          <div class="flex gap-6 lg:gap-8 items-center">
-            <button @click="slidePrev" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
-              <img :class="firstElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/svg/arrow-prev.svg" alt="Previous Arrow">
-            </button>
-            <button @click="slideNext" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
-              <img :class="lastElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/svg/arrow-next.svg" alt="Previous Arrow">
-            </button>
+    <div class="py-12 md:py-20 xl:py-[120px]">
+      <div class="custom-container">
+        <div class="flex justify-between items-center lg:items-end mb-[22px] md:mb-8">
+          <div>
+            <h2 class="text-[28px] lg:text-[57px] text-dark font-semibold leading-9 lg:leading-[64px]">Read more about us</h2>
+          </div>
+          <div>
+            <div class="flex gap-6 lg:gap-8 items-center">
+              <button @click="slidePrev" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
+                <img :class="firstElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/svg/arrow-prev.svg" alt="Previous Arrow">
+              </button>
+              <button @click="slideNext" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
+                <img :class="lastElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/svg/arrow-next.svg" alt="Previous Arrow">
+              </button>
+            </div>
           </div>
         </div>
       </div>
-      <div class="mb-0 lg:mb-[48px] counter-section">
+      <div class="full-width pl-4 md:pl-12 lg:pl-[60px] xl:pl-[100px] 2xl:pl-[200px]">
         <div class="full-width">
           <swiper
               :breakpoints="{
@@ -112,16 +114,20 @@ const slidePrev = () => {
                     },
                     1280: {
                       slidesPerView: 3.9,
-                      spaceBetween: 25
-                    }
+                      spaceBetween: 32
+                    },
+                    1441: {
+                    slidesPerView: 4.9,
+                    spaceBetween: 25
+                  },
                   }"
-              :spaceBetween="30"
-              :freeMode="true"
-              :modules="modules"
-              @swiper="onSwiper"
-              class="mySwiper"
-          >
-            <swiper-slide v-for="slider in readMoreSlider" :key="slider.id" class="h-auto">
+                  :spaceBetween="30"
+                  :freeMode="true"
+                  :modules="modules"
+                  @swiper="onSwiper"
+                  class="mySwiper h-auto"
+                  >
+            <swiper-slide v-for="slider in readMoreSlider" :key="slider.id" class="h-full">
               <div class="flex flex-col justify-between min-h-[342px] bg-white rounded-2xl py-4 px-4 h-full">
                 <div>
                   <div class="flex justify-center mb-4 slider-img">
