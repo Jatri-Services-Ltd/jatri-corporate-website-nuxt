@@ -28,7 +28,7 @@ body {
 <!--        <homeDownloadAppSection />-->
 <!--        <homeWeGotFeaturedSlider />-->
 
-<!--        <OurProductsSection />-->
+        <OurProductsSection />
 <!--        <TestimonialSection />-->
 
     </div>

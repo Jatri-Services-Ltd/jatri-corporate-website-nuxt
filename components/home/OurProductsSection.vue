@@ -1,9 +1,27 @@
 <script setup>
+import {onMounted} from "vue";
+
 const activeTab = ref(0)
 
 const switchtab = (n) => {
   activeTab.value = n
+  let nodeElement = document.getElementsByClassName('radio_wrap')[0]
+  let tabpane = document.querySelector('.radio_wrap')
+  let totalWidth = 0;
+  for (let i = 0; i < n; i++) {
+    totalWidth += nodeElement.children[i].clientWidth
+  }
+
+  let tabWith = nodeElement.children[n].clientWidth
+  tabpane.style.setProperty("--left", `${totalWidth}px`);
+  tabpane.style.setProperty("--tabWidth", `${tabWith}px`);
 }
+
+onMounted(() => {
+  let box = document.querySelector('.radio_wrap')
+  box.style.setProperty("--left", `0px`);
+  box.style.setProperty("--tabWidth", `84px`);
+})
 </script>
 
 <template>
@@ -14,10 +32,12 @@ const switchtab = (n) => {
         <input type="radio" id="radio1" name="radio1" value="0" v-model="activeTab">
         <input type="radio" id="radio2" name="radio2" value="1" v-model="activeTab">
         <input type="radio" id="radio3" name="radio3" value="2" v-model="activeTab">
-        <div class="radio_wrap" :style="{'--i': activeTab}">
+        <div class="radio_wrap_container">
+          <div class="radio_wrap" :style="{'--i': activeTab}">
             <label @click="switchtab(0)" for="radio1" data-i="0">User</label>
             <label @click="switchtab(1)" for="radio2" data-i="1">Partner</label>
             <label @click="switchtab(2)" for="radio3" data-i="2">Business Solutions</label>
+          </div>
         </div>
 
         <div class="panels">
@@ -116,17 +136,22 @@ const switchtab = (n) => {
 </template>
 
 <style scoped>
+.radio_wrap_container {
+  background: #FDE5E2;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  width: max-content;
+  padding: 4px 8px;
+  border-radius: 2rem;
+}
 .radio_wrap {
   position: relative;
   overflow: hidden;
   z-index: 0;
   --i: 0;
-  margin: auto;
-  background: #FDE5E2;
-  border-radius: 2rem;
-}
-.radio_wrap {
-    @apply w-full xl:w-[600px]
+  display: flex;
+  justify-content: center;
 }
 
 input {
@@ -134,13 +159,13 @@ input {
   opacity: 0;
 }
 
-.radio_wrap:before {
+.radio_wrap::before {
   content: "";
   position: absolute;
   z-index: -1;
-  width: calc(100% / 3);
+  width: var(--tabWidth);
   top: 1px;
-  left: calc(var(--i) * (100% / 3));
+  left: var(--left);
   height: 100%;
   background: #F04935;
   transition: .3s ease-in-out;
@@ -148,10 +173,8 @@ input {
 }
 
 label {
-  min-width: calc(100% / 3);
   position: relative;
   z-index: 2;
-  float: left;
   text-align: center;
   color: black;
   font-size: 16px;
@@ -161,6 +184,16 @@ label {
   align-items: center;
   height: 40px;
   cursor: pointer;
+}
+
+label:first-child {
+  width: 84px;
+}
+label:nth-child(2) {
+  width: 105px;
+}
+label:last-child {
+  width: 191px;
 }
 
 .panels {
