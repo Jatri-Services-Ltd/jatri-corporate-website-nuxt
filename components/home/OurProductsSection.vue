@@ -167,7 +167,7 @@ onUnmounted(() => {
   display: flex;
   justify-content: center;
   width: max-content;
-  padding: 4px 8px;
+  padding: 6px 6px;
   border-radius: 2rem;
 }
 .radio_wrap {
@@ -240,7 +240,6 @@ label:last-child {
 .panel-hidden-content {
     @apply shadow-[0_0_24px_rgba(116,19,9,0.3)] rounded-3xl px-5 py-6 space-y-6 transform translate-y-56 h-0 transition-[transform,height] duration-300
 }
-
 
 #radio1:checked ~ .panels #panel-one,
 #radio2:checked ~ .panels #panel-two,
