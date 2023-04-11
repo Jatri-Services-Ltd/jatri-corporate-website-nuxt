@@ -27,15 +27,7 @@ const switchLocalePath = useSwitchLocalePath()
         <nuxt-link :to="switchLocalePath('bn')" :class="locale === 'bn' ?  'bg-corporate text-white border border-corporate' : ''" class="cursor-pointer w-[60px] leading-[20px] text-xs border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-l-[4px]">বাংলা</nuxt-link>
         <nuxt-link :to="switchLocalePath('en')" :class="locale === 'en' ? 'bg-corporate text-white border border-corporate' : ''" class="cursor-pointer w-[60px] leading-[20px] text-xs border border-[#DBDBDB] flex justify-center items-center font-semibold text-black h-[32px] rounded-r-[4px]">English</nuxt-link>
 
-        <!-- <div>
-          <input value="bn" v-model="locale" id="a" type="radio" class="hidden">
-        </div> -->
-        <!-- <div>
-          <input value="en" v-model="locale" id="b" type="radio" class="hidden">
-        </div> -->
       </div>
-<!--      {{i18n.locales}}-->
-
       <label
           class="block lg:hidden cursor-pointer flex items-center px-3 py-2 border rounded border-corporate-400 hover:corporate_color hover:border-gray-400"
           for="menu-toggle">
@@ -65,20 +57,8 @@ const switchLocalePath = useSwitchLocalePath()
         </div>
 
         <div class="hidden  lg:flex justify-center items-center mt-4 lg:mt-0">
-          <!-- {{ locale }}
-            <nuxt-link :to="switchLocalePath('bn')">bn</nuxt-link>
-            <nuxt-link :to="switchLocalePath('en')">en</nuxt-link> -->
             <nuxt-link :to="switchLocalePath('bn')" :class="locale === 'bn' ? 'bg-corporate text-white border border-corporate' : ''" class="cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-l-[4px]">বাংলা</nuxt-link>
             <nuxt-link :to="switchLocalePath('en')" :class="locale === 'en' ? 'bg-corporate text-white border border-corporate' : ''" class="cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] flex justify-center items-center font-semibold text-black h-[32px] rounded-r-[4px]">English</nuxt-link>
-
-          <!-- <div>
-            <input value="bn" id="a" type="radio" class="hidden">
-            <label for="a" :class="locale === 'bn' ? 'bg-corporate text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-l-[4px]">বাংলা</label>
-          </div>
-          <div>
-            <input value="en" v-model="locale" id="b" type="radio" class="hidden">
-            <label for="b" :class="locale === 'en' ? 'bg-corporate text-white' : ''" class="cursor-pointer w-[60px] leading-[20px] text-[12px] border border-[#DBDBDB] flex justify-center items-center font-semibold text-black h-[32px] rounded-r-[4px]">English</label>
-          </div> -->
         </div>
 
           <div class="relative mt-4 lg:mt-0 ml-4">
