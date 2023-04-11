@@ -1,27 +1,52 @@
 <script setup>
-import {onMounted} from "vue";
+import {onMounted, onUnmounted, ref} from "vue";
 
 const activeTab = ref(0)
-
-const switchtab = (n) => {
+const autoSlideInterVal = ref(null)
+var round = 0;
+const switchTab = (n, click=false) => {
+  if(n === 2 &&  click) {
+    round = 2
+  } else {
+    round = n
+  }
+  clearInterval(autoSlideInterVal.value)
   activeTab.value = n
   let nodeElement = document.getElementsByClassName('radio_wrap')[0]
-  let tabpane = document.querySelector('.radio_wrap')
+  let tabPane = document.querySelector('.radio_wrap')
   let totalWidth = 0;
   for (let i = 0; i < n; i++) {
     totalWidth += nodeElement.children[i].clientWidth
   }
-
   let tabWith = nodeElement.children[n].clientWidth
-  tabpane.style.setProperty("--left", `${totalWidth}px`);
-  tabpane.style.setProperty("--tabWidth", `${tabWith}px`);
+  tabPane.style.setProperty("--left", `${totalWidth}px`);
+  tabPane.style.setProperty("--tabWidth", `${tabWith}px`);
+  startInterval()
 }
 
 onMounted(() => {
   let box = document.querySelector('.radio_wrap')
   box.style.setProperty("--left", `0px`);
   box.style.setProperty("--tabWidth", `84px`);
+
+  startInterval()
 })
+
+const startInterval = () => {
+  autoSlideInterVal.value = setInterval( () => {
+    round += 1
+    if(round === 3) {
+      round = 0
+    }
+    console.log(round)
+    switchTab(round)
+  }, 2000)
+
+}
+onUnmounted(() => {
+  clearInterval(autoSlideInterVal.value)
+})
+
 </script>
 
 <template>
@@ -34,14 +59,14 @@ onMounted(() => {
         <input type="radio" id="radio3" name="radio3" value="2" v-model="activeTab">
         <div class="radio_wrap_container">
           <div class="radio_wrap" :style="{'--i': activeTab}">
-            <label @click="switchtab(0)" for="radio1" data-i="0">User</label>
-            <label @click="switchtab(1)" for="radio2" data-i="1">Partner</label>
-            <label @click="switchtab(2)" for="radio3" data-i="2">Business Solutions</label>
+            <label @click="switchTab(0, true)" for="radio1" data-i="0">User</label>
+            <label @click="switchTab(1, true)" for="radio2" data-i="1">Partner</label>
+            <label @click="switchTab(2, true)" for="radio3" data-i="2">Business Solutions</label>
           </div>
         </div>
 
         <div class="panels">
-            <div class="panel bg-primary" id="panel-one">
+            <div class="panel bg-primary" @mouseover="switchTab(0, true)" id="panel-one">
                 <div class="panel-content">
                     <h5 class="title">Users</h5>
                     <p class="description">Our plethora of services makes the users life convenien</p>
@@ -71,7 +96,7 @@ onMounted(() => {
                 </div>
             </div>
 
-            <div class="panel bg-info" id="panel-two">
+            <div class="panel bg-info" @mouseover="switchTab(1, true)" id="panel-two">
                 <div class="panel-content">
                     <h5 class="title">Users</h5>
                     <p class="description">Our plethora of services makes the users life convenien</p>
@@ -101,7 +126,7 @@ onMounted(() => {
                 </div>
             </div>
 
-            <div class="panel bg-success" id="panel-three">
+            <div class="panel bg-success" @mouseover="switchTab(2, true)" id="panel-three">
                 <div class="panel-content">
                     <h5 class="title">Users</h5>
                     <p class="description">Our plethora of services makes the users life convenien</p>

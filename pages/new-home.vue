@@ -29,7 +29,7 @@ body {
 <!--        <homeWeGotFeaturedSlider />-->
 
         <OurProductsSection />
-<!--        <TestimonialSection />-->
+        <TestimonialSection />
 
     </div>
 </template>
