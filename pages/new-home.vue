@@ -18,7 +18,7 @@ body {
 
 <template>
     <div>
-<!--        <HeroSection />-->
+        <HeroSection />
         <homeCounterSection />
         <homeWhatWeDo />
         <JatriRentalSection />
