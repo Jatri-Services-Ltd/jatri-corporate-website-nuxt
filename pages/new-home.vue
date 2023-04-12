@@ -25,9 +25,9 @@ body {
 <!--        <ScrollingScreenSection />-->
 <!--        <OurProductsSection />-->
         <TestimonialSection />
-<!--        <homeDownloadAppSection />-->
-<!--        <homeWeGotFeaturedSlider />-->
-<!--        <homeReadMoreAboutUsSlider />-->
+        <homeDownloadAppSection />
+        <homeWeGotFeaturedSlider />
+        <homeReadMoreAboutUsSlider />
         <homeJoinTeamSection />
 
 <!--        <OurProductsSection />-->
