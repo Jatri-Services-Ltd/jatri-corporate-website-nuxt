@@ -21,7 +21,7 @@ body {
         <HeroSection />
 <!--        <homeCounterSection />-->
 <!--        <homeWhatWeDo />-->
-<!--        <JatriRentalSection />-->
+        <JatriRentalSection />
         <ScrollingScreenSection />
         <OurProductsSection />
         <TestimonialSection />
