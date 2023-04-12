@@ -78,7 +78,7 @@ const slidePrev = () => {
 </script>
 <template>
   <div class="bg-[#F7F7F7]">
-    <div class="py-12 md:py-20 xl:py-[120px]">
+    <div class="py-8 md:py-20 xl:py-[120px]">
       <div class="custom-container">
         <div class="flex justify-between items-center lg:items-end mb-[22px] md:mb-8">
           <div>
@@ -128,17 +128,17 @@ const slidePrev = () => {
                   class="mySwiper h-auto"
                   >
             <swiper-slide v-for="slider in readMoreSlider" :key="slider.id" class="h-full">
-              <div class="flex flex-col justify-between min-h-[342px] bg-white rounded-2xl py-4 px-4 h-full">
+              <nuxt-link to="#" class="flex flex-col justify-between min-h-[342px] bg-white rounded-2xl py-4 px-4 h-full">
                 <div>
                   <div class="flex justify-center mb-4 slider-img">
                     <img class="rounded-2xl" :src="slider.img" alt="Feature Slider">
                   </div>
                   <p class="text-[#4D4D4F] text-sm leading-5 font-medium mb-2">{{ slider.publishedAt }}</p>
-                  <h3 class="text-dark font-medium text-[20px] leading-7">{{ slider.title }}</h3>
+                  <h3 class="text-dark font-medium text-[20px] leading-7">{{ slider.title.length > 48 ? slider.title.slice(0, 48) + '...' : slider.title }}</h3>
                 </div>
                 <div>
                 </div>
-              </div>
+              </nuxt-link>
             </swiper-slide>
           </swiper>
         </div>
