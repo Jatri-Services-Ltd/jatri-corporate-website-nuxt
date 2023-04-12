@@ -2,10 +2,10 @@
 
 </script>
 <template>
-  <div class="relative">
+  <section class="relative">
     <div class="custom-container py-0 md:py-[120px] join-team-wrapper">
       <div class="grid grid-cols-12">
-        <div class="col-span-12 lg:col-span-6 bg-corporate rounded-none lg:rounded-[32px] lg:rounded-tr-none lg:rounded-br-none relative order-2 lg:order-1 -mt-[76px] md:-mt-[30px] lg:-mt-0">
+        <div class="col-span-12 lg:col-span-6 bg-corporate rounded-none lg:rounded-[32px] lg:rounded-tr-none lg:rounded-br-none relative order-2 lg:order-1 mt-[30px] xs:mt-[10px] sm:-mt-[30px] md:-mt-[50px] lg:-mt-[33px] xl:mt-0">
           <div class="hidden lg:block">
             <div class="curve">
               <svg height="100%" viewBox="0 0 144 572" fill="none" preserveAspectRatio="xMinYMin" xmlns="http://www.w3.org/2000/svg">
@@ -14,12 +14,13 @@
             </div>
           </div>
           <div class="block lg:hidden">
-
             <div class="curve-mobile">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="100%" height="" preserveAspectRatio="none" viewBox="0 0 1440 804">
-                <g mask="url(&quot;#SvgjsMask1030&quot;)" fill="none">
-
-                  <path d="M 0,748 C 144,703 432,531.8 720,523 C 1008,514.2 1296,667.8 1440,704L1440 804L0 804z" fill="#f04935"></path>
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="100%" height="76.000000pt" viewBox="0 0 412.000000 76.000000" preserveAspectRatio="none">
+                <metadata>
+                  Created by potrace 1.16, written by Peter Selinger 2001-2019
+                </metadata>
+                <g transform="translate(0.000000,76.000000) scale(0.100000,-0.100000)" fill="#f04935" stroke="none">
+                  <path d="M1842 744 c-527 -57 -1035 -220 -1477 -474 -162 -93 -365 -233 -365 -252 0 -17 99 -18 2060 -18 l2061 0 -3 131 -3 132 -80 45 c-416 233 -952 395 -1465 441 -156 15 -577 12 -728 -5z"/>
                 </g>
               </svg>
             </div>
@@ -53,7 +54,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
@@ -87,6 +88,9 @@
   -webkit-transform: translateY(-99%);
 }
 @media(max-width:767px){
+  .career-img{
+    height: auto !important;
+  }
   .join-team-wrapper{
     padding-right: 0 !important;
     padding-left: 0 !important;

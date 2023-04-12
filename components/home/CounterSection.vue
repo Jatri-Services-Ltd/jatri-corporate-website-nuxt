@@ -7,7 +7,7 @@ const modules = [FreeMode, Pagination];
 
 </script>
 <template>
-    <div class="custom-container counter-section py-12 lg:py-14 xl:py-[120px]">
+    <section class="custom-container counter-section py-12 lg:py-14 xl:py-[120px]">
       <swiper
           :breakpoints="{
                 320: {
@@ -98,7 +98,7 @@ const modules = [FreeMode, Pagination];
             <img src="~/assets/images/svg/gray-shape-bg.svg" class="w-full object-contain" alt="">
           </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <style scoped>

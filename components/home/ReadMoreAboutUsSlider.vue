@@ -77,7 +77,7 @@ const slidePrev = () => {
 
 </script>
 <template>
-  <div class="bg-[#F7F7F7]">
+  <section class="bg-[#F7F7F7]">
     <div class="py-8 md:py-20 xl:py-[120px]">
       <div class="custom-container">
         <div class="flex justify-between items-center lg:items-end mb-[22px] md:mb-8">
@@ -144,7 +144,7 @@ const slidePrev = () => {
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

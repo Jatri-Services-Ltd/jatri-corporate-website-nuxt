@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="custom-container">
+  <section class="custom-container">
     <div class="bg-[#F7F7F7] rounded-3xl">
       <div class="flex flex-wrap flex-row-reverse md:flex-row w-full justify-center items-center">
         <div class="w-full md:w-[60%] px-4 sm:px-10 lg:px-20 xl:px-[106px] order-2 md:order-1 pt-6 md:pt-0 pb-5 md:pb-0">
@@ -20,7 +20,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
