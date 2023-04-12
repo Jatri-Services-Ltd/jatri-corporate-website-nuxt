@@ -3,7 +3,7 @@
 </script>
 <template>
   <div class="relative">
-    <div class="custom-container py-10">
+    <div class="custom-container py-0 md:py-[120px] join-team-wrapper">
       <div class="grid grid-cols-12">
         <div class="col-span-12 lg:col-span-6 bg-corporate rounded-none lg:rounded-[32px] lg:rounded-tr-none lg:rounded-br-none relative order-2 lg:order-1 -mt-[76px] md:-mt-[30px] lg:-mt-0">
           <div class="hidden lg:block">
@@ -86,6 +86,11 @@
   top: 1px;
   -webkit-transform: translateY(-99%);
 }
-
+@media(max-width:767px){
+  .join-team-wrapper{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
 
 </style>
