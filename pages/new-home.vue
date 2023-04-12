@@ -24,10 +24,10 @@ body {
 <!--        <JatriRentalSection />-->
 <!--        <ScrollingScreenSection />-->
 <!--        <OurProductsSection />-->
-        <TestimonialSection />
-        <homeDownloadAppSection />
-        <homeWeGotFeaturedSlider />
-        <homeReadMoreAboutUsSlider />
+<!--        <TestimonialSection />-->
+<!--        <homeDownloadAppSection />-->
+<!--        <homeWeGotFeaturedSlider />-->
+<!--        <homeReadMoreAboutUsSlider />-->
         <homeJoinTeamSection />
 
 <!--        <OurProductsSection />-->

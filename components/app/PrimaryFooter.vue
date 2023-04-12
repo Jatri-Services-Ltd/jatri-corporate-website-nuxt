@@ -95,11 +95,15 @@
         </div>
 
         <div class="border-t border-[#F6958A] grid md:grid-cols-2">
-          <p class="pt-6 order-2 md:order-1 text-center md:text-left">All rights reserved @Jatri 2023</p>
+          <div class="pt-6 order-2 md:order-1 flex justify-center md:justify-start items-center gap-3.5">
+            <img src="~/assets/images/svg/copyright-white-icon.svg" alt="">
+            <p class="text-white text-base font-medium">All rights reserved @Jatri 2023</p>
+          </div>
+
           <div class="order-1 md:order-2 place-self-center md:place-self-end border-b border-b-[#F6958A] md:border-b-0 py-6 md:pb-0 grid grid-cols-3 md:flex items-center md:gap-8 text-center md:text-right">
-            <a href="#">Terms and condition</a>
-            <a href="#" class="border-x border-[#F6958A] md:border-x-0 px-4 md:px-0">Return & refund policy</a>
-            <a href="#">Privacy policy</a>
+            <a class="text-white font-medium text-sm underline" href="#">Terms and condition</a>
+            <a class="text-white font-medium text-sm underline border-x border-[#F6958A] md:border-x-0 px-4 md:px-0" href="#">Return & refund policy</a>
+            <a class="text-white font-medium text-sm underline" href="#">Privacy policy</a>
           </div>
         </div>
       </div>
