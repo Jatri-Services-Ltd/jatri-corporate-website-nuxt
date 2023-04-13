@@ -17,7 +17,7 @@
           </div>
 
           <div class="mt-8">
-            <p class="text-base text-white font-medium mb-4">Download our app</p>
+            <p class="text-base text-white font-medium mb-4">Download our app.</p>
             <img src="~/assets/images/svg/google-play-badge.svg" alt="Google play badge">
           </div>
         </div>
