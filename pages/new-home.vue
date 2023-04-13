@@ -19,19 +19,16 @@ body {
 <template>
     <div>
         <HeroSection />
-        <homeCounterSection />
-        <homeWhatWeDo />
+<!--        <homeCounterSection />-->
+<!--        <homeWhatWeDo />-->
 <!--        <JatriRentalSection />-->
 <!--        <ScrollingScreenSection />-->
 <!--        <OurProductsSection />-->
-<!--        <TestimonialSection />-->
-        <homeDownloadAppSection />
-        <homeWeGotFeaturedSlider />
-        <homeReadMoreAboutUsSlider />
-        <homeJoinTeamSection />
-
-<!--        <OurProductsSection />-->
-<!--        <TestimonialSection />-->
+        <TestimonialSection />
+<!--        <homeDownloadAppSection />-->
+<!--        <homeWeGotFeaturedSlider />-->
+<!--        <homeReadMoreAboutUsSlider />-->
+<!--        <homeJoinTeamSection />-->
 
     </div>
 </template>
