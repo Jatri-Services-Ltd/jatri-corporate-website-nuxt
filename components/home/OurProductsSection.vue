@@ -98,8 +98,8 @@ onUnmounted(() => {
 
             <div class="panel bg-info" @mouseover="switchTab(1, true)" id="panel-two">
                 <div class="panel-content">
-                    <h5 class="title">Users</h5>
-                    <p class="description">Our plethora of services makes the users life convenien</p>
+                    <h5 class="title">Partner</h5>
+                    <p class="description">We empower car drivers and owners to push their business to the next level</p>
                 </div>
 
                 <div class="panel-hidden-content">
@@ -128,8 +128,8 @@ onUnmounted(() => {
 
             <div class="panel bg-success" @mouseover="switchTab(2, true)" id="panel-three">
                 <div class="panel-content">
-                    <h5 class="title">Users</h5>
-                    <p class="description">Our plethora of services makes the users life convenien</p>
+                    <h5 class="title">Business solutions</h5>
+                    <p class="description">Our products and services enables organizations to run their businesses seamlessly</p>
                 </div>
 
                 <div class="panel-hidden-content">
@@ -167,7 +167,7 @@ onUnmounted(() => {
   display: flex;
   justify-content: center;
   width: max-content;
-  padding: 6px 6px;
+  padding: 4px 4px;
   border-radius: 2rem;
 }
 .radio_wrap {
@@ -189,7 +189,6 @@ input {
   position: absolute;
   z-index: -1;
   width: var(--tabWidth);
-  top: 1px;
   left: var(--left);
   height: 100%;
   background: #F04935;
