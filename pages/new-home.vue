@@ -21,14 +21,14 @@ body {
         <HeroSection />
 <!--        <homeCounterSection />-->
 <!--        <homeWhatWeDo />-->
-<!--        <JatriRentalSection />-->
+        <JatriRentalSection />
 <!--        <ScrollingScreenSection />-->
 <!--        <OurProductsSection />-->
 <!--        <TestimonialSection />-->
 <!--        <homeDownloadAppSection />-->
 <!--        <homeWeGotFeaturedSlider />-->
 <!--        <homeReadMoreAboutUsSlider />-->
-        <homeJoinTeamSection />
+<!--        <homeJoinTeamSection />-->
 
 <!--        <OurProductsSection />-->
 <!--        <TestimonialSection />-->
