@@ -18,12 +18,12 @@
         <option value="Bangla">Bangla</option>
       </select>
 
-      <a href="https://rental.jatri.co/" target="_blank" class="flex gap-x-2 items-center text-lg leading-6 font-medium rounded-full border border-[#EDEDED] px-4 py-3"><img src="@/assets/images/svg/car-svg.svg" alt=""> Rental</a>
+      <a href="https://rental.jatri.co/" target="_blank" class="flex gap-x-2 items-center text-lg leading-6 font-medium rounded-full border border-[#EDEDED] px-4 py-3"> Rental</a>
       <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white flex gap-x-2 items-center text-lg leading-6 font-medium rounded-full border border-[#EDEDED] pl-4 pr-6 py-3"><img src="@/assets/images/svg/ticket.svg" alt=""> Ticket</a>
     </div>
 
     <div class="flex gap-x-2 md:hidden">
-      <a href="https://rental.jatri.co/" target="_blank" class="flex gap-x-2 justify-center items-center text-xs leading-6 font-medium rounded-full border border-[#EDEDED] px-4 py-3 w-[100px] h-9"><img src="@/assets/images/svg/car-svg.svg" alt=""> Rental</a>
+      <a href="https://rental.jatri.co/" target="_blank" class="flex gap-x-2 justify-center items-center text-xs leading-6 font-medium rounded-full border border-[#EDEDED] px-4 py-3 w-[100px] h-9">Rental</a>
       <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white flex justify-center gap-x-2 items-center text-xs leading-6 font-medium rounded-full border border-[#EDEDED] w-[100px] h-9"><img src="@/assets/images/svg/ticket.svg" alt=""> Ticket</a>
       <button @click="sidebarOpen = !sidebarOpen"><img src="@/assets/images/svg/3bar-icon.svg" alt=""></button>
     </div>
