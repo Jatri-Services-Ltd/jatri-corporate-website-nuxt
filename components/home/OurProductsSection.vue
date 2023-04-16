@@ -241,6 +241,10 @@ label:last-child {
     @apply shadow-[0_0_24px_rgba(116,19,9,0.3)] rounded-3xl px-5 py-6 space-y-6 transform translate-y-56 h-0 transition-[transform,height] duration-300
 }
 
+input[type="radio"]:checked + label {
+  color: white !important;
+}
+
 #radio1:checked ~ .panels #panel-one,
 #radio2:checked ~ .panels #panel-two,
 #radio3:checked ~ .panels #panel-three {
