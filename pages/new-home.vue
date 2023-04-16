@@ -21,16 +21,14 @@ body {
         <HeroSection />
         <homeCounterSection />
         <homeWhatWeDo />
-<!--        <JatriRentalSection />-->
-<!--        <ScrollingScreenSection />-->
-<!--        <OurProductsSection />-->
-<!--        <TestimonialSection />-->
-<!--        <homeDownloadAppSection />-->
-<!--        <homeWeGotFeaturedSlider />-->
-<!--        <homeReadMoreAboutUsSlider />-->
-        <homeJoinTeamSection />
+        <JatriRentalSection />
+        <ScrollingScreenSection />
         <OurProductsSection />
         <TestimonialSection />
+        <homeDownloadAppSection />
+        <homeWeGotFeaturedSlider />
+        <homeReadMoreAboutUsSlider />
+        <homeJoinTeamSection />
     </div>
 </template>
 

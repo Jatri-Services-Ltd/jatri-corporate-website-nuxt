@@ -7,7 +7,7 @@ const modules = [FreeMode, Pagination];
 
 </script>
 <template>
-    <div class="custom-container counter-section py-12 lg:py-14 xl:py-[120px]">
+    <div class="custom-container counter-section py-12 sm:pt-20 lg:pt-[120px] sm:pb-14 lg:pb-[82px]">
       <swiper
           :breakpoints="{
                 320: {
@@ -34,9 +34,9 @@ const modules = [FreeMode, Pagination];
           <div class="flex justify-center">
             <div>
               <div class="min-h-[120px] flex justify-center items-end">
-                <img src="~/assets/images/svg/counter-1.svg"  alt="Counter" class="" >
+                <img src="~/assets/images/svg/counter-1.svg"  alt="Counter">
               </div>
-              <div class="mt-4 block lg:hidden">
+              <div class="mt-6 block lg:hidden">
                 <div class="text-center relative z-20">
                   <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] leading-[36px]">300K+</p>
                   <p class="text-body text-[16px] xl:text-[20px] font-medium leading-[24px]">Registered users</p>
@@ -52,7 +52,7 @@ const modules = [FreeMode, Pagination];
               <div class="min-h-[120px] flex justify-center items-end">
                 <img src="~/assets/images/svg/counter-2.svg"  alt="Counter" class="" >
               </div>
-              <div class="mt-4 block lg:hidden">
+              <div class="mt-6 block lg:hidden">
                 <div class="text-center relative z-20">
                   <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[36px]">100 millions+</p>
                   <p class="text-body text-[16px] xl:text-[20px] font-medium leading-[24px] lg:leading-[28px]">Tickets served</p>
@@ -68,7 +68,7 @@ const modules = [FreeMode, Pagination];
               <div class="min-h-[120px] flex justify-center items-end">
                 <img src="~/assets/images/svg/counter-3.svg"  alt="Counter" class="" >
               </div>
-              <div class="mt-4 block lg:hidden">
+              <div class="mt-6 block lg:hidden">
                 <div class="text-center relative z-20">
                   <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[36px] lg:leading-[52px]">100K+</p>
                   <p class="text-body text-[16px] xl:text-[20px] font-medium leading-[24px] lg:leading-[28px]">Rental partners</p>
@@ -80,7 +80,7 @@ const modules = [FreeMode, Pagination];
         </swiper-slide>
       </swiper>
         <div class="hidden lg:block">
-          <div class="grid grid-cols-3 z-20 relative">
+          <div class="grid grid-cols-3 z-20 relative mt-8">
             <div class="text-center">
               <p class="text-dark text-[30px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[52px]">300K+</p>
               <p class="text-body text-[18px] xl:text-[20px] font-medium leading-[28px]">Registered users</p>
