@@ -4,15 +4,16 @@
 
 <template>
     <div class="flex items-center justify-between px-2 py-4 lg:px-28 lg:py-4">
-      <img class="h-8 w-16 md:hidden" src="@/assets/images/svg/jatri-logo.svg" alt="">
+      <nuxt-link :to="localePath('/')" class="md:hidden"><img class="h-8 w-16" src="@/assets/images/svg/jatri-logo.svg" alt="jatri logo"></nuxt-link>
+      
         <div class="hidden md:flex gap-x-12">
-          <img class="h-20 w-28" src="@/assets/images/svg/jatri-logo.svg" alt="">
+           <nuxt-link :to="localePath('/')"><img class="h-20 w-28" src="@/assets/images/svg/jatri-logo.svg" alt="jatri logo"></nuxt-link>
           <div class="hidden md:flex gap-x-10 items-center w-full">
-              <nuxt-link to="/" class="text-sm font-medium text-black border-b-4 border-black inline-block text-center">Home</nuxt-link>
-              <nuxt-link to="/" class="text-sm font-medium text-black text-center inline-block">About us</nuxt-link>
-              <nuxt-link to="/" class="text-sm font-medium text-black text-center inline-block">Career</nuxt-link>
-              <nuxt-link to="/" class="text-sm font-medium text-black text-center inline-block">Blogs</nuxt-link>
-              <nuxt-link to="/" class="text-sm font-medium text-black text-center inline-block">Contact us</nuxt-link>
+              <nuxt-link :to="localePath('/')" class="text-sm font-medium text-black border-b-4 border-black inline-block text-center">Home</nuxt-link>
+              <nuxt-link :to="localePath('/about-us')" class="text-sm font-medium text-black text-center inline-block">About us</nuxt-link>
+              <nuxt-link :to="localePath('/career')" class="text-sm font-medium text-black text-center inline-block">Career</nuxt-link>
+              <nuxt-link :to="localePath('/blog')" class="text-sm font-medium text-black text-center inline-block">Blogs</nuxt-link>
+              <nuxt-link :to="localePath('/contact-us')" class="text-sm font-medium text-black text-center inline-block">Contact us</nuxt-link>
           </div>
         </div>
 
@@ -41,10 +42,10 @@
             <button @click="sidebarOpen = false" class="pr-2"><img src="@/assets/images/svg/cross-icon.svg" alt=""></button>
           </div>
           <div class="flex flex-col gap-y-2 px-2">
-            <nuxt-link to="/" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] py-4">About us</nuxt-link>
-            <nuxt-link to="/" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] py-4">Career</nuxt-link>
-            <nuxt-link to="/" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] py-4">Blogs</nuxt-link>
-            <nuxt-link to="/" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] py-4">Contact us</nuxt-link>
+            <nuxt-link :to="localePath('/about-us')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] py-4">About us</nuxt-link>
+            <nuxt-link :to="localePath('/career')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] py-4">Career</nuxt-link>
+            <nuxt-link :to="localePath('/blog')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] py-4">Blogs</nuxt-link>
+            <nuxt-link :to="localePath('/contact-us')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] py-4">Contact us</nuxt-link>
             <select class="focus:outline-none py-4" name="language" id="">
               <option value="English">English</option>
               <option value="Bangla">Bangla</option>

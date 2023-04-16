@@ -35,20 +35,6 @@ const readMoreSlider = ref([
     title:'যাত্রী পার্টনার অ্যাপ: রেন্ট-এ-কার ব্যবসা খাতে নতুন সংযোজন !',
     publishedAt: '12 Feb 2023',
     link: '#'
-  },
-  {
-    id: 5,
-    img:'/images/read-more-slide-2.svg',
-    title:'Jeddah Express Jatri Ticket Website and are Together Now!',
-    publishedAt: '12 Feb 2023',
-    link: '#'
-  },
-  {
-    id: 6,
-    img:'/images/read-more-slide-3.svg',
-    title:'Green Line Jatri Ticket Website and Jeddah Express are Together Now!',
-    publishedAt: '12 Feb 2023',
-    link: '#'
   }
 ]);
 
@@ -115,11 +101,7 @@ const slidePrev = () => {
                     1280: {
                       slidesPerView: 3.9,
                       spaceBetween: 32
-                    },
-                    1441: {
-                    slidesPerView: 4.9,
-                    spaceBetween: 25
-                  },
+                    }
                   }"
                   :spaceBetween="30"
                   :freeMode="true"

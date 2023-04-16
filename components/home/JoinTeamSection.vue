@@ -41,7 +41,7 @@
               <h3 class="text-2xl md:text-[40px] xl:text-[45px] font-semibold leading-8 lg:leading-[52px] mb-4 lg:mb-6">Join the winning team!</h3>
               <p class="text-sm lg:text-[16px] leading-5 lg:leading-6 font-medium">Join our exciting team in the quest of empowering Bangladesh to travel better!</p>
               <div class="mt-6 lg:mt-12">
-                <router-link class="bg-white text-corporate text-sm lg:text-[16px] font-medium h-[40px] lg:h-[46px] w-[133px] lg:w-[145px] flex justify-center items-center rounded-full" to="#">Join Jatri</router-link>
+                <router-link class="bg-white text-corporate text-sm lg:text-[16px] font-medium h-[40px] lg:h-[46px] w-[133px] lg:w-[145px] flex justify-center items-center rounded-full" :to="localePath('/career')">Join Jatri</router-link>
               </div>
             </div>
           </div>

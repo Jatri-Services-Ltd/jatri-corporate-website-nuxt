@@ -119,7 +119,7 @@ const slidePrev = () => {
                 <div class="flex justify-center mb-4 slider-img">
                   <img class="rounded-2xl" :src="slider.img" alt="Feature Slider">
                 </div>
-                <h3 class="text-dark font-medium text-[20px] xl:text-2xl leading-7 xl:leading-8">{{ slider.title }}</h3>
+                <h3 class="text-dark font-medium text-[20px] xl:text-2xl leading-7 xl:leading-8">{{ slider.title.length > 70 ? slider.title.slice(0, 70) + '...' : slider.title }}</h3>
               </div>
               <div>
                 <div class="flex justify-between items-end">
