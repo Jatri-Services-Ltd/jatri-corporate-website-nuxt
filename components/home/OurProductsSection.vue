@@ -50,8 +50,8 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <section class="custom-container">
-        <h3 class="primary-heading text-center">Our products</h3>
+    <section class="custom-container py-12 lg:py-[120px]">
+        <h3 class="text-dark text-4xl lg:text-[57px] lg:leading-[64px] font-semibold text-center">Our products</h3>
 
      <div class="mt-10 mb-14"> 
         <input type="radio" id="radio1" name="radio1" value="0" v-model="activeTab">
