@@ -20,7 +20,9 @@
 
             <div class="mt-8">
               <p class="text-base text-white font-medium mb-4">Download our app</p>
-              <img src="~/assets/images/svg/google-play-badge.svg" alt="Google play badge">
+              <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank">
+                <img src="~/assets/images/svg/google-play-badge.svg" target="_blank" alt="Google play badge">
+              </a>
             </div>
           </div>
 
@@ -33,7 +35,11 @@
                     <a class="text-white font-normal text-base" href="#">Jatri Business</a>
                   </li>
                   <li>
-                    <a class="text-white font-normal text-base" href="#">Jatri Rentals</a>
+                    <a href="https://rental.jatri.co/"
+                       target="_blank"
+                       class="text-white font-normal text-base">
+                      Jatri Rentals
+                    </a>
                   </li>
                   <li>
                     <a class="text-white font-normal text-base" href="#">Jatri Ticket</a>
@@ -45,16 +51,16 @@
                 <h4 class="text-white text-xl lg:text-2xl font-medium mb-4 lg:mb-6">About us</h4>
                 <ul class="grid gap-4">
                   <li>
-                    <a class="text-white font-normal text-base" href="#">About us</a>
+                    <nuxt-link :to="localePath('/about-us')" class="text-white font-normal text-base">About us</nuxt-link>
                   </li>
                   <li>
-                    <a class="text-white font-normal text-base" href="#">Career</a>
+                    <nuxt-link :to="localePath('/career')" class="text-white font-normal text-base">Career</nuxt-link>
                   </li>
                   <li>
-                    <a class="text-white font-normal text-base" href="#">Blogs</a>
+                    <nuxt-link :to="localePath('/blog')" class="text-white font-normal text-base">Blogs</nuxt-link>
                   </li>
                   <li>
-                    <a class="text-white font-normal text-base" href="#">Contact us</a>
+                    <nuxt-link :to="localePath('/contact-us')" class="text-white font-normal text-base">Contact us</nuxt-link>
                   </li>
                 </ul>
               </div>
@@ -63,13 +69,13 @@
                 <h4 class="text-white text-xl lg:text-2xl font-medium mb-4 lg:mb-6">Others</h4>
                 <ul class="grid gap-4">
                   <li>
-                    <a class="text-white font-normal text-base" href="#">Ride sharing guideline</a>
+                    <nuxt-link :to="localePath('/ride-sharing-guideline')" class="text-white font-normal text-base">Ride sharing guideline</nuxt-link>
                   </li>
                   <li>
-                    <a class="text-white font-normal text-base" href="#">Enlistment certificate</a>
+                    <nuxt-link :to="localePath('/enlistment-certificate')" class="text-white font-normal text-base">Enlistment certificate</nuxt-link>
                   </li>
                   <li>
-                    <a class="text-white font-normal text-base" href="#">COVID-19 info</a>
+                    <nuxt-link :to="localePath('/jatri-partner-app-manual')" class="text-white font-normal text-base">COVID-19 info</nuxt-link>
                   </li>
                 </ul>
               </div>
