@@ -1,5 +1,5 @@
 <template>
-  <section class="sticky-wrapper">
+  <section class="sticky-wrapper sm:pt-4 xl:pt-[100px] pb-12 xl:pb-[90px]">
     <div class="sticky-item">
       <div class="card-container">
         <div class="custom-container">
@@ -541,7 +541,7 @@
   animation: slideDown  0.35s ease-out;
 }
 .sticky-wrapper .sticky-item {
-  @apply h-[480px] lg:h-[800px]
+  @apply h-[470px] lg:h-[800px]
 }
 
 .sticky-wrapper .sticky-item .card-container {
