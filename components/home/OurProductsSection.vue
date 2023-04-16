@@ -74,84 +74,90 @@ onUnmounted(() => {
 
                 <div class="panel-hidden-content bg-primary">
                     <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                        </div>
                         <p class="text-white text-2xl font-medium">Jatri Rental</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                        </div>
+                        <p class="text-white text-2xl font-medium">Jatri Ride</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                        </div>
+                        <p class="text-white text-2xl font-medium">Jatri Ticket</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                        </div>
+                        <p class="text-white text-2xl font-medium">Jatri Body Rental</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                        </div>
+                        <p class="text-white text-2xl font-medium">Jatri Hourly Rental</p>
                     </div>
                 </div>
             </div>
 
             <div class="panel bg-info" @mouseover="switchTab(1, true)" id="panel-two">
                 <div class="panel-content">
-                    <h5 class="title">Users</h5>
-                    <p class="description">Our plethora of services makes the users life convenien</p>
+                    <h5 class="title">Partner</h5>
+                    <p class="description">We empower car drivers and owners to push their business to the next level</p>
                 </div>
 
-                <div class="panel-hidden-content">
+                <div class="panel-hidden-content bg-info">
                     <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        <div class="bg-[#1775C8] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                        </div>
+                        <p class="text-white text-2xl font-medium">Jatri Partner</p>
                     </div>
                 </div>
             </div>
 
             <div class="panel bg-success" @mouseover="switchTab(2, true)" id="panel-three">
                 <div class="panel-content">
-                    <h5 class="title">Users</h5>
-                    <p class="description">Our plethora of services makes the users life convenien</p>
+                    <h5 class="title">Business solutions</h5>
+                    <p class="description">Our products and services enables organizations to run their businesses seamlessly</p>
                 </div>
 
-                <div class="panel-hidden-content">
+                <div class="panel-hidden-content bg-success">
                     <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                        </div>
+                        <p class="text-white text-2xl font-medium">Jatri Intercity</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                        </div>
+                        <p class="text-white text-2xl font-medium">Jatri Intracity</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                        </div>
+                        <p class="text-white text-2xl font-medium">Jatri Rental Business</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                        </div>
+                        <p class="text-white text-2xl font-medium">Jatri Water</p>
                     </div>
                     <div class="flex items-center gap-4">
-                        <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
-                        <p class="text-white text-2xl font-medium">Jatri Rental</p>
+                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                        </div>
+                        <p class="text-white text-2xl font-medium">Jatri Toll Plaza</p>
                     </div>
                 </div>
             </div>
@@ -167,7 +173,7 @@ onUnmounted(() => {
   display: flex;
   justify-content: center;
   width: max-content;
-  padding: 6px 6px;
+  padding: 4px 4px;
   border-radius: 2rem;
 }
 .radio_wrap {
@@ -189,7 +195,6 @@ input {
   position: absolute;
   z-index: -1;
   width: var(--tabWidth);
-  top: 1px;
   left: var(--left);
   height: 100%;
   background: #F04935;
@@ -202,7 +207,7 @@ label {
   z-index: 2;
   text-align: center;
   color: black;
-  font-size: 16px;
+  font-size: 14px;
   transition: color .3s ease-in-out;
   display: flex;
   justify-content: center;
@@ -222,13 +227,13 @@ label:last-child {
 }
 
 .panels {
-    @apply pt-6 lg:pt-14 w-full flex justify-center space-x-6 lg:space-x-10 overflow-hidden lg:overflow-visible
+    @apply pt-6 lg:pt-14 w-full flex justify-center space-x-6 lg:space-x-10 overflow-visible relative h-[350px]
 }
 .panels .panel {
   @apply h-[460px] w-[340px] overflow-hidden flex-shrink-0 rounded-3xl flex flex-col justify-center transform scale-100 duration-1000 transition-transform
 }
 .panel-content {
-    @apply px-5 py-6
+    @apply px-8 py-6
 }
 .panel-content .title {
     @apply text-white text-[45px] leading-[52px] font-semibold text-center transition-[text-align,font-size] duration-300
@@ -266,6 +271,19 @@ input[type="radio"]:checked + label {
 #radio2:checked ~ .panels #panel-two .panel-hidden-content ,
 #radio3:checked ~ .panels #panel-three .panel-hidden-content  {
   @apply translate-y-0 h-full
+}
+
+@media only screen and (max-width: 767px) {
+  .panels .panel {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+  }
+  #radio1:checked ~ .panels #panel-one,
+  #radio2:checked ~ .panels #panel-two,
+  #radio3:checked ~ .panels #panel-three {
+    opacity: 1;
+  }
 }
 </style>
 

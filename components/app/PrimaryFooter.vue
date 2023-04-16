@@ -1,7 +1,9 @@
 <template>
     <footer class="mt-10">
       <div class="hidden md:block">
-        <img src="~/assets/images/svg/footer-img.svg" alt="Footer img" width="100%">
+        <a href="#">
+          <img src="~/assets/images/svg/footer-img.svg" alt="Footer img" width="100%">
+        </a>
       </div>
 
       <div class="custom-container bg-primary pt-6 lg:pt-12 pb-6 lg:pb-8">
