@@ -65,9 +65,9 @@ const slidePrev = () => {
 }
 </script>
 <template>
-  <div class="py-12 md:py-20 xl:py-[120px]">
+  <section class="py-12 md:py-20 xl:py-[120px]">
     <div class="custom-container">
-      <div class="flex justify-between items-end">
+      <div class="flex justify-between items-end mb-10 lg:mb-[60px]">
         <div>
           <h2 class="text-[28px] md:text-[45px] xl:text-[57px] text-dark font-semibold leading-9 lg:leading-[64px]">We got featured</h2>
         </div>
@@ -113,13 +113,13 @@ const slidePrev = () => {
             @swiper="onSwiper"
             class="mySwiper"
         >
-          <swiper-slide v-for="slider in featureSlider" :key="slider.id" class="mt-8">
+          <swiper-slide v-for="slider in featureSlider" :key="slider.id">
             <nuxt-link :to="slider.link" target="_blank" class="flex flex-col justify-between min-h-[500px] bg-[#FEF2F0] rounded-2xl py-6 px-6 feature-slider-card">
               <div>
                 <div class="flex justify-center mb-4 slider-img">
                   <img class="rounded-2xl" :src="slider.img" alt="Feature Slider">
                 </div>
-                <h3 class="text-dark font-medium text-[20px] xl:text-2xl leading-7 xl:leading-8">{{ slider.title }}</h3>
+                <h3 class="text-dark font-medium text-[20px] xl:text-2xl leading-7 xl:leading-8">{{ slider.title.length > 70 ? slider.title.slice(0, 70) + '...' : slider.title }}</h3>
               </div>
               <div>
                 <div class="flex justify-between items-end">
@@ -136,7 +136,7 @@ const slidePrev = () => {
           </swiper-slide>
         </swiper>
       </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>

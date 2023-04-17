@@ -35,20 +35,6 @@ const readMoreSlider = ref([
     title:'যাত্রী পার্টনার অ্যাপ: রেন্ট-এ-কার ব্যবসা খাতে নতুন সংযোজন !',
     publishedAt: '12 Feb 2023',
     link: '#'
-  },
-  {
-    id: 5,
-    img:'/images/read-more-slide-2.svg',
-    title:'Jeddah Express Jatri Ticket Website and are Together Now!',
-    publishedAt: '12 Feb 2023',
-    link: '#'
-  },
-  {
-    id: 6,
-    img:'/images/read-more-slide-3.svg',
-    title:'Green Line Jatri Ticket Website and Jeddah Express are Together Now!',
-    publishedAt: '12 Feb 2023',
-    link: '#'
   }
 ]);
 
@@ -77,10 +63,10 @@ const slidePrev = () => {
 
 </script>
 <template>
-  <div class="bg-[#F7F7F7]">
-    <div class="py-8 md:py-20 xl:py-[120px]">
+  <section class="bg-grey">
+    <div class="py-8 md:py-[60px]">
       <div class="custom-container">
-        <div class="flex justify-between items-center lg:items-end mb-[22px] md:mb-8">
+        <div class="flex justify-between items-center lg:items-end mb-10 lg:mb-[60px]">
           <div>
             <h2 class="text-[28px] lg:text-[57px] text-dark font-semibold leading-9 lg:leading-[64px]">Read more about us</h2>
           </div>
@@ -115,11 +101,7 @@ const slidePrev = () => {
                     1280: {
                       slidesPerView: 3.9,
                       spaceBetween: 32
-                    },
-                    1441: {
-                    slidesPerView: 4.9,
-                    spaceBetween: 25
-                  },
+                    }
                   }"
                   :spaceBetween="30"
                   :freeMode="true"
@@ -144,7 +126,7 @@ const slidePrev = () => {
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
