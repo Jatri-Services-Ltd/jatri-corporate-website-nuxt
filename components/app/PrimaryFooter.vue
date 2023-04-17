@@ -1,9 +1,7 @@
 <template>
     <footer class="mt-10">
       <div class="hidden md:block">
-        <a href="#">
-          <img src="~/assets/images/svg/footer-img.svg" alt="Footer img" width="100%">
-        </a>
+        <img src="~/assets/images/svg/footer-img.svg" alt="Footer img" width="100%">
       </div>
 
       <div class="custom-container bg-primary pt-6 lg:pt-12 pb-6 lg:pb-8">
@@ -12,9 +10,9 @@
             <div class="flex justify-between items-center lg:block">
               <img src="~/assets/images/svg/footer-white-logo.svg" alt="Jatri Logo">
               <div class="flex items-center gap-10 xl:gap-14 lg:mt-8">
-                <img src="~/assets/images/svg/facebook-white.svg" alt="Facebook icon">
-                <img src="~/assets/images/svg/youtube-white.svg" alt="Youtube icon">
-                <img src="~/assets/images/svg/linkedin-white.svg" alt="Linkedin icon">
+                <a href="https://www.facebook.com/JatriApp/" target="_blank"><img src="~/assets/images/svg/facebook-white.svg" alt="Facebook icon"></a>
+                <a href="https://www.youtube.com/@jatriapp2325" target="_blank"><img src="~/assets/images/svg/youtube-white.svg" alt="Youtube icon"></a>
+                <a href="https://ca.linkedin.com/company/jatri-app" target="_blank"><img src="~/assets/images/svg/linkedin-white.svg" alt="Linkedin icon"></a>
               </div>
             </div>
 
@@ -42,7 +40,7 @@
                     </a>
                   </li>
                   <li>
-                    <a class="text-white font-normal text-base" href="#">Jatri Ticket</a>
+                    <a class="text-white font-normal text-base" href="https://ticket.jatri.co/" target="_blank">Jatri Ticket</a>
                   </li>
                 </ul>
               </div>
@@ -75,7 +73,7 @@
                     <nuxt-link :to="localePath('/enlistment-certificate')" class="text-white font-normal text-base">Enlistment certificate</nuxt-link>
                   </li>
                   <li>
-                    <nuxt-link :to="localePath('/jatri-partner-app-manual')" class="text-white font-normal text-base">COVID-19 info</nuxt-link>
+                    <a href="https://corona.gov.bd/" target="_blank" class="text-white font-normal text-base">COVID-19 info</a>
                   </li>
                 </ul>
               </div>
@@ -92,7 +90,7 @@
               </div>
               <div class="py-4 flex items-center gap-3.5 pl-0 lg:pl-5 pr-0 lg:pr-5 xl:pr-12">
                 <img src="~/assets/images/svg/map-white-icon.svg" alt="Map icon">
-                <a class="text-white font-medium text-base" href="">Road 24, House 15, Gulshan-02, Dhaka 1212</a>
+                <a class="text-white font-medium text-base" href="https://goo.gl/maps/EBDpA4TyPkzsF4mH8" target="_blank" >Road 24, House 15, Gulshan-02, Dhaka 1212</a>
               </div>
             </div>
           </div>
@@ -106,9 +104,9 @@
           </div>
 
           <div class="order-1 lg:order-2 place-self-center lg:place-self-end border-b border-b-[#F6958A] lg:border-b-0 py-6 lg:pb-0 grid grid-cols-3 lg:flex items-center lg:gap-8 text-center lg:text-right">
-            <a class="text-white font-medium text-sm underline" href="#">Terms and condition</a>
-            <a class="text-white font-medium text-sm underline border-x border-[#F6958A] lg:border-x-0 px-4 sm:px-8 lg:px-0" href="#">Return & refund policy</a>
-            <a class="text-white font-medium text-sm underline" href="#">Privacy policy</a>
+            <nuxt-link :to="localePath('/user/term-and-condition')" class="text-white font-medium text-sm underline">Terms and condition</nuxt-link>
+            <nuxt-link :to="localePath('/user/refund-policy-of-jatri')" class="text-white font-medium text-sm underline border-x border-[#F6958A] lg:border-x-0 px-4 sm:px-8 lg:px-0">Return & refund policy</nuxt-link>
+            <nuxt-link :to="localePath('/user/privacy-policy')" class="text-white font-medium text-sm underline">Privacy policy</nuxt-link>
           </div>
         </div>
       </div>
