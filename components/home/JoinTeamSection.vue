@@ -5,7 +5,7 @@
   <section class="relative">
     <div class="custom-container pt-[34px] pb-12 md:py-[120px] join-team-wrapper">
       <div class="grid grid-cols-12">
-        <div class="col-span-12 lg:col-span-6 bg-corporate rounded-none lg:rounded-[32px] lg:rounded-tr-none lg:rounded-br-none relative order-2 lg:order-1">
+        <div class="col-span-12 lg:col-span-6 bg-corporate rounded-none lg:rounded-[32px] lg:rounded-tr-none lg:rounded-br-none relative order-2 lg:order-1 mobile-top-margin">
           <div class="hidden lg:block">
             <div class="curve">
               <svg height="100%" viewBox="0 0 144 572" fill="none" preserveAspectRatio="xMinYMin" xmlns="http://www.w3.org/2000/svg">
@@ -87,6 +87,11 @@
   top: 1px;
   -webkit-transform: translateY(-99%);
 }
+@media(max-width:1023px){
+  .mobile-top-margin{
+    margin-top: -50px;
+  }
+}
 @media(max-width:767px){
   .career-img{
     height: auto !important;
@@ -96,5 +101,24 @@
     padding-left: 0 !important;
   }
 }
+@media(max-width:675px){
+  .mobile-top-margin{
+    margin-top: -40px;
+  }
+}
+@media(max-width:550px){
+  .mobile-top-margin{
+    margin-top: 10px;
+  }
+}
+@media(max-width:411px){
+  .mobile-top-margin{
+    margin-top: 10px;
+  }
+  .curve-mobile{
+    top: 22px;
+  }
+}
+
 
 </style>
