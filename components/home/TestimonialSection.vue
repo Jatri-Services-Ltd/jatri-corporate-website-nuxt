@@ -4,7 +4,7 @@ import {onBeforeMount, onMounted, onUnmounted, ref} from 'vue'
 const sliderItems = ref([
   {
     "id": 0,
-    "message": "Our products and services enables organizations to run their businesses seamlessly",
+    "message": "Jatri's e-ticketing has helped us immensely to revolutionize  the bus industry",
     "img": "/images/enayet.svg",
     "name": "Khandaker Enayet Ullah",
     "userType": "Secretary General (DSPMS)",
@@ -20,28 +20,12 @@ const sliderItems = ref([
   },
   {
     "id": 2,
-    "message": "Our products and services enables organizations to run their businesses seamlessly",
+    "message": "I really appreciate the expansion opportunity Jatri has provided for my rental car service. I've managed to organically boost my income and grow my rental business",
     "img": "/images/jakir.svg",
     "name": "Jakir Hossain",
     "userType": "Rental Partner",
     "bg": "#F1F9F1"
-  },
-  {
-    "id": 3,
-    "message": "Our products and services enables organizations to run their businesses seamlessly",
-    "img": "/images/enayet.svg",
-    "name": "Khandaker Enayet Ullah",
-    "userType": "Secretary General (DSPMS)",
-    "bg": "#EFF7FD"
-  },
-  {
-    "id": 4,
-    "message": "Jatri is the go-to rental solution for my family on vacations. Finding a trustworthy rental car within.",
-    "img": "/images/mitu.svg",
-    "name": "Israt Mitu",
-    "userType": "User",
-    "bg": "#F1F9F1"
-  },
+  }
 ])
 const tempSliderItems = ref([])
 onBeforeMount(() => tempSliderItems.value = [...sliderItems.value])
@@ -97,7 +81,7 @@ onUnmounted(() => clearInterval(autoSlideInterVal.value))
 </script>
 
 <template>
-    <section class="my-20 pl-4 md:pl-20 lg:pl-[100px] 2xl:pl-[200px] flex justify-between flex-wrap lg:flex-nowrap gap-8 xl:gap-16">
+    <section class="mb-12 md:mb-20 xl:mb-[120px] pl-4 md:pl-20 lg:pl-[100px] flex justify-between flex-wrap lg:flex-nowrap gap-8 xl:gap-16">
         <div class="w-full lg:w-2/5 pr-4 lg:pr-0 flex xl:flex-col gap-5 justify-between lg:justify-center">
             <h4 class="primary-heading">Don’t just believe our words</h4>
             <div class="flex items-center gap-4 xl:gap-6">
@@ -138,12 +122,12 @@ onUnmounted(() => clearInterval(autoSlideInterVal.value))
                           <img :src="item.img" :alt="item.name" class="h-full w-full object-cover rounded-full">
                         </div>
                         <p class="mt-6 xl:mt-8 text-xl xl:text-2xl font-semibold text-secondaryDark">
-                          {{item.message}}
+                          "{{item.message}}"
                         </p>
                     </div>
                     <div>
-                        <h5 class="text-base font-semibold">{{ item.name }}</h5>
-                        <p class="text-sm text-secondaryDark mt-1">{{ item.userType }}</p>
+                        <h5 class="text-base font-semibold capitalize">{{ item.name }}</h5>
+                        <p class="text-sm text-secondaryDark mt-1 capitalize">{{ item.userType }}</p>
                     </div>
                 </div>
               </transition-group>

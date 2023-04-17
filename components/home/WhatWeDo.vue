@@ -48,7 +48,7 @@
                 <p class="text-[#8D8D8F] text-[14px] md:text-[16px] xl:text-[20px]">Our various services are designed to make the everyday commute of people hassle free</p>
               </div>
               <div class="">
-                <router-link to="#" class="h-[36px] md:h-[50px] xl:h-[60px] w-[120px] md:w-[200px] xl:w-[230px] border border-dark rounded-full flex justify-center items-center gap-2">
+                <router-link :to="localePath('/about-us')" class="h-[36px] md:h-[50px] xl:h-[60px] w-[120px] md:w-[200px] xl:w-[230px] border border-dark rounded-full flex justify-center items-center gap-2">
                   <p class="text-dark text-[12px] md:text-[16px] xl:text-[20px] leading-[16px] md:leading-[28px] font-medium">About us</p>
                   <img src="~/assets/images/svg/right-arrow-1.svg" class="h-[14px] md:h-[24px]" alt="About Us">
                 </router-link>
