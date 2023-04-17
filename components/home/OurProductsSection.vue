@@ -50,7 +50,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <section class="custom-container py-12 lg:py-[120px]">
+    <section class="custom-container pt-12 lg:pt-[120px]">
         <h3 class="text-dark text-4xl lg:text-[57px] lg:leading-[64px] font-semibold text-center">Our products</h3>
 
      <div class="mt-10 mb-14"> 

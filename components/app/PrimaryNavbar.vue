@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <template>
     <div class="flex items-center justify-between px-2 py-4 lg:px-28 lg:py-4">
       <nuxt-link :to="localePath('/')" class="md:hidden"><img class="h-8 w-16" src="@/assets/images/svg/jatri-logo.svg" alt="jatri logo"></nuxt-link>
