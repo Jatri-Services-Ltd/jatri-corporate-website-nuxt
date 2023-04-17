@@ -5,32 +5,42 @@ const sliderItems = ref([
   {
     "id": 0,
     "message": "Our products and services enables organizations to run their businesses seamlessly",
-    "icon": "/assets/images/svg/rasel-shuvo.svg",
-    // "bg": "#FEF2F0"
+    "img": "/images/enayet.svg",
+    "name": "Khandaker Enayet Ullah",
+    "userType": "Secretary General (DSPMS)",
+    "bg": "#FEF2F0"
   },
   {
     "id": 1,
     "message": "Jatri is the go-to rental solution for my family on vacations. Finding a trustworthy rental car within an hour definitely helps to speed up our plans!",
-    "icon": "/assets/images/svg/rasel-shuvo.svg",
-    // "bg": "#f04935"
+    "img": "/images/mitu.svg",
+    "name": "Israt Mitu",
+    "userType": "User",
+    "bg": "#EFF7FD"
   },
   {
     "id": 2,
     "message": "Our products and services enables organizations to run their businesses seamlessly",
-    "icon": "/assets/images/svg/rasel-shuvo.svg",
-    // "bg": "#FEF2F0"
+    "img": "/images/jakir.svg",
+    "name": "Jakir Hossain",
+    "userType": "Rental Partner",
+    "bg": "#F1F9F1"
   },
   {
     "id": 3,
     "message": "Our products and services enables organizations to run their businesses seamlessly",
-    "icon": "/assets/images/svg/rasel-shuvo.svg",
-    // "bg": "#f04935"
+    "img": "/images/enayet.svg",
+    "name": "Khandaker Enayet Ullah",
+    "userType": "Secretary General (DSPMS)",
+    "bg": "#EFF7FD"
   },
   {
     "id": 4,
     "message": "Jatri is the go-to rental solution for my family on vacations. Finding a trustworthy rental car within.",
-    "icon": "/assets/images/svg/rasel-shuvo.svg",
-    // "bg": "#FEF2F0"
+    "img": "/images/mitu.svg",
+    "name": "Israt Mitu",
+    "userType": "User",
+    "bg": "#F1F9F1"
   },
 ])
 const tempSliderItems = ref([])
@@ -121,16 +131,19 @@ onUnmounted(() => clearInterval(autoSlideInterVal.value))
               <transition-group name="slide">
                 <div
                     v-for="(item, index) in tempSliderItems" :key="item.id"
-                    class="testimonial-slider-item">
+                    class="testimonial-slider-item"
+                    :style="{'background-color': item.bg}">
                     <div>
-                        <img src="~/assets/images/svg/rasel-shuvo.svg" alt="Rasel Shuvo img" class="border-8 border-[#FCD7D3] rounded-full">
+                        <div class="h-24 w-24">
+                          <img :src="item.img" :alt="item.name" class="h-full w-full object-cover rounded-full">
+                        </div>
                         <p class="mt-6 xl:mt-8 text-xl xl:text-2xl font-semibold text-secondaryDark">
                           {{item.message}}
                         </p>
                     </div>
                     <div>
-                        <h5 class="text-base font-semibold">Khandaker Enayet Ullah</h5>
-                        <p class="text-sm text-secondaryDark mt-1">Secretary General (DSPMS)</p>
+                        <h5 class="text-base font-semibold">{{ item.name }}</h5>
+                        <p class="text-sm text-secondaryDark mt-1">{{ item.userType }}</p>
                     </div>
                 </div>
               </transition-group>
@@ -142,21 +155,6 @@ onUnmounted(() => clearInterval(autoSlideInterVal.value))
 <style scoped>
 .testimonial-slider-item {
   @apply w-[348px] lg:w-[400px] rounded-3xl p-6 xl:p-8 flex flex-col justify-between flex-shrink-0 gap-8 xl:gap-10
-}
-.testimonial-slider-item:first-child {
-  @apply bg-[#FEF2F0]
-}
-.testimonial-slider-item:nth-child(2) {
-  @apply bg-[#EFF7FD]
-}
-.testimonial-slider-item:nth-child(3) {
-  @apply bg-[#F1F9F1]
-}
-.testimonial-slider-item:nth-child(4) {
-  @apply bg-[#F2F0FE]
-}
-.testimonial-slider-item:last-child {
-  @apply bg-[#F1F9F1]
 }
 
 .slide-enter {

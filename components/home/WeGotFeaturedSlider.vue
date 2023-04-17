@@ -65,7 +65,7 @@ const slidePrev = () => {
 }
 </script>
 <template>
-  <div class="py-12 md:py-20 xl:py-[120px]">
+  <section class="py-12 md:py-20 xl:py-[120px]">
     <div class="custom-container">
       <div class="flex justify-between items-end">
         <div>
@@ -136,7 +136,7 @@ const slidePrev = () => {
           </swiper-slide>
         </swiper>
       </div>
-  </div>
+  </section>
 </template>
 
 <style scoped>
