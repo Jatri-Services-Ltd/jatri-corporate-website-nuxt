@@ -1,29 +1,29 @@
 <template>
-    <div class="flex items-center justify-between px-2 py-4 lg:px-28 lg:py-4">
+    <div class="flex items-center justify-between px-4 lg:px-28">
       <nuxt-link :to="localePath('/')" class="md:hidden"><img class="h-8 w-16" src="@/assets/images/svg/jatri-logo.svg" alt="jatri logo"></nuxt-link>
       
-        <div class="hidden md:flex gap-x-12">
-           <nuxt-link :to="localePath('/')"><img class="h-20 w-28" src="@/assets/images/svg/jatri-logo.svg" alt="jatri logo"></nuxt-link>
-          <div class="hidden md:flex gap-x-10 items-center w-full">
-              <nuxt-link :to="localePath('/')" class="text-sm font-medium text-black border-b-4 border-black inline-block text-center">Home</nuxt-link>
-              <nuxt-link :to="localePath('/about-us')" class="text-sm font-medium text-black text-center inline-block">About us</nuxt-link>
-              <nuxt-link :to="localePath('/career')" class="text-sm font-medium text-black text-center inline-block">Career</nuxt-link>
-              <nuxt-link :to="localePath('/blog')" class="text-sm font-medium text-black text-center inline-block">Blogs</nuxt-link>
-              <nuxt-link :to="localePath('/contact-us')" class="text-sm font-medium text-black text-center inline-block">Contact us</nuxt-link>
+        <div class="hidden md:flex gap-x-6 lg:gap-x-12 py-5">
+           <nuxt-link :to="localePath('/')"><img class="h-10 w-[81px]" src="@/assets/images/svg/jatri-logo.svg" alt="jatri logo"></nuxt-link>
+          <div class="hidden md:flex gap-x-6 lg:gap-x-10 items-center w-full">
+              <nuxt-link :to="localePath('/')" class="text-[16px] leading-6 font-medium text-black inline-block text-center relative" active-class="active-menu">Home</nuxt-link>
+              <nuxt-link :to="localePath('/about-us')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">About us</nuxt-link>
+              <nuxt-link :to="localePath('/career')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">Career</nuxt-link>
+              <nuxt-link :to="localePath('/blog')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">Blogs</nuxt-link>
+              <nuxt-link :to="localePath('/contact-us')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">Contact us</nuxt-link>
           </div>
         </div>
 
-      <div class="hidden md:flex gap-x-6 items-center">
-        <select class="focus:outline-none" name="language" id="">
+      <div class="hidden md:flex gap-x-2 lg:gap-x-6 items-center">
+        <select class="focus:outline-none text-[12px]" name="language" id="">
           <option value="English">English</option>
           <option value="Bangla">Bangla</option>
         </select>
 
-        <a href="https://rental.jatri.co/" target="_blank" class="flex gap-x-2 items-center text-lg leading-6 font-medium rounded-full border border-[#EDEDED] px-4 py-3"><img src="@/assets/images/svg/car-svg.svg" alt=""> Rental</a>
-        <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white flex gap-x-2 items-center text-lg leading-6 font-medium rounded-full border border-[#EDEDED] pl-4 pr-6 py-3"><img src="@/assets/images/svg/ticket.svg" alt=""> Ticket</a>
+        <a href="https://rental.jatri.co/" target="_blank" class="flex gap-x-2 items-center text-[16px] leading-6 font-medium rounded-full border border-[#EDEDED] px-4 py-2 lg:py-3"><img src="@/assets/images/svg/car-svg.svg" alt=""> Rental</a>
+        <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white flex gap-x-2 items-center text-[16px] leading-6 font-medium rounded-full border border-[#EDEDED] pl-4 pr-6 py-2 lg:py-3"><img src="@/assets/images/svg/ticket.svg" alt=""> Ticket</a>
       </div>
 
-      <div class="flex gap-x-2 md:hidden">
+      <div class="flex gap-x-2 md:hidden py-4">
         <a href="https://rental.jatri.co/" target="_blank" class="flex gap-x-2 justify-center items-center text-xs leading-6 font-medium rounded-full border border-[#EDEDED] px-4 py-3 w-[100px] h-9"><img src="@/assets/images/svg/car-svg.svg" alt=""> Rental</a>
         <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white flex justify-center gap-x-2 items-center text-xs leading-6 font-medium rounded-full border border-[#EDEDED] w-[100px] h-9"><img src="@/assets/images/svg/ticket.svg" alt=""> Ticket</a>
         <button @click="sidebarOpen = !sidebarOpen"><img src="@/assets/images/svg/3bar-icon.svg" alt=""></button>
@@ -59,6 +59,16 @@ const sidebarOpen = ref(false)
 </script>
 
 <style>
+.active-menu::after{
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: #151414;
+  transition: all 0.5s ease;
+}
 .slide{
   position: absolute;
   right: -50%;

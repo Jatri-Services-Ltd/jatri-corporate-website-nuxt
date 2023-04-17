@@ -25,7 +25,7 @@ body {
         <homeWhatWeDo />
         <JatriRentalSection />
         <ScrollingScreenSection />
-        <OurProductsSection />
+        <!-- <OurProductsSection /> -->
         <TestimonialSection />
         <homeDownloadAppSection />
         <homeWeGotFeaturedSlider />

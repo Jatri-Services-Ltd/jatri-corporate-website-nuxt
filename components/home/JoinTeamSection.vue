@@ -5,7 +5,7 @@
   <section class="relative">
     <div class="custom-container py-0 md:py-[120px] join-team-wrapper">
       <div class="grid grid-cols-12">
-        <div class="col-span-12 lg:col-span-6 bg-corporate rounded-none lg:rounded-[32px] lg:rounded-tr-none lg:rounded-br-none relative order-2 lg:order-1 mt-[30px] xs:mt-[10px] sm:-mt-[30px] md:-mt-[50px] lg:-mt-[33px] xl:mt-0">
+        <div class="col-span-12 lg:col-span-6 bg-corporate rounded-none lg:rounded-[32px] lg:rounded-tr-none lg:rounded-br-none relative order-2 lg:order-1">
           <div class="hidden lg:block">
             <div class="curve">
               <svg height="100%" viewBox="0 0 144 572" fill="none" preserveAspectRatio="xMinYMin" xmlns="http://www.w3.org/2000/svg">
