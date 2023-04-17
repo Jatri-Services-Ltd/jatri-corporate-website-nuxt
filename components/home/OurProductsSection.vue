@@ -227,10 +227,10 @@ label:last-child {
 }
 
 .panels {
-    @apply pt-6 lg:pt-14 w-full flex justify-center space-x-6 lg:space-x-10 overflow-visible relative h-[350px]
+    @apply pt-6 lg:pt-14 w-full flex justify-center space-x-0 lg:space-x-10 overflow-visible relative h-[350px]
 }
 .panels .panel {
-  @apply h-[460px] w-[340px] overflow-hidden flex-shrink-0 rounded-3xl flex flex-col justify-center transform scale-100 duration-1000 transition-transform
+  @apply h-[460px] w-full lg:w-[290px] xl:w-[340px] overflow-hidden flex-shrink-0 rounded-3xl flex flex-col justify-center transform scale-100 duration-1000 transition-transform
 }
 .panel-content {
     @apply px-8 py-6
@@ -273,10 +273,11 @@ input[type="radio"]:checked + label {
   @apply translate-y-0 h-full
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
   .panels .panel {
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     opacity: 0;
   }
   #radio1:checked ~ .panels #panel-one,
