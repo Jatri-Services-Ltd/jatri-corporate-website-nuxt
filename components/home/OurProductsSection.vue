@@ -66,7 +66,7 @@ onUnmounted(() => {
         </div>
 
         <div class="panels">
-            <div class="panel bg-primary" @mouseover="switchTab(0, true)" id="panel-one">
+            <div class="panel bg-[url('~/assets/images/svg/user-bg.svg')]" @mouseover="switchTab(0, true)" id="panel-one">
                 <div class="panel-content">
                     <h5 class="title">Users</h5>
                     <p class="description">Our plethora of services makes the users life convenien</p>
@@ -106,7 +106,7 @@ onUnmounted(() => {
                 </div>
             </div>
 
-            <div class="panel bg-info" @mouseover="switchTab(1, true)" id="panel-two">
+            <div class="panel bg-[url('~/assets/images/svg/partner-bg.svg')]" @mouseover="switchTab(1, true)" id="panel-two">
                 <div class="panel-content">
                     <h5 class="title">Partner</h5>
                     <p class="description">We empower car drivers and owners to push their business to the next level</p>
@@ -122,7 +122,7 @@ onUnmounted(() => {
                 </div>
             </div>
 
-            <div class="panel bg-success" @mouseover="switchTab(2, true)" id="panel-three">
+            <div class="panel bg-[url('~/assets/images/svg/business-bg.svg')]" @mouseover="switchTab(2, true)" id="panel-three">
                 <div class="panel-content">
                     <h5 class="title">Business solutions</h5>
                     <p class="description">Our products and services enables organizations to run their businesses seamlessly</p>
