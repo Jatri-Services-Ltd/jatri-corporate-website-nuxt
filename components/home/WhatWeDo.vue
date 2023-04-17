@@ -2,7 +2,7 @@
 
 </script>
 <template>
-  <section class="bg-[url('~/assets/images/svg/what-we-do-bg.svg')] bg-no-repeat bg-cover py-8 sm:py-14 xl:py-20">
+  <section class="bg-[url('~/assets/images/svg/what-we-do-bg.svg')] bg-no-repeat bg-cover py-8 md:py-14 xl:py-20">
     <div class="custom-container">
       <h2 class="text-white text-[28px] md:text-[50px] lg:text-[57px] leading-[36px] md:leading-[64px] font-medium lg:font-semibold mb-2 lg:mb-4">What we do</h2>
       <p class="text-white text-[16px] md:text-[20px] font-normal leading-[24px] md:leading-[28px] ml-0 md:ml-2">We will go the extra mile for you</p>

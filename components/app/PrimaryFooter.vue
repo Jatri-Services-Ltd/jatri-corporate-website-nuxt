@@ -16,7 +16,7 @@
               </div>
             </div>
 
-            <div class="mt-8">
+            <div class="mt-6 md:mt-8">
               <p class="text-base text-white font-medium mb-4">Download our app</p>
               <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank">
                 <img src="~/assets/images/svg/google-play-badge.svg" target="_blank" alt="Google play badge">
@@ -25,7 +25,7 @@
           </div>
 
           <div class="lg:col-span-3 row-span-2">
-            <div class="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-0 pb-6">
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-0 pb-6">
               <div class="lg:px-12 lg:border-x border-x-[#F6958A]">
                 <h4 class="text-white text-xl lg:text-2xl font-medium mb-4 lg:mb-6">Products</h4>
                 <ul class="grid gap-4">
@@ -103,7 +103,7 @@
             <p class="text-white text-base font-medium">All rights reserved @Jatri 2023</p>
           </div>
 
-          <div class="order-1 lg:order-2 place-self-center lg:place-self-end border-b border-b-[#F6958A] lg:border-b-0 py-6 lg:pb-0 grid grid-cols-3 lg:flex items-center lg:gap-8 text-center lg:text-right">
+          <div class="order-1 lg:order-2 place-self-initial lg:place-self-end border-b border-b-[#F6958A] lg:border-b-0 py-6 lg:pb-0 grid grid-cols-3 lg:flex items-center lg:gap-8 text-center lg:text-right">
             <nuxt-link :to="localePath('/user/term-and-condition')" class="text-white font-medium text-sm underline">Terms and condition</nuxt-link>
             <nuxt-link :to="localePath('/user/refund-policy-of-jatri')" class="text-white font-medium text-sm underline border-x border-[#F6958A] lg:border-x-0 px-4 sm:px-8 lg:px-0">Return & refund policy</nuxt-link>
             <nuxt-link :to="localePath('/user/privacy-policy')" class="text-white font-medium text-sm underline">Privacy policy</nuxt-link>

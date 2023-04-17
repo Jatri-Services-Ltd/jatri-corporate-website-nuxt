@@ -1,5 +1,5 @@
 <template>
-  <section class="sticky-wrapper sm:pt-4 xl:pt-[100px] pb-12 xl:pb-[90px]">
+  <section class="sticky-wrapper sm:pt-4 xl:pt-[100px] pb-10 xl:pb-[90px]">
     <div class="sticky-item">
       <div class="card-container">
         <div class="custom-container">
