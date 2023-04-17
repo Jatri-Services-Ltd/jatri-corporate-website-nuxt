@@ -3,7 +3,7 @@
 </script>
 <template>
   <section class="relative">
-    <div class="custom-container pt-[34px] pb-12 md:py-[120px] join-team-wrapper">
+    <div class="custom-container pt-[34px] pb-12 lg:py-20 xl:py-[120px] join-team-wrapper">
       <div class="grid grid-cols-12">
         <div class="col-span-12 lg:col-span-6 bg-corporate rounded-none lg:rounded-[32px] lg:rounded-tr-none lg:rounded-br-none relative order-2 lg:order-1 mobile-top-margin">
           <div class="hidden lg:block">
@@ -92,7 +92,7 @@
     margin-top: -50px;
   }
 }
-@media(max-width:767px){
+@media(max-width:1023px){
   .career-img{
     height: auto !important;
   }

@@ -6,7 +6,7 @@
   <section class="custom-container">
     <div class="bg-[#F7F7F7] rounded-3xl">
       <div class="flex flex-wrap flex-row-reverse md:flex-row w-full justify-between items-stretch">
-        <div class="w-full md:w-[60%] px-5 lg:px-10 lg:px-14 xl:px-[106px] pt-6 pb-5 xl:py-20 order-2 md:order-1">
+        <div class="w-full md:w-[60%] px-5 lg:px-14 xl:px-[106px] pt-6 pb-5 lg:py-10 xl:py-20 order-2 md:order-1">
           <p class="uppercase text-body text-[16px] leading-6 font-medium mb-1">jatri Partner App</p>
           <h3 class="text-dark text-2xl lg:text-3xl leading-[24px] font-medium mb-4">Drive forward with Jatri</h3>
           <p class="text-secondaryDark text-sm lg:text-[16px] leading-6">Add a new dimension to your car or microbus rental business by digitizing every trip. With exciting trip deals, flexible bookings and competitive pricing, you'll never go back to the old manual rental system again</p>

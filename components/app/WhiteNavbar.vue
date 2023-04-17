@@ -26,7 +26,6 @@ const switchLocalePath = useSwitchLocalePath()
       <div class="block lg:hidden flex justify-center items-center">
         <nuxt-link :to="switchLocalePath('bn')" :class="locale === 'bn' ?  'bg-corporate text-white border border-corporate' : ''" class="cursor-pointer w-[60px] leading-[20px] text-xs border border-[#DBDBDB] border-r-0 flex justify-center items-center font-semibold h-[32px] rounded-l-[4px]">বাংলা</nuxt-link>
         <nuxt-link :to="switchLocalePath('en')" :class="locale === 'en' ? 'bg-corporate text-white border border-corporate' : ''" class="cursor-pointer w-[60px] leading-[20px] text-xs border border-[#DBDBDB] flex justify-center items-center font-semibold text-black h-[32px] rounded-r-[4px]">English</nuxt-link>
-
       </div>
       <label
           class="block lg:hidden cursor-pointer flex items-center px-3 py-2 border rounded border-corporate-400 hover:corporate_color hover:border-gray-400"
