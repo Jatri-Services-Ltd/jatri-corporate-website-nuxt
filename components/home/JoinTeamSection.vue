@@ -3,7 +3,7 @@
 </script>
 <template>
   <section class="relative">
-    <div class="custom-container py-0 md:py-[120px] join-team-wrapper">
+    <div class="custom-container pt-[34px] pb-12 md:py-[120px] join-team-wrapper">
       <div class="grid grid-cols-12">
         <div class="col-span-12 lg:col-span-6 bg-corporate rounded-none lg:rounded-[32px] lg:rounded-tr-none lg:rounded-br-none relative order-2 lg:order-1">
           <div class="hidden lg:block">
@@ -37,10 +37,10 @@
           <div class="absolute bottom-0 right-0 block lg:hidden">
             <img class="rounded-bl-[32px]" src="~/assets/images/svg/small-device-bottom-ellipse.svg" alt="Jatri Career">
           </div>
-          <div class="flex items-center justify-center text-white h-full mx-6 lg:mx-0 pl-0 lg:pl-10 xl:pl-20 pt-5 lg:pt-0 pb-14 lg:pb-0">
+          <div class="flex items-center text-white h-full mx-6 lg:mx-0 pl-0 lg:pl-10 xl:pl-20 pt-5 lg:pt-0 pb-14 lg:pb-0">
             <div class="relative">
               <h3 class="text-2xl md:text-[40px] xl:text-[45px] font-semibold leading-8 lg:leading-[52px] mb-4 lg:mb-6">Join the winning team!</h3>
-              <p class="text-sm lg:text-[16px] leading-5 lg:leading-6 font-medium">Join our exciting team in the quest of empowering Bangladesh to travel better!</p>
+              <p class="text-sm lg:text-[16px] leading-5 lg:leading-6 font-medium">Join our exciting team in the quest of empowering <br>Bangladesh to travel better!</p>
               <div class="mt-6 lg:mt-12">
                 <router-link class="bg-white text-corporate text-sm lg:text-[16px] font-medium h-[40px] lg:h-[46px] w-[133px] lg:w-[145px] flex justify-center items-center rounded-full" :to="localePath('/career')">Join Jatri</router-link>
               </div>

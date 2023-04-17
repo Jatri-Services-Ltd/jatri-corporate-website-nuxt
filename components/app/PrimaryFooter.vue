@@ -1,5 +1,5 @@
 <template>
-    <footer class="mt-10">
+    <footer>
       <div class="hidden md:block">
         <img src="~/assets/images/svg/footer-img.svg" alt="Footer img" width="100%">
       </div>

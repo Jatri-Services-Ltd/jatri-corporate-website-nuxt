@@ -34,7 +34,7 @@
 
         <div class="md:col-span-2 bg-grey rounded-3xl p-6 lg:p-12 overflow-hidden">
           <p class="text-base sm:text-xl lg:text-2xl text-[#8D8D8F]">Get ready, Book & GO!</p>
-          <h3 class="primary-heading mt-2 mb-6">Your mobility super-app</h3>
+          <h3 class="custom-heading text-dark sm:text-5xl lg:text-4xl xl:text-[40px] font-medium lg:font-semibold mt-2 mb-6">Your mobility super-app</h3>
           <div class="flex gap-3 sm:gap-6">
             <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank" class="flex justify-center items-center gap-1.5 sm:gap-2.5 rounded-full bg-success border border-success pr-6 sm:pr-8 pl-5 sm:pl-[26px] py-3.5 cursor-pointer">
               <img src="~/assets/images/svg/google-play-icon-white.svg" alt="Google play icon">
@@ -51,12 +51,16 @@
 </template>
 
 <style scoped>
-.primary-heading {
-  @apply sm:text-5xl lg:text-5xl xl:text-[57px]
-}
 .screen-move {
   animation: screenMove 5s linear infinite 1s;
   will-change: transform;
+}
+
+@media only screen and (min-width: 1440px) {
+  .custom-heading {
+    font-size: 57px;
+    line-height: 64px;
+  }
 }
 
 @keyframes screenMove {
