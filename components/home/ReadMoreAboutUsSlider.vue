@@ -63,8 +63,8 @@ const slidePrev = () => {
 
 </script>
 <template>
-  <section class="bg-[#F7F7F7]">
-    <div class="py-8 md:py-20 xl:py-[120px]">
+  <section class="bg-grey">
+    <div class="py-8 md:py-[60px]">
       <div class="custom-container">
         <div class="flex justify-between items-center lg:items-end mb-10 lg:mb-[60px]">
           <div>

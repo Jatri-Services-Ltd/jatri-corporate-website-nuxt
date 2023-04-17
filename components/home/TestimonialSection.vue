@@ -81,8 +81,8 @@ onUnmounted(() => clearInterval(autoSlideInterVal.value))
 </script>
 
 <template>
-    <section class="my-12 md:my-20 xl:my-[120px] pt-[210px] pl-4 md:pl-20 lg:pl-[200px] flex justify-between flex-wrap lg:flex-nowrap gap-8 xl:gap-16">
-        <div class="w-full lg:w-2/5 pr-4 lg:pr-0 flex xl:flex-col gap-5 justify-between lg:justify-center">
+    <section class="my-12 md:my-20 xl:my-[120px] pt-[210px] pl-4 md:pl-20 lg:pl-[60px] xl:pl-[100px] 2xl:pl-[200px] flex justify-between flex-wrap lg:flex-nowrap gap-8 xl:gap-12">
+        <div class="w-full lg:w-2/5 pr-4 lg:pr-0 flex lg:flex-col gap-5 justify-between lg:justify-center">
             <h4 class="primary-heading">Don’t just believe our words</h4>
             <div class="flex items-center gap-4 xl:gap-6">
               <button
