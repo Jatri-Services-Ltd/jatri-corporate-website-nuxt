@@ -2,9 +2,9 @@
     <div class="flex items-center justify-between px-4 lg:px-28">
       <nuxt-link :to="localePath('/')" class="md:hidden"><img class="h-8 w-16" src="@/assets/images/svg/jatri-logo.svg" alt="jatri logo"></nuxt-link>
       
-        <div class="hidden md:flex gap-x-6 lg:gap-x-12 py-5">
+        <div class="hidden md:flex gap-x-6 lg:gap-x-10 xl:gap-x-12 py-5">
            <nuxt-link :to="localePath('/')"><img class="h-10 w-[81px]" src="@/assets/images/svg/jatri-logo.svg" alt="jatri logo"></nuxt-link>
-          <div class="hidden md:flex gap-x-6 lg:gap-x-10 items-center w-full">
+          <div class="hidden md:flex gap-x-4 lg-gap-x-8 xl:gap-x-10 items-center w-full">
               <nuxt-link :to="localePath('/')" class="text-[16px] leading-6 font-medium text-black inline-block text-center relative" active-class="active-menu">Home</nuxt-link>
               <nuxt-link :to="localePath('/about-us')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">About us</nuxt-link>
               <nuxt-link :to="localePath('/career')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">Career</nuxt-link>
