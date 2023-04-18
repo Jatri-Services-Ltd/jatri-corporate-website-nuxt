@@ -95,7 +95,7 @@ const modules = [FreeMode, Pagination];
             </div>
           </div>
           <div class="gray-shape-bg w-full z-10">
-            <img src="~/assets/images/svg/gray-shape-bg.svg" class="w-full object-contain" alt="">
+            <img src="~/assets/images/svg/gray-shape-bg.png" class="w-full object-contain" alt="">
           </div>
         </div>
     </section>
