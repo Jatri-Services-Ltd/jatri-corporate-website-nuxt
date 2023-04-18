@@ -19,7 +19,7 @@
             <div class="mt-6 md:mt-8">
               <p class="text-base text-white font-medium mb-4">Download our app</p>
               <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank">
-                <img src="~/assets/images/svg/google-play-badge.svg" target="_blank" alt="Google play badge">
+                <img src="~/assets/images/svg/google-play-badge.svg" alt="Google play badge">
               </a>
             </div>
           </div>
