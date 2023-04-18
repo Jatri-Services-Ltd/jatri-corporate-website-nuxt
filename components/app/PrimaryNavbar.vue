@@ -16,7 +16,7 @@
 
 
         <div class="hidden lg:flex gap-x-2 lg:gap-x-6 items-center">
-          <div class="relative inline-block text-left min-w-[80px]">
+          <div class="relative inline-block z-50 text-left min-w-[80px]">
             <div>
               <button
                   @click="isOpen = !isOpen"
@@ -79,7 +79,7 @@
               <button @click="closeModal" class=""><img src="@/assets/images/svg/cross-icon.svg" alt=""></button>
             </div>
             <div class="flex flex-col px-2">
-              <nuxt-link :to="localePath('/')" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4" active-class="active-menu">Home</nuxt-link>
+              <nuxt-link :to="localePath('/')" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4" active-class="active-menu" @click="sidebarOpen = false">Home</nuxt-link>
               <nuxt-link :to="localePath('/about-us')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4">About us</nuxt-link>
               <nuxt-link :to="localePath('/career')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4">Career</nuxt-link>
               <nuxt-link :to="localePath('/blog')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4">Blogs</nuxt-link>
@@ -132,6 +132,10 @@
           </div>
         </div>
         <div v-if="sidebarOpen" @click="closeModal" class="fixed inset-0 z-30 bg-black bg-opacity-30 h-full w-full cursor-default transition duration-300 ease-in-out"></div>
+      </div>
+
+      <div v-if="isOpen" @click="isOpen = false"
+           class="fixed inset-0 z-30 h-full w-full cursor-default transition duration-300 ease-in-out">
       </div>
     </nav>
 
