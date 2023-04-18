@@ -56,6 +56,16 @@
 <script setup>
 import {ref} from "vue";
 const sidebarOpen = ref(false)
+// const getBody = document.getElementsByTagName('body')[0];
+// const toggleModal = () => {
+//   sidebarOpen.value = !sidebarOpen.value;
+//   if(sidebarOpen.value) {
+//     getBody.style.overflow = 'hidden';
+//   }
+//   else {
+//     getBody.style.overflow = 'auto';
+//   }
+// }
 </script>
 
 <style>
