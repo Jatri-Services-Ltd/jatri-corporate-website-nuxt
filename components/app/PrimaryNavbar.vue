@@ -32,10 +32,11 @@
         <div v-if="sidebarOpen" class="bg-white absolute inset-y-0 right-0 -translate-x-[300px] slide" :class="sidebarOpen ? 'absolute  z-50 translate-x-0 transition delay-300 duration-300' : ''">
           <div class="h-screen w-[300px] gap-y-10">
             <div class="flex justify-between items-center border-b border-[#EDEDED] p-5">
-              <p class="font-medium text-sm text-black">Menu</p>
+              <p class="font-medium text-sm text-black uppercase">Menu</p>
               <button @click="closeModal" class=""><img src="@/assets/images/svg/cross-icon.svg" alt=""></button>
             </div>
             <div class="flex flex-col gap-y-2 px-2">
+              <nuxt-link :to="localePath('/')" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4" active-class="active-menu">Home</nuxt-link>
               <nuxt-link :to="localePath('/about-us')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4">About us</nuxt-link>
               <nuxt-link :to="localePath('/career')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4">Career</nuxt-link>
               <nuxt-link :to="localePath('/blog')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4">Blogs</nuxt-link>
