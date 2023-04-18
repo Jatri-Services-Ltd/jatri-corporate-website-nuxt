@@ -12,7 +12,7 @@
                   <h3 class="text-dark text-4xl lg:text-[57px] lg:leading-[64px] font-bold">Jatri Ticket</h3>
                   <p class="text-dark text-base my-4 mb-6">Booking bus ticket just got more easier<br> with Jatri!</p>
                   <div class="inline-block m-auto">
-                    <a href="#" class="flex justify-center items-center gap-2.5 rounded-full bg-info pl-6 pr-4 py-3 cursor-pointer">
+                    <a href="https://ticket.jatri.co/" target="_blank" class="flex justify-center items-center gap-2.5 rounded-full bg-info pl-6 pr-4 py-3 cursor-pointer">
                       <span class="text-base font-medium text-white">Learn More</span>
                       <img src="~/assets/images/svg/arrow-right-white.svg" alt="Arrow icon">
                     </a>
@@ -290,7 +290,7 @@
                   <p class="text-dark text-base my-4 mb-6">Easy, simple and pocket-friendly<br>
                     car rental!</p>
                   <div class="inline-block m-auto">
-                    <a href="#" class="flex justify-center items-center gap-2.5 rounded-full bg-primary pl-6 pr-4 py-3 cursor-pointer">
+                    <a href="https://rental.jatri.co/" target="_blank" class="flex justify-center items-center gap-2.5 rounded-full bg-primary pl-6 pr-4 py-3 cursor-pointer">
                       <span class="text-base font-medium text-white">Learn More</span>
                       <img src="~/assets/images/svg/arrow-right-white.svg" alt="Arrow icon">
                     </a>
