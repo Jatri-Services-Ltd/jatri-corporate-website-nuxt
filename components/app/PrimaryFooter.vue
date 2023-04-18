@@ -1,8 +1,7 @@
 <template>
     <footer>
       <div class="hidden md:block">
-<!--        <img src="~/assets/images/svg/footer-top-img.svg" alt="Footer img" width="100%">-->
-        <img src="~/assets/images/svg/google-play-badge.svg" alt="Footer img" width="100%">
+          <img src="~/assets/images/svg/footer-top-img.svg" alt="Footer img" width="100%">
       </div>
 
       <div class="custom-container bg-primary pt-6 lg:pt-12 pb-6 lg:pb-8">
