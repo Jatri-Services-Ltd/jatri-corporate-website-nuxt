@@ -67,7 +67,7 @@ const slidePrev = () => {
 <template>
   <section class="py-12 md:py-20 xl:py-[120px]">
     <div class="custom-container">
-      <div class="flex justify-between items-end mb-10 lg:mb-[60px]">
+      <div class="flex justify-between items-end pb-[28px]">
         <div>
           <h2 class="text-[28px] md:text-[45px] xl:text-[57px] text-dark font-semibold leading-9 lg:leading-[64px]">We got featured</h2>
         </div>
@@ -113,7 +113,7 @@ const slidePrev = () => {
             @swiper="onSwiper"
             class="mySwiper"
         >
-          <swiper-slide v-for="slider in featureSlider" :key="slider.id">
+          <swiper-slide v-for="slider in featureSlider" :key="slider.id" class="mt-8">
             <nuxt-link :to="slider.link" target="_blank" class="flex flex-col justify-between min-h-[500px] bg-[#FEF2F0] rounded-2xl py-6 px-6 feature-slider-card">
               <div>
                 <div class="flex justify-center mb-4 slider-img">
