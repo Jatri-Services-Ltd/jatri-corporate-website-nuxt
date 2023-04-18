@@ -97,6 +97,7 @@
     height: auto !important;
   }
   .join-team-wrapper{
+    padding-top: 0 !important;
     padding-right: 0 !important;
     padding-left: 0 !important;
   }

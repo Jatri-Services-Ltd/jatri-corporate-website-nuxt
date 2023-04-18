@@ -35,7 +35,6 @@ const autoSlideInterVal = ref(null)
 // const activeProgress = ref(0)
 
 const nextSlide = () => {
-  console.log("End--->", autoSlideInterVal.value)
   clearInterval(autoSlideInterVal.value)
   if (tempSliderItems.value.length > 0) {
     currentSlide.value = tempSliderItems.value[0].id
@@ -61,7 +60,6 @@ const startInterval = () => {
   autoSlideInterVal.value = setInterval(() => {
     nextSlide()
   }, 3000)
-  console.log("start--->", autoSlideInterVal.value)
 }
 
 onMounted(() => {
