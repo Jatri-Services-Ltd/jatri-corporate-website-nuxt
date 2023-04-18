@@ -235,14 +235,14 @@ label:last-child {
     @apply px-8 py-6
 }
 .panel-content .title {
-    @apply text-white text-[45px] leading-[52px] lg:text-4xl xl:text-[45px] xl:leading-[52px] font-semibold text-center transition-[text-align,font-size] duration-300
+    @apply text-white text-[45px] leading-[52px] lg:text-4xl xl:text-[45px] xl:leading-[52px] font-semibold text-center transition-[text-align,font-size] duration-500
  }
 .panel-content .description {
     @apply text-white text-base mt-2 text-center transition-[text-align,font-size] duration-300
  }
 
 .panel-hidden-content {
-    @apply shadow-[0_0_24px_rgba(116,19,9,0.3)] rounded-3xl px-5 py-6 space-y-6 md:space-y-4 lg:space-y-3 xl:space-y-6 transform translate-y-56 h-0 transition-[transform,height] duration-300
+    @apply shadow-[0_0_24px_rgba(116,19,9,0.3)] rounded-3xl px-5 py-6 space-y-6 md:space-y-4 lg:space-y-3 xl:space-y-6 transform translate-y-56 h-0 transition-[transform,height] duration-500
 }
 
 input[type="radio"]:checked + label {
