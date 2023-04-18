@@ -27,7 +27,7 @@ const switchTab = (n, click=false) => {
 onMounted(() => {
   let box = document.querySelector('.radio_wrap')
   box.style.setProperty("--left", `0px`);
-  box.style.setProperty("--tabWidth", `84px`);
+  //box.style.setProperty("--tabWidth", `84px`);
 
   startInterval()
 })
@@ -38,9 +38,8 @@ const startInterval = () => {
     if(round === 3) {
       round = 0
     }
-    console.log(round)
     switchTab(round)
-  }, 2000)
+  }, 3000)
 
 }
 onUnmounted(() => {
@@ -77,31 +76,31 @@ onUnmounted(() => {
                         <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Jatri Rental</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Rental</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Jatri Ride</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Ride</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Jatri Ticket</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Ticket</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Jatri Body Rental</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Body Rental</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Jatri Hourly Rental</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Hourly Rental</p>
                     </div>
                 </div>
             </div>
@@ -117,7 +116,7 @@ onUnmounted(() => {
                         <div class="bg-[#1775C8] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Jatri Partner</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Partner App</p>
                     </div>
                 </div>
             </div>
@@ -133,31 +132,31 @@ onUnmounted(() => {
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Jatri Intercity</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Intercity</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Jatri Intracity</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Intracity</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Jatri Rental Business</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Rental Business</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Jatri Water</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Water</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Jatri Toll Plaza</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Toll Plaza</p>
                     </div>
                 </div>
             </div>
@@ -273,6 +272,12 @@ input[type="radio"]:checked + label {
   @apply translate-y-0 h-full
 }
 
+#radio1:checked ~ .radio_wrap_container .radio_wrap label:first-child,
+#radio2:checked ~ .radio_wrap_container .radio_wrap label:nth-child(2),
+#radio3:checked ~ .radio_wrap_container .radio_wrap label:last-child {
+  color: white;
+}
+
 @media only screen and (max-width: 1023px) {
   .panels .panel {
     position: absolute;
@@ -284,6 +289,20 @@ input[type="radio"]:checked + label {
   #radio2:checked ~ .panels #panel-two,
   #radio3:checked ~ .panels #panel-three {
     opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  label:first-child {
+    width: 64px;
+  }
+
+  label:nth-child(2) {
+    width: 85px;
+  }
+
+  label:last-child {
+    width: 171px;
   }
 }
 </style>

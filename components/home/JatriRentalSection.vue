@@ -10,12 +10,11 @@
               <div class="absolute pt-14 xl:pt-16 top-0 left-1/2 transform -translate-x-1/2 w-full md:w-auto">
                 <div class="pb-28 px-6 text-center">
                   <h3 class="text-dark text-4xl lg:text-[57px] lg:leading-[64px] font-bold">Jatri Ticket</h3>
-                  <p class="text-dark text-base my-4 mb-6">Easy, simple and pocket-friendly <br>car rental!</p>
+                  <p class="text-dark text-base my-4 mb-6">Booking bus ticket just got more easier<br> with Jatri!</p>
                   <div class="inline-block m-auto">
-                    <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank"
-                       class="flex justify-center items-center gap-2.5 rounded-full bg-info pl-6 pr-4 py-3 cursor-pointer">
+                    <a href="#" class="flex justify-center items-center gap-2.5 rounded-full bg-info pl-6 pr-4 py-3 cursor-pointer">
                       <span class="text-base font-medium text-white">Learn More</span>
-                      <img src="~/assets/images/svg/arrow-right-white.svg" alt="Download icon">
+                      <img src="~/assets/images/svg/arrow-right-white.svg" alt="Arrow icon">
                     </a>
                   </div>
                 </div>
@@ -288,12 +287,12 @@
               <div class="absolute pt-14 xl:pt-16 top-0 left-1/2 transform -translate-x-1/2 w-full md:w-auto">
                 <div class="pb-28 px-6 text-center">
                   <h3 class="text-dark text-4xl lg:text-[57px] lg:leading-[64px] font-bold">Jatri Rental</h3>
-                  <p class="text-dark text-base my-4 mb-6">Booking bus ticket just got more easier <br>with Jatri!</p>
+                  <p class="text-dark text-base my-4 mb-6">Easy, simple and pocket-friendly<br>
+                    car rental!</p>
                   <div class="inline-block m-auto">
-                    <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank"
-                       class="flex justify-center items-center gap-2.5 rounded-full bg-primary pl-6 pr-4 py-3 cursor-pointer">
+                    <a href="#" class="flex justify-center items-center gap-2.5 rounded-full bg-primary pl-6 pr-4 py-3 cursor-pointer">
                       <span class="text-base font-medium text-white">Learn More</span>
-                      <img src="~/assets/images/svg/arrow-right-white.svg" alt="Download icon">
+                      <img src="~/assets/images/svg/arrow-right-white.svg" alt="Arrow icon">
                     </a>
                   </div>
                 </div>

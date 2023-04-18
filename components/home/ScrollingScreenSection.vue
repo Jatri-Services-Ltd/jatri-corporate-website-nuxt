@@ -34,13 +34,13 @@
 
         <div class="md:col-span-2 bg-grey rounded-3xl p-6 lg:p-12 overflow-hidden">
           <p class="text-base sm:text-xl lg:text-2xl text-[#8D8D8F]">Get ready, Book & GO!</p>
-          <h3 class="custom-heading text-dark text-[28px] leading-9 sm:text-5xl lg:text-4xl xl:text-[40px] font-semibold mt-2 mb-6">Your mobility super-app</h3>
-          <div class="flex gap-3 sm:gap-6">
-            <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank" class="flex justify-center items-center gap-1.5 sm:gap-2.5 rounded-full bg-success border border-success pr-6 sm:pr-8 pl-5 sm:pl-[26px] py-3.5 cursor-pointer">
+          <h3 class="custom-heading text-dark text-[28px] leading-9 sm:text-5xl lg:text-4xl xl:text-[40px] font-semibold mt-2 mb-6">One-stop Mobility App</h3>
+          <div class="flex gap-2 sm:gap-6">
+            <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank" class="small-device-btn flex justify-center items-center gap-1.5 sm:gap-2.5 rounded-full bg-success border border-success pr-6 sm:pr-8 pl-5 sm:pl-[26px] py-3.5 cursor-pointer">
               <img src="~/assets/images/svg/google-play-icon-white.svg" alt="Google play icon">
               <span class="text-sm lg:text-base font-medium text-white">Play store</span>
             </a>
-            <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank" class="flex justify-center items-center gap-1.5 sm:gap-2.5 rounded-full bg-transparent border border-[#8D8D8F] pr-6 sm:pr-8 pl-5 sm:pl-[26px] py-3.5 cursor-pointer">
+            <a class="small-device-btn flex justify-center items-center gap-1.5 sm:gap-2.5 rounded-full bg-transparent border border-[#8D8D8F] pr-6 sm:pr-8 pl-5 sm:pl-[26px] py-3.5 cursor-pointer">
               <img src="~/assets/images/svg/apple-gray-icon.svg" alt="Apple play icon">
               <span class="text-sm lg:text-base font-medium text-[#8D8D8F]">Coming soon</span>
             </a>
@@ -70,5 +70,16 @@
   100% {
     transform: translateY(-100%);
   }
+}
+
+@media only screen and (max-width: 375px) {
+.small-device-btn {
+  @apply px-4
+}
+
+  .small-device-btn span {
+    @apply text-xs
+  }
+
 }
 </style>
