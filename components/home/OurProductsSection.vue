@@ -78,30 +78,30 @@ onUnmounted(() => {
                         </div>
                         <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Rental</p>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Ride</p>
-                    </div>
+<!--                    <div class="flex items-center gap-4">-->
+<!--                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">-->
+<!--                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">-->
+<!--                        </div>-->
+<!--                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Ride</p>-->
+<!--                    </div>-->
                     <div class="flex items-center gap-4">
                         <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
                         <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Ticket</p>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Body Rental</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Hourly Rental</p>
-                    </div>
+<!--                    <div class="flex items-center gap-4">-->
+<!--                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">-->
+<!--                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">-->
+<!--                        </div>-->
+<!--                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Body Rental</p>-->
+<!--                    </div>-->
+<!--                    <div class="flex items-center gap-4">-->
+<!--                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">-->
+<!--                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">-->
+<!--                        </div>-->
+<!--                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Hourly Rental</p>-->
+<!--                    </div>-->
                 </div>
             </div>
 
@@ -140,17 +140,17 @@ onUnmounted(() => {
                         </div>
                         <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Intracity</p>
                     </div>
+<!--                    <div class="flex items-center gap-4">-->
+<!--                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">-->
+<!--                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">-->
+<!--                        </div>-->
+<!--                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Rental Business</p>-->
+<!--                    </div>-->
                     <div class="flex items-center gap-4">
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Rental Business</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Water</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Ship Management</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
