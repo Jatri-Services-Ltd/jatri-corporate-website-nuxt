@@ -5,8 +5,6 @@ import JatriRentalSection from "~/components/home/JatriRentalSection";
 import ScrollingScreenSection from "~/components/home/ScrollingScreenSection";
 import OurProductsSection from "~/components/home/OurProductsSection";
 import TestimonialSection from "~/components/home/TestimonialSection";
-import Footer from "~/components/app/Footer.vue";
-import WhiteNavbar from "~/components/app/WhiteNavbar.vue";
 </script>
 
 <style scoped>
