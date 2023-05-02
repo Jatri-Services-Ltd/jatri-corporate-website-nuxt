@@ -1,7 +1,7 @@
 
 <script setup>
 import HeroSection from "~/components/home/HeroSection";
-import JatriRentalSection from "~/components/home/JatriRentalSection";
+import HeroProducts from "~/components/home/HeroProducts.vue";
 import ScrollingScreenSection from "~/components/home/ScrollingScreenSection";
 import OurProductsSection from "~/components/home/OurProductsSection";
 import TestimonialSection from "~/components/home/TestimonialSection";
@@ -21,7 +21,7 @@ body {
         <HeroSection />
         <homeCounterSection />
         <homeWhatWeDo />
-        <JatriRentalSection />
+        <HeroProducts />
         <ScrollingScreenSection />
          <OurProductsSection />
         <TestimonialSection />

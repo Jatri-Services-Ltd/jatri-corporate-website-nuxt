@@ -1,13 +1,16 @@
 <script setup>
 import {onBeforeMount, onMounted, onUnmounted, ref} from 'vue'
+const { locale } = useI18n();
 
 const sliderItems = ref([
   {
     "id": 0,
     "message": "Jatri's e-ticketing has helped us immensely to revolutionize  the bus industry",
     "img": "/images/enayet.svg",
-    "name": "Khandaker Enayet Ullah",
+    "name": 'Khandaker Enayet Ullah',
+    "bnName": 'খন্দকার এনায়েত উল্লাহ',
     "userType": "Secretary General (DSPMS)",
+    "bnUserType": "সাধারণ সম্পাদক (ডি.এস.পি.এম.এস)",
     "bg": "#FEF2F0"
   },
   {
@@ -15,7 +18,9 @@ const sliderItems = ref([
     "message": "Jatri is the go-to rental solution for my family on vacations. Finding a trustworthy rental car within an hour definitely helps to speed up our plans!",
     "img": "/images/mitu.svg",
     "name": "Israt Mitu",
+    "bnName": 'ইসরাত মিতু',
     "userType": "User",
+    "bnUserType": "User",
     "bg": "#EFF7FD"
   },
   {
@@ -23,7 +28,9 @@ const sliderItems = ref([
     "message": "I really appreciate the expansion opportunity Jatri has provided for my rental car service. I've managed to organically boost my income and grow my rental business",
     "img": "/images/jakir.svg",
     "name": "Jakir Hossain",
+    "bnName": 'জাকির হোসেইন',
     "userType": "Rental Partner",
+    "bnUserType": "রেন্টাল পার্টনার",
     "bg": "#F1F9F1"
   }
 ])
@@ -81,7 +88,7 @@ onUnmounted(() => clearInterval(autoSlideInterVal.value))
 <template>
     <section class="mt-48 mb-12 md:my-20 xl:my-[120px] sm:pt-36 lg:pt-[210px] pl-4 md:pl-[50px] lg:pl-[60px] xl:pl-[100px] 2xl:pl-[200px] flex justify-between flex-wrap lg:flex-nowrap gap-8 xl:gap-12">
         <div class="w-full lg:w-2/5 pr-4 lg:pr-0 flex lg:flex-col gap-5 justify-between lg:justify-center">
-            <h4 class="primary-heading">Don’t just believe our words</h4>
+            <h4 class="primary-heading">{{ $t('n-testimonial-title') }}</h4>
             <div class="flex items-center gap-4 xl:gap-6">
               <button
                   v-if="tempSliderItems.length === sliderItems.length"
@@ -124,8 +131,8 @@ onUnmounted(() => clearInterval(autoSlideInterVal.value))
                         </p>
                     </div>
                     <div>
-                        <h5 class="text-base font-semibold capitalize">{{ item.name }}</h5>
-                        <p class="text-sm text-secondaryDark mt-1 capitalize">{{ item.userType }}</p>
+                        <h5 class="text-base font-semibold capitalize">{{locale === 'bn' ? item.bnName : item.name}}</h5>
+                        <p class="text-sm text-secondaryDark mt-1 capitalize">{{locale === 'bn' ? item.bnUserType : item.userType}}</p>
                     </div>
                 </div>
               </transition-group>
