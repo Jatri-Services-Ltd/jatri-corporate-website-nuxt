@@ -6,7 +6,7 @@ const sliderItems = ref([
     "id": 0,
     "message": "Jatri's e-ticketing has helped us immensely to revolutionize  the bus industry",
     "img": "/images/enayet.svg",
-    "name": "Khandaker Enayet Ullah",
+    "name": 'Khandaker Enayet Ullah',
     "userType": "Secretary General (DSPMS)",
     "bg": "#FEF2F0"
   },
@@ -81,7 +81,7 @@ onUnmounted(() => clearInterval(autoSlideInterVal.value))
 <template>
     <section class="mt-48 mb-12 md:my-20 xl:my-[120px] sm:pt-36 lg:pt-[210px] pl-4 md:pl-[50px] lg:pl-[60px] xl:pl-[100px] 2xl:pl-[200px] flex justify-between flex-wrap lg:flex-nowrap gap-8 xl:gap-12">
         <div class="w-full lg:w-2/5 pr-4 lg:pr-0 flex lg:flex-col gap-5 justify-between lg:justify-center">
-            <h4 class="primary-heading">Don’t just believe our words</h4>
+            <h4 class="primary-heading">{{ $t('n-testimonial-title') }}</h4>
             <div class="flex items-center gap-4 xl:gap-6">
               <button
                   v-if="tempSliderItems.length === sliderItems.length"
