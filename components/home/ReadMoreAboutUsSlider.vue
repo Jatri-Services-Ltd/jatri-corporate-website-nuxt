@@ -68,7 +68,7 @@ const slidePrev = () => {
       <div class="custom-container">
         <div class="flex justify-between items-center lg:items-end mb-10 lg:mb-[60px]">
           <div>
-            <h2 class="text-[28px] lg:text-[57px] text-dark font-semibold leading-9 lg:leading-[64px]">Read more about us</h2>
+            <h2 class="text-[28px] lg:text-[57px] text-dark font-semibold leading-9 lg:leading-[64px]">{{ $t('n-read-more-about-us') }}</h2>
           </div>
           <div>
             <div class="flex gap-6 lg:gap-8 items-center">
