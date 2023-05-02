@@ -10,12 +10,36 @@
   "n-hero-title": "Empowering Bangladesh to travel better!",
   "n-download-app": "Download app",
 
-  "n-screen-scrolling-title1": "You can bid your fare and choose your desired car.",
-  "n-screen-scrolling-title2": "Safer trips with our safety tools and features.",
+  "n-screen-scrolling-heading1": "You can bid your fare and choose your desired car.",
+  "n-screen-scrolling-heading2": "Safer trips with our safety tools and features.",
   "n-screen-scrolling-subheading": "Get ready, Book & GO!",
   "n-screen-scrolling-heading3": "Your mobility super-app",
   "n-play-store": "Play store",
   "n-coming-soon": "Coming soon",
+
+  "n-our-products": "Our products",
+  "n-our-products-tab1": "User",
+  "n-our-products-tab1-heading": "Users",
+  "n-our-products-tab1-des": "Our plethora of services makes the users life convenient",
+  "n-our-products-tab1-category1": "Rental",
+  "n-our-products-tab1-category2": "Ride",
+  "n-our-products-tab1-category3": "Ticket",
+  "n-our-products-tab1-category4": "Body Rental",
+  "n-our-products-tab1-category5": "Hourly Rental",
+
+  "n-our-products-tab2": "Partner",
+  "n-our-products-tab2-heading": "Partner",
+  "n-our-products-tab2-des": "We empower car drivers and owners to push their business to the next level",
+  "n-our-products-tab2-category1": "Partner App",
+
+  "n-our-products-tab3": "Business solutions",
+  "n-our-products-tab3-heading": "Business solutions",
+  "n-our-products-tab3-des": "Our products and services enables organizations to run their businesses seamlessly",
+  "n-our-products-tab3-category1": "Intercity",
+  "n-our-products-tab3-category2": "Intracity",
+  "n-our-products-tab3-category3": "Rental Business",
+  "n-our-products-tab3-category4": "Water Transport",
+  "n-our-products-tab3-category5": "Toll Plaza",
 
 
 

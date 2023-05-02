@@ -13,7 +13,7 @@
         <div class="lg:row-span-2 bg-grey rounded-3xl px-6 md:px-8 grid grid-cols-2 md:grid-cols-1 sm:justify-center items-center gap-4 sm:gap-8 md:gap-0">
           <div class="md:pt-11 md:pb-1">
             <img src="~/assets/images/svg/green-user.svg" alt="screen img" class="w-7 sm:w-auto block md:m-auto">
-            <p class="mt-[18px] text-dark text-base sm:text-2xl font-medium md:text-center">{{ $t('n-screen-scrolling-title1') }}</p>
+            <p class="mt-[18px] text-dark text-base sm:text-2xl font-medium md:text-center">{{ $t('n-screen-scrolling-heading1') }}</p>
           </div>
 
           <div class="flex justify-end md:justify-center self-end">
@@ -24,7 +24,7 @@
         <div class="relative lg:row-span-2 bg-grey rounded-3xl px-6 md:px-8 grid grid-cols-2 md:grid-cols-1 sm:justify-center items-center gap-4 sm:gap-8 md:gap-0">
           <div class="md:pt-11 md:pb-1">
             <img src="~/assets/images/svg/security-blue.svg" alt="screen img" class="w-7 sm:w-auto block md:m-auto">
-            <p class="mt-[18px] text-dark text-base sm:text-2xl font-medium md:text-center">{{ $t('n-screen-scrolling-title2') }}</p>
+            <p class="mt-[18px] text-dark text-base sm:text-2xl font-medium md:text-center">{{ $t('n-screen-scrolling-heading2') }}</p>
           </div>
 
           <div class="flex justify-end md:justify-center self-end">
