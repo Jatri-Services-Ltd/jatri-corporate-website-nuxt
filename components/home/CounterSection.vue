@@ -38,8 +38,8 @@ const modules = [FreeMode, Pagination];
               </div>
               <div class="mt-6 block lg:hidden">
                 <div class="text-center relative z-20">
-                  <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] leading-[36px]">300K+</p>
-                  <p class="text-body text-[16px] xl:text-[20px] font-medium leading-[24px]">Registered users</p>
+                  <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] leading-[36px]">{{ $t('n-counter-300') }}</p>
+                  <p class="text-body text-[16px] xl:text-[20px] font-medium leading-[24px]">{{ $t('n-counter-registered-user') }}</p>
                 </div>
                 <img src="~/assets/images/svg/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="">
               </div>
@@ -54,8 +54,8 @@ const modules = [FreeMode, Pagination];
               </div>
               <div class="mt-6 block lg:hidden">
                 <div class="text-center relative z-20">
-                  <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[36px]">100 Million+</p>
-                  <p class="text-body text-[16px] xl:text-[20px] font-medium leading-[24px] lg:leading-[28px]">Tickets served</p>
+                  <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[36px]">{{ $t('n-counter-million') }}</p>
+                  <p class="text-body text-[16px] xl:text-[20px] font-medium leading-[24px] lg:leading-[28px]">{{ $t('n-counter-tickets-served') }}</p>
                 </div>
                 <img src="~/assets/images/svg/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="">
               </div>
@@ -70,8 +70,8 @@ const modules = [FreeMode, Pagination];
               </div>
               <div class="mt-6 block lg:hidden">
                 <div class="text-center relative z-20">
-                  <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[36px] lg:leading-[52px]">100K+</p>
-                  <p class="text-body text-[16px] xl:text-[20px] font-medium leading-[24px] lg:leading-[28px]">Rental partners</p>
+                  <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[36px] lg:leading-[52px]">{{ $t('n-counter-100') }}</p>
+                  <p class="text-body text-[16px] xl:text-[20px] font-medium leading-[24px] lg:leading-[28px]">{{ $t('n-counter-rental-partners') }}</p>
                 </div>
                 <img src="~/assets/images/svg/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="">
               </div>
@@ -82,16 +82,16 @@ const modules = [FreeMode, Pagination];
         <div class="hidden lg:block">
           <div class="grid grid-cols-3 z-20 relative mt-8">
             <div class="text-center">
-              <p class="text-dark text-[30px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[52px]">300K+</p>
-              <p class="text-body text-[18px] xl:text-[20px] font-medium leading-[28px]">Registered users</p>
+              <p class="text-dark text-[30px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[52px]">{{ $t('n-counter-300') }}</p>
+              <p class="text-body text-[18px] xl:text-[20px] font-medium leading-[28px]">{{ $t('n-counter-registered-user') }}</p>
             </div>
             <div class="text-center">
-              <p class="text-dark text-[30px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[52px]">100 Million+</p>
-              <p class="text-body text-[18px] xl:text-[20px] font-medium leading-[28px]">Tickets served</p>
+              <p class="text-dark text-[30px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[52px]">{{ $t('n-counter-million') }}</p>
+              <p class="text-body text-[18px] xl:text-[20px] font-medium leading-[28px]">{{ $t('n-counter-tickets-served') }}</p>
             </div>
             <div class="text-center">
-              <p class="text-dark text-[30px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[52px]">100K+</p>
-              <p class="text-body text-[18px] xl:text-[20px] font-medium leading-[28px]">Rental partners</p>
+              <p class="text-dark text-[30px] lg:text-[38px] xl:text-[45px] font-bold mb-[2px] xl:mb-[8px] leading-[52px]">{{ $t('n-counter-100') }}</p>
+              <p class="text-body text-[18px] xl:text-[20px] font-medium leading-[28px]">{{ $t('n-counter-rental-partners') }}</p>
             </div>
           </div>
           <div class="gray-shape-bg w-full z-10">

@@ -62,6 +62,32 @@
 
 
 
+  "n-counter-300": "300K+",
+  "n-counter-million": "100 Million+",
+  "n-counter-100": "100K+",
+  "n-counter-registered-user": "Registered users",
+  "n-counter-tickets-served": "Tickets served",
+  "n-counter-rental-partners": "Rental partners",
+  "n-what-we-do-title": "What we do",
+  "n-what-we-do-description": "We will go the extra mile for you",
+  "n-what-we-do-card-title-1": "Car rental",
+  "n-what-we-do-card-des-1": "Enjoy unbeatable prices with on-demand car rental service",
+  "n-what-we-do-card-title-2": "Online bus ticketing",
+  "n-what-we-do-card-des-2": "Book bus tickets of your preferred destination conveniently",
+  "n-what-we-do-card-title-3": "B2B ticketing solution",
+  "n-what-we-do-card-des-3": "We empower organizations to function seamlessly",
+  "n-what-we-do-card-title-4": "We built a better way to travel",
+  "n-what-we-do-card-des-4": "Our various services are designed to make the everyday commute of people hassle free",
+  "n-about-us": "About Us",
+  "n-download-partner-app": "jatri Partner App",
+  "n-download-app-title": "Drive forward with Jatri",
+  "n-download-app-description": "Add a new dimension to your car or microbus rental business by digitizing every trip. With exciting trip deals, flexible bookings and competitive pricing, you'll never go back to the old manual rental system again",
+  "n-learn-more": "Learn more",
+  "n-got-featured": "We got featured",
+  "n-read-more-about-us": "Read more about us",
+  "n-join-team-title": "Join the winning team!",
+  "n-join-team-description": "Join our exciting team in the quest of empowering Bangladesh to travel better!",
+  "n-join-jatri": "Join Jatri",
 
 
   "title": "Vue 3 i18n",

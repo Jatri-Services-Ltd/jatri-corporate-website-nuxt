@@ -69,7 +69,7 @@ const slidePrev = () => {
     <div class="custom-container">
       <div class="flex justify-between items-end pb-[28px]">
         <div>
-          <h2 class="text-[28px] md:text-[45px] xl:text-[57px] text-dark font-semibold leading-9 lg:leading-[64px]">We got featured</h2>
+          <h2 class="text-[28px] md:text-[45px] xl:text-[57px] text-dark font-semibold leading-9 lg:leading-[64px]">{{ $t('n-got-featured') }}</h2>
         </div>
         <div>
           <div class="flex gap-6 lg:gap-8 items-center">
