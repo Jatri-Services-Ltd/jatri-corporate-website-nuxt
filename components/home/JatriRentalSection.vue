@@ -463,7 +463,7 @@
 <style scoped>
 .moving-animation1,
 .moving-animation2 {
-  @apply h-full flex gap-16
+  @apply h-full flex gap-12
 }
 
 .moving-animation1 {
