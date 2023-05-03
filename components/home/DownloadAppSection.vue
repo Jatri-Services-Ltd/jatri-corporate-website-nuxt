@@ -10,7 +10,7 @@
           <p class="uppercase text-body text-[16px] leading-6 font-medium">{{ $t('n-download-partner-app') }}</p>
           <h3 class="text-dark text-2xl lg:text-3xl leading-[24px] font-medium mt-2 mb-4">{{ $t('n-download-app-title') }}</h3>
           <p class="text-secondaryDark text-sm lg:text-[16px] leading-6">{{ $t('n-download-app-description') }}</p>
-          <div class="mt-4 lg:mt-6 flex gap-4 lg:gap-6">
+          <div class="mt-4 lg:mt-6 2xl:mt-12 flex gap-4 lg:gap-6">
             <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank" class="bg-[#EDEDED] h-[46px] w-[158px] flex justify-center items-center text-dark md:text-sm lg:text-[16px] leading-6 font-medium rounded-full">{{ $t('n-download-app') }}</a>
             <router-link to="#" class="bg-[#EDEDED] h-[46px] w-[135px] flex justify-center items-center text-dark md:text-sm lg:text-[16px] leading-6 font-medium rounded-full">{{ $t('n-learn-more') }}</router-link>
           </div>
