@@ -102,7 +102,8 @@
   "n-footer-terms-conditions": "Terms and condition",
   "n-footer-return-refund": "Return & refund policy",
   "n-footer-privacy-policy": "Privacy policy",
-  "n-footer-copyright": "All rights reserved, Jatri 2023",
+  "n-footer-copyright1": "All rights reserved",
+  "n-footer-copyright2": "Jatri 2023",
 
 
   "title": "Vue 3 i18n",
