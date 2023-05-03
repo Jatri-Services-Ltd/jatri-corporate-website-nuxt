@@ -11,21 +11,21 @@ const readMoreSlider = ref([
   {
     id: 1,
     img:'/images/read-more-slide-1.svg',
-    title:'London Express and Jatri Ticket Website are Together Now!',
+    title:'London Express and Jatri Ticket Website are Toge...',
     publishedAt: '12 Feb 2023',
     link: '#'
   },
   {
     id: 2,
     img:'/images/read-more-slide-2.svg',
-    title:'Jeddah Express Jatri Ticket Website and are Together Now!',
+    title:'Jeddah Express Jatri Ticket Website and are Toge...',
     publishedAt: '12 Feb 2023',
     link: '#'
   },
   {
     id: 3,
     img:'/images/read-more-slide-3.svg',
-    title:'Green Line Jatri Ticket Website and Jeddah Express are Together Now!',
+    title:'Green Line Jatri Ticket Website and Jeddah Expres...',
     publishedAt: '12 Feb 2023',
     link: '#'
   },
@@ -116,7 +116,7 @@ const slidePrev = () => {
                     <img class="rounded-2xl" :src="slider.img" alt="Feature Slider">
                   </div>
                   <p class="text-[#4D4D4F] text-sm leading-5 font-medium mb-2">{{ slider.publishedAt }}</p>
-                  <h3 class="text-dark font-medium text-[20px] leading-7">{{ slider.title.length > 52 ? slider.title.slice(0, 52) + '...' : slider.title }}</h3>
+                  <h3 class="text-dark font-medium text-[20px] leading-7">{{ slider.title }}</h3>
                 </div>
                 <div>
                 </div>
