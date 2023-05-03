@@ -2,7 +2,7 @@
 <template>
   <section class="custom-container">
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
-        <div class="row-span-3 md:col-span-2 lg:col-span-1 w-full bg-grey rounded-3xl pt-14 px-14 overflow-hidden h-[480px] lg:h-[816px]">
+        <div class="row-span-3 md:col-span-2 lg:col-span-1 w-full bg-grey rounded-3xl pt-14 px-14 overflow-hidden h-[480px] lg:h-[754px] xl:h-[824px]">
           <img src="~/assets/images/svg/screen1.svg" alt="screen img" class="screen-move block m-auto">
           <img src="~/assets/images/svg/screen5.svg" alt="screen img" class="screen-move block m-auto">
           <img src="~/assets/images/svg/screen3.svg" alt="screen img" class="screen-move block m-auto">
@@ -11,7 +11,7 @@
           <img src="~/assets/images/svg/screen6.svg" alt="screen img" class="screen-move block m-auto">
         </div>
 
-        <div class="lg:row-span-2 bg-grey rounded-3xl px-6 md:px-8 grid grid-cols-2 md:grid-cols-1 sm:justify-center items-center gap-4 sm:gap-8 md:gap-0">
+        <div class="lg:row-span-2 bg-grey rounded-3xl px-6 md:px-8 xl:px-4 grid grid-cols-2 md:grid-cols-1 sm:justify-center items-center gap-4 sm:gap-8 md:gap-0">
           <div class="md:pt-11 md:pb-1">
             <img src="~/assets/images/svg/green-user.svg" alt="screen img" class="w-7 sm:w-auto block md:m-auto">
             <p class="mt-[18px] text-dark text-base sm:text-2xl font-medium md:text-center">{{ $t('n-screen-scrolling-heading1') }}</p>
@@ -22,7 +22,7 @@
           </div>
         </div>
 
-        <div class="relative lg:row-span-2 bg-grey rounded-3xl px-6 md:px-8 grid grid-cols-2 md:grid-cols-1 sm:justify-center items-center gap-4 sm:gap-8 md:gap-0">
+        <div class="relative lg:row-span-2 bg-grey rounded-3xl px-6 md:px-8 xl:px-4 grid grid-cols-2 md:grid-cols-1 sm:justify-center items-center gap-4 sm:gap-8 md:gap-0">
           <div class="md:pt-11 md:pb-1">
             <img src="~/assets/images/svg/security-blue.svg" alt="screen img" class="w-7 sm:w-auto block md:m-auto">
             <p class="mt-[18px] text-dark text-base sm:text-2xl font-medium md:text-center">{{ $t('n-screen-scrolling-heading2') }}</p>
@@ -74,13 +74,22 @@
 }
 
 @media only screen and (max-width: 375px) {
-.small-device-btn {
-  @apply px-4
-}
-
+  .small-device-btn {
+    @apply px-4
+  }
   .small-device-btn span {
     @apply text-xs
   }
+}
 
+@media only screen and (max-width: 1279px) {
+  @keyframes screenMove {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-1300px);
+    }
+  }
 }
 </style>
