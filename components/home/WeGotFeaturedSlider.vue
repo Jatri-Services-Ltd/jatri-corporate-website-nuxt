@@ -103,7 +103,7 @@ const slidePrev = () => {
                     spaceBetween: 32
                   },
                   1441: {
-                    slidesPerView: 4.3,
+                    slidesPerView: 3.3,
                     spaceBetween: 32
                   },
                 }"
@@ -119,13 +119,13 @@ const slidePrev = () => {
                 <div class="flex justify-center mb-4 slider-img">
                   <img class="rounded-2xl" :src="slider.img" alt="Feature Slider">
                 </div>
-                <h3 class="text-dark font-medium text-[20px] xl:text-2xl leading-7 xl:leading-8">{{ slider.title.length > 70 ? slider.title.slice(0, 70) + '...' : slider.title }}</h3>
+                <h3 class="text-dark font-medium text-xl xl:text-2xl leading-7 xl:leading-8">{{ slider.title.length > 70 ? slider.title.slice(0, 70) + '...' : slider.title }}</h3>
               </div>
               <div>
                 <div class="flex justify-between items-end">
                   <div>
                     <img class="mb-2 " :src="slider.logoImg" alt="Company Logo">
-                    <p class="text-[16px] leading-[24px] text-[#4D4D4F]">{{ slider.published }}</p>
+                    <p class="text-base leading-6 text-[#4D4D4F]">{{ slider.published }}</p>
                   </div>
                   <div class="hover-content">
                     <img src="~/assets/images/svg/arrow-next.svg" alt="Next Arrow">

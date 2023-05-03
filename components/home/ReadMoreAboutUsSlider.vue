@@ -33,7 +33,7 @@ const readMoreSlider = ref([
     id: 4,
     img:'/images/read-more-slide-4.png',
     title:'যাত্রী পার্টনার অ্যাপ: রেন্ট-এ-কার ব্যবসা খাতে নতুন সংযোজন !',
-    publishedAt: '12 Feb 2023',
+    publishedAt: '20 Jan 2022',
     link: '#'
   }
 ]);
@@ -116,7 +116,7 @@ const slidePrev = () => {
                     <img class="rounded-2xl" :src="slider.img" alt="Feature Slider">
                   </div>
                   <p class="text-[#4D4D4F] text-sm leading-5 font-medium mb-2">{{ slider.publishedAt }}</p>
-                  <h3 class="text-dark font-medium text-[20px] leading-7">{{ slider.title.length > 48 ? slider.title.slice(0, 48) + '...' : slider.title }}</h3>
+                  <h3 class="text-dark font-medium text-[20px] leading-7">{{ slider.title.length > 52 ? slider.title.slice(0, 52) + '...' : slider.title }}</h3>
                 </div>
                 <div>
                 </div>
