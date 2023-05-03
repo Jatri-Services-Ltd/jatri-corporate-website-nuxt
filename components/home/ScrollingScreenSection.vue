@@ -4,7 +4,7 @@
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
         <div class="row-span-3 md:col-span-2 lg:col-span-1 w-full bg-grey rounded-3xl pt-14 px-14 overflow-hidden h-[480px] lg:h-[754px] xl:h-[824px]">
           <img src="~/assets/images/svg/screen1.svg" alt="screen img" class="screen-move block m-auto">
-          <img src="~/assets/images/svg/screen5.svg" alt="screen img" class="screen-move block m-auto">
+          <img src="~/assets/images/svg/screen2.svg" alt="screen img" class="screen-move block m-auto">
           <img src="~/assets/images/svg/screen3.svg" alt="screen img" class="screen-move block m-auto">
           <img src="~/assets/images/svg/screen4.svg" alt="screen img" class="screen-move block m-auto">
           <img src="~/assets/images/svg/screen5.svg" alt="screen img" class="screen-move block m-auto">
