@@ -20,7 +20,7 @@ const sliderItems = ref([
     "name": "Israt Mitu",
     "bnName": 'ইসরাত মিতু',
     "userType": "User",
-    "bnUserType": "User",
+    "bnUserType": "ইউজার",
     "bg": "#EFF7FD"
   },
   {

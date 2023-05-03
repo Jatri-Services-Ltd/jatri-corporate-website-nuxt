@@ -4,10 +4,11 @@
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
         <div class="row-span-3 md:col-span-2 lg:col-span-1 w-full bg-grey rounded-3xl pt-14 px-14 overflow-hidden h-[480px] lg:h-[816px]">
           <img src="~/assets/images/svg/screen1.svg" alt="screen img" class="screen-move block m-auto">
-          <img src="~/assets/images/svg/screen1.svg" alt="screen img" class="screen-move block m-auto">
-          <img src="~/assets/images/svg/screen1.svg" alt="screen img" class="screen-move block m-auto">
-          <img src="~/assets/images/svg/screen1.svg" alt="screen img" class="screen-move block m-auto">
-          <img src="~/assets/images/svg/screen1.svg" alt="screen img" class="screen-move block m-auto">
+          <img src="~/assets/images/svg/screen5.svg" alt="screen img" class="screen-move block m-auto">
+          <img src="~/assets/images/svg/screen3.svg" alt="screen img" class="screen-move block m-auto">
+          <img src="~/assets/images/svg/screen4.svg" alt="screen img" class="screen-move block m-auto">
+          <img src="~/assets/images/svg/screen5.svg" alt="screen img" class="screen-move block m-auto">
+          <img src="~/assets/images/svg/screen6.svg" alt="screen img" class="screen-move block m-auto">
         </div>
 
         <div class="lg:row-span-2 bg-grey rounded-3xl px-6 md:px-8 grid grid-cols-2 md:grid-cols-1 sm:justify-center items-center gap-4 sm:gap-8 md:gap-0">
@@ -52,7 +53,7 @@
 
 <style scoped>
 .screen-move {
-  animation: screenMove 5s linear infinite 1s;
+  animation: screenMove 25s linear infinite 1s;
   will-change: transform;
 }
 
@@ -68,7 +69,7 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-100%);
+    transform: translateY(-3500px);
   }
 }
 

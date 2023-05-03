@@ -84,24 +84,6 @@ onUnmounted(() => {
                         </div>
                         <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab1-category2') }}</p>
                     </div>
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab1-category3') }}</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab1-category4') }}</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab1-category5') }}</p>
-                    </div>
                 </div>
             </div>
 
@@ -151,12 +133,6 @@ onUnmounted(() => {
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
                         <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category4') }}</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category5') }}</p>
                     </div>
                 </div>
             </div>
