@@ -50,7 +50,7 @@ onUnmounted(() => {
 
 <template>
     <section class="custom-container pt-12 lg:pt-[120px]">
-        <h3 class="text-dark text-[28px] leading-9 lg:text-[57px] lg:leading-[64px] font-semibold text-center">Our products</h3>
+        <h3 class="text-dark text-[28px] leading-9 lg:text-[57px] lg:leading-[64px] font-semibold text-center">{{ $t('n-our-products') }}</h3>
 
      <div class="mt-10 mb-14"> 
         <input type="radio" id="radio1" name="radio1" value="0" v-model="activeTab">
@@ -58,17 +58,17 @@ onUnmounted(() => {
         <input type="radio" id="radio3" name="radio3" value="2" v-model="activeTab">
         <div class="radio_wrap_container">
           <div class="radio_wrap" :style="{'--i': activeTab}">
-            <label @click="switchTab(0, true)" for="radio1" data-i="0">User</label>
-            <label @click="switchTab(1, true)" for="radio2" data-i="1">Partner</label>
-            <label @click="switchTab(2, true)" for="radio3" data-i="2">Business Solutions</label>
+            <label @click="switchTab(0, true)" for="radio1" data-i="0">{{ $t('n-our-products-tab1') }}</label>
+            <label @click="switchTab(1, true)" for="radio2" data-i="1">{{ $t('n-our-products-tab2') }}</label>
+            <label @click="switchTab(2, true)" for="radio3" data-i="2">{{ $t('n-our-products-tab3') }}</label>
           </div>
         </div>
 
         <div class="panels">
             <div class="panel bg-[url('~/assets/images/svg/user-bg.svg')]" @mouseover="switchTab(0, true)" id="panel-one">
                 <div class="panel-content">
-                    <h5 class="title">Users</h5>
-                    <p class="description">Our plethora of services makes the users life convenien</p>
+                    <h5 class="title">{{ $t('n-our-products-tab1-heading') }}</h5>
+                    <p class="description">{{ $t('n-our-products-tab1-des') }}</p>
                 </div>
 
                 <div class="panel-hidden-content bg-primary">
@@ -76,39 +76,21 @@ onUnmounted(() => {
                         <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Rental</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab1-category1') }}</p>
                     </div>
-<!--                    <div class="flex items-center gap-4">-->
-<!--                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">-->
-<!--                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">-->
-<!--                        </div>-->
-<!--                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Ride</p>-->
-<!--                    </div>-->
                     <div class="flex items-center gap-4">
                         <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Ticket</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab1-category2') }}</p>
                     </div>
-<!--                    <div class="flex items-center gap-4">-->
-<!--                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">-->
-<!--                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">-->
-<!--                        </div>-->
-<!--                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Body Rental</p>-->
-<!--                    </div>-->
-<!--                    <div class="flex items-center gap-4">-->
-<!--                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">-->
-<!--                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">-->
-<!--                        </div>-->
-<!--                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Hourly Rental</p>-->
-<!--                    </div>-->
                 </div>
             </div>
 
             <div class="panel bg-[url('~/assets/images/svg/partner-bg.svg')]" @mouseover="switchTab(1, true)" id="panel-two">
                 <div class="panel-content">
-                    <h5 class="title">Partner</h5>
-                    <p class="description">We empower car drivers and owners to push their business to the next level</p>
+                    <h5 class="title">{{ $t('n-our-products-tab2-heading') }}</h5>
+                    <p class="description">{{ $t('n-our-products-tab2-des') }}</p>
                 </div>
 
                 <div class="panel-hidden-content bg-info">
@@ -116,15 +98,15 @@ onUnmounted(() => {
                         <div class="bg-[#1775C8] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Partner App</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab2-category1') }}</p>
                     </div>
                 </div>
             </div>
 
             <div class="panel bg-[url('~/assets/images/svg/business-bg.svg')]" @mouseover="switchTab(2, true)" id="panel-three">
                 <div class="panel-content">
-                    <h5 class="title">Business solutions</h5>
-                    <p class="description">Our products and services enables organizations to run their businesses seamlessly</p>
+                    <h5 class="title">{{ $t('n-our-products-tab3-heading') }}</h5>
+                    <p class="description">{{ $t('n-our-products-tab3-des') }}</p>
                 </div>
 
                 <div class="panel-hidden-content bg-success">
@@ -132,31 +114,25 @@ onUnmounted(() => {
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Intercity</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category1') }}</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Intracity</p>
-                    </div>
-<!--                    <div class="flex items-center gap-4">-->
-<!--                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">-->
-<!--                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">-->
-<!--                        </div>-->
-<!--                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Rental Business</p>-->
-<!--                    </div>-->
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Ship Management</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category2') }}</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
                           <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
                         </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">Toll Plaza</p>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category3') }}</p>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                        </div>
+                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category4') }}</p>
                     </div>
                 </div>
             </div>

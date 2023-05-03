@@ -1,7 +1,7 @@
 <template>
     <footer>
-      <div class="hidden md:block">
-          <img src="~/assets/images/svg/footer-top-img.png" alt="Footer img" width="100%">
+      <div class="hidden md:block bg-primary pt-12">
+          <img src="~/assets/images/svg/footer-top-img.svg" alt="Footer img" width="100%">
       </div>
 
       <div class="custom-container bg-primary pt-6 lg:pt-12 pb-6 lg:pb-8">
@@ -17,7 +17,7 @@
             </div>
 
             <div class="mt-6 md:mt-8">
-              <p class="text-base text-white font-medium mb-4">Download our app</p>
+              <p class="text-base text-white font-medium mb-4">{{ $t('n-footer-download-app') }}</p>
               <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank">
                 <img src="~/assets/images/svg/google-play-badge.svg" alt="Google play badge">
               </a>
@@ -27,53 +27,53 @@
           <div class="lg:col-span-3 row-span-2">
             <div class="grid grid-cols-2 md:grid-cols-3 gap-4 lg:gap-0 pb-6">
               <div class="lg:px-12 lg:border-x border-x-[#F6958A]">
-                <h4 class="text-white text-xl lg:text-2xl font-medium mb-4 lg:mb-6">Products</h4>
+                <h4 class="text-white text-xl lg:text-2xl font-medium mb-4 lg:mb-6">{{ $t('n-footer-products-title') }}</h4>
                 <ul class="grid gap-4">
                   <li>
-                    <a class="text-white font-normal text-base" href="#">Jatri Business</a>
+                    <a class="text-white font-normal text-base" href="#">{{ $t('n-footer-products-1') }}</a>
                   </li>
                   <li>
                     <a href="https://rental.jatri.co/"
                        target="_blank"
                        class="text-white font-normal text-base">
-                      Jatri Rentals
+                      {{ $t('n-footer-products-2') }}
                     </a>
                   </li>
                   <li>
-                    <a class="text-white font-normal text-base" href="https://ticket.jatri.co/" target="_blank">Jatri Ticket</a>
+                    <a class="text-white font-normal text-base" href="https://ticket.jatri.co/" target="_blank">{{ $t('n-footer-products-3') }}</a>
                   </li>
                 </ul>
               </div>
 
               <div class="lg:px-12 row-span-2 lg:row-span-1">
-                <h4 class="text-white text-xl lg:text-2xl font-medium mb-4 lg:mb-6">About us</h4>
+                <h4 class="text-white text-xl lg:text-2xl font-medium mb-4 lg:mb-6">{{ $t('n-about-us') }}</h4>
                 <ul class="grid gap-4">
                   <li>
-                    <nuxt-link :to="localePath('/about-us')" class="text-white font-normal text-base">About us</nuxt-link>
+                    <nuxt-link :to="localePath('/about-us')" class="text-white font-normal text-base">{{ $t('n-about-us') }}</nuxt-link>
                   </li>
                   <li>
-                    <nuxt-link :to="localePath('/career')" class="text-white font-normal text-base">Career</nuxt-link>
+                    <nuxt-link :to="localePath('/career')" class="text-white font-normal text-base">{{ $t('n-footer-career') }}</nuxt-link>
                   </li>
                   <li>
-                    <nuxt-link :to="localePath('/blog')" class="text-white font-normal text-base">Blogs</nuxt-link>
+                    <nuxt-link :to="localePath('/blog')" class="text-white font-normal text-base">{{ $t('n-footer-blog') }}</nuxt-link>
                   </li>
                   <li>
-                    <nuxt-link :to="localePath('/contact-us')" class="text-white font-normal text-base">Contact us</nuxt-link>
+                    <nuxt-link :to="localePath('/contact-us')" class="text-white font-normal text-base">{{ $t('n-contact-us') }}</nuxt-link>
                   </li>
                 </ul>
               </div>
 
               <div class="mt-2 lg:mt-0 lg:px-12 lg:border-x border-x-[#F6958A]">
-                <h4 class="text-white text-xl lg:text-2xl font-medium mb-4 lg:mb-6">Others</h4>
+                <h4 class="text-white text-xl lg:text-2xl font-medium mb-4 lg:mb-6">{{ $t('n-footer-others') }}</h4>
                 <ul class="grid gap-4">
                   <li>
-                    <nuxt-link :to="localePath('/ride-sharing-guideline')" class="text-white font-normal text-base">Ride sharing guideline</nuxt-link>
+                    <nuxt-link :to="localePath('/ride-sharing-guideline')" class="text-white font-normal text-base">{{ $t('n-footer-others-1') }}</nuxt-link>
                   </li>
                   <li>
-                    <nuxt-link :to="localePath('/enlistment-certificate')" class="text-white font-normal text-base">Enlistment certificate</nuxt-link>
+                    <nuxt-link :to="localePath('/enlistment-certificate')" class="text-white font-normal text-base">{{ $t('n-footer-others-2') }}</nuxt-link>
                   </li>
                   <li>
-                    <a href="https://corona.gov.bd/" target="_blank" class="text-white font-normal text-base">COVID-19 info</a>
+                    <a href="https://corona.gov.bd/" target="_blank" class="text-white font-normal text-base">{{ $t('n-footer-others-3') }}</a>
                   </li>
                 </ul>
               </div>
@@ -86,11 +86,11 @@
               </div>
               <div class="py-4 flex lg:justify-center items-center gap-3.5">
                 <img src="~/assets/images/svg/phone-white-icon.svg" alt="Question icon">
-                <a class="text-white font-medium text-base" href="tel:09642080808">09642080808</a>
+                <a class="text-white font-medium text-base" href="tel:09642080808">{{ $t('n-footer-phone') }}</a>
               </div>
               <div class="py-4 flex items-center gap-3.5 pl-0 lg:pl-5 pr-0 lg:pr-5 xl:pr-12">
                 <img src="~/assets/images/svg/map-white-icon.svg" alt="Map icon">
-                <a class="text-white font-medium text-base" href="https://goo.gl/maps/EBDpA4TyPkzsF4mH8" target="_blank" >Road 24, House 15, Gulshan-02, Dhaka 1212</a>
+                <a class="text-white font-medium text-base" href="https://goo.gl/maps/EBDpA4TyPkzsF4mH8" target="_blank" >{{ $t('n-footer-address') }}</a>
               </div>
             </div>
           </div>
@@ -100,13 +100,13 @@
         <div class="border-t border-[#F6958A] grid lg:grid-cols-2">
           <div class="pt-6 order-2 lg:order-1 flex justify-center lg:justify-start items-center gap-2.5">
             <img src="~/assets/images/svg/copyright-white-icon.svg" alt="">
-            <p class="text-white text-base font-medium">All rights reserved @Jatri 2023</p>
+            <p class="text-white text-base font-medium">{{ $t('n-footer-copyright1') }} @{{ $t('n-footer-copyright2') }}</p>
           </div>
 
           <div class="order-1 lg:order-2 place-self-initial lg:place-self-end border-b border-b-[#F6958A] lg:border-b-0 py-6 lg:pb-0 grid grid-cols-3 lg:flex items-center lg:gap-8 text-center lg:text-right">
-            <nuxt-link :to="localePath('/user/term-and-condition')" class="text-white font-medium text-sm underline">Terms and condition</nuxt-link>
-            <nuxt-link :to="localePath('/user/refund-policy-of-jatri')" class="text-white font-medium text-sm underline border-x border-[#F6958A] lg:border-x-0 px-4 sm:px-8 lg:px-0">Return & refund policy</nuxt-link>
-            <nuxt-link :to="localePath('/user/privacy-policy')" class="text-white font-medium text-sm underline">Privacy policy</nuxt-link>
+            <nuxt-link :to="localePath('/user/term-and-condition')" class="text-white font-medium text-sm underline">{{ $t('n-footer-terms-conditions') }}</nuxt-link>
+            <nuxt-link :to="localePath('/user/refund-policy-of-jatri')" class="text-white font-medium text-sm underline border-x border-[#F6958A] lg:border-x-0 px-4 sm:px-8 lg:px-0">{{ $t('n-footer-return-refund') }}</nuxt-link>
+            <nuxt-link :to="localePath('/user/privacy-policy')" class="text-white font-medium text-sm underline">{{ $t('n-footer-privacy-policy') }}</nuxt-link>
           </div>
         </div>
       </div>

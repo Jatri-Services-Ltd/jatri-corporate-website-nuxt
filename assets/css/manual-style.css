@@ -505,7 +505,7 @@ body {
 .counter-section .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
   display: flex !important;
   justify-content: center !important;
-  margin-top: 24px !important;
+  margin-top: 10px !important;
 }
 
 .swiper-slide {
