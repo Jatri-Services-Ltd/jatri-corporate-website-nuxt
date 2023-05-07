@@ -10,7 +10,7 @@ const modules = [FreeMode];
 const featureSlider = ref([
   {
     id: 1,
-    img:'/images/slider-img-1.svg',
+    img:'/images/svg/featured-slider1.png',
     title:'Bangladeshi transport app secures $1.2m to fuel national expansion',
     logoImg: '/images/tech-in-asia-logo.svg',
     published: 'Published in Tech In Asia',
@@ -18,7 +18,7 @@ const featureSlider = ref([
   },
   {
     id: 2,
-    img:'/images/slider-img-2.svg',
+    img:'/images/svg/featured-slider4.jpg',
     title:'Bus owners association announce Jatri as Dhaka’s e-ticketing partner',
     logoImg: '/images/daily-star-logo.svg',
     published: 'Published in The Daily Star',
@@ -26,7 +26,7 @@ const featureSlider = ref([
   },
   {
     id: 3,
-    img:'/images/slider-img-3.svg',
+    img:'/images/svg/featured-slider3.png',
     title:'E-ticketing for all Mirpur route buses from today',
     logoImg: '/images/financial-express-logo.svg',
     published: 'Published in The Financial Express',
@@ -34,7 +34,7 @@ const featureSlider = ref([
   },
   {
     id: 4,
-    img:'/images/slider-img-4.svg',
+    img:'/images/svg/featured-slider4.png',
     title:'Bus owners association and Jatri to bring more bus companies under the e-ticketing system.',
     logoImg: '/images/dhaka-tribune-logo.svg',
     published: 'Published in Dhaka tribune',
