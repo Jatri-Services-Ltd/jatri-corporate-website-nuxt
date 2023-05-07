@@ -65,7 +65,7 @@ onUnmounted(() => {
         </div>
 
         <div class="panels">
-            <div class="panel bg-[url('~/assets/images/svg/user-bg.svg')]" @mouseover="switchTab(0, true)" id="panel-one">
+            <div class="panel bg-[url('~/assets/images/home/user-bg.svg')]" @mouseover="switchTab(0, true)" id="panel-one">
                 <div class="panel-content">
                     <h5 class="title">{{ $t('n-our-products-tab1-heading') }}</h5>
                     <p class="description">{{ $t('n-our-products-tab1-des') }}</p>
@@ -74,20 +74,20 @@ onUnmounted(() => {
                 <div class="panel-hidden-content bg-primary">
                     <div class="flex items-center gap-4">
                         <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
                         </div>
                         <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab1-category1') }}</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
                         </div>
                         <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab1-category2') }}</p>
                     </div>
                 </div>
             </div>
 
-            <div class="panel bg-[url('~/assets/images/svg/partner-bg.svg')]" @mouseover="switchTab(1, true)" id="panel-two">
+            <div class="panel bg-[url('~/assets/images/home/partner-bg.svg')]" @mouseover="switchTab(1, true)" id="panel-two">
                 <div class="panel-content">
                     <h5 class="title">{{ $t('n-our-products-tab2-heading') }}</h5>
                     <p class="description">{{ $t('n-our-products-tab2-des') }}</p>
@@ -96,14 +96,14 @@ onUnmounted(() => {
                 <div class="panel-hidden-content bg-info">
                     <div class="flex items-center gap-4">
                         <div class="bg-[#1775C8] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
                         </div>
                         <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab2-category1') }}</p>
                     </div>
                 </div>
             </div>
 
-            <div class="panel bg-[url('~/assets/images/svg/business-bg.svg')]" @mouseover="switchTab(2, true)" id="panel-three">
+            <div class="panel bg-[url('~/assets/images/home/business-bg.svg')]" @mouseover="switchTab(2, true)" id="panel-three">
                 <div class="panel-content">
                     <h5 class="title">{{ $t('n-our-products-tab3-heading') }}</h5>
                     <p class="description">{{ $t('n-our-products-tab3-des') }}</p>
@@ -112,25 +112,25 @@ onUnmounted(() => {
                 <div class="panel-hidden-content bg-success">
                     <div class="flex items-center gap-4">
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
                         </div>
                         <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category1') }}</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
                         </div>
                         <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category2') }}</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
                         </div>
                         <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category3') }}</p>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/svg/jatri-white-icon.svg" alt="jatri icon">
+                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
                         </div>
                         <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category4') }}</p>
                     </div>

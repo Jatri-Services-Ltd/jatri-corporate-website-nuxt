@@ -26,16 +26,16 @@
             </div>
           </div>
           <div class="absolute right-[-106px] hidden lg:block">
-            <img src="~/assets/images/svg/yellow-ellipse.svg" alt="Jatri Career">
+            <img src="~/assets/images/home/yellow-ellipse.svg" alt="Jatri Career">
           </div>
           <div class="absolute top-[-58px] left-0 block lg:hidden">
-            <img src="~/assets/images/svg/small-device-yellow-curve.svg" alt="Jatri Career">
+            <img src="~/assets/images/home/small-device-yellow-curve.svg" alt="Jatri Career">
           </div>
           <div class="absolute bottom-0 left-0 hidden lg:block">
-            <img class="rounded-bl-[32px]" src="~/assets/images/svg/red-ellipse.svg" alt="Jatri Career">
+            <img class="rounded-bl-[32px]" src="~/assets/images/home/red-ellipse.svg" alt="Jatri Career">
           </div>
           <div class="absolute bottom-0 right-0 block lg:hidden">
-            <img class="rounded-bl-[32px]" src="~/assets/images/svg/small-device-bottom-ellipse.svg" alt="Jatri Career">
+            <img class="rounded-bl-[32px]" src="~/assets/images/home/small-device-bottom-ellipse.svg" alt="Jatri Career">
           </div>
           <div class="flex items-center text-white h-full mx-6 lg:mx-0 pl-0 lg:pl-10 xl:pl-20 pt-5 lg:pt-0 pb-14 lg:pb-0">
             <div class="relative">
@@ -49,8 +49,8 @@
         </div>
 
         <div class="col-span-12 lg:col-span-6 career-img order-1 lg:order-2">
-          <img class="hidden lg:block rounded-[32px] rounded-tl-none rounded-bl-none" src="~/assets/images/svg/career-banner.jpg" alt="Jatri Career">
-          <img class="block lg:hidden" src="~/assets/images/svg/career-banner.jpg" alt="Jatri Career">
+          <img class="hidden lg:block rounded-[32px] rounded-tl-none rounded-bl-none" src="~/assets/images/home/career-banner.jpg" alt="Jatri Career">
+          <img class="block lg:hidden" src="~/assets/images/home/career-banner.jpg" alt="Jatri Career">
         </div>
       </div>
     </div>

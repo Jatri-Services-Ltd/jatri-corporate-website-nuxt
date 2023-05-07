@@ -34,14 +34,14 @@ const modules = [FreeMode, Pagination];
           <div class="flex justify-center">
             <div>
               <div class="min-h-[120px] flex justify-center items-end">
-                <img src="~/assets/images/svg/counter-1.png"  alt="Counter">
+                <img src="~/assets/images/home/counter-1.png"  alt="Counter">
               </div>
               <div class="mt-6 block lg:hidden">
                 <div class="text-center relative z-20">
                   <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-1 leading-9">{{ $t('n-counter-300') }}</p>
                   <p class="text-body text-base xl:text-xl font-medium leading-[24px]">{{ $t('n-counter-registered-user') }}</p>
                 </div>
-                <img src="~/assets/images/svg/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="Jatri">
+                <img src="~/assets/images/home/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="Jatri">
               </div>
             </div>
           </div>
@@ -50,14 +50,14 @@ const modules = [FreeMode, Pagination];
           <div class="flex justify-center">
             <div>
               <div class="min-h-[120px] flex justify-center items-end">
-                <img src="~/assets/images/svg/counter-2.png"  alt="Counter" >
+                <img src="~/assets/images/home/counter-2.png"  alt="Counter" >
               </div>
               <div class="mt-6 block lg:hidden">
                 <div class="text-center relative z-20">
                   <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-1 leading-9">{{ $t('n-counter-million') }}</p>
                   <p class="text-body text-base xl:text-xl font-medium leading-[24px] lg:leading-[28px]">{{ $t('n-counter-tickets-served') }}</p>
                 </div>
-                <img src="~/assets/images/svg/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="Jatri">
+                <img src="~/assets/images/home/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="Jatri">
               </div>
             </div>
           </div>
@@ -66,14 +66,14 @@ const modules = [FreeMode, Pagination];
           <div class="flex justify-center">
             <div>
               <div class="min-h-[120px] flex justify-center items-end">
-                <img src="~/assets/images/svg/counter-3.png"  alt="Counter">
+                <img src="~/assets/images/home/counter-3.png"  alt="Counter">
               </div>
               <div class="mt-6 block lg:hidden">
                 <div class="text-center relative z-20">
                   <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-1 leading-9 lg:leading-[52px]">{{ $t('n-counter-100') }}</p>
                   <p class="text-body text-base xl:text-xl font-medium leading-[24px] lg:leading-[28px]">{{ $t('n-counter-rental-partners') }}</p>
                 </div>
-                <img src="~/assets/images/svg/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="Jatri">
+                <img src="~/assets/images/home/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="Jatri">
               </div>
             </div>
           </div>
@@ -95,7 +95,7 @@ const modules = [FreeMode, Pagination];
             </div>
           </div>
           <div class="gray-shape-bg w-full z-10">
-            <img src="~/assets/images/svg/gray-shape-bg.png" class="w-full object-contain" alt="Jatri">
+            <img src="~/assets/images/home/gray-shape-bg.png" class="w-full object-contain" alt="Jatri">
           </div>
         </div>
     </section>

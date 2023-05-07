@@ -16,7 +16,7 @@
           </div>
         </div>
         <div class="w-full md:w-[40%] order-1 md:order-2">
-          <img class="h-[200px] sm:h-80 md:h-full w-full object-cover rounded-3xl rounded-tl-3xl md:rounded-tl-none rounded-bl-none rounded-tr-3xl rounded-br-none md:rounded-br-3xl" src="~/assets/images/svg/partner-app.png" alt="Jatri Partner App">
+          <img class="h-[200px] sm:h-80 md:h-full w-full object-cover rounded-3xl rounded-tl-3xl md:rounded-tl-none rounded-bl-none rounded-tr-3xl rounded-br-none md:rounded-br-3xl" src="~/assets/images/home/partner-app.png" alt="Jatri Partner App">
         </div>
       </div>
     </div>
