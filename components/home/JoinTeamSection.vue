@@ -49,7 +49,7 @@
         </div>
 
         <div class="col-span-12 lg:col-span-6 career-img order-1 lg:order-2">
-          <img class="hidden lg:block rounded-[32px] rounded-tl-none rounded-bl-none" src="~/assets/images/svg/career-banner.svg" alt="Jatri Career">
+          <img class="hidden lg:block rounded-[32px] rounded-tl-none rounded-bl-none" src="~/assets/images/svg/career-banner.jpg" alt="Jatri Career">
           <img class="block lg:hidden" src="~/assets/images/svg/career-banner.jpg" alt="Jatri Career">
         </div>
       </div>
@@ -60,10 +60,6 @@
 <style scoped>
 * {
   font-family: 'Inter', sans-serif;
-}
-.career-img{
-  height: 440px !important;
-  width: auto;
 }
 .career-img img{
   height: 100% !important;

@@ -18,7 +18,7 @@
           </div>
 
           <div class="flex justify-end md:justify-center self-end">
-            <img src="~/assets/images/svg/bidding-ongoing1.svg" alt="Bidding Ongoing Img" class="pt-7">
+            <img src="~/assets/images/svg/bidding-ongoing1.png" alt="Bidding Ongoing Img" class="pt-7">
           </div>
         </div>
 
@@ -29,7 +29,7 @@
           </div>
 
           <div class="flex justify-end md:justify-center self-end">
-            <img src="~/assets/images/svg/safety-share-img.svg" alt="Safety Share Img" class="pt-7">
+            <img src="~/assets/images/svg/safety-share-img.png" alt="Safety Share Img" class="pt-7">
           </div>
         </div>
 

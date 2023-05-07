@@ -34,7 +34,7 @@ const modules = [FreeMode, Pagination];
           <div class="flex justify-center">
             <div>
               <div class="min-h-[120px] flex justify-center items-end">
-                <img src="~/assets/images/svg/counter-1.svg"  alt="Counter">
+                <img src="~/assets/images/svg/counter-1.png"  alt="Counter">
               </div>
               <div class="mt-6 block lg:hidden">
                 <div class="text-center relative z-20">
@@ -50,7 +50,7 @@ const modules = [FreeMode, Pagination];
           <div class="flex justify-center">
             <div>
               <div class="min-h-[120px] flex justify-center items-end">
-                <img src="~/assets/images/svg/counter-2.svg"  alt="Counter" >
+                <img src="~/assets/images/svg/counter-2.png"  alt="Counter" >
               </div>
               <div class="mt-6 block lg:hidden">
                 <div class="text-center relative z-20">
@@ -66,7 +66,7 @@ const modules = [FreeMode, Pagination];
           <div class="flex justify-center">
             <div>
               <div class="min-h-[120px] flex justify-center items-end">
-                <img src="~/assets/images/svg/counter-3.svg"  alt="Counter">
+                <img src="~/assets/images/svg/counter-3.png"  alt="Counter">
               </div>
               <div class="mt-6 block lg:hidden">
                 <div class="text-center relative z-20">
