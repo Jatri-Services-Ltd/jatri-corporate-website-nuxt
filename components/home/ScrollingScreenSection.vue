@@ -3,12 +3,12 @@
   <section class="custom-container">
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
         <div class="row-span-3 md:col-span-2 lg:col-span-1 w-full bg-grey rounded-3xl pt-14 px-14 overflow-hidden h-[480px] lg:h-[754px] xl:h-[824px]">
-          <img src="~/assets/images/home/screen1.svg" alt="screen img" class="screen-move block m-auto">
-          <img src="~/assets/images/home/screen2.svg" alt="screen img" class="screen-move block m-auto">
-          <img src="~/assets/images/home/screen3.svg" alt="screen img" class="screen-move block m-auto">
-          <img src="~/assets/images/home/screen4.svg" alt="screen img" class="screen-move block m-auto">
-          <img src="~/assets/images/home/screen5.svg" alt="screen img" class="screen-move block m-auto">
-          <img src="~/assets/images/home/screen6.svg" alt="screen img" class="screen-move block m-auto">
+          <img src="~/assets/images/home/screen1.png" alt="screen img" class="screen-move block m-auto">
+          <img src="~/assets/images/home/screen2.png" alt="screen img" class="screen-move block m-auto">
+          <img src="~/assets/images/home/screen3.png" alt="screen img" class="screen-move block m-auto">
+          <img src="~/assets/images/home/screen4.png" alt="screen img" class="screen-move block m-auto">
+          <img src="~/assets/images/home/screen5.png" alt="screen img" class="screen-move block m-auto">
+          <img src="~/assets/images/home/screen6.png" alt="screen img" class="screen-move block m-auto">
         </div>
 
         <div class="lg:row-span-2 bg-grey rounded-3xl px-6 md:px-8 xl:px-4 grid grid-cols-2 md:grid-cols-1 sm:justify-center items-center gap-4 sm:gap-8 md:gap-0">
