@@ -37,8 +37,8 @@
           <div class="absolute bottom-0 right-0 block lg:hidden">
             <img class="rounded-bl-[32px]" src="~/assets/images/home/small-device-bottom-ellipse.svg" alt="Jatri Career">
           </div>
-          <div class="flex items-center text-white h-full mx-6 lg:mx-0 pl-0 lg:pl-10 xl:pl-20 pt-5 lg:pt-0 pb-14 lg:pb-0">
-            <div class="relative">
+          <div class="flex items-center justify-start sm:justify-center lg:justify-start text-white h-full mx-6 lg:mx-0 pl-0 lg:pl-10 xl:pl-20 pt-5 lg:pt-0 pb-14 lg:pb-0">
+            <div class="relative md:py-5 lg:py-20">
               <h3 class="text-2xl md:text-[40px] xl:text-[45px] font-semibold leading-8 lg:leading-[52px] mb-4 lg:mb-6">{{ $t('n-join-team-title') }}</h3>
               <p class="text-sm lg:text-[16px] leading-5 lg:leading-6 font-medium">{{ $t('n-join-team-description-1') }}<br/> {{ $t('n-join-team-description-2') }}</p>
               <div class="mt-6 lg:mt-12">
@@ -83,12 +83,14 @@
   top: 1px;
   -webkit-transform: translateY(-99%);
 }
+@media(max-width:1024px){
+
+}
+
 @media(max-width:1023px){
   .mobile-top-margin{
     margin-top: -50px;
   }
-}
-@media(max-width:1023px){
   .career-img{
     height: auto !important;
   }
