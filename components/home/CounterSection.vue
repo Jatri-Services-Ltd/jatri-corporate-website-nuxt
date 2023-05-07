@@ -122,5 +122,4 @@ const modules = [FreeMode, Pagination];
     margin-top: -50px;
   }
 }
-
 </style>
