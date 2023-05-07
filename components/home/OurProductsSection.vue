@@ -65,7 +65,7 @@ onUnmounted(() => {
         </div>
 
         <div class="panels">
-            <div class="panel bg-[url('~/assets/images/home/user-bg.svg')]" @mouseover="switchTab(0, true)" id="panel-one">
+            <div class="panel bg-[url('~/assets/images/home/category-card-user.png')]" @mouseover="switchTab(0, true)" id="panel-one">
                 <div class="panel-content">
                     <h5 class="title">{{ $t('n-our-products-tab1-heading') }}</h5>
                     <p class="description">{{ $t('n-our-products-tab1-des') }}</p>
@@ -87,7 +87,7 @@ onUnmounted(() => {
                 </div>
             </div>
 
-            <div class="panel bg-[url('~/assets/images/home/partner-bg.svg')]" @mouseover="switchTab(1, true)" id="panel-two">
+            <div class="panel bg-[url('~/assets/images/home/category-card-partner.png')]" @mouseover="switchTab(1, true)" id="panel-two">
                 <div class="panel-content">
                     <h5 class="title">{{ $t('n-our-products-tab2-heading') }}</h5>
                     <p class="description">{{ $t('n-our-products-tab2-des') }}</p>
@@ -103,7 +103,7 @@ onUnmounted(() => {
                 </div>
             </div>
 
-            <div class="panel bg-[url('~/assets/images/home/business-bg.svg')]" @mouseover="switchTab(2, true)" id="panel-three">
+            <div class="panel bg-[url('~/assets/images/home/category-card-business.png')]" @mouseover="switchTab(2, true)" id="panel-three">
                 <div class="panel-content">
                     <h5 class="title">{{ $t('n-our-products-tab3-heading') }}</h5>
                     <p class="description">{{ $t('n-our-products-tab3-des') }}</p>
