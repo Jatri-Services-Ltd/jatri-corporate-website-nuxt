@@ -6,7 +6,7 @@ const sliderItems = ref([
   {
     "id": 0,
     "message": "Jatri's e-ticketing has helped us immensely to revolutionize  the bus industry",
-    "img": "/images/enayet.svg",
+    "img": "/images/enayet.jpg",
     "name": 'Khandaker Enayet Ullah',
     "bnName": 'খন্দকার এনায়েত উল্লাহ',
     "userType": "Secretary General (DSPMS)",
@@ -16,7 +16,7 @@ const sliderItems = ref([
   {
     "id": 1,
     "message": "Jatri is the go-to rental solution for my family on vacations. Finding a trustworthy rental car within an hour definitely helps to speed up our plans!",
-    "img": "/images/mitu.svg",
+    "img": "/images/mitu.jpg",
     "name": "Israt Mitu",
     "bnName": 'ইসরাত মিতু',
     "userType": "User",
@@ -26,7 +26,7 @@ const sliderItems = ref([
   {
     "id": 2,
     "message": "I really appreciate the expansion opportunity Jatri has provided for my rental car service. I've managed to organically boost my income and grow my rental business",
-    "img": "/images/jakir.svg",
+    "img": "/images/jakir.jpg",
     "name": "Jakir Hossain",
     "bnName": 'জাকির হোসেইন',
     "userType": "Rental Partner",

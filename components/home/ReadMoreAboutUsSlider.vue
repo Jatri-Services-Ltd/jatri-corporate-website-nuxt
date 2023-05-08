@@ -10,28 +10,28 @@ const modules = [FreeMode];
 const readMoreSlider = ref([
   {
     id: 1,
-    img:'/images/read-more-slide-1.svg',
+    img:'/images/read-more-slide1.png',
     title:'London Express and Jatri Ticket Website are Toge...',
     publishedAt: '12 Feb 2023',
     link: '#'
   },
   {
     id: 2,
-    img:'/images/read-more-slide-2.svg',
+    img:'/images/read-more-slide2.png',
     title:'Jeddah Express Jatri Ticket Website and are Toge...',
     publishedAt: '12 Feb 2023',
     link: '#'
   },
   {
     id: 3,
-    img:'/images/read-more-slide-3.svg',
+    img:'/images/read-more-slide3.png',
     title:'Green Line Jatri Ticket Website and Jeddah Expres...',
     publishedAt: '12 Feb 2023',
     link: '#'
   },
   {
     id: 4,
-    img:'/images/read-more-slide-4.png',
+    img:'/images/read-more-slide4.png',
     title:'যাত্রী পার্টনার অ্যাপ: রেন্ট-এ-কার ব্যবসা খাতে নতুন সংযোজন !',
     publishedAt: '20 Jan 2022',
     link: '#'
@@ -73,10 +73,10 @@ const slidePrev = () => {
           <div>
             <div class="flex gap-6 lg:gap-8 items-center">
               <button @click="slidePrev" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
-                <img :class="firstElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/svg/arrow-prev.svg" alt="Previous Arrow">
+                <img :class="firstElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/home/arrow-prev.svg" alt="Previous Arrow">
               </button>
               <button @click="slideNext" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
-                <img :class="lastElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/svg/arrow-next.svg" alt="Previous Arrow">
+                <img :class="lastElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/home/arrow-next.svg" alt="Previous Arrow">
               </button>
             </div>
           </div>
@@ -112,7 +112,7 @@ const slidePrev = () => {
             <swiper-slide v-for="slider in readMoreSlider" :key="slider.id" class="h-full">
               <nuxt-link to="#" class="flex flex-col justify-between min-h-[342px] bg-white rounded-2xl py-4 px-4 h-full">
                 <div>
-                  <div class="flex justify-center mb-4 slider-img">
+                  <div class="mb-4 slider-img">
                     <img class="rounded-2xl" :src="slider.img" alt="Feature Slider">
                   </div>
                   <p class="text-[#4D4D4F] text-sm leading-5 font-medium mb-2">{{ slider.publishedAt }}</p>
@@ -133,13 +133,7 @@ const slidePrev = () => {
 * {
   font-family: 'Inter', sans-serif;
 }
-.slider-img {
-  height: 220px;
-  width: 100%;
-}
 .slider-img img{
-  height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 </style>

@@ -5,7 +5,7 @@
         <div class="custom-container">
           <div>
             <div class="bg-[#DFEEFB] relative rounded-3xl overflow-hidden h-[420px] lg:h-[720px] flex flex-col justify-end">
-              <img src="~/assets/images/svg/jari-ticket-bg.svg" alt="rental bg img" class="w-full rounded-3xl">
+              <img src="~/assets/images/home/jari-ticket-bg.svg" alt="rental bg img" class="w-full rounded-3xl">
 
               <div class="absolute pt-14 xl:pt-16 top-0 left-1/2 transform -translate-x-1/2 w-max">
                 <div class="pb-28 px-6 text-center">
@@ -14,7 +14,7 @@
                   <div class="inline-block m-auto">
                     <a href="https://ticket.jatri.co/" target="_blank" class="flex justify-center items-center gap-2.5 rounded-full bg-info pl-6 pr-4 py-3 cursor-pointer">
                       <span class="text-base font-medium text-white">{{ $t('n-hero-products-button') }}</span>
-                      <img src="~/assets/images/svg/arrow-right-white.svg" alt="Arrow icon">
+                      <img src="~/assets/images/home/arrow-right-white.svg" alt="Arrow icon">
                     </a>
                   </div>
                 </div>
@@ -268,7 +268,7 @@
         <div class="custom-container">
           <div>
             <div class="bg-[#FDE5E2] relative rounded-3xl overflow-hidden h-[420px] lg:h-[720px] flex flex-col justify-end">
-              <img src="~/assets/images/svg/jari-rental-bg.svg" alt="rental bg img" class="w-full rounded-3xl">
+              <img src="~/assets/images/home/jari-rental-bg.svg" alt="rental bg img" class="w-full rounded-3xl">
 
               <div class="absolute pt-14 xl:pt-16 top-0 left-1/2 transform -translate-x-1/2 w-max">
                 <div class="pb-28 px-6 text-center">
@@ -277,7 +277,7 @@
                   <div class="inline-block m-auto">
                     <a href="https://rental.jatri.co/" target="_blank" class="flex justify-center items-center gap-2.5 rounded-full bg-primary pl-6 pr-4 py-3 cursor-pointer">
                       <span class="text-base font-medium text-white">{{ $t('n-hero-products-button') }}</span>
-                      <img src="~/assets/images/svg/arrow-right-white.svg" alt="Arrow icon">
+                      <img src="~/assets/images/home/arrow-right-white.svg" alt="Arrow icon">
                     </a>
                   </div>
                 </div>
