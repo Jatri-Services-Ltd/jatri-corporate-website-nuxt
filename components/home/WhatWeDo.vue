@@ -42,12 +42,12 @@
         </div>
         <div class="col-span-6 lg:col-span-12 bg-white rounded-3xl">
           <div class="h-full">
-            <div class="flex flex-col lg:flex-row items-center justify-between h-full gap-4 px-3 md:px-8 xl:px-14 py-6 xl:py-10">
+            <div class="flex flex-col lg:flex-row lg:items-center justify-between h-full gap-4 px-3 md:px-8 xl:px-14 py-6 xl:py-10">
               <div>
                 <h3 class="text-dark text-base md:text-[26px] xl:text-[45px] font-medium lg:font-semibold leading-6 md:leading-[35px] lg:leading-[44px] xl:leading-[52px] mb-2 md:mb-3">{{ $t('n-what-we-do-card-title-4') }}</h3>
                 <p class="text-[#8D8D8F] text-sm md:text-base xl:text-xl">{{ $t('n-what-we-do-card-des-4') }}</p>
               </div>
-              <div class="">
+              <div>
                 <router-link :to="localePath('/about-us')" class="h-9 md:h-[50px] xl:h-[60px] w-[120px] md:w-[200px] xl:w-[230px] border border-dark rounded-full flex justify-center items-center gap-2">
                   <p class="text-dark text-[12px] md:text-base xl:text-xl leading-4 md:leading-7 font-medium capitalize">{{ $t('n-about-us') }}</p>
                   <img src="~/assets/images/home/right-arrow-1.svg" class="h-3.5 md:h-6" alt="About Us">
