@@ -2,11 +2,11 @@
 
 </script>
 <template>
-  <section class="bg-[url('~/assets/images/home/what-we-do-bg.svg')] bg-no-repeat bg-cover py-8 md:py-14 xl:py-20">
+  <section class="bg-[url('~/assets/images/home/what-we-do-bg.svg')] bg-no-repeat bg-cover py-8 md:py-14 xl:py-20 what-we-do-bg">
     <div class="custom-container">
       <h2 class="text-white text-[28px] md:text-[50px] lg:text-[57px] leading-[36px] md:leading-[64px] font-medium lg:font-semibold mb-2 lg:mb-4">{{ $t('n-what-we-do-title') }}</h2>
       <p class="text-white text-base md:text-xl font-normal leading-6 md:leading-[28px] ml-0 md:ml-2">{{ $t('n-what-we-do-description') }}</p>
-      <div class="mt-10 lg:mt-14 grid grid-cols-12 gap-4 md:gap-5 xl:gap-8 2xl:gap-10">
+      <div class="mt-12 lg:mt-14 grid grid-cols-12 gap-4 md:gap-5 xl:gap-8 2xl:gap-10">
         <div class="col-span-6 lg:col-span-4 bg-white rounded-3xl">
           <div class="">
             <div class="bg-[#FEF2F0] flex justify-center pt-10 rounded-3xl rounded-b-none">
@@ -60,3 +60,16 @@
     </div>
   </section>
 </template>
+<style scoped>
+@media(max-width:425px){
+  .what-we-do-bg{
+    background-image: url('~/assets/images/home/what-we-do-small-bg.jpg') !important;
+    background-position: top right;
+  }
+}
+@media(max-width:412px){
+  .what-we-do-bg{
+
+  }
+}
+</style>
