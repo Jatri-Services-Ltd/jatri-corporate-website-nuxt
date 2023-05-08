@@ -1,11 +1,9 @@
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { FreeMode} from 'swiper';
+import { FreeMode, Navigation } from 'swiper';
 import { ref } from 'vue';
-const modules = [FreeMode];
+const modules = [Navigation, FreeMode];
 
 const featureSlider = ref([
   {
@@ -63,7 +61,9 @@ const slidePrev = () => {
     lastElement.value = false
   }
 }
+
 </script>
+
 <template>
   <section class="py-12 md:py-20 xl:py-[120px]">
     <div class="custom-container">
