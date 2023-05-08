@@ -94,7 +94,6 @@
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="border-t border-[#F6958A] grid lg:grid-cols-2">
