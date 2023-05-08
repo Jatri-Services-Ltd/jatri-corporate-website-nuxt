@@ -43,7 +43,7 @@ const featureSlider = ref([
 ]);
 
 const swiperCarousel = ref(true)
-const firstElement = ref(false);
+const firstElement = ref(true);
 const lastElement = ref(false);
 const onSwiper = (swiper) => {
   swiperCarousel.value = swiper
