@@ -31,23 +31,23 @@ const switchtab = (n) => {
 
                     <div class="panel-hidden-content bg-primary">
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                     </div>
@@ -61,23 +61,23 @@ const switchtab = (n) => {
 
                     <div class="panel-hidden-content">
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                     </div>
@@ -91,23 +91,23 @@ const switchtab = (n) => {
 
                     <div class="panel-hidden-content">
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                         <div class="flex items-center gap-4">
-                            <img src="~/assets/images/svg/product-jatri-logo.svg" alt="jatri logo">
+                            <img src="~/assets/images/home/product-jatri-logo.svg" alt="jatri logo">
                             <p class="text-white text-2xl font-medium">Jatri Rental</p>
                         </div>
                     </div>
