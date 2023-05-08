@@ -1,25 +1,25 @@
 <template>
     <footer>
-      <div class="hidden md:block bg-primary pt-12">
-          <img src="~/assets/images/svg/footer-top-img.svg" alt="Footer img" width="100%">
+      <div class="hidden md:block">
+          <img src="~/assets/images/footer/footer-top-img.png" alt="Footer img" width="100%">
       </div>
 
       <div class="custom-container bg-primary pt-6 lg:pt-12 pb-6 lg:pb-8">
         <div class="grid lg:grid-cols-4 lg:justify-between">
           <div class="lg:col-span-1 row-span-1 border-b border-[#F6958A] lg:border-0 pb-6 lg:pb-0 mb-6 lg:mb-0">
             <div class="flex justify-between items-center lg:block">
-              <img src="~/assets/images/svg/footer-white-logo.svg" alt="Jatri Logo">
+              <img src="~/assets/images/footer/footer-white-logo.svg" alt="Jatri Logo">
               <div class="flex items-center gap-10 xl:gap-14 lg:mt-8">
-                <a href="https://www.facebook.com/JatriApp/" target="_blank"><img src="~/assets/images/svg/facebook-white.svg" alt="Facebook icon"></a>
-                <a href="https://www.youtube.com/@jatriapp2325" target="_blank"><img src="~/assets/images/svg/youtube-white.svg" alt="Youtube icon"></a>
-                <a href="https://ca.linkedin.com/company/jatri-app" target="_blank"><img src="~/assets/images/svg/linkedin-white.svg" alt="Linkedin icon"></a>
+                <a href="https://www.facebook.com/JatriApp/" target="_blank"><img src="~/assets/images/footer/facebook-white.svg" alt="Facebook icon"></a>
+                <a href="https://www.youtube.com/@jatriapp2325" target="_blank"><img src="~/assets/images/footer/youtube-white.svg" alt="Youtube icon"></a>
+                <a href="https://ca.linkedin.com/company/jatri-app" target="_blank"><img src="~/assets/images/footer/linkedin-white.svg" alt="Linkedin icon"></a>
               </div>
             </div>
 
             <div class="mt-6 md:mt-8">
               <p class="text-base text-white font-medium mb-4">{{ $t('n-footer-download-app') }}</p>
               <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank">
-                <img src="~/assets/images/svg/google-play-badge.svg" alt="Google play badge">
+                <img src="~/assets/images/footer/google-play-badge.svg" alt="Google play badge">
               </a>
             </div>
           </div>
@@ -81,25 +81,24 @@
 
             <div class="py-0 lg:py-6 border-t border-[#F6958A] grid grid-cols-1 lg:grid-cols-3 divide-y divide-[#F6958A] lg:divide-y-0 lg:divide-x">
               <div class="py-4 flex items-center gap-3.5 pl-0 lg:pl-5 xl:pl-12">
-                <img src="~/assets/images/svg/question-white-icon.svg" alt="Question icon">
+                <img src="~/assets/images/footer/question-white-icon.svg" alt="Question icon">
                 <a class="text-white font-medium text-base" href="mailto:support@jatri.co">support@jatri.co</a>
               </div>
               <div class="py-4 flex lg:justify-center items-center gap-3.5">
-                <img src="~/assets/images/svg/phone-white-icon.svg" alt="Question icon">
+                <img src="~/assets/images/footer/phone-white-icon.svg" alt="Question icon">
                 <a class="text-white font-medium text-base" href="tel:09642080808">{{ $t('n-footer-phone') }}</a>
               </div>
               <div class="py-4 flex items-center gap-3.5 pl-0 lg:pl-5 pr-0 lg:pr-5 xl:pr-12">
-                <img src="~/assets/images/svg/map-white-icon.svg" alt="Map icon">
+                <img src="~/assets/images/footer/map-white-icon.svg" alt="Map icon">
                 <a class="text-white font-medium text-base" href="https://goo.gl/maps/EBDpA4TyPkzsF4mH8" target="_blank" >{{ $t('n-footer-address') }}</a>
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="border-t border-[#F6958A] grid lg:grid-cols-2">
           <div class="pt-6 order-2 lg:order-1 flex justify-center lg:justify-start items-center gap-2.5">
-            <img src="~/assets/images/svg/copyright-white-icon.svg" alt="">
+            <img src="~/assets/images/footer/copyright-white-icon.svg" alt="">
             <p class="text-white text-base font-medium">{{ $t('n-footer-copyright1') }} @{{ $t('n-footer-copyright2') }}</p>
           </div>
 

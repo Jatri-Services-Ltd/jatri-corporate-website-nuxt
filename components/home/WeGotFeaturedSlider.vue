@@ -10,7 +10,7 @@ const modules = [FreeMode];
 const featureSlider = ref([
   {
     id: 1,
-    img:'/images/slider-img-1.svg',
+    img:'/images/featured-slider1.png',
     title:'Bangladeshi transport app secures $1.2m to fuel national expansion',
     logoImg: '/images/tech-in-asia-logo.svg',
     published: 'Published in Tech In Asia',
@@ -18,7 +18,7 @@ const featureSlider = ref([
   },
   {
     id: 2,
-    img:'/images/slider-img-2.svg',
+    img:'/images/featured-slider2.png',
     title:'Bus owners association announce Jatri as Dhaka’s e-ticketing partner',
     logoImg: '/images/daily-star-logo.svg',
     published: 'Published in The Daily Star',
@@ -26,7 +26,7 @@ const featureSlider = ref([
   },
   {
     id: 3,
-    img:'/images/slider-img-3.svg',
+    img:'/images/featured-slider3.png',
     title:'E-ticketing for all Mirpur route buses from today',
     logoImg: '/images/financial-express-logo.svg',
     published: 'Published in The Financial Express',
@@ -34,7 +34,7 @@ const featureSlider = ref([
   },
   {
     id: 4,
-    img:'/images/slider-img-4.svg',
+    img:'/images/featured-slider4.png',
     title:'Bus owners association and Jatri to bring more bus companies under the e-ticketing system.',
     logoImg: '/images/dhaka-tribune-logo.svg',
     published: 'Published in Dhaka tribune',
@@ -43,7 +43,7 @@ const featureSlider = ref([
 ]);
 
 const swiperCarousel = ref(true)
-const firstElement = ref(false);
+const firstElement = ref(true);
 const lastElement = ref(false);
 const onSwiper = (swiper) => {
   swiperCarousel.value = swiper
@@ -74,10 +74,10 @@ const slidePrev = () => {
         <div>
           <div class="flex gap-6 lg:gap-8 items-center">
             <button @click="slidePrev" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
-              <img :class="firstElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/svg/arrow-prev.svg" alt="Previous Arrow">
+              <img :class="firstElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/home/arrow-prev.svg" alt="Previous Arrow">
             </button>
             <button @click="slideNext" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
-              <img :class="lastElement ? 'opacity-30' : 'opacity-100'"  class="h-[20px] w-[21px]" src="~/assets/images/svg/arrow-next.svg" alt="Next Arrow">
+              <img :class="lastElement ? 'opacity-30' : 'opacity-100'"  class="h-[20px] w-[21px]" src="~/assets/images/home/arrow-next.svg" alt="Next Arrow">
             </button>
           </div>
         </div>
@@ -87,8 +87,8 @@ const slidePrev = () => {
         <swiper
             :breakpoints="{
                   320: {
-                    slidesPerView: 1.2,
-                    spaceBetween: 20
+                    slidesPerView: 1.1,
+                    spaceBetween: 15
                   },
                   640: {
                     slidesPerView: 2.3,
@@ -116,7 +116,7 @@ const slidePrev = () => {
           <swiper-slide v-for="slider in featureSlider" :key="slider.id" class="mt-8">
             <nuxt-link :to="slider.link" target="_blank" class="flex flex-col justify-between min-h-[500px] bg-[#FEF2F0] rounded-2xl py-6 px-6 feature-slider-card">
               <div>
-                <div class="flex justify-center mb-4 slider-img">
+                <div class="mb-4 slider-img">
                   <img class="rounded-2xl" :src="slider.img" alt="Feature Slider">
                 </div>
                 <h3 class="text-dark font-medium text-xl xl:text-2xl leading-7 xl:leading-8">{{ slider.title }}</h3>
@@ -128,7 +128,7 @@ const slidePrev = () => {
                     <p class="text-base leading-6 text-[#4D4D4F]">{{ slider.published }}</p>
                   </div>
                   <div class="hover-content">
-                    <img src="~/assets/images/svg/arrow-next.svg" alt="Next Arrow">
+                    <img src="~/assets/images/home/arrow-next.svg" alt="Next Arrow">
                   </div>
                 </div>
               </div>
@@ -143,12 +143,7 @@ const slidePrev = () => {
 * {
   font-family: 'Inter', sans-serif;
 }
-.slider-img {
-  height: 220px;
-  width: 100%;
-}
-.slider-img img{
-  height: 100%;
+.slider-img img {
   width: 100%;
   object-fit: cover;
 }

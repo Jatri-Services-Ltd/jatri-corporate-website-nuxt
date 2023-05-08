@@ -1,10 +1,10 @@
 <template>
     <nav class="custom-container">
       <div class="flex items-center justify-between">
-        <nuxt-link :to="localePath('/')" class="lg:hidden"><img class="h-8 w-16" src="@/assets/images/svg/jatri-logo.svg" alt="jatri logo"></nuxt-link>
+        <nuxt-link :to="localePath('/')" class="lg:hidden"><img class="h-8 w-16" src="~/assets/images/header/jatri-logo.svg" alt="jatri logo"></nuxt-link>
       
           <div class="hidden lg:flex gap-x-6 lg:gap-x-12 py-5">
-             <nuxt-link :to="localePath('/')"><img class="h-10 w-[81px]" src="@/assets/images/svg/jatri-logo.svg" alt="jatri logo"></nuxt-link>
+             <nuxt-link :to="localePath('/')"><img class="h-10 w-[81px]" src="~/assets/images/header/jatri-logo.svg" alt="jatri logo"></nuxt-link>
             <div class="hidden md:flex gap-x-6 lg-gap-x-8 xl:gap-x-10 items-center w-full">
                 <nuxt-link :to="localePath('/')" class="text-[16px] leading-6 font-medium text-black inline-block text-center relative capitalize" active-class="active-menu">{{ $t('n-home') }}</nuxt-link>
                 <nuxt-link :to="localePath('/about-us')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative capitalize" active-class="active-menu">{{ $t('n-about-us') }}</nuxt-link>
@@ -27,7 +27,7 @@
                   aria-haspopup="true"
               >
                 <span>{{ locale === "bn" ? "বাংলা" : "English" }}</span>
-                <div><img src="~/assets/images/svg/bottom-arrow.svg" alt="" /></div>
+                <div><img src="~/assets/images/header/bottom-arrow.svg" alt="" /></div>
               </button>
             </div>
             <div
@@ -60,14 +60,14 @@
               </nuxt-link>
             </div>
           </div>
-          <a href="https://rental.jatri.co/" target="_blank" class="flex gap-x-2 items-center text-[16px] leading-6 font-medium rounded-full border border-[#EDEDED] px-4 py-2 lg:py-3 capitalize"><img src="@/assets/images/svg/car-svg.svg" alt="">{{ $t('n-rental') }}</a>
-          <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white flex gap-x-2 items-center text-[16px] leading-6 font-medium rounded-full border border-[#EDEDED] pl-4 pr-6 py-2 lg:py-3 capitalize"><img src="@/assets/images/svg/ticket.svg" alt="">{{ $t('n-ticket') }}</a>
+          <a href="https://rental.jatri.co/" target="_blank" class="flex gap-x-2 items-center text-[16px] leading-6 font-medium rounded-full border border-[#EDEDED] px-4 py-2 lg:py-3 capitalize"><img src="~/assets/images/header/car-svg.svg" alt="">{{ $t('n-rental') }}</a>
+          <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white flex gap-x-2 items-center text-[16px] leading-6 font-medium rounded-full border border-[#EDEDED] pl-4 pr-6 py-2 lg:py-3 capitalize"><img src="~/assets/images/header/ticket.svg" alt="">{{ $t('n-ticket') }}</a>
         </div>
 
         <div class="flex gap-x-4 lg:hidden py-4">
-          <a href="https://rental.jatri.co/" target="_blank" class="flex gap-x-2 justify-center items-center text-xs leading-6 font-medium rounded-full border border-[#EDEDED] px-4 py-3 w-[100px] h-9 capitalize"><img src="@/assets/images/svg/car-svg.svg" alt="">{{ $t('n-rental') }}</a>
-          <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white flex justify-center gap-x-2 items-center text-xs leading-6 font-medium rounded-full border border-[#EDEDED] w-[100px] h-9 capitalize"><img src="@/assets/images/svg/ticket.svg" alt="">{{ $t('n-ticket') }}</a>
-          <button @click="toggleModal"><img src="@/assets/images/svg/3bar-icon.svg" alt=""></button>
+          <a href="https://rental.jatri.co/" target="_blank" class="flex gap-x-2 justify-center items-center text-xs leading-6 font-medium rounded-full border border-[#EDEDED] px-4 py-3 w-[100px] h-9 capitalize"><img src="~/assets/images/header/car-svg.svg" alt="">{{ $t('n-rental') }}</a>
+          <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white flex justify-center gap-x-2 items-center text-xs leading-6 font-medium rounded-full border border-[#EDEDED] w-[100px] h-9 capitalize"><img src="~/assets/images/header/ticket.svg" alt="">{{ $t('n-ticket') }}</a>
+          <button @click="toggleModal"><img src="~/assets/images/header/3bar-icon.svg" alt=""></button>
         </div>
       
       
@@ -75,8 +75,8 @@
         <div v-if="sidebarOpen" class="bg-white absolute inset-y-0 right-0 -translate-x-[300px] slide" :class="sidebarOpen ? 'absolute  z-50 translate-x-0 transition delay-300 duration-300' : ''">
           <div class="h-screen w-[300px] gap-y-10">
             <div class="flex justify-between items-center border-b border-[#EDEDED] p-5">
-              <p class="font-medium text-sm text-black uppercase">Menu</p>
-              <button @click="closeModal" class=""><img src="@/assets/images/svg/cross-icon.svg" alt=""></button>
+              <p class="font-medium text-sm text-black uppercase">{{ $t('n-menu') }}</p>
+              <button @click="closeModal" class=""><img src="~/assets/images/header/cross-icon.svg" alt=""></button>
             </div>
             <div class="flex flex-col px-2">
               <nuxt-link :to="localePath('/')" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4" active-class="active-menu" @click="sidebarOpen = false">{{ $t('n-home') }}</nuxt-link>
@@ -95,7 +95,7 @@
                       aria-haspopup="true"
                   >
                     <span>{{ locale === "bn" ? "বাংলা" : "English" }}</span>
-                    <div><img src="~/assets/images/svg/bottom-arrow.svg" alt="" /></div>
+                    <div><img src="~/assets/images/header/bottom-arrow.svg" alt="" /></div>
                   </button>
                 </div>
                 <div
