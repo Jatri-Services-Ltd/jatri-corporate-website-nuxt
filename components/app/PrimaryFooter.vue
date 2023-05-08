@@ -8,7 +8,9 @@
         <div class="grid lg:grid-cols-4 lg:justify-between">
           <div class="lg:col-span-1 row-span-1 border-b border-[#F6958A] lg:border-0 pb-6 lg:pb-0 mb-6 lg:mb-0">
             <div class="flex justify-between items-center lg:block">
-              <img src="~/assets/images/footer/footer-white-logo.svg" alt="Jatri Logo">
+              <nuxt-link :to="localePath('/')" class="h-10 w-[81px]" >
+                <img src="~/assets/images/footer/footer-white-logo.svg" alt="Jatri Logo">
+              </nuxt-link>
               <div class="flex items-center gap-10 xl:gap-14 lg:mt-8">
                 <a href="https://www.facebook.com/JatriApp/" target="_blank"><img src="~/assets/images/footer/facebook-white.svg" alt="Facebook icon"></a>
                 <a href="https://www.youtube.com/@jatriapp2325" target="_blank"><img src="~/assets/images/footer/youtube-white.svg" alt="Youtube icon"></a>
