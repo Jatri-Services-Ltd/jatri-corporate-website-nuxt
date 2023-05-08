@@ -11,14 +11,14 @@ const readMoreSlider = ref([
   {
     id: 1,
     img:'/images/read-more-slide1.png',
-    title:'London Express and Jatri Ticket Website are Toge...',
+    title:'London Express and Jatri Ticket Website are Together...',
     publishedAt: '12 Feb 2023',
     link: '#'
   },
   {
     id: 2,
     img:'/images/read-more-slide2.png',
-    title:'Jeddah Express Jatri Ticket Website and are Toge...',
+    title:'Jeddah Express Jatri Ticket Website and are Together...',
     publishedAt: '12 Feb 2023',
     link: '#'
   },

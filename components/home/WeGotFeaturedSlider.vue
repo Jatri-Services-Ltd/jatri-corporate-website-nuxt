@@ -87,8 +87,8 @@ const slidePrev = () => {
         <swiper
             :breakpoints="{
                   320: {
-                    slidesPerView: 1.2,
-                    spaceBetween: 20
+                    slidesPerView: 1.1,
+                    spaceBetween: 15
                   },
                   640: {
                     slidesPerView: 2.3,
