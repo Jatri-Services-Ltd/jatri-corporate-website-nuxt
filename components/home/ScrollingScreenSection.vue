@@ -53,7 +53,7 @@
 
 <style scoped>
 .screen-move {
-  animation: screenMove 25s linear infinite 1s;
+  animation: screenMove 40s linear infinite 1s;
   will-change: transform;
 }
 
