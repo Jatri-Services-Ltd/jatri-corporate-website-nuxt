@@ -12,28 +12,28 @@ const readMoreSlider = ref([
     img:'/images/read-more-slide1.png',
     title:'London Express and Jatri Ticket Website are Together...',
     publishedAt: '12 Feb 2023',
-    link: '#'
+    link: '/blog/details/london-express'
   },
   {
     id: 2,
     img:'/images/read-more-slide2.png',
     title:'Jeddah Express Jatri Ticket Website and are Together...',
     publishedAt: '12 Feb 2023',
-    link: '#'
+    link: 'blog/details/jeddah-express'
   },
   {
     id: 3,
     img:'/images/read-more-slide3.png',
     title:'Green Line Jatri Ticket Website and Jeddah Expres...',
     publishedAt: '12 Feb 2023',
-    link: '#'
+    link: 'blog/details/green-line'
   },
   {
     id: 4,
     img:'/images/read-more-slide4.png',
     title:'যাত্রী পার্টনার অ্যাপ: রেন্ট-এ-কার ব্যবসা খাতে নতুন সংযোজন !',
     publishedAt: '20 Jan 2022',
-    link: '#'
+    link: 'blog/details/independent_vacation'
   }
 ]);
 </script>
@@ -75,7 +75,7 @@ const readMoreSlider = ref([
               class="mySwiper"
           >
             <swiper-slide v-for="slider in readMoreSlider" :key="slider.id">
-              <nuxt-link to="#" class="flex flex-col justify-between min-h-[342px] bg-white rounded-2xl py-4 px-4 h-full">
+              <nuxt-link :to="slider.link" class="flex flex-col justify-between min-h-[342px] bg-white rounded-2xl py-4 px-4 h-full">
                 <div>
                   <div class="mb-4 slider-img">
                     <img class="rounded-2xl" :src="slider.img" alt="Feature Slider">
