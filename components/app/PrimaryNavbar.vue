@@ -6,11 +6,11 @@
           <div class="hidden lg:flex gap-x-6 lg:gap-x-12 py-5">
              <nuxt-link :to="localePath('/')"><img class="h-10 w-[81px]" src="~/assets/images/header/jatri-logo.svg" alt="jatri logo"></nuxt-link>
             <div class="hidden md:flex gap-x-6 lg-gap-x-8 xl:gap-x-10 items-center w-full">
-                <nuxt-link :to="localePath('/')" class="text-[16px] leading-6 font-medium text-black inline-block text-center relative capitalize" active-class="active-menu">{{ $t('n-home') }}</nuxt-link>
-                <nuxt-link :to="localePath('/about-us')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative capitalize" active-class="active-menu">{{ $t('n-about-us') }}</nuxt-link>
-                <nuxt-link :to="localePath('/career')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative capitalize" active-class="active-menu">{{ $t('n-career') }}</nuxt-link>
-                <nuxt-link :to="localePath('/blog')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative capitalize" active-class="active-menu">{{ $t('n-blogs') }}</nuxt-link>
-                <nuxt-link :to="localePath('/contact-us')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative capitalize" active-class="active-menu">{{ $t('n-contact-us') }}</nuxt-link>
+                <nuxt-link :to="localePath('/')" class="text-[16px] leading-6 font-medium text-black inline-block text-center relative" active-class="active-menu">{{ $t('n-home') }}</nuxt-link>
+                <nuxt-link :to="localePath('/about-us')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">{{ $t('n-about-us') }}</nuxt-link>
+                <nuxt-link :to="localePath('/career')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">{{ $t('n-career') }}</nuxt-link>
+                <nuxt-link :to="localePath('/blog')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">{{ $t('n-blogs') }}</nuxt-link>
+                <nuxt-link :to="localePath('/contact-us')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">{{ $t('n-contact-us') }}</nuxt-link>
             </div>
           </div>
 

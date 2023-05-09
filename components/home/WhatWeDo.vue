@@ -49,7 +49,7 @@
               </div>
               <div>
                 <router-link :to="localePath('/about-us')" class="h-9 md:h-[50px] xl:h-[60px] w-[120px] md:w-[200px] xl:w-[230px] border border-dark rounded-full flex justify-center items-center gap-2">
-                  <p class="text-dark text-[12px] md:text-base xl:text-xl leading-4 md:leading-7 font-medium capitalize">{{ $t('n-about-us') }}</p>
+                  <p class="text-dark text-[12px] md:text-base xl:text-xl leading-4 md:leading-7 font-medium">{{ $t('n-about-us') }}</p>
                   <img src="~/assets/images/home/right-arrow-1.svg" class="h-3.5 md:h-6" alt="About Us">
                 </router-link>
               </div>
