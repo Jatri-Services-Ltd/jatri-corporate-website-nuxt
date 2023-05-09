@@ -208,17 +208,17 @@ label:last-child {
   @apply h-[460px] lg:h-[430px] xl:h-[460px] w-[340px] lg:w-[290px] xl:w-[340px] overflow-hidden flex-shrink-0 rounded-3xl flex flex-col justify-center transform scale-100 duration-1000 transition-transform
 }
 .panel-content {
-    @apply px-8 py-6
+    @apply px-8 py-6 flex flex-col justify-center items-center  text-center transition-transform duration-700
 }
 .panel-content .title {
-    @apply text-white text-[45px] leading-[52px] lg:text-4xl xl:text-[45px] xl:leading-[52px] font-semibold text-center transition-[text-align,font-size] duration-500
+    @apply text-white text-[45px] leading-[52px] lg:text-4xl xl:text-[45px] xl:leading-[52px] font-semibold transition-[font-size] duration-500
  }
 .panel-content .description {
-    @apply text-white text-base mt-2 text-center transition-[text-align,font-size] duration-300
+    @apply text-white text-base mt-2 transition-[font-size] duration-500
  }
 
 .panel-hidden-content {
-    @apply shadow-[0_0_24px_rgba(116,19,9,0.3)] rounded-3xl px-5 py-6 space-y-6 md:space-y-4 lg:space-y-3 xl:space-y-6 transform translate-y-56 h-0 transition-[transform,height] duration-500
+    @apply shadow-[0_0_24px_rgba(116,19,9,0.3)] rounded-3xl px-5 py-6 space-y-6 md:space-y-4 lg:space-y-3 xl:space-y-6 transform translate-y-56 h-0 transition-[transform,height] duration-700
 }
 
 input[type="radio"]:checked + label {
@@ -231,15 +231,21 @@ input[type="radio"]:checked + label {
     @apply lg:scale-110
 }
 
-#radio1:checked ~ .panels #panel-one .panel-content h5,
-#radio2:checked ~ .panels #panel-two .panel-content h5,
-#radio3:checked ~ .panels #panel-three .panel-content h5 {
-  @apply text-left text-xl
+#radio1:checked ~ .panels #panel-one .panel-content,
+#radio2:checked ~ .panels #panel-two .panel-content,
+#radio3:checked ~ .panels #panel-three .panel-content {
+  @apply items-start text-left
 }
-#radio1:checked ~ .panels #panel-one .panel-content p,
-#radio2:checked ~ .panels #panel-two .panel-content p,
-#radio3:checked ~ .panels #panel-three .panel-content p {
-    @apply text-left text-sm
+
+#radio1:checked ~ .panels #panel-one .panel-content .title,
+#radio2:checked ~ .panels #panel-two .panel-content .title,
+#radio3:checked ~ .panels #panel-three .panel-content .title {
+  @apply text-xl
+}
+#radio1:checked ~ .panels #panel-one .panel-content .description,
+#radio2:checked ~ .panels #panel-two .panel-content .description,
+#radio3:checked ~ .panels #panel-three .panel-content .description {
+    @apply text-sm
 }
 
 #radio1:checked ~ .panels #panel-one .panel-hidden-content ,
