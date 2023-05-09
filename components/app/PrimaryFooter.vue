@@ -32,9 +32,6 @@
                 <h4 class="text-white text-xl lg:text-2xl font-medium mb-4 lg:mb-6">{{ $t('n-footer-products-title') }}</h4>
                 <ul class="grid gap-4">
                   <li>
-                    <a class="text-white font-normal text-base" href="#">{{ $t('n-footer-products-1') }}</a>
-                  </li>
-                  <li>
                     <a href="https://rental.jatri.co/"
                        target="_blank"
                        class="text-white font-normal text-base">
