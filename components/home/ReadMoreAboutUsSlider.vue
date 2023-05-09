@@ -72,9 +72,9 @@ const readMoreSlider = ref([
               :spaceBetween="30"
               :freeMode="true"
               :modules="modules"
-              class="mySwiper h-auto"
+              class="mySwiper"
           >
-            <swiper-slide v-for="slider in readMoreSlider" :key="slider.id" class="h-full">
+            <swiper-slide v-for="slider in readMoreSlider" :key="slider.id">
               <nuxt-link to="#" class="flex flex-col justify-between min-h-[342px] bg-white rounded-2xl py-4 px-4 h-full">
                 <div>
                   <div class="mb-4 slider-img">
