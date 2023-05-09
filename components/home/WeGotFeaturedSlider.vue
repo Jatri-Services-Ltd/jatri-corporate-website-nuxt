@@ -1,6 +1,7 @@
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
+import 'swiper/css/navigation';
 import { FreeMode, Navigation } from 'swiper';
 import { ref } from 'vue';
 const modules = [Navigation, FreeMode];
@@ -43,17 +44,16 @@ const featureSlider = ref([
 </script>
 
 <template>
-  <section class="py-12 md:py-20 xl:py-[120px] overflow-hidden custom-swiper-slider">
+  <section class="custom-swiper-slider relative overflow-hidden py-12 md:py-20 xl:py-[120px]">
     <div class="custom-container">
       <div class="flex justify-between items-end pb-[28px]">
         <div>
-          <h2 class="text-[28px] md:text-[45px] xl:text-[57px] text-dark font-semibold leading-9 lg:leading-[64px]">{{ $t('n-got-featured') }}</h2>
+          <h2 class="text-[28px] lg:text-[57px] text-dark font-semibold leading-9 lg:leading-[64px]">{{ $t('n-got-featured') }}</h2>
         </div>
       </div>
     </div>
     <div class="full-width pl-4 md:pl-12 lg:pl-[60px] xl:pl-[100px] 2xl:pl-[200px]">
       <swiper
-          :navigation="true"
           :breakpoints="{
                   320: {
                     slidesPerView: 1.1,
@@ -76,6 +76,7 @@ const featureSlider = ref([
                     spaceBetween: 32
                   },
                 }"
+          :navigation="true"
           :spaceBetween="30"
           :freeMode="true"
           :modules="modules"

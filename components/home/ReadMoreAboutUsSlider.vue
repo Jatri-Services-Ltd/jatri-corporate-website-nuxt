@@ -1,11 +1,10 @@
 <script setup>
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
-import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { FreeMode} from 'swiper';
+import { FreeMode, Navigation } from 'swiper';
 import { ref } from 'vue';
-const modules = [FreeMode];
+const modules = [Navigation, FreeMode];
 
 const readMoreSlider = ref([
   {
@@ -37,52 +36,18 @@ const readMoreSlider = ref([
     link: '#'
   }
 ]);
-
-const swiperCarousel = ref(true)
-const firstElement = ref(true);
-const lastElement = ref(false);
-
-const onSwiper = (swiper) => {
-  swiperCarousel.value = swiper
-};
-
-const slideNext = () => {
-  swiperCarousel.value.slideTo(swiperCarousel.value.realIndex + 1)
-  if(swiperCarousel.value.isEnd === true){
-    lastElement.value = true
-    firstElement.value = false
-  }
-}
-const slidePrev = () => {
-  swiperCarousel.value.slideTo(swiperCarousel.value.realIndex - 1)
-  if(swiperCarousel.value.realIndex === 0){
-    firstElement.value = true
-    lastElement.value = false
-  }
-}
-
 </script>
+
 <template>
-  <section class="bg-grey">
-    <div class="py-8 md:py-[60px]">
-      <div class="custom-container">
-        <div class="flex justify-between items-center lg:items-end mb-10 lg:mb-[60px]">
-          <div>
-            <h2 class="text-[28px] lg:text-[57px] text-dark font-semibold leading-9 lg:leading-[64px]">{{ $t('n-read-more-about-us') }}</h2>
-          </div>
-          <div>
-            <div class="flex gap-6 lg:gap-8 items-center">
-              <button @click="slidePrev" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
-                <img :class="firstElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/home/arrow-prev.svg" alt="Previous Arrow">
-              </button>
-              <button @click="slideNext" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
-                <img :class="lastElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/home/arrow-next.svg" alt="Previous Arrow">
-              </button>
-            </div>
-          </div>
+  <section class="custom-swiper-slider read-more-swiper-slider relative overflow-hidden bg-grey py-8 md:py-[60px]">
+    <div class="custom-container">
+      <div class="flex justify-between items-center lg:items-end mb-10 lg:mb-[60px]">
+        <div>
+          <h2 class="text-[28px] lg:text-[57px] text-dark font-semibold leading-9 lg:leading-[64px]">{{ $t('n-read-more-about-us') }}</h2>
         </div>
       </div>
-      <div class="full-width pl-4 md:pl-12 lg:pl-[60px] xl:pl-[100px] 2xl:pl-[200px]">
+    </div>
+    <div class="full-width pl-4 md:pl-12 lg:pl-[60px] xl:pl-[100px] 2xl:pl-[200px]">
         <div class="full-width">
           <swiper
               :breakpoints="{
@@ -102,13 +67,13 @@ const slidePrev = () => {
                       slidesPerView: 3.9,
                       spaceBetween: 32
                     }
-                  }"
-                  :spaceBetween="30"
-                  :freeMode="true"
-                  :modules="modules"
-                  @swiper="onSwiper"
-                  class="mySwiper h-auto"
-                  >
+              }"
+              :navigation="true"
+              :spaceBetween="30"
+              :freeMode="true"
+              :modules="modules"
+              class="mySwiper h-auto"
+          >
             <swiper-slide v-for="slider in readMoreSlider" :key="slider.id" class="h-full">
               <nuxt-link to="#" class="flex flex-col justify-between min-h-[342px] bg-white rounded-2xl py-4 px-4 h-full">
                 <div>
@@ -125,7 +90,6 @@ const slidePrev = () => {
           </swiper>
         </div>
       </div>
-    </div>
   </section>
 </template>
 
