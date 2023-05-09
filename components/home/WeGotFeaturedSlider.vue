@@ -6,6 +6,7 @@ import { FreeMode, Navigation } from 'swiper';
 import { ref } from 'vue';
 const modules = [Navigation, FreeMode];
 
+
 const featureSlider = ref([
   {
     id: 1,

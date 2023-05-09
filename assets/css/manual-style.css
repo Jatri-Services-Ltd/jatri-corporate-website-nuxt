@@ -519,9 +519,6 @@ button {
 .custom-swiper-slider .swiper.swiper-backface-hidden {
   @apply !overflow-visible
 }
-.custom-swiper-slider .swiper:before {
-  @apply bg-white content-[""] h-full w-[200px] absolute left-[-200px] z-50 top-0
-}
 .custom-swiper-slider .swiper-button-prev,
 .custom-swiper-slider .swiper-button-next {
   @apply -top-[48px] lg:-top-[65px] border border-[#DBDBDB] w-[46px] lg:w-[60px] h-[46px] lg:h-[60px] rounded-full
@@ -540,9 +537,6 @@ button {
   @apply transform rotate-180
 }
 
-.read-more-swiper-slider .swiper:before {
-  @apply bg-grey
-}
 .read-more-swiper-slider .swiper-button-prev,
 .read-more-swiper-slider .swiper-button-next {
   @apply -top-[60px] lg:-top-[100px]
