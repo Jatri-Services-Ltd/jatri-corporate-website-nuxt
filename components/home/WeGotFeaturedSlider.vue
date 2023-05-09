@@ -69,7 +69,7 @@ const featureSlider = ref([
                   },
                   1280: {
                     slidesPerView: 3.3,
-                    spaceBetween: 20
+                    spaceBetween: 32
                   },
                   1441: {
                     slidesPerView: 3.3,
