@@ -6,7 +6,6 @@ import { FreeMode, Navigation } from 'swiper';
 import { ref } from 'vue';
 const modules = [Navigation, FreeMode];
 
-
 const featureSlider = ref([
   {
     id: 1,
@@ -41,7 +40,6 @@ const featureSlider = ref([
     link: 'https://www.thedailystar.net/business/news/bus-owners-announce-jatri-dhakas-e-ticketing-partner-3170171'
   }
 ]);
-
 </script>
 
 <template>
@@ -84,10 +82,10 @@ const featureSlider = ref([
           class="mySwiper"
       >
         <swiper-slide v-for="slider in featureSlider" :key="slider.id" class="mt-5 sm:mt-8">
-          <nuxt-link :to="slider.link" target="_blank" class="flex flex-col justify-between min-h-[500px] bg-[#FEF2F0] rounded-2xl py-6 px-6 feature-slider-card h-full">
+          <nuxt-link :to="slider.link" target="_blank" class="group h-full flex flex-col justify-between min-h-[500px] bg-[#FEF2F0] rounded-2xl py-6 px-6 transition-all duration-[0.3s] ease-[ease] hover:translate-y-[-15px]">
             <div>
-              <div class="mb-4 slider-img">
-                <img class="rounded-2xl" :src="slider.img" alt="Feature Slider">
+              <div class="mb-4">
+                <img class="rounded-2xl w-full object-cover" :src="slider.img" alt="Feature Slider">
               </div>
               <h3 class="text-dark font-medium text-xl xl:text-2xl leading-7 xl:leading-8">{{ slider.title }}</h3>
             </div>
@@ -97,7 +95,7 @@ const featureSlider = ref([
                   <img class="mb-2 " :src="slider.logoImg" alt="Company Logo">
                   <p class="text-base leading-6 text-[#4D4D4F]">{{ slider.published }}</p>
                 </div>
-                <div class="hover-content">
+                <div class="transition-all duration-[0.3s] ease-[ease] opacity-0 group-hover:opacity-100">
                   <img src="~/assets/images/home/arrow-next.svg" alt="Next Arrow">
                 </div>
               </div>
@@ -108,26 +106,3 @@ const featureSlider = ref([
     </div>
   </section>
 </template>
-
-<style scoped>
-* {
-  font-family: 'Inter', sans-serif;
-}
-.slider-img img {
-  width: 100%;
-  object-fit: cover;
-}
-.hover-content{
-  opacity: 0;
-}
-.feature-slider-card{
-  transition: all 0.3s ease;
-}
-.feature-slider-card:hover{
-  transform: translateY(-15px);
-}
-.feature-slider-card:hover .hover-content{
-  opacity: 1;
-  transition: all 0.3s ease;
-}
-</style>
