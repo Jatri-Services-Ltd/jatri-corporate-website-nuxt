@@ -21,41 +21,34 @@
             <button
                 @click="isOpen = !isOpen"
                 type="button"
-                class="flex items-center gap-2 text-sm font-medium focus:outline-none"
+                class="flex items-center gap-2 text-xs font-medium focus:outline-none"
                 id="menu-button"
                 aria-expanded="true"
                 aria-haspopup="true"
             >
               <span>{{ locale === "bn" ? "বাংলা" : "English" }}</span>
-              <img src="~/assets/images/header/down-arrow.png" alt="" />
+              <img src="~/assets/images/header/down-arrow.png" alt="down arrow" />
             </button>
           </div>
+
           <div
+              class="mt-[18px] divide-y divide-[#EDEDED] absolute right-1 z-10 w-[120px] origin-top-right rounded bg-white focus:outline-none drop-shadow-[0px_3px_18px_rgba(50,50,50,0.24)]"
               v-if="isOpen"
-              class="absolute left-0 z-10 min-w-[120px] origin-top-right rounded-md bg-white focus:outline-none dropdown-box custom-shadow mt-6"
               role="menu"
               aria-orientation="vertical"
               aria-labelledby="menu-button"
               tabindex="-1"
           >
-            <nuxt-link :to="switchLocalePath('en')" @click="isOpen = !isOpen">
-              <div
-                  class="text-gray-500 px-3 transition ease-out duration-200 cursor-pointer"
-                  role="none"
-              >
-        <span class="tracking-widest border-b my-2 block py-2 text-sm capitalize"
-        >English</span
-        >
+            <nuxt-link :to="switchLocalePath('bn')" @click="isOpen = !isOpen" class="block px-[22px] py-2.5">
+              <div class="transition ease-out duration-200 cursor-pointer flex justify-between items-center" role="none">
+                <p class="text-dark text-xs font-medium">বাংলা</p>
+                <img src="~/assets/images/header/check.png" alt="check icon" class="transition w-3" :class="locale === 'bn' ? 'opacity-100' : 'opacity-0'" />
               </div>
             </nuxt-link>
-            <nuxt-link :to="switchLocalePath('bn')" @click="isOpen = !isOpen">
-              <div
-                  class="text-gray-500 px-3 transition ease-out duration-200 cursor-pointer"
-                  role="none"
-              >
-        <span class="tracking-widest my-2 block py-2 text-sm capitalize"
-        >বাংলা</span
-        >
+            <nuxt-link :to="switchLocalePath('en')" @click="isOpen = !isOpen" class="block px-[22px] py-2.5">
+              <div class="transition ease-out duration-200 cursor-pointer flex justify-between items-center" role="none">
+                <p class="text-dark text-xs font-medium">English</p>
+                <img src="~/assets/images/header/check.png" alt="check icon" class="transition w-3" :class="locale === 'en' ? 'opacity-100' : 'opacity-0'" />
               </div>
             </nuxt-link>
           </div>
@@ -69,7 +62,6 @@
         <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white flex justify-center gap-x-2 items-center text-xs leading-6 font-medium rounded-full border border-[#EDEDED] w-[100px] h-9 capitalize"><img src="~/assets/images/header/ticket.svg" alt="">{{ $t('n-ticket') }}</a>
         <button @click="toggleModal"><img src="~/assets/images/header/3bar-icon.svg" alt=""></button>
       </div>
-
 
       <!--      mobile menu item-->
       <div v-if="sidebarOpen" class="bg-white absolute inset-y-0 right-0 -translate-x-[300px] slide" :class="sidebarOpen ? 'absolute  z-50 translate-x-0 transition delay-300 duration-300' : ''">
@@ -174,12 +166,6 @@ const selectLanguage = (lang) => {
 }
 .slide {
   @apply absolute animate-[slide_0.5s_forwards] -right-2/4;
-}
-.custom-shadow {
-  @apply shadow-[rgba(0,0,0,0.15)_0px_5px_15px];
-}
-.dropdown-box::before {
-  @apply content-[""] absolute border-b-[10px] border-b-white border-x-[10px] border-x-transparent border-solid left-[15px] -top-2.5;
 }
 @keyframes slide {
   100% {
