@@ -175,9 +175,6 @@ const selectLanguage = (lang) => {
 .slide {
   @apply absolute animate-[slide_0.5s_forwards] -right-2/4;
 }
-.arrow-up {
-  @apply border-b-[10px] border-b-[white] border-x-[10px] border-x-transparent border-solid;
-}
 .custom-shadow {
   @apply shadow-[rgba(0,0,0,0.15)_0px_5px_15px];
 }
