@@ -102,24 +102,10 @@ const modules = [FreeMode, Pagination];
 </template>
 
 <style scoped>
-* {
-    font-family: 'Inter', sans-serif;
+.gray-shape-bg {
+  @apply mt-[-55px] xl:mt-[-50px]
 }
-.gray-shape-bg{
-    margin-top: -55px;
-}
-.small-device-gray-shape{
-  margin-top: -40px;
-}
-.small-device-gray-shape-img{
-  height: 75px !important;
-  width: 390px !important;
-  margin-top: -43px;
-}
-
-@media(max-width:1280px){
-  .gray-shape-bg{
-    margin-top: -50px;
-  }
+.small-device-gray-shape-img {
+  @apply h-[75px] w-[390px] mt-[-43px]
 }
 </style>
