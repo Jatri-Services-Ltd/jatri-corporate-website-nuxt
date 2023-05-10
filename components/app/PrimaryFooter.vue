@@ -32,9 +32,6 @@
                 <h4 class="text-white text-xl lg:text-2xl font-medium mb-4 lg:mb-6">{{ $t('n-footer-products-title') }}</h4>
                 <ul class="grid gap-4">
                   <li>
-                    <a class="text-white font-normal text-base" href="#">{{ $t('n-footer-products-1') }}</a>
-                  </li>
-                  <li>
                     <a href="https://rental.jatri.co/"
                        target="_blank"
                        class="text-white font-normal text-base">
@@ -48,10 +45,10 @@
               </div>
 
               <div class="lg:px-12 row-span-2 lg:row-span-1">
-                <h4 class="text-white text-xl lg:text-2xl font-medium mb-4 lg:mb-6 capitalize">{{ $t('n-about-us') }}</h4>
+                <h4 class="text-white text-xl lg:text-2xl font-medium mb-4 lg:mb-6">{{ $t('n-about-us') }}</h4>
                 <ul class="grid gap-4">
                   <li>
-                    <nuxt-link :to="localePath('/about-us')" class="text-white font-normal text-base capitalize">{{ $t('n-about-us') }}</nuxt-link>
+                    <nuxt-link :to="localePath('/about-us')" class="text-white font-normal text-base">{{ $t('n-about-us') }}</nuxt-link>
                   </li>
                   <li>
                     <nuxt-link :to="localePath('/career')" class="text-white font-normal text-base">{{ $t('n-footer-career') }}</nuxt-link>
@@ -60,7 +57,7 @@
                     <nuxt-link :to="localePath('/blog')" class="text-white font-normal text-base">{{ $t('n-footer-blog') }}</nuxt-link>
                   </li>
                   <li>
-                    <nuxt-link :to="localePath('/contact-us')" class="text-white font-normal text-base capitalize">{{ $t('n-contact-us') }}</nuxt-link>
+                    <nuxt-link :to="localePath('/contact-us')" class="text-white font-normal text-base">{{ $t('n-contact-us') }}</nuxt-link>
                   </li>
                 </ul>
               </div>

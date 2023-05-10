@@ -5,7 +5,7 @@ const { locale } = useI18n();
 const sliderItems = ref([
   {
     "id": 0,
-    "message": "Jatri's e-ticketing has helped us immensely to revolutionize  the bus industry",
+    "message": "“Jatri's e-ticketing has helped us immensely to revolutionize  the bus industry.”",
     "img": "/images/enayet.jpg",
     "name": 'Khandaker Enayet Ullah',
     "bnName": 'খন্দকার এনায়েত উল্লাহ',
@@ -15,7 +15,7 @@ const sliderItems = ref([
   },
   {
     "id": 1,
-    "message": "Jatri is the go-to rental solution for my family on vacations. Finding a trustworthy rental car within an hour definitely helps to speed up our plans!",
+    "message": "“Jatri is the go-to rental solution for my family on vacations. Finding a trustworthy rental car within an hour definitely helps to speed up our plans!”",
     "img": "/images/mitu.jpg",
     "name": "Israt Mitu",
     "bnName": 'ইসরাত মিতু',
@@ -25,7 +25,7 @@ const sliderItems = ref([
   },
   {
     "id": 2,
-    "message": "I really appreciate the expansion opportunity Jatri has provided for my rental car service. I've managed to organically boost my income and grow my rental business",
+    "message": "“I really appreciate the expansion opportunity Jatri has provided for my rental car service. I've managed to organically boost my income and grow my rental business.”",
     "img": "/images/jakir.jpg",
     "name": "Jakir Hossain",
     "bnName": 'জাকির হোসেইন',
@@ -127,7 +127,7 @@ onUnmounted(() => clearInterval(autoSlideInterVal.value))
                           <img :src="item.img" :alt="item.name" class="h-full w-full object-cover rounded-full">
                         </div>
                         <p class="mt-6 xl:mt-8 text-xl xl:text-2xl font-semibold text-secondaryDark">
-                          "{{item.message}}"
+                          {{item.message}}
                         </p>
                     </div>
                     <div>

@@ -5,7 +5,7 @@
         <div class="custom-container">
           <div>
             <div class="bg-[#DFEEFB] relative rounded-3xl overflow-hidden h-[420px] lg:h-[720px] flex flex-col justify-end">
-              <img src="~/assets/images/home/jari-ticket-bg.svg" alt="rental bg img" class="w-full rounded-3xl">
+              <img src="~/assets/images/home/jari-ticket-bg-img.svg" alt="rental bg img" class="w-full rounded-3xl">
 
               <div class="absolute pt-14 xl:pt-16 top-0 left-1/2 transform -translate-x-1/2 w-max">
                 <div class="pb-28 px-6 text-center">
