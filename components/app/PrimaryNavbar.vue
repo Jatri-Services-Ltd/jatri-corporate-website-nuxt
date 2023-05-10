@@ -27,7 +27,7 @@
                 aria-haspopup="true"
             >
               <span>{{ locale === "bn" ? "বাংলা" : "English" }}</span>
-              <div><img src="~/assets/images/header/bottom-arrow.svg" alt="" /></div>
+              <img src="~/assets/images/header/down-arrow.png" alt="" />
             </button>
           </div>
           <div
@@ -74,59 +74,56 @@
       <!--      mobile menu item-->
       <div v-if="sidebarOpen" class="bg-white absolute inset-y-0 right-0 -translate-x-[300px] slide" :class="sidebarOpen ? 'absolute  z-50 translate-x-0 transition delay-300 duration-300' : ''">
         <div class="h-screen w-[300px] gap-y-10">
-          <div class="flex justify-between items-center border-b border-[#EDEDED] p-5">
+          <div class="flex justify-between items-center border-b border-[#EDEDED] px-4 py-5">
             <p class="font-medium text-sm text-black uppercase">{{ $t('n-menu') }}</p>
-            <button @click="closeModal" class=""><img src="~/assets/images/header/cross-icon.svg" alt=""></button>
+            <button @click="closeModal" class=""><img src="~/assets/images/header/cross-icon.svg" alt="X"></button>
           </div>
           <div class="flex flex-col px-2">
-            <nuxt-link :to="localePath('/')" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4" active-class="active-menu" @click="sidebarOpen = false">{{ $t('n-home') }}</nuxt-link>
-            <nuxt-link :to="localePath('/about-us')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4">{{ $t('n-about-us') }}</nuxt-link>
-            <nuxt-link :to="localePath('/career')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4">{{ $t('n-career')}}</nuxt-link>
-            <nuxt-link :to="localePath('/blog')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4">{{ $t('n-blogs') }}</nuxt-link>
-            <nuxt-link :to="localePath('/contact-us')" @click="sidebarOpen = false" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] p-4">{{ $t('n-contact-us') }}</nuxt-link>
-            <div class="p-4 relative inline-block text-left min-w-[80px]">
+            <nuxt-link :to="localePath('/')" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] px-2 pt-4 pb-5" active-class="active-menu" @click="sidebarOpen = false">{{ $t('n-home') }}</nuxt-link>
+            <nuxt-link :to="localePath('/about-us')" @click="sidebarOpen = false" class="text-base font-medium text-black text-left block border-b border-[#EDEDED] px-2 py-5">{{ $t('n-about-us') }}</nuxt-link>
+            <nuxt-link :to="localePath('/career')" @click="sidebarOpen = false" class="text-base font-medium text-black text-left block border-b border-[#EDEDED] px-2 py-5">{{ $t('n-career')}}</nuxt-link>
+            <nuxt-link :to="localePath('/blog')" @click="sidebarOpen = false" class="text-base font-medium text-black text-left block border-b border-[#EDEDED] px-2 py-5">{{ $t('n-blogs') }}</nuxt-link>
+            <nuxt-link :to="localePath('/contact-us')" @click="sidebarOpen = false" class="text-base font-medium text-black text-left block border-b border-[#EDEDED] px-2 py-5">{{ $t('n-contact-us') }}</nuxt-link>
+            <div class="px-2 py-5 relative inline-block text-left min-w-[80px]">
               <div>
                 <button
                     @click="isOpen = !isOpen"
                     type="button"
-                    class="flex items-center gap-2 text-sm font-medium focus:outline-none"
+                    class="w-full flex justify-between items-center gap-2 text-base font-medium focus:outline-none"
                     id="menu-button"
                     aria-expanded="true"
                     aria-haspopup="true"
                 >
-                  <span>{{ locale === "bn" ? "বাংলা" : "English" }}</span>
-                  <div><img src="~/assets/images/header/bottom-arrow.svg" alt="" /></div>
+                  <div class="flex items-center gap-2.5">
+                    <img src="~/assets/images/header/globe.png" alt="global icon" />
+                    <p>{{ locale === "bn" ? "বাংলা" : "English" }}</p>
+                  </div>
+                  <img src="~/assets/images/header/grey-down-arrow.png" alt="arrow" class="transition" :class="isOpen ? 'transform rotate-180' : 'transform rotate-0'" />
                 </button>
               </div>
+
               <div
+                  class="mt-2 divide-y divide-dashed divide-[#EDEDED]"
                   v-if="isOpen"
-                  class="absolute left-0 z-10 min-w-[120px] origin-top-right rounded-md bg-white focus:outline-none dropdown-box custom-shadow mt-6"
                   role="menu"
                   aria-orientation="vertical"
                   aria-labelledby="menu-button"
                   tabindex="-1"
               >
-                <nuxt-link :to="switchLocalePath('en')" @click="isOpen = !isOpen">
-                  <div
-                      class="text-gray-500 px-3 transition ease-out duration-200 cursor-pointer"
-                      role="none"
-                  >
-        <span class="tracking-widest border-b my-2 block py-2 text-sm capitalize"
-        >English</span
-        >
+                <nuxt-link :to="switchLocalePath('bn')" @click="isOpen = !isOpen" class="block py-2">
+                  <div class="transition ease-out duration-200 cursor-pointer flex items-center justify-between" role="none">
+                    <p class="text-dark text-base font-medium">বাংলা</p>
+                    <img src="~/assets/images/header/check.png" alt="check icon" class="transition" :class="locale === 'bn' ? 'opacity-100' : 'opacity-0'" />
                   </div>
                 </nuxt-link>
-                <nuxt-link :to="switchLocalePath('bn')" @click="isOpen = !isOpen">
-                  <div
-                      class="text-gray-500 px-3 transition ease-out duration-200 cursor-pointer"
-                      role="none"
-                  >
-        <span class="tracking-widest my-2 block py-2 text-sm capitalize"
-        >বাংলা</span
-        >
+                <nuxt-link :to="switchLocalePath('en')" @click="isOpen = !isOpen" class="block py-2">
+                  <div class="transition ease-out duration-200 cursor-pointer flex items-center justify-between" role="none">
+                    <p class="text-dark text-base font-medium">English</p>
+                    <img src="~/assets/images/header/check.png" alt="check icon" class="transition" :class="locale === 'en' ? 'opacity-100' : 'opacity-0'" />
                   </div>
                 </nuxt-link>
               </div>
+
             </div>
           </div>
         </div>
@@ -169,6 +166,9 @@ const selectLanguage = (lang) => {
 </script>
 
 <style scoped>
+* {
+  font-family: 'Inter', sans-serif;
+}
 .active-menu::after {
   @apply absolute content-[""] w-full h-1 bg-[#151414] transition-all duration-[0.5s] ease-[ease] left-0 -bottom-1;
 }

@@ -33,7 +33,7 @@ const readMoreSlider = ref([
     img:'/images/read-more-slide4.png',
     title:'যাত্রী পার্টনার অ্যাপ: রেন্ট-এ-কার ব্যবসা খাতে নতুন সংযোজন !',
     publishedAt: '20 Jan 2022',
-    link: 'blog/details/independent_vacation'
+    link: '#'
   }
 ]);
 </script>
