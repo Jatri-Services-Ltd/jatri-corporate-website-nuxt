@@ -1,6 +1,3 @@
-<script setup>
-
-</script>
 <template>
   <section class="relative">
     <div class="custom-container pt-[34px] pb-12 lg:py-20 xl:py-[120px] join-team-wrapper">
@@ -58,9 +55,6 @@
 </template>
 
 <style scoped>
-* {
-  font-family: 'Inter', sans-serif;
-}
 .career-img img{
   height: 100% !important;
   width: 100%;
@@ -118,6 +112,4 @@
     top: 22px;
   }
 }
-
-
 </style>
