@@ -28,7 +28,7 @@ const sliderItems = ref([
   {
     "id": 2,
     "message": "“I really appreciate the expansion opportunity Jatri has provided for my rental car service. I've managed to organically boost my income and grow my rental business.”",
-    "bnMessage": "“রেন্ট-এ-কার ব্যবসায়ের পরিধি বাড়ানোর জন্য যাত্রী পার্টনার অ্যাপের মাধ্যমে রেন্ট-এ-কার ব্যবসা আগের চেয়ে আরো অনেক ভালোভাবে পরিচালনা করতে পারছি।যাত্রীকে ধন্যবাদ জানাতে চাই, এমন সুযোগ করে দেয়ার জন্য।”",
+    "bnMessage": "“রেন্ট-এ-কার ব্যবসায়ের পরিধি বাড়ানোর জন্য \"যাত্রী পার্টনার\" অ্যাপের মাধ্যমে রেন্ট-এ-কার ব্যবসা আগের চেয়ে আরো অনেক ভালোভাবে পরিচালনা করতে পারছি। যাত্রীকে ধন্যবাদ জানাতে চাই, এমন সুযোগ করে দেয়ার জন্য।”",
     "img": "/images/jakir.jpg",
     "name": "Jakir Hossain",
     "bnName": 'জাকির হোসেইন',
