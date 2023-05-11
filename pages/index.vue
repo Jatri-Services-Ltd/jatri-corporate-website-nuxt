@@ -5,6 +5,7 @@ import HeroProducts from "~/components/home/HeroProducts.vue";
 import ScrollingScreenSection from "~/components/home/ScrollingScreenSection";
 import OurProductsSection from "~/components/home/OurProductsSection";
 import TestimonialSection from "~/components/home/TestimonialSection";
+import BannerSection from "~/components/home/BannerSection.vue";
 </script>
 
 <style scoped>
@@ -18,7 +19,7 @@ body {
 
 <template>
     <div>
-        <HeroSection />
+        <BannerSection />
         <homeCounterSection />
         <homeWhatWeDo />
         <HeroProducts />
