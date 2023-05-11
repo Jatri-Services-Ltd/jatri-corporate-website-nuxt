@@ -1,8 +1,5 @@
-<script setup>
-
-</script>
 <template>
-  <section class="bg-[url('~/assets/images/home/what-we-do-bg.svg')] bg-no-repeat bg-cover py-8 md:py-14 xl:py-20 what-we-do-bg">
+  <section class="bg-[url('~/assets/images/home/what-we-do-small-bg.jpg')] lg:bg-[url('~/assets/images/home/what-we-do-bg.svg')] bg-no-repeat bg-cover bg-right-top lg:bg-center py-8 md:py-14 xl:py-20 what-we-do-bg">
     <div class="custom-container">
       <h2 class="text-white text-[28px] md:text-[50px] lg:text-[57px] leading-[36px] md:leading-[64px] font-medium lg:font-semibold mb-2 lg:mb-4">{{ $t('n-what-we-do-title') }}</h2>
       <p class="text-white text-base md:text-xl font-normal leading-6 md:leading-[28px] ml-0 md:ml-2">{{ $t('n-what-we-do-description') }}</p>
@@ -49,7 +46,7 @@
               </div>
               <div>
                 <router-link :to="localePath('/about-us')" class="h-9 md:h-[50px] xl:h-[60px] w-[120px] md:w-[200px] xl:w-[230px] border border-dark rounded-full flex justify-center items-center gap-2">
-                  <p class="text-dark text-[12px] md:text-base xl:text-xl leading-4 md:leading-7 font-medium">{{ $t('n-about-us') }}</p>
+                  <p class="text-dark text-xs md:text-base md:leading-7 xl:text-xl font-medium">{{ $t('n-about-us') }}</p>
                   <img src="~/assets/images/home/right-arrow-1.svg" class="h-3.5 md:h-6" alt="About Us">
                 </router-link>
               </div>
@@ -60,16 +57,3 @@
     </div>
   </section>
 </template>
-<style scoped>
-@media(max-width:425px){
-  .what-we-do-bg{
-    background-image: url('~/assets/images/home/what-we-do-small-bg.jpg') !important;
-    background-position: top right;
-  }
-}
-@media(max-width:412px){
-  .what-we-do-bg{
-
-  }
-}
-</style>

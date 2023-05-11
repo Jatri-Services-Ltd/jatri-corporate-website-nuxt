@@ -143,62 +143,33 @@ onUnmounted(() => {
 
 <style scoped>
 .radio_wrap_container {
-  background: #FDE5E2;
-  margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  width: max-content;
-  padding: 4px 4px;
-  border-radius: 2rem;
+  @apply bg-[#FDE5E2] flex justify-center w-max mx-auto my-0 p-1 rounded-[2rem]
 }
 .radio_wrap {
-  position: relative;
-  overflow: hidden;
-  z-index: 0;
+  @apply relative overflow-hidden z-0 flex justify-center
+}
+.radio_wrap {
   --i: 0;
-  display: flex;
-  justify-content: center;
 }
 
 input {
-  position: absolute;
-  opacity: 0;
+  @apply absolute opacity-0;
 }
 
 .radio_wrap::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  width: var(--tabWidth);
-  left: var(--left);
-  height: 100%;
-  background: #F04935;
-  transition: .3s ease-in-out;
-  border-radius: 2rem;
+  @apply bg-primary content-[""] absolute z-[-1] w-[var(--tabWidth)] left-[var(--left)] h-full transition-[0.3s] ease-in-out rounded-[2rem]
 }
-
 label {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  color: black;
-  font-size: 14px;
-  transition: color .3s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  cursor: pointer;
+  @apply relative z-[2] text-center text-black text-sm transition-[color] duration-[0.3s] ease-in-out flex justify-center items-center h-10 cursor-pointer
 }
-
 label:first-child {
-  width: 84px;
+  @apply w-[84px];
 }
 label:nth-child(2) {
-  width: 105px;
+  @apply w-[105px];
 }
 label:last-child {
-  width: 191px;
+  @apply w-[191px];
 }
 
 .panels {
@@ -222,7 +193,7 @@ label:last-child {
 }
 
 input[type="radio"]:checked + label {
-  color: white !important;
+  @apply !text-white
 }
 
 #radio1:checked ~ .panels #panel-one,
@@ -257,34 +228,30 @@ input[type="radio"]:checked + label {
 #radio1:checked ~ .radio_wrap_container .radio_wrap label:first-child,
 #radio2:checked ~ .radio_wrap_container .radio_wrap label:nth-child(2),
 #radio3:checked ~ .radio_wrap_container .radio_wrap label:last-child {
-  color: white;
+  @apply text-white
 }
 
 @media only screen and (max-width: 1023px) {
   .panels .panel {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
+    @apply absolute left-1/2 -translate-x-1/2 opacity-0
   }
+
   #radio1:checked ~ .panels #panel-one,
   #radio2:checked ~ .panels #panel-two,
   #radio3:checked ~ .panels #panel-three {
-    opacity: 1;
+    @apply opacity-100
   }
 }
 
 @media only screen and (max-width: 412px) {
   label:first-child {
-    width: 64px;
+    @apply w-16;
   }
-
   label:nth-child(2) {
-    width: 85px;
+    @apply w-[85px];
   }
-
   label:last-child {
-    width: 171px;
+    @apply w-[171px];
   }
 }
 </style>

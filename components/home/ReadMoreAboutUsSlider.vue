@@ -33,7 +33,7 @@ const readMoreSlider = ref([
     img:'/images/read-more-slide4.png',
     title:'যাত্রী পার্টনার অ্যাপ: রেন্ট-এ-কার ব্যবসা খাতে নতুন সংযোজন !',
     publishedAt: '20 Jan 2022',
-    link: 'blog/details/independent_vacation'
+    link: 'blog/details/rent-a-car'
   }
 ]);
 </script>
@@ -77,8 +77,8 @@ const readMoreSlider = ref([
             <swiper-slide v-for="slider in readMoreSlider" :key="slider.id">
               <nuxt-link :to="slider.link" class="flex flex-col justify-between min-h-[342px] bg-white rounded-2xl py-4 px-4 h-full">
                 <div>
-                  <div class="mb-4 slider-img">
-                    <img class="rounded-2xl" :src="slider.img" alt="Feature Slider">
+                  <div class="mb-4">
+                    <img class="rounded-2xl w-full" :src="slider.img" alt="Feature Slider">
                   </div>
                   <p class="text-[#4D4D4F] text-sm leading-5 font-medium mb-2">{{ slider.publishedAt }}</p>
                   <h3 class="text-dark font-medium text-[20px] leading-7">{{ slider.title }}</h3>
@@ -92,12 +92,3 @@ const readMoreSlider = ref([
       </div>
   </section>
 </template>
-
-<style scoped>
-* {
-  font-family: 'Inter', sans-serif;
-}
-.slider-img img{
-  width: 100%;
-}
-</style>

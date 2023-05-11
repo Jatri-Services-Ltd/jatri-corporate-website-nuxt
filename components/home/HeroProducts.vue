@@ -461,6 +461,7 @@
 <script setup>
 const { locale } = useI18n();
 </script>
+
 <style scoped>
 .moving-animation1,
 .moving-animation2 {
@@ -508,23 +509,17 @@ const { locale } = useI18n();
 }
 
 .sticky-wrapper .sticky-item {
-  transform: translateZ(0);
-  will-change: transform, opacity;
-  position: sticky;
-  top: calc(25vh + 52px - 215px - 40px);
-  transition: all 0.3s;
-  animation: slideDown  0.35s ease-out;
+  @apply will-change-[transform,opacity] sticky top-[calc(25vh_+_52px_-_215px_-_40px)] transition-all duration-[0.3s] animate-[slideDown_0.35s_ease-out];
 }
 .sticky-wrapper .sticky-item {
-  @apply h-[480px] lg:h-[800px]
+  @apply h-[480px] lg:h-[800px];
 }
-
 .sticky-wrapper .sticky-item .card-container {
-  top: 50px;
-  position: absolute;
-  left: 0;
+  @apply absolute w-full left-0 top-[50px];
+}
+.sticky-wrapper .sticky-item,
+.sticky-wrapper .sticky-item .card-container {
   transform: translateZ(0);
-  width: 100%;
 }
 
 @keyframes slideDown {
@@ -535,7 +530,6 @@ const { locale } = useI18n();
     transform: translateY(0);
   }
 }
-
 
 @keyframes sticky-slide-in {
   from {
@@ -550,5 +544,4 @@ const { locale } = useI18n();
     transform: scale(1);
   }
 }
-
 </style>

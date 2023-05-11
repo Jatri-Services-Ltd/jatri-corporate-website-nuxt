@@ -1,4 +1,3 @@
-
 <template>
   <section class="custom-container">
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
@@ -53,8 +52,7 @@
 
 <style scoped>
 .screen-move {
-  animation: screenMove 40s linear infinite 1s;
-  will-change: transform;
+  @apply animate-[screenMove_40s_linear_infinite_1s] will-change-transform
 }
 
 @media only screen and (min-width: 1440px) {
