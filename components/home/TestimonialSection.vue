@@ -6,6 +6,7 @@ const sliderItems = ref([
   {
     "id": 0,
     "message": "“Jatri's e-ticketing has helped us immensely to revolutionize  the bus industry.”",
+    "bnMessage": "“গণপরিবহন খাতকে আরো উন্নত ও গতিশীল করতে যাত্রী'র 'ই-টিকিটিং' সিস্টেম ভীষণ কার্যকর ভূমিকা রাখছে।”",
     "img": "/images/enayet.jpg",
     "name": 'Khandaker Enayet Ullah',
     "bnName": 'খন্দকার এনায়েত উল্লাহ',
@@ -16,6 +17,7 @@ const sliderItems = ref([
   {
     "id": 1,
     "message": "“Jatri is the go-to rental solution for my family on vacations. Finding a trustworthy rental car within an hour definitely helps to speed up our plans!”",
+    "bnMessage": "“ছুটিতে পরিবার নিয়ে ঘুরতে যেতে, যাত্রী হবে আপনার গাড়ি ভাড়া নেয়ার তাৎক্ষণিক সমাধান আর বেস্ট প্রাইসে মুহূর্তের মধ্যেই গাড়ি পেয়ে যাওয়া, আমাদের ভ্রমণকে আরো আরামদায়ক ও নিরাপদ করে তোলে।”",
     "img": "/images/mitu.jpg",
     "name": "Israt Mitu",
     "bnName": 'ইসরাত মিতু',
@@ -26,6 +28,7 @@ const sliderItems = ref([
   {
     "id": 2,
     "message": "“I really appreciate the expansion opportunity Jatri has provided for my rental car service. I've managed to organically boost my income and grow my rental business.”",
+    "bnMessage": "“রেন্ট-এ-কার ব্যবসায়ের পরিধি বাড়ানোর জন্য যাত্রী পার্টনার অ্যাপের মাধ্যমে রেন্ট-এ-কার ব্যবসা আগের চেয়ে আরো অনেক ভালোভাবে পরিচালনা করতে পারছি।যাত্রীকে ধন্যবাদ জানাতে চাই, এমন সুযোগ করে দেয়ার জন্য।”",
     "img": "/images/jakir.jpg",
     "name": "Jakir Hossain",
     "bnName": 'জাকির হোসেইন',
@@ -127,7 +130,7 @@ onUnmounted(() => clearInterval(autoSlideInterVal.value))
                           <img :src="item.img" :alt="item.name" class="h-full w-full object-cover rounded-full">
                         </div>
                         <p class="mt-6 xl:mt-8 text-xl xl:text-2xl font-semibold text-secondaryDark">
-                          {{item.message}}
+                          {{locale === 'bn' ? item.bnMessage : item.message}}
                         </p>
                     </div>
                     <div>
