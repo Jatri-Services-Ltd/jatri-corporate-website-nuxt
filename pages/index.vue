@@ -23,7 +23,7 @@ body {
         <homeWhatWeDo />
         <HeroProducts />
         <ScrollingScreenSection />
-         <OurProductsSection />
+        <OurProductsSection />
         <TestimonialSection />
         <homeDownloadAppSection />
         <homeWeGotFeaturedSlider />
