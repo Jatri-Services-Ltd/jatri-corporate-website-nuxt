@@ -19,17 +19,17 @@ body {
 
 <template>
     <div>
-        <BannerSection />
-        <homeCounterSection />
-        <homeWhatWeDo />
-        <HeroProducts />
-        <ScrollingScreenSection />
-         <OurProductsSection />
-        <TestimonialSection />
-        <homeDownloadAppSection />
-        <homeWeGotFeaturedSlider />
-        <homeReadMoreAboutUsSlider />
-        <homeJoinTeamSection />
+      <BannerSection />
+      <homeCounterSection />
+      <homeWhatWeDo />
+      <HeroProducts />
+      <ScrollingScreenSection />
+       <OurProductsSection />
+      <TestimonialSection />
+      <homeDownloadAppSection />
+      <homeWeGotFeaturedSlider />
+      <homeReadMoreAboutUsSlider />
+      <homeJoinTeamSection />
     </div>
 </template>
 

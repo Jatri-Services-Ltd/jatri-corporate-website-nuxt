@@ -8,10 +8,17 @@ useHead({
     },
   ]
 });
+import AboutUsSlider from "~/components/home/AboutUsSlider.vue";
 </script>
 
 
 <template>
+  <AboutUsSlider />
+
+
+
+
+
   <!-- Banner Start -->
   <section class="relative">
     <div class="about_us_bg h-full py-24">
@@ -66,7 +73,6 @@ useHead({
   <!-- Banner End -->
 
   <!-- Main Section Start -->
-
   <section class="about_page_main_section_bg">
     <!-- Mission Start -->
     <div class="px-5 sm:px-10 2xl:container 2xl:mx-auto">
