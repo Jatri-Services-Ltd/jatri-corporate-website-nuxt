@@ -22,12 +22,28 @@ const switchTab = (n, click=false) => {
   tabPane.style.setProperty("--left", `${totalWidth}px`);
   tabPane.style.setProperty("--tabWidth", `${tabWith}px`);
   startInterval()
+
+  //Pagination
+  let paginationNodeElement = document.getElementsByClassName('about-us-pagination-items')[0]
+  let paginationPane = document.querySelector('.about-us-pagination-items')
+  let paginationTotalWidth = 0;
+  for (let i = 0; i < n; i++) {
+    paginationTotalWidth += paginationNodeElement.children[i].clientWidth
+  }
+  let paginationItemWidth = nodeElement.children[n].clientWidth
+  paginationPane.style.setProperty("--left", `${paginationTotalWidth}px`);
+  paginationPane.style.setProperty("--tabWidth", `${paginationItemWidth}px`);
+  startInterval()
 }
 
 onMounted(() => {
   let box = document.querySelector('.radio_wrap')
   box.style.setProperty("--left", `0px`);
   //box.style.setProperty("--tabWidth", `84px`);
+
+  //Pagination
+  let paginationBox = document.querySelector('.about-us-pagination-items')
+  paginationBox.style.setProperty("--left", `0px`);
 
   startInterval()
 })
@@ -103,12 +119,12 @@ onUnmounted(() => {
       </div>
 
       <div class="about-us-slider-pagination bg-[#FDE5E2] h-4 rounded-full mt-64">
-          <div class="about-us-pagination-items flex justify-between ">
-            <div class="about-us-pagination-item h-4 w-4 bg-[#D42410] rounded-full" id="about-us-slider-pagination1"></div>
-            <div class="about-us-pagination-item h-4 w-4 bg-[#D42410] opacity-30 rounded-full" id="about-us-slider-pagination2"></div>
-            <div class="about-us-pagination-item h-4 w-4 bg-[#D42410] opacity-30 rounded-full" id="about-us-slider-pagination3"></div>
-            <div class="about-us-pagination-item h-4 w-4 bg-[#D42410] opacity-30 rounded-full" id="about-us-slider-pagination4"></div>
-            <div class="about-us-pagination-item h-4 w-4 bg-[#D42410] opacity-30 rounded-full" id="about-us-slider-pagination5"></div>
+          <div class="about-us-pagination-items flex justify-between" :style="{'--b': activeTab}">
+            <div class="about-us-pagination-item h-4 w-4 transition-[background-color] duration-[0.3s] ease-in-out bg-[#D42410] rounded-full" id="about-us-slider-pagination1" data-b="0"></div>
+            <div class="about-us-pagination-item h-4 w-4 transition-[background-color] duration-[0.3s] ease-in-out bg-[#D42410] opacity-30 rounded-full" id="about-us-slider-pagination2" data-b="1"></div>
+            <div class="about-us-pagination-item h-4 w-4 transition-[background-color] duration-[0.3s] ease-in-out bg-[#D42410] opacity-30 rounded-full" id="about-us-slider-pagination3"></div>
+            <div class="about-us-pagination-item h-4 w-4 transition-[background-color] duration-[0.3s] ease-in-out bg-[#D42410] opacity-30 rounded-full" id="about-us-slider-pagination4"></div>
+            <div class="about-us-pagination-item h-4 w-4 transition-[background-color] duration-[0.3s] ease-in-out bg-[#D42410] opacity-30 rounded-full" id="about-us-slider-pagination5"></div>
           </div>
       </div>
 
@@ -125,16 +141,20 @@ onUnmounted(() => {
 .about-us-pagination-items {
   @apply relative overflow-hidden z-0
 }
+.about-us-pagination-items {
+  --b: 0;
+}
 .about-us-pagination-items:before {
-  @apply content-[""] w-0 h-full bg-primary rounded-full z-[-1] absolute top-0 left-0 transition-[0.3s] ease-in-out
-}
-#radio2:checked ~ .about-us-slider-pagination .about-us-pagination-items:before {
-  @apply w-[390px]
+  @apply content-[""] h-full bg-primary rounded-full z-[-1] absolute top-0 w-[var(--tabWidth)] left-[var(--left)] transition-[0.3s] ease-in-out
 }
 
 
 
 
+
+input {
+  @apply absolute opacity-0;
+}
 .radio_wrap_container {
   @apply bg-[#FDE5E2] flex justify-center w-max mx-auto my-0 p-1 rounded-[2rem]
 }
@@ -144,16 +164,11 @@ onUnmounted(() => {
 .radio_wrap {
   --i: 0;
 }
-
-input {
-  @apply absolute opacity-0;
-}
-
 .radio_wrap::before {
   @apply bg-primary content-[""] absolute z-[-1] w-[var(--tabWidth)] left-[var(--left)] h-full transition-[0.3s] ease-in-out rounded-[2rem]
 }
 label {
-  @apply relative z-[2] text-center text-black text-sm transition-[color] duration-[0.3s] ease-in-out flex justify-center items-center h-10 cursor-pointer
+  @apply relative z-[2] text-center text-black text-sm transition-[background-color] duration-[0.3s] ease-in-out flex justify-center items-center h-10 cursor-pointer
 }
 label:first-child {
   @apply w-[84px];
@@ -224,7 +239,7 @@ input[type="radio"]:checked + label {
   @apply text-white
 }
 
-@media only screen and (max-width: 1023px) {
+
   .panels .panel {
     @apply absolute left-1/2 -translate-x-1/2 opacity-0
   }
@@ -234,7 +249,7 @@ input[type="radio"]:checked + label {
   #radio3:checked ~ .panels #panel-three {
     @apply opacity-100
   }
-}
+
 
 @media only screen and (max-width: 412px) {
   label:first-child {
