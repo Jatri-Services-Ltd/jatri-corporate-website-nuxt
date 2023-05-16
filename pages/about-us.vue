@@ -8,16 +8,12 @@ useHead({
     },
   ]
 });
-import AboutUsSlider from "~/components/home/AboutUsSlider.vue";
+import ProgressSlider from "~/components/home/ProgressSlider.vue";
 </script>
 
 
 <template>
-  <AboutUsSlider />
-
-
-
-
+  <ProgressSlider />
 
   <!-- Banner Start -->
   <section class="relative">
