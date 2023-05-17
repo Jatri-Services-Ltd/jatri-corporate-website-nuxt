@@ -26,6 +26,8 @@ const slideNext = () => {
   for (let i = 0; i <= 5; i++) {
     if (swiperCarousel.value.realIndex === i) {
       progressBarFill.style.width = `calc(var(--progressbar-width) + ${25 * i}%)`;
+      console.log(typeof progressBarFill.style.width);
+      console.log(parseFloat(progressBarFill.style.width));
     }
   }
   // progressBarFill.style.width = `calc(var(--progressbar-width) + 25%)`;
@@ -42,6 +44,8 @@ const slidePrev = () => {
   for (let i = 0; i < 5; i++) {
     if (swiperCarousel.value.realIndex === i) {
       progressBarFill.style.width = `calc(var(--progressbar-width) - ${25 * i}%)`;
+      console.log(typeof progressBarFill.style.width);
+      console.log(parseFloat(progressBarFill.style.width));
     }
   }
   // progressBarFill.style.width = `calc(var(--progressbar-width) - 25%)`;
