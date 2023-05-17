@@ -57,7 +57,7 @@ onUnmounted(() => {
         <input type="radio" id="radio2" name="radio2" value="1" v-model="activeTab">
         <input type="radio" id="radio3" name="radio3" value="2" v-model="activeTab">
         <div class="radio_wrap_container">
-          <div class="radio_wrap" :style="{'--i': activeTab}">
+          <div class="radio_wrap">
             <label @click="switchTab(0, true)" for="radio1" data-i="0">{{ $t('n-our-products-tab1') }}</label>
             <label @click="switchTab(1, true)" for="radio2" data-i="1">{{ $t('n-our-products-tab2') }}</label>
             <label @click="switchTab(2, true)" for="radio3" data-i="2">{{ $t('n-our-products-tab3') }}</label>
@@ -147,9 +147,6 @@ onUnmounted(() => {
 }
 .radio_wrap {
   @apply relative overflow-hidden z-0 flex justify-center
-}
-.radio_wrap {
-  --i: 0;
 }
 
 input {

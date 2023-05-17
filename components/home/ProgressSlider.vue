@@ -1,13 +1,52 @@
 <script setup>
+import {onMounted, onUnmounted, ref} from "vue";
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper';
-const modules = [Pagination, Navigation];
+import { Pagination } from 'swiper';
+const modules = [Pagination];
 
+const swiperCarousel = ref(true)
+const firstElement = ref(true);
+const lastElement = ref(false);
 
+const onSwiper = (swiper) => {
+  swiperCarousel.value = swiper
+};
+// let nodeProgressBarElement = document.getElementsByClassName('swiper-pagination-progressbar-fill')[0]
+// let progressBar = document.querySelector('.swiper-pagination-progressbar-fill')
 
+const slideNext = () => {
+  let progressBarFill = document.querySelector('.swiper-pagination-progressbar-fill');
+  swiperCarousel.value.slideTo(swiperCarousel.value.realIndex + 1)
+  if(swiperCarousel.value.isEnd === true){
+    lastElement.value = true
+    firstElement.value = false
+  }
+  for (let i = 0; i <= 5; i++) {
+    if (swiperCarousel.value.realIndex === i) {
+      progressBarFill.style.width = `calc(var(--progressbar-width) + ${25 * i}%)`;
+    }
+  }
+  // progressBarFill.style.width = `calc(var(--progressbar-width) + 25%)`;
+  progressBarFill.style.transform = `scaleX(1)`;
+}
+
+const slidePrev = () => {
+  let progressBarFill = document.querySelector('.swiper-pagination-progressbar-fill');
+  swiperCarousel.value.slideTo(swiperCarousel.value.realIndex - 1)
+  if(swiperCarousel.value.realIndex === 0){
+    firstElement.value = true
+    lastElement.value = false
+  }
+  for (let i = 0; i < 5; i++) {
+    if (swiperCarousel.value.realIndex === i) {
+      progressBarFill.style.width = `calc(var(--progressbar-width) - ${25 * i}%)`;
+    }
+  }
+  // progressBarFill.style.width = `calc(var(--progressbar-width) - 25%)`;
+  progressBarFill.style.transform = `scaleX(1)`;
+}
 </script>
 
 <template>
@@ -21,12 +60,20 @@ const modules = [Pagination, Navigation];
     </div>
 
     <div class="full-width mx-4 md:mx-12 lg:mx-[60px] xl:mx-[100px] 2xl:mx-[200px]">
+      <div class="flex gap-6 lg:gap-8 items-center">
+        <button @click="slidePrev" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
+          <img :class="firstElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/home/arrow-prev.svg" alt="Previous Arrow">
+        </button>
+        <button @click="slideNext" class="h-[46px] lg:h-[60px] w-[46px] lg:w-[60px] flex justify-center items-center border border-[#DBDBDB] rounded-full">
+          <img :class="lastElement ? 'opacity-30' : 'opacity-100'" class="h-[20px] w-[21px]" src="~/assets/images/home/arrow-next.svg" alt="Previous Arrow">
+        </button>
+      </div>
       <swiper
         :pagination="{
           type: 'progressbar',
         }"
-        :navigation="true"
         :modules="modules"
+        @swiper="onSwiper"
         class="mySwiper !z-0"
       >
         <swiper-slide>
@@ -64,6 +111,9 @@ const modules = [Pagination, Navigation];
 </template>
 
 <style>
+:root {
+  --progressbar-width: 0%;
+}
 .custom-swiper-slider .swiper-pagination-progressbar {
   background: #fde5e2;
 }
@@ -77,8 +127,6 @@ const modules = [Pagination, Navigation];
 .custom-swiper-slider .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
   background: #f16251;
   border-radius: 50px;
-  transform: scale(1) !important;
-  width: 20%;
 }
 
 </style>
