@@ -49,96 +49,108 @@ onUnmounted(() => {
 </script>
 
 <template>
-    <section class="custom-container pt-12 lg:pt-[120px]">
-        <h3 class="text-dark text-[28px] leading-9 lg:text-[57px] lg:leading-[64px] font-semibold text-center">{{ $t('n-our-products') }}</h3>
+  <section class="custom-container pt-12 lg:pt-[120px]">
+    <h3 class="text-dark text-[28px] leading-9 lg:text-[57px] lg:leading-[64px] font-semibold text-center">{{ $t('n-our-products') }}</h3>
 
-     <div class="mt-10 mb-14"> 
-        <input type="radio" id="radio1" name="radio1" value="0" v-model="activeTab">
-        <input type="radio" id="radio2" name="radio2" value="1" v-model="activeTab">
-        <input type="radio" id="radio3" name="radio3" value="2" v-model="activeTab">
-        <div class="radio_wrap_container">
-          <div class="radio_wrap" :style="{'--i': activeTab}">
-            <label @click="switchTab(0, true)" for="radio1" data-i="0">{{ $t('n-our-products-tab1') }}</label>
-            <label @click="switchTab(1, true)" for="radio2" data-i="1">{{ $t('n-our-products-tab2') }}</label>
-            <label @click="switchTab(2, true)" for="radio3" data-i="2">{{ $t('n-our-products-tab3') }}</label>
+    <div class="mt-10 mb-14">
+      <input type="radio" id="radio1" name="radio1" value="0" v-model="activeTab">
+      <input type="radio" id="radio2" name="radio2" value="1" v-model="activeTab">
+      <input type="radio" id="radio3" name="radio3" value="2" v-model="activeTab">
+      <div class="radio_wrap_container">
+        <div class="radio_wrap" :style="{'--i': activeTab}">
+          <label @click="switchTab(0, true)" for="radio1" data-i="0">{{ $t('n-our-products-tab1') }}</label>
+          <label @click="switchTab(1, true)" for="radio2" data-i="1">{{ $t('n-our-products-tab2') }}</label>
+          <label @click="switchTab(2, true)" for="radio3" data-i="2">{{ $t('n-our-products-tab3') }}</label>
+        </div>
+      </div>
+
+      <div class="panels">
+        <div class="panel bg-[url('~/assets/images/home/category-card-user.png')]" @mouseover="switchTab(0, true)" id="panel-one">
+          <div class="panel-content">
+            <h5 class="title">{{ $t('n-our-products-tab1-heading') }}</h5>
+            <p class="description">{{ $t('n-our-products-tab1-des') }}</p>
+          </div>
+
+          <div class="panel-hidden-content bg-primary">
+            <div class="flex items-center gap-4">
+              <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
+              </div>
+              <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab1-category1') }}</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
+              </div>
+              <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab1-category2') }}</p>
+            </div>
           </div>
         </div>
 
-        <div class="panels">
-            <div class="panel bg-[url('~/assets/images/home/category-card-user.png')]" @mouseover="switchTab(0, true)" id="panel-one">
-                <div class="panel-content">
-                    <h5 class="title">{{ $t('n-our-products-tab1-heading') }}</h5>
-                    <p class="description">{{ $t('n-our-products-tab1-des') }}</p>
-                </div>
+        <div class="panel bg-[url('~/assets/images/home/category-card-partner.png')]" @mouseover="switchTab(1, true)" id="panel-two">
+          <div class="panel-content">
+            <h5 class="title">{{ $t('n-our-products-tab2-heading') }}</h5>
+            <p class="description">{{ $t('n-our-products-tab2-des') }}</p>
+          </div>
 
-                <div class="panel-hidden-content bg-primary">
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab1-category1') }}</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#E82711] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab1-category2') }}</p>
-                    </div>
-                </div>
+          <div class="panel-hidden-content bg-info">
+            <div class="flex items-center gap-4">
+              <div class="bg-[#1775C8] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
+              </div>
+              <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab2-category1') }}</p>
             </div>
-
-            <div class="panel bg-[url('~/assets/images/home/category-card-partner.png')]" @mouseover="switchTab(1, true)" id="panel-two">
-                <div class="panel-content">
-                    <h5 class="title">{{ $t('n-our-products-tab2-heading') }}</h5>
-                    <p class="description">{{ $t('n-our-products-tab2-des') }}</p>
-                </div>
-
-                <div class="panel-hidden-content bg-info">
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#1775C8] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab2-category1') }}</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel bg-[url('~/assets/images/home/category-card-business.png')]" @mouseover="switchTab(2, true)" id="panel-three">
-                <div class="panel-content">
-                    <h5 class="title">{{ $t('n-our-products-tab3-heading') }}</h5>
-                    <p class="description">{{ $t('n-our-products-tab3-des') }}</p>
-                </div>
-
-                <div class="panel-hidden-content bg-success">
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category1') }}</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category2') }}</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category3') }}</p>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
-                          <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
-                        </div>
-                        <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category4') }}</p>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>  
-    </section>
+
+        <div class="panel bg-[url('~/assets/images/home/category-card-business.png')]" @mouseover="switchTab(2, true)" id="panel-three">
+          <div class="panel-content">
+            <h5 class="title">{{ $t('n-our-products-tab3-heading') }}</h5>
+            <p class="description">{{ $t('n-our-products-tab3-des') }}</p>
+          </div>
+
+          <div class="panel-hidden-content bg-success">
+            <div class="flex items-center gap-4">
+              <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
+              </div>
+              <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category1') }}</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
+              </div>
+              <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category2') }}</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
+              </div>
+              <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category3') }}</p>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="bg-[#3E8E37] h-10 w-10 p-2 leading-10 rounded-full grid place-content-center">
+                <img src="~/assets/images/home/jatri-white-icon.svg" alt="jatri icon">
+              </div>
+              <p class="text-white text-2xl lg:text-base xl:text-2xl font-medium">{{ $t('n-our-products-tab3-category4') }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a>
+      <div class="explore-products-section lg:mx-0 2xl:mx-[20px] 3xl:mx-[210px] mt-[510px] lg:mt-0 py-4 md:py-6 lg:py-[34px] border-y border-[#DBDBDB] flex justify-between items-center gap-4">
+        <div class="flex justify-between items-center gap-4 lg:gap-5">
+          <img src="~/assets/images/home/explore.png" alt="Explore" class="w-8 md:w-auto">
+          <h4 class="text-dark font-medium text-xl md:text-2xl lg:text-4xl">Explore all products</h4>
+        </div>
+        <div>
+          <img src="~/assets/images/home/right-arrow.png" alt="Right arrow" class="w-4 md:w-6 lg:w-auto">
+        </div>
+      </div>
+    </a>
+  </section>
 </template>
 
 <style scoped>
@@ -173,23 +185,23 @@ label:last-child {
 }
 
 .panels {
-    @apply pt-6 lg:pt-14 w-full flex justify-center space-x-0 lg:space-x-10 overflow-visible relative h-[350px]
+  @apply pt-6 lg:pt-14 w-full flex justify-center space-x-0 lg:space-x-10 overflow-visible relative
 }
 .panels .panel {
   @apply h-[460px] lg:h-[430px] xl:h-[460px] w-[340px] lg:w-[290px] xl:w-[340px] overflow-hidden flex-shrink-0 rounded-3xl flex flex-col justify-center transform scale-100 duration-1000 transition-transform
 }
 .panel-content {
-    @apply px-8 py-6 flex flex-col justify-center items-center  text-center transition-transform duration-700
+  @apply px-8 py-6 flex flex-col justify-center items-center  text-center transition-transform duration-700
 }
 .panel-content .title {
-    @apply text-white text-[45px] leading-[52px] lg:text-4xl xl:text-[45px] xl:leading-[52px] font-semibold transition-[font-size] duration-500
- }
+  @apply text-white text-[45px] leading-[52px] lg:text-4xl xl:text-[45px] xl:leading-[52px] font-semibold transition-[font-size] duration-500
+}
 .panel-content .description {
-    @apply text-white text-base mt-2 transition-[font-size] duration-500
- }
+  @apply text-white text-base mt-2 transition-[font-size] duration-500
+}
 
 .panel-hidden-content {
-    @apply shadow-[0_0_24px_rgba(116,19,9,0.3)] rounded-3xl px-5 py-6 space-y-6 md:space-y-4 lg:space-y-3 xl:space-y-6 transform translate-y-56 h-0 transition-[transform,height] duration-700
+  @apply shadow-[0_0_24px_rgba(116,19,9,0.3)] rounded-3xl px-5 py-6 space-y-6 md:space-y-4 lg:space-y-3 xl:space-y-6 transform translate-y-56 h-0 transition-[transform,height] duration-700
 }
 
 input[type="radio"]:checked + label {
@@ -199,7 +211,7 @@ input[type="radio"]:checked + label {
 #radio1:checked ~ .panels #panel-one,
 #radio2:checked ~ .panels #panel-two,
 #radio3:checked ~ .panels #panel-three {
-    @apply lg:scale-110
+  @apply lg:scale-110
 }
 
 #radio1:checked ~ .panels #panel-one .panel-content,
@@ -216,7 +228,7 @@ input[type="radio"]:checked + label {
 #radio1:checked ~ .panels #panel-one .panel-content .description,
 #radio2:checked ~ .panels #panel-two .panel-content .description,
 #radio3:checked ~ .panels #panel-three .panel-content .description {
-    @apply text-sm
+  @apply text-sm
 }
 
 #radio1:checked ~ .panels #panel-one .panel-hidden-content ,
@@ -252,6 +264,12 @@ input[type="radio"]:checked + label {
   }
   label:last-child {
     @apply w-[171px];
+  }
+}
+
+@media only screen and (min-width: 1440px) and (max-width: 1535px) {
+  .explore-products-section {
+    @apply mx-20
   }
 }
 </style>

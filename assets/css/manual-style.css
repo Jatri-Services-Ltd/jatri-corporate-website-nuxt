@@ -539,5 +539,5 @@ button {
 
 .read-more-swiper-slider .swiper-button-prev,
 .read-more-swiper-slider .swiper-button-next {
-  @apply -top-[60px] lg:-top-[100px]
+  @apply -top-[60px] sm:-top-[40px] lg:-top-[100px]
 }
