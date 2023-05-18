@@ -40,12 +40,10 @@ const startInterval = () => {
     }
     switchTab(round)
   }, 3000)
-
 }
 onUnmounted(() => {
   clearInterval(autoSlideInterVal.value)
 })
-
 </script>
 
 <template>
@@ -139,7 +137,7 @@ onUnmounted(() => {
       </div>
     </div>
 
-    <a>
+    <router-link :to="localePath('/our-products')">
       <div class="explore-products-section lg:mx-0 2xl:mx-[20px] 3xl:mx-[210px] mt-[510px] lg:mt-0 py-4 md:py-6 lg:py-[34px] border-y border-[#DBDBDB] flex justify-between items-center gap-4">
         <div class="flex justify-between items-center gap-4 lg:gap-5">
           <img src="~/assets/images/home/explore.png" alt="Explore" class="w-8 md:w-auto">
@@ -149,7 +147,7 @@ onUnmounted(() => {
           <img src="~/assets/images/home/right-arrow.png" alt="Right arrow" class="w-4 md:w-6 lg:w-auto">
         </div>
       </div>
-    </a>
+    </router-link>
   </section>
 </template>
 
