@@ -25,6 +25,10 @@ export default defineNuxtConfig({
                 {
                   'http-equiv': "X-UA-Compatible",
                   content: "IE=edge"
+                },
+                {
+                    'name': 'google',
+                    content: 'notranslate'
                 }
             ]
         },
