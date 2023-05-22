@@ -1,7 +1,7 @@
 <template>
   <section class="custom-container">
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
-        <div class="row-span-3 md:col-span-2 lg:col-span-1 w-full bg-grey rounded-3xl pt-14 px-14 overflow-hidden h-[480px] lg:h-[754px] xl:h-[824px]">
+        <div class="row-span-3 md:col-span-2 lg:col-span-1 w-full bg-grey rounded-3xl pt-14 px-14 overflow-hidden h-[480px] lg:h-[783px] xl:h-[832px] 2xl:h-[856px]">
           <img src="~/assets/images/home/screen1.png" alt="screen img" class="screen-move block m-auto">
           <img src="~/assets/images/home/screen2.png" alt="screen img" class="screen-move block m-auto">
           <img src="~/assets/images/home/screen3.png" alt="screen img" class="screen-move block m-auto">
@@ -52,7 +52,7 @@
 
 <style scoped>
 .screen-move {
-  @apply animate-[screenMove_40s_linear_infinite_1s] will-change-transform
+  @apply animate-[screenMove_25s_linear_infinite_1s] will-change-transform
 }
 
 @media only screen and (min-width: 1440px) {
@@ -62,12 +62,19 @@
   }
 }
 
+@media only screen and (min-width: 1536px) and (max-width: 1550px) {
+  .custom-heading {
+    font-size: 56px;
+    line-height: 64px;
+  }
+}
+
 @keyframes screenMove {
   0% {
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-3500px);
+    transform: translateY(-3300px);
   }
 }
 
@@ -86,7 +93,7 @@
       transform: translateY(0);
     }
     100% {
-      transform: translateY(-1300px);
+      transform: translateY(-1100px);
     }
   }
 }

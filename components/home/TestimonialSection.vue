@@ -17,7 +17,7 @@ const sliderItems = ref([
   {
     "id": 1,
     "message": "“Jatri is the go-to rental solution for my family on vacations. Finding a trustworthy rental car within an hour definitely helps to speed up our plans!”",
-    "bnMessage": "“ছুটিতে পরিবার নিয়ে ঘুরতে যেতে, যাত্রী হবে আপনার গাড়ি ভাড়া নেয়ার তাৎক্ষণিক সমাধান আর বেস্ট প্রাইসে মুহূর্তের মধ্যেই গাড়ি পেয়ে যাওয়া, আমাদের ভ্রমণকে আরো আরামদায়ক ও নিরাপদ করে তোলে।”",
+    "bnMessage": "“ছুটিতে পরিবার নিয়ে ঘুরতে যেতে, যাত্রী হবে আপনার গাড়ি ভাড়া নেয়ার তাৎক্ষণিক সমাধান। আর বেস্ট প্রাইসে মুহূর্তের মধ্যেই গাড়ি পেয়ে যাওয়া, আমাদের ভ্রমণকে আরো আরামদায়ক ও নিরাপদ করে তোলে।”",
     "img": "/images/mitu.jpg",
     "name": "Israt Mitu",
     "bnName": 'ইসরাত মিতু',
