@@ -163,7 +163,7 @@ const selectLanguage = (lang) => {
   font-family: 'Inter', sans-serif;
 }
 .active-menu::after {
-  @apply absolute content-[""] w-full h-1 bg-[#151414] transition-all duration-[0.5s] ease-[ease] left-0 -bottom-1;
+  @apply absolute content-[""] w-full h-1 bg-[#151414] transition-all duration-[0.5s] ease-[ease] left-0 -bottom-2;
 }
 .slide {
   @apply absolute animate-[slide_0.5s_forwards] -right-2/4;
@@ -171,6 +171,12 @@ const selectLanguage = (lang) => {
 @keyframes slide {
   100% {
     right: 0;
+  }
+}
+
+@media only screen and (max-width: 412px) {
+  .active-menu::after {
+    @apply -bottom-1;
   }
 }
 </style>
