@@ -74,7 +74,7 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-3500px);
+    transform: translateY(-3300px);
   }
 }
 
@@ -93,7 +93,7 @@
       transform: translateY(0);
     }
     100% {
-      transform: translateY(-1300px);
+      transform: translateY(-1100px);
     }
   }
 }
