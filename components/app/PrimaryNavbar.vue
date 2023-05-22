@@ -72,11 +72,11 @@
               <button @click="closeModal" class=""><img src="~/assets/images/header/cross-icon.svg" alt="X"></button>
             </div>
             <div class="flex flex-col px-2">
-              <nuxt-link :to="localePath('/')" class="text-sm font-medium text-black text-left block border-b border-[#EDEDED] px-2 pt-4 pb-5" active-class="active-menu" @click="sidebarOpen = false">{{ $t('n-home') }}</nuxt-link>
-              <nuxt-link :to="localePath('/about-us')" @click="sidebarOpen = false" class="text-base font-medium text-black text-left block border-b border-[#EDEDED] px-2 py-5">{{ $t('n-about-us') }}</nuxt-link>
-              <nuxt-link :to="localePath('/career')" @click="sidebarOpen = false" class="text-base font-medium text-black text-left block border-b border-[#EDEDED] px-2 py-5">{{ $t('n-career')}}</nuxt-link>
-              <nuxt-link :to="localePath('/blog')" @click="sidebarOpen = false" class="text-base font-medium text-black text-left block border-b border-[#EDEDED] px-2 py-5">{{ $t('n-blogs') }}</nuxt-link>
-              <nuxt-link :to="localePath('/contact-us')" @click="sidebarOpen = false" class="text-base font-medium text-black text-left block border-b border-[#EDEDED] px-2 py-5">{{ $t('n-contact-us') }}</nuxt-link>
+              <nuxt-link :to="localePath('/')" class="relative text-sm font-medium text-black text-left block border-b border-[#EDEDED] px-2 pt-4 pb-5" active-class="active-menu" @click="sidebarOpen = false">{{ $t('n-home') }}</nuxt-link>
+              <nuxt-link :to="localePath('/about-us')" @click="sidebarOpen = false" class="relative text-base font-medium text-black text-left block border-b border-[#EDEDED] px-2 py-5" active-class="active-menu">{{ $t('n-about-us') }}</nuxt-link>
+              <nuxt-link :to="localePath('/career')" @click="sidebarOpen = false" class="relative text-base font-medium text-black text-left block border-b border-[#EDEDED] px-2 py-5" active-class="active-menu">{{ $t('n-career')}}</nuxt-link>
+              <nuxt-link :to="localePath('/blog')" @click="sidebarOpen = false" class="relative text-base font-medium text-black text-left block border-b border-[#EDEDED] px-2 py-5" active-class="active-menu">{{ $t('n-blogs') }}</nuxt-link>
+              <nuxt-link :to="localePath('/contact-us')" @click="sidebarOpen = false" class="relative text-base font-medium text-black text-left block border-b border-[#EDEDED] px-2 py-5" active-class="active-menu">{{ $t('n-contact-us') }}</nuxt-link>
               <div class="px-2 py-5 relative inline-block text-left min-w-[80px]">
                 <div>
                   <button
