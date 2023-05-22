@@ -52,7 +52,7 @@
 
 <style scoped>
 .screen-move {
-  @apply animate-[screenMove_40s_linear_infinite_1s] will-change-transform
+  @apply animate-[screenMove_25s_linear_infinite_1s] will-change-transform
 }
 
 @media only screen and (min-width: 1440px) {
