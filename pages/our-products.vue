@@ -1,6 +1,7 @@
 
 <script setup>
 
+import User from "~/components/our-products/User.vue";
 </script>
 
 <style scoped>
@@ -15,5 +16,6 @@ body {
 <template>
   <div>
     <OurProducts />
+    <User />
   </div>
 </template>
