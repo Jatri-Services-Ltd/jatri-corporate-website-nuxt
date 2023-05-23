@@ -35,7 +35,7 @@
               <h4 class="text-dark font-medium text-xl lg:text-2xl">Jatri Body Rental</h4>
             </div>
             <p class="text-dark font-normal text-sm pt-4 pb-[26px] lg:pb-[42px]">Lorem ipsum dolor sit amet consectetur. Nunc non dolor lectus tellus sed.</p>
-            <a class="text-[#676769] font-semibold text-xs lg:text-sm">Coming soon</a>
+            <div class="text-[#676769] font-semibold text-xs lg:text-sm">Coming soon</div>
           </div>
 
           <div class="bg-white rounded-2xl p-5 lg:p-8 pb-[26px] lg:pb-[34px]">
@@ -44,7 +44,7 @@
               <h4 class="text-dark font-medium text-xl lg:text-2xl">Jatri Hourly Rental</h4>
             </div>
             <p class="text-dark font-normal text-sm pt-4 pb-[26px] lg:pb-[42px]">Lorem ipsum dolor sit amet consectetur. Nunc non dolor lectus tellus sed.</p>
-            <a class="text-[#676769] font-semibold text-xs lg:text-sm">Coming soon</a>
+            <div class="text-[#676769] font-semibold text-xs lg:text-sm">Coming soon</div>
           </div>
         </div>
       </div>
