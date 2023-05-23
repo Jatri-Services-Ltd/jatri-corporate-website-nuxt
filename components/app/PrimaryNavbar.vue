@@ -174,7 +174,7 @@ const selectLanguage = (lang) => {
   }
 }
 
-@media only screen and (max-width: 412px) {
+@media only screen and (max-width: 1023px) {
   .active-menu::after {
     @apply bottom-0 h-[1px];
   }
