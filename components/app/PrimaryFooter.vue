@@ -20,7 +20,7 @@
 
             <div class="mt-6 md:mt-8">
               <p class="text-base text-white font-medium mb-4">{{ $t('n-footer-download-app') }}</p>
-              <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank">
+              <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=" target="_blank">
                 <img src="~/assets/images/footer/google-play-badge.svg" alt="Google play badge">
               </a>
             </div>
