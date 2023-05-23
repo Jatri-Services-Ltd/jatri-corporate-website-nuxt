@@ -1,5 +1,5 @@
 <template>
-  <section class="relative custom-container py-10">
+  <section class="relative custom-container py-8 lg:py-10">
     <div class="bg-[#F2F0FE] p-4 lg:p-8 pt-5 lg:pt-8 lg:pb-[34px] rounded-3xl">
       <h3 class="text-dark font-medium text-[28px] leading-9 lg:text-4xl">Drivers & Partners</h3>
       <p class="text-secondaryDark font-normal text-sm lg:text-base pt-2 pb-6 lg:pb-8">Lorem ipsum dolor sit amet consectetur. Blandit imperdiet nunc massa malesuada ipsum sed.</p>
