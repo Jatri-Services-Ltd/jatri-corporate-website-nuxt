@@ -9,7 +9,7 @@
         <h1 class="hidden lg:block text-[32px] leading-10 lg:text-[64px] lg:leading-[72px] font-bold">{{ $t('n-hero-title') }}</h1>
         <h1 class="block lg:hidden text-[32px] leading-10 lg:text-[64px] lg:leading-[72px] font-bold">{{ $t('n-mob-hero-title1') }} <br> {{ $t('n-mob-hero-title2') }} <br> {{ $t('n-mob-hero-title3') }}</h1>
           <div class="inline-block m-auto mt-[30px] lg:mt-10">
-            <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=US" target="_blank" class="flex justify-center items-center gap-2.5 rounded-full bg-primary px-8 py-3 xl:py-4 cursor-pointer">
+            <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=" target="_blank" class="flex justify-center items-center gap-2.5 rounded-full bg-primary px-8 py-3 xl:py-4 cursor-pointer">
               <img src="~/assets/images/home/download-white.svg" alt="Download icon">
               <span class="text-base xl:text-xl font-medium text-white">{{ $t('n-download-app') }}</span>
             </a>
