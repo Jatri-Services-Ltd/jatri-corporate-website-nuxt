@@ -1,64 +1,104 @@
 <template>
-  <section class="custom-container py-20">
-    <div class="mt-10 mb-14">
-      <input type="radio" id="radio1" name="radio1">
-      <input type="radio" id="radio2" name="radio2">
-      <input type="radio" id="radio3" name="radio3">
-      <div class="radio_wrap_container">
-        <div class="radio_wrap">
-          <label for="radio1">
-            <img src="~/public/images/enayet.jpg" alt="enayet">
-          </label>
-          <label for="radio2">
-            <img src="~/public/images/jakir.jpg" alt="enayet">
-          </label>
-          <label for="radio3">
-            <img src="~/public/images/mitu.jpg" alt="enayet">
-          </label>
-        </div>
+  <section class="custom-container h-[560px] py-[60px] bg-[#EFF7FD]">
+    <p class="pb-5 border-b border-info/20 text-[#8D8D8F] text-2xl font-medium">What partners say about us</p>
+
+    <div class="relative h-full">
+      <input type="radio" name="radioBtnSlider" value="1" id="nav1" checked />
+      <input type="radio" name="radioBtnSlider" value="2" id="nav2" />
+      <input type="radio" name="radioBtnSlider" value="3" id="nav3" />
+      <input type="radio" name="radioBtnSlider" value="4" id="nav4" />
+
+      <div class="radio-nav-items">
+        <label for="nav1">
+          <img src="~/assets/images/home/car.svg" alt="enayet">
+        </label>
+        <label for="nav2">
+          <img src="~/assets/images/home/bus.svg" alt="enayet">
+        </label>
+        <label for="nav3">
+          <img src="~/assets/images/home/car.svg" alt="enayet">
+        </label>
+        <label for="nav4">
+          <img src="~/assets/images/home/bus.svg" alt="enayet">
+        </label>
       </div>
 
-      <div class="custom-testimonial-slider relative py-10">
-        <div class="slider-item grid grid-cols-2 justify-between">
+      <div class="slider-items h-full py-10">
+        <div class="slider-item relative h-full grid grid-cols-2">
           <div class="left-content">
-            <p class="user-review text-dark text-4xl" id="user-review1">This platform helped me digitize my rental car business. The app is convenient and simple, it's really helpful for booking trips from home!</p>
-            <p class="user-review text-dark text-4xl" id="user-review2">This platform helped me digitize my rental car business. The app is convenient and simple, it's really helpful for booking trips from home!</p>
-            <p class="user-review text-dark text-4xl" id="user-review3">This platform helped me digitize my rental car business. The app is convenient and simple, it's really helpful for booking trips from home!</p>
+            <p class="user-review text-dark text-4xl">This platform helped me digitize my rental car business. The app is convenient and simple, it's really helpful for booking trips from home!</p>
+            <p class="user-review text-dark text-4xl">The app is convenient and simple, it's really helpful for booking trips from home!</p>
+            <p class="user-review text-dark text-4xl">This platform helped me digitize my rental car business.</p>
+            <p class="user-review text-dark text-4xl">The app is convenient and simple, it's really helpful for booking trips from home!</p>
           </div>
-          <div class="right-content text-right">
-            <p class="user-name text-dark text-2xl font-medium">Abdul Karim</p>
-            <p class="user-name text-dark text-2xl font-medium">Khalid Hossain</p>
-            <p class="user-name text-dark text-2xl font-medium">Shahed Ahmed</p>
+          <div class="right-content">
+            <div class="user-names relative text-right">
+              <p class="user-name text-dark text-2xl font-medium">Abdul Mohaimen</p>
+              <p class="user-name text-dark text-2xl font-medium">Akil Jawad</p>
+              <p class="user-name text-dark text-2xl font-medium">Shahed Ahmed</p>
+              <p class="user-name text-dark text-2xl font-medium">Khalid Hossain</p>
+            </div>
 
-            <p class="user-designation mt-1 text-[#8D8D8F] text-base">Businessman</p>
-            <p class="user-designation mt-1 text-[#8D8D8F] text-base">Scammer</p>
-            <p class="user-designation mt-1 text-[#8D8D8F] text-base">** Somrat</p>
+            <div class="user-designations relative text-right">
+              <p class="user-designation mt-1 text-[#8D8D8F] text-base">Hot Boss</p>
+              <p class="user-designation mt-1 text-[#8D8D8F] text-base">API Bro</p>
+              <p class="user-designation mt-1 text-[#8D8D8F] text-base">** Somrat</p>
+              <p class="user-designation mt-1 text-[#8D8D8F] text-base">Scammer</p>
+            </div>
           </div>
         </div>
       </div>
-
     </div>
   </section>
 </template>
 
 <style scoped>
-.radio_wrap {
-  @apply relative overflow-hidden z-0 flex justify-center gap-10
-}
-input {
-  @apply absolute opacity-0
+input[type="radio"] {
+  @apply absolute right-0 bottom-0 opacity-0 transition-all
 }
 label {
-   @apply cursor-pointer
+  @apply cursor-pointer
 }
 label img {
-  @apply w-20 h-20 rounded-full border-8 border-transparent
+  @apply w-20 h-20 rounded-full border-8 border-transparent transition-all
 }
-#radio1:checked ~ .radio_wrap_container .radio_wrap label:first-child img,
-#radio2:checked ~ .radio_wrap_container .radio_wrap label:nth-child(2) img,
-#radio3:checked ~ .radio_wrap_container .radio_wrap label:last-child img {
+.radio-nav-items {
+  @apply w-full pt-5 flex justify-end gap-4 border-t border-info/20 absolute right-0 bottom-0
+}
+#nav1:checked ~ .radio-nav-items label:first-child img,
+#nav2:checked ~ .radio-nav-items label:nth-child(2) img,
+#nav3:checked ~ .radio-nav-items label:nth-child(3) img,
+#nav4:checked ~ .radio-nav-items label:last-child img {
   @apply border-[#8FC4F2]
 }
 
-</style>
+.user-review,
+.user-name,
+.user-designation {
+  @apply opacity-0 absolute w-1/2 transition-opacity
+}
+.user-name,
+.user-designation {
+  @apply right-0
+}
+.user-designation {
+  @apply mt-8
+}
 
+#nav1:checked ~ .slider-items .slider-item .left-content .user-review:first-child,
+#nav2:checked ~ .slider-items .slider-item .left-content .user-review:nth-child(2),
+#nav3:checked ~ .slider-items .slider-item .left-content .user-review:nth-child(3),
+#nav4:checked ~ .slider-items .slider-item .left-content .user-review:last-child,
+
+#nav1:checked ~ .slider-items .slider-item .right-content .user-names .user-name:first-child,
+#nav2:checked ~ .slider-items .slider-item .right-content .user-names .user-name:nth-child(2),
+#nav3:checked ~ .slider-items .slider-item .right-content .user-names .user-name:nth-child(3),
+#nav4:checked ~ .slider-items .slider-item .right-content .user-names .user-name:last-child,
+
+#nav1:checked ~ .slider-items .slider-item .right-content .user-designations .user-designation:first-child,
+#nav2:checked ~ .slider-items .slider-item .right-content .user-designations .user-designation:nth-child(2),
+#nav3:checked ~ .slider-items .slider-item .right-content .user-designations .user-designation:nth-child(3),
+#nav4:checked ~ .slider-items .slider-item .right-content .user-designations .user-designation:last-child  {
+  @apply opacity-100
+}
+</style>
