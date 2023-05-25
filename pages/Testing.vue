@@ -1,6 +1,7 @@
 
 <script setup>
 import PartnerTestimonial from "~/components/testing/PartnerTestimonial.vue";
+import PartnerAccordion from "~/components/testing/PartnerAccordion.vue";
 </script>
 
 <style scoped>
@@ -14,6 +15,7 @@ body {
 
 <template>
   <div>
+    <PartnerAccordion />
     <PartnerTestimonial />
   </div>
 </template>
