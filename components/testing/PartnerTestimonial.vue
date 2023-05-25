@@ -9,7 +9,7 @@
         <input type="radio" name="radioBtnSlider" value="3" id="nav3" />
         <input type="radio" name="radioBtnSlider" value="4" id="nav4" />
 
-        <div class="radio-nav-items">
+        <div class="radio-nav-items z-50">
           <label for="nav1">
             <img src="~/assets/images/test/partner-testimonial/nav2.png" alt="enayet">
           </label>
@@ -24,7 +24,7 @@
           </label>
         </div>
 
-        <div class="slider-items pt-10 pb-[120px] lg:pb-10 border-y border-info/20">
+        <div class="slider-items pt-6 lg:pt-10 pb-[110px] lg:pb-10 border-y border-info/20">
           <div class="slider-item relative flex justify-between flex-wrap lg:flex-nowrap">
             <div class="left-content w-full lg:w-3/5">
               <p class="user-review text-dark text-2xl xl:text-4xl">This platform helped me digitize my rental car business. The app is convenient and simple, it's really helpful for booking trips from home!</p>
