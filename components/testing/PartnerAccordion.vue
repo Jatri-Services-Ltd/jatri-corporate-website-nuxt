@@ -1,17 +1,17 @@
 <template>
   <section class="custom-container lg:!pr-0 relative my-12 lg:my-[120px]">
-    <div class="grid lg:grid-cols-2 gap-20">
-      <div class="py-16">
-        <h3 class="text-dark text-[32px] leading-10 font-medium">More profit in a few<br> simple steps</h3>
-        <div class="pt-5 divide-y space-y-6 pt-5">
+    <div class="grid lg:grid-cols-2 gap-4 lg:gap-10 xl:gap-20">
+      <div class="lg:py-16">
+        <h3 class="text-dark text-[28px] lg:text-[32px] leading-9 lg:leading-10 font-medium">More profit in a few<br> simple steps</h3>
+        <div class="lg:pt-5 divide-y space-y-4 lg:space-y-6">
           <div class="accordion-box">
             <input type="radio" name="radioBtnAccordion" value="1" id="accordion1" checked />
             <label class="accordion-title" for="accordion1">Open app & select “Ride”</label>
             <div class="accordion-content">
               <div class="accordion-content-img">
-                <img src="~/assets/images/test/partner-accodion/partner-accordion1.png" alt="Phone image">
+                <img src="~/assets/images/test/partner-accodion/partner-accordion-1.png" alt="Phone image">
               </div>
-              <p class="text-secondaryDark text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
+              <p class="text-secondaryDark text-base lg:text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
                 Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
               </p>
             </div>
@@ -24,7 +24,7 @@
               <div class="accordion-content-img">
                 <img src="~/assets/images/test/partner-testimonial/nav3.png" alt="Phone image">
               </div>
-              <p class="text-secondaryDark text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
+              <p class="text-secondaryDark text-base lg:text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
                 Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
                 Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
               </p>
@@ -36,9 +36,9 @@
             <label class="accordion-title" for="accordion3">Set your destination</label>
             <div class="accordion-content">
               <div class="accordion-content-img">
-                <img src="~/assets/images/test/partner-accodion/partner-accordion1.png" alt="Phone image">
+                <img src="~/assets/images/test/partner-accodion/partner-accordion-1.png" alt="Phone image">
               </div>
-              <p class="text-secondaryDark text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
+              <p class="text-secondaryDark text-base lg:text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
                 Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
               </p>
             </div>
@@ -49,9 +49,9 @@
             <label class="accordion-title" for="accordion4">Enjoy your ride</label>
             <div class="accordion-content">
               <div class="accordion-content-img">
-                <img src="~/assets/images/test/partner-accodion/partner-accordion1.png" alt="Phone image">
+                <img src="~/assets/images/test/partner-accodion/partner-accordion-1.png" alt="Phone image">
               </div>
-              <p class="text-secondaryDark text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
+              <p class="text-secondaryDark text-base lg:text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
                 Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
                 Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
               </p>
@@ -60,7 +60,7 @@
         </div>
       </div>
 
-      <div class="bg-secondary "></div>
+      <div class="bg-secondary hidden lg:block"></div>
     </div>
   </section>
 </template>
@@ -70,7 +70,7 @@ input[type="radio"] {
   @apply absolute opacity-0 transition-all
 }
 label {
-  @apply text-[#8D8D8F] block pt-6 z-10 text-2xl font-medium cursor-pointer transition-all
+  @apply text-[#8D8D8F] block pt-4 lg:pt-6 z-10 text-xl lg:text-2xl font-medium cursor-pointer transition-all
 }
 input[type="radio"]:checked + label {
   @apply text-dark
@@ -79,10 +79,10 @@ input[type="radio"]:checked + label {
   @apply max-h-0 overflow-hidden transition-all
 }
 .accordion-content-img {
-  @apply bg-secondary py-7 lg:py-0 mb-4 lg:mb-0 grid place-content-center
+  @apply bg-secondary py-3 lg:py-0 mb-4 lg:mb-0 grid place-content-center
 }
 .accordion-content-img img {
-  @apply lg:absolute lg:top-[15%] lg:right-[16%] opacity-0 transition
+  @apply lg:absolute lg:top-6 lg:right-[8%] xl:right-[10%] 2xl:right-[11%] opacity-0 transition
 }
 
 input[type="radio"]:checked ~ .accordion-content {
