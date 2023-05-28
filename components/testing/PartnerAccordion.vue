@@ -106,7 +106,7 @@ input[type="radio"]:checked ~ .accordion-content {
 input[type="radio"]:checked ~ .accordion-content .accordion-content-img img {
   @apply opacity-100
 }
-@media screen and (width > 1439px) and (width < 1536px) {
+@media (width > 1439px) and (width < 1536px) {
   .accordion-content-img img {
     @apply right-[10.5%]
   }
