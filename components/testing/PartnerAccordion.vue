@@ -8,7 +8,7 @@
             <input type="radio" name="radioBtnAccordion" value="1" id="accordion1" checked />
             <label class="accordion-title" for="accordion1">
               <span>Open app & select “Ride”</span>
-              <img class="transform rotate-0 transition-transform" src="~/assets/images/test/partner-accodion/down-arrow.png" alt="Down arrow">
+              <img src="~/assets/images/test/partner-accodion/down-arrow.png" alt="Down arrow">
             </label>
             <div class="accordion-content">
               <div class="accordion-content-img">
@@ -24,7 +24,7 @@
             <input type="radio" name="radioBtnAccordion" value="2" id="accordion2" />
             <label class="accordion-title" for="accordion2">
               <span>Choose your driver</span>
-              <img class="transform rotate-0 transition-transform" src="~/assets/images/test/partner-accodion/down-arrow.png" alt="Down arrow">
+              <img src="~/assets/images/test/partner-accodion/down-arrow.png" alt="Down arrow">
             </label>
             <div class="accordion-content">
               <div class="accordion-content-img">
@@ -40,7 +40,7 @@
             <input type="radio" name="radioBtnAccordion" value="3" id="accordion3" />
             <label class="accordion-title" for="accordion3">
               <span>Set your destination</span>
-              <img class="transform rotate-0 transition-transform" src="~/assets/images/test/partner-accodion/down-arrow.png" alt="Down arrow">
+              <img src="~/assets/images/test/partner-accodion/down-arrow.png" alt="Down arrow">
             </label>
             <div class="accordion-content">
               <div class="accordion-content-img">
@@ -56,7 +56,7 @@
             <input type="radio" name="radioBtnAccordion" value="4" id="accordion4" />
             <label class="accordion-title" for="accordion4">
               <span>Enjoy your ride</span>
-              <img class="transform rotate-0 transition-transform" src="~/assets/images/test/partner-accodion/down-arrow.png" alt="Down arrow">
+              <img src="~/assets/images/test/partner-accodion/down-arrow.png" alt="Down arrow">
             </label>
             <div class="accordion-content">
               <div class="accordion-content-img">
@@ -79,11 +79,17 @@
 input[type="radio"] {
   @apply absolute opacity-0 transition-all
 }
-label {
+.accordion-title {
   @apply text-[#8D8D8F] flex justify-between items-center pt-4 lg:pt-6 z-10 text-xl lg:text-2xl font-medium cursor-pointer transition-all
 }
-input[type="radio"]:checked + label {
+input[type="radio"]:checked + .accordion-title {
   @apply text-dark
+}
+.accordion-title img {
+  @apply transform rotate-0 transition-transform
+}
+input[type="radio"]:checked + .accordion-title img {
+  @apply transform rotate-180
 }
 .accordion-content {
   @apply max-h-0 overflow-hidden transition-all
@@ -99,9 +105,6 @@ input[type="radio"]:checked ~ .accordion-content {
 }
 input[type="radio"]:checked ~ .accordion-content .accordion-content-img img {
   @apply opacity-100
-}
-input[type="radio"]:checked + label img {
-  @apply transform rotate-180
 }
 @media screen and (min-width: 1440px) and (max-width: 1535px) {
   .accordion-content-img img {
