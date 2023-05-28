@@ -22,10 +22,9 @@
             <label class="accordion-title" for="accordion2">Choose your driver</label>
             <div class="accordion-content">
               <div class="accordion-content-img">
-                <img src="~/assets/images/test/partner-testimonial/nav3.png" alt="Phone image">
+                <img src="~/assets/images/test/partner-accodion/partner-accordion-1.png" alt="Phone image">
               </div>
               <p class="text-secondaryDark text-base lg:text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
-                Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
                 Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
               </p>
             </div>
@@ -52,7 +51,6 @@
                 <img src="~/assets/images/test/partner-accodion/partner-accordion-1.png" alt="Phone image">
               </div>
               <p class="text-secondaryDark text-base lg:text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
-                Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
                 Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
               </p>
             </div>
@@ -82,13 +80,17 @@ input[type="radio"]:checked + label {
   @apply bg-secondary py-3 lg:py-0 mb-4 lg:mb-0 grid place-content-center
 }
 .accordion-content-img img {
-  @apply lg:absolute lg:top-6 lg:right-[8%] xl:right-[10%] 2xl:right-[11%] opacity-0 transition
+  @apply lg:absolute lg:top-12 xl:top-10 3xl:top-6 lg:right-[8%] xl:right-[10%] 2xl:right-[11%] 3xl:right-[13%] opacity-0 transition
 }
-
 input[type="radio"]:checked ~ .accordion-content {
   @apply pt-4 max-h-max overflow-auto
 }
 input[type="radio"]:checked ~ .accordion-content .accordion-content-img img {
   @apply opacity-100
+}
+@media screen and (min-width: 1440px) and (max-width: 1535px) {
+  .accordion-content-img img {
+    @apply right-[10.5%]
+  }
 }
 </style>
