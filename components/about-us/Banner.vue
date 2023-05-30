@@ -1,11 +1,4 @@
-<style scoped>
-* {
-  font-family: 'Inter', sans-serif;
-}
-body {
-  @apply text-body
-}
-</style>
+
 
 <template>
   <section class="relative">
