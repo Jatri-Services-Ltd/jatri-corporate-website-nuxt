@@ -1,6 +1,7 @@
 <script setup>
 import Banner from "~/components/about-us/Banner.vue";
 import OurDerivedMission from "~/components/about-us/OurDerivedMission.vue";
+import OurCommitmentSafetyAssured from "~/components/about-us/OurCommitmentSafetyAssured.vue";
 
 useHead({
   title: 'Jatri | About us',
@@ -25,4 +26,5 @@ body {
 <template>
   <Banner />
   <OurDerivedMission />
+  <OurCommitmentSafetyAssured />
 </template>
