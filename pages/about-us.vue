@@ -1,8 +1,4 @@
 <script setup>
-import Banner from "~/components/about-us/Banner.vue";
-import OurDerivedMission from "~/components/about-us/OurDerivedMission.vue";
-import OurCommitmentSafetyAssured from "~/components/about-us/OurCommitmentSafetyAssured.vue";
-import WhoWeServe from "~/components/about-us/WhoWeServe.vue";
 useHead({
   title: 'Jatri | About us',
   meta: [
@@ -24,8 +20,9 @@ body {
 </style>
 
 <template>
-  <Banner />
-  <OurDerivedMission />
-  <OurCommitmentSafetyAssured />
-  <WhoWeServe />
+  <AboutUsBanner />
+  <AboutUsOurDerivedMission />
+  <AboutUsOurCommitmentSafetyAssured />
+  <AboutUsWhoWeServe />
+  <AboutUsOurJourney />
 </template>
