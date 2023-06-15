@@ -1,7 +1,7 @@
 <template>
   <section class="relative">
-    <img src="~/assets/images/about-us/about-us-banner.png" alt="About Us Banner" class="w-full relative hidden sm:block">
-    <img src="~/assets/images/about-us/about-us-banner-mobile.png" alt="About Us Banner" class="w-full relative sm:hidden">
+    <img src="/images/about-us/about-us-banner.png" alt="About Us Banner" class="w-full relative hidden sm:block">
+    <img src="/images/about-us/about-us-banner-mobile.png" alt="About Us Banner" class="w-full relative sm:hidden">
 
     <div class="custom-container absolute bottom-4 md:bottom-12 lg:bottom-16 left-0">
       <div class="bg-white w-full sm:w-fit px-4 md:pl-8 lg:pl-10 sm:pr-20 lg:pr-[100px] py-5 md:py-6">

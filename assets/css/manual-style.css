@@ -562,7 +562,7 @@ button {
 }
 .our-journey-slider .swiper-button-prev:after,
 .our-journey-slider .swiper-button-next:after {
-  @apply text-[0px] bg-[url('/images/about-us/arrow-prev.svg')] bg-cover bg-center bg-no-repeat w-5 h-5
+  @apply text-[0px] bg-[url('/images/about-us/arrow-white.svg')] bg-cover bg-center bg-no-repeat w-5 h-5
 }
 .our-journey-slider .swiper-button-next:after {
   @apply transform rotate-180

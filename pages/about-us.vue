@@ -23,6 +23,8 @@ body {
   <AboutUsBanner />
   <AboutUsOurDerivedMission />
   <AboutUsOurCommitmentSafetyAssured />
-  <AboutUsWhoWeServe />
+  <AboutUsWhoWeServePeople />
+  <AboutUsWhoWeServeBusiness />
   <AboutUsOurJourney />
+  <AboutUsLookingForTalent />
 </template>
