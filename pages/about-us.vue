@@ -26,5 +26,6 @@ body {
   <AboutUsWhoWeServePeople />
   <AboutUsWhoWeServeBusiness />
   <AboutUsOurJourney />
+  <AboutUsInspiringLeaders />
   <AboutUsLookingForTalent />
 </template>

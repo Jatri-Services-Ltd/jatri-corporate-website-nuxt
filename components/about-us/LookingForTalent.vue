@@ -1,8 +1,8 @@
 <template>
-    <section class=" py-12 md:py-20 xl:py-[120px]">
+    <section class="pb-12 md:pb-20 xl:pb-[120px]">
         <div class="custom-container">
-            <div class="flex flex-wrap flex-row-reverse md:flex-row justify-between items-center">
-                <div class="w-full order-2 md:order-1">
+            <div class="flex flex-wrap flex-row-reverse md:flex-row w-full justify-between items-stretch">
+                <div class="w-full md:w-1/2 order-2 md:order-1">
                     <h1 class="text-dark text-[28px] lg:text-[45px] leading-9 lg:leading-[52px] font-semibold">We are</h1>
                     <div class="flex items-center gap-2">
                         <h1 class="text-dark text-[28px] lg:text-[45px] leading-9 lg:leading-[52px] font-semibold">looking for talent</h1>
@@ -16,7 +16,7 @@
                     </nuxt-link>
                     </div>
                 </div>
-                <div class="w-full flex justify-center md:justify-end order-1 md:order-2 mb-6 md:mb-0">
+                <div class="w-full md:w-1/2 flex justify-center md:justify-end order-1 md:order-2 mb-6 md:mb-0">
                     <img class="max-w-full h-auto" src="/images/about-us/looking-for-talent.png" alt="Looking for talent">
                 </div>
             </div>
