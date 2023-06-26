@@ -1,14 +1,16 @@
 <template>
     <div>
-        <CareerHeader />
-        <div class="bg-[#F7F7F7] py-[76px] relative">
-        <div class="flex justify-center items-center">
-            <div class="slider pl-[26px]">
-                <div class="slider-row"></div>
-            </div>
-            <h2 class="text-white absolute text-[57px] leading-[64px] font-medium">Life at Jatri</h2>
+      <CareerHeader />
+        <div class="bg-[#F7F7F7] pt-[76px] relative">
+          <div class="flex justify-center items-center">
+              <div class="slider pl-[26px]">
+                  <div class="slider-row"></div>
+              </div>
+              <h2 class="text-white absolute text-[57px] leading-[64px] font-medium">Life at Jatri</h2>
+          </div>
         </div>
-    </div>
+        <CareerOurCoreValues />
+        <CareerBenefitAndPerks />
     </div>
 </template>
 
