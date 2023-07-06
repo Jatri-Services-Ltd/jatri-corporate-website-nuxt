@@ -1,6 +1,7 @@
 <template>
     <div>
       <CareerHeader />
+      <a href="#openRoles">view roles</a>
         <div class="bg-[#F7F7F7] pt-[76px] relative">
           <div class="flex justify-center items-center">
               <div class="slider pl-[26px]">
@@ -11,6 +12,9 @@
         </div>
         <CareerOurCoreValues />
         <CareerBenefitAndPerks />
+        <div id="openRoles">
+          <CareerCurrentOpenRoles />
+        </div>
     </div>
 </template>
 

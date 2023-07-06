@@ -36,5 +36,10 @@
 </script>
 
 <style scoped>
-
+.benefit-header::before{
+    content: url('/images/career/perks.svg');
+    position: absolute;
+    top: -20px;
+    right: -45px;
+}
 </style>

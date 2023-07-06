@@ -5,6 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+    scroll-behavior: smooth;
+}
 /* Common Css Code will be Write Here */
 .counter_number{
     @apply text-center font-semibold text-3xl md:text-5xl lg:text-7xl;
