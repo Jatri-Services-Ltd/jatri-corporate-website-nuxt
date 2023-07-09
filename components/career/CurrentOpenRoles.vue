@@ -15,7 +15,7 @@
                             <p class="text-base font-medium text-[#4D4D4F]">Application deadline: <span v-html="role.deadline"></span></p>
                         </div>
                         <div class="lg:pt-0 pt-4">
-                            <router-link to="" class="flex justify-center items-center gap-2 h-10 w-[130px] rounded-full border border-[#DBDBDB] bg-[#DBDBDB] lg:bg-white">
+                            <router-link :to="'/career/job-details/'+ role.slug" class="flex justify-center items-center gap-2 h-10 w-[130px] rounded-full border border-[#DBDBDB] bg-[#DBDBDB] lg:bg-white">
                                 <span class="inline-block text-sm leading-5 font-medium">View details</span>
                                 <div><img src="/images/career/arrow-right.svg" alt=""></div>
                             </router-link>
@@ -36,7 +36,6 @@
 <script setup>
 import { ref, onMounted } from 'vue';
 import careerData from '../../dataStore/career.js';
-console.log(careerData, 'value');
 const openedRoles = ref([])
 
 onMounted(() => {
