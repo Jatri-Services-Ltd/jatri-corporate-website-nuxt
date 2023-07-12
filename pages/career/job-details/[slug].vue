@@ -76,56 +76,69 @@
             </div>
         </div>
     </div>
-    <div class="modal w-[90%] md:w-[700px] rounded-2xl" :class="openModal ? 'modalOpen' : 'modal-hidden'">
-        <div class="px-6 pt-6 border-b">
-            <div class="w-full flex justify-between items-center pb-6">
-                <p class="text-[32px] font-medium">Apply now</p>
+    <div class="modal w-[90%] md:w-[700px] rounded-2xl relative" :class="openModal ? 'modalOpen' : 'modal-hidden'">
+        <div class="px-4 md:px-6 pt-4 md:pt-6 border-b">
+            <div class="w-full flex justify-between items-center pb-4 md:pb-6">
+                <p class="text-xl md:text-[32px] font-medium">Apply now</p>
                 <button @click="openModal = !openModal"><img src="/images/career/close-icon.svg" alt="Close Modal"></button>
             </div>
         </div>
-        <div class="p-6">
-            <p class="text-2xl font-medium mb-6">Personal information</p>
-            <div class="flex gap-8">
-                <div class="w-full">
-                    <label class="text-base font-medium text-dark pb-[10px] block" for="">Full name</label>
-                    <input type="text" class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]" placeholder="Enter full name">
+        <div class="p-4 md:p-6">
+            <div class="h-[400px] md:h-auto overflow-y-auto">
+                <p class="text-sm md:text-2xl font-medium mb-4 md:mb-6 uppercase">Personal information</p>
+                <div class="block sm:flex gap-8">
+                    <div class="w-full">
+                        <label class="text-base font-medium text-dark pb-[10px] block" for="">Full name</label>
+                        <input type="text" class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]" placeholder="Enter full name">
+                    </div>
+                    <div class="w-full">
+                        <label class="text-base font-medium text-dark pb-[10px] block" for="">Email address</label>
+                        <input type="text" class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]" placeholder="Enter email address">
+                    </div>
                 </div>
-                <div class="w-full">
-                    <label class="text-base font-medium text-dark pb-[10px] block" for="">Email address</label>
-                    <input type="text" class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]" placeholder="Enter email address">
+                <div class="flex gap-8 mt-6">
+                    <div class="w-full">
+                        <label class="text-base font-medium text-dark pb-[10px] block" for="">Mobile number</label>
+                        <input type="text" class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]" placeholder="Enter mobile number">
+                    </div>
+                    <div class="w-full">
+                        <label class="text-base font-medium text-dark pb-[10px] block" for="">LinkedIn profile</label>
+                        <input type="text" class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]" placeholder="Enter linkedin profile link">
+                    </div>
                 </div>
-            </div>
-            <div class="flex gap-8 mt-6">
-                <div class="w-full">
-                    <label class="text-base font-medium text-dark pb-[10px] block" for="">Mobile number</label>
-                    <input type="text" class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]" placeholder="Enter mobile number">
-                </div>
-                <div class="w-full">
-                    <label class="text-base font-medium text-dark pb-[10px] block" for="">LinkedIn profile</label>
-                    <input type="text" class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]" placeholder="Enter linkedin profile link">
-                </div>
-            </div>
-            <div class="mt-8">
-                <p class="text-2xl font-medium mb-6">Resume / CV</p>
-                <label class="text-base font-medium text-dark pb-[10px] block" for="">Resume / CV</label>
-                <div class="relative overflow-hidden">
-                    <button class="w-full border border-[#1E88E5] border-dashed py-[22px] px-5 text-start rounded-[4px]">
-                        <div v-if="fileName">
-                            {{ fileName }}
-                        </div>
-                        <div class="flex items-center gap-4" :class="fileName ? 'hidden' : ''">
-                            <img src="/images/career/upload-icon.svg" alt="">
-                            <div>
-                                <p class="text-[#1E88E5] text-base font-medium mb-1">Upload resume / cv</p>
-                                <p class="text-xs">File format should be <b>PDF</b> and not more than <b>5MB</b></p>
+                <div class="mt-8">
+                    <p class="text-2xl font-medium mb-6">Resume / CV</p>
+                    <label class="text-base font-medium text-dark pb-[10px] block" for="">Resume / CV</label>
+                    <div class="relative overflow-hidden">
+                        <button class="w-full border border-[#1E88E5] border-dashed py-[22px] px-5 text-start rounded-[4px]">
+                            <div v-if="fileName">
+                                <div class="flex gap-5 py-[10px]">
+                                    <div class="flex gap-2 items-center">
+                                        <p class="text-sm font-medium">{{ fileName }}</p>
+                                        <button @click="removeFile" class="pt-1"><img src="/images/career/remove-file-icon.svg" alt="Remove cv"></button>
+                                    </div>
+                                    <div class="relative">
+                                        <button @click="removeFile" class="text-corporate text-sm font-medium underline z-20 relative">Replace</button>
+                                        <img class="absolute top-3 z-10" src="/images/career/upload-icon.svg" alt="Upload file">
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </button>
-                    <input @change="uploadFile" type="file" name="myfile" class="absolute left-0 top-0 opacity-0 w-full h-full cursor-pointer" />
+                            <div class="flex items-center gap-4" :class="fileName ? 'hidden' : ''">
+                                <img src="/images/career/upload-icon.svg" alt="Upload file">
+                                <div>
+                                    <p class="text-[#1E88E5] text-base font-medium mb-1">Upload resume / cv</p>
+                                    <p class="text-xs">File format should be <b>PDF</b> and not more than <b>5MB</b></p>
+                                </div>
+                            </div>
+                        </button>
+                        <input v-if="!fileName" @change="uploadFile" type="file" name="myfile" class="absolute left-0 top-0 opacity-0 w-full h-full cursor-pointer" />
+                    </div>
                 </div>
             </div>
-            <div class="mt-12 mb-4 flex justify-center">
-                <button class="h-[60px] w-[300px] flex justify-center items-center bg-corporate text-white rounded-full text-xl font-medium">Submit</button>
+            <div class="small-device-bottom-section">
+                <div class="mt-12 mb-4 flex justify-center">
+                    <button class="h-[60px] w-[300px] flex justify-center items-center bg-corporate text-white rounded-full text-xl font-medium">Submit</button>
+                </div>
             </div>
         </div>
     </div>
@@ -147,7 +160,10 @@ onMounted(() => {
 
 const uploadFile = (e) => {
     fileName.value = e.target.files[0].name
-    console.log(fileName.value, 'object');
+}
+
+const removeFile = () => {
+    fileName.value = ''
 }
 </script>
 
@@ -159,7 +175,8 @@ const uploadFile = (e) => {
     background-position: top right;
 }
 .right-arrow {
-	height: 0px; width: 0px;
+	height: 0px; 
+    width: 0px;
 	border: 3.8px solid;
 	border-color: 
 		white
@@ -171,61 +188,69 @@ const uploadFile = (e) => {
 
 /* modal css */
 .show-modal {
-        font-size: 2rem;
-        font-weight: 600;
-        padding: 1.75rem 3.5rem;
-        margin: 5rem 2rem;
-        border: none;
-        background-color: #fff;
-        color: #444;
-        border-radius: 10rem;
-        cursor: pointer;
-    }
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.75rem 3.5rem;
+    margin: 5rem 2rem;
+    border: none;
+    background-color: #fff;
+    color: #444;
+    border-radius: 10rem;
+    cursor: pointer;
+}
 
-    .close-modal {
-        position: absolute;
-        top: 1.2rem;
-        right: 2rem;
-        font-size: 5rem;
-        color: #333;
-        cursor: pointer;
-        border: none;
-        background: none;
-    }
+.close-modal {
+    position: absolute;
+    top: 1.2rem;
+    right: 2rem;
+    font-size: 5rem;
+    color: #333;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
 
-    .modal-hidden {
-        opacity: 0;
-        transition: all 0.3s ease-in-out;
-        -ms-transform: scale(0.7); /* IE 9 */
-        -webkit-transform: scale(0.7); /* Safari */
-        transform: scale(0.1);
-    }
-    .modalOpen{
-        z-index: 60;
-        opacity: 1;
-        transition: all 0.3s ease-in-out;
-        transform: scale(1);
-        transition-delay: 0.1s;
-    }
+.modal-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.modalOpen{
+    z-index: 60;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+}
 
-    .modal {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        z-index: 10;
-    }
+.modal {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 999;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
 
-    .overlay {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh !important;
-        background-color: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(3px);
-        z-index: 5;
-    }
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh !important;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 5;
+}
+
+.small-device-bottom-section{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    border-radius: 0 0 16px 16px;
+}
 
 </style>
