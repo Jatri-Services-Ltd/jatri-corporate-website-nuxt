@@ -84,9 +84,9 @@
             </div>
         </div>
         <div class="p-4 md:p-6">
-            <div class="h-[400px] md:h-auto overflow-y-auto">
+            <div class="h-[400px] md:h-auto overflow-y-scroll pb-24 md:pb-0">
                 <p class="text-sm md:text-2xl font-medium mb-4 md:mb-6 uppercase">Personal information</p>
-                <div class="block sm:flex gap-8">
+                <div class="block sm:flex gap-0 sm:gap-8">
                     <div class="w-full">
                         <label class="text-base font-medium text-dark pb-[10px] block" for="">Full name</label>
                         <input type="text" class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]" placeholder="Enter full name">
@@ -96,7 +96,7 @@
                         <input type="text" class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]" placeholder="Enter email address">
                     </div>
                 </div>
-                <div class="flex gap-8 mt-6">
+                <div class="block sm:flex gap-0 sm:gap-8 mt-6">
                     <div class="w-full">
                         <label class="text-base font-medium text-dark pb-[10px] block" for="">Mobile number</label>
                         <input type="text" class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]" placeholder="Enter mobile number">
@@ -107,7 +107,7 @@
                     </div>
                 </div>
                 <div class="mt-8">
-                    <p class="text-2xl font-medium mb-6">Resume / CV</p>
+                    <p class="text-sm md:text-2xl text-[#676769] md:text-dark font-medium mb-4 md:mb-6">Resume / CV</p>
                     <label class="text-base font-medium text-dark pb-[10px] block" for="">Resume / CV</label>
                     <div class="relative overflow-hidden">
                         <button class="w-full border border-[#1E88E5] border-dashed py-[22px] px-5 text-start rounded-[4px]">
@@ -136,8 +136,8 @@
                 </div>
             </div>
             <div class="small-device-bottom-section">
-                <div class="mt-12 mb-4 flex justify-center">
-                    <button class="h-[60px] w-[300px] flex justify-center items-center bg-corporate text-white rounded-full text-xl font-medium">Submit</button>
+                <div class="mt-4 md:mt-12 mb-4 flex justify-center px-4">
+                    <button class="h-10 md:h-[60px] w-full md:w-[300px] flex justify-center items-center bg-corporate text-white rounded-full text-sm md:text-xl font-medium">Submit</button>
                 </div>
             </div>
         </div>
@@ -243,7 +243,8 @@ const removeFile = () => {
     z-index: 5;
 }
 
-.small-device-bottom-section{
+@media(max-width:767px) {
+    .small-device-bottom-section{
     position: fixed;
     bottom: 0;
     left: 0;
@@ -253,4 +254,5 @@ const removeFile = () => {
     border-radius: 0 0 16px 16px;
 }
 
+}
 </style>
