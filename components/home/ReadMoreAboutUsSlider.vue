@@ -51,22 +51,22 @@ const readMoreSlider = ref([
         <div class="full-width">
           <swiper
               :breakpoints="{
-                    320: {
-                      slidesPerView: 1.2,
-                      spaceBetween: 20
-                    },
-                    640: {
-                      slidesPerView: 2.8,
-                      spaceBetween: 20
-                    },
-                    1024: {
-                      slidesPerView: 3.3,
-                      spaceBetween: 20
-                    },
-                    1280: {
-                      slidesPerView: 3.9,
-                      spaceBetween: 32
-                    }
+                320: {
+                  slidesPerView: 1.2,
+                  spaceBetween: 20
+                },
+                640: {
+                  slidesPerView: 2.8,
+                  spaceBetween: 20
+                },
+                1024: {
+                  slidesPerView: 3.3,
+                  spaceBetween: 20
+                },
+                1280: {
+                  slidesPerView: 3.9,
+                  spaceBetween: 32
+                }
               }"
               :navigation="true"
               :spaceBetween="30"
