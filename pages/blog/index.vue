@@ -6,6 +6,7 @@
         </div>
     </header>
     <BlogHeroSection />
+    <BlogRecentArticles />
 </template>
 
 <script setup>
