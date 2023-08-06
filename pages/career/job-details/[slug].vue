@@ -18,7 +18,7 @@
     <div class="custom-container mt-10 mb-[120px]">
         <div class="grid grid-cols-12 gap-8 lg:gap-12">
             <div class="col-span-12 md:col-span-5 lg:col-span-4">
-                <div class="border border-[#EDEDED] rounded-2xl p-5">
+                <div class="border border-lightGrey rounded-2xl p-5">
                     <div class="flex items-center gap-5">
                         <div><img class="h-6 w-6" src="/images/career/job-nature-icon.svg" alt="Job nature"></div>
                         <div>

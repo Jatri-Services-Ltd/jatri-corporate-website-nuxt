@@ -7,6 +7,8 @@
     </header>
     <BlogHeroSection />
     <BlogRecentArticles />
+    <HomeScrollingScreenSection />
+    <AboutUsLookingForTalent />
 </template>
 
 <script setup>

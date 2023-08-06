@@ -6,7 +6,7 @@
 
       <div class="mt-8 md:mt-[60px]">
         <div class="grid grid-cols-2 md:grid-cols-4 gap-5 md:gap-8">
-          <div class="border border-[#EDEDED] rounded-2xl text-center">
+          <div class="border border-lightGrey rounded-2xl text-center">
             <div class="relative">
               <img class="rounded-2xl rounded-b-none w-full h-auto" src="/images/about-us/leader.png" alt="Jatri leader">
               <a href="#" class="absolute right-3 -bottom-5"><img class="h-10 w-10 rounded-full border-4 border-white" src="/images/about-us/linked-in.svg" alt="Linkedin" ></a>
@@ -14,7 +14,7 @@
             <p class="text-xl mt-5 font-medium mb-2">Aziz Arman</p>
             <p class="text-xl text-[14px] leading-5 mb-3">CEO</p>
           </div>
-          <div class="border border-[#EDEDED] rounded-2xl text-center">
+          <div class="border border-lightGrey rounded-2xl text-center">
             <div class="relative">
               <img class="rounded-2xl rounded-b-none w-full h-auto" src="/images/about-us/leader.png" alt="Jatri leader">
               <a href="#" class="absolute right-3 -bottom-5"><img class="h-10 w-10 rounded-full border-4 border-white" src="/images/about-us/linked-in.svg" alt="Linkedin" ></a>
@@ -22,7 +22,7 @@
             <p class="text-xl mt-5 font-medium mb-2">Aziz Arman</p>
             <p class="text-xl text-[14px] leading-5 mb-3">CEO</p>
           </div>
-          <div class="border border-[#EDEDED] rounded-2xl text-center">
+          <div class="border border-lightGrey rounded-2xl text-center">
             <div class="relative">
               <img class="rounded-2xl rounded-b-none w-full h-auto" src="/images/about-us/leader.png" alt="Jatri leader">
               <a href="#" class="absolute right-3 -bottom-5"><img class="h-10 w-10 rounded-full border-4 border-white" src="/images/about-us/linked-in.svg" alt="Linkedin" ></a>
@@ -30,7 +30,7 @@
             <p class="text-xl mt-5 font-medium mb-2">Aziz Arman</p>
             <p class="text-xl text-[14px] leading-5 mb-3">CEO</p>
           </div>
-          <div class="border border-[#EDEDED] rounded-2xl text-center">
+          <div class="border border-lightGrey rounded-2xl text-center">
             <div class="relative">
               <img class="rounded-2xl rounded-b-none w-full h-auto" src="/images/about-us/leader.png" alt="Jatri leader">
               <a href="#" class="absolute right-3 -bottom-5"><img class="h-10 w-10 rounded-full border-4 border-white" src="/images/about-us/linked-in.svg" alt="Linkedin" ></a>

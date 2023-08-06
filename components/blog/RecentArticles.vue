@@ -1,6 +1,6 @@
 <template>
     <div class="custom-container mx-auto pb-[120px]">
-        <div class="border-b border-[#EDEDED]">
+        <div class="border-b border-lightGrey">
             <h3 class="text-[28px] leading-9 font-medium inline-block recent-articles relative">Recent articles</h3>
         </div>
         <template v-if="recentArticle.length > 0">
