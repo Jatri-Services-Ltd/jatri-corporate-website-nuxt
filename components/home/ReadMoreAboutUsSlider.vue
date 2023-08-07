@@ -9,27 +9,34 @@ const modules = [Navigation, FreeMode];
 const readMoreSlider = ref([
   {
     id: 1,
+    img:'/images/shohag-poribohon-home-slider-img.jpg',
+    title:'Jatri and Shohagh Paribahan are Together Now!',
+    publishedAt: '08 August, 2023',
+    link: '/blog/details/shohagh-paribahan'
+  },
+  {
+    id: 2,
     img:'/images/read-more-slide1.png',
     title:'London Express and Jatri Ticket Website are Together...',
     publishedAt: '12 Feb 2023',
     link: '/blog/details/london-express'
   },
   {
-    id: 2,
+    id: 3,
     img:'/images/read-more-slide2.png',
     title:'Jeddah Express Jatri Ticket Website and are Together...',
     publishedAt: '12 Feb 2023',
     link: 'blog/details/jeddah-express'
   },
   {
-    id: 3,
+    id: 4,
     img:'/images/read-more-slide3.png',
     title:'Green Line Jatri Ticket Website and Jeddah Expres...',
     publishedAt: '12 Feb 2023',
     link: 'blog/details/green-line'
   },
   {
-    id: 4,
+    id: 5,
     img:'/images/read-more-slide4.png',
     title:'যাত্রী পার্টনার অ্যাপ: রেন্ট-এ-কার ব্যবসা খাতে নতুন সংযোজন !',
     publishedAt: '20 Jan 2022',

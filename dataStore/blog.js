@@ -1,5 +1,30 @@
 const blogList =[
     {
+        "slug" : "shohagh-paribahan",
+        "titleImage" : "blog/shohag.jpg",
+        "title" : "Jatri and Shohagh Paribahan are Together Now!",
+        "smallDescription": "<p>Are you planning to go on a tour to Kuakata or Cox’s Bazar? Are you tired of getting the bus tickets from the counter and want a smooth website to purchase tickets online? Through its platform Jatri is giving you the best operator, Shohagh Paribahan Limited, with comfortable bus seats and a luxurious environment.</p>",
+        "createdBy" : "Afroza Akter Nitu",
+        "createdDateTime" : "8th August, 2023",
+        "bannerImage" : "blog/shohag-poribohon.jpg",
+        "description" : "<div class=\"md:flex md:justify-between gap-5 my-3\"><div class=\"w-full md:w-1/2\">\n" +
+            "<div class=\"aos-init aos-animate\" data-aos=\"fade-up\">\n" +
+            "<h1 class=\"corporate_color mt-2 font-bold text-2xl tracking-tight\">Jatri and Shohagh Paribahan are Together Now!</h1>\n" +
+            "</div>\n" +
+            "<div class=\"aos-init aos-animate\" data-aos=\"fade-up\">\n" +
+            "<p class=\"py-3 text-gray-700 text-justify text-sm leading-6 body_text\">Are you planning to go on a tour to Kuakata or Cox’s Bazar? Are you tired of getting the bus tickets from the counter and want a smooth website to purchase tickets online? Through its platform Jatri is giving you the best operator, Shohagh Paribahan Limited, with comfortable bus seats and a luxurious environment.</p>\n" +
+            "<p class=\"py-3 text-gray-700 text-justify text-sm leading-6 body_text\">Shohag Paribahan is one of the most modern transport services in Bangladesh. Since 1992, Shohagh Paribahan has been providing bus service in the southern part of Bangladesh. Now, they are providing services not only in the southern part but also all the possible routes in Bangladesh.</p>\n" +
+            "</div>\n" +
+            "</div>\n" +
+            "<div class=\"w-full md:w-1/2\">\n" +
+            "<p class=\"py-3 text-gray-700 text-justify text-sm leading-6 body_text\">Now, Shohagh Paribahan is available in Dhaka-Chittagong-Cox’s Bazar, Dhaka-Barisal and Dhaka-Khulna routes through Jatri ticket Website.</p>\n" +
+            "<p class=\"py-3 text-gray-700 text-justify text-sm leading-6 body_text\">If you need extra comfort on a long journey, then Shohagh Paribahan is there with comfortable seats and a peaceful bus environment. You can easily buy your travel tickets online from the Jatri ticket website. You can easily choose your favourite seats and your preferable time. The ticket fare starts from 800 BDT.</p>\n" +
+            "<p class=\"py-3 text-gray-700 text-justify text-sm leading-6 body_text\">Shohagh Paribahan has both AC and Non-AC bus services. You can find the lowest prices, and renowned bus operators on our platform. Stay with Jatri and book your bus tickets from Jatri website!</p>\n" +
+            "</div>" +
+            "</div>"
+
+    },
+    {
         "slug" : "london-express",
         "titleImage" : "blog/London-Express-Blog-Featured.jpg",
         "title" : "Jatri Ticket Website and London Express are Together Now!",
