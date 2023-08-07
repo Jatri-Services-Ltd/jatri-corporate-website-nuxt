@@ -57,7 +57,10 @@
                     <nuxt-link :to="localePath('/blog')" class="text-white font-normal text-base">{{ $t('n-footer-blog') }}</nuxt-link>
                   </li>
                   <li>
-                    <nuxt-link :to="localePath('/contact-us')" class="text-white font-normal text-base">{{ $t('n-contact-us') }}</nuxt-link>
+                    <nuxt-link :to="localePath('/contact-us')" class="text-white font-normal text-base">{{ $t('n-contact-us') }} </nuxt-link>
+                  </li>
+                  <li>
+                    <nuxt-link :to="localePath('/jatri-press')" class="text-white font-normal text-base">Jatri Press</nuxt-link>
                   </li>
                 </ul>
               </div>
