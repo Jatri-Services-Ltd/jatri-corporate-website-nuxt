@@ -11,7 +11,7 @@ const readMoreSlider = ref([
     id: 1,
     img:'/images/shohag-poribohon-home-slider-img.jpg',
     title:'Jatri and Shohagh Paribahan are Together Now!',
-    publishedAt: '08 August, 2023',
+    publishedAt: '09 August, 2023',
     link: '/blog/details/shohagh-paribahan'
   },
   {

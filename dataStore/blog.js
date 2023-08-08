@@ -1,11 +1,11 @@
 const blogList =[
     {
         "slug" : "shohagh-paribahan",
-        "titleImage" : "blog/shohag.jpg",
+        "titleImage" : "blog/shohag-poribohon-featured.jpg",
         "title" : "Jatri and Shohagh Paribahan are Together Now!",
         "smallDescription": "<p>Are you planning to go on a tour to Kuakata or Cox’s Bazar? Are you tired of getting the bus tickets from the counter and want a smooth website to purchase tickets online? Through its platform Jatri is giving you the best operator, Shohagh Paribahan Limited, with comfortable bus seats and a luxurious environment.</p>",
         "createdBy" : "Afroza Akter Nitu",
-        "createdDateTime" : "8th August, 2023",
+        "createdDateTime" : "9th August, 2023",
         "bannerImage" : "blog/shohag-poribohon.jpg",
         "description" : "<div class=\"md:flex md:justify-between gap-5 my-3\"><div class=\"w-full md:w-1/2\">\n" +
             "<div class=\"aos-init aos-animate\" data-aos=\"fade-up\">\n" +
