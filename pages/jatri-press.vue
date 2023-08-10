@@ -6,19 +6,19 @@
                 <button 
                     @click="isActive='release'" 
                     :class="isActive==='release' ? 'bg-dark text-white border-dark' : ''" 
-                    class="border border-lightGrey rounded-full py-[11px] px-5 xs:px-6 text-dark text-xs md:text-base font-medium">
+                    class="border border-lightGrey rounded-full py-[11px] px-5 sm:px-6 text-dark text-xs md:text-base font-medium">
                     Press release
                 </button>
                 <button 
                     @click="isActive='kit'" 
                     :class="isActive==='kit' ? 'bg-dark text-white border-dark' : ''" 
-                    class="border border-lightGrey rounded-full py-[11px] px-5 xs:px-6 text-dark text-xs md:text-base font-medium">
+                    class="border border-lightGrey rounded-full py-[11px] px-5 sm:px-6 text-dark text-xs md:text-base font-medium">
                     Press kit
                 </button>
                 <button 
                     @click="isActive='inquires'" 
                     :class="isActive==='inquires' ? 'bg-dark text-white border-dark' : ''" 
-                    class="border border-lightGrey rounded-full py-[11px] px-5 xs:px-6 text-dark text-xs md:text-base font-medium">
+                    class="border border-lightGrey rounded-full py-[11px] px-5 sm:px-6 text-dark text-xs md:text-base font-medium">
                     Press inquires
                 </button>
             </div>
