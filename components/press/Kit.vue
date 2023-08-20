@@ -96,6 +96,15 @@
                 </div>
             </div>
         </div>
+
+        <!-- Bottom section -->
+        <!-- <div class="new-div">
+            <div class="grid grid-cols-5 gap-x-4 gap-y-2 items-center">
+                <div class="bg-white border border-gray-400 rounded-2xl p-6">
+                    <h5 class="bg-blue-500 text-white p-2 rounded-md">Jatri press release</h5>
+                </div>
+            </div>
+        </div> -->
     </div>
 </template>
 
