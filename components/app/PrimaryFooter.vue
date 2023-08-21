@@ -105,9 +105,9 @@
           </div>
 
           <div class="order-1 lg:order-2 border-b border-b-[#F6958A] lg:border-b-0 py-6 lg:pb-0 flex justify-center lg:justify-end items-center lg:gap-8 text-center lg:text-right">
-            <nuxt-link :to="localePath('/terms-and-policies#terms-and-conditions')" class="pr-4 sm:pr-8 lg:pr-0 text-white font-medium text-sm underline">{{ $t('n-footer-terms-conditions') }}</nuxt-link>
-            <nuxt-link :to="localePath('/terms-and-policies#return-and-refund-policy')" class="text-white font-medium text-sm underline border-x border-[#F6958A] lg:border-x-0 px-4 sm:px-8 lg:px-0">{{ $t('n-footer-return-refund') }}</nuxt-link>
-            <nuxt-link :to="localePath('/terms-and-policies#privacy-policy')" class="pl-4 sm:pl-8 lg:pl-0 text-white font-medium text-sm underline">{{ $t('n-footer-privacy-policy') }}</nuxt-link>
+            <nuxt-link :to="localePath('/terms-and-policies') + '#terms-and-conditions'" class="pr-4 sm:pr-8 lg:pr-0 text-white font-medium text-sm underline">{{ $t('n-footer-terms-conditions') }}</nuxt-link>
+            <nuxt-link :to="localePath('/terms-and-policies') + '#return-and-refund-policy'" class="text-white font-medium text-sm underline border-x border-[#F6958A] lg:border-x-0 px-4 sm:px-8 lg:px-0">{{ $t('n-footer-return-refund') }}</nuxt-link>
+            <nuxt-link :to="localePath('/terms-and-policies') + '#privacy-policy'" class="pl-4 sm:pl-8 lg:pl-0 text-white font-medium text-sm underline">{{ $t('n-footer-privacy-policy') }}</nuxt-link>
           </div>
         </div>
       </div>
