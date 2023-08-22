@@ -125,7 +125,7 @@ useHead({
                 </div>
 
                 <div class="w-1/3 md:w-1/6 flex flex-col justify-start gap-1">
-                  <p class="text-lg md:text-2xl corporate_color body_text font-semibold"> Job Nature</p>
+                  <p class="text-lg md:text-2xl corporate_color body_text font-semibold">Employment Status</p>
 
                   <div class="leading-3">
                     <p class="text-xs md:text corporate_color body_text">{{career.employment_type}}</p>
