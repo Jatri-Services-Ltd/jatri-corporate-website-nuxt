@@ -113,10 +113,10 @@ useHead({
               </div>
 
               <!-- About -->
-              <div class="flex flex-wrap justify-between align-middle items-center mt-10">
+              <div class="flex flex-wrap gap-x-5 lg:gap-x-20 gap-y-3 mt-10">
 
-                <div class="w-1/3 md:w-1/6 flex flex-col justify-start gap-1">
-                  <p class="text-lg md:text-2xl corporate_color body_text font-semibold"> Salary Range</p>
+                <div>
+                  <p class="text-lg md:text-xl lg:text-2xl corporate_color body_text font-semibold mb-2"> Salary Range</p>
 
                   <div class="leading-3">
                     <p class="text-xs md:text-sm corporate_color body_text">BDT {{career.salary}} </p>
@@ -124,28 +124,28 @@ useHead({
                   </div>
                 </div>
 
-                <div class="w-1/3 md:w-1/6 flex flex-col justify-start gap-1">
-                  <p class="text-lg md:text-2xl corporate_color body_text font-semibold">Employment Status</p>
+                <div>
+                  <p class="text-lg md:text-xl lg:text-2xl corporate_color body_text font-semibold mb-2">Employment Status</p>
 
                   <div class="leading-3">
-                    <p class="text-xs md:text corporate_color body_text">{{career.employment_type}}</p>
+                    <p class="text-xs md:text-sm corporate_color body_text">{{career.employment_type}}</p>
                   </div>
                 </div>
 
-                <div class="w-1/3 md:w-1/6 flex flex-col justify-start gap-1">
-                  <p class="text-lg md:text-2xl corporate_color body_text font-semibold"> Job Location</p>
+                <div>
+                  <p class="text-lg md:text-xl lg:text-2xl corporate_color body_text font-semibold mb-2"> Job Location</p>
 
                   <div class="leading-3">
-                    <p class="text-xs md:text corporate_color body_text">{{career.location}}</p>
+                    <p class="text-xs md:text-sm corporate_color body_text">{{career.location}}</p>
                   </div>
                 </div>
 
-                <div class="w-full md:w-3/6 flex flex-col justify-start md:justify-end h-full mt-5 md:mt-0">
+                <div>
                   <!-- <Button @click="showModal = !showModal" class=" corporate_bg_color text-white rounded px-9 py-5 md:px-12 ">Apply Now</Button> -->
-                  <p class="text-lg md:text-2xl corporate_color body_text font-semibold"> Mail your CV to</p>
+                  <p class="text-l md:text-xl lg:text-2xl corporate_color body_text font-semibold mb-2"> Mail your CV to</p>
 
                   <div class="leading-3">
-                    <p class="text-sm md:text corporate_color body_text"><a href="mailto:career@jatri.co">{{career.mail_to}}</a></p>
+                    <p class="text-sm md:text-sm corporate_color body_text"><a href="mailto:career@jatri.co">{{career.mail_to}}</a></p>
                     <!-- <p class="text-xs md:text text-gray-400 body_text">Full Time</p> -->
                   </div>
                 </div>
