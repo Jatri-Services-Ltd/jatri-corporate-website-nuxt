@@ -99,9 +99,9 @@
         </div>
 
         <div class="border-t border-[#F6958A] grid lg:grid-cols-2">
-          <div class="pt-6 order-2 lg:order-1 flex justify-center lg:justify-start items-center gap-2.5">
+          <div class="pt-6 order-2 lg:order-1 flex justify-center lg:justify-start items-start md:items-center gap-2 md:gap-2.5">
             <img src="~/assets/images/footer/copyright-white-icon.svg" alt="">
-            <p class="text-white text-base font-medium">{{ $t('n-footer-copyright1') }} @{{ $t('n-footer-copyright2') }}</p>
+            <p class="text-white text-base font-medium">{{ $t('n-footer-copyright') }}</p>
           </div>
 
           <div class="order-1 lg:order-2 border-b border-b-[#F6958A] lg:border-b-0 py-6 lg:pb-0 flex justify-center lg:justify-end items-center lg:gap-8 text-center lg:text-right">
