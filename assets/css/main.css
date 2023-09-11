@@ -5,6 +5,19 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Theme switcher */
+.dark {
+    @apply bg-dark
+}
+#theme-toggle:checked + .toggle-wrapper {
+    @apply bg-white
+}
+
+#theme-toggle:checked + .toggle-wrapper .toggle-thumb {
+    @apply bg-dark left-8
+}
+
 /* Common Css Code will be Write Here */
 .counter_number{
     @apply text-center font-semibold text-3xl md:text-5xl lg:text-7xl;
@@ -47,6 +60,8 @@
 .card_btn{
     @apply bg-white rounded-full text-xs md:text-sm lg:text-lg text-center absolute bottom-5 py-2 w-4/5 md:w-3/4 uppercase;
 }
+
+
 /* News Card Design */
 .news_card{
     @apply rounded-md bg-gray-200 shadow-xl overflow-hidden transform transition duration-700 hover:scale-y-105 h-auto mb-6;

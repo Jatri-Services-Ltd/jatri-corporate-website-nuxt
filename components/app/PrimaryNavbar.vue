@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky top-0 left-0 z-[999] w-full bg-white border-b border-[#EDEDED]">
+  <nav class="sticky top-0 left-0 z-[999] w-full bg-white dark:bg-slate-400 border-b border-[#EDEDED]">
     <div class="custom-container">
       <div class="flex items-center justify-between">
         <nuxt-link :to="localePath('/')" class="lg:hidden"><img class="h-8 w-16" src="~/assets/images/header/jatri-logo.svg" alt="jatri logo"></nuxt-link>
@@ -15,8 +15,25 @@
           </div>
         </div>
 
-
         <div class="hidden lg:flex gap-x-2 lg:gap-x-6 items-center">
+          <!-- Theme switcher -->
+          <div class="flex items-center gap-4">
+              <div class="flex items-center">
+                  <label for="theme-toggle" class="cursor-pointer">
+                      <input type="checkbox" id="theme-toggle" v-model="isDarkMode" class="hidden" />
+                      <div class="toggle-wrapper bg-dark w-14 h-7 rounded-full p-1 relative transition-all">
+                        <div class="toggle-thumb bg-white w-5 h-5 rounded-full absolute left-1 transition-all"></div>
+                      </div>
+                  </label>
+              </div>
+
+              <button @click="toggleSystemTheme" class="relative w-10 h-10 focus:outline-none focus:shadow-outline text-dark">
+                  <svg style="width:30px;height:30px" viewBox="0 0 24 24">
+                    <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12A10 10 0 0 0 12 22A10 10 0 0 0 22 12A10 10 0 0 0 12 2M12 4A8 8 0 0 1 20 12A8 8 0 0 1 12 20V4Z" />
+                  </svg>
+              </button>
+          </div>
+
           <div class="relative inline-block z-50 text-left min-w-[80px]">
             <div>
               <button
@@ -58,6 +75,7 @@
           <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white flex gap-x-2 items-center text-[16px] leading-6 font-medium rounded-full border border-[#EDEDED] pl-4 pr-6 py-2 lg:py-3 capitalize"><img src="~/assets/images/header/ticket.svg" alt="">{{ $t('n-ticket') }}</a>
         </div>
 
+        <!-- Mobile version -->
         <div class="flex gap-x-4 lg:hidden py-4">
           <a href="https://rental.jatri.co/" target="_blank" class="flex gap-x-2 justify-center items-center text-xs leading-6 font-medium rounded-full border border-[#EDEDED] px-4 py-3 w-[100px] h-9 capitalize"><img src="~/assets/images/header/car-svg.svg" alt="">{{ $t('n-rental') }}</a>
           <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white flex justify-center gap-x-2 items-center text-xs leading-6 font-medium rounded-full border border-[#EDEDED] w-[100px] h-9 capitalize"><img src="~/assets/images/header/ticket.svg" alt="">{{ $t('n-ticket') }}</a>
@@ -132,7 +150,7 @@
 </template>
 
 <script setup>
-import {ref} from "vue";
+import {ref, watch, onMounted} from "vue";
 const sidebarOpen = ref(false)
 
 const closeModal = ()=>{
@@ -156,6 +174,35 @@ const selectLanguage = (lang) => {
   selectedLanguage.value = lang;
   isOpen.value = false;
 };
+
+
+//Theme switcher code
+const isDarkMode = ref(false);
+
+const toggleSystemTheme = () => {
+  if (typeof window !== 'undefined') {
+    const systemThemeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    isDarkMode.value = systemThemeMediaQuery.matches;
+    updateTheme(isDarkMode.value);
+  }
+};
+
+const updateTheme = (darkMode) => {
+  document.documentElement.classList.toggle('dark', darkMode);
+  localStorage.setItem('darkMode', darkMode ? '1' : '0');
+};
+
+watch(isDarkMode, (newVal) => {
+  updateTheme(newVal);
+});
+
+onMounted(() => {
+  const storedTheme = localStorage.getItem('darkMode');
+  if (storedTheme === '1') {
+    isDarkMode.value = true;
+    updateTheme(true);
+  }
+});
 </script>
 
 <style scoped>
