@@ -7,11 +7,11 @@
         <div class="hidden lg:flex gap-x-6 lg:gap-x-12 py-5">
           <nuxt-link :to="localePath('/')"><img class="h-10 w-[81px]" src="~/assets/images/header/jatri-logo.svg" alt="jatri logo"></nuxt-link>
           <div class="hidden md:flex gap-x-6 lg-gap-x-8 xl:gap-x-10 items-center w-full">
-            <nuxt-link :to="localePath('/')" class="text-base font-medium text-black dark:text-darkBody inline-block text-center relative" active-class="active-menu">{{ $t('n-home') }}</nuxt-link>
-            <nuxt-link :to="localePath('/about-us')" class="text-base font-medium text-black dark:text-darkBody text-center inline-block relative" active-class="active-menu">{{ $t('n-about-us') }}</nuxt-link>
-            <nuxt-link :to="localePath('/career')" class="text-base font-medium text-black dark:text-darkBody text-center inline-block relative" active-class="active-menu">{{ $t('n-career') }}</nuxt-link>
-            <nuxt-link :to="localePath('/blog')" class="text-base font-medium text-black dark:text-darkBody text-center inline-block relative" active-class="active-menu">{{ $t('n-blogs') }}</nuxt-link>
-            <nuxt-link :to="localePath('/contact-us')" class="text-base font-medium text-black dark:text-darkBody text-center inline-block relative" active-class="active-menu">{{ $t('n-contact-us') }}</nuxt-link>
+            <nuxt-link :to="localePath('/')" class="text-base font-medium text-black dark:text-darkBody inline-block text-center relative custom-menu" active-class="active-menu">{{ $t('n-home') }}</nuxt-link>
+            <nuxt-link :to="localePath('/about-us')" class="text-base font-medium text-black dark:text-darkBody text-center inline-block relative custom-menu" active-class="active-menu">{{ $t('n-about-us') }}</nuxt-link>
+            <nuxt-link :to="localePath('/career')" class="text-base font-medium text-black dark:text-darkBody text-center inline-block relative custom-menu" active-class="active-menu">{{ $t('n-career') }}</nuxt-link>
+            <nuxt-link :to="localePath('/blog')" class="text-base font-medium text-black dark:text-darkBody text-center inline-block relative custom-menu" active-class="active-menu">{{ $t('n-blogs') }}</nuxt-link>
+            <nuxt-link :to="localePath('/contact-us')" class="text-base font-medium text-black dark:text-darkBody text-center inline-block relative custom-menu" active-class="active-menu">{{ $t('n-contact-us') }}</nuxt-link>
           </div>
         </div>
 
@@ -216,8 +216,11 @@ provide('darkMode', isDarkMode);
 * {
   font-family: 'Inter', sans-serif;
 }
+.custom-menu::after {
+  @apply absolute content-[""] w-0 h-1 bg-dark dark:bg-white transition-all duration-[0.5s] ease-[ease] -bottom-2 left-1/2 -translate-x-1/2;
+}
 .active-menu::after {
-  @apply absolute content-[""] w-full h-1 bg-dark dark:bg-white transition-all duration-[0.5s] ease-[ease] left-0 -bottom-2;
+  @apply w-full
 }
 .slide {
   @apply absolute animate-[slide_0.5s_forwards] -right-2/4;
