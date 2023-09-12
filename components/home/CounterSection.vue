@@ -95,7 +95,7 @@ const modules = [FreeMode, Pagination];
             </div>
           </div>
           <div class="gray-shape-bg w-full z-10">
-            <img src="~/assets/images/home/gray-shape-bg.png" class="w-full object-contain" alt="Jatri">
+            <img src="~/assets/images/home/gray-shape-bg.png" class="w-full object-contain invert-[0.9]" alt="Jatri">
           </div>
         </div>
     </section>
