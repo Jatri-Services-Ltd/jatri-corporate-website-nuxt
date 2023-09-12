@@ -35,6 +35,8 @@ module.exports = {
         success: '#48A43F',
         danger: '#EE3420',
         body: '#747476',
+        darkPrimary: '#0F0606',
+        darkBody: '#e7e7e7'
       },
       fontFamily: {
         sans: ['Montserrat', 'Myriad Pro'],

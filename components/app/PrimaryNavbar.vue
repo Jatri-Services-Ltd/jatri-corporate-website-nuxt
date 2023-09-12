@@ -1,5 +1,5 @@
 <template>
-  <nav class="sticky top-0 left-0 z-[999] w-full bg-white dark:bg-slate-400 border-b border-[#EDEDED]">
+  <nav class="sticky top-0 left-0 z-[999] w-full bg-white dark:bg-darkPrimary border-b border-[#EDEDED]">
     <div class="custom-container">
       <div class="flex items-center justify-between">
         <nuxt-link :to="localePath('/')" class="lg:hidden"><img class="h-8 w-16" src="~/assets/images/header/jatri-logo.svg" alt="jatri logo"></nuxt-link>
@@ -7,11 +7,11 @@
         <div class="hidden lg:flex gap-x-6 lg:gap-x-12 py-5">
           <nuxt-link :to="localePath('/')"><img class="h-10 w-[81px]" src="~/assets/images/header/jatri-logo.svg" alt="jatri logo"></nuxt-link>
           <div class="hidden md:flex gap-x-6 lg-gap-x-8 xl:gap-x-10 items-center w-full">
-            <nuxt-link :to="localePath('/')" class="text-[16px] leading-6 font-medium text-black inline-block text-center relative" active-class="active-menu">{{ $t('n-home') }}</nuxt-link>
-            <nuxt-link :to="localePath('/about-us')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">{{ $t('n-about-us') }}</nuxt-link>
-            <nuxt-link :to="localePath('/career')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">{{ $t('n-career') }}</nuxt-link>
-            <nuxt-link :to="localePath('/blog')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">{{ $t('n-blogs') }}</nuxt-link>
-            <nuxt-link :to="localePath('/contact-us')" class="text-[16px] leading-6 font-medium text-black text-center inline-block relative" active-class="active-menu">{{ $t('n-contact-us') }}</nuxt-link>
+            <nuxt-link :to="localePath('/')" class="text-base font-medium text-black dark:text-darkBody inline-block text-center relative" active-class="active-menu">{{ $t('n-home') }}</nuxt-link>
+            <nuxt-link :to="localePath('/about-us')" class="text-base font-medium text-black dark:text-darkBody text-center inline-block relative" active-class="active-menu">{{ $t('n-about-us') }}</nuxt-link>
+            <nuxt-link :to="localePath('/career')" class="text-base font-medium text-black dark:text-darkBody text-center inline-block relative" active-class="active-menu">{{ $t('n-career') }}</nuxt-link>
+            <nuxt-link :to="localePath('/blog')" class="text-base font-medium text-black dark:text-darkBody text-center inline-block relative" active-class="active-menu">{{ $t('n-blogs') }}</nuxt-link>
+            <nuxt-link :to="localePath('/contact-us')" class="text-base font-medium text-black dark:text-darkBody text-center inline-block relative" active-class="active-menu">{{ $t('n-contact-us') }}</nuxt-link>
           </div>
         </div>
 
@@ -21,15 +21,15 @@
               <div class="flex items-center">
                   <label for="theme-toggle" class="cursor-pointer">
                       <input type="checkbox" id="theme-toggle" v-model="isDarkMode" class="hidden" />
-                      <div class="toggle-wrapper bg-dark w-14 h-7 rounded-full p-1 relative transition-all">
+                      <div class="toggle-wrapper bg-darkPrimary w-14 h-7 rounded-full p-1 relative transition-all">
                         <div class="toggle-thumb bg-white w-5 h-5 rounded-full absolute left-1 transition-all"></div>
                       </div>
                   </label>
               </div>
 
-              <button @click="toggleSystemTheme" class="relative w-10 h-10 focus:outline-none focus:shadow-outline text-dark">
-                  <svg style="width:30px;height:30px" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12A10 10 0 0 0 12 22A10 10 0 0 0 22 12A10 10 0 0 0 12 2M12 4A8 8 0 0 1 20 12A8 8 0 0 1 12 20V4Z" />
+              <button @click="toggleSystemTheme">
+                  <svg class="w-[30px] h-[30px] fill-darkPrimary dark:fill-white" viewBox="0 0 24 24">
+                    <path d="M12 2A10 10 0 0 0 2 12A10 10 0 0 0 12 22A10 10 0 0 0 22 12A10 10 0 0 0 12 2M12 4A8 8 0 0 1 20 12A8 8 0 0 1 12 20V4Z" />
                   </svg>
               </button>
           </div>
@@ -44,8 +44,8 @@
                   aria-expanded="true"
                   aria-haspopup="true"
               >
-                <span>{{ locale === "bn" ? "বাংলা" : "English" }}</span>
-                <img src="~/assets/images/header/down-arrow.png" alt="down arrow" />
+                <span class="text-dark dark:text-darkBody">{{ locale === "bn" ? "বাংলা" : "English" }}</span>
+                <img src="~/assets/images/header/down-arrow.png" class="dark:invert" alt="down arrow" />
               </button>
             </div>
 
@@ -71,8 +71,14 @@
               </nuxt-link>
             </div>
           </div>
-          <a href="https://rental.jatri.co/" target="_blank" class="flex gap-x-2 items-center text-[16px] leading-6 font-medium rounded-full border border-[#EDEDED] px-4 py-2 lg:py-3 capitalize"><img src="~/assets/images/header/car-svg.svg" alt="">{{ $t('n-rental') }}</a>
-          <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white flex gap-x-2 items-center text-[16px] leading-6 font-medium rounded-full border border-[#EDEDED] pl-4 pr-6 py-2 lg:py-3 capitalize"><img src="~/assets/images/header/ticket.svg" alt="">{{ $t('n-ticket') }}</a>
+          <a href="https://rental.jatri.co/" target="_blank" class="bg-white text-dark flex gap-x-2 items-center text-base font-medium rounded-full border border-[#EDEDED] dark:border-white px-4 py-2 lg:py-3 capitalize">
+            <img src="~/assets/images/header/car-svg.svg" alt="">
+            <span>{{ $t('n-rental') }}</span>
+          </a>
+          <a href="https://ticket.jatri.co/" target="_blank" class="bg-corporate text-white dark:text-darkBody flex gap-x-2 items-center text-base font-medium rounded-full border border-[#EDEDED] dark:border-primary pl-4 pr-6 py-2 lg:py-3 capitalize">
+            <img src="~/assets/images/header/ticket.svg" alt="">
+            <span>{{ $t('n-ticket') }}</span>
+          </a>
         </div>
 
         <!-- Mobile version -->
@@ -142,15 +148,13 @@
         <div v-if="sidebarOpen" @click="closeModal" class="fixed inset-0 z-30 bg-black bg-opacity-30 h-full w-full cursor-default transition duration-300 ease-in-out"></div>
       </div>
 
-      <div v-if="isOpen" @click="isOpen = false"
-           class="fixed inset-0 z-30 h-full w-full cursor-default transition duration-300 ease-in-out">
-      </div>
+      <div v-if="isOpen" @click="isOpen = false" class="fixed inset-0 z-30 h-full w-full cursor-default transition duration-300 ease-in-out"></div>
     </div>
   </nav>
 </template>
 
 <script setup>
-import {ref, watch, onMounted} from "vue";
+import {ref, watch, onMounted, inject} from "vue";
 const sidebarOpen = ref(false)
 
 const closeModal = ()=>{
@@ -177,7 +181,8 @@ const selectLanguage = (lang) => {
 
 
 //Theme switcher code
-const isDarkMode = ref(false);
+// const isDarkMode = ref(false);
+const isDarkMode = inject('darkMode');
 
 const toggleSystemTheme = () => {
   if (typeof window !== 'undefined') {
@@ -203,6 +208,8 @@ onMounted(() => {
     updateTheme(true);
   }
 });
+
+provide('darkMode', isDarkMode);
 </script>
 
 <style scoped>
@@ -210,7 +217,7 @@ onMounted(() => {
   font-family: 'Inter', sans-serif;
 }
 .active-menu::after {
-  @apply absolute content-[""] w-full h-1 bg-[#151414] transition-all duration-[0.5s] ease-[ease] left-0 -bottom-2;
+  @apply absolute content-[""] w-full h-1 bg-dark dark:bg-white transition-all duration-[0.5s] ease-[ease] left-0 -bottom-2;
 }
 .slide {
   @apply absolute animate-[slide_0.5s_forwards] -right-2/4;

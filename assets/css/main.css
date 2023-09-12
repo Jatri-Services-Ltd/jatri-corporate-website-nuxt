@@ -8,14 +8,14 @@
 
 /* Theme switcher */
 .dark {
-    @apply bg-dark
+    @apply bg-darkPrimary text-darkBody
 }
 #theme-toggle:checked + .toggle-wrapper {
     @apply bg-white
 }
 
 #theme-toggle:checked + .toggle-wrapper .toggle-thumb {
-    @apply bg-dark left-8
+    @apply bg-darkPrimary left-8
 }
 
 /* Common Css Code will be Write Here */

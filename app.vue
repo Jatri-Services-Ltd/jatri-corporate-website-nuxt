@@ -8,12 +8,19 @@
       </div>
     </div>
   </div>
+
   <NuxtLayout>
     <NuxtLoadingIndicator/>
     <NuxtPage/>
   </NuxtLayout>
 </template>
+
 <script setup lang="ts">
+import { provide } from 'vue';
+
+const isDarkMode = ref(false);
+provide('darkMode', isDarkMode);
+
 const nuxtApp = useNuxtApp();
 const loading = ref(true);
 nuxtApp.hook("page:start", () => {
