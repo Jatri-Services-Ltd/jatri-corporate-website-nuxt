@@ -181,7 +181,6 @@ const selectLanguage = (lang) => {
 
 
 //Theme switcher code
-// const isDarkMode = ref(false);
 const isDarkMode = inject('darkMode');
 
 const toggleSystemTheme = () => {

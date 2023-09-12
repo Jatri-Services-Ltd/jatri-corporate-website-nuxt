@@ -82,15 +82,15 @@ const modules = [FreeMode, Pagination];
         <div class="hidden lg:block">
           <div class="grid grid-cols-3 z-20 relative mt-10">
             <div class="text-center">
-              <p class="text-dark text-3xl lg:text-[38px] xl:text-[45px] font-bold mb-1 xl:mb-2 leading-[52px]">{{ $t('n-counter-300') }}</p>
+              <p class="text-dark text-3xl lg:text-[38px] xl:text-[45px] font-bold mb-1 xl:mb-2 leading-[52px] dark:text-darkBody">{{ $t('n-counter-300') }}</p>
               <p class="text-body text-[18px] xl:text-xl font-medium leading-7">{{ $t('n-counter-registered-user') }}</p>
             </div>
             <div class="text-center">
-              <p class="text-dark text-3xl lg:text-[38px] xl:text-[45px] font-bold mb-1 xl:mb-2 leading-[52px]">{{ $t('n-counter-million') }}</p>
+              <p class="text-dark text-3xl lg:text-[38px] xl:text-[45px] font-bold mb-1 xl:mb-2 leading-[52px] dark:text-darkBody">{{ $t('n-counter-million') }}</p>
               <p class="text-body text-[18px] xl:text-xl font-medium leading-7">{{ $t('n-counter-tickets-served') }}</p>
             </div>
             <div class="text-center">
-              <p class="text-dark text-3xl lg:text-[38px] xl:text-[45px] font-bold mb-1 xl:mb-2 leading-[52px]">{{ $t('n-counter-100') }}</p>
+              <p class="text-dark text-3xl lg:text-[38px] xl:text-[45px] font-bold mb-1 xl:mb-2 leading-[52px] dark:text-darkBody">{{ $t('n-counter-100') }}</p>
               <p class="text-body text-[18px] xl:text-xl font-medium leading-7">{{ $t('n-counter-rental-partners') }}</p>
             </div>
           </div>
