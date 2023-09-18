@@ -44,7 +44,7 @@ export default defineNuxtConfig({
             cookieKey: 'j_lang',
             alwaysRedirect: false
           },
-        defaultLocale: 'bn',
+        defaultLocale: 'en',
         langDir: 'lang',
         locales: [
             {
