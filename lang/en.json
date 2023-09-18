@@ -58,8 +58,6 @@
 
   "n-testimonial-title": "Don’t just believe our words",
 
-
-
   "n-counter-300": "300K+",
   "n-counter-million": "100 Million+",
   "n-counter-100": "60K+",
@@ -94,6 +92,10 @@
   "n-footer-products-3": "Jatri Ticket",
   "n-footer-career": "Career",
   "n-footer-blog": "Blogs",
+  "n-footer-services": "Services",
+  "n-footer-rental": "Rental",
+  "n-footer-bus-ticketing": "Bus ticketing",
+  "n-footer-launch-ticketing": "Launch ticketing",
   "n-footer-others": "Others",
   "n-footer-others-1": "Ride sharing guideline",
   "n-footer-others-2": "Enlistment certificate",
@@ -104,6 +106,7 @@
   "n-footer-return-refund": "Return & refund policy",
   "n-footer-privacy-policy": "Privacy policy",
   "n-footer-copyright": "All rights reserved, Jatri Services Limited. 2023",
+  "n-footer-tagline": "Jatri is a digital platform to make your daily commuting better.",
 
 
   "title": "Vue 3 i18n",
@@ -232,7 +235,5 @@
   "subscribe": "Subscribe",
   "about-us": "About Us",
   "terms-conditions": "Terms & Conditions",
-  "privacy-policy": "Privacy Policy",
-  "footer-tagline": "JATRI: EMPOWERING BANGLADESH TO TRAVEL BETTER",
-  "copyright-text": "© Copyright - JATRI 2023. ALL RIGHT RESERVED"
+  "privacy-policy": "Privacy Policy"
 }
