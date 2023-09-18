@@ -13,7 +13,7 @@
           </nuxt-link>
           <p class="text-sm font-normal text-white mt-3">{{ $t('n-footer-tagline') }}</p>
         </div>
-        <div class="mt-4 md:mt-0">
+        <div>
           <p class="text-white text-base font-medium mb-2">{{ $t('n-footer-download-app') }}</p>
           <a href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=" target="_blank">
             <img src="~/assets/images/footer/google-play-icon.png" alt="Google play icon">
@@ -71,7 +71,7 @@
         </div>
 
         <div class="mt-2 lg:mt-0">
-          <h4 class="text-white text-xl font-medium mb-6">Contacts</h4>
+          <h4 class="text-white text-xl font-medium mb-6">{{ $t('n-footer-contacts') }}</h4>
           <ul class="grid gap-4">
             <li class="flex items-center gap-2">
               <img class="w-4" src="~/assets/images/footer/question-white-icon.svg" alt="Question icon">
@@ -89,19 +89,19 @@
         </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row items-center lg:justify-between lg:items-center gap-2 pt-6">
-        <div class="px-4 lg:px-0 pt-4 lg:pt-0 flex justify-center gap-2.5 order-1 lg:order-none">
+      <div class="flex flex-col lg:flex-row lg:justify-between items-center gap-2 pt-6">
+        <div class="px-4 lg:px-0 pt-4 lg:pt-0 flex justify-center lg:justify-start gap-2.5 order-1 lg:order-none">
           <img class="w-5" src="~/assets/images/footer/copyright-white-icon.svg" alt="">
           <p class="text-white text-sm font-medium">{{ $t('n-footer-copyright') }}</p>
         </div>
 
-        <div class="px-4 lg:px-0 pb-4 lg:pb-0 flex justify-center gap-3 xl:gap-8 divide-x divide-[#F6958A] lg:divide-x-0">
-          <nuxt-link :to="localePath('/user/term-and-condition')" class="text-white font-medium text-sm underline text-center">{{ $t('n-footer-terms-conditions') }}</nuxt-link>
-          <nuxt-link :to="localePath('/user/refund-policy-of-jatri')" class="text-white font-medium text-sm underline text-center pl-4 lg:pl-0">{{ $t('n-footer-return-refund') }}</nuxt-link>
-          <nuxt-link :to="localePath('/user/privacy-policy')" class="text-white font-medium text-sm underline text-center pl-4 lg:pl-0">{{ $t('n-footer-privacy-policy') }}</nuxt-link>
+        <div class="px-4 lg:px-0 pb-4 lg:pb-0 flex justify-between gap-3 xl:gap-8 text-center divide-x divide-[#F6958A] lg:divide-x-0 space-x-0 sm:space-x-4 lg:space-x-0">
+          <nuxt-link :to="localePath('/user/term-and-condition')" class="text-white font-medium text-sm underline">{{ $t('n-footer-terms-conditions') }}</nuxt-link>
+          <nuxt-link :to="localePath('/user/refund-policy-of-jatri')" class="text-white font-medium text-sm underline pl-2 sm:pl-6 lg:pl-0">{{ $t('n-footer-return-refund') }}</nuxt-link>
+          <nuxt-link :to="localePath('/user/privacy-policy')" class="text-white font-medium text-sm underline pl-2 sm:pl-6 lg:pl-0">{{ $t('n-footer-privacy-policy') }}</nuxt-link>
         </div>
 
-        <div class="px-4 lg:px-0 flex justify-center lg:justify-end items-center gap-9 lg:gap-3 xl:gap-9 border-y border-[#F6958A] lg:border-y-0 py-4 lg:py-0 w-full">
+        <div class="px-4 lg:px-0 flex justify-center lg:justify-end items-center gap-9 lg:gap-3 xl:gap-9 border-y border-[#F6958A] lg:border-y-0 py-4 lg:py-0 w-full lg:w-auto">
           <a class="w-8" href="https://www.facebook.com/JatriApp/" target="_blank"><img src="~/assets/images/footer/facebook-white.svg" alt="Facebook icon"></a>
           <a class="w-8" href="https://www.youtube.com/@JATRIAPP" target="_blank"><img src="~/assets/images/footer/youtube-white.svg" alt="Youtube icon"></a>
           <a class="w-8" href="https://ca.linkedin.com/company/jatri-app" target="_blank"><img src="~/assets/images/footer/linkedin-white.svg" alt="Linkedin icon"></a>
