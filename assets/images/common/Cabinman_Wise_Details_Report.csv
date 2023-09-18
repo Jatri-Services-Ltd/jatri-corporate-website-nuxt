@@ -1,0 +1,15 @@
+﻿Deck Class N\AC,,,,,,,,,,,
+SL,TICKET DATE TIME,SHIP NAME,PASSENGER NAME,PASSENGER PHONE,BOARDING PLACE,DROPPING PLACE,FLOOR NAME,SEAT NUMBERS,TOTAL SEAT,RECEIVABLE AMOUNT,ISSUED BY
+1,17 Aug 2023 | 6:44 PM,Floor wise ship,,,Dhaka,Barishal,N/A,"C22, C23, C24",3,600,Karim CM
+,,,,,,,,,Total Seat: 3,Total Amount: 600 TK,
+Double Cabin N\AC,,,,,,,,,,,
+SL,TICKET DATE TIME,SHIP NAME,PASSENGER NAME,PASSENGER PHONE,BOARDING PLACE,DROPPING PLACE,FLOOR NAME,SEAT NUMBERS,TOTAL SEAT,RECEIVABLE AMOUNT,ISSUED BY
+1,17 Aug 2023 | 7:46 PM,Floor wise ship,,,Dhaka,Barishal,1st Floor,A5,1,300,Karim CM
+2,17 Aug 2023 | 11:21 PM,Floor wise ship,Nusrat,,Dhaka,Barishal,1st Floor,A1,1,250,Karim CM
+3,17 Aug 2023 | 11:21 PM,Floor wise ship,,,Dhaka,Barishal,1st Floor,A2,1,300,Karim CM
+4,17 Aug 2023 | 11:22 PM,Floor wise ship,,,Dhaka,Barishal,1st Floor,A3,1,300,Karim CM
+5,17 Aug 2023 | 11:23 PM,Floor wise ship,,,Dhaka,Barishal,1st Floor,A4,1,300,Karim CM
+6,17 Aug 2023 | 11:29 PM,Floor wise ship,Nusrat,,Dhaka,Barishal,1st Floor,A5,1,250,Karim CM
+7,17 Aug 2023 | 11:32 PM,Floor wise ship,Popi,1753084538,Dhaka,Barishal,1st Floor,A6,1,300,Karim CM
+8,17 Aug 2023 | 11:37 PM,Floor wise ship,,,Dhaka,Barishal,1st Floor,B2,1,300,Karim CM
+,,,,,,,,,Total Seat: 8,Total Amount: 2300 TK,
