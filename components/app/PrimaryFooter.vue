@@ -1,10 +1,10 @@
 <template>
   <footer>
-    <div class="hidden md:block">
+    <div class="hidden lg:block">
       <img src="~/assets/images/footer/footer-top-img.png" alt="Footer img" width="100%">
     </div>
 
-    <div class="w-full mx-auto lg:px-[60px] xl:px-[100px] 2xl:px-[200px] bg-[#f04935] pt-6 lg:pt-12 pb-6 lg:pb-8 divide-y divide-[#F6958A] space-y-6">
+    <div class="w-full mx-auto lg:px-[60px] xl:px-[100px] 2xl:px-[200px] bg-[#f04935] py-6 lg:py-8 divide-y divide-[#F6958A] space-y-6">
 
       <div class="px-4 lg:px-0 flex flex-wrap gap-4 justify-between">
         <div>
@@ -111,9 +111,3 @@
     </div>
   </footer>
 </template>
-
-<style scoped>
-* {
-  font-family: 'Inter', sans-serif;
-}
-</style>
