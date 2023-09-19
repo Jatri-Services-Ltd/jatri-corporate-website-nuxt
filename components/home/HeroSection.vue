@@ -5,7 +5,7 @@
       <img src="~/assets/images/home/hero-banner.svg" alt="Hero bg img" class="w-full rounded-[32px] relative hidden sm:block">
       <img src="~/assets/images/home/hero-bg-mobile.svg" alt="Hero bg img" class="w-full rounded-[32px] relative sm:hidden">
 
-      <div class="w-full lg:max-w-[870px] px-4 text-center absolute top-14 lg:top-[60px] xl:top-[140px] left-1/2 transform -translate-x-1/2">
+      <div class="w-full lg:max-w-[870px] px-4 text-center absolute top-14 lg:top-[60px] xl:top-[140px] left-1/2 transform -translate-x-1/2 mobile-res">
         <h1 class="hidden lg:block text-[32px] leading-10 lg:text-[64px] lg:leading-[72px] font-bold">{{ $t('n-hero-title') }}</h1>
         <h1 class="block lg:hidden text-[32px] leading-10 lg:text-[64px] lg:leading-[72px] font-bold">{{ $t('n-mob-hero-title1') }} <br> {{ $t('n-mob-hero-title2') }} <br> {{ $t('n-mob-hero-title3') }}</h1>
           <div class="inline-block m-auto mt-[30px] lg:mt-10">
@@ -17,3 +17,11 @@
       </div>
     </section>
 </template>
+
+<style scoped>
+@media only screen and (max-width: 352px) {
+  .mobile-res {
+    @apply top-8
+  }
+}
+</style>
