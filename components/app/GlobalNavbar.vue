@@ -46,20 +46,20 @@ const selectLanguage = (lang) => {
                       </div>
                   </div>
             </div>
-          <div class="hidden lg:block relative inline-block text-left min-w-[80px]">
+          <div class="hidden lg:block relative inline-block text-left">
             <div>
               <button
                   @click="isOpen = !isOpen"
                   type="button"
-                  class="w-full flex justify-between items-center gap-2 text-base font-medium focus:outline-none bg-[#F7F7F7] px-3 py-2 rounded-full"
+                  class="w-full flex justify-between items-center gap-1 text-base font-medium focus:outline-none bg-[#F7F7F7] px-3 py-2 rounded-full"
                   id="menu-button"
                   aria-expanded="true"
                   aria-haspopup="true"
               >
-                <div class="flex items-center gap-2.5">
-                  <p>{{ locale === "bn" ? "BN" : "EN" }}</p>
+                <div class="flex items-center gap-1">
+                  <p class="text-xs font-medium">{{ locale === "bn" ? "BN" : "EN" }}</p>
                 </div>
-                <img src="~/assets/images/header/grey-down-arrow.png" alt="arrow" class="transition" :class="isOpen ? 'transform rotate-180' : 'transform rotate-0'" />
+                <img src="~/assets/images/header/black_arrow.png" alt="arrow" class="transition h-4 w-4" :class="isOpen ? 'transform rotate-180' : 'transform rotate-0'" />
               </button>
             </div>
 
