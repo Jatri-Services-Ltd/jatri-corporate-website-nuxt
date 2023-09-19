@@ -28,11 +28,11 @@
     </div>
   </section>
 </template>
-
+<!-- 
 <style scoped>
 @media only screen and (max-width: 352px) {
   .custom-container {
     @apply -mt-5
   }
 }
-</style>
+</style> -->
