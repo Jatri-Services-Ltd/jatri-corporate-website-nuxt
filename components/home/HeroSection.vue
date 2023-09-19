@@ -1,9 +1,9 @@
 
 <template>
     <!-- Hero Section -->
-    <section class="relative">
-      <img src="~/assets/images/home/hero-banner.svg" alt="Hero bg img" class="w-full relative hidden sm:block">
-      <img src="~/assets/images/home/hero-bg-mobile.svg" alt="Hero bg img" class="w-full relative sm:hidden">
+    <section class="relative custom-container mt-5">
+      <img src="~/assets/images/home/hero-banner.svg" alt="Hero bg img" class="w-full rounded-[32px] relative hidden sm:block">
+      <img src="~/assets/images/home/hero-bg-mobile.svg" alt="Hero bg img" class="w-full rounded-[32px] relative sm:hidden">
 
       <div class="w-full lg:max-w-[870px] px-4 text-center absolute top-14 lg:top-[60px] xl:top-[140px] left-1/2 transform -translate-x-1/2">
         <h1 class="hidden lg:block text-[32px] leading-10 lg:text-[64px] lg:leading-[72px] font-bold">{{ $t('n-hero-title') }}</h1>
@@ -17,4 +17,3 @@
       </div>
     </section>
 </template>
-
