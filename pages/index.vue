@@ -1,6 +1,7 @@
 
 <script setup>
 import HeroSection from "~/components/home/HeroSection";
+import CounterSection from "~/components/home/CounterSection";
 import HeroProducts from "~/components/home/HeroProducts.vue";
 import ScrollingScreenSection from "~/components/home/ScrollingScreenSection";
 import OurProductsSection from "~/components/home/OurProductsSection";
@@ -19,7 +20,7 @@ body {
 <template>
     <div>
         <HeroSection />
-        <homeCounterSection />
+        <CounterSection />
         <homeWhatWeDo />
         <HeroProducts />
         <ScrollingScreenSection />
