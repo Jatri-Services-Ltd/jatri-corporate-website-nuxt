@@ -20,25 +20,24 @@ const toggleModal = () => {
   <div class="sticky top-0 left-0 z-[999] w-full bg-white border-b border-[#EDEDED]">
       <div class="custom-container">
         <div class="flex justify-between items-center py-3 px-2">
-<!--          logo and sites-->
-            <div class="flex justify-between lg:justify-start items-center gap-x-2 lg:gap-x-8 w-full">
-              <nuxt-link :to="('/')"><img class="min-w-[50px] h-[26px] lg:h-9  lg:w-[74px]" src="~/assets/images/header/jatri-logo.svg" alt="jatri logo"></nuxt-link>
+            <div class="flex justify-between md:justify-start items-center gap-x-2 md:gap-x-8 w-full">
+              <nuxt-link :to="('/')"><img class="min-w-[50px] h-[26px] lg:h-9 lg:w-[74px]" src="~/assets/images/header/jatri-logo.svg" alt="jatri logo"></nuxt-link>
                   <div class="bg-[#FEF2F0] rounded-full px-1 lg:px-3 py-1">
                       <div class="flex gap-x-2 justify-center items-center">
-                            <div class="px-4 lg:px-3 py-2 lg:py-1 rounded-full activeMenu">
+                            <div class="px-2 lg:px-3 py-2 lg:py-1 rounded-full activeMenu">
 <!--                              if you need active menu use invert in img class and use activeMenu class in parent div-->
-                              <a href="https://rental.jatri.co/" target="_blank" class="linkItem"><img class="invert" src="~/assets/images/header/car-svg.svg" alt="">Rental</a>
+                              <a href="https://rental.jatri.co/" target="_blank" class="linkItem"><img class="invert w-3 lg:w-5" src="~/assets/images/header/car-svg.svg" alt="">Rental</a>
                             </div>
-                          <div class="px-4 lg:px-3 py-2 lg:py-1 rounded-full">
-                            <a href="https://ticket.jatri.co/" target="_blank" class="linkItem"><img src="~/assets/images/header/bus_2.svg" alt="">Bus</a>
+                          <div class="px-2 lg:px-3 py-2 lg:py-1 rounded-full">
+                            <a href="https://ticket.jatri.co/" target="_blank" class="linkItem"><img class="w-3 lg:w-5" src="~/assets/images/header/bus_2.svg" alt="">Bus</a>
                           </div>
-                        <div class="px-4 lg:px-3 py-2 lg:py-1 rounded-full">
-                          <a href="https://ticket.jatri.co/launch" target="_blank" class="linkItem"><img src="~/assets/images/header/ship.svg" alt="">Launch</a>
+                        <div class="px-2 lg:px-3 py-2 lg:py-1 rounded-full">
+                          <a href="https://ticket.jatri.co/launch" target="_blank" class="linkItem"><img class="w-3 lg:w-5" src="~/assets/images/header/ship.svg" alt="">Launch</a>
                         </div>
                       </div>
                   </div>
             </div>
-          <div class="flex gap-x-4 lg:hidden py-4 ml-2">
+          <div class="flex gap-x-4 md:hidden py-4 ml-2">
             <button @click="toggleModal"><img class="w-6 h-6" src="~/assets/images/header/3bar-icon.svg" alt=""></button>
           </div>
           <div v-if="sidebarOpen" class="bg-white absolute inset-y-0 right-0 -translate-x-[300px] slide" :class="sidebarOpen ? 'absolute  z-50 translate-x-0 transition delay-300 duration-300' : ''">
