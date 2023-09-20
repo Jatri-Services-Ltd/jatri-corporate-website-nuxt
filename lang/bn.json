@@ -24,6 +24,12 @@
   "n-counter-item3-amount": "৬০ হাজার+",
   "n-counter-item3-title": "রেন্টাল পার্টনার",
 
+  "n-services-item1-title": "বাস টিকেট",
+  "n-services-item2-title": "লঞ্চ টিকেট",
+  "n-services-item3-title": "রেন্টাল",
+  "n-services-buy-ticket-button": "টিকেট কিনুন",
+  "n-services-book-now-button": "বুক করুন",
+
   "n-hero-products-button": "আরো জানুন",
   "n-hero-products-ticket-heading": "যাত্রী টিকিট",
   "n-hero-products-ticket-des": "এক প্ল্যাটফর্মে সব ধরণের বাস এর টিকিট",

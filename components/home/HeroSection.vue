@@ -2,7 +2,7 @@
 <template>
     <!-- Hero Section -->
     <section class="relative custom-container mt-5">
-      <img src="~/assets/images/home/hero-banner.png" alt="Hero bg img" class="w-full rounded-[32px] relative hidden sm:block">
+      <img src="~/assets/images/home/hero-banner.png" alt="Hero bg img" class="w-full relative hidden sm:block">
       <img src="~/assets/images/home/hero-bg-mobile.svg" alt="Hero bg img" class="w-full rounded-[32px] relative sm:hidden">
 
       <div class="mobile-res-position w-full lg:max-w-[870px] px-4 text-center absolute top-12 sm:top-8 lg:top-[60px] xl:top-[88px] left-1/2 transform -translate-x-1/2">

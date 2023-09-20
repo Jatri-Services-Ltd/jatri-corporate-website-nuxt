@@ -24,6 +24,12 @@
   "n-counter-item3-amount": "35K+",
   "n-counter-item3-title": "Rental partners",
 
+  "n-services-item1-title": "Bus ticket",
+  "n-services-item2-title": "Launch ticket",
+  "n-services-item3-title": "Rental",
+  "n-services-buy-ticket-button": "Buy ticket",
+  "n-services-book-now-button": "Book now",
+
   "n-hero-products-button": "Learn more",
   "n-hero-products-ticket-heading": "Jatri Ticket",
   "n-hero-products-ticket-des": "Booking bus ticket just got more easier with Jatri!",
