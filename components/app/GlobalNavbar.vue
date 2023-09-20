@@ -28,7 +28,7 @@ const selectLanguage = (lang) => {
 <template>
   <div class="sticky top-0 left-0 z-[999] w-full bg-white border-b border-[#EDEDED]">
       <div class="custom-container">
-        <div class="flex justify-between items-center py-3 px-2">
+        <div class="flex justify-between items-center py-3">
             <div class="flex justify-between md:justify-start items-center gap-x-2 md:gap-x-8 w-full">
               <nuxt-link :to="('/')"><img class="min-w-[50px] h-[26px] lg:h-9 lg:w-[74px]" src="~/assets/images/header/jatri-logo.svg" alt="jatri logo"></nuxt-link>
                   <div class="bg-[#FEF2F0] rounded-full px-1 lg:px-3 py-1">
@@ -46,7 +46,7 @@ const selectLanguage = (lang) => {
                       </div>
                   </div>
             </div>
-          <div class="hidden lg:block relative inline-block text-left">
+          <div class="hidden md:block relative inline-block text-left">
             <div>
               <button
                   @click="isOpen = !isOpen"
@@ -162,9 +162,6 @@ const selectLanguage = (lang) => {
 </template>
 
 <style>
-.custom-container {
-  @apply w-full mx-auto px-1 md:px-12 lg:px-[60px] xl:px-[100px] 2xl:px-[200px]
-}
 .linkItem{
   @apply flex justify-center items-center gap-x-2 text-xs lg:text-lg font-medium
 }
