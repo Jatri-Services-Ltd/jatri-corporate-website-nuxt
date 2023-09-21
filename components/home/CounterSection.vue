@@ -28,3 +28,11 @@
     </div>
   </section>
 </template>
+
+<style scoped>
+@media only screen and (min-width: 1280px) and (max-width: 1399px) {
+  .custom-container {
+    @apply p-8
+  }
+}
+</style>
