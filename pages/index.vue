@@ -7,6 +7,7 @@ import ScrollingScreenSection from "~/components/home/ScrollingScreenSection";
 import OurProductsSection from "~/components/home/OurProductsSection";
 import TestimonialSection from "~/components/home/TestimonialSection";
 import OurServices from "~~/components/home/OurServices.vue";
+import CallToAction from "~~/components/home/CallToAction.vue";
 </script>
 
 <style scoped>
@@ -23,6 +24,7 @@ body {
         <HeroSection />
         <CounterSection />
         <OurServices />
+        <CallToAction />
         <HeroProducts />
         <ScrollingScreenSection />
         <OurProductsSection />
