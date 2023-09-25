@@ -19,10 +19,10 @@ const isOpen = ref(false);
 const { locale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
 
-const selectLanguage = (lang) => {
-  selectedLanguage.value = lang;
-  isOpen.value = false;
-};
+// const selectLanguage = (lang) => {
+//   selectedLanguage.value = lang;
+//   isOpen.value = false;
+// };
 </script>
 
 <template>
@@ -98,13 +98,19 @@ const selectLanguage = (lang) => {
               <div class="p-4 divide-y divide-[#EDEDED] space-y-4">
                 <nuxt-link :to="switchLocalePath('en')" @click="isOpen = !isOpen" class="block">
                   <div class="transition ease-out duration-200 cursor-pointer flex items-center justify-between" role="none">
-                    <p class="text-dark text-base font-medium">English</p>
+                    <div class="flex items-center gap-2">
+                      <img src="~/assets/images/header/globe.png" alt="Globe icon"/>
+                      <p class="text-dark text-base font-medium">English</p>
+                    </div>
                     <img src="~/assets/images/header/check.png" alt="check icon" class="transition" :class="locale === 'en' ? 'opacity-100' : 'opacity-0'" />
                   </div>
                 </nuxt-link>
                 <nuxt-link :to="switchLocalePath('bn')" @click="isOpen = !isOpen" class="block pt-4">
                   <div class="transition ease-out duration-200 cursor-pointer flex items-center justify-between" role="none">
-                    <p class="text-dark text-base font-medium">বাংলা</p>
+                    <div class="flex items-center gap-2">
+                      <img src="~/assets/images/header/globe.png" alt="Globe icon"/>
+                      <p class="text-dark text-base font-medium">বাংলা</p>
+                    </div>
                     <img src="~/assets/images/header/check.png" alt="check icon" class="transition" :class="locale === 'bn' ? 'opacity-100' : 'opacity-0'" />
                   </div>
                 </nuxt-link>
@@ -112,10 +118,7 @@ const selectLanguage = (lang) => {
             </div>
           </div>
           <div v-if="sidebarOpen" @click="closeModal" class="fixed inset-0 z-30 bg-black bg-opacity-30 h-full w-full cursor-default transition duration-300 ease-in-out"></div>
-
-          <div v-if="isOpen" @click="isOpen = false"
-               class="fixed inset-0 z-30 h-full w-full cursor-default transition duration-300 ease-in-out">
-          </div>
+          <div v-if="isOpen" @click="isOpen = false" class="fixed inset-0 z-30 h-full w-full cursor-default transition duration-300 ease-in-out"></div>
         </div>
 
       </div>
