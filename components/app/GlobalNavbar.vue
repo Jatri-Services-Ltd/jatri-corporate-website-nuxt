@@ -41,7 +41,7 @@ const selectLanguage = (lang) => {
                             <a href="https://ticket.jatri.co/" target="_blank" class="linkItem"><img class="w-3 lg:w-5" src="~/assets/images/header/bus_2.svg" alt="">{{ $t('n-bus') }}</a>
                           </div>
                         <div class="px-2 lg:px-3 py-2 lg:py-1 rounded-full">
-                          <a href="https://ticket.jatri.co/launch" target="_blank" class="linkItem"><img class="w-3 lg:w-5" src="~/assets/images/header/ship.svg" alt="">{{ $t('n-launch') }}</a>
+                          <a href="https://ticket.jatri.co/launch" target="_blank" class="linkItem"><img class="w-3 lg:w-5" src="~/assets/images/header/Ship.svg" alt="">{{ $t('n-launch') }}</a>
                         </div>
                       </div>
                   </div>
