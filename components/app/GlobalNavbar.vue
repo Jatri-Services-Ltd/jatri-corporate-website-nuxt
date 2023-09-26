@@ -64,23 +64,23 @@ const switchLocalePath = useSwitchLocalePath();
             </div>
 
             <div
-                class="mt-[18px] p-2 divide-y divide-[#EDEDED] absolute right-1 z-50 w-[120px] origin-top-right rounded bg-white focus:outline-none drop-shadow-[0px_3px_18px_rgba(50,50,50,0.24)]"
+                class="mt-[18px] divide-y divide-[#EDEDED] absolute right-1 z-50 w-[120px] origin-top-right rounded bg-white focus:outline-none drop-shadow-[0px_3px_18px_rgba(50,50,50,0.24)]"
                 v-if="isOpen"
                 role="menu"
                 aria-orientation="vertical"
                 aria-labelledby="menu-button"
                 tabindex="-1"
             >
-              <nuxt-link :to="switchLocalePath('bn')" @click="isOpen = !isOpen" class="block py-2">
+              <nuxt-link :to="switchLocalePath('en')" @click="isOpen = !isOpen" class="block pl-2 pr-2.5 py-2.5">
                 <div class="transition ease-out duration-200 cursor-pointer flex items-center justify-between" role="none">
-                  <p class="text-dark text-base font-medium">বাংলা</p>
-                  <img src="~/assets/images/header/check.png" alt="check icon" class="transition" :class="locale === 'bn' ? 'opacity-100' : 'opacity-0'" />
+                  <p class="text-dark text-sm font-medium">English</p>
+                  <img src="~/assets/images/header/check.png" alt="check icon" class="transition" :class="locale === 'en' ? 'opacity-100' : 'opacity-0'" />
                 </div>
               </nuxt-link>
-              <nuxt-link :to="switchLocalePath('en')" @click="isOpen = !isOpen" class="block py-2">
+              <nuxt-link :to="switchLocalePath('bn')" @click="isOpen = !isOpen" class="block pl-2 pr-2.5 py-2.5">
                 <div class="transition ease-out duration-200 cursor-pointer flex items-center justify-between" role="none">
-                  <p class="text-dark text-base font-medium">English</p>
-                  <img src="~/assets/images/header/check.png" alt="check icon" class="transition" :class="locale === 'en' ? 'opacity-100' : 'opacity-0'" />
+                  <p class="text-dark text-sm font-medium">বাংলা</p>
+                  <img src="~/assets/images/header/check.png" alt="check icon" class="transition" :class="locale === 'bn' ? 'opacity-100' : 'opacity-0'" />
                 </div>
               </nuxt-link>
             </div>
