@@ -28,7 +28,7 @@ const switchLocalePath = useSwitchLocalePath();
 <template>
   <div class="sticky top-0 left-0 z-[999] w-full bg-white border-b border-[#EDEDED]">
       <div class="custom-container">
-        <div class="flex justify-between items-center py-3">
+        <div class="flex justify-between items-center py-4">
             <div class="flex justify-between md:justify-start items-center gap-x-2 md:gap-x-8 w-full">
               <nuxt-link :to="('/')"><img class="min-w-[50px] h-[26px] lg:h-9 lg:w-[74px]" src="~/assets/images/header/jatri-logo.svg" alt="jatri logo"></nuxt-link>
                   <div class="bg-[#FEF2F0] rounded-full px-1 lg:px-3 py-1">
@@ -127,7 +127,7 @@ const switchLocalePath = useSwitchLocalePath();
 
 <style>
 .linkItem{
-  @apply flex justify-center items-center gap-x-2 text-xs lg:text-lg font-medium
+  @apply flex justify-center items-center gap-x-2 text-xs lg:text-base font-medium
 }
 .slide {
   @apply absolute animate-[slide_0.5s_forwards] -right-2/4;
