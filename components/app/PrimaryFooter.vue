@@ -96,15 +96,15 @@
       </div>
 
       <div class="flex flex-col lg:flex-row lg:justify-between items-center gap-2 pt-6">
-        <div class="px-4 lg:px-0 pt-4 lg:pt-0 flex justify-center lg:justify-start gap-2.5 order-1 lg:order-none">
+        <div class="px-4 lg:px-0 pt-4 lg:pt-0 flex justify-center lg:justify-start gap-2 lg:gap-2.5 order-1 lg:order-none">
           <img class="w-5" src="~/assets/images/footer/copyright-white-icon.svg" alt="">
           <p class="text-white text-sm font-medium">{{ $t('n-footer-copyright') }}</p>
         </div>
 
-        <div class="px-4 lg:px-0 pb-4 lg:pb-0 flex justify-between gap-3 xl:gap-8 text-center divide-x divide-[#F6958A] lg:divide-x-0 space-x-0 sm:space-x-4 lg:space-x-0">
+        <div class="w-full px-4 lg:px-0 pb-4 lg:pb-0 flex justify-around text-center">
           <nuxt-link :to="localePath('/user/term-and-condition')" class="text-white font-medium text-sm underline">{{ $t('n-footer-terms-conditions') }}</nuxt-link>
-          <nuxt-link :to="localePath('/user/refund-policy-of-jatri')" class="text-white font-medium text-sm underline pl-2 sm:pl-6 lg:pl-0">{{ $t('n-footer-return-refund') }}</nuxt-link>
-          <nuxt-link :to="localePath('/user/privacy-policy')" class="text-white font-medium text-sm underline pl-2 sm:pl-6 lg:pl-0">{{ $t('n-footer-privacy-policy') }}</nuxt-link>
+          <nuxt-link :to="localePath('/user/refund-policy-of-jatri')" class="text-white font-medium text-sm underline border-x border-[#F6958A] px-8">{{ $t('n-footer-return-refund') }}</nuxt-link>
+          <nuxt-link :to="localePath('/user/privacy-policy')" class="text-white font-medium text-sm underline">{{ $t('n-footer-privacy-policy') }}</nuxt-link>
         </div>
 
         <div class="px-4 lg:px-0 flex justify-center lg:justify-end items-center gap-9 lg:gap-3 xl:gap-9 border-y border-[#F6958A] lg:border-y-0 py-4 lg:py-0 w-full lg:w-auto">
