@@ -119,6 +119,6 @@
 
 <style scoped>
 * {
-    font-family: 'Inter', sans-serif !important;
+  font-family: 'Inter', sans-serif !important;
 }
 </style>
