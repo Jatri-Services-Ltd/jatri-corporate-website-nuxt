@@ -101,9 +101,9 @@
           <p class="text-white text-sm font-medium">{{ $t('n-footer-copyright') }}</p>
         </div>
 
-        <div class="w-full px-4 lg:px-0 pb-4 lg:pb-0 flex justify-around text-center">
+        <div class="w-full lg:w-1/2 xl:w-auto px-4 lg:px-0 pb-4 lg:pb-0 flex justify-around lg:justify-center text-center">
           <nuxt-link :to="localePath('/user/term-and-condition')" class="text-white font-medium text-sm underline">{{ $t('n-footer-terms-conditions') }}</nuxt-link>
-          <nuxt-link :to="localePath('/user/refund-policy-of-jatri')" class="text-white font-medium text-sm underline border-x border-[#F6958A] px-8">{{ $t('n-footer-return-refund') }}</nuxt-link>
+          <nuxt-link :to="localePath('/user/refund-policy-of-jatri')" class="text-white font-medium text-sm underline border-x lg:border-x-0 border-[#F6958A] px-8 lg:px-4 xl:px-8">{{ $t('n-footer-return-refund') }}</nuxt-link>
           <nuxt-link :to="localePath('/user/privacy-policy')" class="text-white font-medium text-sm underline">{{ $t('n-footer-privacy-policy') }}</nuxt-link>
         </div>
 
