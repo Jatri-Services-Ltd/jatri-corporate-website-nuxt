@@ -94,9 +94,7 @@ const generateImg = (iconPath) => {
 
         <!-- Position Section Start -->
         <div class="my-8">
-          <!-- Single Post -->
-          <!-- Software Engineer (Laravel) -->
-          <div v-for="careerList in careerData" :key="careerList.title" data-aos="fade-up">
+          <!-- <div v-for="careerList in careerData" :key="careerList.title" data-aos="fade-up">
             <div
                 class="career_card flex flex-wrap justify-between items-start align-top p-5 my-8"
             >
@@ -180,13 +178,14 @@ const generateImg = (iconPath) => {
                 <p class="text-gray-400">{{careerList.employment_type}}</p>
               </div>
             </div>
-          </div>
-
-          <!-- <div class="flex justify-center items-center align-middle h-40">
-            <p class="text-gray-500">No vacancies available right now.</p>
           </div> -->
+
+
+          <!-- No vacancies start -->
+          <div class="flex justify-center items-center align-middle h-40">
+            <p class="text-gray-500 text-xl">No vacancies available right now.</p>
+          </div>
         </div>
-        <!-- Position Section End -->
       </div>
     </div>
   </section>
