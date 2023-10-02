@@ -21,7 +21,7 @@
         </div>
       </div>
 
-      <div class="px-4 lg:px-0 grid grid-cols-2 lg:grid-cols-4 lg:justify-between gap-4 pt-6">
+      <div class="px-4 lg:px-0 grid grid-cols-2 lg:grid-cols-4 lg:justify-between gap-x-4 gap-y-6 lg:gap-4 pt-6">
         <div>
           <h4 class="text-white text-xl font-medium mb-6">{{ $t('n-about-us') }}</h4>
           <ul class="grid gap-4">
@@ -55,7 +55,7 @@
           </ul>
         </div>
 
-        <div class="mt-2 lg:mt-0">
+        <div>
           <h4 class="text-white text-xl font-medium mb-6">{{ $t('n-footer-others') }}</h4>
           <ul class="grid gap-4">
             <li>
@@ -70,7 +70,7 @@
           </ul>
         </div>
 
-        <div class="mt-2 lg:mt-0">
+        <div>
           <h4 class="text-white text-xl font-medium mb-6">{{ $t('n-footer-contacts') }}</h4>
           <ul class="grid gap-4">
             <li class="flex items-center gap-2">
@@ -107,7 +107,7 @@
           <nuxt-link :to="localePath('/user/privacy-policy')" class="text-white font-medium text-sm underline">{{ $t('n-footer-privacy-policy') }}</nuxt-link>
         </div>
 
-        <div class="px-4 lg:px-0 flex justify-center lg:justify-end items-center gap-9 lg:gap-3 xl:gap-9 border-y border-[#F6958A] lg:border-y-0 py-4 lg:py-0 w-full lg:w-auto">
+        <div class="px-4 lg:px-0 flex justify-center lg:justify-end items-center gap-8 lg:gap-3 xl:gap-8 border-y border-[#F6958A] lg:border-y-0 py-6 lg:py-0 w-full lg:w-auto">
           <a href="https://www.facebook.com/JatriApp/" target="_blank"><img src="~/assets/images/footer/facebook-white.svg" alt="Facebook icon"></a>
           <a href="https://www.youtube.com/@JATRIAPP" target="_blank"><img src="~/assets/images/footer/youtube-white.svg" alt="Youtube icon"></a>
           <a href="https://ca.linkedin.com/company/jatri-app" target="_blank"><img src="~/assets/images/footer/linkedin-white.svg" alt="Linkedin icon"></a>
