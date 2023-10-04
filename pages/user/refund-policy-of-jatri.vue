@@ -32,7 +32,7 @@ import WhiteNavbar from '~~/components/app/WhiteNavbar.vue';
                                 Regular Time (Non-Eid Period)
                                 </p>
                             <ol class="list-disc text-sm">
-                                <p>To be eligible for refund, customer needs to cancel the ticket from jatri.co before the applicable time before the departure. And must report the cancelation to the support center (i.e Call 09642080808 or email to support@jatri.co) of Jatri.co</p>
+                                <p>To be eligible for refund, customer needs to cancel the ticket from jatri.co before the applicable time before the departure. And must report the cancelation to the support center (i.e Call 09642080808 or email to info@jatri.co) of Jatri.co</p>
                                 <table class="table-auto border border-corpo mt-4 my-4">
                                     <thead>
                                       <tr >
