@@ -142,21 +142,9 @@ const switchLocalePath = useSwitchLocalePath();
 .slide {
   @apply absolute animate-[slide_0.5s_forwards] -right-2/4;
 }
-.active-menu::after {
-  @apply absolute content-[""] w-full h-1 bg-[#151414] transition-all duration-[0.5s] ease-[ease] left-0 -bottom-2;
-}
-.activeMenu{
-   @apply bg-[#f04935] text-white
-}
 @keyframes slide {
   100% {
     right: 0;
-  }
-}
-
-@media only screen and (max-width: 1023px) {
-  .active-menu::after {
-    @apply bottom-0 h-[1px];
   }
 }
 </style>
