@@ -35,17 +35,17 @@ const switchLocalePath = useSwitchLocalePath();
                 <div class="flex gap-x-1 lg:gap-x-2 justify-center items-center">
                     <div class="py-1 px-2 lg:px-3 rounded-full">
                       <!--if you need active menu use invert in img class and use activeMenu class in parent div-->
-                      <a href="https://rental.jatri.co/" class="linkItem"><img class="w-3 lg:w-5" src="~/assets/images/header/car-svg.svg" alt="">
+                      <a href="https://rental.jatriweb.team/" class="linkItem"><img class="w-3 lg:w-5" src="~/assets/images/header/car-svg.svg" alt="">
                       <span class="text-sm lg:text-base text-dark">{{ $t('n-rental') }}</span>
                       </a>
                     </div>
                     <div class="py-1 px-2 lg:px-3 rounded-full">
-                      <a href="https://ticket.jatri.co/" class="linkItem"><img class="w-3 lg:w-5" src="~/assets/images/header/bus_2.svg" alt="">
+                      <a href="https://ticket.jatriweb.team/" class="linkItem"><img class="w-3 lg:w-5" src="~/assets/images/header/bus_2.svg" alt="">
                         <span class="text-sm lg:text-base text-dark">{{ $t('n-bus') }}</span>
                       </a>
                     </div>
                   <div class="py-1 px-2 lg:px-3 rounded-full">
-                    <a href="https://ticket.jatri.co/launch" class="linkItem"><img class="w-3 lg:w-5" src="~/assets/images/header/Ship.svg" alt="">
+                    <a href="https://ticket.jatriweb.team/launch" class="linkItem"><img class="w-3 lg:w-5" src="~/assets/images/header/Ship.svg" alt="">
                       <span class="text-sm lg:text-base text-dark">{{ $t('n-launch') }}</span>
                     </a>
                   </div>
