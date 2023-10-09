@@ -7,7 +7,8 @@
         <div class="custom-container">
             <div class="grid md:grid-cols-3 gap-4 lg:gap-8">
                 <div class="border border-[#EDEDED] rounded-2xl">
-                    <img class="w-full h-[160px] sm:h-[200px] 3xl:h-[250px] object-cover object-top md:object-center rounded-t-2xl" src="~/assets/images/home/intercity.png" alt="Bus image">
+                    <img class="hidden sm:block w-full rounded-t-2xl" src="~/assets/images/home/bus-ticket.png" alt="Bus image">
+                    <img class="sm:hidden w-full rounded-t-2xl" src="~/assets/images/home/bus-ticketing-mobile.png" alt="Bus image">
                     <div class="p-4 lg:px-4 lg:py-6 flex md:flex-col justify-between md:justify-start items-center md:items-start gap-1 md:gap-4">
                         <h3 class="text-2xl font-medium text-dark">{{ $t('n-services-item1-title') }}</h3>
                         <div class="inline-block">
@@ -22,7 +23,8 @@
                 </div>
 
                 <div class="border border-[#EDEDED] rounded-2xl">
-                    <img class="w-full h-[160px] sm:h-[200px] 3xl:h-[250px] object-cover object-top md:object-center rounded-t-2xl" src="~/assets/images/home/launch.png" alt="Bus image">
+                    <img class="hidden sm:block w-full rounded-t-2xl" src="~/assets/images/home/launch-ticket.png" alt="Bus image">
+                    <img class="sm:hidden w-full rounded-t-2xl" src="~/assets/images/home/launch-ticket-mobile.png" alt="Bus image">
                     <div class="p-4 lg:px-4 lg:py-6 flex md:flex-col justify-between md:justify-start items-center md:items-start gap-1 md:gap-4">
                         <h3 class="text-2xl font-medium text-dark">{{ $t('n-services-item2-title') }}</h3>
                         <div class="inline-block">
@@ -37,7 +39,8 @@
                 </div>
 
                 <div class="border border-[#EDEDED] rounded-2xl">
-                    <img class="w-full h-[160px] sm:h-[200px] 3xl:h-[250px] object-cover object-top md:object-center rounded-t-2xl" src="~/assets/images/home/rental.png" alt="Bus image">
+                    <img class="hidden sm:block w-full rounded-t-2xl" src="~/assets/images/home/rental.png" alt="Bus image">
+                    <img class="sm:hidden w-full rounded-t-2xl" src="~/assets/images/home/rental-mobile.png" alt="Bus image">
                     <div class="p-4 lg:px-4 lg:py-6 flex md:flex-col justify-between md:justify-start items-center md:items-start gap-1 md:gap-4">
                         <h3 class="text-2xl font-medium text-dark">{{ $t('n-services-item3-title') }}</h3>
                         <div class="inline-block">
