@@ -1,5 +1,5 @@
 <template>
-  <section class="custom-container relative -mt-14 sm:-mt-5 md:-mt-10 xl:-mt-[72px] mb-10 sm:mb-12 lg:mb-[100px]">
+  <section class="custom-container relative -mt-14 sm:-mt-12 sm:-mt-5 md:-mt-10 xl:-mt-[72px] mb-10 sm:mb-12 lg:mb-[100px]">
     <div class="bg-white shadow-[0px_0px_16px_0px_rgba(0,0,0,0.08)] rounded-[20px] mx-4 sm:mx-10 lg:mx-12 xl:mx-[100px] px-3 sm:px-8 xl:px-14 py-3 md:py-6 xl:py-8 flex justify-between sm:items-center gap-2">
       <div class="flex justify-center lg:justify-start text-center lg:text-left items-start lg:items-center flex-wrap xl:flex-nowrap gap-2 xl:gap-6">
         <img src="~/assets/images/home/counter-user-icon.png" alt="User icon" class="w-10 sm:w-14 lg:w-16 xl:w-auto">
