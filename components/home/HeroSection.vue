@@ -5,7 +5,7 @@
       <img src="~/assets/images/home/hero-banner.png" alt="Hero bg img" class="w-full relative rounded-[20px] hidden sm:block">
       <img src="~/assets/images/home/hero-banner-mobile.png" alt="Hero bg img" class="w-full rounded-2xl relative sm:hidden">
 
-      <div class="mobile-res-position w-full lg:max-w-[900px] px-8 sm:px-20 md:px-16 lg:px-8 text-center absolute top-12 sm:top-8 lg:top-[60px] xl:top-[88px] left-1/2 transform -translate-x-1/2">
+      <div class="mobile-res-position w-full lg:max-w-[900px] px-4 sm:px-20 md:px-16 lg:px-8 text-center absolute top-12 sm:top-8 lg:top-[60px] xl:top-[88px] left-1/2 transform -translate-x-1/2">
         <h1 class="text-[32px] sm:leading-10 md:text-[40px] md:leading-[54px] lg:text-[48px] lg:leading-[64px] xl:text-[64px] xl:leading-[88px] font-bold">
           {{ $t('n-hero-title1') }} <br> {{ $t('n-hero-title2') }}
         </h1>
