@@ -44,13 +44,13 @@
           <h4 class="text-white text-xl font-medium mb-6">{{ $t('n-footer-services') }}</h4>
           <ul class="grid gap-4">
             <li>
-              <a href="https://rental.jatriweb.team/" class="text-white text-base" target="_blank">{{ $t('n-footer-rental') }}</a>
+              <a href="https://rental.jatri.co/" class="text-white text-base" target="_blank">{{ $t('n-footer-rental') }}</a>
             </li>
             <li>
-              <a href="https://ticket.jatriweb.team/" class="text-white text-base" target="_blank">{{ $t('n-footer-bus-ticketing') }}</a>
+              <a href="https://ticket.jatri.co/" class="text-white text-base" target="_blank">{{ $t('n-footer-bus-ticketing') }}</a>
             </li>
             <li>
-              <a href="https://ticket.jatriweb.team/launch" class="text-white text-base" target="_blank">{{ $t('n-footer-launch-ticketing') }}</a>
+              <a href="https://ticket.jatri.co/launch" class="text-white text-base" target="_blank">{{ $t('n-footer-launch-ticketing') }}</a>
             </li>
           </ul>
         </div>
