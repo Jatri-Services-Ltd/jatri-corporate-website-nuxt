@@ -2,7 +2,7 @@ import WhiteNavbar from '~~/components/app/WhiteNavbar.vue';
 <script setup>
 useServerSeoMeta({
   title: 'Jatri',
-  description: 'Got a question? For any kind of assistance in using our services, don’t hesitate to get in touch at support@jatri.co.',
+  description: 'Got a question? For any kind of assistance in using our services, don’t hesitate to get in touch at info@jatri.co.',
 })
 </script>
 

@@ -4,7 +4,7 @@ useHead({
   meta: [
     {
       name: 'description', 
-      content: 'Got a question? For any kind of assistance in using our services, don’t hesitate to get in touch at support@jatri.co.'
+      content: 'Got a question? For any kind of assistance in using our services, don’t hesitate to get in touch at info@jatri.co.'
     },
   ]
 });
@@ -135,7 +135,7 @@ useHead({
                 </div>
                 <div class="leading-5 md:leading-10">
                   <p class="corporate_color_dark text-md">{{ $t('email') }}</p>
-                  <a href="mailto:support@jatri.co" class="corporate_color text-sm">support@jatri.co</a>
+                  <a href="mailto:info@jatri.co" class="corporate_color text-sm">info@jatri.co</a>
                 </div>
               </div>
             </div>

@@ -7,12 +7,30 @@
   "n-rental": "Rental",
   "n-ticket": "Ticket",
   "n-menu": "menu",
+  "n-bus": "Bus",
+  "n-launch": "Launch",
 
-  "n-hero-title": "Empowering Bangladesh to travel better!",
-  "n-mob-hero-title1": "Empowering",
-  "n-mob-hero-title2": " Bangladesh to travel ",
-  "n-mob-hero-title3": " better!",
+  "n-hero-title1": "Your all-in-one",
+  "n-hero-title2": "travelling platform",
   "n-download-app": "Download app",
+
+  "n-counter-item1-amount": "500K+",
+  "n-counter-item1-title": "Registered users",
+  "n-counter-item2-amount": "170 millions+",
+  "n-counter-item2-amount-mobile": "170M+",
+  "n-counter-item2-title": "Tickets sold",
+  "n-counter-item3-amount": "80K+",
+  "n-counter-item3-title": "Rental partners",
+
+  "n-services-item1-title": "Bus ticket",
+  "n-services-item2-title": "Launch ticket",
+  "n-services-item3-title": "Rental",
+  "n-services-buy-ticket-button": "Buy ticket",
+  "n-services-book-now-button": "Book now",
+
+  "n-call-to-action-title": "We built better way to travel",
+  "n-call-to-action-des": "We are improving transportation system of Bangladesh go digital & go better!",
+  "n-call-to-action-button": "About us",
 
   "n-hero-products-button": "Learn more",
   "n-hero-products-ticket-heading": "Jatri Ticket",
@@ -58,8 +76,6 @@
 
   "n-testimonial-title": "Don’t just believe our words",
 
-
-
   "n-counter-300": "300K+",
   "n-counter-million": "100 Million+",
   "n-counter-100": "60K+",
@@ -93,17 +109,23 @@
   "n-footer-products-2": "Jatri Rentals",
   "n-footer-products-3": "Jatri Ticket",
   "n-footer-career": "Career",
-  "n-footer-blog": "Blogs",
+  "n-footer-blog": "Blog",
+  "n-footer-services": "Services",
+  "n-footer-rental": "Rental",
+  "n-footer-bus-ticketing": "Bus ticketing",
+  "n-footer-launch-ticketing": "Launch ticketing",
   "n-footer-others": "Others",
   "n-footer-others-1": "Ride sharing guideline",
   "n-footer-others-2": "Enlistment certificate",
   "n-footer-others-3": "COVID-19 info",
+  "n-footer-contacts": "Contacts",
   "n-footer-phone": "09642080808",
   "n-footer-address": "Road 24, House 15, Gulshan-02, Dhaka 1212",
   "n-footer-terms-conditions": "Terms and condition",
   "n-footer-return-refund": "Return & refund policy",
   "n-footer-privacy-policy": "Privacy policy",
   "n-footer-copyright": "All rights reserved, Jatri Services Limited. 2023",
+  "n-footer-tagline": "Jatri is a digital platform to make your daily commuting better.",
 
 
   "title": "Vue 3 i18n",
@@ -173,7 +195,7 @@
   "subscription_desc1": "In case of one purchasing subscription package, no refunds will be provided.",
   "subscription_desc2": "No partial refund is applicable for subscription package",
   "ticketing": "Ticketing",
-  "ticketing_desc1": "For ticket cancellation, passenger must call or mail [supportjatri.co] Jatri within 10 minutes after purchasing ticket",
+  "ticketing_desc1": "For ticket cancellation, passenger must call or mail [infojatri.co] Jatri within 10 minutes after purchasing ticket",
   "ticketing_desc2": "Upon receiving refund requests in the format outlined below, Jatri will process refund within 5 business days (excluding holidays / weekends).",
   "ticketing_desc3": "Refunds will be given only through bKash or Bank transfer. For refunds through mobile payment gateways (e.g. bKash), a fee is charged by the mobile payment company.",
   "ticketing_desc4": "In case of any accident or technical error in the middle of the trip, Jatri may refund the money according to the stations.",
@@ -232,7 +254,5 @@
   "subscribe": "Subscribe",
   "about-us": "About Us",
   "terms-conditions": "Terms & Conditions",
-  "privacy-policy": "Privacy Policy",
-  "footer-tagline": "JATRI: EMPOWERING BANGLADESH TO TRAVEL BETTER",
-  "copyright-text": "© Copyright - JATRI 2023. ALL RIGHT RESERVED"
+  "privacy-policy": "Privacy Policy"
 }

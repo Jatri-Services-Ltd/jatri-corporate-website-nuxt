@@ -1,111 +1,38 @@
-<script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import { Pagination, FreeMode } from 'swiper';
-const modules = [FreeMode, Pagination];
-
-</script>
 <template>
-    <section class="custom-container counter-section py-12 sm:pt-20 lg:pt-[120px] sm:pb-14 lg:pb-[82px]">
-      <swiper
-          :breakpoints="{
-                320: {
-                  slidesPerView: 1,
-                  spaceBetween: 30
-                },
-                640: {
-                  slidesPerView: 2,
-                  spaceBetween: 20
-                },
-                1024: {
-                  slidesPerView: 3,
-                  spaceBetween: 30
-                }
-              }"
-          :freeMode="true"
-          :pagination="{
-                clickable: true,
-              }"
-          :modules="modules"
-          class="mySwiper"
-      >
-        <swiper-slide>
-          <div class="flex justify-center">
-            <div>
-              <div class="min-h-[120px] flex justify-center items-end">
-                <img src="~/assets/images/home/counter-1.png"  alt="Counter">
-              </div>
-              <div class="mt-6 block lg:hidden">
-                <div class="text-center relative z-20">
-                  <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-1 leading-9">{{ $t('n-counter-300') }}</p>
-                  <p class="text-body text-base xl:text-xl font-medium leading-[24px]">{{ $t('n-counter-registered-user') }}</p>
-                </div>
-                <img src="~/assets/images/home/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="Jatri">
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="flex justify-center">
-            <div>
-              <div class="min-h-[120px] flex justify-center items-end">
-                <img src="~/assets/images/home/counter-2.png"  alt="Counter" >
-              </div>
-              <div class="mt-6 block lg:hidden">
-                <div class="text-center relative z-20">
-                  <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-1 leading-9">{{ $t('n-counter-million') }}</p>
-                  <p class="text-body text-base xl:text-xl font-medium leading-[24px] lg:leading-[28px]">{{ $t('n-counter-tickets-served') }}</p>
-                </div>
-                <img src="~/assets/images/home/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="Jatri">
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="flex justify-center">
-            <div>
-              <div class="min-h-[120px] flex justify-center items-end">
-                <img src="~/assets/images/home/counter-3.png"  alt="Counter">
-              </div>
-              <div class="mt-6 block lg:hidden">
-                <div class="text-center relative z-20">
-                  <p class="text-dark text-[28px] lg:text-[38px] xl:text-[45px] font-bold mb-1 leading-9 lg:leading-[52px]">{{ $t('n-counter-100') }}</p>
-                  <p class="text-body text-base xl:text-xl font-medium leading-[24px] lg:leading-[28px]">{{ $t('n-counter-rental-partners') }}</p>
-                </div>
-                <img src="~/assets/images/home/small-device-gray-shape-bg.svg" class="small-device-gray-shape-img z-10" alt="Jatri">
-              </div>
-            </div>
-          </div>
-        </swiper-slide>
-      </swiper>
-        <div class="hidden lg:block">
-          <div class="grid grid-cols-3 z-20 relative mt-10">
-            <div class="text-center">
-              <p class="text-dark text-3xl lg:text-[38px] xl:text-[45px] font-bold mb-1 xl:mb-2 leading-[52px]">{{ $t('n-counter-300') }}</p>
-              <p class="text-body text-[18px] xl:text-xl font-medium leading-7">{{ $t('n-counter-registered-user') }}</p>
-            </div>
-            <div class="text-center">
-              <p class="text-dark text-3xl lg:text-[38px] xl:text-[45px] font-bold mb-1 xl:mb-2 leading-[52px]">{{ $t('n-counter-million') }}</p>
-              <p class="text-body text-[18px] xl:text-xl font-medium leading-7">{{ $t('n-counter-tickets-served') }}</p>
-            </div>
-            <div class="text-center">
-              <p class="text-dark text-3xl lg:text-[38px] xl:text-[45px] font-bold mb-1 xl:mb-2 leading-[52px]">{{ $t('n-counter-100') }}</p>
-              <p class="text-body text-[18px] xl:text-xl font-medium leading-7">{{ $t('n-counter-rental-partners') }}</p>
-            </div>
-          </div>
-          <div class="gray-shape-bg w-full z-10">
-            <img src="~/assets/images/home/gray-shape-bg.png" class="w-full object-contain" alt="Jatri">
-          </div>
+  <section class="custom-container relative -mt-14 sm:-mt-12 sm:-mt-5 md:-mt-10 xl:-mt-[72px] mb-10 sm:mb-12 lg:mb-[100px]">
+    <div class="bg-white shadow-[0px_0px_16px_0px_rgba(0,0,0,0.08)] rounded-[20px] mx-4 sm:mx-10 lg:mx-12 xl:mx-[100px] px-3 sm:px-8 xl:px-14 py-3 md:py-6 xl:py-8 flex justify-between sm:items-center gap-2">
+      <div class="flex justify-center lg:justify-start text-center lg:text-left items-start lg:items-center flex-wrap xl:flex-nowrap gap-2 xl:gap-6">
+        <img src="~/assets/images/home/counter-user-icon.png" alt="User icon" class="w-10 sm:w-14 lg:w-16 xl:w-auto">
+        <div>
+          <h4 class="text-base sm:text-xl lg:text-2xl xl:text-4xl 2xl:text-3xl 3xl:text-4xl	font-bold text-dark">{{ $t('n-counter-item1-amount') }}</h4>
+          <p class="mt-1 text-xs md:text-sm xl:text-base font-medium text-dark">{{ $t('n-counter-item1-title') }}</p>
         </div>
-    </section>
+      </div>
+
+      <div class="flex justify-center lg:justify-start text-center lg:text-left items-start lg:items-center flex-wrap xl:flex-nowrap gap-2 xl:gap-6">
+        <img src="~/assets/images/home/counter-ticket-icon.png" alt="Ticket icon" class="w-10 sm:w-14 lg:w-16 xl:w-auto">
+        <div>
+          <h4 class="text-xl lg:text-2xl xl:text-4xl 2xl:text-3xl 3xl:text-4xl	font-bold text-dark hidden sm:block">{{ $t('n-counter-item2-amount') }}</h4>
+          <h4 class="text-base font-bold text-dark sm:hidden">{{ $t('n-counter-item2-amount-mobile') }}</h4>
+          <p class="mt-1 text-xs md:text-sm xl:text-base font-medium text-dark">{{ $t('n-counter-item2-title') }}</p>
+        </div>
+      </div>
+
+      <div class="flex justify-center lg:justify-start text-center lg:text-left items-start lg:items-center flex-wrap xl:flex-nowrap gap-2 xl:gap-6">
+        <img src="~/assets/images/home/counter-partner-icon.png" alt="Partner icon" class="w-10 sm:w-14 lg:w-16 xl:w-auto">
+        <div>
+          <h4 class="text-base sm:text-xl lg:text-2xl xl:text-4xl 2xl:text-3xl 3xl:text-4xl	font-bold text-dark">{{ $t('n-counter-item3-amount') }}</h4>
+          <p class="mt-1 text-xs md:text-sm xl:text-base font-medium text-dark">{{ $t('n-counter-item3-title') }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <style scoped>
-.gray-shape-bg {
-  @apply mt-[-55px] xl:mt-[-50px]
-}
-.small-device-gray-shape-img {
-  @apply h-[75px] w-[390px] mt-[-43px]
+@media only screen and (min-width: 1280px) and (max-width: 1399px) {
+  .custom-container {
+    @apply px-8 -mt-14
+  }
 }
 </style>
