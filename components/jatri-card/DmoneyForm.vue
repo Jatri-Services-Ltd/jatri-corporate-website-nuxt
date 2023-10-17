@@ -5,7 +5,7 @@
 <template>
   <div class="custom-container pt-10 lg:pt-[100px]">
     <div class="flex justify-center items-center">
-      <div class="flex flex-col lg:flex-row justify-center bg-white rounded-xl w-full" style=" box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);">
+      <div class="flex flex-col lg:flex-row justify-center bg-white rounded-xl w-full" style="box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);">
         <div class="background">
           <div class="pt-10 lg:pt-[60px] px-3 lg:px-12">
               <p class="text-[28px] font-semibold leading-9 lg:text-[45px] lg:leading-[52px] text-white">It’s time to go
