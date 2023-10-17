@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <section class="my-4">
+    <section class="mt-4">
         <div class="custom-container">
             <div class="relative h-[354px] lg:h-auto rounded-3xl bg-[linear-gradient(98deg,_#F04935_1.78%,_#887CF5_98.84%)] flex flex-col lg:flex-row justify-start lg:justify-between items-center gap-4 overflow-hidden">
                 <div class="z-10 px-4 md:px-8 lg:pr-0 lg:pl-12 xl:pl-20 2xl:pl-16 pt-8 lg:pt-0 text-center lg:text-left">
