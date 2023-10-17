@@ -12,7 +12,7 @@
             the answers.</p>
           <div class="flex gap-x-2 items-baseline">
             <p class="mt-4 text-[#4D4D4F] text-sm leading-5 font-normal">Still need help?</p>
-            <a href="#" class="text-xs block text-primary font-normal lg:font-medium underline flex">Contact us
+            <a href="/contact-us" class="text-xs block text-primary font-normal lg:font-medium underline flex">Contact us
               <img src="~/assets/images/common/right-arrow.svg" alt="right sided arrow">
             </a>
           </div>
