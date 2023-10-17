@@ -21,10 +21,6 @@
 </template>
 
 <style scoped>
-* {
-    font-family: 'Inter', sans-serif;
-}
-
 @media only screen and (min-width: 1280px) and (max-width: 1431px) {
     .banner-title {
         @apply text-[50px] leading-[66px]
