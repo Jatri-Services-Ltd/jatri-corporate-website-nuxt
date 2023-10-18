@@ -57,16 +57,16 @@
                         </div>
                     </div>
 
-                    <div class="border border-[#EDEDED] bg-white rounded-3xl grow">
-                        <div class="bg-secondary p-10 grid place-content-center rounded-t-3xl">
-                            <img src="~/assets/images/jatri-card/document-icon.png" alt="Document icon">
+                    <div class="border border-[#EFF7FD] bg-white rounded-3xl grow">
+                        <div class="bg-[#EFF7FD] p-10 grid place-content-center rounded-t-3xl">
+                            <img src="~/assets/images/jatri-card/bus-icon.png" alt="Document icon">
                         </div>
                         <div class="p-6 sm:p-4 md:p-6">
-                            <h5 class="text-dark text-2xl sm:text-xl lg:text-2xl font-medium mb-6">Get online</h5>
+                            <h5 class="text-dark text-2xl sm:text-xl lg:text-2xl font-medium mb-6">Nearest bus counter</h5>
                             <ul class="grid gap-4 text-base sm:text-sm lg:text-base text-dark">
-                                <li>Open Dmoney account</li>
-                                <li>Apply for “Dmoney Jatri card” and order</li>
-                                <li>Get your Dmoney Jatri card at your doorstep</li>
+                                <li>Go to your nearest <router-link to="" class="text-info underline">available counter</router-link></li>
+                                <li>Fill up info & open account with NID</li>
+                                <li>Get your card instantly</li>
                             </ul>
                         </div>
                     </div>
