@@ -21,6 +21,7 @@ body {
 
 <template>
     <div>
+        <router-link to="/jatri-card">Card</router-link>
         <HeroSection />
         <CounterSection />
         <OurServices />
