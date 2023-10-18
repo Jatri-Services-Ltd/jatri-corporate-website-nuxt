@@ -1,10 +1,24 @@
 <script setup>
+import {reactive} from 'vue'
+const initialState = {
+  name: '',
+  phone: '',
+  city: '',
+  occupation: ''
+}
+
+const cardSubmitForm = reactive({...initialState})
+
+const handleSubmit = ()=>{
+  console.log("======>",cardSubmitForm)
+  //Object.assign(cardSubmitForm, {...initialState});
+}
 const { locale } = useI18n();
-console.log("====",locale.value)
 </script>
 
 <template>
   <div class="custom-container pt-10 lg:pt-[100px]">
+    {{cardSubmitForm}}
     <div class="flex justify-center items-center">
       <div class="flex flex-col lg:flex-row justify-center bg-white rounded-xl w-full" style="box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);">
         <div class="background">
@@ -18,24 +32,24 @@ console.log("====",locale.value)
             <p class="text-[24px] lg:text-[36px] font-medium lg:leading-12 text-black">{{ $t('card-form-title') }}</p>
             <p class="mt-4 text-xs lg:text-[20px] font-medium leading-4 lg:leading-7 text-[#676769]">{{ $t('card-form-content') }}</p>
 
-            <form>
+            <form @submit.prevent="handleSubmit">
               <div class="mt-5">
                 <small class="text-black font-medium text-base leading-6">{{ $t('card-form-name') }}</small>
-                <input type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" :placeholder="locale === 'en' ? 'Enter your name' : 'নাম লিখুন'">
+                <input v-model="cardSubmitForm.name" type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" :placeholder="locale === 'en' ? 'Enter your name' : 'নাম লিখুন'">
               </div>
               <div class="mt-5">
                 <small class="text-black font-medium text-base leading-6">{{ $t('card-form-mobile') }}</small>
-                <input type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" :placeholder="locale === 'en' ? '+880' : '+880'">
+                <input v-model="cardSubmitForm.phone" type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" :placeholder="locale === 'en' ? '+880' : '+880'">
               </div>
               <div class="mt-5">
                 <small class="text-black font-medium text-base leading-6">{{ $t('card-form-city') }}</small>
-                <input type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" :placeholder="locale === 'en' ? 'Enter your city' : 'শহরের নাম লিখুন'">
+                <input v-model="cardSubmitForm.city" type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" :placeholder="locale === 'en' ? 'Enter your city' : 'শহরের নাম লিখুন'">
               </div>
               <div class="mt-5">
                 <div class="text-black font-medium text-base leading-6 flex justify-between w-full"><span class="block">{{ $t('card-form-profession') }}</span>
                   <span class="block text-[#676769] text-xs">{{ $t('card-form-optional') }}</span>
                 </div>
-                <input type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" :placeholder="locale === 'en' ? 'Enter your profession' : 'পেশার নাম লিখুন'">
+                <input v-model="cardSubmitForm.occupation" type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" :placeholder="locale === 'en' ? 'Enter your profession' : 'পেশার নাম লিখুন'">
               </div>
               <div class="flex justify-center lg:justify-end">
                 <button type="submit" class="mt-8 flex gap-x-2 justify-center items-center bg-corporate w-full lg:w-[160px] py-3 text-white text-base font-medium rounded-full">
