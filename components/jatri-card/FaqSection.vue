@@ -6,8 +6,8 @@
   <div class="custom-container pt-10 lg:pt-[100px] pb-10 lg:pb-[100px]">
       <div class="flex flex-col lg:flex-row justify-center">
         <div class="w-full lg:w-[40%]">
-          <p class="text-[#676769] font-medium text-[16px] lg:text-[20px] leading-6 lg:leading-7">FAQs</p>
-          <p class="mt-2 text-black font-medium text-[24px] lg:text-[32px] leading-8 lg:leading-12">Have a question? We have
+          <p class="text-[#676769] font-medium text-base lg:text-[20px] leading-6 lg:leading-7">FAQs</p>
+          <p class="mt-2 text-black font-medium text-2xl lg:text-[32px] leading-8 lg:leading-12">Have a question? We have
             <br class="hidden xl:block">
             the answers.</p>
           <div class="flex gap-x-2 items-baseline">
@@ -40,7 +40,7 @@
               </button>
               <button class="group focus:outline-none border-b border-[#EDEDED] py-3 lg:py-6">
                 <div class="flex items-center justify-between">
-                  <p class="text-[16px] text-start lg:text-[24px] font-medium leading-6 lg:leading-8 text-start">Is there any option to get multiple tickets through card
+                  <p class="text-base text-start lg:text-2xl font-medium leading-6 lg:leading-8 text-start">Is there any option to get multiple tickets through card
                     <br class="hidden xl:block"> payment?</p>
                   <img class="arrow" src="~/assets/images/common/down_arrow.svg" alt="down arrow">
                 </div>
@@ -97,7 +97,7 @@
       @apply h-4 w-4 group-focus:rotate-180 h-6 w-6 transition-all ease-in-out duration-300
     }
     .faq-question{
-      @apply text-[16px] lg:text-[24px] text-black font-medium leading-6 lg:leading-8 text-start
+      @apply text-base lg:text-2xl text-black font-medium leading-6 lg:leading-8 text-start
     }
     .faq-answer{
       @apply flex items-center text-start text-[#4D4D4F] text-sm lg:text-[20px] h-full

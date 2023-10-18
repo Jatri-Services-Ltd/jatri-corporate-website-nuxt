@@ -270,5 +270,7 @@
   "card-payment-comingSoon": "Coming soon",
   "card-payment-parking": "Parking fee payment",
   "card-payment-pos": "POS payment",
-  "card-payment-atm": "ATM withdrawal"
+  "card-payment-atm": "ATM withdrawal",
+  "card-fromLeft-header": "It’s time to go cashless",
+  "card-fromLeft-content": "Commuting is more comfortable with Dmoney Jatri card. Get your card to enjoy the hassle free ride."
 }

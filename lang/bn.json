@@ -273,5 +273,7 @@
   "card-payment-comingSoon": "শীঘ্রই আসছে",
   "card-payment-parking": "পার্কিং ফি\nপেমেন্ট",
   "card-payment-pos": "মেশিন \nপেমেন্ট",
-  "card-payment-atm": "এটিএম থেকে উত্তোলন"
+  "card-payment-atm": "এটিএম থেকে উত্তোলন",
+  "card-fromLeft-header": "ক্যাশলেস যাতায়াত",
+  "card-fromLeft-content": "ডিমানি যাত্রী কার্ড আপনার প্রতিদিনের যাতায়াতকে করে তুলবে ঝামেলাবিহীন"
 }
