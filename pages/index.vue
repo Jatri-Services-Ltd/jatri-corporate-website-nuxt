@@ -8,6 +8,7 @@ import OurProductsSection from "~/components/home/OurProductsSection";
 import TestimonialSection from "~/components/home/TestimonialSection";
 import OurServices from "~~/components/home/OurServices.vue";
 import CallToAction from "~~/components/home/CallToAction.vue";
+import DmoneyJatriCard from "~~/components/home/DmoneyJatriCard.vue";
 </script>
 
 <style scoped>
@@ -21,10 +22,10 @@ body {
 
 <template>
     <div>
-        <router-link to="/jatri-card">Card</router-link>
         <HeroSection />
         <CounterSection />
         <OurServices />
+        <DmoneyJatriCard />
         <CallToAction />
         <HeroProducts />
         <ScrollingScreenSection />
