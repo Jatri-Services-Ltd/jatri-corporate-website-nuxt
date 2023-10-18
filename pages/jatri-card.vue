@@ -10,6 +10,8 @@ import PaymentsSection from '~~/components/jatri-card/PaymentsSection.vue';
     <HeroSection />
     <WhyJatriCard />
     <PaymentsSection />
+    <DmoneyForm/>
+    <FaqSection/>
 </template>
 
 
