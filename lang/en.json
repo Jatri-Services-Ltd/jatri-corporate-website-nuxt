@@ -263,5 +263,12 @@
   "card-why-subHeader2": "Go cashless",
   "card-why-content2": "Go Cashless with Jatri! Jatri offers cash-free payments for regular bus commute.",
   "card-why-subHeader3": "Hassle free travel",
-  "card-why-content3": "Enjoy quick, contactless payments and simplify your daily travel."
+  "card-why-content3": "Enjoy quick, contactless payments and simplify your daily travel.",
+  "card-payment-title": "Your pathway to hassle-free commute",
+  "card-payment-tickets":  "Bus tickets payment",
+  "card-payment-toll":  "Bus tickets payment",
+  "card-payment-comingSoon": "Coming soon",
+  "card-payment-parking": "Parking fee payment",
+  "card-payment-pos": "POS payment",
+  "card-payment-atm": "ATM withdrawal"
 }
