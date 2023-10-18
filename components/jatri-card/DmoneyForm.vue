@@ -1,5 +1,6 @@
 <script setup>
-
+const { locale } = useI18n();
+console.log("====",locale.value)
 </script>
 
 <template>
@@ -14,32 +15,32 @@
         </div>
         <div class="w-full lg:w-[620px] xl:w-full">
           <div class="px-6 py-6 lg:py-[60px] lg:px-12">
-            <p class="text-[24px] lg:text-[36px] font-medium lg:leading-12 text-black">Need help to get Card?</p>
-            <p class="mt-4 text-xs lg:text-[20px] font-medium leading-4 lg:leading-7 text-[#676769]">Our customer service will reach you out and will help you step by step to get a card</p>
+            <p class="text-[24px] lg:text-[36px] font-medium lg:leading-12 text-black">{{ $t('card-form-title') }}</p>
+            <p class="mt-4 text-xs lg:text-[20px] font-medium leading-4 lg:leading-7 text-[#676769]">{{ $t('card-form-content') }}</p>
 
             <form>
               <div class="mt-5">
-                <small class="text-black font-medium text-base leading-6">Name</small>
-                <input type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" placeholder="Enter your name">
+                <small class="text-black font-medium text-base leading-6">{{ $t('card-form-name') }}</small>
+                <input type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" :placeholder="locale === 'en' ? 'Enter your name' : 'নাম লিখুন'">
               </div>
               <div class="mt-5">
-                <small class="text-black font-medium text-base leading-6">Mobile number</small>
-                <input type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" placeholder="+880">
+                <small class="text-black font-medium text-base leading-6">{{ $t('card-form-mobile') }}</small>
+                <input type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" :placeholder="locale === 'en' ? '+880' : '+880'">
               </div>
               <div class="mt-5">
-                <small class="text-black font-medium text-base leading-6">City</small>
-                <input type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" placeholder="Enter your city">
+                <small class="text-black font-medium text-base leading-6">{{ $t('card-form-city') }}</small>
+                <input type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" :placeholder="locale === 'en' ? 'Enter your city' : 'শহরের নাম লিখুন'">
               </div>
               <div class="mt-5">
-                <div class="text-black font-medium text-base leading-6 flex justify-between w-full"><span class="block">Profession</span>
-                  <span class="block text-[#676769] text-xs">Optional</span>
+                <div class="text-black font-medium text-base leading-6 flex justify-between w-full"><span class="block">{{ $t('card-form-profession') }}</span>
+                  <span class="block text-[#676769] text-xs">{{ $t('card-form-optional') }}</span>
                 </div>
-                <input type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" placeholder="Profession">
+                <input type="text" class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg p-4 focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal" :placeholder="locale === 'en' ? 'Enter your profession' : 'পেশার নাম লিখুন'">
               </div>
               <div class="flex justify-center lg:justify-end">
                 <button type="submit" class="mt-8 flex gap-x-2 justify-center items-center bg-corporate w-full lg:w-[160px] py-3 text-white text-base font-medium rounded-full">
                   <img src="~/assets/images/common/check.svg" alt="check icon">
-                  Submit</button>
+                  {{ $t('card-form-submit') }}</button>
               </div>
             </form>
 
