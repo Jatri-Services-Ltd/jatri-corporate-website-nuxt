@@ -1,7 +1,13 @@
+<template>
+  <div>
+
+  </div>
+</template>
+
 <script setup>
 
 </script>
 
-<template>
-    <h1>Jatri Card dgr</h1>
-</template>
+<style scoped>
+
+</style>
