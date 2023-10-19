@@ -5,7 +5,7 @@
 <template>
     <section class="py-10 md:py-20 xl:py-[100px]">
         <div class="custom-container">
-            <h2 class="text-dark text-[26px] leading-9 lg:text-[44px] lg:leading-[60px] xl:text-[57px] xl:leading-[64px] font-medium sm:font-semibold text-center capitalize">{{ $t('card-why-header') }}</h2>
+            <h2 class="text-dark text-[28px] leading-9 lg:text-[44px] lg:leading-[60px] xl:text-[57px] xl:leading-[64px] font-medium sm:font-semibold text-center capitalize">{{ $t('card-why-header') }}</h2>
             <div class="mt-6 sm:mt-10 lg:mt-12 flex flex-col md:flex-row gap-4 lg:gap-8 justify-between">
                 <div class="p-6 lg:px-5 xl:py-8 2xl:px-12 border border-[#EDEDED] rounded-3xl text-center">
                     <img class="w-12 sm:w-16 lg:w-20 xl:w-auto m-auto" src="~/assets/images/jatri-card/card-icon.png" alt="Card icon">
