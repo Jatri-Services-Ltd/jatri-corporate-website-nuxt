@@ -316,9 +316,11 @@
   "get-card-card1-content1": "ডিমানি অ্যাকাউন্ট খুলুন",
   "get-card-card1-content2": "আবেদন করুন “ডিমানি যাত্রী কার্ড” এর জন্য",
   "get-card-card1-content3": "ঘরে বসেই বুঝে নিন আপনার কার্ড",
+
   "get-card-card2-title": "নিকটস্থ বাস কাউন্টার",
-  "get-card-card2-content1": "আপনার এ যান",
-  "get-card-available-counter-for-bn": "আপনার নিকটস্থ কাউন্টার এ যান",
+  // "get-card-card2-content1": "আপনার এ যান",
+  // "get-card-available-counter-for-bn": "আপনার নিকটস্থ কাউন্টার এ যান",
+
   "get-card-card2-content2": "NID ও তথ্য দিয়ে অ্যাকাউন্ট খুলুন",
   "get-card-card2-content3": "তাৎক্ষণিক আপনার কার্ড বুঝে নিন"
 }

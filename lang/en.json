@@ -313,9 +313,11 @@
   "get-card-card1-content2": "Apply for “Dmoney Jatri card” and order",
   "get-card-card1-content3": "Get your Dmoney Jatri card at your doorstep",
   "get-card-card2-title": "Nearest bus counter",
+
   "get-card-card2-content1": "Go to your nearest",
-  "get-card-available-counter": "available counter",
-  "get-card-available-counter-for-bn": "Go to your nearest available counter",
+  // "get-card-available-counter": "available counter",
+  // "get-card-available-counter-for-bn": "Go to your nearest available counter",
+
   "get-card-card2-content2": "Fill up info & open account with NID",
   "get-card-card2-content3": "Get your card instantly"
 }
