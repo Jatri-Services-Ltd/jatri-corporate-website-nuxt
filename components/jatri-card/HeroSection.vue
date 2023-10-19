@@ -1,6 +1,3 @@
-<script setup>
-
-</script>
 
 <template>
     <section class="mt-4">

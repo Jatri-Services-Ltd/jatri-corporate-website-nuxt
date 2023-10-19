@@ -11,6 +11,7 @@ import GetDmoneyJatriCard from '~~/components/jatri-card/GetDmoneyJatriCard.vue'
     <HeroSection />
     <WhyJatriCard />
     <PaymentsSection />
+    <JatriCardHowToUseDmoneyCard />
     <GetDmoneyJatriCard />
     <DmoneyForm />
     <FaqSection />
