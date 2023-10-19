@@ -3,7 +3,7 @@ const { locale } = useI18n();
 </script>
 
 <template>
-    <section class=" py-10 md:py-20 xl:pt-[92px]">
+    <section class="py-10 md:py-20 xl:py-[100px]">
         <div class="custom-container">
             <div class="flex flex-col xl:flex-row justify-between gap-6 sm:gap-10">
                 <div class="custom-width flex flex-col justify-between xl:w-[464px] 2xl:w-[600px]">
