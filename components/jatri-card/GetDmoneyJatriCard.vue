@@ -6,17 +6,17 @@ const { locale } = useI18n();
     <section class="py-10 md:py-20 xl:py-[100px]">
         <div class="custom-container">
             <div class="flex flex-col xl:flex-row justify-between gap-6 sm:gap-10">
-                <div class="custom-width flex flex-col justify-between xl:w-[464px] 2xl:w-[600px]">
+                <div class="custom-width flex flex-col justify-between xl:w-[432px] 2xl:w-[600px]">
                     <div>
                         <h3
                             class="text-dark text-[28px] leading-9 lg:text-[44px] lg:leading-[60px] xl:text-[57px] xl:leading-[64px] font-semibold text-center sm:text-left px-10 sm:px-0">
                            {{ $t('get-card-title') }}
                         </h3>
-                        <p class="hidden sm:block text-secondaryDark text-base lg:text-lg xl:text-xl mt-6">{{ $t('get-card-content') }}</p>
+                        <p class="hidden sm:block pr-5 text-secondaryDark text-base lg:text-lg xl:text-xl mt-6">{{ $t('get-card-content') }}</p>
                     </div>
 
                     <div class="hidden sm:flex gap-4 mt-6">
-                        <div class="p-4 bg-grey rounded-2xl xl:grow">
+                        <div class="p-4 bg-grey rounded-2xl 2xl:grow">
                             <img class="mb-6" src="~/assets/images/jatri-card/jatri-logo-small.png" alt="Jatri logo">
                             <div class="inline-block">
                                 <router-link to="" class="flex items-center gap-1 px-3 py-2 bg-white rounded-full">
@@ -25,7 +25,7 @@ const { locale } = useI18n();
                                 </router-link>
                             </div>
                         </div>
-                        <div class="p-4 bg-grey rounded-2xl xl:grow">
+                        <div class="p-4 bg-grey rounded-2xl 2xl:grow">
                             <img class="mb-6" src="~/assets/images/jatri-card/dmoney-logo-small.png" alt="Dmoney logo">
                             <div class="flex justify-between 2xl:justify-start gap-2 2xl:gap-5">
                                 <router-link to="" class="flex items-center gap-1 px-3 py-2 bg-white rounded-full">
