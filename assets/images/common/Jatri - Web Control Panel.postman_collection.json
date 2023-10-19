@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "5604c361-4e57-4d2f-9075-1c6321a95495",
+		"name": "Jatri - Web Control Panel",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27716789"
+	},
+	"item": [
+		{
+			"name": "Store Query",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Samad\",\r\n    \"mobile_number\": \"01834333454\",\r\n    \"city\": \"Dhaka\",\r\n    \"profession\": \"Developer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/card-queries",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"card-queries"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "Samad",
+							"disabled": true
+						},
+						{
+							"key": "mobile_number",
+							"value": "01834456344",
+							"disabled": true
+						},
+						{
+							"key": "profession",
+							"value": "Developer",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Counters",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Samad\",\r\n    \"mobile_number\": \"01834333454\",\r\n    \"city\": \"Dhaka\",\r\n    \"profession\": \"Developer\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/get-counters",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"get-counters"
+					],
+					"query": [
+						{
+							"key": "Name",
+							"value": "Samad",
+							"disabled": true
+						},
+						{
+							"key": "mobile_number",
+							"value": "01834456344",
+							"disabled": true
+						},
+						{
+							"key": "profession",
+							"value": "Developer",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
