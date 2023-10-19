@@ -303,5 +303,19 @@
   "card-faq-question6": "What about card expiry date?",
   "card-faq-answer6": "Validity date will be printed on the card.",
   "card-faq-question7": "Where to use the Card & accessibility of card?",
-  "card-faq-answer7": "Card is useable at all the UnionPay enabled ATM booth, POS machine as well as the Jatri ticket purchase agents across the nation."
+  "card-faq-answer7": "Card is useable at all the UnionPay enabled ATM booth, POS machine as well as the Jatri ticket purchase agents across the nation.",
+  "get-card-title": "How to get Dmoney Jatri card",
+  "get-card-content": "Install “Dmoney” app in your phone to\nopen account and apply for card.",
+  "get-card-play-store": "Play Store",
+  "get-card-app-store": "App Store",
+  "get-card-card1-title": "Get online",
+  "get-card-card1-content1": "Open Dmoney account",
+  "get-card-card1-content2": "Apply for “Dmoney Jatri card” and order",
+  "get-card-card1-content3": "Get your Dmoney Jatri card at your doorstep",
+  "get-card-card2-title": "Nearest bus counter",
+  "get-card-card2-content1": "Go to your nearest",
+  "get-card-available-counter": "available counter",
+  "get-card-available-counter-for-bn": "Go to your nearest available counter",
+  "get-card-card2-content2": "Fill up info & open account with NID",
+  "get-card-card2-content3": "Get your card instantly"
 }

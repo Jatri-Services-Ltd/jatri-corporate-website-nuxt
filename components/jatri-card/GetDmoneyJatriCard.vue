@@ -1,5 +1,5 @@
 <script setup>
-
+const { locale } = useI18n();
 </script>
 
 <template>
@@ -10,10 +10,9 @@
                     <div>
                         <h3
                             class="text-dark text-[28px] leading-9 lg:text-[44px] lg:leading-[60px] xl:text-[57px] xl:leading-[64px] font-semibold text-center sm:text-left px-10 sm:px-0">
-                            How to get Dmoney Jatri card
+                           {{ $t('get-card-title') }}
                         </h3>
-                        <p class="hidden sm:block text-secondaryDark text-base lg:text-lg xl:text-xl mt-6">Install “Dmoney”
-                            app in your phone to open account and apply for card.</p>
+                        <p class="hidden sm:block text-secondaryDark text-base lg:text-lg xl:text-xl mt-6">{{ $t('get-card-content') }}</p>
                     </div>
 
                     <div class="hidden sm:flex gap-4 mt-6">
@@ -22,7 +21,7 @@
                             <div class="inline-block">
                                 <router-link to="" class="flex items-center gap-1 px-3 py-2 bg-white rounded-full">
                                     <img src="~/assets/images/jatri-card/google-play-icon.png" alt="Google play icon">
-                                    <p class="text-dark text-sm font-medium">Play Store</p>
+                                    <p class="text-dark text-sm font-medium">{{$t('get-card-play-store')}}</p>
                                 </router-link>
                             </div>
                         </div>
@@ -31,11 +30,11 @@
                             <div class="flex justify-between 2xl:justify-start gap-2 2xl:gap-5">
                                 <router-link to="" class="flex items-center gap-1 px-3 py-2 bg-white rounded-full">
                                     <img src="~/assets/images/jatri-card/apple-logo-small.png" alt="Google play icon">
-                                    <p class="text-dark text-sm font-medium">App Store</p>
+                                    <p class="text-dark text-sm font-medium">{{$t('get-card-app-store')}}</p>
                                 </router-link>
                                 <router-link to="" class="flex items-center gap-1 px-3 py-2 bg-white rounded-full">
                                     <img src="~/assets/images/jatri-card/google-play-icon.png" alt="Google play icon">
-                                    <p class="text-dark text-sm font-medium">Play Store</p>
+                                    <p class="text-dark text-sm font-medium">{{$t('get-card-play-store')}}</p>
                                 </router-link>
                             </div>
                         </div>
@@ -48,11 +47,11 @@
                             <img src="~/assets/images/jatri-card/document-icon.png" alt="Document icon">
                         </div>
                         <div class="p-6 sm:p-4 md:p-6">
-                            <h5 class="text-dark text-2xl sm:text-xl lg:text-2xl font-medium mb-6">Get online</h5>
+                            <h5 class="text-dark text-2xl sm:text-xl lg:text-2xl font-medium mb-6">{{$t('get-card-card1-title')}}</h5>
                             <ul class="grid gap-4 text-base sm:text-sm lg:text-base text-dark">
-                                <li>Open Dmoney account</li>
-                                <li>Apply for “Dmoney Jatri card” and order</li>
-                                <li>Get your Dmoney Jatri card at your doorstep</li>
+                                <li>{{$t('get-card-card1-content1')}}</li>
+                                <li>{{$t('get-card-card1-content2')}}</li>
+                                <li>{{$t('get-card-card1-content3')}}</li>
                             </ul>
                         </div>
                     </div>
@@ -62,11 +61,12 @@
                             <img src="~/assets/images/jatri-card/bus-icon.png" alt="Document icon">
                         </div>
                         <div class="p-6 sm:p-4 md:p-6">
-                            <h5 class="text-dark text-2xl sm:text-xl lg:text-2xl font-medium mb-6">Nearest bus counter</h5>
+                            <h5 class="text-dark text-2xl sm:text-xl lg:text-2xl font-medium mb-6">{{$t('get-card-card2-title')}}</h5>
                             <ul class="grid gap-4 text-base sm:text-sm lg:text-base text-dark">
-                                <li>Go to your nearest <router-link to="" class="text-info underline">available counter</router-link></li>
-                                <li>Fill up info & open account with NID</li>
-                                <li>Get your card instantly</li>
+                              <li v-if="locale === 'en'">{{$t('get-card-card2-content1')}} <span class="text-[#1E88E5] text-base"> {{$t('get-card-available-counter')}}</span> </li>
+                              <li v-if="locale === 'bn'">{{$t('get-card-available-counter-for-bn')}}</li>
+                              <li>{{$t('get-card-card2-content2')}}</li>
+                              <li>{{$t('get-card-card2-content3')}}</li>
                             </ul>
                         </div>
                     </div>
