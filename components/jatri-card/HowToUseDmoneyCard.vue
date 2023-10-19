@@ -12,21 +12,21 @@
             <h2 class="content-title">hassle free</h2>
           </div>
           <div class="mt-8 lg:mt-6 xl:mt-20 space-y-8 xl:space-y-14">
-            <div>
+            <div :class="isMobile && activeSlideIndex === 0 ? 'block': 'hidden'">
               <p class="content-sub-title" :class="activeSlideIndex === 0 ? 'text-corporate ' : 'text-[#808080]'">01. Open account and apply for card</p>
               <p class="text-dark content-detail">Install <span class="font-medium">“Dmoney App”</span> --> verify
                 number --> complete eKYC with your NID --> apply for <span
                     class="font-medium">“Get Dmoney Jatri Card”</span> --> collect your
                 card at doorstep --> Remember the <span class="font-medium">PIN.</span></p>
             </div>
-            <div>
+            <div :class="isMobile && activeSlideIndex === 1 ? 'block': 'hidden'">
               <p class="content-sub-title" :class="activeSlideIndex === 1 ? 'text-corporate ' : 'text-[#808080]'">02. Recharge your card</p>
               <p class="text-[#808080] content-detail">Go to Dmoney app tap on <span
                   class="font-medium">“Add money”</span> --> select card --> enter minimum <span class="font-medium">10BDT</span>
                 amount and necessary info tap <span class="font-medium">“Submit”</span> --> You are ready to use your
                 Dmoney <span class="font-medium">Jatri Card!</span></p>
             </div>
-            <div>
+            <div :class="isMobile && activeSlideIndex === 2 ? 'block': 'hidden'">
               <p class="content-sub-title" :class="activeSlideIndex === 2 ? 'text-corporate ' : 'text-[#808080]'">03. Use card to buy tickets and more</p>
               <p class="text-[#808080] content-detail"><span class="font-medium">“Carry”</span>our Dmoney Jatri card
                 with you --> use Dmoney Jatri card to buy your day to day bus tickets in <span class="font-medium">seconds</span>
@@ -44,7 +44,7 @@
           <div>
 
             <swiper
-                :direction="'vertical'"
+                :direction="isMobile ? 'horizontal' : 'vertical'"
                 :slidesPerView="1.3"
 
                 :autoplay="{
@@ -58,7 +58,7 @@
                 class="mySwiper"
                 @slideChange="changeSlide"
             >
-              <swiper-slide class="mt-20">
+              <swiper-slide class="lg:mt-20">
                 <div
                     class="max-h-[674px] max-w-[300px] md:max-w-[350px] lg:max-w-[520px] mb-0 lg:mb-[65px] xl:mb-10 mx-auto mt-10 lg:mt-0">
                   <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/1.png" alt="">
@@ -89,15 +89,23 @@ import {Swiper, SwiperSlide} from 'swiper/vue';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import {FreeMode, Navigation, Autoplay, } from 'swiper';
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 
 const modules = [Navigation, FreeMode, Autoplay];
 
 const activeSlideIndex = ref(0)
 const changeSlide = (e) => {
   activeSlideIndex.value = e.activeIndex
-  console.log("aaaaaaaaa", e.activeIndex)
 }
+let isMobile = ref(false)
+const getWindowSize = () => {
+  isMobile.value = window.outerWidth <= 768
+}
+
+onMounted(() => {
+  window.addEventListener("resize", getWindowSize)
+  getWindowSize()
+})
 
 </script>
 
