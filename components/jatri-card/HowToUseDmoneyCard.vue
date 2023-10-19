@@ -46,7 +46,7 @@
             <swiper
                 :direction="isMobile ? 'horizontal' : 'vertical'"
                 :slidesPerView="1.3"
-
+                :spaceBetween="20"
                 :autoplay="{
                   delay: 2500,
                   disableOnInteraction: false,
@@ -60,19 +60,19 @@
             >
               <swiper-slide class="lg:mt-20">
                 <div
-                    class="max-h-[674px] max-w-[300px] md:max-w-[350px] lg:max-w-[520px] mb-0 lg:mb-[65px] xl:mb-10 mx-auto mt-10 lg:mt-0">
+                    class="max-h-[674px] max-w-[250px] sm:max-w-[280px] md:max-w-[350px] lg:max-w-[520px] mb-0 lg:mb-[65px] xl:mb-10 mx-auto mt-10 lg:mt-0">
                   <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/1.png" alt="">
                 </div>
               </swiper-slide>
               <swiper-slide>
                 <div
-                    class="max-h-[674px] max-w-[300px] md:max-w-[350px] lg:max-w-[520px] mb-0 lg:mb-[65px] xl:mb-10 mx-auto mt-10 lg:mt-0">
+                    class="max-h-[674px] max-w-[250px] sm:max-w-[280px] md:max-w-[350px] lg:max-w-[520px] mb-0 lg:mb-[65px] xl:mb-10 mx-auto mt-10 lg:mt-0">
                   <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/1.png" alt="">
                 </div>
               </swiper-slide>
               <swiper-slide>
                 <div
-                    class="max-h-[674px] max-w-[300px] md:max-w-[350px] lg:max-w-[520px] mb-0 lg:mb-[65px] xl:mb-10 mx-auto mt-10 lg:mt-0">
+                    class="max-h-[674px] max-w-[250px] sm:max-w-[280px] md:max-w-[350px] lg:max-w-[520px] mb-0 lg:mb-[65px] xl:mb-10 mx-auto mt-10 lg:mt-0">
                   <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/1.png" alt="">
                 </div>
               </swiper-slide>
@@ -99,7 +99,7 @@ const changeSlide = (e) => {
 }
 let isMobile = ref(false)
 const getWindowSize = () => {
-  isMobile.value = window.outerWidth <= 768
+  isMobile.value = window.outerWidth <= 1023
 }
 
 onMounted(() => {
@@ -124,6 +124,17 @@ onMounted(() => {
 
 .use-dmoney-swipper-container .swiper-wrapper{
   height: 977px !important;
+}
+
+@media(max-width:767px){
+  .use-dmoney-swipper-container .swiper-wrapper{
+  height: 420px !important;
+}
+}
+@media(max-width:411px){
+  .use-dmoney-swipper-container .swiper-wrapper{
+  height: 350px !important;
+}
 }
 
 .use-dmoney-swipper-container .swiper-slide{
