@@ -1,5 +1,5 @@
 <template>
-    <section class="mt-4 md:mt-8">
+    <section>
         <div class="custom-container">
             <div class="bg-secondary rounded-3xl p-4 md:px-5 xl:px-14 sm:py-5 md:py-7 lg:py-8 xl:py-10 flex flex-col lg:flex-row lg:justify-between items-start lg:items-center gap-4">
                 <div>
