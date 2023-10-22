@@ -8,11 +8,9 @@ const toast = useToast()
 const config = useRuntimeConfig();
 const allCitiesData = ref([])
 const activeCounter = ref({})
-const loading =ref(true)
 const getAllCounters = async ()=>{
   await axios.get(config.public.apiURL +'/get-counters')
       .then((res) => {
-        loading.value = false
         allCitiesData.value = res.data.data
         activeCounter.value = res.data?.data[0]
       }).catch((e) => {
@@ -54,7 +52,7 @@ const selectedCitiesCounter = (cityId)=>{
     </div>
   </div>
   </div>
-  <div v-else-if="!loading">
+  <div v-else>
       <NoData/>
   </div>
 </template>
