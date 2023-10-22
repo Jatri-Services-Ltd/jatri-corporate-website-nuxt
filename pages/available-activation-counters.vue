@@ -3,10 +3,11 @@ import {ref} from 'vue';
 import axios from 'axios'
 import { useToast } from 'vue-toastification'
 const toast = useToast()
+const config = useRuntimeConfig();
 const allCitiesData = ref([])
 const activeCounter = ref({})
 const getAllCounters = async ()=>{
-  await axios.get('http://159.89.202.153:9300/api/v1/get-counters')
+  await axios.get(config.public.apiURL +'/get-counters')
       .then((res) => {
         allCitiesData.value = res.data.data
         activeCounter.value = res.data.data[0]
