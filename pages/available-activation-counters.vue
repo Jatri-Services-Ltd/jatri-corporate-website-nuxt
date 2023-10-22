@@ -1,9 +1,7 @@
 <script setup>
-import {onBeforeMount, onMounted, ref, watch, computed} from 'vue';
+import {ref} from 'vue';
 import axios from 'axios'
-// import { useToast } from 'vue-toastification'
 import { useToast } from 'vue-toastification'
-
 const toast = useToast()
 const allCitiesData = ref([])
 const activeCounter = ref({})
