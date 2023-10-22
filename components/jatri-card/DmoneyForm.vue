@@ -13,7 +13,7 @@ const initialState = {
 
 const cardSubmitForm = reactive({ ...initialState })
 const handleSubmit = () => {
-  axios.post(config.public.apiURL+'/card-queries', cardSubmitForm).then((res) => {
+  axios.post(config.public.apiURL+'/card-help-requests', cardSubmitForm).then((res) => {
     toast.success('Request submitted successfully')
     Object.assign(cardSubmitForm, { ...initialState });
   }).catch((e) => {

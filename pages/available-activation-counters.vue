@@ -9,10 +9,10 @@ const config = useRuntimeConfig();
 const allCitiesData = ref([])
 const activeCounter = ref({})
 const getAllCounters = async ()=>{
-  await axios.get(config.public.apiURL +'/get-counters')
+  await axios.get(config.public.apiURL +'/get-division-wise-counters')
       .then((res) => {
         allCitiesData.value = res.data.data
-        activeCounter.value = res.data.data[0]
+        activeCounter.value = res.data?.data[0]
       }).catch((e) => {
         toast.error("Something went wrong")
       })
@@ -92,5 +92,32 @@ const selectedCitiesCounter = (cityId)=>{
   bottom: -3px;
   background-color: white;
 
+}
+
+
+
+/* The notification itself */
+.Vue-Toastification__toast.custom {
+  @apply min-w-0 px-6 py-3 border-2 shadow-none select-none rounded-xl bg-dark;
+}
+
+/* Success variant of the notification */
+.Vue-Toastification__toast--success.custom {
+  @apply border-success text-success;
+}
+
+/* etc */
+.Vue-Toastification__toast--error.custom {
+  @apply border-danger text-danger;
+}
+
+/* The icon which i'm replacing with a component vue-material-icons (more on how to do this in the docs) */
+.Vue-Toastification__toast.custom .Vue-Toastification__icon {
+  @apply h-auto;
+}
+
+/* The content - use this to override the default font styling etc */
+.Vue-Toastification__toast-body.custom {
+  @apply self-center font-sans text-base font-bold leading-relaxed;
 }
 </style>
