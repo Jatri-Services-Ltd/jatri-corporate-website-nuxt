@@ -1,6 +1,9 @@
 <script setup>
 import { reactive } from 'vue'
 import axios from 'axios'
+import { useToast } from 'vue-toastification'
+const toast = useToast()
+const config = useRuntimeConfig();
 const initialState = {
   name: '',
   mobile_number: '',
@@ -9,14 +12,13 @@ const initialState = {
 }
 
 const cardSubmitForm = reactive({ ...initialState })
-
 const handleSubmit = () => {
-  axios.post('http://159.89.202.153:9300/api/v1/card-queries', cardSubmitForm).then((res) => {
-    console.log(res)
+  axios.post(config.public.apiURL+'/card-queries', cardSubmitForm).then((res) => {
+    toast.success('Request submitted successfully')
+    Object.assign(cardSubmitForm, { ...initialState });
   }).catch((e) => {
-    console.log(e)
+    toast.error('Something went wrong')
   })
-  Object.assign(cardSubmitForm, { ...initialState });
 }
 const { locale } = useI18n();
 </script>
