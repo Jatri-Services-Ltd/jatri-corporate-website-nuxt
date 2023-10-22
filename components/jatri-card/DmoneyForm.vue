@@ -29,10 +29,10 @@ const { locale } = useI18n();
           style="box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);">
           <div class="background">
             <div class="pt-10 lg:pt-[60px] px-3 lg:px-12">
-              <p class="w-4/5 lg:w-2/3 text-[28px] font-semibold leading-9 lg:text-[45px] lg:leading-[52px] text-white">{{
+              <p class="w-4/5 lg:w-[85%] text-[28px] font-semibold leading-9 lg:text-[45px] lg:leading-[52px] text-white">{{
                 $t('card-fromLeft-header') }}</p>
               <p
-                class="w-full lg:w-[60%] text-xs font-medium leading-4 mt-2 lg:mt-4 lg:text-base lg:font-normal lg:leading-6 text-white">
+                class="w-full lg:w-[80%] text-xs font-medium leading-4 mt-2 lg:mt-4 lg:text-base lg:font-normal lg:leading-6 text-white">
                 {{ $t('card-fromLeft-content') }}</p>
             </div>
           </div>
