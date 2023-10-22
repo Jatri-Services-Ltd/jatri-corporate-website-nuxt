@@ -37,8 +37,8 @@ const { locale } = useI18n();
             </div>
           </div>
           <div class="w-full lg:w-[620px] xl:w-full">
-            <div class="px-6 py-6 lg:py-[60px] lg:px-12">
-              <p class="text-[24px] lg:text-[36px] font-medium lg:leading-[44px] text-dark">{{ $t('card-form-title') }}</p>
+            <div class="px-4 py-6 lg:py-[60px] lg:px-12">
+              <p class="text-2xl lg:text-[36px] font-medium lg:leading-[44px] text-dark">{{ $t('card-form-title') }}</p>
               <p class="mt-4 text-xs lg:text-[20px] font-medium leading-4 lg:leading-7 text-[#676769]">{{
                 $t('card-form-content') }}</p>
 
