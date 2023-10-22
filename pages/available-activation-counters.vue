@@ -1,18 +1,20 @@
 <script setup>
 import {onBeforeMount, onMounted, ref, watch, computed} from 'vue';
 import axios from 'axios'
+// import { useToast } from 'vue-toastification'
+import { useToast } from 'vue-toastification'
+
+const toast = useToast()
 const allCitiesData = ref([])
 const activeCounter = ref({})
 const getAllCounters = async ()=>{
-  try {
-    await axios.get('http://159.89.202.153:9300/api/v1/get-counters')
-        .then((res) => {
-          allCitiesData.value = res.data.data
-          activeCounter.value = res.data.data[0]
-        })
-  } catch (e) {
-    console.log(e)
-  }
+  await axios.get('http://159.89.202.153:9300/api/v1/get-counters')
+      .then((res) => {
+        allCitiesData.value = res.data.data
+        activeCounter.value = res.data.data[0]
+      }).catch((e) => {
+        toast.error("Something went wrong")
+      })
 }
 getAllCounters()
 
