@@ -3,6 +3,7 @@ import {ref} from 'vue';
 import axios from 'axios'
 import { useToast } from 'vue-toastification'
 import NoData from '~~/components/app/NoData.vue'
+const { locale } = useI18n();
 const toast = useToast()
 const config = useRuntimeConfig();
 const allCitiesData = ref([])
@@ -30,21 +31,21 @@ const selectedCitiesCounter = (cityId)=>{
 
 <template>
   <div v-if="allCitiesData.length" class="custom-container pt-4 md:pt-10 pb-[100px]">
-    <h1 class="text-dark text-2xl md:text-[57px] leading-8 md:leading-[64px] font-semibold mb-3 md:mb-6">Available activation counters</h1>
-    <p class="text-[#676769] text-xs md:text-xl mb-6 md:mb-10">You can avail a card from our designated activation counters. Simply visit the counter in your preferred area and open an account to receive your card instantly. All you need is your National ID (NID) and phone number.</p>
+    <h1 class="text-dark text-2xl md:text-[57px] leading-8 md:leading-[64px] font-semibold mb-3 md:mb-6">{{ $t('available-counter-heading') }}</h1>
+    <p class="text-[#676769] text-xs md:text-xl mb-6 md:mb-10">{{ $t('available-counter-content') }}</p>
     <div>
     <div  class="w-full flex flex-wrap gap-3 md:gap-4">
       <button v-for="allCities in allCitiesData" class="district-tab-btn" :class="activeCounter.id === allCities.id ? 'border-dark bg-dark text-white' : 'border-[#DBDBDB] bg-white text-dark'" @click="selectedCitiesCounter(allCities.id)">
-        {{allCities.name}}
+        {{ locale === 'en' ? allCities.name : allCities.name_in_bangla }}
       </button>
     </div>
 
     <div class="mt-8">
       <div class="border border-[#EDEDED] rounded-2xl bg-white overflow-hidden relative active-counter-wrapper">
         <div v-for="area in activeCounter.areas">
-          <div class="bg-[#EDEDED] py-4 px-3"><span class="text-dark font-medium text-base md:text-xl">{{area.name}}</span></div>
+          <div class="bg-[#EDEDED] py-4 px-3"><span class="text-dark font-medium text-base md:text-xl">{{locale === 'en' ? area.name : area.name_in_bangla}}</span></div>
           <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 border items-center content-wrapper relative">
-            <div v-for="counter in area.counters" class="table-content">{{counter.name}}</div>
+            <div v-for="counter in area.counters" class="table-content">{{ locale === 'en' ? counter.name : counter.name_in_bangla }}</div>
           </div>
         </div>
       </div>
