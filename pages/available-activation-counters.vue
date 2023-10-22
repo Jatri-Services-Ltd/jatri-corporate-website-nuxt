@@ -2,6 +2,7 @@
 import {ref} from 'vue';
 import axios from 'axios'
 import { useToast } from 'vue-toastification'
+import NoData from '~~/components/app/NoData.vue'
 const toast = useToast()
 const config = useRuntimeConfig();
 const allCitiesData = ref([])
@@ -28,7 +29,7 @@ const selectedCitiesCounter = (cityId)=>{
 </script>
 
 <template>
-  <div class="custom-container pt-4 md:pt-10 pb-[100px]">
+  <div v-if="allCitiesData.length" class="custom-container pt-4 md:pt-10 pb-[100px]">
     <h1 class="text-dark text-2xl md:text-[57px] leading-8 md:leading-[64px] font-semibold mb-3 md:mb-6">Available activation counters</h1>
     <p class="text-[#676769] text-xs md:text-xl mb-6 md:mb-10">You can avail a card from our designated activation counters. Simply visit the counter in your preferred area and open an account to receive your card instantly. All you need is your National ID (NID) and phone number.</p>
     <div>
@@ -50,6 +51,9 @@ const selectedCitiesCounter = (cityId)=>{
     </div>
   </div>
   </div>
+  <div v-else>
+      <NoData/>
+  </div>
 </template>
 
 
@@ -58,7 +62,7 @@ const selectedCitiesCounter = (cityId)=>{
     font-family: 'Inter', sans-serif;
 }
 .district-tab-btn{
-  @apply border rounded-full px-4 md:px-6 py-[10px] md:py-[11px] text-xs md:text-base font-medium capitalize hover:border-dark hover:bg-dark hover:text-white transition-all delay-75 ease-in-out duration-300
+  @apply border rounded-full px-4 md:px-6 py-[10px] md:py-[11px] text-xs md:text-base font-medium capitalize hover:border-dark hover:bg-dark hover:text-white transition-all ease-in-out duration-300
 }
 .table-content{
   @apply text-[12px] md:text-base font-medium px-3 min-h-[48px] md:min-h-[72px] border-l border-b border-[#EDEDED] flex items-center
