@@ -3,43 +3,30 @@
   <section class="bg-[#FEF2F0]  use-dmoney-swipper-container">
     <div class="custom-container">
       <div class="max-w-[1440px] flex flex-col md:flex-row gap-0 md:gap-5 lg:gap-16 xl:gap-20">
-        <div class="flex-grow md:max-w-[420px] lg:max-w-[520px] xl:max-w-[640px] pb-10 lg:pb-16 xl:pb-[100px] order-2 md:order-1">
-          <div class="hidden md:block  pt-10 lg:pt-16 xl:pt-[100px]">
-            <p class="text-[#676769] text-base lg:text-xl font-medium mb-4 lg:mb-2 xl:mb-4">HOW TO USE DMONEY JATRI
-              CARD</p>
-            <h2 class="content-title">Make your&nbsp;</h2>
-            <h2 class="content-title">everyday commute&nbsp;</h2>
-            <h2 class="content-title">hassle free</h2>
+        <div class="flex-grow self-center md:max-w-[420px] lg:max-w-[520px] xl:max-w-[700px] order-2 md:order-1">
+          <div class="hidden md:block">
+            <p class="text-[#676769] text-base lg:text-xl font-medium mb-4 lg:mb-2 xl:mb-4">{{$t('how-to-use-jatricard-subheading')}}</p>
+            <h2 class="content-title">{{$t('how-to-use-jatricard-heading')}}</h2>
           </div>
           <div class="mt-8 md:mt-6 xl:mt-20 md:space-y-4 lg:space-y-8 xl:space-y-14 content-height">
             <div :class="isMobile && (activeSlideIndex === 0 ? 'block': 'hidden')">
-              <p class="content-sub-title" :class="activeSlideIndex === 0 ? 'text-corporate ' : 'text-[#808080]'">01. Open account and apply for card</p>
-              <p class="content-detail" :class="activeSlideIndex === 0 ? 'text-dark' : 'text-[#808080]'">Install <span class="font-medium">“Dmoney App”</span> --> verify
-                number --> complete eKYC with your NID --> apply for <span
-                    class="font-medium">“Get Dmoney Jatri Card”</span> --> collect your
-                card at doorstep --> Remember the <span class="font-medium">PIN.</span></p>
+              <p class="content-sub-title" :class="activeSlideIndex === 0 ? 'text-corporate ' : 'text-[#808080]'">{{$t('how-to-use-jatricard-step1-title')}}</p>
+              <p class="content-detail" :class="activeSlideIndex === 0 ? 'text-dark' : 'text-[#808080]'">{{$t('how-to-use-jatricard-step1-content')}}</p>
             </div>
             <div :class="isMobile && (activeSlideIndex === 1 ? 'block': 'hidden')">
-              <p class="content-sub-title" :class="activeSlideIndex === 1 ? 'text-corporate ' : 'text-[#808080]'">02. Recharge your card</p>
-              <p class="content-detail" :class="activeSlideIndex === 1 ? 'text-dark' : 'text-[#808080]'">Go to Dmoney app tap on <span
-                  class="font-medium">“Add money”</span> --> select card --> enter minimum <span class="font-medium">10BDT</span>
-                amount and necessary info tap <span class="font-medium">“Submit”</span> --> You are ready to use your
-                Dmoney <span class="font-medium">Jatri Card!</span></p>
+              <p class="content-sub-title" :class="activeSlideIndex === 1 ? 'text-corporate ' : 'text-[#808080]'">{{$t('how-to-use-jatricard-step2-title')}}</p>
+              <p class="content-detail" :class="activeSlideIndex === 1 ? 'text-dark' : 'text-[#808080]'">{{$t('how-to-use-jatricard-step2-content')}}</p>
             </div>
             <div :class="isMobile && (activeSlideIndex === 2 ? 'block': 'hidden')">
-              <p class="content-sub-title" :class="activeSlideIndex === 2 ? 'text-corporate ' : 'text-[#808080]'">03. Use card to buy tickets and more</p>
-              <p class="content-detail" :class="activeSlideIndex === 2 ? 'text-dark' : 'text-[#808080]'"><span class="font-medium">“Carry”</span>our Dmoney Jatri card
-                with you --> use Dmoney Jatri card to buy your day to day bus tickets in <span class="font-medium">seconds</span>
-                with one tap --> you can also use the card for other payments and cash withdrawal.</p>
+              <p class="content-sub-title" :class="activeSlideIndex === 2 ? 'text-corporate ' : 'text-[#808080]'">{{$t('how-to-use-jatricard-step3-title')}}</p>
+              <p class="content-detail" :class="activeSlideIndex === 2 ? 'text-dark' : 'text-[#808080]'">{{$t('how-to-use-jatricard-step3-content')}}</p>
             </div>
           </div>
         </div>
         <div class="flex-grow flex flex-col lg:flex-row justify-start lg:justify-end order-1 md:order-2">
           <div class="block md:hidden pt-10">
-            <p class="text-[#676769] text-base lg:text-xl font-medium mb-2 xl:mb-4">HOW TO USE DMONEY JATRI CARD</p>
-            <h2 class="content-title">Make your&nbsp;</h2>
-            <h2 class="content-title">everyday commute&nbsp;</h2>
-            <h2 class="content-title">hassle free</h2>
+            <p class="text-[#676769] text-base lg:text-xl font-medium mb-4">{{$t('how-to-use-jatricard-subheading')}}</p>
+            <h2 class="content-title">{{$t('how-to-use-jatricard-heading')}}</h2>
           </div>
           <div>
 
@@ -126,11 +113,11 @@ onMounted(() => {
   @apply max-h-[389px] md:max-h-[544px] xl:max-h-[674px] max-w-[300px] md:max-w-[390px] xl:max-w-[520px]
 }
 .content-title {
-  @apply text-dark text-[28px] lg:text-[35px] xl:text-[57px] leading-9 lg:leading-[44px] xl:leading-[64px] font-semibold
+  @apply text-dark text-[28px] lg:text-[35px] xl:text-[57px] leading-9 lg:leading-[44px] xl:leading-[64px] font-medium sm:font-semibold
 }
 
 .content-sub-title {
-  @apply text-xl lg:text-2xl xl:text-4xl xl:leading-[44px] font-medium mb-2 xl:mb-5
+  @apply text-xl lg:text-2xl xl:text-4xl xl:leading-[44px] font-medium mb-5
 }
 
 .content-detail {
@@ -138,7 +125,7 @@ onMounted(() => {
 }
 
 .use-dmoney-swipper-container .swiper-wrapper{
-  height: 977px !important;
+  height: 920px !important;
 }
 .use-dmoney-swipper-container .swiper-slide{
   height: 674px;
