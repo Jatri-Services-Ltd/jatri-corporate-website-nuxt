@@ -282,7 +282,7 @@
   "card-form-content": "Our customer service will reach you out and will help you step by step to get a card",
   "card-form-name": "Name",
   "card-form-mobile": "Mobile number",
-  "card-form-city": "Enter your city",
+  "card-form-city": "City",
   "card-form-profession": "Profession",
   "card-form-optional": "Optional",
   "card-form-submit": "Submit",
@@ -315,8 +315,6 @@
   "get-card-card2-title": "Nearest bus counter",
 
   "get-card-card2-content1": "Go to your nearest",
-  // "get-card-available-counter": "available counter",
-  // "get-card-available-counter-for-bn": "Go to your nearest available counter",
 
   "get-card-card2-content2": "Fill up info & open account with NID",
   "get-card-card2-content3": "Get your card instantly"
