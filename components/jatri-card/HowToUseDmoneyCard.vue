@@ -7,7 +7,7 @@
           <div class="hidden md:block">
             <p class="text-[#676769] text-base lg:text-xl font-medium mb-4 lg:mb-2 xl:mb-4">
               {{ $t('how-to-use-jatricard-subheading') }}</p>
-            <h2 class="content-title">{{ $t('how-to-use-jatricard-heading') }}</h2>
+            <h2 class="content-title">{{ $t('how-to-use-jatricard-heading1') }}<br>{{ $t('how-to-use-jatricard-heading2') }}<br>{{ $t('how-to-use-jatricard-heading3') }}</h2>
           </div>
           <div class="mt-8 md:mt-6 xl:mt-20 md:space-y-4 lg:space-y-8 xl:space-y-14 content-height">
             <div :class="isMobile && (activeSlideIndex === 0 ? 'block' : 'hidden')">
@@ -33,7 +33,7 @@
         <div class="flex-grow flex flex-col lg:flex-row justify-start lg:justify-end order-1 md:order-2">
           <div class="block md:hidden pt-10">
             <p class="text-[#676769] text-base lg:text-xl font-medium mb-4">{{ $t('how-to-use-jatricard-subheading') }}</p>
-            <h2 class="content-title">{{ $t('how-to-use-jatricard-heading') }}</h2>
+            <h2 class="content-title">{{ $t('how-to-use-jatricard-heading1') }}<br>{{ $t('how-to-use-jatricard-heading2') }}<br>{{ $t('how-to-use-jatricard-heading3') }}</h2>
           </div>
           <div>
 
@@ -151,9 +151,9 @@ onMounted(() => {
   .use-dmoney-swipper-container .swiper-wrapper {
     height: 380px !important;
   }
-  .use-dmoney-swipper-container .swiper-slide {
+  /* .use-dmoney-swipper-container .swiper-slide {
     width: 300px !important;
-  }
+  } */
   .content-height {
     min-height: 160px;
   }
