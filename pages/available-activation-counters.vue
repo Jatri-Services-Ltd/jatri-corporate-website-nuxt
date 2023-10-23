@@ -9,7 +9,7 @@ const config = useRuntimeConfig();
 const allCitiesData = ref([])
 const activeCounter = ref({})
 const getAllCounters = async ()=>{
-  await axios.get(config.public.apiURL +'/get-division-wise-counters')
+  await axios.get(config.public.apiURL +'/api/v1/get-division-wise-counters')
       .then((res) => {
         allCitiesData.value = res.data.data
         activeCounter.value = res.data?.data[0]
