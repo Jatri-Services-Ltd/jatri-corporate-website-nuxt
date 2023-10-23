@@ -279,6 +279,18 @@
   "card-payment-parking": "পার্কিং ফি\nপেমেন্ট",
   "card-payment-pos": "মেশিন \nপেমেন্ট",
   "card-payment-atm": "এটিএম থেকে উত্তোলন",
+
+  "how-to-use-jatricard-subheading": "ডিমানি যাত্রী কার্ড কিভাবে ব্যবহার করবেন",
+  "how-to-use-jatricard-heading1": "আপনার প্রতিদিনের",
+  "how-to-use-jatricard-heading2": "যাতায়াত হোক",
+  "how-to-use-jatricard-heading3": "ঝামেলাবিহীন",
+  "how-to-use-jatricard-step1-title": "০১. অ্যাকাউন্ট খুলুন ও আবেদন করুন",
+  "how-to-use-jatricard-step1-content": "ইন্সটল করুন “ডিমানি অ্যাপ” --> নম্বর ভেরিফাই--> NID দিয়ে eKYC সম্পন্ন করুন --> আবেদন করুন “ডিমানি যাত্রী কার্ড এ” --> ঘড়ে বসে কার্ড পান --> আপনার PIN টি মনে রাখু্ন",
+  "how-to-use-jatricard-step2-title": "০২. কার্ড রিচার্জ করুন",
+  "how-to-use-jatricard-step2-content": "ডিমানি অ্যাপ এ “অ্যাাড মানি” তে যান --> কার্ড সিলেক্ট করুন --> মিনিমাম ১০ টাকা দিন ও প্রয়োজনীয় তথ্য দিয়ে “সাবমিট” করুন --> আপনআর ডিমানি যাত্রী কার্ড রেডি ব্যাবহার এর জন্য!",
+  "how-to-use-jatricard-step3-title": "০৩. টিকিট এবং কেনাকাটায় ডিমানি যাত্রী কার্ড",
+  "how-to-use-jatricard-step3-content": "ডিমানি যাত্রী কার্ড টি “সাথে” রাখুন --> ডিমানি যাত্রী কার্ডে আপনার প্রতিদিনের বাস টিকিট কিনুন মুহূর্তেই --> আপনি কার্ড টি ক্যাশ উইথড্রয়াল ও অন্যান্য পেমেন্টে ও ব্যাবহার করতে পারেন",
+
   "card-fromLeft-header": "ক্যাশলেস যাতায়াত",
   "card-fromLeft-content": "ডিমানি যাত্রী কার্ড আপনার প্রতিদিনের যাতায়াতকে করে তুলবে ঝামেলাবিহীন",
   "card-form-title": "কার্ড পেতে সাহায্যের প্রয়োজন?",
@@ -316,11 +328,7 @@
   "get-card-card1-content1": "ডিমানি অ্যাকাউন্ট খুলুন",
   "get-card-card1-content2": "আবেদন করুন “ডিমানি যাত্রী কার্ড” এর জন্য",
   "get-card-card1-content3": "ঘরে বসেই বুঝে নিন আপনার কার্ড",
-
   "get-card-card2-title": "নিকটস্থ বাস কাউন্টার",
-  // "get-card-card2-content1": "আপনার এ যান",
-  // "get-card-available-counter-for-bn": "আপনার নিকটস্থ কাউন্টার এ যান",
-
   "get-card-card2-content2": "NID ও তথ্য দিয়ে অ্যাকাউন্ট খুলুন",
   "get-card-card2-content3": "তাৎক্ষণিক আপনার কার্ড বুঝে নিন",
 
