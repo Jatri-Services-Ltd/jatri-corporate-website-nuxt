@@ -48,12 +48,13 @@
                 320: {
                   spaceBetween: 30
                 }
-              }" :autoplay="{
-  delay: 2500,
-  disableOnInteraction: false,
-}" :pagination="{
-  clickable: true,
-}" :modules="modules" class="mySwiper" @slideChange="changeSlide">
+                }" :autoplay="{
+                  delay: 2500,
+                  disableOnInteraction: false,
+                  pauseOnMouseEnter: true,
+                }" :pagination="{
+                  clickable: true,
+                }" :modules="modules" class="mySwiper" @slideChange="changeSlide">
                 <swiper-slide>
                   <div class="slider-img-wrapper">
                     <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/1.png" alt="">
