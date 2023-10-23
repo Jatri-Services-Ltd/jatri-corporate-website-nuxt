@@ -20,23 +20,23 @@ const { locale } = useI18n();
                         <div class="p-4 bg-grey rounded-2xl">
                             <img class="mb-6" src="~/assets/images/jatri-card/jatri-logo-small.png" alt="Jatri logo">
                             <div class="inline-block">
-                                <router-link to="" class="flex items-center gap-1 px-3 py-2 bg-white rounded-full">
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.jatri.jatriuser&hl=en&gl=" class="flex items-center gap-1 px-3 py-2 bg-white rounded-full">
                                     <img src="~/assets/images/jatri-card/google-play-icon.png" alt="Google play icon">
                                     <p class="text-dark text-sm font-medium">{{$t('get-card-play-store')}}</p>
-                                </router-link>
+                                </a>
                             </div>
                         </div>
                         <div class="p-4 bg-grey rounded-2xl xl:grow">
                             <img class="mb-6" src="~/assets/images/jatri-card/dmoney-logo-small.png" alt="Dmoney logo">
                             <div class="flex justify-between xl:justify-start gap-2 2xl:gap-5">
-                                <router-link to="" class="flex items-center gap-1 px-3 py-2 bg-white rounded-full">
+                                <a target="_blank" href="https://apps.apple.com/us/app/dmoney/id1441277786" class="flex items-center gap-1 px-3 py-2 bg-white rounded-full">
                                     <img src="~/assets/images/jatri-card/apple-logo-small.png" alt="Google play icon">
                                     <p class="text-dark text-sm font-medium">{{$t('get-card-app-store')}}</p>
-                                </router-link>
-                                <router-link to="" class="flex items-center gap-1 px-3 py-2 bg-white rounded-full">
+                                </a>
+                                <a target="_blank" href="https://play.google.com/store/apps/details?id=com.dmoneybd.dcustomer.dm" class="flex items-center gap-1 px-3 py-2 bg-white rounded-full">
                                     <img src="~/assets/images/jatri-card/google-play-icon.png" alt="Google play icon">
                                     <p class="text-dark text-sm font-medium">{{$t('get-card-play-store')}}</p>
-                                </router-link>
+                                </a>
                             </div>
                         </div>
                     </div>
