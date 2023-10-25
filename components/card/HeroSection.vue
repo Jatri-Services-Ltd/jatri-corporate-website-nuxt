@@ -7,7 +7,7 @@
                     <h1 class="banner-title 2xl:w-[729px] mb-6 text-[28px] leading-9 sm:text-4xl sm:leading-[50px] lg:text-[44px] xl:text-[64px] lg:leading-[56px] xl:leading-[80px] 2xl:text-[56px] 2xl:leading-[72px] 3xl:text-[64px] 3xl:leading-[80px] font-bold text-white">
                       {{ $t('card-hero-header') }}
                     </h1>
-                    <router-link to="/jatri-card" class="bg-white rounded-full inline-block px-8 py-[11px] lg:py-4 text-base lg:text-lg xl:text-xl font-medium text-primary">{{ $t('card-hero-btn') }}</router-link>
+                    <router-link to="/card" class="bg-white rounded-full inline-block px-8 py-[11px] lg:py-4 text-base lg:text-lg xl:text-xl font-medium text-primary">{{ $t('card-hero-btn') }}</router-link>
                 </div>
 
                 <img class="hidden lg:block w-[464px] h-[372px] object-cover" src="~/assets/images/jatri-card/jatri-card-banner-img.png" alt="Jatri Card Image">
