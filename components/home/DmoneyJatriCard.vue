@@ -10,7 +10,7 @@
                     class="relative h-[280px] lg:h-[446px] rounded-3xl bg-[linear-gradient(98deg,_#F04935_1.78%,_#887CF5_98.84%)] flex items-center">
                     <div class="custom-padding z-10 lg:w-[60%] pl-4 lg:pl-10 xl:pl-20">
                         <h1
-                            class="w-[252px] sm:w-10/12 text-2xl sm:text-3xl lg:text-[39px] lg:leading-[50px] xl:text-[57px] xl:leading-[64px] font-semibold text-white">
+                            class="w-[252px] sm:w-3/4 lg:w-[90%] text-2xl sm:text-3xl lg:text-[39px] lg:leading-[50px] xl:text-[57px] xl:leading-[64px] font-semibold text-white">
                             {{ $t('n-home-dmoney-jatricard-title') }}
                         </h1>
                         <p class="w-[215px] sm:w-auto text-white text-sm lg:text-base mt-1 lg:mt-4 mb-6 lg:mb-12">{{
