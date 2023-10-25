@@ -1,10 +1,10 @@
 <script setup>
 import { ref } from 'vue';
 import axios from 'axios'
-import { useToast } from 'vue-toastification'
 import NoData from '~~/components/app/NoData.vue'
 const { locale } = useI18n();
-const toast = useToast()
+const {$errorToast} = useNuxtApp();
+
 const config = useRuntimeConfig();
 const allCitiesData = ref([])
 const activeCounter = ref({})
@@ -15,8 +15,9 @@ const getAllCounters = async () => {
     .then((res) => {
       allCitiesData.value = res.data.data
       activeCounter.value = res.data?.data[0]
+      
     }).catch((e) => {
-      toast.error("Something went wrong")
+      $errorToast("Something went wrong")
     })
     .finally(() => loading.value = false)
 }

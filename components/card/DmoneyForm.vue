@@ -1,9 +1,9 @@
 <script setup>
 import { reactive } from 'vue'
 import axios from 'axios'
-import { useToast } from 'vue-toastification'
-const toast = useToast()
 const config = useRuntimeConfig();
+const {$successToast, $errorToast} = useNuxtApp();
+
 const initialState = {
   name: '',
   mobile_number: '',
@@ -14,10 +14,10 @@ const initialState = {
 const cardSubmitForm = reactive({ ...initialState })
 const handleSubmit = () => {
   axios.post(config.public.apiURL+'/api/v1/card-help-requests', cardSubmitForm).then((res) => {
-    toast.success('Request submitted successfully')
+    $successToast('Request submitted successfully')
     Object.assign(cardSubmitForm, { ...initialState });
   }).catch((e) => {
-    toast.error('Something went wrong')
+    $errorToast('Something went wrong')
   })
 }
 const { locale } = useI18n();
