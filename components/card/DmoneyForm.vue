@@ -3,7 +3,7 @@ import { reactive } from 'vue'
 import axios from 'axios'
 const config = useRuntimeConfig();
 const {$successToast, $errorToast} = useNuxtApp();
-
+const isSubmitting = ref(false)
 const initialState = {
   name: '',
   mobile_number: '',
@@ -13,12 +13,14 @@ const initialState = {
 
 const cardSubmitForm = reactive({ ...initialState })
 const handleSubmit = () => {
+  isSubmitting.value = true
   axios.post(config.public.apiURL+'/api/v1/card-help-requests', cardSubmitForm).then((res) => {
     $successToast('Request submitted successfully')
     Object.assign(cardSubmitForm, { ...initialState });
   }).catch((e) => {
     $errorToast('Something went wrong')
   })
+  .finally(() => isSubmitting.value = false)
 }
 const { locale } = useI18n();
 </script>
@@ -74,12 +76,14 @@ const { locale } = useI18n();
                 </div>
                 <div class="flex justify-center lg:justify-end">
                   <button type="submit"
+                  :disabled="isSubmitting"
+                  :class="{'opacity-20': isSubmitting}"
                     class="mt-8 flex gap-x-2 justify-center items-center bg-corporate w-full lg:w-[160px] py-3 text-white text-base font-medium rounded-full">
                     <img src="~/assets/images/common/check.svg" alt="check icon">
-                    {{ $t('card-form-submit') }}</button>
+                    {{ $t('card-form-submit') }}
+                  </button>
                 </div>
               </form>
-
             </div>
         </div>
       </div>

@@ -59,8 +59,11 @@ const selectedCitiesCounter = (cityId) => {
         </button>
       </div>
 
-      <div class="mt-8">
+      <div class="mt-8 min-h-[50vh]">
         <div class="border border-[#EDEDED] rounded-2xl bg-white overflow-hidden relative active-counter-wrapper">
+          <div v-if="activeCounter.areas.length === 0" class="p-5">
+            {{ $t('no-data-found') }}
+          </div>
           <div v-for="area in activeCounter.areas" :key="area.id">
             <div class="bg-[#EDEDED] py-4 px-3"><span class="text-dark font-medium text-base md:text-xl">{{ locale ===
               'en'

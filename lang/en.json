@@ -330,5 +330,6 @@
   "get-card-card2-content3": "Get your card instantly",
 
   "available-counter-heading": "Available activation counters",
-  "available-counter-content": "You can avail a card from our designated activation counters. Simply visit the counter in your preferred area and open an account to receive your card instantly. All you need is your National ID (NID) and phone number."
+  "available-counter-content": "You can avail a card from our designated activation counters. Simply visit the counter in your preferred area and open an account to receive your card instantly. All you need is your National ID (NID) and phone number.",
+  "no-data-found": "No Data Found!"
 }
