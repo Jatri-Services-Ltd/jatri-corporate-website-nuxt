@@ -1,6 +1,4 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
     <section class="py-4 sm:pt-10 lg:pt-[116px] pb-8">
@@ -16,7 +14,7 @@
                         <p class="w-[215px] sm:w-auto text-white text-sm lg:text-base mt-1 lg:mt-4 mb-6 lg:mb-12">{{
                             $t('n-home-dmoney-jatricard-des') }}</p>
                         <div class="flex flex-col sm:flex-row items-start lg:items-center gap-4 lg:gap-6">
-                            <router-link :to="localePath('/card/#get-dmoney-card')"
+                            <router-link :to="`${localePath('/card')}`+'/#get-dmoney-card'"
                                 class="w-[181px] sm:w-auto bg-white border border-white rounded-full inline-block px-6 py-2.5 lg:py-[11px] text-xs md:text-sm lg:text-base font-medium text-primary">
                                 {{ $t('n-home-dmoney-jatricard-getcard-button') }}
                             </router-link>
