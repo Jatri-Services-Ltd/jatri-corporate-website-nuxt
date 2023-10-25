@@ -13,7 +13,7 @@ const { locale } = useI18n();
                             :class="locale == 'en' ? 'w-[300px]' : 'w-[232px]'">
                            {{ $t('get-card-title') }}
                         </h3>
-                        <p class="hidden sm:block pr-5 text-secondaryDark text-base lg:text-lg xl:text-xl mt-6">{{ $t('get-card-content') }}</p>
+                        <p class="hidden sm:block pr-9 text-secondaryDark text-base lg:text-lg xl:text-xl mt-6">{{ $t('get-card-content') }}</p>
                     </div>
 
                     <div class="hidden sm:flex gap-4 mt-6">

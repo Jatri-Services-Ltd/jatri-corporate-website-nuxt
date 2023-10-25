@@ -42,7 +42,7 @@
               </button>
               <button class="group focus:outline-none border-b border-[#EDEDED] py-3 lg:py-6">
                 <div class="flex items-center justify-between gap-4">
-                  <p class="text-base text-start lg:text-2xl font-medium leading-6 lg:leading-8 text-start">{{
+                  <p class="faq-question">{{
                     $t('card-faq-question3') }}</p>
                   <img class="arrow" src="~/assets/images/common/down_arrow.svg" alt="down arrow">
                 </div>
