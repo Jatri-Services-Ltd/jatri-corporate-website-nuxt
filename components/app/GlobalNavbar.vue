@@ -30,7 +30,7 @@ const switchLocalePath = useSwitchLocalePath();
       <div class="custom-container">
         <div class="flex justify-between items-center py-[14px] lg:py-4">
             <div class="flex justify-between md:justify-start items-center gap-x-2 md:gap-x-8 w-full">
-              <nuxt-link :to="('/')"><img class="w-[50px] h-[26px] lg:h-9 lg:w-[74px]" src="~/assets/images/header/jatri-logo.svg" alt="jatri logo"></nuxt-link>
+              <nuxt-link :to="localePath('/')"><img class="w-[50px] h-[26px] lg:h-9 lg:w-[74px]" src="~/assets/images/header/jatri-logo.svg" alt="jatri logo"></nuxt-link>
               <div class="bg-[#FEF2F0] rounded-full p-1">
                 <div class="flex gap-x-1 lg:gap-x-2 justify-center items-center">
                     <div class="py-1 px-2 lg:px-3 rounded-full">
