@@ -16,11 +16,11 @@
                         <p class="w-[215px] sm:w-auto text-white text-sm lg:text-base mt-1 lg:mt-4 mb-6 lg:mb-12">{{
                             $t('n-home-dmoney-jatricard-des') }}</p>
                         <div class="flex flex-col sm:flex-row items-start lg:items-center gap-4 lg:gap-6">
-                            <router-link to="/card/#get-dmoney-card"
+                            <router-link :to="localePath('/card/#get-dmoney-card')"
                                 class="w-[181px] sm:w-auto bg-white border border-white rounded-full inline-block px-6 py-2.5 lg:py-[11px] text-xs md:text-sm lg:text-base font-medium text-primary">
                                 {{ $t('n-home-dmoney-jatricard-getcard-button') }}
                             </router-link>
-                            <router-link to="/card"
+                            <router-link :to="localePath('/card')"
                                 class="w-[181px] sm:w-auto flex items-center justify-center gap-2 border border-white rounded-full pl-6 pr-4 py-2.5 lg:py-[11px] text-xs md:text-sm lg:text-base font-medium text-white">
                                 <span>{{ $t('n-home-dmoney-jatricard-learnmore-button') }}</span>
                                 <img class="w-4 md:w-auto" src="~/assets/images/jatri-card/right-arrow.png" alt=">">
