@@ -5,13 +5,14 @@ import FaqSection from '~~/components/card/FaqSection.vue'
 import WhyJatriCard from '~~/components/card/WhyJatriCard.vue';
 import PaymentsSection from '~~/components/card/PaymentsSection.vue';
 import GetDmoneyJatriCard from '~~/components/card/GetDmoneyJatriCard.vue';
+import HowToUseDmoneyCard from '~~/components/card/HowToUseDmoneyCard.vue';
 </script>
 
 <template>
     <HeroSection />
     <WhyJatriCard />
     <PaymentsSection />
-    <JatriCardHowToUseDmoneyCard />
+    <HowToUseDmoneyCard />
     <GetDmoneyJatriCard />
     <DmoneyForm />
     <FaqSection />

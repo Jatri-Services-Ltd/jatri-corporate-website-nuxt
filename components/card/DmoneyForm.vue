@@ -24,7 +24,7 @@ const { locale } = useI18n();
 </script>
 
 <template>
-  <section>
+  <section id="get-dmoney-card" class="pt-10 md:pt-20 xl:pt-[100px]">
     <div class="custom-container">
       <div class="flex justify-center items-center">
         <div class="flex flex-col lg:flex-row justify-center bg-white rounded-xl w-full"
