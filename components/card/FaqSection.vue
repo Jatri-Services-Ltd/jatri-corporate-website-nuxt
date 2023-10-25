@@ -11,16 +11,16 @@
             $t('card-faq-content') }}</p>
           <div class="flex gap-x-2 items-baseline">
             <p class="mt-4 text-[#4D4D4F] text-sm leading-5 font-normal">{{ $t('card-faq-sub-content') }}</p>
-            <a href="/contact-us" class="text-xs block text-primary font-normal lg:font-medium underline flex">{{
+            <nuxt-link :to="localePath('/contact-us')" class="text-xs block text-primary font-normal lg:font-medium underline flex">{{
               $t('card-faq-contact') }}
               <img src="~/assets/images/common/right-arrow.svg" alt="right sided arrow">
-            </a>
+            </nuxt-link>
           </div>
         </div>
         <div class="w-full lg:w-[60%] mt-6 sm:mt-8 lg:mt-0">
           <div class="flex items-center justify-center">
             <div class="flex flex-col">
-              <button class="group focus:outline-none border-b border-[#EDEDED] pb-3 lg:pb-6">
+              <button class="group focus:outline-none border-b border-[#EDEDED] pb-3 lg:pb-6" tabindex="0">
                 <div class="flex items-center justify-between gap-4">
                   <p class="faq-question">{{ $t('card-faq-question1') }}</p>
                   <img class="arrow" src="~/assets/images/common/down_arrow.svg" alt="down arrow">
@@ -30,7 +30,7 @@
                   <span class="faq-answer">{{ $t('card-faq-answer1') }}</span>
                 </div>
               </button>
-              <button class="group focus:outline-none border-b border-[#EDEDED] py-3 lg:py-6">
+              <button class="group focus:outline-none border-b border-[#EDEDED] py-3 lg:py-6" tabindex="1">
                 <div class="flex items-center justify-between gap-4">
                   <p class="faq-question">{{ $t('card-faq-question2') }}</p>
                   <img class="arrow" src="~/assets/images/common/down_arrow.svg" alt="down arrow">
