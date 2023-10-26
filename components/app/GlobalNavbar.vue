@@ -1,5 +1,5 @@
 <script setup>
-import {ref} from "vue";
+import {onMounted, ref} from "vue";
 const sidebarOpen = ref(false)
 
 const closeModal = ()=>{
@@ -18,6 +18,16 @@ const toggleModal = () => {
 const isOpen = ref(false);
 const { locale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
+
+let isMobile = ref(false)
+const getWindowSize = () => {
+  isMobile.value = window.outerWidth <= 767
+}
+
+onMounted(() => {
+  window.addEventListener("resize", getWindowSize)
+  getWindowSize()
+})
 
 // const selectLanguage = (lang) => {
 //   selectedLanguage.value = lang;
@@ -123,7 +133,7 @@ const switchLocalePath = useSwitchLocalePath();
             </div>
           </div>
           <div v-if="sidebarOpen" @click="closeModal" class="fixed inset-0 z-30 bg-black bg-opacity-30 h-full w-full cursor-default transition duration-300 ease-in-out"></div>
-          <div v-if="isOpen" @click="isOpen = false" class="fixed inset-0 z-30 h-full w-full cursor-default transition duration-300 ease-in-out"></div>
+          <div v-if="isOpen && !isMobile" @click="isOpen = false" class="fixed inset-0 z-30 h-full w-full cursor-default transition duration-300 ease-in-out"></div>
         </div>
 
       </div>
