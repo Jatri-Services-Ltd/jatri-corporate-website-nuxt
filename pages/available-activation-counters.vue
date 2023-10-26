@@ -1,40 +1,22 @@
 <script setup>
 import { ref } from 'vue';
-import axios from 'axios'
 import NoData from '~~/components/app/NoData.vue'
 const { locale } = useI18n();
 const {$errorToast} = useNuxtApp();
 
 const config = useRuntimeConfig();
-const allCitiesData = ref([])
-const activeCounter = ref({})
-const loading = ref(true);
 
-const getAllCounters = async () => {
-  await axios.get(config.public.apiURL + '/api/v1/get-division-wise-counters')
-    .then((res) => {
-      allCitiesData.value = res.data.data
-      activeCounter.value = res.data?.data[0]
-      
-    }).catch((e) => {
-      $errorToast("Something went wrong")
-    })
-    .finally(() => loading.value = false)
-}
-getAllCounters()
-
-const selectedCitiesCounter = (cityId) => {
-  return allCitiesData.value.find((city) => {
-    if (city.id === cityId) {
-      return activeCounter.value = city
-    }
-  })
-}
+const {data, pending} = await useFetch(config.public.apiURL + '/api/v1/get-division-wise-counters')
+const activeCity = ref(data.value.data.length ? data.value.data[0].id: 0)
+const selectedCitiesCounter = computed(() => {
+   return data.value?.data.find(city => city.id === activeCity.value)
+})
 
 </script>
 
-<template>
-  <div v-if="loading" class="min-h-[50vh] flex justify-center items-center">
+<template> 
+
+  <div v-if="pending" class="min-h-[50vh] flex justify-center items-center">
     <div class='fixed inset-0 bg-white z-50 overflow-hidden' style='background: #e4e4e4bd'>
       <div class='flex flex-col justify-center items-center h-screen'>
         <div class=loader-container>
@@ -45,26 +27,26 @@ const selectedCitiesCounter = (cityId) => {
       </div>
     </div>
   </div>
-
-  <div v-else-if="allCitiesData.length" class="custom-container pt-4 md:pt-10 pb-[100px]">
+  <div v-if="data?.data.length && !pending" class="custom-container pt-4 md:pt-10 pb-[100px]">
     <h1 class="text-dark text-2xl md:text-[57px] leading-8 md:leading-[64px] font-semibold mb-3 md:mb-6">{{
       $t('available-counter-heading') }}</h1>
     <p class="text-[#676769] text-xs md:text-xl mb-6 md:mb-10">{{ $t('available-counter-content') }}</p>
     <div>
       <div class="w-full flex flex-wrap gap-3 md:gap-4">
-        <button v-for="allCities in allCitiesData" :key="allCities.id" class="district-tab-btn"
-          :class="activeCounter.id === allCities.id ? 'border-dark bg-dark text-white' : 'border-[#DBDBDB] bg-white text-dark'"
-          @click="selectedCitiesCounter(allCities.id)">
-          {{ locale === 'en' ? allCities.name : allCities.name_in_bangla }}
+        <button v-for="city in data.data" :key="city.id" class="district-tab-btn"
+          :class="activeCity === city.id ? 'border-dark bg-dark text-white' : 'border-[#DBDBDB] bg-white text-dark'"
+          @click="activeCity=city.id"
+        >
+          {{ locale === 'en' ? city.name : city.name_in_bangla }}
         </button>
       </div>
 
       <div class="mt-8 min-h-[50vh]">
         <div class="border border-[#EDEDED] rounded-2xl bg-white overflow-hidden relative active-counter-wrapper">
-          <div v-if="activeCounter.areas.length === 0" class="p-5">
+          <div v-if="selectedCitiesCounter?.areas.length === 0" class="p-5">
             {{ $t('no-data-found') }}
           </div>
-          <div v-for="area in activeCounter.areas" :key="area.id">
+          <div v-for="area in selectedCitiesCounter.areas" :key="area.id">
             <div class="bg-[#EDEDED] py-4 px-3"><span class="text-dark font-medium text-base md:text-xl">{{ locale ===
               'en'
               ? area.name : area.name_in_bangla }}</span>
