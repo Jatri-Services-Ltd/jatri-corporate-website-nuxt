@@ -2,7 +2,7 @@
 <template>
     <section class="mt-4">
         <div class="custom-container">
-            <div class="relative h-[354px] lg:h-auto rounded-3xl bg-[linear-gradient(98deg,_#F04935_1.78%,_#887CF5_98.84%)] flex flex-col lg:flex-row justify-start lg:justify-between items-center gap-4 overflow-hidden">
+            <div class="relative h-[344px] lg:h-auto rounded-3xl bg-[linear-gradient(98deg,_#F04935_1.78%,_#887CF5_98.84%)] flex flex-col lg:flex-row justify-start lg:justify-between items-center gap-4 overflow-hidden">
                 <div class="z-10 px-4 md:px-8 lg:pr-0 lg:pl-12 xl:pl-20 pt-8 lg:pt-0 text-center lg:text-left">
                     <h1 class="banner-title 2xl:w-[729px] mb-6 text-[28px] leading-9 sm:text-4xl sm:leading-[50px] lg:text-[44px] xl:text-[64px] lg:leading-[56px] xl:leading-[80px] 2xl:text-[56px] 2xl:leading-[72px] 3xl:text-[64px] 3xl:leading-[80px] font-bold text-white">
                       {{ $t('card-hero-header') }}
