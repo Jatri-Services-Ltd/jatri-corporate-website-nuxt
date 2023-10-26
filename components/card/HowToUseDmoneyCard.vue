@@ -51,7 +51,8 @@
                 }" :autoplay="{
                   delay: 2500,
                   disableOnInteraction: false,
-                  pauseOnMouseEnter: true,
+                  pauseOnHover:true,
+                  pauseOnFocus:true
                 }" :pagination="{
                   clickable: true,
                 }" :modules="modules" class="mySwiper" @slideChange="changeSlide">
