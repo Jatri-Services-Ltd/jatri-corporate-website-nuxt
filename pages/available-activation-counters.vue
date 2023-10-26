@@ -7,9 +7,9 @@ const {$errorToast} = useNuxtApp();
 const config = useRuntimeConfig();
 
 const {data, pending} = await useFetch(config.public.apiURL + '/api/v1/get-division-wise-counters')
-const activeCity = ref(data.value.data.length ? data.value.data[0].id: 0)
+const activeCity = ref(data.value && data.value.data?.length ? data.value?.data[0].id: [])
 const selectedCitiesCounter = computed(() => {
-   return data.value?.data.find(city => city.id === activeCity.value)
+   return data.value?.data?.find(city => city.id === activeCity.value)
 })
 
 </script>
@@ -27,7 +27,7 @@ const selectedCitiesCounter = computed(() => {
       </div>
     </div>
   </div>
-  <div v-if="data?.data.length && !pending" class="custom-container pt-4 md:pt-10 pb-[100px]">
+  <div v-if="data?.data?.length && !pending" class="custom-container pt-4 md:pt-10 pb-[100px]">
     <h1 class="text-dark text-xl md:text-[57px] leading-8 md:leading-[64px] font-semibold mb-3 md:mb-6">{{
       $t('available-counter-heading') }}</h1>
     <p class="text-[#676769] text-xs md:text-xl mb-6 md:mb-10">{{ $t('available-counter-content') }}</p>
