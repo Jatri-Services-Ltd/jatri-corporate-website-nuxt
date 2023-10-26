@@ -11,7 +11,7 @@
                             class="w-[252px] sm:w-[60%] lg:w-[90%] text-2xl sm:text-3xl lg:text-[39px] lg:leading-[50px] xl:text-[57px] xl:leading-[64px] font-semibold text-white">
                             {{ $t('n-home-dmoney-jatricard-title') }}
                         </h1>
-                        <p class="w-[215px] sm:w-auto text-white text-xs md:text-sm lg:text-base mt-1 sm:mt-2 lg:mt-4 mb-6 lg:mb-12">{{
+                        <p class="w-[190px] sm:w-auto text-white text-xs md:text-sm lg:text-base mt-1 sm:mt-2 lg:mt-4 mb-6 lg:mb-12">{{
                             $t('n-home-dmoney-jatricard-des') }}</p>
                         <div class="flex flex-col sm:flex-row items-start lg:items-center gap-4 lg:gap-6">
                             <nuxt-link :to="`${localePath('/card')}`+'/#get-dmoney-card'"
