@@ -62,7 +62,6 @@ const selectedCitiesCounter = computed(() => {
       </div>
     </div>
   </div>
-
   <div v-else>
     <NoData />
   </div>
