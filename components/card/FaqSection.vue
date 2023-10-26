@@ -40,7 +40,7 @@
                   <span class="faq-answer">{{ $t('card-faq-answer2') }}</span>
                 </div>
               </button>
-              <button class="group focus:outline-none border-b border-[#EDEDED] py-3 lg:py-6">
+              <button class="group focus:outline-none border-b border-[#EDEDED] py-3 lg:py-6" tabindex="2">
                 <div class="flex items-center justify-between gap-4">
                   <p class="faq-question">{{
                     $t('card-faq-question3') }}</p>
@@ -50,7 +50,7 @@
                   <span class="faq-answer">{{ $t('card-faq-answer3') }}</span>
                 </div>
               </button>
-              <button class="group focus:outline-none border-b border-[#EDEDED] py-3 lg:py-6">
+              <button class="group focus:outline-none border-b border-[#EDEDED] py-3 lg:py-6" tabindex="3">
                 <div class="flex items-center justify-between gap-4">
                   <p class="faq-question">{{ $t('card-faq-question4') }}</p>
                   <img class="arrow" src="~/assets/images/common/down_arrow.svg" alt="down arrow">
@@ -59,7 +59,7 @@
                   <span class="faq-answer">{{ $t('card-faq-answer4') }}</span>
                 </div>
               </button>
-              <button class="group focus:outline-none border-b border-[#EDEDED] py-3 lg:py-6">
+              <button class="group focus:outline-none border-b border-[#EDEDED] py-3 lg:py-6" tabindex="4">
                 <div class="flex items-center justify-between gap-4">
                   <p class="faq-question">{{ $t('card-faq-question5') }}</p>
                   <img class="arrow" src="~/assets/images/common/down_arrow.svg" alt="down arrow">
@@ -68,7 +68,7 @@
                   <span class="faq-answer">{{ $t('card-faq-answer5') }}</span>
                 </div>
               </button>
-              <button class="group focus:outline-none border-b border-[#EDEDED] py-3 lg:py-6">
+              <button class="group focus:outline-none border-b border-[#EDEDED] py-3 lg:py-6" tabindex="5">
                 <div class="flex items-center justify-between gap-4">
                   <p class="faq-question">{{ $t('card-faq-question6') }}</p>
                   <img class="arrow" src="~/assets/images/common/down_arrow.svg" alt="down arrow">
@@ -77,7 +77,7 @@
                   <span class="faq-answer">{{ $t('card-faq-answer6') }}</span>
                 </div>
               </button>
-              <button class="group focus:outline-none pt-3 lg:pt-6">
+              <button class="group focus:outline-none pt-3 lg:pt-6" tabindex="6">
                 <div class="flex items-center justify-between gap-4">
                   <p class="faq-question">{{ $t('card-faq-question7') }}</p>
                   <img class="arrow" src="~/assets/images/common/down_arrow.svg" alt="down arrow">
