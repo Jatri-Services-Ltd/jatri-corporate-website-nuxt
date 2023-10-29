@@ -18,7 +18,7 @@ const handleSubmit = () => {
     $successToast('Request submitted successfully')
     Object.assign(cardSubmitForm, { ...initialState });
   }).catch((e) => {
-    $errorToast('Something went wrong')
+    $errorToast(e.response.data ? e.response.data?.message : 'Something went wrong. try again.')
   })
   .finally(() => isSubmitting.value = false)
 }
@@ -55,7 +55,7 @@ const { locale } = useI18n();
                 </div>
                 <div class="mt-5">
                   <small class="text-dark font-medium text-base leading-6">{{ $t('card-form-mobile') }}</small>
-                  <input required v-model="cardSubmitForm.mobile_number" type="text"
+                  <input maxlength="11" required v-model="cardSubmitForm.mobile_number" type="text"
                     class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg px-4 py-[18px] focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal"
                     :placeholder="locale === 'en' ? '+880' : '+880'">
                 </div>

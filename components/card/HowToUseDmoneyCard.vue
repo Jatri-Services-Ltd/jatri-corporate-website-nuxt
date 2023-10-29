@@ -63,12 +63,12 @@
                 </swiper-slide>
                 <swiper-slide>
                   <div class="slider-img-wrapper">
-                    <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/1.png" alt="">
+                    <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/use_card.png" alt="">
                   </div>
                 </swiper-slide>
                 <swiper-slide>
                   <div class="slider-img-wrapper">
-                    <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/1.png" alt="">
+                    <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/recharge.png" alt="">
                   </div>
                 </swiper-slide>
               </swiper>
