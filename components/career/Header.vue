@@ -3,10 +3,10 @@
         <div class="custom-container mx-auto flex justify-center items-center">
             <div class="relative text-center">
                 <div class="hidden lg:block">
-                    <div class="developer-badge absolute bg-[#48A43F] text-white px-4 py-[6px] rounded-full text-xs font-medium -left-14 -top-10">Developer</div>
-                    <div class="marketing-badge absolute bg-[#1E88E5] text-white px-4 py-[6px] rounded-full text-xs font-medium -right-14 -top-10">Marketing</div>
-                    <div class="product-badge absolute bg-[#4633F0] text-white px-4 py-[6px] rounded-full text-xs font-medium -left-16 bottom-16">Product</div>
-                    <div class="business-badge absolute bg-[#F04935] text-white px-4 py-[6px] rounded-full text-xs font-medium -right-28 bottom-[70px]">Business</div>
+                    <div class="developer-badge absolute bg-[#48A43F] text-white px-4 py-[6px] rounded-full text-xs font-medium -left-14 -top-10">{{ $t('development') }}</div>
+                    <div class="marketing-badge absolute bg-[#1E88E5] text-white px-4 py-[6px] rounded-full text-xs font-medium -right-14 -top-10">{{ $t('marketing') }}</div>
+                    <div class="product-badge absolute bg-[#4633F0] text-white px-4 py-[6px] rounded-full text-xs font-medium -left-16 bottom-16">{{ $t('product') }}</div>
+                    <div class="business-badge absolute bg-[#F04935] text-white px-4 py-[6px] rounded-full text-xs font-medium -right-28 bottom-[70px]">{{ $t('business') }}</div>
                 </div>
                 <div class="">
                     <h1 class="header-title">{{ $t('career-header-title-1') }}</h1>
