@@ -6,7 +6,6 @@ const openModal = ref(false)
 const fileName = ref('')
 
 const id = route.params.slug
-console.log("id",id)
 const config = useRuntimeConfig();
 const {data} = await useFetch(config.public.apiURL + '/api/v1/career-job-details/'+id)
 const uploadFile = (e) => {
