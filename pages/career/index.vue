@@ -1,7 +1,7 @@
 <template>
     <div>
       <CareerHeader />
-        <div class="bg-[#F7F7F7] pt-[76px] relative">
+        <div class="bg-[#F7F7F7] py-15 relative">
           <div class="flex justify-center items-center">
               <div class="slider pl-[26px]">
                   <div class="slider-row"></div>
@@ -11,6 +11,9 @@
         </div>
         <CareerOurCoreValues />
         <CareerBenefitAndPerks />
+        <div class="custom-container mx-auto py-10 lg:py-[100px]">
+          <img class="w-full" src="/images/career/career-video.png" alt="">
+        </div>
         <CareerWorkplaceLikeHome />
         <div id="openRoles">
           <CareerCurrentOpenRoles />
