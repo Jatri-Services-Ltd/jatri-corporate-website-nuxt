@@ -32,7 +32,7 @@ import WhiteNavbar from '~~/components/app/WhiteNavbar.vue';
                                 Regular Time (Non-Eid Period)
                                 </p>
                             <ol class="list-disc text-sm">
-                                <p>To be eligible for refund, customer needs to cancel the ticket from jatri.co before the applicable time before the departure. And must report the cancelation to the support center (i.e Call 09642080808 or email to support@jatri.co) of Jatri.co</p>
+                                <p>To be eligible for refund, customer needs to cancel the ticket from jatri.co before the applicable time before the departure. And must report the cancelation to the support center (i.e Call 09642080808 or email to info@jatri.co) of Jatri.co</p>
                                 <table class="table-auto border border-corpo mt-4 my-4">
                                     <thead>
                                       <tr >
@@ -62,7 +62,7 @@ import WhiteNavbar from '~~/components/app/WhiteNavbar.vue';
                                 </p>
                             <ol class="list-disc text-xs">
                                 <li  class="ml-4">No ticket will be refunded unless it has been cancelled as per the cancellation policy above.</li>
-                                <li  class="ml-4">In case of technical problem or any failed transaction due to network failure, time delay on complete payment, input transaction ID/validation of transaction (in case of mobile payment) or any other situation where payment is successful but ticket is not generated on that case, no refunds will be processed without a written request in the correct format (as outlined below) sent to support@ Jatri.co within the timeframe requirement given above</li>
+                                <li  class="ml-4">In case of technical problem or any failed transaction due to network failure, time delay on complete payment, input transaction ID/validation of transaction (in case of mobile payment) or any other situation where payment is successful but ticket is not generated on that case, no refunds will be processed without a written request in the correct format (as outlined below) sent to info@ Jatri.co within the timeframe requirement given above</li>
                                 <ul>Refund Request Format :</ul>
                                 <li class="ml-4">o Ticket # (required if a ticket was issued)</li>
                                 <li class="ml-4">o Mobile number used while buying the ticket</li>

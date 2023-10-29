@@ -82,7 +82,7 @@
                         <p class="corporate_color">Choice/Opt-Out</p>
                         <p class="text-justify">We allow users the option to opt out of receiving promotional data from us/our partners when they join our platform.
                             <br>
-                            In case you are interested in removing your data from our system, please contact support@jatri.co
+                            In case you are interested in removing your data from our system, please contact info@jatri.co
                             <br>
                             You can always revise the data you provide and edit/correct any data whenever you desire.
                         </p>

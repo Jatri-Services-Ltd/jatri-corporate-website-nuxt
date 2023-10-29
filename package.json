@@ -16,8 +16,10 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "axios": "^1.5.1",
     "js-cookie": "^3.0.1",
     "swiper": "^9.0.5",
-    "vue-countup-v3": "^1.1.0"
+    "vue-countup-v3": "^1.1.0",
+    "vue-toastification": "^2.0.0-rc.5"
   }
 }

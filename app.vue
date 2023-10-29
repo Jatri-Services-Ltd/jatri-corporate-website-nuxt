@@ -63,7 +63,7 @@ nuxtApp.hook("page:finish", () => {
 // });
 </script>
 
-<style scoped>
+<style>
 .loader {
   /* border: 8px solid #f3f3f3; */
   border-radius: 50%;
