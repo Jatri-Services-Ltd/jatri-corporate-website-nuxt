@@ -260,6 +260,9 @@
   "about-us": "About Us",
   "terms-conditions": "Terms & Conditions",
   "privacy-policy": "Privacy Policy",
+  "footer-tagline": "JATRI: EMPOWERING BANGLADESH TO TRAVEL BETTER",
+  "copyright-text": "© Copyright - JATRI 2023. ALL RIGHT RESERVED",
+
   "card-hero-header": "Cashless commuting with Dmoney Jatri card",
   "card-hero-btn": "Get Dmoney Jatri Card",
   "card-why-header": "Why Dmoney Jatri card",
@@ -331,5 +334,20 @@
 
   "available-counter-heading": "Available activation counters",
   "available-counter-content": "You can avail a card from our designated activation counters. Simply visit the counter in your preferred area and open an account to receive your card instantly. All you need is your National ID (NID) and phone number.",
-  "no-data-found": "No Data Found!"
+  "no-data-found": "No Data Found!",
+
+  "career-header-title-1": "Join the journey:",
+  "career-header-title-2": "Revolutionize",
+  "career-header-title-3": "transportation with us!",
+  "career-header-subtitle": "Learn, grow, evolve, and let Jatri inspire your success story!",
+  "header-btn-one": "View open roles",
+  "header-btn-two": "Explore Jatri",
+  "development": "Development",
+  "product": "Product",
+  "marketing": "Marketing",
+  "business": "Business",
+  "our-core-values": "Our core values",
+  "core-values-subtitle": "Our values aren't just solely our shared views; they are the mindsets we embrace, the decisions we make, and the actions we perform.",
+  "integrity-accountability": "Integrity & accountability",
+  "integrity-accountability-detail": "As a company and individuals, we strive for utmost integrity and complete accountability in our actions."
 }

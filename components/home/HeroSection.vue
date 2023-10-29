@@ -1,4 +1,3 @@
-
 <template>
     <!-- Hero Section -->
     <section class="relative custom-container mt-5">

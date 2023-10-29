@@ -539,5 +539,39 @@ button {
 
 .read-more-swiper-slider .swiper-button-prev,
 .read-more-swiper-slider .swiper-button-next {
-  @apply -top-[60px] lg:-top-[100px]
+  @apply -top-[60px] sm:-top-[40px] lg:-top-[100px]
+}
+
+.our-journey-slider .swiper.swiper-backface-hidden {
+  @apply !overflow-visible
+}
+
+.our-journey-slider .swiper-button-prev,
+.our-journey-slider .swiper-button-next {
+  @apply -top-[94px] border border-[#DBDBDB] w-[46px] lg:w-[60px] h-[46px] md:h-[60px] rounded-full
+}
+.our-journey-slider .swiper-button-prev,
+.our-journey-slider .swiper-button-next {
+  @apply  border border-[#DBDBDB] w-[46px] lg:w-[60px] h-[46px] lg:h-[60px] rounded-full
+}
+.our-journey-slider .swiper-button-prev {
+  @apply left-auto right-[65px] md:right-[92px]
+}
+.our-journey-slider .swiper-button-next {
+  @apply left-auto right-0
+}
+.our-journey-slider .swiper-button-prev:after,
+.our-journey-slider .swiper-button-next:after {
+  @apply text-[0px] bg-[url('/images/about-us/arrow-white.svg')] bg-cover bg-center bg-no-repeat w-5 h-5
+}
+.our-journey-slider .swiper-button-next:after {
+  @apply transform rotate-180
+}
+
+.our-journey-slider .swiper-slide  {
+transition-duration: 300ms !important;
+}
+
+.our-journey-slider .swiper{
+  overflow: visible !important;
 }

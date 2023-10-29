@@ -1,4 +1,3 @@
-
 <script setup>
 import HeroSection from "~/components/home/HeroSection";
 import CounterSection from "~/components/home/CounterSection";
