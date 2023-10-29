@@ -1,10 +1,10 @@
 <script setup>
 import { ref, onMounted } from 'vue';
+import NoData from '~~/components/app/NoData.vue'
 const openedRoles = ref([])
 
 const config = useRuntimeConfig();
 const {data} = await useFetch(config.public.apiURL + '/api/v1/get-career-active-jobs')
-
 </script>
 
 
@@ -25,7 +25,6 @@ const {data} = await useFetch(config.public.apiURL + '/api/v1/get-career-active-
                             <p class="text-sm lg:text-base font-medium text-[#4D4D4F]">Application deadline: <span>{{job.deadline}}</span></p>
                         </div>
                         <div class="xl:pt-0 pt-4">
-<!--                          :to="'/career/job-details/'+ role.slug"/-->
                             <router-link :to="{ path: '/career/job-details/' + job.id}"  class="flex justify-center items-center gap-2 h-10 w-[130px] rounded-full border border-[#DBDBDB] bg-white pl-2">
                                 <span class="inline-block text-sm leading-5 font-medium">View details</span>
                                 <div><img class="h-4 w-4" src="/images/career/arrow-right.svg" alt=""></div>

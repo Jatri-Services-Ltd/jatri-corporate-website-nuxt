@@ -1,3 +1,23 @@
+<script setup>
+import {ref} from 'vue';
+const route = useRoute();
+
+const openModal = ref(false)
+const fileName = ref('')
+
+const id = route.params.slug
+console.log("id",id)
+const config = useRuntimeConfig();
+const {data} = await useFetch(config.public.apiURL + '/api/v1/career-job-details/'+id)
+const uploadFile = (e) => {
+  fileName.value = e.target.files[0].name
+}
+
+const removeFile = () => {
+  fileName.value = ''
+}
+</script>
+
 <template>
     <div id="top" class="job-details-header text-white py-8">
         <div class="custom-container">
@@ -10,9 +30,9 @@
                 <div class="relative">
                     <div class="right-arrow absolute top-0 bottom-0 left-0 right-0 m-auto"></div>
                 </div>
-                <p class="text-xs sm:text-sm ml-2 md:ml-3">{{ jobDetails.title }}</p>
+                <p class="text-xs sm:text-sm ml-2 md:ml-3">{{data.data.title}}</p>
             </div>
-            <h1 class="mt-2 text-[28px] lg:text-4xl leading-[44px] font-medium">{{ jobDetails.title }}</h1>
+            <h1 class="mt-2 text-[28px] lg:text-4xl leading-[44px] font-medium">{{data.data.title}}</h1>
         </div>
     </div>
     <div class="custom-container mt-10 mb-[120px]">
@@ -23,7 +43,7 @@
                         <div><img class="h-6 w-6" src="/images/career/job-nature-icon.svg" alt="Job nature"></div>
                         <div>
                             <p class="text-sm lg:text-base text-secondaryDark mb-1">Job nature</p>
-                            <p class="text-base lg:text-xl font-medium text-dark">{{ jobDetails.employment_type }}</p>
+                            <p class="text-base lg:text-xl font-medium text-dark">{{data.data.employment_status}}</p>
                         </div>
                     </div>
                     <div class="border-b ml-10 pt-4"></div>
@@ -31,7 +51,7 @@
                         <div><img class="h-6 w-6" src="/images/career/salary-range-icon.svg" alt="Salary range"></div>
                         <div>
                             <p class="text-sm lg:text-base text-secondaryDark mb-1">Salary range</p>
-                            <p class="text-base lg:text-xl font-medium text-dark">{{ jobDetails.salary }}</p>
+                            <p class="text-base lg:text-xl font-medium text-dark">{{data.data.salary_range}}</p>
                         </div>
                     </div>
                     <div class="border-b ml-10 pt-4"></div>
@@ -39,14 +59,15 @@
                         <div><img class="h-6 w-6" src="/images/career/job-location-icon.svg" alt="Job location"></div>
                         <div>
                             <p class="text-sm lg:text-base text-secondaryDark mb-1">Job location</p>
-                            <p class="text-base lg:text-xl font-medium text-dark">{{ jobDetails.location }}</p>
+                            <p class="text-base lg:text-xl font-medium text-dark">{{data.data.location}}</p>
                         </div>
                     </div>                    <div class="border-b ml-10 pt-4"></div>
                     <div class="flex items-center gap-5 pt-4">
                         <div><img class="h-6 w-6" src="/images/career/deadline-icon.svg" alt="Application deadline"></div>
                         <div>
                             <p class="text-sm lg:text-base text-secondaryDark mb-1">Application deadline</p>
-                            <p class="text-base lg:text-xl font-medium text-dark" v-html="jobDetails.deadline"></p>
+<!--                          v-html="jobDetails.deadline"-->
+                            <p class="text-base lg:text-xl font-medium text-dark" >{{data.data.deadline}}</p>
                         </div>
                     </div>
                     <div class="border-b ml-10 pt-4"></div>
@@ -54,13 +75,14 @@
                         <div><img class="h-6 w-6" src="/images/career/vacancy-icon.svg" alt="Vacancy"></div>
                         <div>
                             <p class="text-sm lg:text-base text-secondaryDark mb-1">Vacancy</p>
-                            <p class="text-base lg:text-xl font-medium text-dark">2</p>
+                            <p class="text-base lg:text-xl font-medium text-dark">{{data.data.no_of_vacancy}}</p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-span-12 md:col-span-7 lg:col-span-8">
-                <div v-html="jobDetails.description"></div>
+<!--              v-html="jobDetails.description"-->
+                <div v-html="data.data.job_details"></div>
                 <div class="mt-6 md:mt-12 mb-8 md:mb-12">
                     <a href="#top" @click="openModal = !openModal" class="bg-corporate text-white h-[46px] md:h-[60px] w-full md:w-[240px] rounded-full flex justify-center items-center font-medium text-base md:text-xl">Apply Now</a>
                 </div>
@@ -144,28 +166,6 @@
     </div>
 <div @click="openModal = !openModal" class="overlay" :class="openModal ? '' : 'modal-hidden'"></div>
 </template>
-
-<script setup>
-import {ref} from 'vue';
-import careerData from "~/dataStore/career.js";
-const route = useRoute();
-
-const jobDetails = ref({})
-const openModal = ref(false)
-const fileName = ref('')
-
-onMounted(() => {
-    jobDetails.value = careerData.find(data => data.slug === route.params.slug)
-})
-
-const uploadFile = (e) => {
-    fileName.value = e.target.files[0].name
-}
-
-const removeFile = () => {
-    fileName.value = ''
-}
-</script>
 
 <style scoped>
 .job-details-header{
