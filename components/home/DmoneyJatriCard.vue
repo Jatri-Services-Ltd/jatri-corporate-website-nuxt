@@ -15,11 +15,11 @@
                             $t('n-home-dmoney-jatricard-des') }}</p>
                         <div class="flex flex-col sm:flex-row items-start lg:items-center gap-4 lg:gap-6">
                             <nuxt-link :to="`${localePath('/card')}`+'/#get-dmoney-card'"
-                                class="w-[181px] sm:w-auto bg-white border border-white rounded-full inline-block px-6 py-2.5 lg:py-[11px] text-center text-xs md:text-sm lg:text-base font-medium text-primary">
+                                class="w-[165px] sm:w-auto bg-white border border-white rounded-full inline-block sm:px-6 py-2.5 lg:py-[11px] text-center text-xs md:text-sm lg:text-base font-medium text-primary">
                                 {{ $t('n-home-dmoney-jatricard-getcard-button') }}
                             </nuxt-link>
                             <nuxt-link :to="localePath('/card')"
-                                class="w-[181px] sm:w-auto flex items-center justify-center gap-2 border border-white rounded-full pl-6 pr-4 py-2.5 lg:py-[11px] text-center text-xs md:text-sm lg:text-base font-medium text-white">
+                                class="w-[165px] sm:w-auto flex items-center justify-center gap-2 border border-white rounded-full pl-6 pr-4 py-2.5 lg:py-[11px] text-center text-xs md:text-sm lg:text-base font-medium text-white">
                                 <span>{{ $t('n-home-dmoney-jatricard-learnmore-button') }}</span>
                                 <img class="w-4 md:w-auto" src="~/assets/images/jatri-card/right-arrow.png" alt=">">
                             </nuxt-link>
