@@ -75,11 +75,11 @@ const { locale } = useI18n();
                             <ul class="grid gap-4 text-base sm:text-sm lg:text-base text-dark">
                                 <li v-if="locale === 'en'">
                                     <img src="~/assets/images/jatri-card/arrow-right-icon.png" alt="right arrow">
-                                    <span>Go to your nearest <nuxt-link :to="localePath('/available-activation-counters')" class="text-info font-medium underline">available counter</nuxt-link></span>
+                                    <span>Go to your nearest <nuxt-link target="_blank" :to="localePath('/available-activation-counters')" class="text-info font-medium underline">available counter</nuxt-link></span>
                                 </li>
                                 <li v-if="locale === 'bn'">
                                     <img src="~/assets/images/jatri-card/arrow-right-icon.png" alt="right arrow">
-                                    <span>আপনার <nuxt-link :to="localePath('/available-activation-counters')" class="text-info font-medium underline">নিকটস্থ কাউন্টার</nuxt-link> এ যান</span>
+                                    <span>আপনার <nuxt-link target="_blank" :to="localePath('/available-activation-counters')" class="text-info font-medium underline">নিকটস্থ কাউন্টার</nuxt-link> এ যান</span>
                                 </li>
                                 <li>
                                     <img src="~/assets/images/jatri-card/arrow-right-icon.png" alt="right arrow">
