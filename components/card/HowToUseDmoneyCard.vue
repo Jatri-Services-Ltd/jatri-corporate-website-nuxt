@@ -58,7 +58,7 @@
                 }" :modules="modules" class="mySwiper" @slideChange="changeSlide">
                 <swiper-slide>
                   <div class="slider-img-wrapper">
-                    <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/1.png" alt="">
+                    <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/account-open.jpg" alt="">
                   </div>
                 </swiper-slide>
                 <swiper-slide>
