@@ -26,8 +26,10 @@
                         </div>
                     </div>
 
-                    <img class="custom-position w-[192px] sm:w-[250px] lg:w-auto absolute -right-3 xl:right-24 2xl:right-5 3xl:right-24 bottom-0"
+                    <img class="custom-position w-auto absolute -right-3 xl:right-24 2xl:right-5 3xl:right-24 bottom-0 hidden lg:block"
                         src="~/assets/images/jatri-card/girl-with-card.png" alt="Jatri Card Image">
+                    <img class="absolute -right-3 bottom-0 lg:hidden"
+                        src="~/assets/images/jatri-card/girl-with-card-small.png" alt="Jatri Card Image">
                 </div>
             </nuxt-link>
         </div>
@@ -44,9 +46,4 @@
         @apply right-10
     }
 }
-
-/* @media only screen and (min-width: 640px) {
-    .banner-title br {
-        @apply hidden
-    }
-} */</style>
+</style>
