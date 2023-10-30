@@ -1,8 +1,4 @@
 <script setup>
-import { ref, onMounted } from 'vue';
-import NoData from '~~/components/app/NoData.vue'
-const openedRoles = ref([])
-
 const config = useRuntimeConfig();
 const {data} = await useFetch(config.public.apiURL + '/api/v1/get-career-active-jobs')
 </script>
