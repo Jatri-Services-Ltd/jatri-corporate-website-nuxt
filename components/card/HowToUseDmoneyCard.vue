@@ -48,11 +48,11 @@
                 320: {
                   spaceBetween: 30
                 }
-                }" :autoplay="{
+                }"
+                :autoplay="{
                   delay: 2500,
                   disableOnInteraction: false,
-                  pauseOnHover:true,
-                  pauseOnFocus:true
+                  pauseOnMouseEnter: true,
                 }" :pagination="{
                   clickable: true,
                 }" :modules="modules" class="mySwiper" @slideChange="changeSlide">
