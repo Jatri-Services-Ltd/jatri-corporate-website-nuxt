@@ -26,7 +26,7 @@
           freeModeMomentum: false
         }"
         :loop="true"
-        :speed=2000
+        :speed=4000
         :autoplay="{
           enabled: true,
           delay: 0,
@@ -105,7 +105,7 @@
           freeModeMomentum: false
         }"
         :loop="true"
-        :speed=2000
+        :speed=4000
         :autoplay="{
           enabled: true,
           delay: 0,
@@ -177,12 +177,14 @@ const modules = [ FreeMode, Autoplay ];
 .sample-slider .swiper-wrapper{
     transition-timing-function: linear;
 }
-.sample-slider .swiper-wrapper .swiper-slide{
-    /* height: 300px !important; */
-}
+/* .sample-slider .swiper-wrapper .swiper-slide{
+    height: 300px !important;
+    width: auto !important;
+}  */
 .career-slider-img img{
   @apply rounded-3xl
 }
+
 @media (max-width: 767px){
   .career-slider-img img{
     @apply h-[200px]
