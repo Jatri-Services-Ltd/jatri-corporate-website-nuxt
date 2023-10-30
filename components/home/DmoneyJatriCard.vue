@@ -26,9 +26,9 @@
                         </div>
                     </div>
 
-                    <img class="custom-position w-auto absolute -right-3 xl:right-24 2xl:right-5 3xl:right-24 bottom-0 hidden lg:block"
+                    <img class="custom-position w-[250px] lg:w-auto absolute -right-3 xl:right-24 2xl:right-5 3xl:right-24 bottom-0 hidden sm:block"
                         src="~/assets/images/jatri-card/girl-with-card.png" alt="Jatri Card Image">
-                    <img class="absolute sm:w-[250px] -right-3 bottom-0 lg:hidden"
+                    <img class="absolute -right-3 bottom-0 sm:hidden"
                         src="~/assets/images/jatri-card/girl-with-card-small.png" alt="Jatri Card Image">
                 </div>
             </nuxt-link>
