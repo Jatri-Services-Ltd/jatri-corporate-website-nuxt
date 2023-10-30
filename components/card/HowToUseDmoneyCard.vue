@@ -53,10 +53,9 @@
                   delay: 2500,
                   disableOnInteraction: false,
                   pauseOnMouseEnter: true,
-                  pauseOnFocus:true
                 }" :pagination="{
                   clickable: true,
-                }" :modules="modules" class="mySwiper" @slideChange="changeSlide">
+                }" :modules="modules" class="mySwiper" @swiper="onSwiper" @slideChange="changeSlide">
                 <swiper-slide>
                   <div class="slider-img-wrapper">
                     <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/account-open.jpg" alt="">
@@ -89,6 +88,31 @@ import { FreeMode, Navigation, Autoplay, } from 'swiper';
 import { onMounted, ref } from "vue";
 
 const modules = [Navigation, FreeMode, Autoplay];
+
+let swiperInstance = null;
+
+const onSwiper = (swiper) => {
+  swiperInstance = swiper;
+  swiperInstance.on('touchStart', () => {
+    swiperInstance.autoplay.stop();
+  });
+
+  swiperInstance.on('touchEnd', () => {
+    swiperInstance.autoplay.start();
+  });
+
+  document.addEventListener('focusin', (event) => {
+    if (swiperInstance.el.contains(event.target)) {
+      swiperInstance.autoplay.stop();
+    }
+  });
+
+  document.addEventListener('focusout', (event) => {
+    if (swiperInstance.el.contains(event.target)) {
+      swiperInstance.autoplay.start();
+    }
+  });
+};
 
 const activeSlideIndex = ref(0)
 const changeSlide = (e) => {
