@@ -94,5 +94,15 @@ const { locale } = useI18n();
 
 <style scoped>
 .background {
-  @apply bg-[url('~~/assets/images/jatri-card/dmoney-mobile-card-bg.png')] lg:bg-[url('~~/assets/images/jatri-card/dmoney-card-bg.png')] bg-cover bg-no-repeat bg-left w-full h-[280px] lg:w-[620px] xl:w-full lg:h-[782px] rounded-t-xl lg:rounded-t-none lg:rounded-tl-xl lg:rounded-bl-xl
-}</style>
+  @apply relative z-0 bg-[url('~~/assets/images/jatri-card/dmoney-jatri-card-bg-small.png')] lg:bg-[url('~~/assets/images/jatri-card/dmoney-card-bg.png')] bg-cover bg-no-repeat bg-left w-full h-[280px] lg:w-[620px] xl:w-full lg:h-[782px] rounded-t-xl lg:rounded-t-none lg:rounded-tl-xl lg:rounded-bl-xl
+}
+.background::before {
+    content: "";
+    background-image: linear-gradient(180deg, rgba(21, 20, 20, 0.60) 0%, rgba(21, 20, 20, 0.00) 100%);
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+</style>
