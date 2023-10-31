@@ -2,7 +2,7 @@
   <!--  slider-->
   <section class="bg-[#FEF2F0]  use-dmoney-swipper-container">
     <div class="custom-container">
-      <div class="max-w-[1440px] flex flex-col md:flex-row gap-0 md:gap-5 lg:gap-16 xl:gap-20">
+      <div class="max-w-[1440px] 3xl:max-w-full flex flex-col md:flex-row gap-0 md:gap-5 lg:gap-16 xl:gap-20">
         <div class="flex-grow self-center md:max-w-[420px] lg:max-w-[520px] xl:max-w-[700px] order-2 md:order-1">
           <div class="hidden md:block">
             <p class="text-[#676769] text-base lg:text-xl font-medium mb-4 lg:mb-2 xl:mb-4">
@@ -63,12 +63,12 @@
                 </swiper-slide>
                 <swiper-slide>
                   <div class="slider-img-wrapper">
-                    <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/use_card.png" alt="">
+                    <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/recharge.png" alt="">
                   </div>
                 </swiper-slide>
                 <swiper-slide>
                   <div class="slider-img-wrapper">
-                    <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/recharge.png" alt="">
+                    <img class="h-full w-full object-cover" src="~/assets/images/jatri-card/use_card.png" alt="">
                   </div>
                 </swiper-slide>
               </swiper>
