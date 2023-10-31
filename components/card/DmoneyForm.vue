@@ -50,19 +50,19 @@ const { locale } = useI18n();
                 <div class="mt-5">
                   <small class="text-dark font-medium text-base leading-6">{{ $t('card-form-name') }}</small>
                   <input required v-model="cardSubmitForm.name" type="text"
-                    class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg px-4 py-[18px] focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal"
+                    class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg px-4 py-[18px] focus:outline-none placeholder:text-[#676769] placeholder:text-sm placeholder:font-normal"
                     :placeholder="locale === 'en' ? 'Enter your name' : 'নাম লিখুন'">
                 </div>
                 <div class="mt-5">
                   <small class="text-dark font-medium text-base leading-6">{{ $t('card-form-mobile') }}</small>
                   <input maxlength="11" required v-model="cardSubmitForm.mobile_number" type="text"
-                    class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg px-4 py-[18px] focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal"
+                    class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg px-4 py-[18px] focus:outline-none placeholder:text-[#676769] placeholder:text-sm placeholder:font-normal"
                     :placeholder="locale === 'en' ? '+880' : '+880'">
                 </div>
                 <div class="mt-5">
                   <small class="text-dark font-medium text-base leading-6">{{ $t('card-form-city') }}</small>
                   <input required v-model="cardSubmitForm.city" type="text"
-                    class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg px-4 py-[18px] focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal"
+                    class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg px-4 py-[18px] focus:outline-none placeholder:text-[#676769] placeholder:text-sm placeholder:font-normal"
                     :placeholder="locale === 'en' ? 'Enter your city' : 'শহরের নাম লিখুন'">
                 </div>
                 <div class="mt-5">
@@ -71,7 +71,7 @@ const { locale } = useI18n();
                     <span class="block text-[#676769] text-xs">{{ $t('card-form-optional') }}</span>
                   </div>
                   <input v-model="cardSubmitForm.profession" type="text"
-                    class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg px-4 py-[18px] focus:outline-none placeholder:text-[#67676] placeholder:text-sm placeholder:font-normal"
+                    class="mt-[10px] w-full bg-[#F7F7F7] rounded-lg px-4 py-[18px] focus:outline-none placeholder:text-[#676769] placeholder:text-sm placeholder:font-normal"
                     :placeholder="locale === 'en' ? 'Enter your profession' : 'পেশার নাম লিখুন'">
                 </div>
                 <div class="flex justify-center lg:justify-end">

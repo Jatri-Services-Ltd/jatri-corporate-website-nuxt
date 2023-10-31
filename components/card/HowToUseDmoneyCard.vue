@@ -144,7 +144,7 @@ onMounted(() => {
 }
 
 .content-detail {
-  @apply text-base md:text-sm lg:text-base xl:text-xl
+  @apply text-base md:text-sm lg:text-base xl:text-xl xl:leading-[30px]
 }
 
 .use-dmoney-swipper-container .swiper-wrapper {
