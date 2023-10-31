@@ -55,9 +55,7 @@ const handleSubmit = () => {
       <div id="top" class="job-details-header text-white py-8">
         <div class="custom-container">
           <div class="flex items-center gap-3">
-            <router-link :to="{ path: '/career'}"  class="text-xs sm:text-sm">
-              Career
-            </router-link>
+            <nuxt-link :to="localePath('/career')" class="text-xs sm:text-sm">Career</nuxt-link>
             <div class="relative">
               <div class="right-arrow absolute top-0 bottom-0 left-0 right-0 m-auto"></div>
             </div>
