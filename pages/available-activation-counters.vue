@@ -47,7 +47,7 @@ const selectedCitiesCounter = computed(() => {
             {{ $t('no-data-found') }}
           </div>
           <div v-for="area in selectedCitiesCounter.areas" :key="area.id">
-            <div class="bg-[#EDEDED] py-4 px-3"><span class="text-dark font-medium text-base md:text-xl">{{ locale ===
+            <div class="bg-grey py-4 px-3"><span class="text-dark font-medium text-base md:text-xl">{{ locale ===
               'en'
               ? area.name : area.name_in_bangla }}</span>
             </div>
