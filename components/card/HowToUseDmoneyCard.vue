@@ -38,7 +38,7 @@
           <div>
 
             <div class=" mt-10 md:mt-20">
-              <swiper :direction="isMobile ? 'horizontal' : 'vertical'" :slidesPerView="1.3" :breakpoints="{
+              <swiper :direction="isMobile ? 'horizontal' : 'vertical'" :slidesPerView="1.32" :breakpoints="{
                 1024: {
                   spaceBetween: 40
                 },
