@@ -78,7 +78,7 @@ const selectedCitiesCounter = computed(() => {
 }
 
 .table-content {
-  @apply text-[12px] md:text-base font-medium px-3 min-h-[48px] md:min-h-[72px] border-l border-b border-[#EDEDED] flex items-center
+  @apply text-[12px] md:text-base font-medium px-3 min-h-[48px] md:min-h-[72px] border-l border-b last:border-r border-[#EDEDED] flex items-center
 }
 
 .content-wrapper::before {
