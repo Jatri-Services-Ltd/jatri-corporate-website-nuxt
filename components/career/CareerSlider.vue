@@ -1,3 +1,26 @@
+<script setup>
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { FreeMode, Autoplay } from 'swiper';
+
+const modules = [ FreeMode, Autoplay ];
+
+const config = useRuntimeConfig();
+const {data} = await useFetch(config.public.apiURL + '/api/v1/get-career-banners')
+console.log(data.value.data)
+
+const bannerImages = data.value.data;
+const chunkSize = 5;
+const slicedImages = [];
+
+const chunkBannerImages = {
+  firstSlider: data.value.data.slice(0, chunkSize),
+  secondSlider: data.value.data.slice(chunkSize),
+}
+
+</script>
+
 <template>
   <div class="bg-[#F7F7F7] py-10 lg:py-[60px] relative">
     <div class="sample-slider">
@@ -37,46 +60,11 @@
         :modules="modules"
         class="mySwiper"
     >
-        <swiper-slide>
-        <div class="career-slider-img">
-          <img src="/images/career/top-slider-1.jpg" alt="">
-        </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/top-slider-2.png" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/top-slider-3.png" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/top-slider-4.png" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/top-slider-1.jpg" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/top-slider-2.png" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/top-slider-3.png" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/top-slider-4.png" alt="">
-          </div>
-        </swiper-slide>
+          <swiper-slide v-for="slideImage in chunkBannerImages.firstSlider">
+            <div class="career-slider-img">
+              <img :src="'https://sgp1.digitaloceanspaces.com/storage.jatri.co/'+slideImage" alt="image">
+            </div>
+          </swiper-slide>
       </swiper>
     </div>
     <div class="sample-slider mt-4 md:mt-8">
@@ -118,44 +106,10 @@
         :modules="modules"
         class="mySwiper"
     >
-        <swiper-slide>
+        <swiper-slide v-for="slideImage in chunkBannerImages.secondSlider">
           <div class="career-slider-img">
-            <img src="/images/career/bottom-slider-1.png" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/bottom-slider-2.png" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/bottom-slider-3.png" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/bottom-slider-4.png" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/top-slider-1.jpg" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/top-slider-2.png" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/top-slider-3.png" alt="">
-          </div>
-        </swiper-slide>
-        <swiper-slide>
-          <div class="career-slider-img">
-            <img src="/images/career/top-slider-4.png" alt="">
+
+            <img :src="'https://sgp1.digitaloceanspaces.com/storage.jatri.co/'+slideImage" alt="image">
           </div>
         </swiper-slide>
       </swiper>
@@ -164,23 +118,15 @@
   </div>
 </template>
 
-<script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { FreeMode, Autoplay } from 'swiper';
-
-const modules = [ FreeMode, Autoplay ];
-</script>
-
 <style>
 .sample-slider .swiper-wrapper{
     transition-timing-function: linear;
 }
-/* .sample-slider .swiper-wrapper .swiper-slide{
-    height: 300px !important;
-    width: auto !important;
-}  */
+/*.sample-slider .swiper-wrapper .swiper-slide,*/
+/*.sample-slider .swiper-wrapper .swiper-slide img {*/
+/*    height: 300px !important;*/
+/*    !*width: auto !important;*!*/
+/*}*/
 .career-slider-img img{
   @apply rounded-3xl
 }

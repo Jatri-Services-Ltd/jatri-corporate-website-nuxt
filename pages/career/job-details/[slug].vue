@@ -186,7 +186,13 @@ const handleSubmit = () => {
                   </div>
                 </div>
               </button>
-              <input v-if="applicationSubmitForm.resume === ''" @change="uploadFile($event)" type="file" name="myfile" class="absolute left-0 top-0 opacity-0 w-full h-full cursor-pointer" />
+              <input
+                  v-if="applicationSubmitForm.resume === ''"
+                  @change="uploadFile($event)" type="file"
+                  name="myfile"
+                  accept="application/pdf"
+                  class="absolute left-0 top-0 opacity-0 w-full h-full cursor-pointer"
+              />
             </div>
           </div>
         </div>
