@@ -74,11 +74,11 @@ const selectedCitiesCounter = computed(() => {
 }
 
 .district-tab-btn {
-  @apply border rounded-full px-4 md:px-6 py-[10px] md:py-[11px] text-xs md:text-base font-medium capitalize hover:border-dark hover:bg-dark hover:text-white transition-all ease-in-out duration-300
+  @apply border rounded-full px-4 md:px-6 py-[10px] md:py-[11px] text-xs md:text-base font-medium capitalize hover:border-dark hover:bg-dark text-dark hover:text-white transition-all ease-in-out duration-300
 }
 
 .table-content {
-  @apply text-[12px] md:text-base font-medium px-3 min-h-[48px] md:min-h-[72px] border-l border-b last:border-r border-[#EDEDED] flex items-center
+  @apply text-dark text-[12px] md:text-base font-medium px-3 min-h-[48px] md:min-h-[72px] border-l border-b last:border-r border-[#EDEDED] flex items-center
 }
 
 .content-wrapper::before {
