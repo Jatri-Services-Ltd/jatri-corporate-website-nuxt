@@ -74,7 +74,7 @@ const selectedCitiesCounter = computed(() => {
 }
 
 .district-tab-btn {
-  @apply border rounded-full px-4 md:px-6 py-[10px] md:py-[11px] text-xs md:text-base font-medium capitalize hover:border-dark hover:bg-dark text-dark hover:text-white transition-all ease-in-out duration-300
+  @apply border rounded-full px-4 md:px-6 py-[10px] md:py-[11px] text-xs md:text-base font-medium capitalize hover:border-dark hover:bg-dark hover:text-white transition-all ease-in-out duration-300
 }
 
 .table-content {
