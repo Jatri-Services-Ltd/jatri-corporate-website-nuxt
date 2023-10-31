@@ -3,7 +3,7 @@
   <section class="bg-[#FEF2F0]  use-dmoney-swipper-container">
     <div class="custom-container">
       <div class="max-w-[1440px] 3xl:max-w-full flex flex-col md:flex-row gap-0 md:gap-5 lg:gap-16 xl:gap-20">
-        <div class="flex-grow self-center md:max-w-[420px] lg:max-w-[520px] xl:max-w-[700px] order-2 md:order-1">
+        <div class="flex-grow self-center md:max-w-[420px] lg:max-w-[520px] xl:max-w-[640px] order-2 md:order-1">
           <div class="hidden md:block">
             <p class="text-[#676769] text-base lg:text-xl font-medium mb-4 lg:mb-2 xl:mb-4">
               {{ $t('how-to-use-jatricard-subheading') }}</p>
@@ -140,11 +140,11 @@ onMounted(() => {
 }
 
 .content-sub-title {
-  @apply text-xl lg:text-2xl xl:text-4xl xl:leading-[44px] font-medium mb-5
+  @apply text-xl lg:text-2xl xl:text-[32px] xl:leading-[40px] font-medium mb-5
 }
 
 .content-detail {
-  @apply text-base md:text-sm lg:text-base xl:text-xl xl:leading-[30px] lg:pr-5
+  @apply text-base md:text-sm lg:text-base xl:text-xl xl:leading-[30px]
 }
 
 .use-dmoney-swipper-container .swiper-wrapper {
