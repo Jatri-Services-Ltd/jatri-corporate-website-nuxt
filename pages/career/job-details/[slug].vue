@@ -32,14 +32,17 @@ const handleSubmit = () => {
   let applicationSubmitFormData = new FormData()
 
   // for (const property in applicationSubmitForm) {
+  //   console.log("properties",applicationSubmitForm[property])
   //   applicationSubmitFormData.append(`${property}`, `${applicationSubmitForm[property]}`)
   // }
+
   applicationSubmitFormData.append("name",applicationSubmitForm.name)
   applicationSubmitFormData.append("email",applicationSubmitForm.email)
   applicationSubmitFormData.append("mobile_number",applicationSubmitForm.mobile_number)
   applicationSubmitFormData.append("linkedin_profile",applicationSubmitForm.linkedin_profile)
   applicationSubmitFormData.append("resume",applicationSubmitForm.resume)
   applicationSubmitFormData.append("career_job_id",applicationSubmitForm.career_job_id)
+
   isSubmitting.value = true
   axios.post(config.public.apiURL+'/api/v1/career-application', applicationSubmitFormData,  {
     headers: {
@@ -174,13 +177,18 @@ const handleSubmit = () => {
               <button class="w-full border border-[#1E88E5] border-dashed py-[22px] px-5 text-start rounded-[4px]">
                 <div v-if="applicationSubmitForm.resume">
                   <div class="flex gap-5 py-[10px]">
-                    <div class="flex gap-2 items-center">
-                      <p class="text-sm font-medium">{{ applicationSubmitForm?.resume?.name }}</p>
-                      <button @click="removeFile" class="pt-1"><img src="/images/career/remove-file-icon.svg" alt="Remove cv"></button>
-                    </div>
-                    <div class="relative">
-                      <button @click="removeFile" class="text-corporate text-sm font-medium underline z-20 relative">Replace</button>
-                      <img class="absolute top-3 z-10" src="/images/career/upload-icon.svg" alt="Upload file">
+                    <div class="flex gap-2 justify-between items-center w-full">
+                      <div class="flex">
+                        <img class="" src="/images/career/upload-icon.svg" alt="Upload file">
+                        <div class="flex items-center gap-x-2">
+                          <p class="text-sm font-medium">{{ applicationSubmitForm?.resume?.name }}</p>
+                          <button @click="removeFile" class="pt-1"><img src="/images/career/remove-file-icon.svg" alt="Remove cv"></button>
+                        </div>
+                      </div>
+                      <div>
+                        <input @change="uploadFile($event)" type="file" class="hidden" id="replace">
+                        <label class="text-red-700 border-b border-red-700 cursor-pointer" for="replace">replace</label>
+                      </div>
                     </div>
                   </div>
                 </div>
