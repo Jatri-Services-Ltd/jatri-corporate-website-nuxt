@@ -62,7 +62,7 @@
                           <div class="accordion-content-img">
                               <img src="~/assets/images/test/partner-accodion/partner-accordion-1.png" alt="Phone image">
                           </div>
-                          <p class="text-secondaryDark text-base lg:text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
+                          <p class="text-secondaryDark text-base lg:text-xl">Lorem ipsum dolor sit amet consectetur. 
                               Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
                           </p>
                       </div>
