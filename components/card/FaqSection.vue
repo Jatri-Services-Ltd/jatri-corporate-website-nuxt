@@ -18,66 +18,75 @@
             </nuxt-link>
           </div>
         </div>
+        
         <div class="w-full lg:w-[60%] mt-6 sm:mt-8 lg:mt-0">
-          <div class="lg:pt-5 divide-y space-y-4 lg:space-y-6">
+          <div class="lg:pt-5 divide-y divide-[#EDEDED] space-y-4 lg:space-y-6">
             <div class="accordion-box">
               <input type="radio" name="radioBtnAccordion" value="1" id="accordion1" checked />
-              <label class="accordion-title" for="accordion1">
-                <span>Open app & select “Ride”</span>
+              <label class="accordion-title !pt-0" for="accordion1">
+                <span>{{ $t('card-faq-question1') }}</span>
                 <img src="~/assets/images/common/down_arrow.svg" alt="Down arrow">
               </label>
               <div class="accordion-content">
-
-                <p class="text-secondaryDark text-base lg:text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras
-                  arcu est et dignissim.
-                  Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
-                </p>
+                <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer1') }}</p>
               </div>
             </div>
 
             <div class="accordion-box">
               <input type="radio" name="radioBtnAccordion" value="2" id="accordion2" />
               <label class="accordion-title" for="accordion2">
-                <span>Choose your driver</span>
+                <span>{{ $t('card-faq-question2') }}</span>
                 <img src="~/assets/images/common/down_arrow.svg" alt="Down arrow">
               </label>
               <div class="accordion-content">
-
-                <p class="text-secondaryDark text-base lg:text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras
-                  arcu est et dignissim.
-                  Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
-                </p>
+                <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer2') }}</p>
               </div>
             </div>
 
             <div class="accordion-box">
               <input type="radio" name="radioBtnAccordion" value="3" id="accordion3" />
               <label class="accordion-title" for="accordion3">
-                <span>Set your destination</span>
+                <span>{{ $t('card-faq-question3') }}</span>
                 <img src="~/assets/images/common/down_arrow.svg" alt="Down arrow">
               </label>
               <div class="accordion-content">
-
-                <p class="text-secondaryDark text-base lg:text-xl">Lorem ipsum dolor sit amet consectetur. Supendisse cras
-                  arcu est et dignissim.
-                  Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
-                </p>
+                <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer3') }}</p>
               </div>
             </div>
 
             <div class="accordion-box">
               <input type="radio" name="radioBtnAccordion" value="4" id="accordion4" />
               <label class="accordion-title" for="accordion4">
-                <span>Enjoy your ride</span>
+                <span>{{ $t('card-faq-question4') }}</span>
                 <img src="~/assets/images/common/down_arrow.svg" alt="Down arrow">
               </label>
               <div class="accordion-content">
-
-                <p class="text-secondaryDark text-base lg:text-xl">Lorem ipsum dolor sit amet consectetur.
-                  Lorem ipsum dolor sit amet consectetur. Supendisse cras arcu est et dignissim.
-                </p>
+                <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer4') }}</p>
               </div>
             </div>
+
+            <div class="accordion-box">
+              <input type="radio" name="radioBtnAccordion" value="5" id="accordion5" />
+              <label class="accordion-title" for="accordion5">
+                <span>{{ $t('card-faq-question5') }}</span>
+                <img src="~/assets/images/common/down_arrow.svg" alt="Down arrow">
+              </label>
+              <div class="accordion-content">
+                <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer5') }}</p>
+              </div>
+            </div>
+
+            <div class="accordion-box">
+              <input type="radio" name="radioBtnAccordion" value="6" id="accordion6" />
+              <label class="accordion-title" for="accordion6">
+                <span>{{ $t('card-faq-question6') }}</span>
+                <img src="~/assets/images/common/down_arrow.svg" alt="Down arrow">
+              </label>
+              <div class="accordion-content">
+                <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer6') }}</p>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -91,7 +100,7 @@ input[type="radio"] {
 }
 
 .accordion-title {
-  @apply text-[#8D8D8F] flex justify-between items-center pt-4 lg:pt-6 z-10 text-xl lg:text-2xl font-medium cursor-pointer transition-all
+  @apply flex justify-between items-center pt-4 lg:pt-6 cursor-pointer transition-all text-base lg:text-2xl text-dark font-medium
 }
 
 input[type="radio"]:checked+.accordion-title {
@@ -110,21 +119,7 @@ input[type="radio"]:checked+.accordion-title img {
   @apply max-h-0 overflow-hidden transition-all
 }
 
-/* .accordion-content-img {
-      @apply bg-secondary py-3 lg:py-0 mb-4 lg:mb-0 grid place-content-center
-  }
-  .accordion-content-img img {
-      @apply lg:absolute lg:top-12 xl:top-10 3xl:top-6 lg:right-[8%] xl:right-[10%] 2xl:right-[11%] 3xl:right-[13%] opacity-0 transition
-  } */
 input[type="radio"]:checked~.accordion-content {
-  @apply pt-4 max-h-max overflow-auto
+  @apply pt-2 lg:pt-4 max-h-max overflow-auto
 }
-
-/* input[type="radio"]:checked ~ .accordion-content .accordion-content-img img {
-      @apply opacity-100
-  }
-  @media (width > 1439px) and (width < 1536px) {
-      .accordion-content-img img {
-          @apply right-[10.5%]
-      }
-  } */</style>
+</style>
