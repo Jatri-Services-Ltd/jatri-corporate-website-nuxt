@@ -8,7 +8,6 @@ const modules = [ FreeMode, Autoplay ];
 
 const config = useRuntimeConfig();
 const {data} = await useFetch(config.public.apiURL + '/api/v1/get-career-banners')
-console.log(data.value.data)
 
 const bannerImages = data.value.data;
 const chunkSize = Math.round(bannerImages.length / 2);
@@ -23,7 +22,7 @@ const chunkBannerImages = {
 <template>
   <div class="bg-[#F7F7F7] py-10 lg:py-[60px] relative">
     <div class="slider">
-      <div class="slide-track">
+      <div class="slide-track" :style="{'--chunkImgSize': chunkSize}">
         <div class="slide" v-for="slideImage in data.data" :key="slideImage">
           <img :src="'https://sgp1.digitaloceanspaces.com/storage.jatri.co/'+slideImage" alt="" />
         </div>
@@ -161,7 +160,7 @@ const chunkBannerImages = {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * 5));
+    transform: translateX(-100px);
   }
 }
 
@@ -170,45 +169,28 @@ const chunkBannerImages = {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-250px * var(--chunkImgSize)));
+    transform: translateX(-100px);
   }
 }
+
 .slider {
   background: white;
-  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
-  /* height: 100px; */
   margin: auto;
   overflow: hidden;
   position: relative;
-  /* width: 960px; */
  }
- /*
-.slider::before, .slider::after {
-  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
-} */
+
 .slider .slide-track {
-  -webkit-animation: scroll 10s linear infinite;
-          animation: scroll 10s linear infinite;
+  -webkit-animation: scroll 3s linear infinite;
+  animation: scroll 3s linear infinite;
   display: flex;
   gap: 32px;
-  width: calc(250px * 14);
+  /* width: calc(550px * 10); */
 }
-.slider .slide {
+
+.slider .slide, .slider .slide img {
   height: 300px;
-  width: auto;
+  /* width: 550px; */
 }
+
 </style>
