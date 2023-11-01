@@ -31,9 +31,15 @@ const removeFile= ()=>{
 const handleSubmit = () => {
   let applicationSubmitFormData = new FormData()
 
-  for (const property in applicationSubmitForm) {
-    applicationSubmitFormData.append(`${property}`, `${applicationSubmitForm[property]}`)
-  }
+  // for (const property in applicationSubmitForm) {
+  //   applicationSubmitFormData.append(`${property}`, `${applicationSubmitForm[property]}`)
+  // }
+  applicationSubmitFormData.append("name",applicationSubmitForm.name)
+  applicationSubmitFormData.append("email",applicationSubmitForm.email)
+  applicationSubmitFormData.append("mobile_number",applicationSubmitForm.mobile_number)
+  applicationSubmitFormData.append("linkedin_profile",applicationSubmitForm.linkedin_profile)
+  applicationSubmitFormData.append("resume",applicationSubmitForm.resume)
+  applicationSubmitFormData.append("career_job_id",applicationSubmitForm.career_job_id)
   isSubmitting.value = true
   axios.post(config.public.apiURL+'/api/v1/career-application', applicationSubmitFormData,  {
     headers: {
