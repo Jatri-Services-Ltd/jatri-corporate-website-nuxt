@@ -11,17 +11,28 @@ const {data} = await useFetch(config.public.apiURL + '/api/v1/get-career-banners
 console.log(data.value.data)
 
 const bannerImages = data.value.data;
-const chunkSize = 5;
+const chunkSize = Math.round(bannerImages.length / 2);
 const slicedImages = [];
 
 const chunkBannerImages = {
   firstSlider: data.value.data.slice(0, chunkSize),
   secondSlider: data.value.data.slice(chunkSize),
 }
-
 </script>
 
 <template>
+  <div class="bg-[#F7F7F7] py-10 lg:py-[60px] relative">
+    <div class="slider">
+      <div class="slide-track">
+        <div class="slide" v-for="slideImage in data.data" :key="slideImage">
+          <img :src="'https://sgp1.digitaloceanspaces.com/storage.jatri.co/'+slideImage" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<!-- <template>
   <div class="bg-[#F7F7F7] py-10 lg:py-[60px] relative">
     <div class="sample-slider">
       <swiper
@@ -116,9 +127,9 @@ const chunkBannerImages = {
     </div>
     <h2 style="text-shadow: 0px 0px 26px rgba(0, 0, 0, 0.24);" class="text-white absolute text-[60px] lg:text-[120px] leading-[64px] font-[700] transform -translate-x-[50%] -translate-y-[50%] top-[50%] left-[50%] z-40">#Life@Jatri</h2>
   </div>
-</template>
+</template> -->
 
-<style>
+<style scoped>
 .sample-slider .swiper-wrapper{
     transition-timing-function: linear;
 }
@@ -131,6 +142,10 @@ const chunkBannerImages = {
   @apply rounded-3xl
 }
 
+:root {
+  --chunkImgSize: 0;
+}
+
 @media (max-width: 767px){
   .career-slider-img img{
     @apply h-[200px]
@@ -138,5 +153,62 @@ const chunkBannerImages = {
   .sample-slider .swiper-wrapper .swiper-slide{
     height: 200px !important;
 }
+}
+
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 5));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * var(--chunkImgSize)));
+  }
+}
+.slider {
+  background: white;
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
+  /* height: 100px; */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  /* width: 960px; */
+ }
+ /*
+.slider::before, .slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+} */
+.slider .slide-track {
+  -webkit-animation: scroll 10s linear infinite;
+          animation: scroll 10s linear infinite;
+  display: flex;
+  gap: 32px;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 300px;
+  width: auto;
 }
 </style>
