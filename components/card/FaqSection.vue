@@ -19,8 +19,8 @@
           </div>
         </div>
         
-        <div class="w-full lg:w-[60%] mt-6 sm:mt-8 lg:mt-0">
-          <div class="lg:pt-5 divide-y divide-[#EDEDED] space-y-4 lg:space-y-6">
+        <div class="w-full lg:w-[60%] mt-8 sm:mt-8 lg:mt-0">
+          <div class="divide-y divide-[#EDEDED] space-y-4 lg:space-y-6">
             <div class="accordion-box">
               <input type="radio" name="radioBtnAccordion" value="1" id="accordion1" checked />
               <label class="accordion-title !pt-0" for="accordion1">
@@ -100,7 +100,7 @@ input[type="radio"] {
 }
 
 .accordion-title {
-  @apply flex justify-between items-center pt-4 lg:pt-6 cursor-pointer transition-all text-base lg:text-2xl text-dark font-medium
+  @apply flex justify-between items-center gap-5 pt-4 lg:pt-6 cursor-pointer transition-all text-base lg:text-2xl text-dark font-medium
 }
 
 input[type="radio"]:checked+.accordion-title {
