@@ -3,7 +3,7 @@
       <CareerHeader />
       
         <div class="">
-          <CareerSlider />
+          <CareerSliderTest />
           <div class="flex justify-center items-center">
           
               <!-- <div class="slider pl-[26px]">
@@ -25,10 +25,15 @@
 </template>
 
 <script setup>
+import CareerSliderTest from '~~/components/career/CareerSliderTest.vue';
+
 
 </script>
 
 <style scoped>
+* {
+    font-family: 'Inter', sans-serif;
+}
 /* .slider {
   width: 100%;
   overflow: hidden;
