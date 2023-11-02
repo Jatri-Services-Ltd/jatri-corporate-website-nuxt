@@ -3,7 +3,8 @@
       <CareerHeader />
       
         <div class="">
-          <CareerSliderTest />
+          <CareerSlider />
+          <!-- <CareerSliderTest /> -->
           <div class="flex justify-center items-center">
           
               <!-- <div class="slider pl-[26px]">
@@ -25,9 +26,8 @@
 </template>
 
 <script setup>
+import CareerSlider from '~~/components/career/CareerSlider.vue';
 import CareerSliderTest from '~~/components/career/CareerSliderTest.vue';
-
-
 </script>
 
 <style scoped>

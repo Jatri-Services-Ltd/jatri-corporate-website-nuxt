@@ -1,13 +1,7 @@
 <script setup>
-import { Swiper, SwiperSlide } from 'swiper/vue';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { FreeMode, Autoplay } from 'swiper';
-
-const modules = [ FreeMode, Autoplay ];
-
+import InfiniteSlideBar from '../slider/InfiniteSlideBar.vue'
 const config = useRuntimeConfig();
-const {data} = await useFetch(config.public.apiURL + '/api/v1/get-career-banners')
+const { data } = await useFetch(config.public.apiURL + '/api/v1/get-career-banners')
 
 const bannerImages = data.value.data;
 const chunkSize = Math.round(bannerImages.length / 2);
@@ -20,177 +14,51 @@ const chunkBannerImages = {
 </script>
 
 <template>
-  <div class="bg-[#F7F7F7] py-10 lg:py-[60px] relative">
-    <div class="slider">
-      <div class="slide-track" :style="{'--chunkImgSize': chunkSize}">
-        <div class="slide" v-for="slideImage in data.data" :key="slideImage">
-          <img :src="'https://sgp1.digitaloceanspaces.com/storage.jatri.co/'+slideImage" alt="" />
+  <InfiniteSlideBar>
+    <div class="items">
+  
+        <div class="f-left pd-t-8px mg-r-10px slider-img"  v-for="slideImage in chunkBannerImages.firstSlider" :key="slideImage">
+          <img :src="'https://sgp1.digitaloceanspaces.com/storage.jatri.co/' + slideImage">
         </div>
-      </div>
+        <!-- <div class="f-left">
+            <div class="f-w-bold">{{coin.name}}</div>
+            <div>
+              {{coin.price}}
+              <span :class="{ 'cl-success': coin.change > 0, 'cl-danger': coin.change < 0 }">({{coin.change}}%)</span>
+            </div>
+          </div> -->
     </div>
-  </div>
+  </InfiniteSlideBar>
 </template>
 
-<!-- <template>
-  <div class="bg-[#F7F7F7] py-10 lg:py-[60px] relative">
-    <div class="sample-slider">
-      <swiper
-        :breakpoints="{
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 20
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 20
-          },
-          1280: {
-            slidesPerView: 4,
-            spaceBetween: 32
-          }
-        }"
-        :spaceBetween="30"
-        :freeMode="{
-          enabled: true,
-          freeModeMomentum: false
-        }"
-        :loop="true"
-        :speed=4000
-        :autoplay="{
-          enabled: true,
-          delay: 0,
-          stopOnLastSlide: false,
-          waitForTransition: true
-        }"
-    
-        :modules="modules"
-        class="mySwiper"
-    >
-          <swiper-slide v-for="slideImage in chunkBannerImages.firstSlider">
-            <div class="career-slider-img">
-              <img :src="'https://sgp1.digitaloceanspaces.com/storage.jatri.co/'+slideImage" alt="image">
-            </div>
-          </swiper-slide>
-      </swiper>
-    </div>
-    <div class="sample-slider mt-4 md:mt-8">
-      <swiper
-        :breakpoints="{
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 20
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 20
-          },
-          1280: {
-            slidesPerView: 4,
-            spaceBetween: 32
-          }
-        }"
-        :spaceBetween="30"
-        :freeMode="{
-          enabled: true,
-          freeModeMomentum: false
-        }"
-        :loop="true"
-        :speed=4000
-        :autoplay="{
-          enabled: true,
-          delay: 0,
-          disableOnInteraction: true,
-          reverseDirection: true,
-          stopOnLastSlide: false,
-          waitForTransition: true
-        }"
-    
-        :modules="modules"
-        class="mySwiper"
-    >
-        <swiper-slide v-for="slideImage in chunkBannerImages.secondSlider">
-          <div class="career-slider-img">
 
-            <img :src="'https://sgp1.digitaloceanspaces.com/storage.jatri.co/'+slideImage" alt="image">
-          </div>
-        </swiper-slide>
-      </swiper>
-    </div>
-    <h2 style="text-shadow: 0px 0px 26px rgba(0, 0, 0, 0.24);" class="text-white absolute text-[60px] lg:text-[120px] leading-[64px] font-[700] transform -translate-x-[50%] -translate-y-[50%] top-[50%] left-[50%] z-40">#Life@Jatri</h2>
-  </div>
-</template> -->
-
-<style scoped>
-.sample-slider .swiper-wrapper{
-    transition-timing-function: linear;
-}
-/*.sample-slider .swiper-wrapper .swiper-slide,*/
-/*.sample-slider .swiper-wrapper .swiper-slide img {*/
-/*    height: 300px !important;*/
-/*    !*width: auto !important;*!*/
-/*}*/
-.career-slider-img img{
-  @apply rounded-3xl
-}
-
-:root {
-  --chunkImgSize: 0;
-}
-
-@media (max-width: 767px){
-  .career-slider-img img{
-    @apply h-[200px]
-  }
-  .sample-slider .swiper-wrapper .swiper-slide{
-    height: 200px !important;
-}
-}
-
-
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100px);
-  }
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100px);
-  }
-}
-
-.slider {
-  background: white;
-  margin: auto;
-  overflow: hidden;
-  position: relative;
+<style> .items {
+   display: flex;
+   /* justify-content: space-around; */
+   column-gap: 32px;
  }
 
-.slider .slide-track {
-  -webkit-animation: scroll 3s linear infinite;
-  animation: scroll 3s linear infinite;
-  display: flex;
-  gap: 32px;
-  /* width: calc(550px * 10); */
-}
+ .slider-img {
+   flex: 0 0 604px;
+   height: 300px;
+ }
 
-.slider .slide, .slider .slide img {
-  height: 300px;
-  /* width: 550px; */
-}
+ .slider-img:nth-child(2),
+ .slider-img:nth-child(6) {
+   flex-basis: 286px;
+ }
 
+ .slider-img:nth-child(3),
+ .slider-img:nth-child(7) {
+   flex-basis: 498px;
+ }
+
+ .slider-img:nth-child(4),
+ .slider-img:last-child {
+   flex-basis: 392px;
+ }
+
+ .slider-img img {
+  width: 100%;
+ }
 </style>
