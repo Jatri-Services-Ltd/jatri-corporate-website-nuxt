@@ -31,12 +31,12 @@ const customStyle = ref({
 </script>
 
 <template>
-  <div class="vifnslb-container">
-    <div class="vifnslb-element" :style="customStyle">
-      <div class="vifnslb-bar">
+  <div class="moving-slide-container">
+    <div class="moving-slide-element" :style="customStyle">
+      <div class="moving-slide-bar">
         <slot></slot>
       </div>
-      <div class="vifnslb-bar ml-8">
+      <div class="moving-slide-bar ml-8">
         <slot></slot>
       </div>
     </div>
@@ -50,23 +50,23 @@ const customStyle = ref({
   }
 }
 
-.vifnslb-container {
-  width: 100%;
-  overflow: hidden;
+.moving-slide-container {
+  @apply w-full overflow-hidden
 }
 
-.vifnslb-element {
-  transform: translate3d(0, 0, 0);
-  position: relative;
-  overflow: hidden;
-  animation-name: moveSlideshow;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+.moving-slide-element {
   display: flex;
+  position: relative;
   min-width: fit-content;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
 }
 
-.vifnslb-bar {
-  width: 50%;
+.moving-slide-element {
+  @apply animate-[moveSlideshow_linear_infinite]
+}
+
+.moving-slide_bar {
+  @apply w-1/2
 }
 </style>
