@@ -54,16 +54,16 @@ const customStyle = ref({
   @apply w-full overflow-hidden
 }
 
-.moving-slide-element {
+/* .moving-slide-element {
   display: flex;
   position: relative;
   min-width: fit-content;
   overflow: hidden;
   transform: translate3d(0, 0, 0);
-}
+} */
 
 .moving-slide-element {
-  @apply animate-[moveSlideshow_linear_infinite]
+  @apply relative flex min-w-fit overflow-hidden transform-[translate3d(0, 0, 0)] animate-[moveSlideshow_linear_infinite]
 }
 
 .moving-slide_bar {
