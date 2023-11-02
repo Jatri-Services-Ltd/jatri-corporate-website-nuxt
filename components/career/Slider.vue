@@ -41,11 +41,11 @@ const chunkBannerImages = {
 
 <style scoped> 
  .slide-items {
-   @apply flex gap-x-8
+   @apply flex gap-x-4 md:gap-x-8
  }
 
  .slide-item {
-   @apply w-[604px] h-[300px]
+   @apply w-[604px] h-[200px] sm:h-[300px]
  }
 
  .slide-item:nth-child(2) {

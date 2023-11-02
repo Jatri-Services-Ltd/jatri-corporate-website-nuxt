@@ -36,7 +36,7 @@ const customStyle = ref({
       <div class="moving-slide-bar">
         <slot></slot>
       </div>
-      <div class="moving-slide-bar ml-8">
+      <div class="moving-slide-bar ml-4 md:ml-8">
         <slot></slot>
       </div>
     </div>
@@ -54,16 +54,12 @@ const customStyle = ref({
   @apply w-full overflow-hidden
 }
 
-/* .moving-slide-element {
-  display: flex;
-  position: relative;
-  min-width: fit-content;
-  overflow: hidden;
-  transform: translate3d(0, 0, 0);
-} */
+.moving-slide-element {
+  @apply relative flex min-w-fit overflow-hidden animate-[moveSlideshow_linear_infinite]
+}
 
 .moving-slide-element {
-  @apply relative flex min-w-fit overflow-hidden transform-[translate3d(0, 0, 0)] animate-[moveSlideshow_linear_infinite]
+  transform: translate3d(0, 0, 0);
 }
 
 .moving-slide_bar {
