@@ -4,19 +4,19 @@
             <div class="relative text-center">
                 <div class="hidden lg:block">
                     <div
-                        class="developer-badge absolute bg-success text-white px-3 py-1.5 rounded-full text-xs font-medium -left-14 -top-10">
+                        class="developer-badge w-[101px] absolute bg-success text-white py-1.5 rounded-full text-xs font-medium -left-14 -top-10">
                         {{ $t('development') }}</div>
                     <div
-                        class="marketing-badge absolute bg-info text-white px-4 py-1.5 rounded-full text-xs font-medium -right-14 -top-10">
+                        class="marketing-badge w-[90px] absolute bg-info text-white py-1.5 rounded-full text-xs font-medium -right-14 -top-10">
                         {{ $t('marketing') }}</div>
                     <div
-                        class="product-badge absolute bg-[#4633F0] text-white px-5 py-1.5 rounded-full text-xs font-medium -left-16 bottom-16">
+                        class="product-badge w-[86px] absolute bg-[#4633F0] text-white py-1.5 rounded-full text-xs font-medium -left-16 bottom-16">
                         {{ $t('product') }}</div>
                     <div
-                        class="business-badge absolute bg-primary text-white px-4 py-1.5 rounded-full text-xs font-medium -right-28 bottom-[70px]">
+                        class="business-badge w-[73px] absolute bg-primary text-white py-1.5 rounded-full text-xs font-medium -right-28 bottom-[70px]">
                         {{ $t('business') }}</div>
                 </div>
-                <div class="">
+                <div>
                     <h1 class="header-title">{{ $t('career-header-title-1') }}</h1>
                     <h1 class="header-title">{{ $t('career-header-title-2') }}</h1>
                     <h1 class="header-title">{{ $t('career-header-title-3') }}</h1>
@@ -83,4 +83,5 @@
     content: url('/images/career/business-arrow.png');
     left: -14px;
     top: -17px;
-}</style>
+}
+</style>
