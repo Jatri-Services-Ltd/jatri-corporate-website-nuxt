@@ -1,5 +1,5 @@
 <script setup>
-
+const { locale } = useI18n();
 </script>
 
 <template>
@@ -22,7 +22,7 @@
                 <div class="py-6 px-9 md:px-2 md:py-6 lg:px-5 xl:px-6 xl:py-8 2xl:px-12 border border-[#EDEDED] rounded-3xl text-center grow md:basis-[392px]">
                     <img class="w-12 sm:w-16 lg:w-20 xl:w-auto m-auto" src="~/assets/images/jatri-card/travel-icon.png" alt="Travel icon">
                     <h4 class="mt-6 xl:mt-8 mb-2 md:mb-4 text-dark text-xl md:text-base lg:text-lg xl:text-[28px] xl:leading-9 font-semibold">{{ $t('card-why-subHeader3') }}</h4>
-                    <p class="text-secondaryDark text-sm xl:text-base w-[210px] m-auto">{{ $t('card-why-content3') }}</p>
+                    <p class="text-secondaryDark text-sm xl:text-base" :class="locale === 'bn' ? 'w-[210px] m-auto' : ''">{{ $t('card-why-content3') }}</p>
                 </div>
             </div>
         </div>
