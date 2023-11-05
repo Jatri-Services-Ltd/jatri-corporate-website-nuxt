@@ -20,10 +20,10 @@
                     <h1 class="header-title">{{ $t('career-header-title-1') }}</h1>
                     <h1 class="header-title">{{ $t('career-header-title-2') }}</h1>
                     <h1 class="header-title">{{ $t('career-header-title-3') }}</h1>
-                    <p class="text-sm md:text-base text-[#4d4d4f] mb-8 md:mb-10 mx-auto mt-4 lg:mt-6">{{
+                    <p class="text-sm md:text-base text-secondaryDark mb-8 md:mb-10 mx-auto mt-4 lg:mt-6">{{
                         $t('career-header-subtitle') }}</p>
                     <div class="flex justify-center items-center mx-auto gap-6">
-                        <router-link to="#"
+                        <router-link to="#job-opening"
                             class="py-[11px] px-6 border border-dark rounded-full text-sm md:text-base font-medium text-white bg-dark">{{
                                 $t('header-btn-one') }}</router-link>
                         <router-link to="#"
