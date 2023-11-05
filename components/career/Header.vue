@@ -26,7 +26,7 @@
                         <router-link to="#job-opening"
                             class="py-[11px] px-6 border border-dark rounded-full text-sm md:text-base font-medium text-white bg-dark">{{
                                 $t('header-btn-one') }}</router-link>
-                        <router-link to="#"
+                        <router-link to="#explore-jatri"
                             class="py-[11px] pl-6 pr-4 flex justify-center items-center gap-2 border border-dark rounded-full text-sm md:text-base font-medium text-dark">
                             <span class="inline-block">{{ $t('header-btn-two') }}</span>
                             <span class="inline-block">

@@ -12,7 +12,7 @@ const chunkBannerImages = {
 </script>
 
 <template>
-  <div class="bg-[#F7F7F7] py-10 lg:py-[60px] relative">
+  <div id="explore-jatri" class="bg-grey py-10 lg:py-[60px] relative">
     <div>
       <MovingSlide>
         <div class="slide-items">
