@@ -18,7 +18,7 @@ const {data} = await useFetch(config.public.apiURL + '/api/v1/get-career-active-
                 <div class="h-[6px] w-[6px] bg-[#DBDBDB] rounded-full"></div>
                 <p class="text-sm lg:text-base font-medium text-secondaryDark">{{job.employment_status}}</p>
               </div>
-              <p class="text-sm lg:text-base font-medium text-secondaryDark">Application deadline: <span>{{job.deadline}}</span></p>
+              <p class="text-sm lg:text-base font-medium text-[#4D4D4F]">Application deadline: <span>{{new Date(job.deadline).toLocaleDateString()}}</span></p>
             </div>
             <div class="xl:pt-0 pt-4">
               <router-link :to="{ path: '/career/job-details/' + job.id}"  class="flex justify-center items-center gap-2 h-10 w-[130px] rounded-full border border-[#DBDBDB] bg-white pl-2">
