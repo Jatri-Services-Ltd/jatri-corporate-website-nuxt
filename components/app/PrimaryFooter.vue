@@ -26,7 +26,7 @@
           <h4 class="text-white text-xl font-medium mb-6">{{ $t('n-about-us') }}</h4>
           <ul class="grid gap-4">
             <li>
-              <a href="/about-us" class="text-white font-normal text-base" target="_blank">{{ $t('n-about-us') }}</a>
+              <a href="localePath('/')/about-us" class="text-white font-normal text-base" target="_blank">{{ $t('n-about-us') }}</a>
             </li>
             <li>
               <a href="/career" class="text-white font-normal text-base" target="_blank">{{ $t('n-footer-career') }}</a>
