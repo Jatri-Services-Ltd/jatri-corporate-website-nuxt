@@ -13,6 +13,9 @@ const careerFormSubmitValidator = (form) => {
         name: {
             required: helpers.withMessage("Name is required", required),
         },
+        linkedin_profile: {
+            required: helpers.withMessage("linkedin is required", required),
+        },
         email: {
             required: helpers.withMessage("Email is required", required),
             email: helpers.withMessage("Email address must be valid", email),

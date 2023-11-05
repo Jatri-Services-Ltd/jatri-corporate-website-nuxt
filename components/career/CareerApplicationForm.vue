@@ -69,9 +69,14 @@ const submitForm = (e) => {
           </div>
           <div class="w-full">
             <label class="text-base font-medium text-dark pb-[10px] block" for="">LinkedIn profile</label>
-            <input required v-model="applicationSubmitForm.linkedin_profile" type="text"
+            <input
+                   v-model="v$.linkedin_profile.$model"
+                   @blur="v$.linkedin_profile.$touch()" type="text"
                    class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]"
                    placeholder="Enter linkedin profile link">
+            <p class="text-red-500 text-xs" v-if="v$.linkedin_profile.$errors.length">
+              {{ v$.linkedin_profile.$errors[0].$message }}
+            </p>
           </div>
         </div>
         <div class="mt-8">
