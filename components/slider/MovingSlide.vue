@@ -5,7 +5,7 @@ const props = defineProps({
   barStyle: Object,
   duration: {
     type: String,
-    default: '12s',
+    default: '20s',
   },
   direction: {
     type: String,
