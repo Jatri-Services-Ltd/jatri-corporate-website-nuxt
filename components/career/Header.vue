@@ -14,7 +14,7 @@
                     <h1 class="header-title">{{ $t('career-header-title-3') }}</h1>
                     <p class="text-sm md:text-base text-[#4d4d4f] mb-8 md:mb-10 mx-auto mt-4 lg:mt-6">{{ $t('career-header-subtitle') }}</p>
                     <div class="flex justify-center items-center mx-auto gap-4">
-                        <router-link to="#" class="h-[40px] md:h-[46px] w-[155px] md:w-[180px] flex justify-center items-center border border-black rounded-full text-sm md:text-base font-medium text-white bg-black">{{ $t('header-btn-one') }}</router-link>
+                        <router-link to="#job-opening" class="h-[40px] md:h-[46px] w-[155px] md:w-[180px] flex justify-center items-center border border-black rounded-full text-sm md:text-base font-medium text-white bg-black">{{ $t('header-btn-one') }}</router-link>
                         <router-link to="#" class="h-[40px] md:h-[46px] w-[155px] md:w-[193px] flex justify-center items-center gap-3 border border-black rounded-full text-sm md:text-base font-medium text-black">
                         <span class="inline-block">{{ $t('header-btn-two') }}</span>
                         <span class="inline-block">

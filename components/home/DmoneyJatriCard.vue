@@ -3,7 +3,7 @@
 <template>
     <section class="py-4 sm:pt-10 lg:pt-[116px] pb-8">
         <div class="custom-container">
-            <nuxt-link to="/card">
+            <nuxt-link :to="localePath('/card')">
                 <div
                     class="relative h-[280px] lg:h-[446px] rounded-3xl bg-[linear-gradient(98deg,_#F04935_1.78%,_#887CF5_98.84%)] flex items-center">
                     <div class="custom-padding z-10 lg:w-[60%] pl-4 lg:pl-10 xl:pl-20">

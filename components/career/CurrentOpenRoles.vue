@@ -5,11 +5,11 @@ const {data} = await useFetch(config.public.apiURL + '/api/v1/get-career-active-
 
 
 <template>
-  <div class="py-10 lg:py-[100px]">
+  <div id="job-opening" class="py-10 lg:py-[100px]">
     <div class="custom-container">
       <h2 class="text-[28px] lg:text-4xl leading-9 lg:leading-[44px] font-medium mb-8 lg:mb-10">Current open roles</h2>
       <div v-if="data.data.length" class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6">
-        <div v-for="job in data.data" :key="data.id" class="p-6 rounded-2xl border border-1-[#DBDBDB]">
+        <div v-for="job in data.data" :key="job.id" class="p-6 rounded-2xl border border-1-[#DBDBDB]">
           <div class="xl:flex items-center justify-between">
             <div>
               <p class="text-base lg:text-xl font-semibold">{{job.title}}</p>
