@@ -43,8 +43,10 @@ const submitForm = (e) => {
               <label class="text-base font-medium text-dark pb-[10px] block" for="">Full name</label>
               <input v-model="v$.name.$model"
                      @blur="v$.name.$touch()" type="text"
-                     class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]"
-                     placeholder="Enter full name">
+                     class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769] focus:outline-none rounded"
+                     placeholder="Enter full name"
+                     :class="{'bg-[#FDF0F1] border border-[#E0293B]' : v$?.name?.$errors.length}"
+              >
               <div class="text-red-500 text-xs" v-if="v$.name.$errors.length">
                 <div class="flex gap-x-2 items-center mt-2">
                    <img src="~/assets/images/job_circular/exceed.svg" alt="">
@@ -58,8 +60,10 @@ const submitForm = (e) => {
                   v-model="v$.email.$model"
                   @blur="v$.email.$touch()"
                   type="email"
-                  class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]"
-                  placeholder="Enter email address">
+                  class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769] focus:outline-none rounded"
+                  placeholder="Enter email address"
+                  :class="{'bg-[#FDF0F1] border border-[#E0293B]' : v$?.email?.$errors.length}"
+              >
               <div class="text-red-500 text-xs" v-if="v$.email.$errors.length">
                 <div class="flex gap-x-2 items-center mt-2">
                   <img src="~/assets/images/job_circular/exceed.svg" alt="">
@@ -75,8 +79,10 @@ const submitForm = (e) => {
                   v-model="v$.mobile_number.$model"
                   @blur="v$.mobile_number.$touch()"
                   type="text"
-                  class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]"
-                  placeholder="Enter mobile number">
+                  class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769] focus:outline-none rounded"
+                  placeholder="Enter mobile number"
+                  :class="{'bg-[#FDF0F1] border border-[#E0293B]' : v$?.mobile_number?.$errors.length}"
+              >
               <div class="text-red-500 text-xs" v-if="v$.mobile_number.$errors.length">
                 <div class="flex gap-x-2 items-center mt-2">
                   <img src="~/assets/images/job_circular/exceed.svg" alt="">
@@ -89,8 +95,10 @@ const submitForm = (e) => {
               <input
                   v-model="v$.linkedin_profile.$model"
                   @blur="v$.linkedin_profile.$touch()" type="text"
-                  class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769]"
-                  placeholder="Enter linkedin profile link">
+                  class="w-full p-4 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769] focus:outline-none rounded"
+                  placeholder="Enter linkedin profile link"
+                  :class="{'bg-[#FDF0F1] border border-[#E0293B]' : v$?.linkedin_profile?.$errors.length}"
+              >
               <div class="text-red-500 text-xs" v-if="v$.linkedin_profile.$errors.length">
                 <div class="flex gap-x-2 items-center mt-2">
                   <img src="~/assets/images/job_circular/exceed.svg" alt="">
@@ -103,7 +111,7 @@ const submitForm = (e) => {
             <p class="text-sm md:text-2xl text-[#676769] md:text-dark font-medium mb-4 md:mb-6">Resume / CV</p>
             <label class="text-base font-medium text-dark pb-[10px] block" for="">Resume / CV</label>
             <div class="relative overflow-hidden">
-              <button class="w-full border border-[#1E88E5] border-dashed py-[22px] px-5 text-start rounded-[4px]">
+              <button :class="{'border border-[#E0293B]' : v$.resume?.$errors.length}" class="w-full border border-[#1E88E5] border-dashed py-[22px] px-5 text-start rounded-[4px]">
                 <div v-if="applicationSubmitForm.resume">
                   <div class="flex gap-5 py-[10px]">
                     <div class="flex gap-2 justify-between items-center w-full">
