@@ -172,12 +172,12 @@ provide("error", error)
   </div>
 </template>
 
-<style>
+<style scoped> 
 .careerDetails {
   font-family: Inter;
 }
 
-.careerDetails ol, ul {
+.careerDetails ol, .careerDetails ul {
   list-style: inherit !important;
   margin: auto !important;
   padding: revert !important;
