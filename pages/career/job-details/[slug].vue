@@ -3,6 +3,7 @@ import {reactive, ref} from 'vue';
 import axios from "axios";
 import careerFormSubmitValidator from "../../../validators/careerFormSubmitValidator";
 import CareerApplicationForm from "../../../components/career/CareerApplicationForm"
+import CareerSuccessModal from "../../../components/career/CareerSuccessModal";
 
 const {$successToast, $errorToast} = useNuxtApp();
 const route = useRoute();
@@ -18,7 +19,6 @@ const initialState = {
 }
 const applicationSubmitForm = reactive({...initialState})
 
-
 const config = useRuntimeConfig();
 const {data} = await useFetch(config.public.apiURL + '/api/v1/career-job-details/' + applicant_job_id)
 
@@ -29,15 +29,12 @@ const uploadFile = (e) => {
 const removeFile = () => {
   applicationSubmitForm.resume = ''
 }
+
+const success = ref(false)
+const error = ref(false)
 const handleSubmit = () => {
   isSubmitting.value = true
   let applicationSubmitFormData = new FormData()
-
-  // for (const property in applicationSubmitForm) {
-  //   console.log("properties",applicationSubmitForm[property])
-  //   applicationSubmitFormData.append(`${property}`, `${applicationSubmitForm[property]}`)
-  // }
-
   applicationSubmitFormData.append("name", applicationSubmitForm.name)
   applicationSubmitFormData.append("email", applicationSubmitForm.email)
   applicationSubmitFormData.append("mobile_number", applicationSubmitForm.mobile_number)
@@ -50,11 +47,10 @@ const handleSubmit = () => {
       'Content-Type': 'multipart/form-data'
     }
   }).then((res) => {
-    $successToast('Request submitted successfully')
     Object.assign(applicationSubmitForm, {...initialState});
-    openModal.value = false
+    success.value = true
   }).catch((e) => {
-    $errorToast(e.response.data ? e.response.data?.message : 'Something went wrong. try again.')
+    error.value = true
   })
       .finally(() => isSubmitting.value = false)
 }
@@ -65,6 +61,8 @@ provide("removeFile", removeFile)
 provide("handleSubmit", handleSubmit)
 provide("isSubmitting", isSubmitting)
 provide("openModal", openModal)
+provide("success", success)
+provide("error", error)
 </script>
 
 <template>
@@ -158,12 +156,15 @@ provide("openModal", openModal)
     </div>
 
 
-    <div class="modal w-[90%] md:w-[700px] rounded-2xl relative"  :class="openModal ? 'modalOpen' : 'modal-hidden'" v-if="openModal">
+    <div class="modal rounded-2xl relative"  :class="openModal ? 'modalOpen' : 'modal-hidden'" v-if="openModal">
 
-<!--      Component here-->
-      <ClientOnly>
-        <CareerApplicationForm></CareerApplicationForm>
-      </ClientOnly>
+      <div :class="success || error ? 'w-[380px] h-[288px]' : 'w-[90%] md:w-[700px]'">
+        <!--      Component here-->
+        <ClientOnly>
+          <CareerApplicationForm></CareerApplicationForm>
+        </ClientOnly>
+      </div>
+
     </div>
     <div @click="openModal = !openModal" class="overlay" :class="openModal ? '' : 'modal-hidden'"></div>
   </div>
