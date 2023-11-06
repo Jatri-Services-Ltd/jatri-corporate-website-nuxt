@@ -2,7 +2,7 @@
     <div class="bg-[#FEF2F0]">
         <div class="custom-container py-10 md:py-[60px] mx-auto">
             <div class="">
-                <h1 class="text-3xl md:text-5xl lg:text-[57px] leading-9 md:leading-[64px] text-dark font-medium md:font-semibold benefit-header relative inline-block mb-1 md:mb-6">{{ $t('benefits-perks-title') }}</h1>
+                <h1 class="text-[28px] md:text-5xl lg:text-[57px] leading-9 md:leading-[64px] text-dark font-medium sm:font-semibold benefit-header relative inline-block mb-1 md:mb-6">{{ $t('benefits-perks-title') }}</h1>
                 <p class="text-sm md:text-base w-full md:w-1/2 xl:w-[498px] text-secondaryDark">{{ $t('benefits-perks-subtitle') }}</p>
             </div>
             <div class="mt-8 lg:mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">

@@ -1,36 +1,40 @@
+<script setup>
+const { locale } = useI18n();
+</script>
+
 <template>
     <div class="pt-[32px] md:pt-16 lg:pt-[132px] pb-10 md:pb-16 lg:pb-[100px]">
         <div class="custom-container mx-auto flex justify-center items-center">
             <div class="relative text-center">
                 <div class="hidden lg:block">
                     <div
-                        class="developer-badge absolute bg-success text-white px-3 py-1.5 rounded-full text-xs font-medium -left-14 -top-10">
+                        class="developer-badge w-[101px] absolute bg-success text-white py-1.5 rounded-full text-xs font-medium -left-14 -top-10">
                         {{ $t('development') }}</div>
                     <div
-                        class="marketing-badge absolute bg-info text-white px-4 py-1.5 rounded-full text-xs font-medium -right-14 -top-10">
+                        class="marketing-badge w-[90px] absolute bg-info text-white py-1.5 rounded-full text-xs font-medium -right-14 -top-10">
                         {{ $t('marketing') }}</div>
                     <div
-                        class="product-badge absolute bg-[#4633F0] text-white px-5 py-1.5 rounded-full text-xs font-medium -left-16 bottom-16">
+                        class="product-badge w-[86px] absolute bg-[#4633F0] text-white py-1.5 rounded-full text-xs font-medium -left-16 bottom-16">
                         {{ $t('product') }}</div>
                     <div
-                        class="business-badge absolute bg-primary text-white px-4 py-1.5 rounded-full text-xs font-medium -right-28 bottom-[70px]">
+                        class="business-badge w-[73px] absolute bg-primary text-white py-1.5 rounded-full text-xs font-medium -right-28 bottom-[70px]">
                         {{ $t('business') }}</div>
                 </div>
-                <div class="">
+                <div>
                     <h1 class="header-title">{{ $t('career-header-title-1') }}</h1>
                     <h1 class="header-title">{{ $t('career-header-title-2') }}</h1>
                     <h1 class="header-title">{{ $t('career-header-title-3') }}</h1>
-                    <p class="text-sm md:text-base text-[#4d4d4f] mb-8 md:mb-10 mx-auto mt-4 lg:mt-6">{{
+                    <p class="text-sm md:text-base text-secondaryDark mb-8 md:mb-10 mx-auto mt-4 lg:mt-6" :class="locale === 'bn' ? 'w-[90%] sm:w-full' : ''">{{
                         $t('career-header-subtitle') }}</p>
-                    <div class="flex justify-center items-center mx-auto gap-6">
-                        <router-link to="#"
-                            class="py-[11px] px-6 border border-dark rounded-full text-sm md:text-base font-medium text-white bg-dark">{{
+                    <div class="flex justify-center items-center mx-auto gap-4 md:gap-6">
+                        <router-link to="#job-opening"
+                            class="py-2.5 sm:py-[11px] px-6 border border-dark rounded-full text-sm md:text-base font-medium text-white bg-dark">{{
                                 $t('header-btn-one') }}</router-link>
-                        <router-link to="#"
-                            class="py-[11px] pl-6 pr-4 flex justify-center items-center gap-2 border border-dark rounded-full text-sm md:text-base font-medium text-dark">
+                        <router-link to="#explore-jatri"
+                            class="py-2.5 sm:py-[11px] pl-6 pr-4 flex justify-center items-center gap-2 border border-dark rounded-full text-sm md:text-base font-medium text-dark">
                             <span class="inline-block">{{ $t('header-btn-two') }}</span>
                             <span class="inline-block">
-                                <img src="/images/career/down-arrow.png" alt="Down arrow">
+                                <img class="w-4 h-4 object-cover md:w-auto" src="/images/career/down-arrow.png" alt="Down arrow">
                             </span>
                         </router-link>
                     </div>
@@ -39,10 +43,6 @@
         </div>
     </div>
 </template>
-
-<script setup>
-
-</script>
 
 <style scoped>
 .header-title {
@@ -83,4 +83,5 @@
     content: url('/images/career/business-arrow.png');
     left: -14px;
     top: -17px;
-}</style>
+}
+</style>

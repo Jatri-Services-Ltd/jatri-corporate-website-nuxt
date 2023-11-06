@@ -12,7 +12,7 @@ const chunkBannerImages = {
 </script>
 
 <template>
-  <div class="bg-[#F7F7F7] py-10 lg:py-[60px] relative">
+  <div id="explore-jatri" class="bg-grey py-10 lg:py-[60px] relative">
     <div>
       <MovingSlide>
         <div class="slide-items">
@@ -34,7 +34,7 @@ const chunkBannerImages = {
     </div>
 
     <h2 style="text-shadow: 0px 0px 26px rgba(0, 0, 0, 0.24);"
-      class="text-white text-[60px] lg:text-[120px] leading-[64px] lg:leading-[146px] font-bold absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-40">
+      class="text-white text-[60px] lg:text-[120px] leading-[73px] lg:leading-[146px] font-bold absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-40">
       #Life@Jatri</h2>
   </div>
 </template>

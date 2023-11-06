@@ -26,16 +26,16 @@
           <h4 class="text-white text-xl font-medium mb-6">{{ $t('n-about-us') }}</h4>
           <ul class="grid gap-4">
             <li>
-              <a href="/about-us" class="text-white font-normal text-base" target="_blank">{{ $t('n-about-us') }}</a>
+              <nuxt-link :to="localePath('/about-us')" class="text-white font-normal text-base" target="_blank">{{ $t('n-about-us') }}</nuxt-link>
             </li>
             <li>
-              <a href="/career" class="text-white font-normal text-base" target="_blank">{{ $t('n-footer-career') }}</a>
+              <nuxt-link :to="localePath('/career')" class="text-white font-normal text-base" target="_blank">{{ $t('n-footer-career') }}</nuxt-link>
             </li>
             <li>
-              <a href="/blog" class="text-white font-normal text-base" target="_blank">{{ $t('n-footer-blog') }}</a>
+              <nuxt-link :to="localePath('/blog')" class="text-white font-normal text-base" target="_blank">{{ $t('n-footer-blog') }}</nuxt-link>
             </li>
             <li>
-              <a href="/contact-us" class="text-white font-normal text-base" target="_blank">{{ $t('n-contact-us') }}</a>
+              <nuxt-link :to="localePath('/contact-us')" class="text-white font-normal text-base" target="_blank">{{ $t('n-contact-us') }}</nuxt-link>
             </li>
           </ul>
         </div>
@@ -59,10 +59,10 @@
           <h4 class="text-white text-xl font-medium mb-6">{{ $t('n-footer-others') }}</h4>
           <ul class="grid gap-4">
             <li>
-              <a href="/ride-sharing-guideline" class="text-white font-normal text-base" target="_blank">{{ $t('n-footer-others-1') }}</a>
+              <nuxt-link :to="localePath('/ride-sharing-guideline')" class="text-white font-normal text-base" target="_blank">{{ $t('n-footer-others-1') }}</nuxt-link>
             </li>
             <li>
-              <a href="/enlistment-certificate" class="text-white font-normal text-base" target="_blank">{{ $t('n-footer-others-2') }}</a>
+              <nuxt-link :to="localePath('/enlistment-certificate')" class="text-white font-normal text-base" target="_blank">{{ $t('n-footer-others-2') }}</nuxt-link>
             </li>
             <li>
               <a href="https://corona.gov.bd/" class="text-white font-normal text-base" target="_blank">{{ $t('n-footer-others-3') }}</a>
@@ -102,9 +102,9 @@
         </div>
 
         <div class="w-full lg:w-1/2 xl:w-auto px-4 lg:px-0 pb-4 lg:pb-0 flex justify-around lg:justify-center text-center">
-          <a href="/user/term-and-condition" class="text-white font-medium text-sm underline" target="_blank">{{ $t('n-footer-terms-conditions') }}</a>
-          <a href="/user/refund-policy-of-jatri" class="text-white font-medium text-sm underline border-x lg:border-x-0 border-[#F6958A] px-8 lg:px-4 xl:px-8" target="_blank">{{ $t('n-footer-return-refund') }}</a>
-          <a href="/user/privacy-policy" class="text-white font-medium text-sm underline" target="_blank">{{ $t('n-footer-privacy-policy') }}</a>
+          <nuxt-link :to="localePath('/user/term-and-condition')" class="text-white font-medium text-sm underline" target="_blank">{{ $t('n-footer-terms-conditions') }}</nuxt-link>
+          <nuxt-link :to="localePath('/user/refund-policy-of-jatri')" class="text-white font-medium text-sm underline border-x lg:border-x-0 border-[#F6958A] px-8 lg:px-4 xl:px-8" target="_blank">{{ $t('n-footer-return-refund') }}</nuxt-link>
+          <nuxt-link :to="localePath('/user/privacy-policy')" class="text-white font-medium text-sm underline" target="_blank">{{ $t('n-footer-privacy-policy') }}</nuxt-link>
         </div>
 
         <div class="px-4 lg:px-0 flex justify-center lg:justify-end items-center gap-8 lg:gap-3 xl:gap-8 border-y border-[#F6958A] lg:border-y-0 py-6 lg:py-0 w-full lg:w-auto">
