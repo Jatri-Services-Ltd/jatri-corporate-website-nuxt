@@ -13,13 +13,13 @@
                         </div>
                         <div class="flex items-center gap-3">
                             <img class="h-5 w-5" src="/images/career/map.svg" alt="Location">
-                            <p class="text-dark text-base md:text-xl font-medium">{{ $t('location-two') }}</p>
+                            <p class="text-dark text-base md:text-xl font-medium">{{ $t('location-three') }}</p>
                         </div>
                     </div>
                     <div class="">
                         <div class="flex items-center gap-3 mb-6 md:mb-8">
                             <img class="h-5 w-5" src="/images/career/map.svg" alt="Location">
-                            <p class="text-dark text-base md:text-xl font-medium">{{ $t('location-three') }}</p>
+                            <p class="text-dark text-base md:text-xl font-medium">{{ $t('location-two') }}</p>
                         </div>
                         <div class="flex items-center gap-3">
                             <img class="h-5 w-5" src="/images/career/map.svg" alt="Location">
