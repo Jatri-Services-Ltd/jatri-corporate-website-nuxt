@@ -3,7 +3,6 @@ const config = useRuntimeConfig();
 const {data} = await useFetch(config.public.apiURL + '/api/v1/get-career-active-jobs')
 </script>
 
-
 <template>
   <div id="job-opening" class="py-10 lg:py-[100px]">
     <div class="custom-container">
@@ -37,7 +36,7 @@ const {data} = await useFetch(config.public.apiURL + '/api/v1/get-career-active-
       </div>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 mt-4 lg:mt-6">
         <div class="border border-[#DBDBDB] rounded-2xl p-4 md:p-6">
-          <p class="text-base lg:text-xl font-semibold mb-2">Can't find a suitable role?</p>
+          <p class="text-dark text-base lg:text-xl font-semibold mb-2">Can't find a suitable role?</p>
           <p class="text-secondaryDark text-sm lg:text-base">Share your resume with us at <a href="mailto:careers@jatri.co" class="underline text-info">careers@jatri.co</a></p>
         </div>
       </div>

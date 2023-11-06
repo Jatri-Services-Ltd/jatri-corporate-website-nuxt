@@ -1,3 +1,7 @@
+<script setup>
+const { locale } = useI18n();
+</script>
+
 <template>
     <div class="pt-[32px] md:pt-16 lg:pt-[132px] pb-10 md:pb-16 lg:pb-[100px]">
         <div class="custom-container mx-auto flex justify-center items-center">
@@ -20,14 +24,14 @@
                     <h1 class="header-title">{{ $t('career-header-title-1') }}</h1>
                     <h1 class="header-title">{{ $t('career-header-title-2') }}</h1>
                     <h1 class="header-title">{{ $t('career-header-title-3') }}</h1>
-                    <p class="text-sm md:text-base text-secondaryDark mb-8 md:mb-10 mx-auto mt-4 lg:mt-6">{{
+                    <p class="text-sm md:text-base text-secondaryDark mb-8 md:mb-10 mx-auto mt-4 lg:mt-6" :class="locale === 'bn' ? 'w-[90%] sm:w-full' : ''">{{
                         $t('career-header-subtitle') }}</p>
                     <div class="flex justify-center items-center mx-auto gap-4 md:gap-6">
                         <router-link to="#job-opening"
-                            class="py-[11px] px-6 border border-dark rounded-full text-sm md:text-base font-medium text-white bg-dark">{{
+                            class="py-2.5 sm:py-[11px] px-6 border border-dark rounded-full text-sm md:text-base font-medium text-white bg-dark">{{
                                 $t('header-btn-one') }}</router-link>
                         <router-link to="#explore-jatri"
-                            class="py-[11px] pl-6 pr-4 flex justify-center items-center gap-2 border border-dark rounded-full text-sm md:text-base font-medium text-dark">
+                            class="py-2.5 sm:py-[11px] pl-6 pr-4 flex justify-center items-center gap-2 border border-dark rounded-full text-sm md:text-base font-medium text-dark">
                             <span class="inline-block">{{ $t('header-btn-two') }}</span>
                             <span class="inline-block">
                                 <img class="w-4 h-4 object-cover md:w-auto" src="/images/career/down-arrow.png" alt="Down arrow">
@@ -39,10 +43,6 @@
         </div>
     </div>
 </template>
-
-<script setup>
-
-</script>
 
 <style scoped>
 .header-title {
