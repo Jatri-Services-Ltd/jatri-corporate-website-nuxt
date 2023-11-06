@@ -17,7 +17,7 @@ const videoPlay = ref(true);
 
                 <div v-else class="h-[220px] md:h-[640px]">
                     <iframe width="100%" height="100%"
-                        src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1"></iframe>
+                        src="https://www.youtube.com/embed/qbPCUXHu-dY?autoplay=1" allow="autoplay"></iframe>
                 </div>
             </div>
         </div>
