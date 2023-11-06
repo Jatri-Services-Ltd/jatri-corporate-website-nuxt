@@ -31,7 +31,7 @@ const submitForm = (e) => {
     <div class="px-4 md:px-6 pt-4 md:pt-6" v-if="!success && !error">
       <div>
         <div class="w-full flex justify-between items-center pt-6 pb-4 md:pb-6">
-          <p class="text-xl md:text-[32px] font-medium">Apply now  {{error}}</p>
+          <p class="text-xl md:text-[32px] font-medium">Apply now</p>
           <button @click="openModal = !openModal"><img src="/images/career/close-icon.svg" alt="Close Modal"></button>
         </div>
       </div>
