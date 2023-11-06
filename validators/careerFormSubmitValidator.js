@@ -4,7 +4,7 @@ import useVuelidate from "@vuelidate/core";
 const careerFormSubmitValidator = (form) => {
     const rules = {
         mobile_number: {
-            required: helpers.withMessage("Phone is required", required),
+            required: helpers.withMessage("Phone number is required", required),
             numeric: helpers.withMessage("Phone number must be Numeric", numeric),
             minLength: helpers.withMessage("Phone number should be at least 11 digits", minLength(11)),
             maxLength: helpers.withMessage("Phone number shouldn't be greater than 11 digit", maxLength(11)),

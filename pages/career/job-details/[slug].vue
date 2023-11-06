@@ -81,6 +81,7 @@ provide("error", error)
           <p class="text-xs sm:text-sm ml-2 md:ml-3">{{ data.data.title }}</p>
         </div>
         <h1 class="mt-2 text-[28px] lg:text-4xl leading-[44px] font-medium">{{ data.data.title }}</h1>
+        <h1 class="mt-2 text-sm lg:text-xl leading-[24px] font-medium flex items-center"> <span class="pr-2">Department: </span> {{ data.data.department }}</h1>
       </div>
     </div>
     <div class="custom-container mt-10 mb-[120px]">
@@ -90,17 +91,17 @@ provide("error", error)
             <div class="flex items-center gap-5">
               <div><img class="h-6 w-6" src="/images/career/job-nature-icon.svg" alt="Job nature"></div>
               <div>
-                <p class="text-sm lg:text-base text-secondaryDark mb-1 font-inter">Job nature</p>
-                <p class="text-base lg:text-xl font-medium text-dark font-inter">
-                  {{ data.data.employment_status.replaceAll('_', ' ').replaceAll('-', ' ') }}</p>
+                <p class="text-sm lg:text-base text-secondaryDark mb-1">Salary range</p>
+                <p class="text-base lg:text-xl font-medium text-dark">{{ data.data.salary_range }}</p>
               </div>
             </div>
             <div class="border-b ml-10 pt-4"></div>
             <div class="flex items-center gap-5 pt-4">
               <div><img class="h-6 w-6" src="/images/career/salary-range-icon.svg" alt="Salary range"></div>
               <div>
-                <p class="text-sm lg:text-base text-secondaryDark mb-1">Salary range</p>
-                <p class="text-base lg:text-xl font-medium text-dark">{{ data.data.salary_range }}</p>
+                <p class="text-sm lg:text-base text-secondaryDark mb-1 font-inter">Employee status</p>
+                <p class="text-base lg:text-xl font-medium text-dark font-inter">
+                  {{ data.data.employment_status.replaceAll('_', ' ').replaceAll('-', ' ') }}</p>
               </div>
             </div>
             <div class="border-b ml-10 pt-4"></div>
@@ -118,7 +119,8 @@ provide("error", error)
                 <p class="text-sm lg:text-base text-secondaryDark mb-1">Application deadline</p>
                 <!--                          v-html="jobDetails.deadline"-->
                 <p class="text-base lg:text-xl font-medium text-dark">
-                  {{ new Date(data.data.deadline).toLocaleDateString() }}</p>
+                  {{$dayjs(data.data.deadline).format('D MMM, YYYY')}}
+                </p>
               </div>
             </div>
             <div class="border-b ml-10 pt-4"></div>
