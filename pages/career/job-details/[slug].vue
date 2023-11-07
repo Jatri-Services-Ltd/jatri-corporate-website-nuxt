@@ -100,7 +100,7 @@ provide("error", error)
             <div class="flex items-center gap-5 pt-4">
               <div><img class="h-6 w-6" src="/images/career/salary-range-icon.png" alt="Salary range"></div>
               <div>
-                <p class="text-sm lg:text-base text-secondaryDark mb-1 font-inter">Employee status</p>
+                <p class="text-sm lg:text-base text-secondaryDark mb-1 font-inter">Employment status</p>
                 <p class="text-base lg:text-xl font-medium text-dark font-inter">
                   {{ data.data.employment_status.replaceAll('_', ' ').replaceAll('-', ' ') }}</p>
               </div>
