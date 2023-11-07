@@ -99,7 +99,7 @@ const submitForm = (e) => {
             <label class="text-base font-medium text-dark mt-4 md:mt-6 pb-2.5 block" for="">Resume / CV</label>
             <div class="relative overflow-hidden">
               <button :class="{ 'border border-[#E0293B]': v$.resume?.$errors.length }"
-                class="w-full border border-info border-dashed p-4 md:py-[22px] md:px-5 text-start rounded-2xl">
+                class="w-full border border-info border-dashed md:h-[84px] p-4 md:px-5 text-start rounded-2xl">
                 <div v-if="applicationSubmitForm.resume">
                   <div class="flex gap-5 py-2.5">
                     <div class="flex gap-2 justify-between items-center w-full">

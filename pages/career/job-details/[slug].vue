@@ -80,7 +80,7 @@ provide("error", error)
           </div>
           <p class="text-xs sm:text-sm ml-2 md:ml-3">{{ data.data.title }}</p>
         </div>
-        <h1 class="my-1 text-2xl lg:text-4xl lg:leading-[44px] font-medium">{{ data.data.title }}</h1>
+        <h1 class="my-1 md:mt-2.5 md:mb-2 text-2xl lg:text-4xl lg:leading-[44px] font-medium">{{ data.data.title }}</h1>
         <h2 class="text-sm lg:text-xl leading-[24px] font-medium flex items-center"> <span class="pr-2">Department:
           </span> {{ data.data.department }}</h2>
       </div>
@@ -136,7 +136,7 @@ provide("error", error)
         </div>
         <div class="col-span-12 md:col-span-7 lg:col-span-8">
           <!--              v-html="jobDetails.description"-->
-          <div style="font-family: Inter;" v-html="data.data.job_details"></div>
+          <div class="job-des" v-html="data.data.job_details"></div>
           <div class="mt-6 md:mt-12 mb-8 md:mb-12">
             <a href="#top" @click="openModal = !openModal"
               class="bg-corporate text-white w-full md:w-[240px] py-[11px] md:py-4 rounded-full inline-block text-center font-medium text-base md:text-xl">
@@ -177,12 +177,6 @@ provide("error", error)
    font-family: 'Inter', sans-serif;
  }
 
- .careerDetails ol,
- .careerDetails ul {
-   list-style: inherit !important;
-   margin: auto !important;
-   padding: revert !important;
- }
 
  .job-details-header {
    background-image: url('/images/career/job-details-bg.png');

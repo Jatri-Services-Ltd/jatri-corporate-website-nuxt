@@ -105,3 +105,10 @@
 .footer_app_link{
     @apply w-28 mr-6;
 }
+
+.careerDetails ol,
+.careerDetails ul {
+  list-style: inherit !important;
+  margin: auto !important;
+  padding: revert !important;
+}

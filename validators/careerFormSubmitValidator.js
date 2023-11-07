@@ -23,7 +23,7 @@ const careerFormSubmitValidator = (form) => {
         },
         resume: {
             required: helpers.withMessage("Resume is required", required),
-            maxDocSize:  helpers.withMessage("File size has exceted", () => {
+            maxDocSize:  helpers.withMessage("File size exceed.", () => {
                 return !(form.resume?.size > 5*1024*1024)
             }),
             fileType: helpers.withMessage("File should be in pdf format", ()=>{
