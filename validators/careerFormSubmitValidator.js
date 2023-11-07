@@ -5,7 +5,7 @@ const careerFormSubmitValidator = (form) => {
     const rules = {
         mobile_number: {
             required: helpers.withMessage("Phone number is required", required),
-            numeric: helpers.withMessage("Phone number must be Numeric", numeric),
+            numeric: helpers.withMessage("Phone number must be numeric", numeric),
             minLength: helpers.withMessage("Phone number should be at least 11 digits", minLength(11)),
             maxLength: helpers.withMessage("Phone number shouldn't be greater than 11 digit", maxLength(11)),
             validBDNumber: helpers.withMessage("Invalid bd phone number", helpers.regex(/(^(01))[3456789]{1}(\d){8}$/)),
@@ -27,7 +27,6 @@ const careerFormSubmitValidator = (form) => {
                 return !(form.resume?.size > 5*1024*1024)
             }),
             fileType: helpers.withMessage("File should be in pdf format", ()=>{
-                console.log("formate",form.resume.type)
                 return !(form.resume?.type !== 'application/pdf')
             })
 
