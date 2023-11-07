@@ -262,7 +262,7 @@ provide("error", error)
      border-radius: 0 0 16px 16px;
    }
    .modal {
-    top: 65%;
+    top: 70%;
    }
  }
  </style>
