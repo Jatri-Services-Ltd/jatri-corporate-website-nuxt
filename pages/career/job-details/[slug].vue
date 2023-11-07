@@ -158,9 +158,9 @@ provide("error", error)
     </div>
 
 
-    <div class="modal rounded-2xl relative"  :class="openModal ? 'modalOpen' : 'modal-hidden'" v-if="openModal">
+    <div :class="[success || error ? 'w-[380px] h-[288px]' : 'w-[90%] md:w-[700px]', openModal ? 'modalOpen' : 'modal-hidden' ]" class="modal rounded-2xl relative" v-if="openModal">
 
-      <div :class="success || error ? 'w-[380px] h-[288px]' : 'w-[90%] md:w-[700px]'">
+      <div>
         <!--      Component here-->
         <ClientOnly>
           <CareerApplicationForm></CareerApplicationForm>
