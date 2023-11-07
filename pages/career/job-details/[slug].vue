@@ -81,10 +81,11 @@ provide("error", error)
           <p class="text-xs sm:text-sm ml-2 md:ml-3">{{ data.data.title }}</p>
         </div>
         <h1 class="mt-2 text-[28px] lg:text-4xl leading-[44px] font-medium">{{ data.data.title }}</h1>
-        <h1 class="mt-2 text-sm lg:text-xl leading-[24px] font-medium flex items-center"> <span class="pr-2">Department: </span> {{ data.data.department }}</h1>
+        <h1 class="mt-2 text-sm lg:text-xl leading-[24px] font-medium flex items-center"> <span class="pr-2">Department:
+          </span> {{ data.data.department }}</h1>
       </div>
     </div>
-    <div class="custom-container mt-10 mb-[120px]">
+    <div class="custom-container mt-10 mb-10 md:mb-[120px]">
       <div class="grid grid-cols-12 gap-8 lg:gap-12">
         <div class="col-span-12 md:col-span-5 lg:col-span-4">
           <div class="border border-lightGrey rounded-2xl p-5">
@@ -138,19 +139,16 @@ provide("error", error)
           <div style="font-family: Inter;" v-html="data.data.job_details"></div>
           <div class="mt-6 md:mt-12 mb-8 md:mb-12">
             <a href="#top" @click="openModal = !openModal"
-               class="bg-corporate text-white h-[46px] md:h-[60px] w-full md:w-[240px] rounded-full flex justify-center items-center font-medium text-base md:text-xl">Apply
+              class="bg-corporate text-white h-[46px] md:h-[60px] w-full md:w-[240px] rounded-full flex justify-center items-center font-medium text-base md:text-xl">Apply
               Now</a>
           </div>
-          <div class="border rounded-[10px] px-6 py-5">
-            <div class="flex gap-2 items-center w-full">
-              <div class="w-[10%]"><img class="h-11 w-full" src="/images/career/having-trouble-icon.svg"
-                                        alt="Jatri career"></div>
-              <div class="w-[90%]">
-                <p class="text-dark text-base md:text-xl font-medium mb-2">Having a trouble with applying?</p>
-                <p class="text-sm md:text-base pr-0 lg:pr-64">Send you CV or Resume at "<a class="text-[#1E88E5]"
-                                                                                           href="mailto:career@jatri.co">career@jatri.co</a>",
-                  do not forget to mention the post name in the subject of the mail.</p>
-              </div>
+          <div class="border border-[#EDEDED] rounded-2xl sm:rounded-2xl p-4 sm:px-6 sm:py-5">
+            <div class="flex gap-5 items-center w-full">
+              <img src="/images/career/having-trouble-icon.png" alt="Jatri career">
+              <p class="text-secondaryDark font-medium text-base md:text-xl">
+                Having trouble locating the perfect role?<br class="hidden sm:block">
+                Feel free to send us your resume at <a href="mailto:careers@jatri.co" class="sm:underline text-info">careers@jatri.co</a>
+              </p>
             </div>
           </div>
         </div>
@@ -173,8 +171,8 @@ provide("error", error)
 </template>
 
 <style scoped> 
-.careerDetails {
-  font-family: Inter;
+* {
+  font-family: 'Inter', sans-serif;
 }
 
 .careerDetails ol, .careerDetails ul {

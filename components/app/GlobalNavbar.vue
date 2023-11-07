@@ -36,7 +36,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="sticky top-0 left-0 z-[999] w-full bg-white border-b border-[#EDEDED]">
+  <div class="sticky top-0 left-0 z-[9999] w-full bg-white border-b border-[#EDEDED]">
       <div class="custom-container">
         <div class="flex justify-between items-center py-[14px] lg:py-4">
             <div class="flex justify-between md:justify-start items-center gap-x-2 md:gap-x-8 w-full">
