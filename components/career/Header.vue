@@ -24,7 +24,7 @@ const { locale } = useI18n();
                     <h1 class="header-title">{{ $t('career-header-title-1') }}</h1>
                     <h1 class="header-title">{{ $t('career-header-title-2') }}</h1>
                     <h1 class="header-title">{{ $t('career-header-title-3') }}</h1>
-                    <p class="text-sm md:text-base text-secondaryDark mb-8 md:mb-10 mx-auto mt-4 lg:mt-6" :class="locale === 'bn' ? 'w-[90%] sm:w-full' : ''">{{
+                    <p class="text-sm md:text-base font-medium text-secondaryDark mb-8 md:mb-10 mx-auto mt-4 lg:mt-6" :class="locale === 'bn' ? 'w-[90%] sm:w-full' : ''">{{
                         $t('career-header-subtitle') }}</p>
                     <div class="flex justify-center items-center mx-auto gap-4 md:gap-6">
                         <router-link to="#job-opening"
