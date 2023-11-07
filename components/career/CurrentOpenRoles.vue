@@ -47,7 +47,7 @@ const { data } = await useFetch(config.public.apiURL + '/api/v1/get-career-activ
         </div>
       </template>
 
-      <div v-else class="border border-[#EDEDED] rounded-2xl px-4 py-6 md:py-12 text-center">
+      <div v-else class="border border-lightGrey rounded-2xl px-4 py-6 md:py-12 text-center">
         <div>
           <img src="/images/career/no-opening.png" alt="Jatri Career" class="mx-auto w-[106px] md:w-auto">
         </div>

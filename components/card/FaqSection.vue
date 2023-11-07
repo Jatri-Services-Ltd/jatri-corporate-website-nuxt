@@ -20,7 +20,7 @@
         </div>
         
         <div class="w-full lg:w-[60%] mt-8 sm:mt-8 lg:mt-0">
-          <div class="divide-y divide-[#EDEDED] space-y-4 lg:space-y-6">
+          <div class="divide-y divide-lightGrey space-y-4 lg:space-y-6">
             <div class="accordion-box">
               <input type="radio" name="radioBtnAccordion" value="1" id="accordion1" checked />
               <label class="accordion-title !pt-0" for="accordion1">

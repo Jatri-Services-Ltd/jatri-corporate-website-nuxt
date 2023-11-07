@@ -6,7 +6,7 @@
     <section> 
         <div class="custom-container">
             <div class="grid md:grid-cols-3 gap-4 lg:gap-8">
-                <div class="border border-[#EDEDED] rounded-2xl">
+                <div class="border border-lightGrey rounded-2xl">
                     <img class="hidden sm:block w-full rounded-t-2xl" src="~/assets/images/home/bus-ticket.png" alt="Bus image">
                     <img class="sm:hidden w-full rounded-t-2xl" src="~/assets/images/home/bus-ticketing-mobile.png" alt="Bus image">
                     <div class="p-4 lg:px-4 lg:py-6 flex md:flex-col justify-between md:justify-start items-center md:items-start gap-1 md:gap-4">
@@ -22,7 +22,7 @@
                     </div>
                 </div>
 
-                <div class="border border-[#EDEDED] rounded-2xl">
+                <div class="border border-lightGrey rounded-2xl">
                     <img class="hidden sm:block w-full rounded-t-2xl" src="~/assets/images/home/launch-ticket.png" alt="Bus image">
                     <img class="sm:hidden w-full rounded-t-2xl" src="~/assets/images/home/launch-ticket-mobile.png" alt="Bus image">
                     <div class="p-4 lg:px-4 lg:py-6 flex md:flex-col justify-between md:justify-start items-center md:items-start gap-1 md:gap-4">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
 
-                <div class="border border-[#EDEDED] rounded-2xl">
+                <div class="border border-lightGrey rounded-2xl">
                     <img class="hidden sm:block w-full rounded-t-2xl" src="~/assets/images/home/rental.png" alt="Bus image">
                     <img class="sm:hidden w-full rounded-t-2xl" src="~/assets/images/home/rental-mobile.png" alt="Bus image">
                     <div class="p-4 lg:px-4 lg:py-6 flex md:flex-col justify-between md:justify-start items-center md:items-start gap-1 md:gap-4">

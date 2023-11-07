@@ -1,11 +1,11 @@
 <script setup>
-import {reactive, ref} from 'vue';
+import { reactive, ref } from 'vue';
 import axios from "axios";
 import careerFormSubmitValidator from "../../../validators/careerFormSubmitValidator";
 import CareerApplicationForm from "../../../components/career/CareerApplicationForm"
 import CareerSuccessModal from "../../../components/career/CareerSuccessModal";
 
-const {$successToast, $errorToast} = useNuxtApp();
+const { $successToast, $errorToast } = useNuxtApp();
 const route = useRoute();
 const applicant_job_id = route.params.slug
 const openModal = ref(false)
@@ -17,10 +17,10 @@ const initialState = {
   resume: '',
   career_job_id: applicant_job_id
 }
-const applicationSubmitForm = reactive({...initialState})
+const applicationSubmitForm = reactive({ ...initialState })
 
 const config = useRuntimeConfig();
-const {data} = await useFetch(config.public.apiURL + '/api/v1/career-job-details/' + applicant_job_id)
+const { data } = await useFetch(config.public.apiURL + '/api/v1/career-job-details/' + applicant_job_id)
 
 const isSubmitting = ref(false)
 const uploadFile = (e) => {
@@ -47,12 +47,12 @@ const handleSubmit = () => {
       'Content-Type': 'multipart/form-data'
     }
   }).then((res) => {
-    Object.assign(applicationSubmitForm, {...initialState});
+    Object.assign(applicationSubmitForm, { ...initialState });
     success.value = true
   }).catch((e) => {
     error.value = true
   })
-      .finally(() => isSubmitting.value = false)
+    .finally(() => isSubmitting.value = false)
 }
 
 provide("applicationSubmitForm", applicationSubmitForm)
@@ -67,7 +67,7 @@ provide("error", error)
 
 <template>
   <div class="careerDetails">
-    <div id="top" class="job-details-header text-white py-8">
+    <div id="top" class="job-details-header text-white py-5 lg:py-8">
       <div class="custom-container">
         <div class="flex items-center gap-3">
           <nuxt-link :to="localePath('/career')" class="text-xs sm:text-sm">Career</nuxt-link>
@@ -80,17 +80,17 @@ provide("error", error)
           </div>
           <p class="text-xs sm:text-sm ml-2 md:ml-3">{{ data.data.title }}</p>
         </div>
-        <h1 class="mt-2 text-[28px] lg:text-4xl leading-[44px] font-medium">{{ data.data.title }}</h1>
-        <h1 class="mt-2 text-sm lg:text-xl leading-[24px] font-medium flex items-center"> <span class="pr-2">Department:
-          </span> {{ data.data.department }}</h1>
+        <h1 class="my-1 text-2xl lg:text-4xl lg:leading-[44px] font-medium">{{ data.data.title }}</h1>
+        <h2 class="text-sm lg:text-xl leading-[24px] font-medium flex items-center"> <span class="pr-2">Department:
+          </span> {{ data.data.department }}</h2>
       </div>
     </div>
-    <div class="custom-container mt-10 mb-10 md:mb-[120px]">
-      <div class="grid grid-cols-12 gap-8 lg:gap-12">
+    <div class="custom-container mt-4 sm:mt-10 mb-10 md:mb-[120px]">
+      <div class="grid grid-cols-12 gap-4 lg:gap-12">
         <div class="col-span-12 md:col-span-5 lg:col-span-4">
-          <div class="border border-lightGrey rounded-2xl p-5">
+          <div class="border border-lightGrey rounded-2xl px-4 md:px-5 py-5">
             <div class="flex items-center gap-5">
-              <div><img class="h-6 w-6" src="/images/career/job-nature-icon.svg" alt="Job nature"></div>
+              <div><img class="h-6 w-6" src="/images/career/job-nature-icon.png" alt="Job nature"></div>
               <div>
                 <p class="text-sm lg:text-base text-secondaryDark mb-1">Salary range</p>
                 <p class="text-base lg:text-xl font-medium text-dark">{{ data.data.salary_range }}</p>
@@ -98,7 +98,7 @@ provide("error", error)
             </div>
             <div class="border-b ml-10 pt-4"></div>
             <div class="flex items-center gap-5 pt-4">
-              <div><img class="h-6 w-6" src="/images/career/salary-range-icon.svg" alt="Salary range"></div>
+              <div><img class="h-6 w-6" src="/images/career/salary-range-icon.png" alt="Salary range"></div>
               <div>
                 <p class="text-sm lg:text-base text-secondaryDark mb-1 font-inter">Employee status</p>
                 <p class="text-base lg:text-xl font-medium text-dark font-inter">
@@ -107,7 +107,7 @@ provide("error", error)
             </div>
             <div class="border-b ml-10 pt-4"></div>
             <div class="flex items-center gap-5 pt-4">
-              <div><img class="h-6 w-6" src="/images/career/job-location-icon.svg" alt="Job location"></div>
+              <div><img class="h-6 w-6" src="/images/career/job-location-icon.png" alt="Job location"></div>
               <div>
                 <p class="text-sm lg:text-base text-secondaryDark mb-1">Job location</p>
                 <p class="text-base lg:text-xl font-medium text-dark">{{ data.data.location }}</p>
@@ -115,18 +115,18 @@ provide("error", error)
             </div>
             <div class="border-b ml-10 pt-4"></div>
             <div class="flex items-center gap-5 pt-4">
-              <div><img class="h-6 w-6" src="/images/career/deadline-icon.svg" alt="Application deadline"></div>
+              <div><img class="h-6 w-6" src="/images/career/deadline-icon.png" alt="Application deadline"></div>
               <div>
                 <p class="text-sm lg:text-base text-secondaryDark mb-1">Application deadline</p>
                 <!--                          v-html="jobDetails.deadline"-->
                 <p class="text-base lg:text-xl font-medium text-dark">
-                  {{$dayjs(data.data.deadline).format('D MMM, YYYY')}}
+                  {{ $dayjs(data.data.deadline).format('D MMM, YYYY') }}
                 </p>
               </div>
             </div>
             <div class="border-b ml-10 pt-4"></div>
             <div class="flex items-center gap-5 pt-4">
-              <div><img class="h-6 w-6" src="/images/career/vacancy-icon.svg" alt="Vacancy"></div>
+              <div><img class="h-6 w-6" src="/images/career/vacancy-icon.png" alt="Vacancy"></div>
               <div>
                 <p class="text-sm lg:text-base text-secondaryDark mb-1">Vacancy</p>
                 <p class="text-base lg:text-xl font-medium text-dark">{{ data.data.no_of_vacancy }}</p>
@@ -139,15 +139,16 @@ provide("error", error)
           <div style="font-family: Inter;" v-html="data.data.job_details"></div>
           <div class="mt-6 md:mt-12 mb-8 md:mb-12">
             <a href="#top" @click="openModal = !openModal"
-              class="bg-corporate text-white h-[46px] md:h-[60px] w-full md:w-[240px] rounded-full flex justify-center items-center font-medium text-base md:text-xl">Apply
-              Now</a>
+              class="bg-corporate text-white w-full md:w-[240px] py-[11px] md:py-4 rounded-full inline-block text-center font-medium text-base md:text-xl">
+              Apply Now</a>
           </div>
-          <div class="border border-[#EDEDED] rounded-2xl sm:rounded-2xl p-4 sm:px-6 sm:py-5">
+          <div class="border border-lightGrey rounded-2xl sm:rounded-2xl p-4 sm:px-6 sm:py-5">
             <div class="flex gap-5 items-center w-full">
               <img src="/images/career/having-trouble-icon.png" alt="Jatri career">
               <p class="text-secondaryDark font-medium text-base md:text-xl">
                 Having trouble locating the perfect role?<br class="hidden sm:block">
-                Feel free to send us your resume at <a href="mailto:careers@jatri.co" class="sm:underline text-info">careers@jatri.co</a>
+                Feel free to send us your resume at <a href="mailto:careers@jatri.co"
+                  class="sm:underline text-info">careers@jatri.co</a>
               </p>
             </div>
           </div>
@@ -156,7 +157,9 @@ provide("error", error)
     </div>
 
 
-    <div :class="[success || error ? 'w-[380px] h-[288px]' : 'w-[90%] md:w-[700px]', openModal ? 'modalOpen' : 'modal-hidden' ]" class="modal rounded-2xl relative" v-if="openModal">
+    <div
+      :class="[success || error ? 'w-[380px] h-[288px]' : 'w-[94%] md:w-[700px]', openModal ? 'modalOpen' : 'modal-hidden']"
+      class="modal rounded-2xl relative" v-if="openModal">
 
       <div>
         <!--      Component here-->
@@ -170,100 +173,102 @@ provide("error", error)
   </div>
 </template>
 
-<style scoped> 
-* {
-  font-family: 'Inter', sans-serif;
-}
+<style scoped> * {
+   font-family: 'Inter', sans-serif;
+ }
 
-.careerDetails ol, .careerDetails ul {
-  list-style: inherit !important;
-  margin: auto !important;
-  padding: revert !important;
-}
+ .careerDetails ol,
+ .careerDetails ul {
+   list-style: inherit !important;
+   margin: auto !important;
+   padding: revert !important;
+ }
 
-.job-details-header {
-  background-image: url('/images/career/job-details-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top right;
-}
+ .job-details-header {
+   background-image: url('/images/career/job-details-bg.png');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: top right;
+ }
 
-.right-arrow {
-  height: 0px;
-  width: 0px;
-  border: 3.8px solid;
-  border-color: white white transparent transparent;
-  transform: rotate(45deg);
-}
+ .right-arrow {
+   height: 0px;
+   width: 0px;
+   border: 3.8px solid;
+   border-color: white white transparent transparent;
+   transform: rotate(45deg);
+ }
 
-/* modal css */
-.show-modal {
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.75rem 3.5rem;
-  margin: 5rem 2rem;
-  border: none;
-  background-color: #fff;
-  color: #444;
-  border-radius: 10rem;
-  cursor: pointer;
-}
+ /* modal css */
+ .show-modal {
+   font-size: 2rem;
+   font-weight: 600;
+   padding: 1.75rem 3.5rem;
+   margin: 5rem 2rem;
+   border: none;
+   background-color: #fff;
+   color: #444;
+   border-radius: 10rem;
+   cursor: pointer;
+ }
 
-.close-modal {
-  position: absolute;
-  top: 1.2rem;
-  right: 2rem;
-  font-size: 5rem;
-  color: #333;
-  cursor: pointer;
-  border: none;
-  background: none;
-}
+ .close-modal {
+   position: absolute;
+   top: 1.2rem;
+   right: 2rem;
+   font-size: 5rem;
+   color: #333;
+   cursor: pointer;
+   border: none;
+   background: none;
+ }
 
-.modal-hidden {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
+ .modal-hidden {
+   opacity: 0;
+   visibility: hidden;
+   transition: all 0.3s ease-in-out;
+ }
 
-.modalOpen {
-  z-index: 60;
-  opacity: 1;
-  visibility: visible;
-  transition: all 0.3s ease-in-out;
-}
+ .modalOpen {
+   z-index: 60;
+   opacity: 1;
+   visibility: visible;
+   transition: all 0.3s ease-in-out;
+ }
 
-.modal {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  z-index: 999;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
-}
+ .modal {
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: white;
+   z-index: 999;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+ }
 
-.overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh !important;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);
-  z-index: 5;
-}
+ .overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100vh !important;
+   background-color: rgba(0, 0, 0, 0.6);
+   backdrop-filter: blur(3px);
+   z-index: 5;
+ }
 
-@media (max-width: 767px) {
-  .small-device-bottom-section {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-    border-radius: 0 0 16px 16px;
-  }
-
-}
-</style>
+ @media (max-width: 767px) {
+   .small-device-bottom-section {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     background-color: white;
+     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+     border-radius: 0 0 16px 16px;
+   }
+   .modal {
+    top: 52%;
+   }
+ }
+ </style>

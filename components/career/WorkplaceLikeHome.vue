@@ -3,7 +3,7 @@ const { locale } = useI18n();
 </script>
 
 <template>
-    <div class="custom-container mx-auto pb-10 lg:pb-[100px] border-b border-[#EDEDED]">
+    <div class="custom-container mx-auto pb-10 lg:pb-[100px] border-b border-lightGrey">
         <div class="block lg:flex">
             <div class="w-full lg:w-2/3 xl:w-1/2 mt-0 md:mt-[30px]">
                 <h2 class="text-[28px] md:text-4xl text-dark leading-9 md:leading-[44px] font-medium">

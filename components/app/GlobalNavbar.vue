@@ -36,7 +36,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="sticky top-0 left-0 z-[9999] w-full bg-white border-b border-[#EDEDED]">
+  <div class="sticky top-0 left-0 z-[999] w-full bg-white border-b border-lightGrey">
       <div class="custom-container">
         <div class="flex justify-between items-center py-[14px] lg:py-4">
             <div class="flex justify-between md:justify-start items-center gap-x-2 md:gap-x-8 w-full">
@@ -79,7 +79,7 @@ onMounted(() => {
             </div>
 
             <div
-                class="mt-[18px] divide-y divide-[#EDEDED] absolute right-1 z-50 w-[120px] origin-top-right rounded bg-white focus:outline-none drop-shadow-[0px_3px_18px_rgba(50,50,50,0.24)]"
+                class="mt-[18px] divide-y divide-lightGrey absolute right-1 z-50 w-[120px] origin-top-right rounded bg-white focus:outline-none drop-shadow-[0px_3px_18px_rgba(50,50,50,0.24)]"
                 v-if="isOpen"
                 role="menu"
                 aria-orientation="vertical"
@@ -106,11 +106,11 @@ onMounted(() => {
           </div>
           <div v-if="sidebarOpen" class="bg-white absolute inset-y-0 right-0 -translate-x-[300px] slide" :class="sidebarOpen ? 'absolute  z-50 translate-x-0 transition delay-300 duration-300' : ''">
             <div class="h-screen w-[300px] bg-white gap-y-10">
-              <div class="flex justify-between items-center border-b border-[#EDEDED] px-4 py-5">
+              <div class="flex justify-between items-center border-b border-lightGrey px-4 py-5">
                 <p class="font-medium text-xl text-dark capitalize">{{ $t('n-menu') }}</p>
                 <button @click="closeModal" class=""><img src="~/assets/images/header/cross-icon.svg" alt="X"></button>
               </div>
-              <div class="p-4 divide-y divide-[#EDEDED] space-y-4">
+              <div class="p-4 divide-y divide-lightGrey space-y-4">
                 <nuxt-link :to="switchLocalePath('en')" @click="isOpen = !isOpen" class="block">
                   <div class="transition ease-out duration-200 cursor-pointer flex items-center justify-between" role="none">
                     <div class="flex items-center gap-2">

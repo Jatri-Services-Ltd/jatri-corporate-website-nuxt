@@ -43,7 +43,7 @@ const { locale } = useI18n();
                 </div>
 
                 <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
-                    <div class="sm:w-1/2 border border-[#EDEDED] bg-white rounded-3xl">
+                    <div class="sm:w-1/2 border border-lightGrey bg-white rounded-3xl">
                         <div class="bg-secondary p-10 grid place-content-center rounded-t-3xl">
                             <img src="~/assets/images/jatri-card/document-icon.png" alt="Document icon">
                         </div>
@@ -66,7 +66,7 @@ const { locale } = useI18n();
                         </div>
                     </div>
 
-                    <div class="sm:w-1/2 border border-[#EDEDED] bg-white rounded-3xl">
+                    <div class="sm:w-1/2 border border-lightGrey bg-white rounded-3xl">
                         <div class="bg-[#EFF7FD] p-10 grid place-content-center rounded-t-3xl">
                             <img src="~/assets/images/jatri-card/bus-icon.png" alt="Document icon">
                         </div>

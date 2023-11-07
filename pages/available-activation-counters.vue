@@ -63,7 +63,7 @@ const selectedCitiesCounter = computed(() => {
           </div>
 
           <div class="mt-8 min-h-[50vh]">
-            <div class="border border-[#EDEDED] rounded-2xl bg-white overflow-hidden relative active-counter-wrapper">
+            <div class="border border-lightGrey rounded-2xl bg-white overflow-hidden relative active-counter-wrapper">
               <div v-if="selectedCitiesCounter?.areas.length === 0" class="p-5">
                 {{ $t('no-data-found') }}
               </div>
@@ -106,7 +106,7 @@ const selectedCitiesCounter = computed(() => {
 }
 
 .table-content {
-  @apply text-dark text-[12px] md:text-base font-medium px-3 min-h-[48px] md:min-h-[72px] border-r border-b border-[#EDEDED] flex items-center
+  @apply text-dark text-[12px] md:text-base font-medium px-3 min-h-[48px] md:min-h-[72px] border-r border-b border-lightGrey flex items-center
 }
 
 .content-wrapper::before {
