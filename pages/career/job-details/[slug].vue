@@ -267,8 +267,8 @@ provide("error", error)
      box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
      border-radius: 0 0 16px 16px;
    }
-   .modal {
+   /* .modal {
     top: 52%;
-   }
+   } */
  }
  </style>
