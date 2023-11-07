@@ -16,7 +16,7 @@ const closeModal = () => {
         <div class="my-6">
           <p class="mb-2 text-dark text-xl font-medium">Application submitted</p>
           <p class="text-[#676769] text-sm">
-            Your application has been submitted successful. We appreciate your interest.
+            Your application has been submitted successfully. We appreciate your interest.
             We will get back to you for further procedures. 
           </p>
         </div>
