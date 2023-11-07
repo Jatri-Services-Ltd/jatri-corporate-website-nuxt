@@ -12,6 +12,7 @@ const careerFormSubmitValidator = (form) => {
         },
         name: {
             required: helpers.withMessage("Name is required", required),
+            minLength: helpers.withMessage("Name should be at least 3 characters", minLength(3)),
         },
         linkedin_profile: {
             required: helpers.withMessage("Linkedin is required", required),
