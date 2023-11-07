@@ -169,9 +169,10 @@ provide("error", error)
   </div>
 </template>
 
-<style scoped> .careerDetails {
-   font-family: Inter;
- }
+<style scoped> 
+* {
+  font-family: 'Inter', sans-serif;
+}
 
  .careerDetails ol,
  .careerDetails ul {
