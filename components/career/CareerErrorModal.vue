@@ -1,6 +1,6 @@
 <script setup>
 const error = inject("error")
-const openModal = inject("openModal")
+const toggleModal = inject("toggleModal")
 const closeModal = () => {
   error.value = false
 }
@@ -17,7 +17,7 @@ const closeModal = () => {
             Your application was not successful. Please try again.
           </p>
         </div>
-        <button @click="closeModal" class="w-full px-6 py-2.5 bg-corporate rounded-full font-medium text-white text-sm">Try again</button>
+        <button @click="toggleModal" class="w-full px-6 py-2.5 bg-corporate rounded-full font-medium text-white text-sm">Try again</button>
       </div>
     </div>
   </div>

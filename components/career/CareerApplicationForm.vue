@@ -8,7 +8,8 @@ const uploadFile = inject("uploadFile")
 const removeFile = inject("removeFile")
 const handleSubmit = inject("handleSubmit")
 const isSubmitting = inject("isSubmitting")
-const openModal = inject("openModal")
+const isModalOpen = inject("isModalOpen")
+const toggleModal = inject("toggleModal")
 const { v$ } = careerFormSubmitValidator(applicationSubmitForm)
 const success = inject("success")
 const error = inject("error")
@@ -30,7 +31,7 @@ const submitForm = (e) => {
     <div class="modal-inner w-[94%] md:w-[700px] mx-auto" v-if="!success && !error">
       <div class="flex justify-between items-center p-4 md:p-6 border-b border-b-[#DBDBDB]">
         <p class="text-xl md:text-[32px] md:leading-10 font-medium text-dark">Apply now</p>
-        <button @click="openModal = !openModal"><img src="/images/career/close-icon.svg" alt="Close Modal"></button>
+        <button @click="toggleModal"><img src="/images/career/close-icon.svg" alt="Close Modal"></button>
       </div>
 
 

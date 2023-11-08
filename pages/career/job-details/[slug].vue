@@ -8,7 +8,21 @@ import CareerSuccessModal from "../../../components/career/CareerSuccessModal";
 const { $successToast, $errorToast } = useNuxtApp();
 const route = useRoute();
 const applicant_job_id = route.params.slug
-const openModal = ref(false)
+// const openModal = ref(false)
+const isModalOpen = ref(false);
+const toggleModal = () => {
+  isModalOpen.value = !isModalOpen.value;
+
+  if (process.client) {
+    const getBody = document.getElementsByTagName('body')[0];
+
+    if (isModalOpen.value) {
+      getBody.style.overflow = 'hidden';
+    } else {
+      getBody.style.overflow = 'auto';
+    }
+  }
+}
 const initialState = {
   name: '',
   email: '',
@@ -60,9 +74,10 @@ provide("uploadFile", uploadFile)
 provide("removeFile", removeFile)
 provide("handleSubmit", handleSubmit)
 provide("isSubmitting", isSubmitting)
-provide("openModal", openModal)
+provide("isModalOpen", isModalOpen)
 provide("success", success)
 provide("error", error)
+provide("toggleModal", toggleModal)
 </script>
 
 <template>
@@ -138,7 +153,7 @@ provide("error", error)
           <!--              v-html="jobDetails.description"-->
           <div class="job-des" v-html="data.data.job_details"></div>
           <div class="mt-6 md:mt-12 mb-8 md:mb-12">
-            <a href="#top" @click="openModal = !openModal"
+            <a href="#top" @click="toggleModal"
               class="bg-corporate text-white w-full md:w-[240px] py-[11px] md:py-4 rounded-full inline-block text-center font-medium text-base md:text-xl">
               Apply Now</a>
           </div>
@@ -158,18 +173,18 @@ provide("error", error)
 
 
     <div
-      :class="[success || error ? '' : '', openModal ? 'modalOpen' : 'modal-hidden']"
-      class="modal" v-if="openModal">
+      :class="[success || error ? '' : '', isModalOpen ? 'modalOpen' : 'modal-hidden']"
+      class="modal" v-if="isModalOpen">
 
       <div>
         <!--      Component here-->
         <ClientOnly>
-          <CareerApplicationForm></CareerApplicationForm>
+          <CareerApplicationForm ></CareerApplicationForm>
         </ClientOnly>
       </div>
 
     </div>
-    <div @click="openModal = !openModal" class="overlay" :class="openModal ? '' : 'modal-hidden'"></div>
+    <div @click="toggleModal" class="overlay" :class="isModalOpen ? '' : 'modal-hidden'"></div>
   </div>
 </template>
 
@@ -232,12 +247,11 @@ provide("error", error)
 
  .modal {
    position: absolute;
-   top: 5%;
+   top: 50%;
    left: 50%;
    z-index: 999;
-   min-height: 100vh;
-   width: 100%;
-   transform: translateX(-50%);
+   height: 100vh;
+   transform: translate(-50%,-50%);
 
    /* position: absolute;
    top: 60%;
