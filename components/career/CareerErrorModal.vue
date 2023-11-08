@@ -7,7 +7,7 @@ const closeModal = () => {
 </script>
 
 <template>
-  <div class="flex justify-center items-center">
+  <div class="modal-inner w-[380px] mx-auto flex justify-center items-center">
     <div class="bg-white rounded-2xl">
       <div class="px-4 py-6 pb-4 text-center">
         <img class="mx-auto" src="~/assets/images/job_circular/error.svg" alt="">
