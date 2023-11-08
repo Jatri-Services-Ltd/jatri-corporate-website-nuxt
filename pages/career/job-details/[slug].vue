@@ -7,8 +7,23 @@ import CareerSuccessModal from "../../../components/career/CareerSuccessModal";
 
 const { $successToast, $errorToast } = useNuxtApp();
 const route = useRoute();
-const applicant_job_id = route.params.slug
-const openModal = ref(false)
+const applicant_job_id = route.params.slug;
+
+const isModalOpen = ref(false);
+const toggleModal = () => {
+  isModalOpen.value = !isModalOpen.value;
+
+  if (process.client) {
+    const getBody = document.getElementsByTagName('body')[0];
+
+    if (isModalOpen.value) {
+      getBody.style.overflow = 'hidden';
+    } else {
+      getBody.style.overflow = 'auto';
+    }
+  }
+}
+
 const initialState = {
   name: '',
   email: '',
@@ -60,13 +75,14 @@ provide("uploadFile", uploadFile)
 provide("removeFile", removeFile)
 provide("handleSubmit", handleSubmit)
 provide("isSubmitting", isSubmitting)
-provide("openModal", openModal)
+provide("toggleModal", toggleModal)
+provide("isModalOpen", isModalOpen)
 provide("success", success)
 provide("error", error)
 </script>
 
 <template>
-  <div class="careerDetails">
+  <div class="careerDetails relative">
     <div id="top" class="job-details-header text-white py-5 lg:py-8">
       <div class="custom-container">
         <div class="flex items-center gap-3">
@@ -118,7 +134,6 @@ provide("error", error)
               <div><img class="h-6 w-6" src="/images/career/deadline-icon.png" alt="Application deadline"></div>
               <div>
                 <p class="text-sm lg:text-base text-secondaryDark mb-1">Application deadline</p>
-                <!--                          v-html="jobDetails.deadline"-->
                 <p class="text-base lg:text-xl font-medium text-dark">
                   {{ $dayjs(data.data.deadline).format('D MMM, YYYY') }}
                 </p>
@@ -135,10 +150,9 @@ provide("error", error)
           </div>
         </div>
         <div class="col-span-12 md:col-span-7 lg:col-span-8">
-          <!--              v-html="jobDetails.description"-->
           <div class="job-des" v-html="data.data.job_details"></div>
           <div class="mt-6 md:mt-12 mb-8 md:mb-12">
-            <a href="#top" @click="openModal = !openModal"
+            <a href="#top" @click="toggleModal"
               class="bg-corporate text-white w-full md:w-[240px] py-[11px] md:py-4 rounded-full inline-block text-center font-medium text-base md:text-xl">
               Apply Now</a>
           </div>
@@ -147,8 +161,8 @@ provide("error", error)
               <img src="/images/career/having-trouble-icon.png" alt="Jatri career">
               <p class="text-secondaryDark font-medium text-base md:text-xl">
                 Having trouble locating the perfect role?<br class="hidden sm:block">
-                Feel free to send us your resume at <a href="mailto:careers@jatri.co"
-                  class="sm:underline text-info">careers@jatri.co</a>
+                Feel free to send us your resume at <a href="mailto:career@jatri.co"
+                  class="sm:underline text-info">career@jatri.co</a>
               </p>
             </div>
           </div>
@@ -157,26 +171,26 @@ provide("error", error)
     </div>
 
 
-    <div
-      :class="[success || error ? 'w-[380px] h-[288px]' : 'w-[94%] md:w-[700px]', openModal ? 'modalOpen' : 'modal-hidden']"
-      class="modal rounded-2xl relative" v-if="openModal">
-
-      <div>
-        <!--      Component here-->
-        <ClientOnly>
-          <CareerApplicationForm></CareerApplicationForm>
-        </ClientOnly>
-      </div>
-
+    <div v-if="isModalOpen" class="fixed inset-0 z-[999] flex items-center justify-center bg-dark/50">
+      <ClientOnly>
+        <CareerApplicationForm></CareerApplicationForm>
+      </ClientOnly>
     </div>
-    <div @click="openModal = !openModal" class="overlay" :class="openModal ? '' : 'modal-hidden'"></div>
+
+    <!-- <div
+      :class="[success || error ? 'w-[380px] h-[288px]' : 'w-[94%] md:w-[700px]', isModalOpen ? 'modalOpen' : 'modal-hidden']"
+      class="modal rounded-2xl relative" v-if="isModalOpen">
+      <ClientOnly>
+        <CareerApplicationForm></CareerApplicationForm>
+      </ClientOnly>
+    </div> -->
+    <!-- <div @click="toggleModal" class="overlay" :class="isModalOpen ? '' : 'modal-hidden'"></div> -->
   </div>
 </template>
 
 <style scoped> * {
    font-family: 'Inter', sans-serif;
  }
-
 
  .job-details-header {
    background-image: url('/images/career/job-details-bg.png');
@@ -261,8 +275,9 @@ provide("error", error)
      box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
      border-radius: 0 0 16px 16px;
    }
+
    .modal {
-    top: 70%;
+     top: 70%;
    }
  }
- </style>
+</style>
