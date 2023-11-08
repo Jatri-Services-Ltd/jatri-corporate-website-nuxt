@@ -176,15 +176,6 @@ provide("error", error)
         <CareerApplicationForm></CareerApplicationForm>
       </ClientOnly>
     </div>
-
-    <!-- <div
-      :class="[success || error ? 'w-[380px] h-[288px]' : 'w-[94%] md:w-[700px]', isModalOpen ? 'modalOpen' : 'modal-hidden']"
-      class="modal rounded-2xl relative" v-if="isModalOpen">
-      <ClientOnly>
-        <CareerApplicationForm></CareerApplicationForm>
-      </ClientOnly>
-    </div> -->
-    <!-- <div @click="toggleModal" class="overlay" :class="isModalOpen ? '' : 'modal-hidden'"></div> -->
   </div>
 </template>
 
