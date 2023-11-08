@@ -98,8 +98,8 @@ const submitForm = (e) => {
             <p class="text-xs md:text-2xl font-medium text-[#676769] md:text-black uppercase md:normal-case">Resume / CV</p>
             <label class="text-base font-medium text-dark mt-4 md:mt-6 pb-2.5 block" for="">Resume / CV</label>
             <div class="relative overflow-hidden">
-              <button :class="{ 'border border-[#E0293B]': v$.resume?.$errors.length }"
-                class="w-full border border-info border-dashed p-4 md:py-[22px] md:px-5 text-start rounded-2xl">
+              <button :class="v$?.resume?.$errors?.length ? 'border border-dashed border-[#E0293B]' : 'border border-info border-dashed'"
+                class="w-full p-4 md:py-[22px] md:px-5 text-start rounded-2xl">
                 <div v-if="applicationSubmitForm.resume">
                   <div class="flex gap-5 py-2.5">
                     <div class="flex gap-2 justify-between items-center w-full">
@@ -126,7 +126,7 @@ const submitForm = (e) => {
                   </div>
                 </div>
               </button>
-              <input v-if="applicationSubmitForm.resume === ''" @change="uploadFile($event)" type="file" name="myfile"
+              <input @blur="v$.resume.$touch()" v-if="applicationSubmitForm.resume === ''" @change="uploadFile($event)" type="file" name="myfile"
                 accept="application/pdf" class="absolute left-0 top-0 opacity-0 w-full h-full cursor-pointer" />
               <div v-if="v$.resume.$errors.length">
                 <div class="flex gap-x-2 items-center mt-2">
