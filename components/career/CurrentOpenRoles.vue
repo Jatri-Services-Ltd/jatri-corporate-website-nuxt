@@ -11,7 +11,7 @@ const { data } = await useFetch(config.public.apiURL + '/api/v1/get-career-activ
         roles</h2>
       <template v-if="data.data.length">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6">
-          <div v-for="job in data.data" :key="job.id" class="p-6 rounded-2xl border border-1-[#DBDBDB]">
+          <div v-for="job in data.data" :key="job.id" class="p-4 md:p-6 rounded-2xl border border-1-[#DBDBDB]">
             <div class="xl:flex items-center justify-between">
               <div>
                 <h5 class="text-base lg:text-xl font-semibold text-dark">{{ job.title }}</h5>
@@ -27,11 +27,11 @@ const { data } = await useFetch(config.public.apiURL + '/api/v1/get-career-activ
                     {{ $dayjs(job.deadline).format('D MMM, YYYY') }}
                   </span></p>
               </div>
-              <div class="xl:pt-0 pt-4">
+              <div class="xl:pt-0 pt-4 inline-block">
                 <router-link :to="{ path: '/career/job-details/' + job.id }"
-                  class="flex justify-center items-center gap-2 h-10 w-[130px] rounded-full border border-[#DBDBDB] bg-white pl-2">
-                  <span class="inline-block text-sm leading-5 font-medium text-dark">View details</span>
-                  <div><img class="h-4 w-4" src="/images/career/arrow-right.svg" alt=""></div>
+                  class="flex justify-center items-center gap-2 pl-4 pr-2 py-2.5 rounded-full border border-[#DBDBDB] bg-white">
+                  <span class="inline-block text-sm font-medium text-dark">View details</span>
+                  <img src="/images/career/arrow-right.svg" alt="arrow right">
                 </router-link>
               </div>
             </div>

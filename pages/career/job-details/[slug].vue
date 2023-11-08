@@ -96,8 +96,8 @@ provide("error", error)
                 <p class="text-base lg:text-xl font-medium text-dark">{{ data.data.salary_range }}</p>
               </div>
             </div>
-            <div class="border-b ml-10 pt-4"></div>
-            <div class="flex items-center gap-5 pt-4">
+            <div class="border-b ml-10 pt-2 md:pt-4"></div>
+            <div class="flex items-center gap-5 pt-2 md:pt-4">
               <div><img class="h-6 w-6" src="/images/career/salary-range-icon.png" alt="Salary range"></div>
               <div>
                 <p class="text-sm lg:text-base text-secondaryDark mb-1 font-inter">Employment status</p>
@@ -105,16 +105,16 @@ provide("error", error)
                   {{ data.data.employment_status.replaceAll('_', ' ').replaceAll('-', ' ') }}</p>
               </div>
             </div>
-            <div class="border-b ml-10 pt-4"></div>
-            <div class="flex items-center gap-5 pt-4">
+            <div class="border-b ml-10 pt-2 md:pt-4"></div>
+            <div class="flex items-center gap-5 pt-2 md:pt-4">
               <div><img class="h-6 w-6" src="/images/career/job-location-icon.png" alt="Job location"></div>
               <div>
                 <p class="text-sm lg:text-base text-secondaryDark mb-1">Job location</p>
                 <p class="text-base lg:text-xl font-medium text-dark">{{ data.data.location }}</p>
               </div>
             </div>
-            <div class="border-b ml-10 pt-4"></div>
-            <div class="flex items-center gap-5 pt-4">
+            <div class="border-b ml-10 pt-2 md:pt-4"></div>
+            <div class="flex items-center gap-5 pt-2 md:pt-4">
               <div><img class="h-6 w-6" src="/images/career/deadline-icon.png" alt="Application deadline"></div>
               <div>
                 <p class="text-sm lg:text-base text-secondaryDark mb-1">Application deadline</p>
@@ -124,8 +124,8 @@ provide("error", error)
                 </p>
               </div>
             </div>
-            <div class="border-b ml-10 pt-4"></div>
-            <div class="flex items-center gap-5 pt-4">
+            <div class="border-b ml-10 pt-2 md:pt-4"></div>
+            <div class="flex items-center gap-5 pt-2 md:pt-4">
               <div><img class="h-6 w-6" src="/images/career/vacancy-icon.png" alt="Vacancy"></div>
               <div>
                 <p class="text-sm lg:text-base text-secondaryDark mb-1">Vacancy</p>

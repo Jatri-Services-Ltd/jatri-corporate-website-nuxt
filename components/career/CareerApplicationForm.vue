@@ -113,7 +113,7 @@ const submitForm = (e) => {
                       </div>
                       <div>
                         <input @change="uploadFile($event)" type="file" class="hidden" id="replace">
-                        <label class="text-[#E0293B] md:border-b md:border-b-[#E0293B] text-sm font-medium cursor-pointer" for="replace">Replace</label>
+                        <label class="text-primary md:text-[#E0293B] md:border-b md:border-b-[#E0293B] text-xs md:text-sm font-medium cursor-pointer" for="replace">Replace</label>
                       </div>
                     </div>
                   </div>

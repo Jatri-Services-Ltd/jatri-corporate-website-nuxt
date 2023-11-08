@@ -24,14 +24,14 @@ const { locale } = useI18n();
                     <h1 class="header-title">
                         {{ $t('career-header-title-1') }}<br>{{ $t('career-header-title-2') }}<br>{{ $t('career-header-title-3') }}
                     </h1>
-                    <p class="text-sm md:text-base font-medium text-secondaryDark mb-8 md:mb-10 mx-auto mt-4 lg:mt-6" :class="locale === 'bn' ? 'w-[90%] sm:w-full' : ''">{{
+                    <p class="text-base font-medium text-secondaryDark mb-8 md:mb-10 mx-auto mt-4 lg:mt-6" :class="locale === 'bn' ? 'w-[75%] sm:w-full' : ''">{{
                         $t('career-header-subtitle') }}</p>
                     <div class="flex justify-center items-center mx-auto gap-4 md:gap-6">
                         <router-link to="#job-opening"
-                            class="py-2.5 sm:py-[11px] px-6 border border-dark rounded-full text-sm md:text-base font-medium text-white bg-dark">{{
+                            class="h-10 md:h-auto py-2.5 sm:py-[11px] px-6 border border-dark rounded-full text-sm md:text-base font-medium text-white bg-dark">{{
                                 $t('header-btn-one') }}</router-link>
                         <router-link to="#explore-jatri"
-                            class="py-2.5 sm:py-[11px] pl-6 pr-4 flex justify-center items-center gap-2 border border-dark rounded-full text-sm md:text-base font-medium text-dark">
+                            class="h-10 md:h-auto py-2.5 sm:py-[11px] pl-6 pr-4 flex justify-center items-center gap-2 border border-dark rounded-full text-sm md:text-base font-medium text-dark">
                             <span class="inline-block">{{ $t('header-btn-two') }}</span>
                             <span class="inline-block">
                                 <img class="w-4 h-4 object-cover md:w-auto" src="/images/career/down-arrow.png" alt="Down arrow">
