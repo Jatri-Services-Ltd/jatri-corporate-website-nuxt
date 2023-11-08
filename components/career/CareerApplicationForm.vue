@@ -27,128 +27,127 @@ const submitForm = (e) => {
     <CareerSuccess v-show="success"></CareerSuccess>
     <CareerError v-show="error"></CareerError>
 
-    <div v-if="!success && !error">
+    <div class="modal-inner w-[94%] md:w-[700px] mx-auto" v-if="!success && !error">
       <div class="flex justify-between items-center p-4 md:p-6 border-b border-b-[#DBDBDB]">
         <p class="text-xl md:text-[32px] md:leading-10 font-medium text-dark">Apply now</p>
         <button @click="openModal = !openModal"><img src="/images/career/close-icon.svg" alt="Close Modal"></button>
       </div>
 
-      <div>
-        <div class="p-4 md:p-6 !pb-0">
-          <p class="text-sm md:text-2xl font-medium mb-4 md:mb-6 text-[#676769] md:text-black uppercase md:normal-case">Personal information</p>
-          <div class="flex flex-col md:flex-row gap-4 md:gap-8">
-            <div class="w-full">
-              <label class="text-base font-medium text-dark pb-2.5 block" for="">Full name</label>
-              <input v-model="v$.name.$model" @blur="v$.name.$touch()" type="text"
-                class="w-full px-4 h-10 md:h-14 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769] focus:outline-none rounded"
-                placeholder="Enter full name"
-                :class="{ 'bg-[#FDF0F1] border border-[#E0293B]': v$?.name?.$errors.length }">
-              <div v-if="v$.name.$errors.length">
-                <div class="flex gap-x-2 items-center mt-2">
-                  <img src="~/assets/images/job_circular/exceed.svg" alt="">
-                  <p class="text-dark text-sm"> {{ v$.name.$errors[0].$message }}</p>
-                </div>
-              </div>
-            </div>
-            <div class="w-full">
-              <label class="text-base font-medium text-dark pb-2.5 block" for="">Email address</label>
-              <input v-model="v$.email.$model" @blur="v$.email.$touch()" type="email"
-                class="w-full px-4 h-10 md:h-14 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769] focus:outline-none rounded"
-                placeholder="Enter email address"
-                :class="{ 'bg-[#FDF0F1] border border-[#E0293B]': v$?.email?.$errors.length }">
-              <div v-if="v$.email.$errors.length">
-                <div class="flex gap-x-2 items-center mt-2">
-                  <img src="~/assets/images/job_circular/exceed.svg" alt="">
-                  <p class="text-dark text-sm"> {{ v$.email.$errors[0].$message }}</p>
-                </div>
+
+      <div class="p-4 md:p-6 !pb-0">
+        <p class="text-sm md:text-2xl font-medium mb-4 md:mb-6 text-[#676769] md:text-black uppercase md:normal-case">
+          Personal information</p>
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+          <div class="w-full">
+            <label class="text-base font-medium text-dark pb-2.5 block" for="">Full name</label>
+            <input v-model="v$.name.$model" @blur="v$.name.$touch()" type="text"
+              class="w-full px-4 h-10 md:h-14 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769] focus:outline-none rounded"
+              placeholder="Enter full name" :class="{ 'bg-[#FDF0F1] border border-[#E0293B]': v$?.name?.$errors.length }">
+            <div v-if="v$.name.$errors.length">
+              <div class="flex gap-x-2 items-center mt-2">
+                <img src="~/assets/images/job_circular/exceed.svg" alt="">
+                <p class="text-dark text-sm"> {{ v$.name.$errors[0].$message }}</p>
               </div>
             </div>
           </div>
-
-          <div class="flex flex-col md:flex-row gap-4 md:gap-8 mt-4 md:mt-6">
-            <div class="w-full">
-              <label class="text-base font-medium text-dark pb-2.5 block" for="">Mobile number</label>
-              <input v-model="v$.mobile_number.$model" @blur="v$.mobile_number.$touch()" type="text"
-                class="w-full px-4 h-10 md:h-14 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769] focus:outline-none rounded"
-                placeholder="Enter mobile number"
-                :class="{ 'bg-[#FDF0F1] border border-[#E0293B]': v$?.mobile_number?.$errors.length }">
-              <div v-if="v$.mobile_number.$errors.length">
-                <div class="flex gap-x-2 items-center mt-2">
-                  <img src="~/assets/images/job_circular/exceed.svg" alt="">
-                  <p class="text-dark text-sm"> {{ v$.mobile_number.$errors[0].$message }}</p>
-                </div>
-              </div>
-            </div>
-            <div class="w-full">
-              <label class="text-base font-medium text-dark pb-2.5 block" for="">LinkedIn profile</label>
-              <input v-model="v$.linkedin_profile.$model" @blur="v$.linkedin_profile.$touch()" type="text"
-                class="w-full px-4 h-10 md:h-14 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769] focus:outline-none rounded"
-                placeholder="Enter linkedin profile link"
-                :class="{ 'bg-[#FDF0F1] border border-[#E0293B]': v$?.linkedin_profile?.$errors.length }">
-              <div v-if="v$.linkedin_profile.$errors.length">
-                <div class="flex gap-x-2 items-center mt-2">
-                  <img src="~/assets/images/job_circular/exceed.svg" alt="">
-                  <p class="text-dark text-sm">{{ v$.linkedin_profile.$errors[0].$message }}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-6 md:mt-8">
-            <p class="text-xs md:text-2xl font-medium text-[#676769] md:text-black uppercase md:normal-case">Resume / CV</p>
-            <label class="text-base font-medium text-dark mt-4 md:mt-6 pb-2.5 block" for="">Resume / CV</label>
-            <div class="relative overflow-hidden">
-              <button :class="{ 'border border-[#E0293B]': v$.resume?.$errors.length }"
-                class="w-full border border-info border-dashed md:h-[84px] p-4 md:px-5 text-start rounded-2xl">
-                <div v-if="applicationSubmitForm.resume">
-                  <div class="flex gap-5 py-2.5">
-                    <div class="flex gap-2 justify-between items-center w-full">
-                      <div class="flex gap-x-2 md:gap-x-4">
-                        <img class="" src="/images/career/upload-icon.svg" alt="Upload file">
-                        <div class="flex items-center gap-x-2">
-                          <p class="text-sm font-medium break-all max-w-[160px] sm:max-w-[350px] lg:max-w-[400px]">{{ applicationSubmitForm?.resume?.name }}</p>
-                          <button @click="removeFile" class="pt-1"><img src="/images/career/remove-file-icon.svg"
-                              alt="Remove cv"></button>
-                        </div>    
-                      </div>
-                      <div>
-                        <input @change="uploadFile($event)" type="file" class="hidden" id="replace">
-                        <label class="text-[#E0293B] md:border-b md:border-b-[#E0293B] text-sm font-medium cursor-pointer" for="replace">Replace</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex items-center gap-x-2 md:gap-x-4" :class="applicationSubmitForm.resume ? 'hidden' : ''">
-                  <img class="w-6 md:w-auto" src="/images/career/upload-icon.svg" alt="Upload file">
-                  <div>
-                    <p class="text-info text-base font-medium mb-1">Upload resume / cv</p>
-                    <p class="text-xs text-dark">File format should be <span class="font-semibold">PDF</span> and not more than <span class="font-semibold">5MB</span></p>
-                  </div>
-                </div>
-              </button>
-              <input v-if="applicationSubmitForm.resume === ''" @change="uploadFile($event)" type="file" name="myfile"
-                accept="application/pdf" class="absolute left-0 top-0 opacity-0 w-full h-full cursor-pointer" />
-              <div v-if="v$.resume.$errors.length">
-                <div class="flex gap-x-2 items-center mt-2">
-                  <img src="~/assets/images/job_circular/exceed.svg" alt="">
-                  <p class="text-dark text-sm"> {{ v$.resume.$errors[0].$message }}</p>
-                </div>
+          <div class="w-full">
+            <label class="text-base font-medium text-dark pb-2.5 block" for="">Email address</label>
+            <input v-model="v$.email.$model" @blur="v$.email.$touch()" type="email"
+              class="w-full px-4 h-10 md:h-14 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769] focus:outline-none rounded"
+              placeholder="Enter email address"
+              :class="{ 'bg-[#FDF0F1] border border-[#E0293B]': v$?.email?.$errors.length }">
+            <div v-if="v$.email.$errors.length">
+              <div class="flex gap-x-2 items-center mt-2">
+                <img src="~/assets/images/job_circular/exceed.svg" alt="">
+                <p class="text-dark text-sm"> {{ v$.email.$errors[0].$message }}</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="small-device-bottom-section">
-          <div class="mt-4 md:mt-12 mb-4 md:mb-10 flex justify-center px-4">
-            <button :disabled="isSubmitting" @click="submitForm"
-              :class="isSubmitting ? 'opacity-20 cursor-not-allowed' : ''"
-              class="w-full md:w-[300px] py-2.5 md:py-4 bg-corporate text-white rounded-full text-sm md:text-xl font-medium">
-              Submit
+        <div class="flex flex-col md:flex-row gap-4 md:gap-8 mt-4 md:mt-6">
+          <div class="w-full">
+            <label class="text-base font-medium text-dark pb-2.5 block" for="">Mobile number</label>
+            <input v-model="v$.mobile_number.$model" @blur="v$.mobile_number.$touch()" type="text"
+              class="w-full px-4 h-10 md:h-14 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769] focus:outline-none rounded"
+              placeholder="Enter mobile number"
+              :class="{ 'bg-[#FDF0F1] border border-[#E0293B]': v$?.mobile_number?.$errors.length }">
+            <div v-if="v$.mobile_number.$errors.length">
+              <div class="flex gap-x-2 items-center mt-2">
+                <img src="~/assets/images/job_circular/exceed.svg" alt="">
+                <p class="text-dark text-sm"> {{ v$.mobile_number.$errors[0].$message }}</p>
+              </div>
+            </div>
+          </div>
+          <div class="w-full">
+            <label class="text-base font-medium text-dark pb-2.5 block" for="">LinkedIn profile</label>
+            <input v-model="v$.linkedin_profile.$model" @blur="v$.linkedin_profile.$touch()" type="text"
+              class="w-full px-4 h-10 md:h-14 bg-[#F7F7F7] placeholder:text-sm placeholder:text-[#676769] focus:outline-none rounded"
+              placeholder="Enter linkedin profile link"
+              :class="{ 'bg-[#FDF0F1] border border-[#E0293B]': v$?.linkedin_profile?.$errors.length }">
+            <div v-if="v$.linkedin_profile.$errors.length">
+              <div class="flex gap-x-2 items-center mt-2">
+                <img src="~/assets/images/job_circular/exceed.svg" alt="">
+                <p class="text-dark text-sm">{{ v$.linkedin_profile.$errors[0].$message }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 md:mt-8">
+          <p class="text-xs md:text-2xl font-medium text-[#676769] md:text-black uppercase md:normal-case">Resume / CV
+          </p>
+          <label class="text-base font-medium text-dark mt-4 md:mt-6 pb-2.5 block" for="">Resume / CV</label>
+          <div class="relative overflow-hidden">
+            <button :class="{ 'border border-[#E0293B]': v$.resume?.$errors.length }"
+              class="w-full border border-info border-dashed md:h-[84px] p-4 md:px-5 text-start rounded-2xl">
+              <div v-if="applicationSubmitForm.resume">
+                <div class="flex gap-5 py-2.5">
+                  <div class="flex gap-2 justify-between items-center w-full">
+                    <div class="flex gap-x-2 md:gap-x-4">
+                      <img class="" src="/images/career/upload-icon.svg" alt="Upload file">
+                      <div class="flex items-center gap-x-2">
+                        <p class="text-sm font-medium break-all max-w-[160px] sm:max-w-[350px] lg:max-w-[400px]">{{
+                          applicationSubmitForm?.resume?.name }}</p>
+                        <button @click="removeFile" class="pt-1"><img src="/images/career/remove-file-icon.svg"
+                            alt="Remove cv"></button>
+                      </div>
+                    </div>
+                    <div>
+                      <input @change="uploadFile($event)" type="file" class="hidden" id="replace">
+                      <label class="text-[#E0293B] md:border-b md:border-b-[#E0293B] text-sm font-medium cursor-pointer"
+                        for="replace">Replace</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex items-center gap-x-2 md:gap-x-4" :class="applicationSubmitForm.resume ? 'hidden' : ''">
+                <img class="w-6 md:w-auto" src="/images/career/upload-icon.svg" alt="Upload file">
+                <div>
+                  <p class="text-info text-base font-medium mb-1">Upload resume / cv</p>
+                  <p class="text-xs text-dark">File format should be <span class="font-semibold">PDF</span> and not more
+                    than <span class="font-semibold">5MB</span></p>
+                </div>
+              </div>
             </button>
+            <input v-if="applicationSubmitForm.resume === ''" @change="uploadFile($event)" type="file" name="myfile"
+              accept="application/pdf" class="absolute left-0 top-0 opacity-0 w-full h-full cursor-pointer" />
+            <div v-if="v$.resume.$errors.length">
+              <div class="flex gap-x-2 items-center mt-2">
+                <img src="~/assets/images/job_circular/exceed.svg" alt="">
+                <p class="text-dark text-sm"> {{ v$.resume.$errors[0].$message }}</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
+      <div class="px-4 pt-4 md:pt-12 pb-4 md:pb-10 flex justify-center">
+        <button :disabled="isSubmitting" @click="submitForm" :class="isSubmitting ? 'opacity-20 cursor-not-allowed' : ''"
+          class="w-full md:w-[300px] py-2.5 md:py-4 bg-corporate text-white rounded-full text-sm md:text-xl font-medium">
+          Submit
+        </button>
+      </div>
     </div>
   </div>
 </template>

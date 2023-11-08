@@ -66,7 +66,7 @@ provide("error", error)
 </script>
 
 <template>
-  <div class="careerDetails">
+  <div class="careerDetails relative">
     <div id="top" class="job-details-header text-white py-5 lg:py-8">
       <div class="custom-container">
         <div class="flex items-center gap-3">
@@ -158,8 +158,8 @@ provide("error", error)
 
 
     <div
-      :class="[success || error ? 'w-[380px] h-[288px]' : 'w-[94%] md:w-[700px]', openModal ? 'modalOpen' : 'modal-hidden']"
-      class="modal rounded-2xl relative" v-if="openModal">
+      :class="[success || error ? '' : '', openModal ? 'modalOpen' : 'modal-hidden']"
+      class="modal" v-if="openModal">
 
       <div>
         <!--      Component here-->
@@ -232,12 +232,20 @@ provide("error", error)
 
  .modal {
    position: absolute;
+   top: 5%;
+   left: 50%;
+   z-index: 999;
+   min-height: 100vh;
+   width: 100%;
+   transform: translateX(-50%);
+
+   /* position: absolute;
    top: 60%;
    left: 50%;
    transform: translate(-50%, -50%);
    background-color: white;
    z-index: 999;
-   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; */
  }
 
  .overlay {
@@ -251,7 +259,7 @@ provide("error", error)
    z-index: 5;
  }
 
- @media (max-width: 767px) {
+ /* @media (max-width: 767px) {
    .small-device-bottom-section {
      position: fixed;
      bottom: 0;
@@ -261,8 +269,9 @@ provide("error", error)
      box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
      border-radius: 0 0 16px 16px;
    }
+
    .modal {
-    top: 70%;
+     top: 70%;
    }
- }
- </style>
+ } */
+</style>
