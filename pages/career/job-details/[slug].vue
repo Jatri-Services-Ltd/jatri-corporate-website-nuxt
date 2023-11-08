@@ -8,7 +8,7 @@ import CareerSuccessModal from "../../../components/career/CareerSuccessModal";
 const { $successToast, $errorToast } = useNuxtApp();
 const route = useRoute();
 const applicant_job_id = route.params.slug
-// const openModal = ref(false)
+
 const isModalOpen = ref(false);
 const toggleModal = () => {
   isModalOpen.value = !isModalOpen.value;
@@ -23,6 +23,7 @@ const toggleModal = () => {
     }
   }
 }
+
 const initialState = {
   name: '',
   email: '',
@@ -74,7 +75,6 @@ provide("uploadFile", uploadFile)
 provide("removeFile", removeFile)
 provide("handleSubmit", handleSubmit)
 provide("isSubmitting", isSubmitting)
-provide("isModalOpen", isModalOpen)
 provide("success", success)
 provide("error", error)
 provide("toggleModal", toggleModal)
@@ -100,7 +100,7 @@ provide("toggleModal", toggleModal)
           </span> {{ data.data.department }}</h2>
       </div>
     </div>
-    <div class="custom-container mt-4 sm:mt-10 mb-10 md:mb-[120px]">
+    <div class="custom-container pt-4 sm:pt-10 pb-10 md:pb-[120px]">
       <div class="grid grid-cols-12 gap-4 lg:gap-12">
         <div class="col-span-12 md:col-span-5 lg:col-span-4">
           <div class="border border-lightGrey rounded-2xl px-4 md:px-5 py-5">
@@ -246,21 +246,8 @@ provide("toggleModal", toggleModal)
  }
 
  .modal {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   z-index: 999;
-   height: 100vh;
-   transform: translate(-50%,-50%);
-
-   /* position: absolute;
-   top: 60%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   background-color: white;
-   z-index: 999;
-   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset; */
- }
+  @apply w-full h-screen absolute top-[27%] sm:top-[33%] md:top-[29%] lg:top-[36%] xl:top-[40%] 2xl:top-[49%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-[9999];
+}
 
  .overlay {
    position: fixed;
@@ -270,7 +257,7 @@ provide("toggleModal", toggleModal)
    height: 100vh !important;
    background-color: rgba(0, 0, 0, 0.6);
    backdrop-filter: blur(3px);
-   z-index: 5;
+   z-index: 999;
  }
 
  /* @media (max-width: 767px) {
