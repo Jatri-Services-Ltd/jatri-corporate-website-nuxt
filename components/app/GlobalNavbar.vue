@@ -14,7 +14,10 @@ const toggleModal = () => {
     getBody.style.overflow = 'hidden';
   }
 }
-
+const route = useRoute();
+const languageSwitcher = ref(false)
+const routesToHideSwitcher = 'career/job-details';
+const langSwitcherShow = computed( () => route.path.includes(routesToHideSwitcher))
 const isOpen = ref(false);
 const { locale } = useI18n();
 const switchLocalePath = useSwitchLocalePath();
@@ -61,7 +64,7 @@ onMounted(() => {
                 </div>
               </div>
             </div>
-          <div class="hidden md:block relative inline-block text-left">
+          <div :class="[langSwitcherShow ? 'hidden' : 'md:block', isMobile ? 'hidden' : '']"  class="relative inline-block text-left">
             <div>
               <button
                   @click="isOpen = !isOpen"
@@ -120,7 +123,7 @@ onMounted(() => {
                     <img src="~/assets/images/header/check.png" alt="check icon" class="transition" :class="locale === 'en' ? 'opacity-100' : 'opacity-0'" />
                   </div>
                 </nuxt-link>
-                <nuxt-link :to="switchLocalePath('bn')" @click="isOpen = !isOpen" class="block pt-4">
+                <nuxt-link v-show="!langSwitcherShow" :to="switchLocalePath('bn')" @click="isOpen = !isOpen" class="block pt-4">
                   <div class="transition ease-out duration-200 cursor-pointer flex items-center justify-between" role="none">
                     <div class="flex items-center gap-2">
                       <img src="~/assets/images/header/globe.png" alt="Globe icon"/>
