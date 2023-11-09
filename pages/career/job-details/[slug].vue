@@ -171,7 +171,8 @@ provide("error", error)
     </div>
 
 
-    <div v-if="isModalOpen" class="fixed inset-0 z-[999] flex items-center justify-center bg-dark/50">
+    <div v-if="isModalOpen" class="fixed inset-0 z-[999] flex items-center justify-center">
+      <div class="w-full h-full bg-dark/50 absolute inset-0 -z-10" @click="toggleModal"></div>
       <ClientOnly>
         <CareerApplicationForm></CareerApplicationForm>
       </ClientOnly>
