@@ -199,7 +199,7 @@ provide("error", error)
  }
 
  /* modal css */
- .show-modal {
+ /* .show-modal {
    font-size: 2rem;
    font-weight: 600;
    padding: 1.75rem 3.5rem;
@@ -270,5 +270,5 @@ provide("error", error)
    .modal {
      top: 70%;
    }
- }
+ } */
 </style>

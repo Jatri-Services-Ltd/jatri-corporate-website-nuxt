@@ -32,7 +32,7 @@ const submitForm = (e) => {
         <button @click="toggleModal"><img src="/images/career/close-icon.svg" alt="Close Modal"></button>
       </div>
 
-      <div class="p-4 md:p-6 !pb-0 max-h-[532px] md:max-h-[700px] overflow-y-auto">
+      <div class="modal-content p-4 md:p-6 !pb-0 max-h-[532px] md:max-h-[700px] overflow-y-auto">
         <p class="text-sm md:text-2xl font-medium mb-4 md:mb-6 text-[#676769] md:text-black uppercase md:normal-case">
           Personal information</p>
         <div class="flex flex-col md:flex-row gap-4 md:gap-8">
@@ -143,7 +143,7 @@ const submitForm = (e) => {
         </div>
       </div>
 
-      <div class="small-device-bottom-section">
+      <div>
         <div class="pt-4 md:pt-12 pb-4 md:pb-10 flex justify-center px-4">
           <button :disabled="isSubmitting" @click="submitForm"
             :class="isSubmitting ? 'opacity-20 cursor-not-allowed' : ''"
@@ -155,3 +155,11 @@ const submitForm = (e) => {
     </div>
   </div>
 </template>
+
+<style scoped>
+@media (max-width: 390px) {
+  .modal-content {
+    @apply max-h-[350px]
+  }
+}
+</style>
