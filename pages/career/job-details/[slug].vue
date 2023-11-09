@@ -45,6 +45,11 @@ const removeFile = () => {
   applicationSubmitForm.resume = ''
 }
 
+const generateText = (str) => {
+  str = str.toLowerCase()
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 const success = ref(false)
 const error = ref(false)
 const handleSubmit = () => {
@@ -90,7 +95,7 @@ provide("error", error)
           <div class="relative">
             <div class="right-arrow absolute top-0 bottom-0 left-0 right-0 m-auto"></div>
           </div>
-          <p class="text-xs sm:text-sm ml-2 md:ml-3">Open roles</p>
+          <nuxt-link :to="`${localePath('/career')}`+'/#job-opening'" class="text-xs sm:text-sm ml-2 md:ml-3">Open roles</nuxt-link>
           <div class="relative">
             <div class="right-arrow absolute top-0 bottom-0 left-0 right-0 m-auto"></div>
           </div>
@@ -118,7 +123,7 @@ provide("error", error)
               <div>
                 <p class="text-sm lg:text-base text-secondaryDark mb-1 font-inter">Employment status</p>
                 <p class="text-base lg:text-xl font-medium text-dark font-inter">
-                  {{ data.data.employment_status.replaceAll('_', ' ').replaceAll('-', ' ') }}</p>
+                  {{ generateText(data.data.employment_status.replaceAll('_', ' ').replaceAll('-', ' ')) }}</p>
               </div>
             </div>
             <div class="border-b ml-10 pt-2 md:pt-4"></div>
@@ -171,7 +176,8 @@ provide("error", error)
     </div>
 
 
-    <div v-if="isModalOpen" class="fixed inset-0 z-[999] flex items-center justify-center bg-dark/50">
+    <div v-if="isModalOpen" class="fixed inset-0 z-[999] flex items-center justify-center">
+      <div class="w-full h-full bg-dark/50 absolute inset-0 -z-10" @click="toggleModal"></div>
       <ClientOnly>
         <CareerApplicationForm></CareerApplicationForm>
       </ClientOnly>
@@ -197,78 +203,4 @@ provide("error", error)
    border-color: white white transparent transparent;
    transform: rotate(45deg);
  }
-
- /* modal css */
- /* .show-modal {
-   font-size: 2rem;
-   font-weight: 600;
-   padding: 1.75rem 3.5rem;
-   margin: 5rem 2rem;
-   border: none;
-   background-color: #fff;
-   color: #444;
-   border-radius: 10rem;
-   cursor: pointer;
- }
-
- .close-modal {
-   position: absolute;
-   top: 1.2rem;
-   right: 2rem;
-   font-size: 5rem;
-   color: #333;
-   cursor: pointer;
-   border: none;
-   background: none;
- }
-
- .modal-hidden {
-   opacity: 0;
-   visibility: hidden;
-   transition: all 0.3s ease-in-out;
- }
-
- .modalOpen {
-   z-index: 60;
-   opacity: 1;
-   visibility: visible;
-   transition: all 0.3s ease-in-out;
- }
-
- .modal {
-   position: absolute;
-   top: 60%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   background-color: white;
-   z-index: 999;
-   box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
- }
-
- .overlay {
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100vh !important;
-   background-color: rgba(0, 0, 0, 0.6);
-   backdrop-filter: blur(3px);
-   z-index: 5;
- }
-
- @media (max-width: 767px) {
-   .small-device-bottom-section {
-     position: fixed;
-     bottom: 0;
-     left: 0;
-     right: 0;
-     background-color: white;
-     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
-     border-radius: 0 0 16px 16px;
-   }
-
-   .modal {
-     top: 70%;
-   }
- } */
 </style>
