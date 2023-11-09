@@ -1,113 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-    @apply relative
+  @apply relative;
 }
 
 /* Common Css Code will be Write Here */
-.counter_number{
-    @apply text-center font-semibold text-3xl md:text-5xl lg:text-7xl;
+.counter_number {
+  @apply text-center font-semibold text-3xl md:text-5xl lg:text-7xl;
 }
 
-.counter_number_sub{
-    @apply text-center font-bold text-sm md:text-xl lg:text-3xl ml-3 mb-0;
+.counter_number_sub {
+  @apply text-center font-bold text-sm md:text-xl lg:text-3xl ml-3 mb-0;
 }
 
-.counter_tag{
-    @apply text-white text-xs md:text-sm lg:text-xl text-center;
+.counter_tag {
+  @apply text-white text-xs md:text-sm lg:text-xl text-center;
 }
 
 /* Home Card Design */
 
-.card{
-    @apply h-full rounded-xl md:rounded-2xl lg:rounded-3xl shadow-xl overflow-hidden transform transition duration-700 hover:scale-y-110;
+.card {
+  @apply h-full rounded-xl md:rounded-2xl lg:rounded-3xl shadow-xl overflow-hidden transform transition duration-700 hover:scale-y-110;
 }
 
-.card_img{
-    @apply sm:h-36 md:h-36 lg:h-56 xl:h-72 2xl:h-80 w-full object-fill object-center;
+.card_img {
+  @apply sm:h-36 md:h-36 lg:h-56 xl:h-72 2xl:h-80 w-full object-fill object-center;
 }
 
-.card_body{
-    @apply p-4 lg:p-6 text-white;
+.card_body {
+  @apply p-4 lg:p-6 text-white;
 }
 
-.card_title{
-    @apply text-sm lg:text-lg uppercase font-medium mb-3;
+.card_title {
+  @apply text-sm lg:text-lg uppercase font-medium mb-3;
 }
 
-.card_description{
-    @apply text-xs lg:text-sm leading-normal lg:leading-relaxed font-thin mb-3;
+.card_description {
+  @apply text-xs lg:text-sm leading-normal lg:leading-relaxed font-thin mb-3;
 }
 
-.card_footer{
-    @apply p-6 flex justify-center;
+.card_footer {
+  @apply p-6 flex justify-center;
 }
 
-.card_btn{
-    @apply bg-white rounded-full text-xs md:text-sm lg:text-lg text-center absolute bottom-5 py-2 w-4/5 md:w-3/4 uppercase;
+.card_btn {
+  @apply bg-white rounded-full text-xs md:text-sm lg:text-lg text-center absolute bottom-5 py-2 w-4/5 md:w-3/4 uppercase;
 }
 /* News Card Design */
-.news_card{
-    @apply rounded-md bg-gray-200 shadow-xl overflow-hidden transform transition duration-700 hover:scale-y-105 h-auto mb-6;
+.news_card {
+  @apply rounded-md bg-gray-200 shadow-xl overflow-hidden transform transition duration-700 hover:scale-y-105 h-auto mb-6;
 }
 
-.news_card_title{
-    @apply text-xl font-medium mb-3;
+.news_card_title {
+  @apply text-xl font-medium mb-3;
 }
 
-.news_card_description{
-    @apply leading-relaxed text-sm text-black mb-3;
+.news_card_description {
+  @apply leading-relaxed text-sm text-black mb-3;
 }
 
-.news_card_footer{
-    @apply p-6 flex justify-start gap-4;
+.news_card_footer {
+  @apply p-6 flex justify-start gap-4;
 }
 
-.news_footer_author{
-    @apply rounded-full text-gray-500 bg-white flex align-middle items-center p-4;
+.news_footer_author {
+  @apply rounded-full text-gray-500 bg-white flex align-middle items-center p-4;
 }
 
 /* why us Card Design */
 
-.why_us_card{
-    @apply h-full rounded-3xl shadow-xl overflow-hidden;
+.why_us_card {
+  @apply h-full rounded-3xl shadow-xl overflow-hidden;
 }
 
-.whyus_card_title{
-    @apply text-2xl sm:text-3xl md:text-4xl text-white font-bold uppercase text-center p-6;
+.whyus_card_title {
+  @apply text-2xl sm:text-3xl md:text-4xl text-white font-bold uppercase text-center p-6;
 }
 
-.whyus_card_description{
-    @apply text-sm text-white text-center leading-relaxed font-light p-6;
+.whyus_card_description {
+  @apply text-sm text-white text-center leading-relaxed font-light p-6;
 }
 
-.whyus_card_img{
-    @apply mb-0;
+.whyus_card_img {
+  @apply mb-0;
 }
 
-.about_slider{
-    @apply flex align-top items-start;
+.about_slider {
+  @apply flex align-top items-start;
 }
 
-.footer_bnt{
-    @apply uppercase text-sm text-white border-transparent hover:no-underline hover:text-gray-50;
+.footer_bnt {
+  @apply uppercase text-sm text-white border-transparent hover:no-underline hover:text-gray-50;
 }
 
-.footer_social_btn{
-    @apply w-8 h-8 border-2 border-white bg-white rounded-full text-center py-1 mr-2 text-gray-600;
+.footer_social_btn {
+  @apply w-8 h-8 border-2 border-white bg-white rounded-full text-center py-1 mr-2 text-gray-600;
 }
 
-.footer_bottom_menu{
-    @apply text-white text-xs mr-6;
+.footer_bottom_menu {
+  @apply text-white text-xs mr-6;
 }
 
-.footer_app_link{
-    @apply w-28 mr-6;
+.footer_app_link {
+  @apply w-28 mr-6;
 }
 
 .careerDetails ol,

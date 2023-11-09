@@ -90,7 +90,7 @@ provide("error", error)
           <div class="relative">
             <div class="right-arrow absolute top-0 bottom-0 left-0 right-0 m-auto"></div>
           </div>
-          <p class="text-xs sm:text-sm ml-2 md:ml-3">Open roles</p>
+          <nuxt-link :to="`${localePath('/career')}`+'/#job-opening'" class="text-xs sm:text-sm ml-2 md:ml-3">Open roles</nuxt-link>
           <div class="relative">
             <div class="right-arrow absolute top-0 bottom-0 left-0 right-0 m-auto"></div>
           </div>
