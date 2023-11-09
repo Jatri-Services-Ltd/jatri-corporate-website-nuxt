@@ -1,6 +1,5 @@
 <script setup>
 const error = inject("error")
-const toggleModal = inject("toggleModal")
 const isModalOpen = inject("isModalOpen")
 const closeModal = () => {
   error.value = false

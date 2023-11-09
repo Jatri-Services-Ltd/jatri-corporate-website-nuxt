@@ -63,20 +63,20 @@ const handleSubmit = () => {
 
 const isModalOpen = ref(false);
 const toggleModal = () => {
-  console.log("toggle modal called")
   isModalOpen.value = !isModalOpen.value;
   if (process.client) {
+    if (success.value){
+      success.value = false
+    } else if (error.value){
+      error.value = false
+    }
+
     const getBody = document.getElementsByTagName('body')[0];
     if (isModalOpen.value) {
       getBody.style.overflow = 'hidden';
     } else {
       getBody.style.overflow = 'auto';
       Object.assign(applicationSubmitForm, { ...initialState });
-    }
-    if(success.value){
-      success.value = false
-    }else if(error.value){
-      error.value = false
     }
   }
 }
