@@ -9,20 +9,6 @@ const { $successToast, $errorToast } = useNuxtApp();
 const route = useRoute();
 const applicant_job_id = route.params.slug;
 
-const isModalOpen = ref(false);
-const toggleModal = () => {
-  isModalOpen.value = !isModalOpen.value;
-
-  if (process.client) {
-    const getBody = document.getElementsByTagName('body')[0];
-
-    if (isModalOpen.value) {
-      getBody.style.overflow = 'hidden';
-    } else {
-      getBody.style.overflow = 'auto';
-    }
-  }
-}
 
 const initialState = {
   name: '',
@@ -73,6 +59,26 @@ const handleSubmit = () => {
     error.value = true
   })
     .finally(() => isSubmitting.value = false)
+}
+
+const isModalOpen = ref(false);
+const toggleModal = () => {
+  console.log("toggle modal called")
+  isModalOpen.value = !isModalOpen.value;
+  if (process.client) {
+    const getBody = document.getElementsByTagName('body')[0];
+    if (isModalOpen.value) {
+      getBody.style.overflow = 'hidden';
+    } else {
+      getBody.style.overflow = 'auto';
+      Object.assign(applicationSubmitForm, { ...initialState });
+    }
+    if(success.value){
+      success.value = false
+    }else if(error.value){
+      error.value = false
+    }
+  }
 }
 
 provide("applicationSubmitForm", applicationSubmitForm)

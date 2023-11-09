@@ -1,9 +1,9 @@
 <script setup>
 const success = inject("success")
-const isModalOpen = inject("isModalOpen")
+const toggleModal = inject("toggleModal")
 const closeModal = () => {
   success.value = false
-  isModalOpen.value = false
+  toggleModal()
 }
 </script>
 
