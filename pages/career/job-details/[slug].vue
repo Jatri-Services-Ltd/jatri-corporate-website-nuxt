@@ -45,6 +45,11 @@ const removeFile = () => {
   applicationSubmitForm.resume = ''
 }
 
+const generateText = (str) => {
+  str = str.toLowerCase()
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
 const success = ref(false)
 const error = ref(false)
 const handleSubmit = () => {
@@ -118,7 +123,7 @@ provide("error", error)
               <div>
                 <p class="text-sm lg:text-base text-secondaryDark mb-1 font-inter">Employment status</p>
                 <p class="text-base lg:text-xl font-medium text-dark font-inter">
-                  {{ data.data.employment_status.replaceAll('_', ' ').replaceAll('-', ' ') }}</p>
+                  {{ generateText(data.data.employment_status.replaceAll('_', ' ').replaceAll('-', ' ')) }}</p>
               </div>
             </div>
             <div class="border-b ml-10 pt-2 md:pt-4"></div>
