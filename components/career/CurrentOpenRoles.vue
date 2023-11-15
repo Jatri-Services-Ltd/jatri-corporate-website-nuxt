@@ -42,7 +42,7 @@ const { data } = await useFetch(config.public.apiURL + '/api/v1/get-career-activ
           <div class="border border-[#DBDBDB] rounded-2xl p-4 md:p-6">
             <p class="text-dark text-base lg:text-xl font-semibold mb-2">Can't find a suitable role?</p>
             <p class="text-secondaryDark text-sm lg:text-base">Share your resume with us at <a
-                href="mailto:careers@jatri.co" class="underline text-info">careers@jatri.co</a></p>
+                href="mailto:career@jatri.co" class="underline text-info">career@jatri.co</a></p>
           </div>
         </div>
       </template>
@@ -56,7 +56,7 @@ const { data } = await useFetch(config.public.apiURL + '/api/v1/get-career-activ
           <p class="mt-2 text-secondaryDark text-sm md:text-base">
             For updates, keep an eye here. <br>
             Share your CV with us at <span><a class="font-medium underline text-info"
-                href="mailto:careers@jatri.co">careers@jatri.co</a></span> if you're still interested.
+                href="mailto:career@jatri.co">career@jatri.co</a></span> if you're still interested.
           </p>
         </div>
       </div>
