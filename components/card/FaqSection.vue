@@ -1,4 +1,5 @@
-<script setup></script>
+<script setup>
+</script>
 
 <template>
   <section class="py-10 md:py-20 xl:py-[100px]">
@@ -75,7 +76,16 @@
                 <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer5') }}</p>
               </div>
             </div>
-
+            <div class="accordion-box">
+              <input type="radio" name="radioBtnAccordion" value="8" id="accordion8" />
+              <label class="accordion-title" for="accordion8">
+                <span>{{ $t('card-faq-question8') }}</span>
+                <img src="~/assets/images/common/down_arrow.svg" alt="Down arrow">
+              </label>
+              <div class="accordion-content">
+                <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer8') }}</p>
+              </div>
+            </div>
             <div class="accordion-box">
               <input type="radio" name="radioBtnAccordion" value="6" id="accordion6" />
               <label class="accordion-title" for="accordion6">
@@ -84,6 +94,16 @@
               </label>
               <div class="accordion-content">
                 <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer6') }}</p>
+              </div>
+            </div>
+            <div class="accordion-box">
+              <input type="radio" name="radioBtnAccordion" value="9" id="accordion9" />
+              <label class="accordion-title" for="accordion9">
+                <span>{{ $t('card-faq-question9') }}</span>
+                <img src="~/assets/images/common/down_arrow.svg" alt="Down arrow">
+              </label>
+              <div class="accordion-content">
+                <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer9') }}</p>
               </div>
             </div>
             

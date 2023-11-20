@@ -1,13 +1,12 @@
 <script setup>
 import MovingSlide from '../slider/MovingSlide.vue'
 const config = useRuntimeConfig();
-const { data } = await useFetch(config.public.apiURL + '/api/v1/get-career-banners')
-
+const bannerImages = inject("bannerImages")
 const chunkSize = 5;
 
 const chunkBannerImages = {
-  firstSlider: data.value.data.slice(0, chunkSize),
-  secondSlider: data.value.data.slice(chunkSize),
+  firstSlider: bannerImages.slice(0, chunkSize),
+  secondSlider: bannerImages.slice(chunkSize),
 }
 </script>
 

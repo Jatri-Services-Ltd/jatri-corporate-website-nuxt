@@ -1,5 +1,6 @@
 <script setup>
 const videoPlay = ref(true);
+const youtubeLink = inject("youtubeLink")
 </script>
 
 
@@ -17,7 +18,7 @@ const videoPlay = ref(true);
 
                 <div v-else class="h-[220px] md:h-[640px]">
                     <iframe width="100%" height="100%"
-                        src="https://www.youtube.com/embed/qbPCUXHu-dY?autoplay=1" allow="autoplay"></iframe>
+                        :src="youtubeLink" allow="autoplay"></iframe>
                 </div>
             </div>
         </div>

@@ -1,3 +1,10 @@
+<script setup>
+const config = useRuntimeConfig();
+const { data } = await useFetch(config.public.apiURL + '/api/v1/get-settings')
+provide("bannerImages", data.value.data.career_banners)
+provide("youtubeLink", data.value.data.career_youtube_url)
+</script>
+
 <template>
   <div>
     <CareerHeader />
