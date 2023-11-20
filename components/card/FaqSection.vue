@@ -32,7 +32,6 @@
                 <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer1') }}</p>
               </div>
             </div>
-
             <div class="accordion-box">
               <input type="radio" name="radioBtnAccordion" value="2" id="accordion2" />
               <label class="accordion-title" for="accordion2">
@@ -43,7 +42,6 @@
                 <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer2') }}</p>
               </div>
             </div>
-
             <div class="accordion-box">
               <input type="radio" name="radioBtnAccordion" value="3" id="accordion3" />
               <label class="accordion-title" for="accordion3">
@@ -54,7 +52,6 @@
                 <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer3') }}</p>
               </div>
             </div>
-
             <div class="accordion-box">
               <input type="radio" name="radioBtnAccordion" value="4" id="accordion4" />
               <label class="accordion-title" for="accordion4">
@@ -65,7 +62,6 @@
                 <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer4') }}</p>
               </div>
             </div>
-
             <div class="accordion-box">
               <input type="radio" name="radioBtnAccordion" value="5" id="accordion5" />
               <label class="accordion-title" for="accordion5">
@@ -74,16 +70,6 @@
               </label>
               <div class="accordion-content">
                 <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer5') }}</p>
-              </div>
-            </div>
-            <div class="accordion-box">
-              <input type="radio" name="radioBtnAccordion" value="8" id="accordion8" />
-              <label class="accordion-title" for="accordion8">
-                <span>{{ $t('card-faq-question8') }}</span>
-                <img src="~/assets/images/common/down_arrow.svg" alt="Down arrow">
-              </label>
-              <div class="accordion-content">
-                <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer8') }}</p>
               </div>
             </div>
             <div class="accordion-box">
@@ -97,13 +83,23 @@
               </div>
             </div>
             <div class="accordion-box">
-              <input type="radio" name="radioBtnAccordion" value="9" id="accordion9" />
-              <label class="accordion-title" for="accordion9">
-                <span>{{ $t('card-faq-question9') }}</span>
+              <input type="radio" name="radioBtnAccordion" value="7" id="accordion7" />
+              <label class="accordion-title" for="accordion7">
+                <span>{{ $t('card-faq-question7') }}</span>
                 <img src="~/assets/images/common/down_arrow.svg" alt="Down arrow">
               </label>
               <div class="accordion-content">
-                <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer9') }}</p>
+                <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer7') }}</p>
+              </div>
+            </div>
+            <div class="accordion-box">
+              <input type="radio" name="radioBtnAccordion" value="8" id="accordion8" />
+              <label class="accordion-title" for="accordion8">
+                <span>{{ $t('card-faq-question8') }}</span>
+                <img src="~/assets/images/common/down_arrow.svg" alt="Down arrow">
+              </label>
+              <div class="accordion-content">
+                <p class="text-secondaryDark text-sm lg:text-xl">{{ $t('card-faq-answer8') }}</p>
               </div>
             </div>
             

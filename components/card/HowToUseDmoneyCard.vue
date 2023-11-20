@@ -102,13 +102,13 @@ const onSwiper = (swiper) => {
   });
 
   document.addEventListener('focusin', (event) => {
-    if (swiperInstance.el.contains(event.target)) {
+    if (swiperInstance?.el?.contains(event?.target)) {
       swiperInstance.autoplay.stop();
     }
   });
 
   document.addEventListener('focusout', (event) => {
-    if (swiperInstance.el.contains(event.target)) {
+    if (swiperInstance?.el?.contains(event?.target)) {
       swiperInstance.autoplay.start();
     }
   });
