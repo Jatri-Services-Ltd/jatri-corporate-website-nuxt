@@ -32,9 +32,6 @@ const chunkBannerImages = {
       </MovingSlide>
     </div>
 
-    <h2 style="text-shadow: 0px 0px 26px rgba(0, 0, 0, 0.24);"
-      class="text-white text-[60px] lg:text-[120px] leading-[73px] lg:leading-[146px] font-bold absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 z-40">
-      #Life@Jatri</h2>
   </div>
 </template>
 
