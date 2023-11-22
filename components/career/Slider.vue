@@ -1,13 +1,15 @@
 <script setup>
 import MovingSlide from '../slider/MovingSlide.vue'
-const config = useRuntimeConfig();
-const bannerImages = inject("bannerImages")
-const chunkSize = 5;
 
-const chunkBannerImages = {
-  firstSlider: bannerImages.slice(0, chunkSize),
-  secondSlider: bannerImages.slice(chunkSize),
-}
+const config = useRuntimeConfig();
+  const props = defineProps(['career_banners'])
+
+  const chunkSize = 5;
+  const chunkBannerImages = {
+    firstSlider: props?.career_banners.slice(0, chunkSize),
+    secondSlider: props?.career_banners.slice(chunkSize),
+  }
+
 </script>
 
 <template>
@@ -36,47 +38,47 @@ const chunkBannerImages = {
 </template>
 
 <style scoped> .slide-items,
- .slider-items2 {
-   @apply flex gap-x-4 md:gap-x-8
- }
+.slider-items2 {
+  @apply flex gap-x-4 md:gap-x-8
+}
 
- .slide-items .slide-item,
- .slider-items2 .slide-item {
-   @apply w-[604px] h-[200px] sm:h-[300px]
- }
+.slide-items .slide-item,
+.slider-items2 .slide-item {
+  @apply w-[604px] h-[200px] sm:h-[300px]
+}
 
- .slide-items .slide-item:nth-child(2),
- .slider-items2 .slide-item:last-child {
-   @apply w-[286px]
- }
+.slide-items .slide-item:nth-child(2),
+.slider-items2 .slide-item:last-child {
+  @apply w-[286px]
+}
 
- .slide-items .slide-item:nth-child(3),
- .slide-items .slide-item:last-child,
- .slider-items2 .slide-item:first-child {
-   @apply w-[498px]
- }
+.slide-items .slide-item:nth-child(3),
+.slide-items .slide-item:last-child,
+.slider-items2 .slide-item:first-child {
+  @apply w-[498px]
+}
 
- .slide-items .slide-item:nth-child(4),
- .slider-items2 .slide-item:nth-child(3) {
-   @apply w-[392px]
- }
+.slide-items .slide-item:nth-child(4),
+.slider-items2 .slide-item:nth-child(3) {
+  @apply w-[392px]
+}
 
- .slide-item img {
-   @apply w-full h-full rounded-3xl object-cover
- }
+.slide-item img {
+  @apply w-full h-full rounded-3xl object-cover
+}
 
- /* Left to right slider */
- /* .slider-items2 .slide-item {
-   @apply w-[604px] h-[200px] sm:h-[300px]
- } */
+/* Left to right slider */
+/* .slider-items2 .slide-item {
+  @apply w-[604px] h-[200px] sm:h-[300px]
+} */
 
- /* .slider-items2 .slide-item:first-child {
-   @apply w-[498px]
- } */
+/* .slider-items2 .slide-item:first-child {
+  @apply w-[498px]
+} */
 
- /* .slider-items2 .slide-item:nth-child(3) {
-   @apply w-[392px]
- } */
+/* .slider-items2 .slide-item:nth-child(3) {
+  @apply w-[392px]
+} */
 /* 
  .slider-items2 .slide-item:last-child {
    @apply w-[286px]

@@ -1,6 +1,6 @@
 <script setup>
-const videoPlay = ref(true);
-const youtubeLink = inject("youtubeLink")
+defineProps(['career_youtube_url'])
+
 </script>
 
 
@@ -10,7 +10,7 @@ const youtubeLink = inject("youtubeLink")
             <div>
                 <div class="h-[220px] md:h-[640px]">
                     <iframe width="100%" height="100%"
-                        :src="youtubeLink+'?rel=0'"></iframe>
+                        :src="career_youtube_url+'?rel=0'"></iframe>
                 </div>
             </div>
         </div>
