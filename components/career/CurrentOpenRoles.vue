@@ -1,6 +1,25 @@
 <script setup>
+import axios from "axios";
+
 const config = useRuntimeConfig();
-const { data } = await useFetch(config.public.apiURL + '/api/v1/get-career-active-jobs')
+const {$errorToast} = useNuxtApp();
+const jobs = ref([])
+
+if (process.client) {
+  const getJobs = () => {
+    axios.get(config.public.apiURL + '/api/v1/get-career-active-jobs')
+        .then(res => {
+          jobs.value = res?.data?.data
+        })
+        .catch(err => {
+          $errorToast(err ? err : "Something went wrong")
+        })
+  }
+  onMounted( () => {
+    getJobs()
+  })
+}
+
 
 </script>
 
@@ -9,15 +28,16 @@ const { data } = await useFetch(config.public.apiURL + '/api/v1/get-career-activ
     <div class="custom-container">
       <h2 class="text-[28px] lg:text-4xl leading-9 lg:leading-[44px] text-dark font-medium mb-8 lg:mb-10">Current open
         roles</h2>
-      <template v-if="data.data.length">
+      <template v-if="jobs.length">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-6">
-          <div v-for="job in data.data" :key="job.id" class="p-4 md:p-6 rounded-2xl border border-1-[#DBDBDB]">
+          <div v-for="job in jobs" :key="job.id" class="p-4 md:p-6 rounded-2xl border border-1-[#DBDBDB]">
             <div class="xl:flex items-center justify-between">
               <div>
                 <h5 class="text-base lg:text-xl font-semibold text-dark">{{ job.title }}</h5>
                 <div class="my-2 flex gap-2 items-center">
-                  <p class="text-sm lg:text-base font-medium text-secondaryDark">Salary: <span>{{ job.salary_range
-                  }}</span>
+                  <p class="text-sm lg:text-base font-medium text-secondaryDark">Salary: <span>{{
+                      job.salary_range
+                    }}</span>
                   </p>
                   <div class="h-[6px] w-[6px] bg-[#DBDBDB] rounded-full"></div>
                   <p class="text-sm lg:text-base font-medium text-secondaryDark capitalize">
@@ -29,7 +49,7 @@ const { data } = await useFetch(config.public.apiURL + '/api/v1/get-career-activ
               </div>
               <div class="xl:pt-0 pt-4 inline-block">
                 <router-link :to="{ path: '/career/job-details/' + job.id }"
-                  class="flex justify-center items-center gap-2 pl-4 pr-2 py-2.5 rounded-full border border-[#DBDBDB] bg-white">
+                             class="flex justify-center items-center gap-2 pl-4 pr-2 py-2.5 rounded-full border border-[#DBDBDB] bg-white">
                   <span class="inline-block text-sm font-medium text-dark">View details</span>
                   <img src="/images/career/arrow-right.svg" alt="arrow right">
                 </router-link>
@@ -56,7 +76,8 @@ const { data } = await useFetch(config.public.apiURL + '/api/v1/get-career-activ
           <p class="mt-2 text-secondaryDark text-sm md:text-base">
             For updates, keep an eye here. <br>
             Share your CV with us at <span><a class="font-medium underline text-info"
-                href="mailto:career@jatri.co">career@jatri.co</a></span> if you're still interested.
+                                              href="mailto:career@jatri.co">career@jatri.co</a></span> if you're still
+            interested.
           </p>
         </div>
       </div>

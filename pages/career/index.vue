@@ -2,25 +2,24 @@
 import axios from "axios";
 
 const config = useRuntimeConfig();
-
+const {$errorToast} = useNuxtApp();
 const settings = ref([])
 const loading = ref(true)
-// if (process.client) {
-//   const getSettings = () => {
-//     settings.value = []
-//     axios.get(config.public.apiURL + '/api/v1/get-settings')
-//         .then(res => {
-//           console.log(res)
-//           settings.value = res.data?.data
-//           loading.value = false
-//         })
-//         .catch(err => {
-//           loading.value = false
-//           $errorToast(err ? err : "Something went wrong")
-//         })
-//   }
-//   onMounted(() => getSettings())
-// }
+if (process.client) {
+  const getSettings = () => {
+    settings.value = []
+    axios.get(config.public.apiURL + '/api/v1/get-settings')
+        .then(res => {
+          settings.value = res.data?.data
+          loading.value = false
+        })
+        .catch(err => {
+          loading.value = false
+          $errorToast(err ? err : "Something went wrong")
+        })
+  }
+  onMounted(() => getSettings())
+}
 
 
 
@@ -36,17 +35,19 @@ const loading = ref(true)
 <template>
   <div>
     <CareerHeader />
-<!--    <ClientOnly>-->
-<!--      <CareerSlider v-if="settings?.career_banners" :career_banners="settings?.career_banners" />-->
-<!--    </ClientOnly>-->
+    <ClientOnly>
+      <CareerSlider v-if="settings?.career_banners" :career_banners="settings?.career_banners" />
+    </ClientOnly>
     <CareerOurCoreValues />
     <CareerBenefitAndPerks />
-<!--    <ClientOnly>-->
-<!--      <CareerVideo v-if="settings?.career_youtube_url" :career_youtube_url="settings?.career_youtube_url"  />-->
-<!--    </ClientOnly>-->
+    <ClientOnly>
+      <CareerVideo v-if="settings?.career_youtube_url" :career_youtube_url="settings?.career_youtube_url"  />
+    </ClientOnly>
     <CareerWorkplaceLikeHome />
     <div id="openRoles">
-      <CareerCurrentOpenRoles />
+      <ClientOnly>
+        <CareerCurrentOpenRoles />
+      </ClientOnly>
     </div>
   </div>
 </template>
