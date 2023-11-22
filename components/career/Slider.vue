@@ -18,7 +18,7 @@ const config = useRuntimeConfig();
       <MovingSlide>
         <div class="slide-items">
           <div class="slide-item" v-for="slideImage in chunkBannerImages.firstSlider" :key="slideImage">
-            <img :src="'https://sgp1.digitaloceanspaces.com/storage.jatri.co/' + slideImage">
+            <img :src="config.public.apiImageBase+''+slideImage">
           </div>
         </div>
       </MovingSlide>
@@ -28,7 +28,7 @@ const config = useRuntimeConfig();
       <MovingSlide direction="reverse">
         <div class="slider-items2">
           <div class="slide-item" v-for="slideImage in chunkBannerImages.secondSlider" :key="slideImage">
-            <img :src="'https://sgp1.digitaloceanspaces.com/storage.jatri.co/' + slideImage">
+            <img :src="config.public.apiImageBase+''+slideImage">
           </div>
         </div>
       </MovingSlide>

@@ -3,6 +3,7 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             apiURL: process.env.API_BASE_URL,
+            apiImageBase: process.env.API_IMAGE_BASE,
         }
     },
     css: ['~/assets/css/main.css',
