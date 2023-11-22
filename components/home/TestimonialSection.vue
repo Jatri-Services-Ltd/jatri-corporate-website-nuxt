@@ -77,10 +77,8 @@ onMounted(() => {
 
   window.addEventListener("visibilitychange", (event) => {
     if (document.visibilityState === "visible") {
-      console.log("Active", autoSlideInterVal.value)
       startInterval()
     } else {
-      console.log("InActive", autoSlideInterVal.value)
       clearInterval(autoSlideInterVal.value)
     }
   });
