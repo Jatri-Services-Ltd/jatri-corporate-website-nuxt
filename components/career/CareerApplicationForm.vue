@@ -177,7 +177,7 @@ const submitForm = (e) => {
 
 @media (min-width: 1440px) {
   .modal-content {
-    @apply max-h-[700px]
+    @apply max-h-[500px]
   }
 }
 </style>
