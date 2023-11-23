@@ -32,7 +32,7 @@ const submitForm = (e) => {
         <button @click="toggleModal"><img src="/images/career/close-icon.svg" alt="Close Modal"></button>
       </div>
 
-      <div class="modal-content p-4 md:p-6 !pb-0 max-h-[532px] xl:max-h-[700px] overflow-y-auto">
+      <div class="modal-content p-4 md:p-6 !pb-0 overflow-y-auto">
         <p class="text-sm md:text-2xl font-medium mb-4 md:mb-6 text-[#676769] md:text-black uppercase md:normal-case">
           Personal information</p>
         <div class="flex flex-col md:flex-row gap-4 md:gap-8">
@@ -163,9 +163,21 @@ const submitForm = (e) => {
   }
 }
 
-@media (min-width: 600px) and (max-width: 1400px) {
+@media (min-width: 391px) and (max-width: 599px) {
+  .modal-content {
+    @apply max-h-[532px]
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1439px) {
   .modal-content {
     @apply max-h-[350px]
+  }
+}
+
+@media (min-width: 1440px) {
+  .modal-content {
+    @apply max-h-[700px]
   }
 }
 </style>
