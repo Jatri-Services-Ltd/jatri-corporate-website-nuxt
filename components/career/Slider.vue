@@ -66,21 +66,4 @@ const config = useRuntimeConfig();
 .slide-item img {
   @apply w-full h-full rounded-3xl object-cover
 }
-
-/* Left to right slider */
-/* .slider-items2 .slide-item {
-  @apply w-[604px] h-[200px] sm:h-[300px]
-} */
-
-/* .slider-items2 .slide-item:first-child {
-  @apply w-[498px]
-} */
-
-/* .slider-items2 .slide-item:nth-child(3) {
-  @apply w-[392px]
-} */
-/* 
- .slider-items2 .slide-item:last-child {
-   @apply w-[286px]
- } */
 </style>
