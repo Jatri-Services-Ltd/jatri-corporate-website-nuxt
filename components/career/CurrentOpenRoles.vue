@@ -19,8 +19,6 @@ if (process.client) {
     getJobs()
   })
 }
-
-
 </script>
 
 <template>
@@ -75,8 +73,7 @@ if (process.client) {
           <h4 class="text-dark text-xl md:text-[28px] md:leading-9 font-medium">No openings right now</h4>
           <p class="mt-2 text-secondaryDark text-sm md:text-base">
             For updates, keep an eye here. <br>
-            Share your CV with us at <span><a class="font-medium underline text-info"
-                                              href="mailto:career@jatri.co">career@jatri.co</a></span> if you're still
+            Share your CV with us at <span><a class="font-medium underline text-info" href="mailto:career@jatri.co">career@jatri.co</a></span> if you're still
             interested.
           </p>
         </div>
