@@ -27,12 +27,12 @@ const submitForm = (e) => {
 
     <div v-if="!success && !error" class="mx-4 md:w-[700px] bg-white rounded-md shadow-xl"
       style="box-shadow: 0 12px 28px #0003, 0 2px 4px #0000001a, inset 0 0 0 1px #ffffff0d;">
-      <div class="flex justify-between items-center p-4 md:p-6 border-b border-b-[#DBDBDB]">
+      <div class="flex justify-between items-center p-4 xl:p-6 border-b border-b-[#DBDBDB]">
         <p class="text-xl md:text-[32px] md:leading-10 font-medium text-dark">Apply now</p>
         <button @click="toggleModal"><img src="/images/career/close-icon.svg" alt="Close Modal"></button>
       </div>
 
-      <div class="modal-content p-4 md:p-6 !pb-0 max-h-[532px] md:max-h-[700px] overflow-y-auto">
+      <div class="modal-content p-4 md:p-6 !pb-0 overflow-y-auto">
         <p class="text-sm md:text-2xl font-medium mb-4 md:mb-6 text-[#676769] md:text-black uppercase md:normal-case">
           Personal information</p>
         <div class="flex flex-col md:flex-row gap-4 md:gap-8">
@@ -144,7 +144,7 @@ const submitForm = (e) => {
       </div>
 
       <div>
-        <div class="pt-4 md:pt-12 pb-4 md:pb-10 flex justify-center px-4">
+        <div class="pt-4 xl:pt-12 pb-4 xl:pb-10 flex justify-center px-4">
           <button :disabled="isSubmitting" @click="submitForm"
             :class="isSubmitting ? 'opacity-20 cursor-not-allowed' : ''"
             class="w-full md:w-[300px] py-2.5 md:py-4 bg-corporate text-white rounded-full text-sm md:text-xl font-medium">
@@ -160,6 +160,24 @@ const submitForm = (e) => {
 @media (max-width: 390px) {
   .modal-content {
     @apply max-h-[350px]
+  }
+}
+
+@media (min-width: 391px) and (max-width: 599px) {
+  .modal-content {
+    @apply max-h-[532px]
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1439px) {
+  .modal-content {
+    @apply max-h-[350px]
+  }
+}
+
+@media (min-width: 1440px) {
+  .modal-content {
+    @apply max-h-[500px]
   }
 }
 </style>
